@@ -1,0 +1,123 @@
+- section: Home
+  url: /index.html
+- section: Getting Started
+  url: /get-started/
+  docs:
+    - name: Getting Started with your Brightcove Engage Trial
+      url: /get-started/getting-started-brightcove-engage-trial.html
+    - name: Getting Started with Brightcove Engage
+      url: /get-started/getting-started-brightcove-engage.html
+    - name: Creating and Publishing Mobile App Experiences
+      url: /get-started/overview-create-edit-publish-mobile-app-exp.html
+    - name: Creating and Publishing Web Experiences
+      url: /get-started/overview-create-edit-publish-web-exp.html
+    - name: Using the Brightcove Engage Application
+      url: /get-started/using-brightcove-engage-app-prerelease.html
+    - name: Step-by-Step - Creating and Publishing a Mobile App Experience
+      url: /get-started/step-by-step-mobile-app.html
+    - name: Step-by-Step Creating and Publishing a Web Experience
+      url: /get-started/step-by-step-web-exp.html
+    - name: Brightcove Engage Training Videos
+      url: /get-started/brightcove-engage-training-videos.html
+- section: Documentation
+  url: /docs/
+  docs:
+    - name: Managing Videos
+      url: /docs/videos/
+      docs:
+        - name: Uploading Videos
+          url: /docs/videos/uploading-videos.html
+        - name: Managing Videos
+          url: /docs/videos/managing-videos.html
+        - name: Editing Video Properties
+          url: /docs/videos/editing-video-properties.html
+        - name: Editing Video Properties with Quick Edit
+          url: /docs/videos/editing-video-properties-using-quick-edit.html
+        - name: Capturing Poster and Thumbnail Images
+          url: /docs/videos/capturing-poster-and-thumbnail-images.html
+        - name: Uploading Poster and Thumbnail Images
+          url: /docs/videos/uploading-poster-and-thumbnail-images.html
+        - name: Creating and Managing Playlists
+          url: /docs/videos/creating-and-managing-playlists.html
+        - name: Search for Videos
+          url: /docs/videos/how-to-search-for-videos.html
+        - name: Working with Shared Videos
+          url: /docs/videos/working-with-shared-videos.html
+        - name: Adding Text Tracks
+          url: /docs/videos/adding-text-tracks-to-a-video.html
+        - name: Configuring Video Availability
+          url: /docs/videos/configuring-video-availability.html
+        - name: Exporting Video Data
+          url: /docs/videos/exporting-video-data.html
+    - name: Creating Experiences
+      url: /docs/experiences/
+      docs:
+        - name: Overview of Experience Templates
+          url: /docs/experiences/overview-experience-templates.html
+        - name: Managing Projects
+          url: /docs/experiences/managing-projects.html
+        - name: Managing Collections
+          url: /docs/experiences/managing-collections.html
+        - name: Editing Experience Details
+          url: /docs/experiences/editing-experience-details.html
+        - name: Creating and Managing Experiences
+          url: /docs/experiences/creating-and-managing-experiences.html
+        - name: Controlling Access to an Experience
+          url: /docs/experiences/controlling-access-experience.html
+        - name: Creating Access Control Profiles
+          url: /docs/experiences/creating-access-control-profiles.html
+        - name: Configuring Experience Settings
+          url: /docs/experiences/configuring-experience-settings.html
+        - name: Adding Videos to an Experience
+          url: /docs/experiences/adding-videos-experience.html
+        - name: Customizing Mobile App Experiences
+          url: /docs/experiences/using-experience-editor-customize-mobile-app-experience.html
+        - name: Customizing Web Experiences
+          url: /docs/experiences/using-experience-editor-customize-web-experience.html
+        - name: Styling Mobile App Experiences
+          url: /docs/experiences/styling-mobile-app-experiences.html
+        - name: Styling Web Experiences
+          url: /docs/experiences/styling-web-experiences.html
+        - name: Previewing and Publishing Mobile App Experiences
+          url: /docs/experiences/previewing-publishing-mobile-app-experience.html
+        - name: Previewing and Publishing Web Experiences
+          url: /docs/experiences/previewing-publishing-web-experience.html
+        - name: Adding a Logo to Mobile App Experience Pages
+          url: /docs/experiences/adding-logo-mobile-app-experience.html
+        - name: Customizing the Content of Web Experience Pages
+          url: /docs/experiences/customizing-content-web-experience-pages.html
+    - name: Reviewing Analytics
+      url: /docs/analytics/
+      docs:
+      - name: Reviewing Video Analytics
+        url: /docs/analytics/reviewing-video-analytics.html
+    - name: Administering Accounts
+      url: /docs/admin/
+      docs:
+      - name: Managing Users
+        url: /docs/admin/managing-users.html
+      - name: Managing Account Information
+        url: /docs/admin/managing-account-information.html
+      - name: Managing Account Settings
+        url: /docs/admin/managing-account-settings.html
+      - name: Managing Video Fields
+        url: /docs/admin/managing-video-fields.html
+      - name: Managing Media Sharing Settings
+        url: /docs/admin/managing-media-sharing-settings.html
+      - name: Managing Profile Information
+        url: /docs/admin/managing-profile-information.html
+- section: Release Notes
+  url: /release-notes/
+  docs:
+    - name: 2020
+      url: /release-notes/2020.html
+- section: Support
+  url: /support/
+  docs:
+    - name: Open a Support Case
+      url: /support/opening-case-with-brightcove-support.html
+    - name: Viewing System Status
+      url: /support/viewing-brightcove-system-status-page.html
+# TODO correct and add additional sections/pages
+# TODO note that the order of items here determines the order in navigation
+# TODO indentation in YAML is crucial and must be with spaces (not tabs!)

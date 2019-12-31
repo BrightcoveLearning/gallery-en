@@ -1,0 +1,273 @@
+.bcls-article {
+  .bcls-article a:hover {
+    text-decoration: underline; }
+
+.bcls-header h1 {
+  font-size: 3em; }
+
+.bcls-section a {
+  color: #465bc4;
+  text-decoration: none; }
+.bcls-section a:hover {
+  text-decoration: underline; }
+.bcls-section .bcls-section__title {
+  color: #515151; }
+.bcls-section h2 {
+  padding-top: 3em;
+  margin-top: -3em;
+  z-index: -1; }
+
+section {
+  display: block; }
+
+.bcls-aside {
+  border-radius: .3em;
+  margin-bottom: 1em;
+  padding: 1em 1em 1em 2.7em; }
+  .bcls-aside--information {
+    background-color: #fef6ee;
+    border: 1px #f99941 solid;
+    color: #6b3503; }
+    .bcls-aside--information:before {
+      content: url("../assets/aside-icons/info.png");
+      float: left;
+      margin-left: -2.5em;
+      margin-top: -.5em; }
+    .bcls-aside--information a {
+      color: #f67e33; }
+  .bcls-aside--tip {
+    background-color: #f3f7d8;
+    border: 1px #85a93e solid;
+    color: #4a5e23; }
+    .bcls-aside--tip:before {
+      content: url("../assets/aside-icons/check.png");
+      float: left;
+      margin-left: -2.5em;
+      margin-top: -.5em; }
+    .bcls-aside--tip a {
+      color: #a5c13f; }
+  .bcls-aside--warning {
+    background-color: #fdecf5;
+    border: 1px #a91157 solid;
+    color: #4c0827; }
+    .bcls-aside--warning:before {
+      content: url("../assets/aside-icons/exclamation.png");
+      float: left;
+      margin-left: -2.5em;
+      margin-top: -.5em; }
+    .bcls-aside--warning a {
+      color: #d32781; }
+
+.bcls-expander-head {
+  text-decoration: underline; }
+  .bcls-expander-head:before {
+    content: url(../assets/plus.png);
+    margin-left: -1em;
+    margin-top: .2em;
+    margin-right: .2em; }
+  .bcls-expander-head.changed {
+    text-decoration: none; }
+  .bcls-expander-head.changed:before {
+    content: url(../assets/minus.png);
+    margin-left: -1em;
+    margin-top: .2em;
+    margin-right: .2em; }
+
+.bcls-expander-content {
+  -webkit-transition: all 1.0s ease-in-out;
+  -moz-transition: all 1.0s ease-in-out;
+  -o-transition: all 1.0s ease-in-out;
+  transition: all 1.0s ease-in-out;
+  height: 0;
+  visibility: hidden;
+  display: none; }
+
+.bcls-question {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold; }
+  .bcls-question:hover {
+    text-decoration: underline; }
+
+.bcls-answer {
+  display: none; }
+
+.bcls-caption--table {
+  font-size: .7em; }
+  .bcls-caption--table:before {
+    counter-increment: table;
+    content: "Table " counter(table) ": "; }
+
+.bcls-caption--image {
+  font-size: .7em; }
+  .bcls-caption--image:before {
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": "; }
+
+code {
+  color: #dd712e;
+  font-size: inherit;
+  font-weight: 500; }
+
+pre,
+pre.line-numbers,
+pre.line-numbers > code {
+  border: #64b0b7 1px solid;
+  border-left: #64b0b7 0.5em solid;
+  font-size: .9em;
+  margin-bottom: 1em;
+  padding: 1em;
+  padding-left: 4.2em;
+  tab-size: 4;
+  white-space: pre-wrap;
+  width: 100%; }
+  pre code,
+  pre.line-numbers code,
+  pre.line-numbers > code code {
+    background-color: transparent;
+    border: none;
+    font-weight: normal; }
+
+.bcls-code {
+  background-color: #fcf6e2;
+  border: #64b0b7 1px solid;
+  border-left: #64b0b7 0.5em solid;
+  font-family: "Source Code Pro", "Andale Mono", "Menlo", "Courier New", monospace;
+  font-size: .9em;
+  margin-bottom: 1em;
+  min-height: 6em;
+  padding: 1em .5em;
+  tab-size: 4;
+  white-space: pre-wrap;
+  width: 100%; }
+  .bcls-code code {
+    font-weight: normal; }
+
+.bcls-table {
+  border-collapse: collapse;
+  border: 1px #ccc solid; }
+  .bcls-table .bcls-table__head {
+    background-color: #ddd; }
+    .bcls-table .bcls-table__head th {
+      border: 1px #ccc solid;
+      padding: .5em; }
+  .bcls-table .bcls-table__body td {
+    border: 1px #ccc solid;
+    padding: .5em; }
+
+.bcls-tasklist {
+  list-style-type: none;
+  margin-left: 0; }
+  .bcls-tasklist > li {
+    border-left: 5px solid #ddd;
+    margin-bottom: 20px;
+    min-height: 1.7em;
+    padding-left: 1em;
+    position: relative; }
+    .bcls-tasklist > li:before {
+      color: #a1a1a1;
+      content: counters(step,".") " ";
+      counter-increment: step;
+      font-size: 1.5em;
+      font-weight: bold;
+      left: -2em;
+      line-height: 1;
+      position: absolute;
+      text-align: right;
+      top: 0;
+      width: 1.5em; }
+  .bcls-tasklist ol li:before {
+    content: ''; }
+
+.bcls-highlight {
+  background-color: #ffe6a1;
+  padding: .2em; }
+
+.bcls-image {
+  border: 1px #ccc solid; }
+
+.bcls-image--no-border {
+  border: none; }
+
+.bcls-fieldset {
+  border: 1px #ccc solid; }
+
+.fields-list-col {
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top; }
+
+.bcls-button {
+  background-color: #409ca9;
+  border: 1px #a1a1a1 solid;
+  border-radius: .5em;
+  color: #eee;
+  cursor: pointer;
+  font-size: .8em;
+  font-weight: bold;
+  padding: 1em; }
+  .bcls-button:hover {
+    background-color: #337d87;
+    border: 1px #ffd96e solid;
+    color: #ffd96e; }
+
+.bcls-footer {
+  background-color: #515151;
+  bottom: 0;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  height: 2em;
+  left: 0;
+  line-height: 1.2em;
+  padding-top: .5em;
+  position: fixed;
+  text-align: center;
+  width: 100%; }
+  .bcls-footer a {
+    color: #eee;
+    font-weight: bold;
+    text-decoration: none; }
+  .bcls-footer a:hover {
+    text-decoration: underline; }
+
+.breadcrumbs {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  height: 26px;
+  width: 100%;
+  z-index: 6; }
+
+.sidebar {
+  position: fixed;
+  top: 4em;
+  left: 2em; 
+  color: rgb(221, 221, 221);
+
+}
+
+.side-nav li {
+  margin: 0;
+  padding: 0; }
+
+.side-nav li > a {
+  margin: 0;
+  padding: 0 !important; 
+  color: rgb(221, 221, 221);
+
+}
+
+div.left-side-bar {
+  background-color: rgb(51, 51, 51);
+  color: rgb(221, 221, 221);
+}
+
+body {
+  counter-reset: figure 0 table 0 step 0;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative; }
+  body h1 {
+    font-size: 3em; }
+
+/*# sourceMappingURL=bcls-doc.css.map */

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/assets/css/site/sitemap.css"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/site/sitemap.xsl"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/release-notes/2020.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/404.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/adding-logo-mobile-app-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/adding-text-tracks-to-a-video.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/adding-videos-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/brightcove-engage-training-videos.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/capturing-poster-and-thumbnail-images.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/configuring-experience-settings.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/configuring-video-availability.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/controlling-access-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/creating-access-control-profiles.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/creating-and-managing-experiences.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/creating-and-managing-playlists.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/customizing-content-web-experience-pages.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/editing-experience-details.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/editing-video-properties-using-quick-edit.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/editing-video-properties.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/exporting-video-data.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/getting-started-brightcove-engage-trial.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/getting-started-brightcove-engage.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/how-to-search-for-videos.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/icons.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/downloads/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-account-information.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-account-settings.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/managing-collections.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-media-sharing-settings.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-profile-information.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/managing-projects.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-users.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/admin/managing-video-fields.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/managing-videos.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/overview-create-edit-publish-mobile-app-exp.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/overview-create-edit-publish-web-exp.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/overview-experience-templates.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/previewing-publishing-mobile-app-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/previewing-publishing-web-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/analytics/reviewing-video-analytics.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/assets/css/site/sitemap.css</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/sitemap.xml</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/assets/css/site/sitemap.xsl</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/step-by-step-mobile-app.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/step-by-step-web-exp.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/assets/css/site/styles.css</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/styling-mobile-app-experiences.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/styling-web-experiences.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/uploading-poster-and-thumbnail-images.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/uploading-videos.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/using-brightcove-engage-app-prerelease.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/using-brightcove-engage-app.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/using-experience-editor-customize-mobile-app-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/using-experience-editor-customize-web-experience.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/viewing-brightcove-system-status-page.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/working-with-shared-videos.html</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/feed.xml</loc>
+        <lastmod>2019-12-24</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+
+    
+
+</urlset>

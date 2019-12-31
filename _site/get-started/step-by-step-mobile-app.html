@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Step-by-Step - Create and Publish a Mobile App Experience</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/engage-logo.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/get-started/">Getting Started</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Step-by-Step - Create and Publish a Mobile App Experience</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage-trial.html">Getting Started with your Brightcove Engage Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage.html">Getting Started with Brightcove Engage</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-mobile-app-exp.html">Creating and Publishing Mobile App Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-web-exp.html">Creating and Publishing Web Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/using-brightcove-engage-app-prerelease.html">Using the Brightcove Engage Application</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-mobile-app.html">Step-by-Step - Creating and Publishing a Mobile App Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-web-exp.html">Step-by-Step Creating and Publishing a Web Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-training-videos.html">Brightcove Engage Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/docs/">Documentation <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/videos/">Managing Videos <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties-using-quick-edit.html">Editing Video Properties with Quick Edit</a></li>
+                        
+                        <li><a href="/docs/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
+                        
+                        <li><a href="/docs/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                        
+                        <li><a href="/docs/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
+                        
+                        <li><a href="/docs/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                        
+                        <li><a href="/docs/videos/configuring-video-availability.html">Configuring Video Availability</a></li>
+                        
+                        <li><a href="/docs/videos/exporting-video-data.html">Exporting Video Data</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/experiences/">Creating Experiences <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-collections.html">Managing Collections</a></li>
+                        
+                        <li><a href="/docs/experiences/editing-experience-details.html">Editing Experience Details</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        
+                        <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-mobile-app-experiences.html">Styling Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-web-experiences.html">Styling Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-mobile-app-experience.html">Previewing and Publishing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-web-experience.html">Previewing and Publishing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-logo-mobile-app-experience.html">Adding a Logo to Mobile App Experience Pages</a></li>
+                        
+                        <li><a href="/docs/experiences/customizing-content-web-experience-pages.html">Customizing the Content of Web Experience Pages</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/analytics/">Reviewing Analytics <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/admin/">Administering Accounts <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-information.html">Managing Account Information</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-video-fields.html">Managing Video Fields</a></li>
+                        
+                        <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Step-by-Step: Creating and Publishing a Mobile App Experience</h1>
+  <summary>This topic provides a set of steps you can follow to create and publish a Mobile App experience  using Brightcove Engage&trade;.</summary>
+  <section class="bcls-section">
+    <p>After completing this topic, you should be able to:</p>
+    <ul>
+      <li>Use Brightcove Engage to create a new Mobile App experience</li>
+      <li>Add videos to an  experience</li>
+      <li>Customize an experience</li>
+      <li>Preview and publish an experience</li>
+      <li>Install the Brightcove Engage app on a device and access an experience</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: For a step-by-step guide to creating a Web experience, see <a href="step-by-step-web-exp.html">Step-by-Step: Creating and Publishing a Web  Experience</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="audience">Audience</h2>
+    <p>Anyone who needs to create native mobile apps to display corporate video content.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="prereq">Prerequisites</h2>
+    <ul>
+      <li>Access to Brightcove Engage</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="setup">Before you get started</h2>
+    <p>This step-by-step guide will use the videos that are included with the Brightcove Engage trial account. Feel free to <a href="/docs/videos/uploading-videos.html">upload</a> and use your own videos.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>If you are using your own videos, you should <a href="/docs/videos/creating-and-managing-playlists.html">create several playlists</a> to organize the videos.</li>
+      <li>Create one playlist called <strong>Featured Video</strong> that contains one video. The featured video will appear at the top of the app when opened.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="install">Installing the Brightcove Engage app</h2>
+    <p>The Brightcove Engage mobile app is required to view  published Mobile App experiences. Follow these steps to install the app.</p>
+    <p>For pre-release users, directions on installing the apps are <a href="/get-started/using-brightcove-engage-app-prerelease.html">here</a>.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Open the <strong>App Store</strong> (iOS) or the <strong>Google Play Store</strong> (Android) on your device.</li>
+      <li>Search for the <strong>Brightcove Engage</strong> app.</li>
+      <li>Download and install the app on your device.</li>
+    </ol>
+    <p>The app will be used later after publishing a Mobile App experience</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a Mobile App experience</h2>
+    <p>To create a Mobile App experience using Brightcove Engage, you will complete the following tasks:</p>
+    <ul>
+      <li><a href="#create">Create a new  experience</a></li>
+      <li><a href="#details">Edit the site details</a></li>
+      <li><a href="#logo">Add a logo to the main page</a></li>
+      <li><a href="#addvideos">Create collections and add videos to the collections</a></li>
+      <li><a href="#preview">Preview the experience</a></li>
+      <li><a href="#style">Customize the  style</a></li>
+      <li><a href="#publish">Publish the experience</a></li>
+      <li><a href="#device">Access the experience on a device</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a new  experience</h2>
+    <p>To create a new Mobile App experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Login to Brightcove Engage.</li>
+      <li>Click <strong>Projects</strong> in the top navigation and then click the <strong>Experiences</strong> link.</li>
+      <li>If any experiences have been created, they will be listed. Click <strong>New Experience</strong>. If no experiences have been created, you will be directed to the Create Experience page.</li>
+      <li>Locate the <strong>Mobile App </strong> template and click <strong>Choose</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/choose-mobile-app-template.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: Once you select a template it can't be changed. For more information  templates, see the <a href="/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a> topic.</aside>
+      </li>
+      <li>Enter <strong>Sample Mobile App</strong> for the <strong>Experience Title</strong>. For the <strong>Pre-Populate experience?</strong> setting, select <strong>No thanks</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/new-sample-mobile-app.png" /></figure>
+      </li>
+      <li>Click <strong>Create Experience</strong>.</li>
+    </ol>
+    <p>The Experience Editor will open. The Experience Editor is used to customize the experience and provides the ability to  add videos, choose styles and configure other settings. All of the customization settings are accessed using the left navigation menu.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-left-nav.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="details">Editing the site details</h2>
+    <p>The experience title, description and language settings can be edited using the Experience Editor.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Click <strong>OVERVIEW </strong>in the left navigation.</li>
+      <li>For the <strong>Experience Description</strong>, add <strong>Sample Mobile App Experience</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-edit-details.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="logo">Adding a logo to the main page</h2>
+    <p>Each  experience is comprised of a set  of page templates. The page templates that are provided depend upon the template that was selected when the experience was first created. The Mobile App template provides <strong>Home</strong>, <strong>Collections</strong>, <strong>Video Details</strong>, <strong>Search</strong> and <strong>Profile</strong> page templates. These pages can be seen in the left margin as part of the <strong>PAGES</strong> menu.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-page-templates.png" /></figure>
+    <p>The Mobile App template provides the ability to add a logo to the Home page. For  information on adding a logo, see <a href="/docs/experiences/adding-logo-mobile-app-experience.html">Adding a Logo to a Mobile App Experience</a>.</p>
+    <p>To add a logo to the Home page, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Click <strong>PAGES</strong> in the left navigation.</li>
+      <li>Click the <strong>Home</strong> page in the left margin.</li>
+      <li>Click on the <strong>Add Logo</strong> link.</li>
+      <li>Click <strong>browse</strong> and then browse and select an image to use in the header.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-add-logo.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Verify that the image appears in the experience preview.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-logo-preview.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="addvideos">Creating collections and adding videos to the collections</h2>
+    <p>Using the Experience Editor, you can select which videos to display in the experience. When creating experiences, videos are organized into collections. Collections are created based upon video metadata and can include:</p>
+    <ul>
+      <li>Playlists</li>
+      <li>Keywords</li>
+      <li>Custom metadata</li>
+      <li>Tags</li>
+    </ul>
+    <p>When creating Mobile App experiences, the first video in the first collection is used as the featured video. The featured video appears at the top of the application.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/add-videos-featured-video.png" /></figure>
+    <p>When creating collections for Mobile App experiences, Brightcove recommends creating a <strong>Featured Video</strong> collection as the first collection. By assigning a manual playlist to the  Featured Video collection, the featured video can be easily be changed by editing the manual playlist using the <strong>Videos</strong> page. This also allows you to make changes to the featured video without needing to edit and republish the experience.</p>
+    <p>For more information on creating collections and adding videos to an experience, see <a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a>.</p>
+    <p>To add videos to the experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Click <strong>VIDEOS</strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-collections-empty.png" /></figure>
+      </li>
+      <li>Name the first collection <strong>Featured Video</strong> and then press <strong>enter</strong>.</li>
+      <li>Click the collection name to open the collection editor.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-featured-video.png" /></figure>
+      </li>
+      <li>Select <strong>Playlist</strong> for the criteria.</li>
+      <li>Click the <strong>Featured Video</strong> playlist. The video(s) in that playlist will appear in the videos list. Click <strong>Save</strong>.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: The <strong>Featured Video</strong> playlist was created in the <a href="#setup">Before you get started</a> section above.</aside>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/select-featured-video.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: When using a playlist video assignment, the order of the videos is based upon the playlist settings that were set in the <strong>Videos</strong> page.</aside>
+      </li>
+      <li>Create another collection named <strong>Welcome Aboard!</strong> using the Welcome Aboard! playlist as the criteria.</li>
+      <li>Create another collection named <strong>CEO Updates</strong> using the CEO Updates playlist as the criteria.
+        <figure class="bcls-figure"></figure>
+      </li>
+      <li>Confirm that 3 collections have been created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-all-collections.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: You can change the order of the collections by clicking and dragging the collection to a new position.</aside>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="preview">Previewing the experience</h2>
+    <p>Previewing a Mobile App experience lets you see how it will appear on mobile devices. A quick preview can be done by clicking on the page templates that appear under the <strong>PAGES</strong> navigation item. Note that when using this preview option, the videos will not play but you can get a view of the layout.</p>
+    <p>The experience can also be previewed in a new browser tab or a shareable link can be generated so others can preview. For more information on previewing and publishing a Mobile App experience, see <a href="/docs/experiences/previewing-publishing-mobile-app-experience.html">Previewing and Publishing a Mobile App Experience</a>.</p>
+    <p>To preview the experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>While editing the site using the Experience Editor, click <strong>Preview</strong> and then click <strong>Responsive Preview</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/responsive-preview.png" /></figure>
+      </li>
+      <li>The preview will open in a new browser tab.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-preview.png" /></figure>
+      </li>
+      <li>Close the site preview tab.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="style">Customizing the style</h2>
+    <p>The Style settings can be used to customize the  colors that are used on the experience. For more information on changing the style for Mobile App experiences, see <a href="/docs/experiences/styling-mobile-app-experiences.html">Styling Mobile App Experiences</a>.</p>
+    <p>To change the  style, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Click <strong> STYLE </strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-style.png" /></figure>
+      </li>
+      <li>A <strong>Theme</strong> is a set of colors that can be applied to a template. Select the <strong>Light</strong> theme.</li>
+      <li>To change a color, click on the associated color circle.</li>
+      <li>Use the slider below the color square to select a color range.</li>
+      <li>Click in the square to select a shade of the desired color. Color can also be set by entering the appropriate hex code, RGB value or HSV (hue, saturation, lightness) value  into the text control.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-select-color.png" /></figure>
+      </li>
+      <li>Click the <strong>&lt; Back to Experience</strong> link at the top of the style menu.</li>
+    </ol>
+    <p>To reset the color back to its original value, click the left arrow next to the color circle.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="publish">Publishing the experience</h2>
+    <p>Mobile App experiences must be published before they can be accessed o mobile devices. For  information on previewing and publishing a Mobile App  experience, see <a href="/docs/experiences/previewing-publishing-mobile-app-experience.html">Previewing and Publishing a Mobile App Experience</a>.</p>
+    <p>To publish the experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>From the Experience Editor, click <strong>Publish</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-publish.png" /></figure>
+      </li>
+      <li>On the Publish this Mobile Application dialog, click <strong>Publish Now</strong> to confirm the  publication.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-publish-done.png" /></figure>
+      </li>
+    </ol>
+    <p>The Access Key will be needed to access the experience on  mobile devices.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="device">Accessing the experience on a device</h2>
+    <p>Once the Mobile App experience has been published, the Access Key is needed to access the experience on a mobile device.</p>
+    <p>To access the experience on a mobile device, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>If you don't have the Access Key, the Access Key is displayed as part of the project properties on the Projects homepage. Click on the experience to select it. The Access Key will be displayed in the properties section.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-access-key.png" /></figure>
+      </li>
+      <li>Open the Brightcove Engage app on your device. Enter the <strong>Access Key</strong> and then click <strong>Next</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-on-device.png" /></figure>
+      </li>
+    </ol>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 09 Dec 2019
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

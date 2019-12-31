@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Adding Text Tracks to a Video</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/engage-logo.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/videos/">Managing Videos</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Adding Text Tracks to a Video</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage-trial.html">Getting Started with your Brightcove Engage Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage.html">Getting Started with Brightcove Engage</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-mobile-app-exp.html">Creating and Publishing Mobile App Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-web-exp.html">Creating and Publishing Web Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/using-brightcove-engage-app-prerelease.html">Using the Brightcove Engage Application</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-mobile-app.html">Step-by-Step - Creating and Publishing a Mobile App Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-web-exp.html">Step-by-Step Creating and Publishing a Web Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-training-videos.html">Brightcove Engage Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/docs/">Documentation <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/videos/">Managing Videos <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties-using-quick-edit.html">Editing Video Properties with Quick Edit</a></li>
+                        
+                        <li><a href="/docs/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
+                        
+                        <li><a href="/docs/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                        
+                        <li><a href="/docs/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
+                        
+                        <li><a href="/docs/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                        
+                        <li><a href="/docs/videos/configuring-video-availability.html">Configuring Video Availability</a></li>
+                        
+                        <li><a href="/docs/videos/exporting-video-data.html">Exporting Video Data</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/experiences/">Creating Experiences <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-collections.html">Managing Collections</a></li>
+                        
+                        <li><a href="/docs/experiences/editing-experience-details.html">Editing Experience Details</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        
+                        <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-mobile-app-experiences.html">Styling Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-web-experiences.html">Styling Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-mobile-app-experience.html">Previewing and Publishing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-web-experience.html">Previewing and Publishing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-logo-mobile-app-experience.html">Adding a Logo to Mobile App Experience Pages</a></li>
+                        
+                        <li><a href="/docs/experiences/customizing-content-web-experience-pages.html">Customizing the Content of Web Experience Pages</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/analytics/">Reviewing Analytics <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/admin/">Administering Accounts <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-information.html">Managing Account Information</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-video-fields.html">Managing Video Fields</a></li>
+                        
+                        <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Adding Text Tracks to a Video</h1>
+  <summary>In this topic you will learn how to add text tracks to a video.</summary>
+  <section class="bcls-section">
+    <p>The text tracks properties can be configured to provide captions for a video. Captions provide additional or interpretive information to individuals who wish to access it. Captions are necessary so the deaf and hard of hearing can access the audio portion of video presentations. To display captions for a video, you need to complete the following tasks:</p>
+    <ul>
+      <li><a href="#captionsfile">Create caption files</a></li>
+      <li><a href="#texttrack">Configure the text track properties</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="captionsfile">Creating caption files</h2>
+    <p>To add captions to a video, you first need to create a captions file. Web Video Text Tracks Format (WebVTT), SRT and DFXP formats are supported. The WebVTT file format (shown below) is plain text and contains time text data followed by the desired caption or subtitle text.</p>
+    <pre>
+WEBVTT
+00:00:00.000 --&gt; 00:00:07.080 align:middle line:90%
+
+00:00:07.080 --&gt; 00:00:10.280 align:middle line:84%
+Hi, I'm Bob Bailey, a Learning
+Specialist with Brightcove.
+
+00:00:10.280 --&gt; 00:00:12.780 align:middle line:84%
+In this video, you'll learn
+about how Brightcove Engage is
+
+00:00:12.780 --&gt; 00:00:14.940 align:middle line:84%
+organized and get a
+brief overview of what
+
+00:00:14.940 --&gt; 00:00:17.490 align:middle line:90%
+you can accomplish using it.
+</pre>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Caption file names should only include letters (upper or lower case), numbers, dashes (-) and underscores (_) .</aside>
+    <p>For more information on the WebVTT format, see <a href="http://dev.w3.org/html5/webvtt/">this link</a>. You should have a separate caption file for each language you need to support. While there are many third-party tools to help create captions files, Brightcove has several partners that provide transcription, captioning and translation services. For a complete list of Brightcove partners, visit the <a href="http://www.brightcove.com/en/partners/find-partner">Partners</a> section of our website.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="texttrack">Configuring the text track properties</h2>
+    <p>Once the caption files have been created, they can be uploaded and hosted by Brightcove or reside at an internet accessible URL.</p>
+    <p>To view and edit the text track properties for a video, follow these steps:</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Open the <strong>Videos</strong> page.</li>
+      <li>Click the video title link to open the video properties page.</li>
+      <li>Locate the <strong>Text Tracks</strong> section and click <strong>Edit</strong> or double-click in the section.</li>
+      <li>Select if the text track file will be uploaded to Brightcove or hosted on an external URL.
+        <ul>
+          <li><strong>File Upload</strong> - Click <strong>Browse</strong> and select the text track file from the file system. The file will be uploaded to Brightcove.</li>
+          <li><strong>URL Upload</strong> - Enter the public URL where the text track file resides and then click <strong>Upload</strong>. The file will be uploaded to Brightcove.</li>
+          <li><strong>Remote URL</strong> - Enter the public URL where the text track file resides. The URL must be less than 250 characters. Captions will be loaded from the remote URL.
+            <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are hosting captions files on your own server, make sure the file is located at a publicly accessible URL. The server hosting the captions file should also have Cross-Origin Resource Sharing (CORS) enabled. </aside>
+            <aside class="bcls-aside bcls-aside--information language-editable">Note: Text track file names with parentheses, question marks, quotation marks, spaces and other special characters will silently fail when uploading. Brightcove recommends using file names without special characters.</aside>
+            <aside class="bcls-aside bcls-aside--information language-editable">Note: Text track for videos shared to the account can't be edited.</aside>
+          </li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-track-properties.png" /></figure>
+      </li>
+      <li>The <strong>Language</strong> field should contain the <a href="http://www.w3schools.com/tags/ref_language_codes.asp">two-letter language code</a> that specifies the language of the track text data.</li>
+      <li>Enter the appropriate <strong>Label</strong> for the caption file. The label is displayed inside the video player and allows the viewer to select a language. If no label is supplied, the language code is displayed.</li>
+      <li>Select the <strong>Kind</strong> of text track. Options include:
+        <ul>
+          <li><strong>Captions</strong> - Similar to subtitles, but may also include sound effects and other audio information</li>
+          <li><strong>Subtitles</strong> - The transcription or translation of the dialogue</li>
+          <li><strong>Descriptions</strong> - Intended to be a separate text file that describes the video through a screen reader</li>
+          <li><strong>Chapters</strong> - Intended to help the user navigate through the video</li>
+          <li><strong>Metadata</strong> - Information and content about the video which isn’t intended to be displayed to the viewer by default (though you may wish to do so using JavaScript)</li>
+        </ul>
+      </li>
+      <li>Enter the <strong>MIME Type</strong> for the text track file. Selecting <strong>default</strong> will display the captions when the video is played.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-track-english.png" /></figure>
+      </li>
+      <li>Check <strong>Default (Auto Display)</strong> to make the track the default. Most browsers will attempt to display the default text track first but language and accessibility settings may override the default setting.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: The default setting does not work with IE11.</aside>
+      </li>
+      <li>Click <strong>Add Text Track</strong> to save the text track information.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-track-added.png" /></figure>
+      </li>
+      <li>Click <strong>Add Text Track</strong> to add another text track or<strong> Save</strong> to save the text tracks.
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: Changes made to the text track properties may take up to 15 minutes to appear.</aside>
+      </li>
+    </ol>
+    <p>If any text tracks have been designated as the default, they will appear in <strong>bold</strong>. To delete a text track, click the delete icon (<img alt="" src="/assets/images/videos/delete-icon.png" />) next to the text track.</p>
+    <p>Videos with text tracks will display a CC button on the player chrome. Click the <strong>CC</strong> button to select a caption language and display the captions.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/videos/text-track-in-player.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="limitations">Limitations</h2>
+    <p>Captions are supported on the following device types and operating systems.</p>
+    <ul>
+      <li>iOS 10+</li>
+      <li>Android 7+</li>
+      <li>Internet Explorer 11+</li>
+      <li>The latest Chrome, Safari, and Firefox browsers on desktops</li>
+      <li>There is no technical limit to the length of a caption, but in order for the full caption to be visible, the player must be large enough to display that much text</li>
+    </ul>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 19 Dec 2019
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

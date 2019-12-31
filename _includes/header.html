@@ -1,0 +1,24 @@
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/engage-logo.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      {% if page.parent %}
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      {% endif %}
+      {% if page.grandparent %}
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      {% endif %}
+      {% if page.name == "index.html" and page.parent == "Documentation" %}
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      {% endif %}
+      {% if page.parent and page.parent != "Home" and page.name != "index.html" %}
+      <li class="breadcrumb-item"><a href="{{ page.dir }}">{{ page.parent }}</a></li>
+      {% endif %}
+      <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+    </ol>
+  </nav>
+</header>

@@ -1,0 +1,29 @@
+---
+layout: null
+search: exclude
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/assets/css/site/sitemap.css"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/site/sitemap.xsl"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    {% for page in site.pages %}
+    <url>
+        <loc>{{ site.site_url }}{{page.url}}</loc>
+        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
+
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.site_url }}{{post.url}}</loc>
+        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
+
+</urlset>
