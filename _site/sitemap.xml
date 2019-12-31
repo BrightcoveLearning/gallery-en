@@ -27,6 +27,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <lastmod>2019-12-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/assets/css/site/sitemap.css</loc>
         <lastmod>2019-12-31</lastmod>
         <changefreq>daily</changefreq>
@@ -49,6 +56,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/assets/css/site/styles.css</loc>
+        <lastmod>2019-12-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/template.html</loc>
         <lastmod>2019-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

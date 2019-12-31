@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Brightcove Gallery Documentation</title>
+  <title></title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -37,7 +37,7 @@
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery Documentation</li>
+      <li class="breadcrumb-item active" aria-current="page"></li>
     </ol>
   </nav>
 </header>
@@ -241,86 +241,122 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
+---
+title: Doc Title
+parent: Parent Section
 <article class="bcls-article">
-  <h1>Brightcove Gallery&trade; Documentation</h1>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-location-arrow"></i> </div>
-      <div class="card-content">
-        <h2><a href="/get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Gallery?</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/experiences/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-phone-laptop"></i> </div>
-      <div class="card-content">
-        <h2 id="experiences"><a href="/docs/experiences/index.html">Creating Experiences</a></h2>
-        <p>Learn how to create Gallery Experiences.</p>
-        <ul>
-          <li>Portals</li>
-          <li>In-Page</li>
-          <li>Live</li>
-          <li>Landing Page</li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Configuring Settings</a></h2>
-        <p>Learn how to configure Gallery Settings.</p>
-        <ul>
-          <li>Selecting a Default Player</li>
-          <li><a href="/docs/videos/index.html">View All...</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Developers</a></h2>
-        <p>Learn how to develop using the Gallery APIs.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/overview-page-experience-api">Overview: In-Page Experience API</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html">In-Page Experience API Reference (REST)</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience API (JavaScript API)</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-bell"></i> </div>
-      <div class="card-content">
-        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
-        <p>Learn about new product features</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-question-circle"></i> </div>
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
-  </section>
-</article>
+  <h1>Doc Title</h1>
+  <summary>Doc summary</summary>
+            <section class="bcls-section">
+                <h2 id="section_title">Concept section title (&lt;h2 class="bcls-section__title"&gt;)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+                <aside class="bcls-aside bcls-aside--information">This is an INFORMATION bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--information"&gt;)</strong> - it's not best practices or a warning, just information about the concept that you want to call out. Any of the bcls-aside types can be used anywhere - tables, lists, whatever. <strong>Note:</strong> is automatically included at the beginning, so you don't need to include that in your text.</aside>
+                <aside class="bcls-aside bcls-aside--tip">This is a TIP bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--tip"&gt;)</strong> - it's about best practices or something like that. <strong>Tip:</strong> is automatically included at the beginning, so you don't need to include that in your text.</aside>
+                <aside class="bcls-aside bcls-aside--warning">This is a WARNING bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--warning"&gt;)</strong> - it's a warning about a gotcha or a limitation. <strong>Warning:</strong> is automatically included at the beginning, so you don't need to include that in your text.
+                    <p>Notice that you can embed other HTML elements of any kind in an bcls-aside.</p>
+                    <ul>
+                        <li>Like lists</li>
+                        <li>For example</li>
+                    </ul>
+                </aside>
+                <table class="bcls-table">
+                    <caption class="bcls-caption--table">Table Caption (optional <strong>&lt;caption class="bcls-caption--table"&gt;</strong>)</caption>
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Images sample</h3>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="../assets/sample-image.png" alt="Image description (should match caption if any)">
+                    <figcaption class="bcls-caption--image">Image Caption (optional <strong>&lt;figcaption class="bcls-caption--image"&gt;</strong>): image with border</figcaption>
+                </figure>
+                <figure class="bcls-figure">
+                    <img class="bcls-image--no-border" src="../assets/sample-image-no-border.png" alt="sample image with no border">
+                    <figcaption class="bcls-caption--image">Sample image with no border <strong>(&lt;img class="bcls-image--no-border"...)</strong></figcaption>
+                </figure>
+                <h3>Code sample</h3>
+<pre class="line-numbers"><code class="language-javascript">var foo = 'bar';
+function doSomething() {
+  console.log('in the function')
+}</code></pre>
+            </section>
+            <section class="bcls-section">
+                <h2 id="section2_title">Section2 title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <code>some inline code</code> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <fieldset class="bcls-fieldset">
+                    <legend>Fieldset Legend <strong>(&lt;legend&gt;)</strong></legend>
+                    <p>We're inside a <strong>(&lt;fieldset class="bcls-fieldset"&gt;)</strong></p>
+                    <p>
+                        Text input: <input id="some_text_input" type="text" class="bcls-textinput">
+                    </p>
+                    <p>
+                        Selector: <select name="some_select" id="" class="bcls-select">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="check1" value="one" class="bcls-checkbox" checked="checked" /> <label class="bcls-label" for="check1">Checkbox <strong>(&lt;input type="checkbox" id="check1" value="one" class="bcls-checkbox"...&gt;&lt;label class="bcls-label" for="check1"&gt;)</strong></label>
+                    </p>
+                    <p>
+                        <input type="radio" name="group1" id="radio1" value="radio1"> <label for="radio1" class="bcls-label">radio1 <strong>(&lt;input type="radio" name="group1" id="radio1" value="radio1"&gt; &lt;label for="radio1" class="bcls-label"&gt;radio1&lt;/label&gt;)</strong></label><br>
+                        <input type="radio" name="group1" id="radio2" value="radio2" checked> <label for="radio2" class="bcls-label">radio2</label><br>
+                        <input type="radio" name="group1" id="radio3" value="radio3"> <label for="radio3" class="bcls-label">radio3</label>
+                    </p>
+                    <p>
+                        <button id="button1" class="bcls-button">Button</button> <strong>(&lt;button id="button1" class="bcls-button"&gt;)</strong>
+                    </p>
+                </fieldset>
+            </section>
+            <section id="Task_section_title" class="bcls-section bcls-section--task">
+                <h2 class="bcls-section__title">Task section title</h2>
+                <p>Introductory paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Steps</h3>
+                <h4>Steps section subheading</h4>
+                <ol class="bcls-tasklist">
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                </ol>
+                <h4>Steps section subheading</h4>
+                <ol class="bcls-tasklist">
+                    <li>Step 3</li>
+                    <li>Step 4</li>
+                </ol>
+            </section>
+            <section id="Related_topics" class="bcls-section">
+              <h2>Related topics</h2>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+              </ul>
+            </section>
+          </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -409,6 +445,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>
