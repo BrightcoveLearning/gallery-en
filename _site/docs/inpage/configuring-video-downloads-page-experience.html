@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Customizing the Video Settings for a Portal Experience</title>
+  <title>Configuring Video Downloads for an In-Page Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,9 +41,9 @@
       
       
       
-      <li class="breadcrumb-item"><a href="/docs/experiences/portal/">Experiences</a></li>
+      <li class="breadcrumb-item"><a href="/docs/inpage/">In-Page Experiences</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Customizing the Video Settings for a Portal Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Configuring Video Downloads for an In-Page Experience</li>
     </ol>
   </nav>
 </header>
@@ -248,60 +248,63 @@
   <!-- bootstrap layout -->
 
 <article class="bcls-article">
-  <h1>Customizing the Video Settings for a Portal Experience</h1>
-  <summary>In this topic you will learn how to customize the video settings for a portal experience.</summary>
+  <h1>Configuring Video Downloads for an In-Page Experience</h1>
+  <summary>In this topic you will learn how to provide the ability for viewers to download specific videos from an In-Page experience. If you want to allow <strong>all</strong> videos in the experience to be downloadable, these steps are not required.</summary>
   <section class="bcls-section">
-    <p>To customize the Video settings, edit the portal experience and click <strong>VIDEO AND PLAYBACK &gt; Video</strong> in the left navigation. The Video settings allow the following to be configured for a portal experience:</p>
-    <ul>
-      <li><a href="#sorting">Sorting</a></li>
-      <li><a href="#download">Video download</a></li>
-      <li><a href="#link">Related link</a></li>
-      <li><a href="#longdesc">Long description</a></li>
-      <li><a href="#security">Video security</a></li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-video-settings.png" /></figure>
-    <p>Make sure you republish the experience after making any changes to the Video settings.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sorting">Enabling video sorting</h2>
-    <p><strong>Enable sorting of videos (not available for playlist-based collections)</strong> - If checked, viewers will have the ability to sort videos in the collection. Sorting is not available for collections that were created using playlists. This setting is available only with the following templates:</p>
-    <ul>
-      <li>Catalogue</li>
-      <li>Discovery</li>
-      <li>Live Event Portal</li>
-      <li>Marquee</li>
-      <li>Mosaic</li>
-      <li>Publisher</li>
-      <li>Classic</li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-sort.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="download">Configuring video downloads</h2>
-    <p>The <strong>Video Download</strong> settings provide the ability for viewers to download videos. The download link can be used to download the highest quality rendition.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-download.png" /></figure>
-    <p>The following options are available:</p>
-    <ul>
-      <li><strong>Do not allow video downloads</strong> - Video downloads are not permitted</li>
-      <li><strong>Provide a download link for each video</strong> - A download link will be provided for each video</li>
-      <li><strong>Provide a download link based upon a custom field value</strong> - Video downloads will be provided based upon a custom field value assigned to the video. When selecting this option, you define a custom field and then set that field to <strong>true</strong> for any video that can be downloaded. For complete steps on configuring a download link for each video, see <a href="/node/14941">Downloading Videos from a Portal Experience</a>.</li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: The video must have at least one MP4 rendition available.</aside>
+    <p>Gallery In-Page experiences can be configured to display a download link allowing viewers to download video content. In-Page experiences can be configured so that a download link appears for <strong>all videos</strong> or <strong>specific videos based upon a custom field value</strong>. When a video is downloadable, a download link will appear next to the video. The highest quality rendition available is downloaded.</p>
     <aside class="bcls-aside bcls-aside--information">Note: Video downloads are not supported on iOS devices.</aside>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16829-download-example.png" /></figure>
+    <p>To provide a download link for all the videos in an experience, see the <a href="node/16793#videosettings">Configuring the Settings for an In-Page Experience</a> documentation. If you want to selectively allow only designated videos to be downloaded, you need to perform the following steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable"><a href="#customfield">Create a custom field to indicate downloadable content</a></li>
+      <li class="language-editable"><a href="#tag">Assign an appropriate value to the custom field</a></li>
+      <li class="language-editable"><a href="#configure">Configure the in-page experience to allow downloads</a></li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="link">Displaying related links</h2>
-    <p><strong>Show related link for each video</strong> - If checked, will display the related link for the video next to the video name. For more information on configuring a related link for a video, see <a href="/node/15482">Editing Video Properties using the Media Module</a>.</p>
+    <h2 id="customfield">Creating a custom field to indicate downloadable content</h2>
+    <p>Videos that can be downloaded are indicated by setting the value of a custom field. Start by creating a custom field in your account that will be used to indicate that a video can be downloaded.</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Login to Video Cloud Studio.</li>
+      <li class="language-editable">In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li class="language-editable">Click <strong>Add Custom Fields</strong>.</li>
+      <li class="language-editable">Create a new custom field that will be used to indicate whether a video can be downloaded or not. The name and value assigned do not matter. In the example below, a new custom field <strong>downloadable</strong> is being created. The <strong>Type</strong> is set to <strong>List</strong>, with 2 values, <strong>true</strong> and <strong>false</strong>. Videos that can be downloaded will have this value set to <strong>true</strong> as part of the video properties.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node14941-custom-field.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Save Changes</strong> and then <strong>Save</strong>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="longdesc">Displaying the long description</h2>
-    <p><strong>Use long description (if available) on video detail page</strong> - If checked, the video long description will be displayed on the video detail page (instead of the short description).</p>
+    <h2 id="tag">Assigning custom field values</h2>
+    <p>Any video that can be downloaded should have a value assigned to the custom field that was created.</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Open the <strong>Media</strong> module.</li>
+      <li class="language-editable">To mark a video as downloadable, click on the video name to open the video properties.</li>
+      <li class="language-editable">Locate the <strong>Custom Fields</strong> section and click <strong>Edit</strong>.</li>
+      <li class="language-editable">Set the value of custom field as appropriate. In this example, the value of <strong>Downloadable</strong> is set to <strong>true</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node14941-assign-custom-field.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Save</strong>.</li>
+      <li class="language-editable">Edit the video properties for any additional videos as required.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: Use the <a href="node/15923">Quick Edit feature</a> in the Media module to edit the custom field values for multiple videos simultaneously.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="security">Configuring video security</h2>
-    <p><strong>Restrict videos on site to those selected through custom search or smart playlist</strong> - If checked, when <a href="/node/18668">search is enabled</a> for the experience, only the videos in collections will be searched (search will only return videos that were added to a collection using a smart playlist or using a custom search). Also, if viewer tries to access a video that has been removed from a playlist, they will be redirected back to the experience home page.</p>
-    <p>If this option is not checked, when search is enabled for an experience, all videos in the Video Cloud account are searched (unless the include/exclude tag option is used).</p>
-    <aside class="bcls-aside bcls-aside--information">Note: If this option doesn't appear, contact your Brightcove Account Manager to get it enabled.</aside>
+    <h2 id="configure">Configuring an in-page experience to allow downloads</h2>
+    <p>To configure an in-page experience to allow video downloads based upon a custom field value, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Open the Gallery module.</li>
+      <li class="language-editable">Locate your experience and click <strong>Edit</strong>.</li>
+      <li class="language-editable">Click <strong>SETTINGS &gt; Video</strong> in the left navigation.</li>
+      <li class="language-editable">In the <strong>Video Downloads</strong> section, select the <strong>Provide a download link for each video based upon a custom field value</strong> option.</li>
+      <li class="language-editable">Enter the custom field name and the value that you created in step 4 above. In this example, the custom field created was named <strong>downloadable</strong> and the value was set to <strong>true</strong> for videos that can be downloaded.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16829-download-settings.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Save</strong> and then republish the experience.</li>
+      <li class="language-editable">Confirm that a download link appears for any video(s) that have the <strong>downloadable</strong> custom field set to <strong>true</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16829-download-example.png" /></figure>
+      </li>
+    </ol>
   </section>
 </article>
 

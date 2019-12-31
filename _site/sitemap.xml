@@ -20,7 +20,21 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/experiences/portal/customizing-video-settings-portal-experience.html</loc>
+        <loc>https://engage.support.brightcove.com/docs/inpage/configuring-details-page-experience.html</loc>
+        <lastmod>2019-12-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/inpage/configuring-video-downloads-page-experience.html</loc>
+        <lastmod>2019-12-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-video-settings-portal-experience.html</loc>
         <lastmod>2019-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -48,7 +62,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
+        <loc>https://engage.support.brightcove.com/docs/</loc>
         <lastmod>2019-12-31</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
