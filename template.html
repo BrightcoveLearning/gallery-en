@@ -1,0 +1,107 @@
+---
+title: Doc Title
+parent: Parent Section
+<article class="bcls-article">
+  <h1>Doc Title</h1>
+  <summary>Doc summary</summary>
+            <section class="bcls-section">
+                <h2 id="section_title">Concept section title (&lt;h2 class="bcls-section__title"&gt;)</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+                <aside class="bcls-aside bcls-aside--information">This is an INFORMATION bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--information"&gt;)</strong> - it's not best practices or a warning, just information about the concept that you want to call out. Any of the bcls-aside types can be used anywhere - tables, lists, whatever. <strong>Note:</strong> is automatically included at the beginning, so you don't need to include that in your text.</aside>
+                <aside class="bcls-aside bcls-aside--tip">This is a TIP bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--tip"&gt;)</strong> - it's about best practices or something like that. <strong>Tip:</strong> is automatically included at the beginning, so you don't need to include that in your text.</aside>
+                <aside class="bcls-aside bcls-aside--warning">This is a WARNING bcls-aside <strong>(&lt;aside class="bcls-aside bcls-aside--warning"&gt;)</strong> - it's a warning about a gotcha or a limitation. <strong>Warning:</strong> is automatically included at the beginning, so you don't need to include that in your text.
+                    <p>Notice that you can embed other HTML elements of any kind in an bcls-aside.</p>
+                    <ul>
+                        <li>Like lists</li>
+                        <li>For example</li>
+                    </ul>
+                </aside>
+                <table class="bcls-table">
+                    <caption class="bcls-caption--table">Table Caption (optional <strong>&lt;caption class="bcls-caption--table"&gt;</strong>)</caption>
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>Table Header</th>
+                            <th>Table Header</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Images sample</h3>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="../assets/sample-image.png" alt="Image description (should match caption if any)">
+                    <figcaption class="bcls-caption--image">Image Caption (optional <strong>&lt;figcaption class="bcls-caption--image"&gt;</strong>): image with border</figcaption>
+                </figure>
+                <figure class="bcls-figure">
+                    <img class="bcls-image--no-border" src="../assets/sample-image-no-border.png" alt="sample image with no border">
+                    <figcaption class="bcls-caption--image">Sample image with no border <strong>(&lt;img class="bcls-image--no-border"...)</strong></figcaption>
+                </figure>
+                <h3>Code sample</h3>
+<pre class="line-numbers"><code class="language-javascript">var foo = 'bar';
+function doSomething() {
+  console.log('in the function')
+}</code></pre>
+            </section>
+            <section class="bcls-section">
+                <h2 id="section2_title">Section2 title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <code>some inline code</code> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <fieldset class="bcls-fieldset">
+                    <legend>Fieldset Legend <strong>(&lt;legend&gt;)</strong></legend>
+                    <p>We're inside a <strong>(&lt;fieldset class="bcls-fieldset"&gt;)</strong></p>
+                    <p>
+                        Text input: <input id="some_text_input" type="text" class="bcls-textinput">
+                    </p>
+                    <p>
+                        Selector: <select name="some_select" id="" class="bcls-select">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="check1" value="one" class="bcls-checkbox" checked="checked" /> <label class="bcls-label" for="check1">Checkbox <strong>(&lt;input type="checkbox" id="check1" value="one" class="bcls-checkbox"...&gt;&lt;label class="bcls-label" for="check1"&gt;)</strong></label>
+                    </p>
+                    <p>
+                        <input type="radio" name="group1" id="radio1" value="radio1"> <label for="radio1" class="bcls-label">radio1 <strong>(&lt;input type="radio" name="group1" id="radio1" value="radio1"&gt; &lt;label for="radio1" class="bcls-label"&gt;radio1&lt;/label&gt;)</strong></label><br>
+                        <input type="radio" name="group1" id="radio2" value="radio2" checked> <label for="radio2" class="bcls-label">radio2</label><br>
+                        <input type="radio" name="group1" id="radio3" value="radio3"> <label for="radio3" class="bcls-label">radio3</label>
+                    </p>
+                    <p>
+                        <button id="button1" class="bcls-button">Button</button> <strong>(&lt;button id="button1" class="bcls-button"&gt;)</strong>
+                    </p>
+                </fieldset>
+            </section>
+            <section id="Task_section_title" class="bcls-section bcls-section--task">
+                <h2 class="bcls-section__title">Task section title</h2>
+                <p>Introductory paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>Steps</h3>
+                <h4>Steps section subheading</h4>
+                <ol class="bcls-tasklist">
+                    <li>Step 1</li>
+                    <li>Step 2</li>
+                </ol>
+                <h4>Steps section subheading</h4>
+                <ol class="bcls-tasklist">
+                    <li>Step 3</li>
+                    <li>Step 4</li>
+                </ol>
+            </section>
+            <section id="Related_topics" class="bcls-section">
+              <h2>Related topics</h2>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+              </ul>
+            </section>
+          </article>

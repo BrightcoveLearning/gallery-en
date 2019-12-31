@@ -19,10 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 # local server (for "jekyll serve") will be localhost:{PORT number below}
-port: 7000
+port: 9000
 
 # TODO change title
-title: Brightcove Engage
+title: Brightcove Gallery
 email: training@brightcove.com
 # TODO change description
 description: >- # this means to ignore newlines until "baseurl:"
@@ -35,9 +35,9 @@ site_url: "https://engage.support.brightcove.com"
 # theme: minima
 
 #TODO change product
-product: Brightcove Engage
+product: Brightcove Gallery
 color: rgb(51, 51, 51)
-product_color: rgb(243, 148, 36)
+product_color: rgb(213, 37, 125)
 defaults:
   - 
     scope:
