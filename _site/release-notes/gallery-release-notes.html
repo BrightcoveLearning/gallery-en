@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Brightcove Gallery Documentation</title>
+  <title>Brightcove Gallery&trade; Product Updates</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,10 +34,16 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery Documentation</li>
+      <li class="breadcrumb-item"><a href="/release-notes/">Release Notes</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery&trade; Product Updates</li>
     </ol>
   </nav>
 </header>
@@ -241,90 +247,107 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
 <article class="bcls-article">
-  <h1>Brightcove Gallery&trade; Documentation</h1>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-location-arrow"></i> </div>
-      <div class="card-content">
-        <h2><a href="/get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Gallery?</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/experiences/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-phone-laptop"></i> </div>
-      <div class="card-content">
-        <h2 id="experiences"><a href="/docs/experiences/index.html">Creating Experiences</a></h2>
-        <p>Learn how to create Gallery Experiences.</p>
-        <ul>
-          <li>Portals</li>
-          <li>In-Page</li>
-          <li>Live</li>
-          <li>Landing Page</li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Configuring Settings</a></h2>
-        <p>Learn how to configure Gallery Settings.</p>
-        <ul>
-          <li>Selecting a Default Player</li>
-          <li><a href="/docs/videos/index.html">View All...</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Developers</a></h2>
-        <p>Learn how to develop using the Gallery APIs.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/overview-page-experience-api">Overview: In-Page Experience API</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html">In-Page Experience API Reference (REST)</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience API (JavaScript API)</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-bell"></i> </div>
-      <div class="card-content">
-        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
-        <p>Learn about new product features and updates.</p>
-        <ul>
-          <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
-          <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-question-circle"></i> </div>
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
+  <h1>Brightcove Gallery&trade; Product Updates</h1>
+  <summary>This topic outlines the updates that have been made to the Brightcove Gallery application.</summary>
+  <section class="bcls-section">
+    <p>Release notes are also available for:</p>
+    <ul>
+      <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
+    </ul>
+    <h2>Auto-Play Video Setting</h2>
+    <h4>4 Sep&nbsp;2019</h4>
+    <p>A new <strong>Auto-Play Video</strong> setting has been added and can be used to control playback behavior of videos on detail pages. For information, see <a href="/node/18599">Customizing the Player and Lead Form Settings for a Portal Experience</a>.</p>
+    <h2>Redesigned Gallery Navigation</h2>
+    <h4>27 Sep&nbsp;2018</h4>
+    <p>The navigation menu when editing portal experiences has been redesigned to be more intuitive and consistent with the in-page experience editing environment. For information, see <a href="/node/13554">Using the Site Editor to Customize a Portal Experience</a>.</p>
+    <h2>Search Option Added to Gallery Homepage</h2>
+    <h4>1 Aug 2018</h4>
+    <p>A <strong>Search</strong> box has been added to the Gallery homepage providing the ability to search through the list of experiences. When searching, the following properties will be searched:</p>
+    <ul>
+      <li>Title</li>
+      <li>Description</li>
+      <li>ID</li>
+      <li>Template</li>
+      <li>URLs</li>
+    </ul>
+    <h2>Adding Videos to an In-Page Experience</h2>
+    <h4>18 Jul 2018</h4>
+    <p>When adding videos to an in-page experience, there is now an option to use a playlist reference ID. By using a playlist reference ID, the videos in the experience can easily by changed by re-assigning the reference ID to another playlist using the Media module. The experience doesn't need to be edited and republished when&nbsp;you need to change the videos that appear in the experience. For information, see <a href="/node/16791#useplaylistrefID">Using a playlist reference ID</a>.</p>
+    <h2>Changes to Lead Forms</h2>
+    <h4>15 May 2018</h4>
+    <p>Gallery now uses the Audience module to create and manage lead forms. Audience will collect the lead data and provides a data export option. For information, see <a href="/node/18590">Using a Lead Form with a Portal Experience</a>.</p>
+    <h2>Live Event In-Page Template</h2>
+    <h4>14 May 2018</h4>
+    <p>Gallery now provides a Live Event In-Page template which can be used to deliver live events as part of an In-Page Experience. For information, see <a href="/node/18545">Creating a Live Event In-Page Experience</a>.</p>
+    <h2>Portal Experience Site Settings UI Updates</h2>
+    <h4>13 Apr 2018</h4>
+    <p>The Site Settings UI has been updated to remove the video related settings from the <strong>Custom</strong> dialog to a new <strong>Video</strong> settings dialog. For more information, see <a href="/node/18583">Customizing the Video Settings for a Portal Experience</a>.</p>
+    <h2>Marquee Template Setting</h2>
+    <h4>30 Mar 2018</h4>
+    <p>A new featured video behavior setting has been added to Marquee template. For more information, see <a href="/node/18572">Customizing the Marquee Template Settings</a>.</p>
+    <h2><strong>Custom Header and Footer Option</strong></h2>
+    <h4>30 Mar 2018</h4>
+    <p>It is now possible to include the default header and footer when using a custom header and footer. For more information, see <a href="/node/18667#header_footer">Configuring custom header/footer HTML</a>.</p>
+    <h2><strong>In-Page Experience 3Play Components</strong></h2>
+    <h4>1 Feb 2018</h4>
+    <p>3Play Media interactive transcript components can now be added to an in-page experience. This allows viewers to see a video transcript as a video is played. For more information, see <a href="/node/16818#3play">Adding Components to an In-Page Experience</a>.</p>
+    <h2><strong>In-Page Experience Chat Components</strong></h2>
+    <h4>17 Jan 2018</h4>
+    <p>Chat components can now be added to an in-page experience. For more information, see <a href="/node/16818#chat">Adding Components to an In-Page Experience</a>.</p>
+    <h2><strong>Customized Access Control Page</strong></h2>
+    <h4>28 Nov 2017</h4>
+    <p>The access control page can now be styled so that it is more closely branded with the rest of the site. For more information, see <a href="/node/16450#style">Styling the access control page</a>.</p>
+    <h2><strong>Stylized 404 Pages</strong></h2>
+    <h4>6 Nov 2017</h4>
+    <p>404 pages will now use the styling configured with the site (headers and footers) so they are more closely branded with the rest of the site.</p>
+    <h2>Live Event Template - Background Image Options</h2>
+    <h4>6 Nov 2017</h4>
+    <p>The Live Event template now provides options for how background images are handled. For more information, see <a href="/node/18480">Customizing the Live Event Template Settings</a>.</p>
+    <h2>Collection Metadata</h2>
+    <h4>6 Nov 2017</h4>
+    <p>For all templates (except Marquee) you can now add collection descriptions and it will serve as the metadata description for the category page (for browsers sharing the collection). For more information, see <a href="/node/16505">Adding Video Cloud Videos to a Portal Experience</a>.</p>
+    <h2><strong>API Key No Longer Required</strong></h2>
+    <h4>29 Sep 2017</h4>
+    <p>The API Key is no longer required and has been removed from the Settings page.</p>
+    <h2><strong>Multiple In-Page Experiences on Same Page</strong></h2>
+    <h4>15 Aug 2017</h4>
+    <p>Gallery now supports having multiple instances of the same in-page experience on the same page. This allows you to create one experience and then dynamically pass in a playlist or list of videos to display. For more information, see <a href="/node/18360">Using Dynamic Video Overrides in an In-Page Experience</a>.</p>
+    <h2><strong>Event Experience Now Supports using Reference ID</strong></h2>
+    <h4>9 Aug&nbsp;2017</h4>
+    <p>When configuring the live event state for an event experience, the live video asset can now be specified using a reference ID. Using a reference ID provides more flexibility as the reference ID can be assigned to the live video asset without having to make changes to the experience. For more information, see <a href="/node/15692">Creating the Live Event State for an Event Experience</a>.</p>
+    <h2><strong>Additional In-Page Experience Player Setting</strong></h2>
+    <h4>27 Jul&nbsp;2017</h4>
+    <p>A new player setting has been added to enable an in-page experience to remain in the playing state when a video completes. This can be used to display the player endscreen. For more information, see <a href="/node/16793">Configuring the Settings for an In-Page Experience</a>.</p>
+    <h2>Dynamic Video Overrides in an In-Page Experience</h2>
+    <h4>27 Jul&nbsp;2017</h4>
+    <p>It is now possible to dynamically override the videos associated with an in-page experience by modifying the embed code. For more information, see <a href="/node/18360">Using Dynamic Video Overrides in an In-Page Experience</a>.</p>
+    <h2><strong>In-Page Experience Training Now Available</strong></h2>
+    <h4>21 Jul&nbsp;2017</h4>
+    <p>On-demand training for creating in-page experiences is now available. For more information, see <a href="/node/18350">Training on Demand: Building In-Page Experiences using Gallery</a>.</p>
+    <h2><strong>YouTube Video Support for In-Page Experiences</strong></h2>
+    <h4>11 Jul&nbsp;2017</h4>
+    <p>It is now possible to use YouTube videos in an in-page experience. For more information, see <a href="/node/16791">Adding Videos to an In-Page Experience</a>.</p>
+    <h2><strong>Use Site Description in Search Engine Results</strong></h2>
+    <h4>10 Jul&nbsp;2017</h4>
+    <p>Gallery now provides an option to use site description in search engine results. This will use the site description in the &lt;meta&gt; description tags, including the Facebook and Twitter meta tags. For more information, see <a href="/node/18673">Configuring Search Engine Optimization Settings for a Portal Experience</a>.</p>
+    <h2><strong>Catalogue Template</strong></h2>
+    <h4>28 Jun 2017</h4>
+    <p>Gallery now provides a Catalogue template. For more information, see <a href="/node/13548">Overview of Gallery Portal Templates</a>.</p>
+    <h2><strong>In-Page Experiences</strong></h2>
+    <h4>31 May 2017</h4>
+    <p>Gallery now provides the option of creating In-Page Experiences. For more information, see <a href="/node/16789">Overview: Creating, Editing and Publishing In-Page Experiences</a>.</p>
   </section>
 </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -413,6 +436,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>

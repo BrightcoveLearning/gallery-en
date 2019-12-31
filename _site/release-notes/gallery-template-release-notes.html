@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Brightcove Gallery Documentation</title>
+  <title>2020</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,10 +34,16 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery Documentation</li>
+      <li class="breadcrumb-item"><a href="/release-notes/">Gallery Template Release Notes</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">2020</li>
     </ol>
   </nav>
 </header>
@@ -241,90 +247,156 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
 <article class="bcls-article">
-  <h1>Brightcove Gallery&trade; Documentation</h1>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-location-arrow"></i> </div>
-      <div class="card-content">
-        <h2><a href="/get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Gallery?</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/experiences/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-phone-laptop"></i> </div>
-      <div class="card-content">
-        <h2 id="experiences"><a href="/docs/experiences/index.html">Creating Experiences</a></h2>
-        <p>Learn how to create Gallery Experiences.</p>
-        <ul>
-          <li>Portals</li>
-          <li>In-Page</li>
-          <li>Live</li>
-          <li>Landing Page</li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Configuring Settings</a></h2>
-        <p>Learn how to configure Gallery Settings.</p>
-        <ul>
-          <li>Selecting a Default Player</li>
-          <li><a href="/docs/videos/index.html">View All...</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Developers</a></h2>
-        <p>Learn how to develop using the Gallery APIs.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/overview-page-experience-api">Overview: In-Page Experience API</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html">In-Page Experience API Reference (REST)</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience API (JavaScript API)</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-bell"></i> </div>
-      <div class="card-content">
-        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
-        <p>Learn about new product features and updates.</p>
-        <ul>
-          <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
-          <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-question-circle"></i> </div>
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
+  <h1>Gallery Template Release Notes</h1>
+  <summary>This topic documents all of the changes made to Gallery templates.</summary>
+  <section class="bcls-section">
+    <p>Over time, new features and enhancements may be made to templates by Brightcove. Brightcove will not push major template updates out to exiting sites. Publishers are responsible for upgrading their sites to use new templates and then for testing sites before publishing. For information on updating a Gallery site to use a new template version, see <a href="/node/16636">Updating Gallery Templates</a>.</p>
+    <p>Changes made to templates are documented as part of the template version release notes. Release notes are available for the following templates:</p>
+    <ul>
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="#chronicle">Chronicle</a></li>
+      <li><a href="#classic">Classic</a></li>
+      <li><a href="#live">Live Event</a></li>
+      <li><a href="#marquee">Marquee</a></li>
+      <li><a href="#mosaic">Mosaic</a></li>
+      <li><a href="#publisher">Publisher</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+    </ul>
+    <div class="BCL-concept">
+      <h2 id="catalogue">Catalogue release notes</h2>
+      <h3>v5.0 - Feb 14, 2018</h3>
+      <ul>
+        <li>Added optional title to homepage</li>
+      </ul>
+      <h3>v4.0 - Jan 24, 2018</h3>
+      <ul>
+        <li>Updated carousel to center video on mobile devices when collection contains only one video</li>
+        <li>Made carousel transitions cleaner</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="chronicle2">Chronicle release notes</h2>
+      <h3>v3.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+      <h3>v2.0 - Oct 31, 2016</h3>
+      <ul>
+        <li>Added two layout options for hero video
+          <ul>
+            <li>The new layout has a smaller hero image for publishers who don't have high-quality thumbnail images</li>
+          </ul>
+        </li>
+        <li>Removed pagination in favor of lazy-loading on scroll</li>
+        <li>Added the CTA-support for lazy-loaded videos
+          <ul>
+            <li>Similar to showcase Chronicle has the option of repeating the CTA after 5,10, and 15 videos</li>
+          </ul>
+        </li>
+        <li>Updated collection navigation / menu layout
+          <ul>
+            <li>Replaced the full-screen navigation with a navigation bar on the left side of the screen</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="classic">Classic release notes</h2>
+      <h3>v3.0 - Sep 27, 2018</h3>
+      <ul>
+        <li>Redesigned mobile user experience that includes:
+          <ul>
+            <li>Improved navigation to collections</li>
+            <li>Better visibility for site search</li>
+            <li>“Load More” replaces paging on mobile</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>v2.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="live">Live Event release notes</h2>
+      <h3>v3.0 - Nov 29, 2018</h3>
+      <ul>
+        <li>Redesigned mobile user experience that includes:
+          <ul>
+            <li>Improved navigation to collections</li>
+            <li>“Load More” replaces paging on mobile</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>v2.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="marquee">Marquee release notes</h2>
+      <h3>v3.0 - Sep 7, 2018</h3>
+      <ul>
+        <li>Redesigned mobile user experience that includes:
+          <ul>
+            <li>Improved navigation to collections</li>
+            <li>Better visibility for site search</li>
+            <li>“Load More” replaces paging on mobile</li>
+            <li>More prominent presentation for default header links</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>v2.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="mosaic">Mosaic release notes</h2>
+      <h3>v2.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="publisher">Publisher release notes</h2>
+      <h3>v3.0 - Dec 13, 2018</h3>
+      <ul>
+        <li>Improved navigation to collections</li>
+        <li>Better visibility for site search</li>
+        <li>“Load More” replaces paging on mobile</li>
+      </ul>
+      <h3>v2.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+    </div>
+    <div class="BCL-concept">
+      <h2 id="showcase">Showcase release notes</h2>
+      <h3>v3.0 - Dec 22, 2016</h3>
+      <ul>
+        <li>Improved thumbnail images using the new image loader</li>
+      </ul>
+      <h3>v2.0 - Oct 4, 2016</h3>
+      <ul>
+        <li>Two additional layout options that enable better control over image display: maintain aspect ratio for all images (no cropping), or use a maximum width for the site (left and right gutters will display at larger screen sizes).</li>
+        <li>Removal of gradient overlay from smaller thumbnails</li>
+        <li>Additional, lighter color theme "Slate"</li>
+        <li>General bug fixes</li>
+      </ul>
+    </div>
   </section>
 </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -413,6 +485,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>
