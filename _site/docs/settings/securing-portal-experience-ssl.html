@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Getting Started</title>
+  <title>Securing a Portal Experience with SSL</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -37,9 +37,13 @@
       <li class="breadcrumb-item"><a href="/">Home</a></li>
       
       
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
       
       
-      <li class="breadcrumb-item active" aria-current="page">Getting Started</li>
+      
+      <li class="breadcrumb-item"><a href="/docs/settings/">Settings</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Securing a Portal Experience with SSL</li>
     </ol>
   </nav>
 </header>
@@ -243,140 +247,147 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
-<article class="bcls-article"> 
-  <h1><i class="far fa-location-arrow"></i> Getting Started</h1>
-  <p>Brightcove Gallery&trade; makes it easy to create and publish  videos  experiences so viewers can consume your content wherever they may be. This page describes the key concepts to help you understand and be successful using Gallery to create video experiences. For more information, see the following concepts:</p>
-  <p>Sign up for a free trial account <a href="https://register.brightcove.com">here</a>.</p>
-  <table width="80%" border="0">
-	<tbody>
-		<tr bgcolor="#CCCCCC">
-			<th width="32%" scope="col">Concept</th>
-			<th width="68%" scope="col">Description</th>
-		</tr>
-		<tr>
-			<td><strong>Getting Started</strong></td>
-			<td>
-			<p>&nbsp;</p>
-
-			<p>These documents will give you a set of hands-on steps you can follow to create Gallery experiences.</p>
-
-			<ul>
-				<li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating and Publishing a Portal Experience</a></li>
-				<li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating and Publishing an In-Page Experience</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="80%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Product Overview</strong></td>
-			<td width="68%">
-			<p>&nbsp;</p>
-
-			<p>These topics provide a high level overview of working with Gallery.</p>
-
-			<ul>
-				<li><a href="/node/13547">Getting Started with Brightcove Gallery</a></li>
-				<li><a href="/node/18638">Overview of Gallery Experiences</a></li>
-				<li><a href="/node/16767">Creating and Managing Gallery Experiences</a></li>
-				<li><a href="/node/18698">Training on Demand: Introduction to Gallery</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="80%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Templates</strong></td>
-			<td width="68%">
-			<p>Templates control the overall look and feel of the experience. Learn about the types of templates that are available.</p>
-
-			<ul>
-				<li><a href="/node/13548">Overview of Gallery Portal Templates</a></li>
-				<li><a href="/node/18305">Overview of Gallery In-Page Experience Templates</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="80%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Configuring Gallery Settings</strong></td>
-			<td width="68%">
-			<p>Before creating a Portal, Event or Landing Page experience, Gallery needs to be configured with a default Brightcove Player to use.</p>
-
-			<ul>
-				<li><a href="/node/13856">Configuring Gallery Settings</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="80%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Let's Build an Experience</strong></td>
-			<td width="68%">
-			<p>Select the type of Experience you want to create:</p>
-
-			<ul>
-				<li><a href="/node/13532">Portal</a></li>
-				<li><a href="/node/16796">In-Page</a></li>
-				<li><a href="/node/16637">Landing Page</a></li>
-				<li><a href="/node/15690">Event (Portal)</a></li>
-				<li><a href="/node/18545">Event (In-Page)</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="80%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>On-Demand Training</strong></td>
-			<td width="68%">
-			<p>Training is also available to help you get started:</p>
-
-			<ul>
-				<li><a href="/node/18698">Introduction to Gallery</a></li>
-				<li><a href="/get-started/training-demand-building-portal-experiences-using-gallery.html">Building Portal Experiences using Gallery</a></li>
-				<li><a href="/get-started/training-demand-building-page-experiences-using-gallery.html">Building In-Page Experiences using Gallery</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-
+<article class="bcls-article">
+  <h1>Securing a Portal Experience with SSL</h1>
+  <summary>In this topic you will learn how to secure a Gallery Portal experience using Secure Sockets Layer (SSL).</summary>
+  <section class="bcls-section">
+    <p>Secure Sockets Layer (SSL) is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral. SSL is an industry standard and is used by millions of websites in the protection of their online transactions with their customers.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: By default, all Brightcove provided domains support SSL. If your video site is using the default assigned URL or a Brightcove provided domain (brightcovegallery.com or gallery.video), the site can also be accessed by prefixing the URL with <strong>https</strong>. There is also an option to <strong> Enforce SSL on this domain (recommended)</strong> to enable a redirect from the non-SSL version of the site if a viewer goes to it. No setup or SSL certificates are required. This topic covers using your own SSL certificates with a custom domain.</aside>
+    <h3>Notes on using SSL with Gallery</h3>
+    <ul>
+      <li>Publishers are responsible for the SSL certificate</li>
+      <li>Self-signed certificates are not supported</li>
+      <li>The private key cannot be encrypted with a password</li>
+      <li>The maximum SSL certificate key length supported by Gallery is 2048 bits</li>
+      <li>Brightcove requires the certificate to be in PEM format</li>
+      <li>Brightcove recommends that SSL certificates used in Gallery sites not be used anywhere else</li>
+      <li>Publishers must use a custom domain name</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: When working with SSL certificates, do not under any circumstances share your private key or send it to Brightcove Support.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="config">Configuring a portal experience for SSL</h2>
+    <p>These steps assume you have purchased an SSL certificate. Your video site must also be configured to use a custom domain. For information on configuring a site to use a custom domain, see <a href="/node/16440">Configuring Custom Domains and SSL</a>.</p>
+    <h3>Upload the SSL certificate</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link.</li>
+      <li>In the left navigation, click the <strong>Custom Domains &amp; SSL</strong> link.</li>
+      <li>Edit the custom domain that SSL will be enabled for.</li>
+      <li>Check <strong>Use SSL</strong>.</li>
+      <li>Paste in your <strong>Server Certificate</strong>. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
+        <figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-server-cert.png" /></figure>
+      </li>
+      <li>Paste in your <strong>Server Private Key</strong>. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
+        <figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-private-key.png" /></figure>
+      </li>
+      <li>Paste in your <strong>Chain of CA Certificates</strong>. If your certificate was signed by a root CA, then only the root certificate CA needs to be pasted in. &nbsp;This should not include your own certificate. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
+        <figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-cert-chain.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>. The site details will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node15951-save-changes.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>. The certificate will be validated and if there are errors, they will be displayed.</li>
+    </ol>
+    <p>The SSL status will display <strong>Updating Configuration</strong> while the SSL information is being updated and propagated. Click <strong>Refresh List</strong> to update the SSL status.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node15951-update-config.png" /></figure>
+    <h3>Configure the CNAME record</h3>
+    <p>Once SSL has been configured, the <strong>SSL</strong> status will be <strong>Enabled</strong>. The CNAME information will be updated with a CloudFront URL. The CloudFront URL will not change unless the domain is deleted.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node15951-cname-info.png" /></figure>
+    <p>Note that browsing directly to a CloudFront URL will return a "page not found" error (404). A <code>curl</code> command can be used to verify the domain configuration. For this example:</p>
+    <pre>
+<code>curl -H "Host: video.brightcovelearning.com" https://d3mkhzp6k6x3hl.cloudfront.net</code>
+</pre>
+    <p>The curl statement should return the contents of the site home page.</p>
+    <p>The CNAME record for your custom domain should redirect to the CloudFront URL displayed on the Custom Domains and SSL page.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node15951-cname-godaddy.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: If you are using custom headers and footers, check to make sure that all URLs are secure as well.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="update">Updating/Replacing SSL certificates</h2>
+    <p>If an SSL certificate needs to be updated or replaced, for example, the SSL certificate may be set to expire, follow these steps to replace an existing SSL certificate.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link.</li>
+      <li>In the left navigation, click the <strong>Custom Domains &amp; SSL</strong> link.</li>
+      <li>Locate the custom domain using the SSL certificate and then click the edit icon (<img alt="" src="/assets/images/settings/node15951-edit-icon.png" />).</li>
+      <li>Click <strong>Upload new certificate</strong>.</li>
+      <li>Paste in the new <strong>Server Certificate, Server Private Key</strong> and <strong>Chain of CA Certificates</strong>. Remove any blank lines at the beginning or end of the keys.</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <p>If there are any errors with the updated keys, the old values will be retained.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sample">Sample keys</h2>
+    <p>Below are examples of some sample certificates/keys.</p>
+    <div class="BCL-subsection">
+      <h3>Sample server certificate</h3>
+      <pre>
+-----BEGIN CERTIFICATE-----
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OTQ0WjBFA
+.... MANY LINES LIKE THIS .... .... MANY LINES LIKE THIS ....
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL2JlPULB7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYcm0A6Jq
+vA==
+-----END CERTIFICATE-----
+</pre>
+    </div>
+    <div class="BCL-subsection">
+      <h3>Sample server private key</h3>
+      <pre>
+-----BEGIN RSA PRIVATE KEY-----
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OTQ0WjBF
+.... MANY LINES LIKE THIS .... .... MANY LINES LIKE THIS ....
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL2JlPULB7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYcm0A6Jq vA=
+-----END RSA PRIVATE KEY-----
+</pre>
+    </div>
+    <div class="BCL-subsection">
+      <h3>Sample chain of CA certificates</h3>
+      <pre>
+-----BEGIN CERTIFICATE-----
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OTQ0WjBF
+.... MANY LINES LIKE THIS .... .... MANY LINES LIKE THIS ....
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL2JlPULB7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYcm0A6Jq vA
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OTQ0WjBF
+.... MANY LINES LIKE THIS .... .... MANY LINES LIKE THIS ....
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL2JlPULB7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYcm0A6Jq vA== vA== 
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCzAJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OTQ0WjBF
+.... MANY LINES LIKE THIS .... .... MANY LINES LIKE THIS .... 
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL2JlPULB7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYcm0A6Jq vA== vA==
+-----END CERTIFICATE-----
+</pre>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="faq">FAQs</h2>
+    <ol>
+      <li><strong>Can a Gallery site with a custom domain and SSL be only accessible via HTTPS?</strong> Yes, in fact this is the only way we allow the site to be accessed. If you try to access a site on the HTTP link, you will automatically be redirected to the HTTPS site. This is done by forcing HTTPS redirects in CloudFront.</li>
+    </ol>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -465,6 +476,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>

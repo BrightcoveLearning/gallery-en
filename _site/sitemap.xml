@@ -97,6 +97,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
@@ -111,7 +118,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -119,13 +126,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/get-started/</loc>
-        <lastmod>2020-01-02</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -147,6 +147,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/portal/previewing-and-publishing-portal-experience.html</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/settings/securing-portal-experience-ssl.html</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -196,6 +203,20 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/template.html</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/training-demand-building-page-experiences-using-gallery.html</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/training-demand-building-portal-experiences-using-gallery.html</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
