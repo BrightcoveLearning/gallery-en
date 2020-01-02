@@ -181,6 +181,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/get-started/step-step-creating-and-publishing-portal-experience.html</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/assets/css/site/styles.css</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
