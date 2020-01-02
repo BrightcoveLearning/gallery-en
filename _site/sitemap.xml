@@ -90,6 +90,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
@@ -104,13 +111,6 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/</loc>
-        <lastmod>2020-01-02</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
@@ -119,6 +119,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/support/opening-case-with-brightcove-support.html</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/inpage/previewing-and-publishing-page-experience.html</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -147,6 +154,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/assets/css/site/sitemap.xsl</loc>
+        <lastmod>2020-01-02</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/step-step-creating-and-publishing-page-experience.html</loc>
         <lastmod>2020-01-02</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

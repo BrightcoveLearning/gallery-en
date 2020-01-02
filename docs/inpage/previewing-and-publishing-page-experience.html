@@ -1,0 +1,62 @@
+---
+title: Previewing and Publishing an In-Page Experience
+parent: In-Page Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Previewing and Publishing an In-Page Experience</h1>
+  <summary>In this topic you will learn how to preview and publish an In-Page experience.</summary>
+  <section class="bcls-section">
+    <p>An in-page experience can be previewed at any time during design to see how it will appear on different device types. The publishing dialog provides the ability to publish changes made to an experience and also generates the embed code that you will add to your web page.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="preview">Previewing an in-page experience</h2>
+    <p>Previewing an in-page experience lets you see how the experience is going display without having to view it inside the Gallery interface.</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">To preview an in-page experience, edit the experience and then click <strong>Preview</strong>.</li>
+      <li class="language-editable">A desktop preview will open in a new browser tab.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16795-preview.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: When using an in-page experience, player styling is only reflected while a video is playing. Player styling will not be seen in the BEFORE PLAY or AFTER PLAY states.</aside>
+      </li>
+      <li class="language-editable">The dropdown lists in the upper left corner can be used to preview the experience on different device types and also during different experience states.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16795-device-state.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="publish">Publishing an in-page experience</h2>
+    <p>Whenever changes are made to an in-page experience, the changes must published so they appear on your site. If you make changes to an experience and don't publish them, the changes will not appear on the production site.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: The <strong>Shareable URL</strong> and the <strong>Embed Code</strong> in the publishing dialog will not be available until after the in-page experience is published for the first time.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to an in-page experience may take up to 5 minutes to appear on published pages.</aside>
+    <p>To publish an in-page experience, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Click <strong>Publish &amp; Embed</strong> at the top of the page. The publishing dialog will open.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16795-publish-dialog.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Publish Changes</strong>. The <strong>Publishing Status</strong> will change to "<strong>Publishing in progress…</strong>".</li>
+      <li class="language-editable">When the publish has completed, check the <strong>Publishing Status</strong>. The status should be <strong>This experience is up to date</strong>. &nbsp;Note that it may take a few minutes for the experience to update.</li>
+    </ol>
+    <p>As changes are made to the experience, you must republish the experience.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pubcode">Copying the embed code</h2>
+    <p>The <strong>Embed Code</strong> is required to display the in-page experience on your site. The first time the experience is published, the <strong>Embed Code</strong> can be copied and inserted into your site. As changes to the experience are made and published, those changes will appear in your site.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Changes to an in-page experience do not require that any existing embed code be replaced <strong>UNLESS</strong> you change the layout size from a fixed size to responsive or vice versa.</aside>
+    <p>There are two types of <strong>Embed Code</strong>:</p>
+    <ul>
+      <li class="language-editable"><strong>Recommended</strong> - Recommended in most cases. The in-page experience will be displayed inside of a <code>&lt;div&gt;</code> tag on your page. Recommended is required to allow the experience to resize itself and behave in a responsive way on the page.</li>
+      <li class="language-editable"><strong>No JavaScript</strong> - The in-page experience will be displayed inside of an <code>&lt;iframe&gt;</code> tag on your page. Typically this would be done when you are embedding the experience into a CMS or other platform that doesn't allow <code>&lt;script&gt;</code> embeds. There is a high risk that the in-page experience won't always fit properly inside the No JavaScript embed and the experience will have scrollbars or extra blank space. Some features will not work correctly using this option and we STRONGLY encourage users to embed using the <strong>Recommended</strong> (JavaScript) embed whenever possible. For example, when using this option, analytics will not report the right URL and lightbox playback will not be able to go fullscreen, it will be limited to the size of the iFrame. Any changes in height of the experience across before/during/after playback states will result in additional whitespace at the bottom of the experience or a scrolling experience.</li>
+    </ul>
+    <p>To copy the embed code, click <strong>Copy Embed Code</strong>.</p>
+    <p>For an in-page experience to scale correctly on mobile devices, it is recommended to add a <code>viewport</code> meta tag to the surrounding site. For example:</p>
+    <pre>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+
+</pre>
+    <p>For information on the <code>viewport</code> tag, see <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">this document</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="dynamic">Using dynamic video overrides</h2>
+    <p>There may be times when you want to change the videos in an in-page experience. For example, maybe the videos in an experience need to change based upon the area of the site where the experience is embedded. Instead of creating new in-page experiences, each with a different set of videos, it is possible to create one experience and then modify the embed code to dynamically assign the appropriate videos to an experience. For information on using dynamic video overrides, see <a href="/node/18360">Using Dynamic Video Overrides in an In-Page Experience</a>.</p>
+  </section>
+</article>
