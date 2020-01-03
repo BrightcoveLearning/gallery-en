@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Brightcove Gallery Documentation</title>
+  <title>Configuring Single Sign-On with Active Directory Federation Services</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,10 +34,16 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery Documentation</li>
+      <li class="breadcrumb-item"><a href="/docs/settings/">Settings</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Configuring Single Sign-On with Active Directory Federation Services</li>
     </ol>
   </nav>
 </header>
@@ -241,107 +247,66 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
 <article class="bcls-article">
-  <h1>Brightcove Gallery&trade; Documentation</h1>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-location-arrow"></i> </div>
-      <div class="card-content">
-        <h2><a href="/get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Gallery?</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/experiences/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-phone-laptop"></i> </div>
-      <div class="card-content">
-        <h2 id="experiences"><a href="/docs/index.html">Creating Experiences</a></h2>
-        <p>Learn how to create Gallery Experiences.</p>
-        <ul>
-          <li>Portals</li>
-          <li>In-Page</li>
-          <li>Live</li>
-          <li>Landing Page</li>
-        </ul>
-      </div>
-    </section>
-<section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Training</a></h2>
-        <p>On-Demand Training and Galllery product training videos.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/training-demand-introduction-gallery">Introduction to Gallery</a></li>
-          <li><a href="get-started/training-demand-building-portal-experiences-using-gallery.html">Creating Portal Experiences</a></li>
-          <li><a href="get-started/training-demand-building-page-experiences-using-gallery.html">Creating In-Page Experiences</a></li>
-          <li><a href="https://support.brightcove.com/gallery-training-videos">Gallery Training Videos</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Configuring Settings</a></h2>
-        <p>Learn how to configure Gallery Settings.</p>
-        <ul>
-          <li>Selecting a Default Player</li>
-          <li><a href="/docs/videos/index.html">View All...</a></li>
-        </ul>
-      </div>
-    </section>
-<section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">General Information</a></h2>
-        <p>General Gallery information.</p>
-        <ul>
-          <li><a href="/docs/general/gallery-system-requirements.html">Gallery System Requirements</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Developers</a></h2>
-        <p>Learn how to develop using the Gallery APIs.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/overview-page-experience-api">Overview: In-Page Experience API</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html">In-Page Experience API Reference (REST)</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience API (JavaScript API)</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-bell"></i> </div>
-      <div class="card-content">
-        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
-        <p>Learn about new product features and updates.</p>
-        <ul>
-          <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
-          <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-question-circle"></i> </div>
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
+  <h1>Configuring Single Sign-On with Active Directory Federation Services</h1>
+  <summary>In this topic you will learn how to configure Gallery to support single sign-on using Active Directory Federation Services (ADFS).</summary>
+  <section class="bcls-section">
+    <h2 id="setup">Before you get started</h2>
+    <p>Complete these initial setup steps:</p>
+    <ol class="bcls-tasklist">
+      <li class="language-editable">Enable RelayState for iDP-initiated sign on by following the instructions <a href="https://jorgequestforknowledge.wordpress.com/2014/10/16/enabling-relaystate-in-adfs-versions/">here</a>. The location varies depending on the version of ADFS that is being using.</li>
+      <li class="language-editable">Restart the ADFS service so the changes are applied.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add_gallery_profile">Adding a Gallery Access Control Profile</h2>
+    <ol class="bcls-tasklist">
+      <li class="language-editable">Open <strong>Administrative Tools</strong> from the Windows Start menu or Control Panel and then open the <strong>AD FS Management</strong> application.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-ad-fs-mgmt.png" /></figure>
+      </li>
+      <li class="language-editable">Open <strong>Services &gt; Certificates</strong> in the left hand explorer panel.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-list.png" /></figure>
+      </li>
+      <li class="language-editable">Double-click on the <strong>Token-signing</strong> certificate that you want to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate.png" /></figure>
+      </li>
+      <li class="language-editable">Click on the <strong>Details</strong> tab and click <strong>Copy to File…</strong>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-details.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Next</strong> in the export wizard, then select the <strong>Base-64 encoded X.509 (.CER)</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-export-wizard.png" /></figure>
+      </li>
+      <li class="language-editable">Save the certificate file to your local file system and then open it in a text editor. This is the certificate that will be used to setup the Gallery access control profile.</li>
+      <li class="language-editable">Open the Gallery module.</li>
+      <li class="language-editable">Click <strong>Settings</strong>.</li>
+      <li class="language-editable">Click <strong>Access Control Profiles</strong> in the left navigation.</li>
+      <li class="language-editable">Click <strong>Create Profile</strong>.</li>
+      <li class="language-editable">Give it a <strong>Name</strong> and then select <strong>SSO - Requires a username and password for access</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-new-access-control-profile.png" /></figure>
+      </li>
+      <li class="language-editable">In the <strong>SAML 2.0 Endpoint (HTTP)</strong> field, enter the URL to the iDP-initiated sign-on page for your ADFS server. This usually ends in <code>IdpInitiatedSignOn.aspx</code>. For example, if the SP-initiated sign-on link is <code>https://adfs.brightcovegallery.com/adfs/ls</code>, the iDP-initiated sign-on page is <code>https://adfs.brightcovegallery.com/adfs/ls/IdpInitiatedSignOn.aspx</code>.</li>
+      <li class="language-editable">Check the <strong>My SSO System is ADFS (Active Directory Federation Services)</strong> option.</li>
+      <li class="language-editable">Copy and paste the certificate that you saved in step 6 into the <strong>X.509 Certificate</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-x509-cert.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Save</strong> to save the access control profile. The new access control profile should appear in the list of profiles.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-profile-list.png" /></figure>
+      </li>
+      <li class="language-editable">Back in the AD FS Management application, open <strong>Trust Relationships &gt; Relying Party Trusts</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trusts.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Add Relying Party Trust…</strong> in the right hand panel.</li>
+      <li class="language-editable">Click <strong>Start</strong> in the wizard and then paste the <strong>Metadata URL</strong> that was displayed in step 15 into the <strong>Federation metadata address</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="../../assets/images/settings/node18595-relying-party-trust-wizard.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Next</strong> and then give your relying party trust a name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trust-name.png" /></figure>
+      </li>
+      <li class="language-editable">Continue clicking <strong>Next</strong> until the <strong>Finish</strong> step. Uncheck the <strong>Open the Edit Claim Rules dialog for this relying party trust when the wizard closes</strong> checkbox. Click <strong>Close</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trust-finish.png" /></figure>
+      </li>
+    </ol>
+    <p>You should now be able to associate a portal experience to the access control profile that was created. After the experience is published, navigating to it should go through the ADFS sign-on workflow.</p>
   </section>
 </article>
 
@@ -349,13 +314,18 @@
     </div>
     <div class="col-sm-2 right-side-bar">
       
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
     </div>
   </div>
 </div>
 
 <hr>
 <div class="last-updated">
-  Page last updated on 31 Dec 2019
+  Page last updated on 03 Jan 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
@@ -436,6 +406,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>
