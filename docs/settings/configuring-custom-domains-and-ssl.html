@@ -1,0 +1,86 @@
+---
+title: Configuring Custom Domains and SSL
+parent: Settings
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Configuring Custom Domains and SSL</h1>
+  <summary>In this topic you will learn how to configure custom domains and SSL for a Portal experience.</summary>
+  <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="3543581066001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>When you first create a Portal experience, it is assigned a random domain with the format of <code>&lt;site-slug&gt;.bcvp0rtal.com </code>. For example, <code>http://site-148393.bcvp0rtal.com </code>. When the site is published, viewers will be able to access the site at this domain. Gallery provides the ability to publish video sites at a Brightcove provided domain or at your own custom domain.</p>
+    <p>Gallery Portal experiences can also be assigned to multiple URLs allowing publishers to use the same site for different functions without having to duplicate the site. For example, if you have a video site you want to use in a campaign and as your main video portal, you can brand different URLs and assign them all to the same site. No site duplication is needed and you can easily delete URLs when they are no longer needed.</p>
+    <p class="BCL-aside">Note: When working with SSL certificates, do not under any circumstances share your private key or send it to Brightcove Support.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="bcdomain">Using a Brightcove provided domain</h2>
+    <p>Brightcove provided domains allow you to quickly and easily create a domain for your site without having to work with your IT department to create a custom CNAME or register a new domain name with a registrar. They’re available "out of the box" and can be implemented with a click of a button. There are three Brightcove provided domains:</p>
+    <ul>
+      <li>brightcovegallery.com</li>
+      <li>gallery.video</li>
+      <li>bcvp0rtal.com (which is assigned to sites by default)</li>
+    </ul>
+    <p>All of them support SSL. To access the SSL site, just add https to the URL. For example, <code>https://marquee.brightcovegallery.com </code></p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="puburl">Using a custom domain (publisher registered)</h2>
+    <p>Video sites can also be hosted on your own custom domain that you register. This allows you to brand the URL and keep it consistent with your current website/URL naming construct. This requires you to register the domain name and then configure a custom CNAME record with your hosting provider. See the <a href="#cname">section below</a> for information on how to configure a CNAME record.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a custom domain</h2>
+    <p>To create a custom domain, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
+      <li>In the left navigation, click the <strong>CUSTOM DOMAINS &amp; SSL</strong> link.</li>
+      <li>Click <strong>Create Custom Domain</strong>.</li>
+      <li>Select a domain option to use:
+        <ul>
+          <li><strong>brightcovegallery.com</strong> - The site domain will have the format <code>&lt;your domain&gt;.brightcovegallery.com</code>.</li>
+          <li><strong>gallery.video</strong> - The site domain will have the format <code>&lt;your domain&gt;.gallery.video </code>.</li>
+          <li><strong>Custom</strong> - Select to host the site on your own custom domain. When selecting this option, you will also have to <a href="#cname">configure a CNAME record with your hosting provider</a>.</li>
+        </ul>
+      </li>
+      <li>Enter the domain name. A message will be displayed to indicate if the domain is valid or invalid. If the domain name is invalid, enter a new domain name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-create-custom-domain.png" /></figure>
+      </li>
+      <li>If you are publishing the site using a Brightcove provided domain, there is an option to <strong>Enforce SSL on this domain</strong>. Check <strong>Enforce SSL on this domain (recommended) </strong>to enable a redirect from the non-SSL version of the site if a viewer goes to it.</li>
+      <li>If you are publishing the site to your own custom domain, you have the option of securing the site using SSL. Check the <strong>Use SSL</strong> checkbox to secure the site using SSL. For information on using SSL, see <a href="/node/15951">Securing a Portal Experience with SSL</a>.</li>
+      <li>Check <strong>Enable Redirect</strong> to redirect this URL to another URL. Typically this would only be checked after this domain has been used for a while. When this option is selected, enter the <strong>Redirect URL</strong> this existing URL should be redirected to.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-enable-redirect.png" /></figure>
+        Check <strong>Use a permanent redirect (HTTP status code 301)</strong> to indicate that the redirect is permanent. When a search engine spider finds a 301 status code in the response header of a web page, it understands that this web page no longer exists and replaces the indexed URL with the new one. This option will retain your old web page traffic and page rank.
+        </div>
+      </li>
+      <li>Click <strong>Save</strong>. A list of configured domains will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="list of domains" src="/assets/images/settings/node16440-domain-list.png" /></figure>
+        <p class="BCL-aside">Note: When using a Brightcove provided domain, the SSL status will always be <strong>Provided</strong>. This indicates that by adding <strong>https://</strong> to the beginning of the site URL, the data transmission between your browser and the Gallery site will be secure.</p>
+      </li>
+      <li>Create additional domains as needed.</li>
+    </ol>
+    <p>To edit or delete a domain, click the edit (<img alt="edit icon" src="https://img.brightcove.com/node16440-edit-icon.png" />) or delete (<img alt="delete icon" src="https://img.brightcove.com/node16440-delete-icon.png" />) buttons.</p>
+    <p>Once custom domains have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/node/16442">Assigning a Custom Domain to a Video Site</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="cname">Configuring CNAME records with your hosting provider</h2>
+    <p class="BCL-aside">Note: CNAME records only need to be configured when custom domains will be assigned to a site. CNAME records DO NOT have to be created for sites using Brightcove provided domains.</p>
+    <p>The steps to configure a CNAME (Canonical Name) record will differ based upon your hosting provider. You need to configure a CNAME record for each custom domain you will be using. If your site is configured to use SSL, the CNAME record should point to the CloudFront URL. See <a href="/node/15951">Securing a Portal Experience with SSL</a> for information. Note that custom domains must include a subdomain in order to be configured as a CNAME ex: <code>video </code> must be placed before <code>brightcovelearning.com </code> so I can configure my CNAME.</p>
+    <p>The CNAME values are displayed as part of the Custom Domains &amp; SSL settings.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node16440-cname-list.png" /></figure>
+    <p>In this example, for the custom domain of <code>video.brightcovelearning.com </code>, I would add a <strong>CNAME</strong> record and add a host of <code>video </code> and point it to <code>d3mkhzp6k6x3hl.cloudfront.net</code>.</p>
+    <p>Note that browsing directly to a Cloudfront URL will return a "page not found" error (404). A <code>curl</code> command can be used to verify the domain configuration. For this example:</p>
+    <pre>
+<code>curl -H "Host: video.brightcovelearning.com" https://d3mkhzp6k6x3hl.cloudfront.net</code>
+</pre>
+    <p>The curl statement should return the contents of the site home page.</p>
+    <p>You may need to contact your network administrator or web hosting provider for help with this step. Remember that it can take up to 48 hours for DNS changes to take effect.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="secure">Securing sites with SSL</h2>
+    <p>There are two options for securing a portal experience&nbsp;with SSL:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>For sites that are being published using the assigned site slug (i.e. <code>&lt;site-slug&gt;.bcvp0rtal.com </code>) or are using a Brightcove supplied domain, no configuration is needed to support https. Adding <strong>https://</strong> to the beginning of the URL will secure the data transmission between your browser and the Gallery site. You can also select <strong>Enforce SSL on this domain (recommended)</strong> to enable a redirect from the non-SSL version of the site if a viewer goes to it.</li>
+      <li>For sites that are hosted using your own custom domain, check the <strong>Use SSL</strong> option when entering your domain name. You will then be prompted to enter your certificate information. For more information, see <a href="/node/15951">Securing a Portal Experience with SSL</a>.</li>
+    </ol>
+  </section>
+</article>

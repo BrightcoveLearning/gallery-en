@@ -27,6 +27,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/settings/configuring-custom-domains-and-ssl.html</loc>
+        <lastmod>2020-01-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/inpage/configuring-details-page-experience.html</loc>
         <lastmod>2020-01-03</lastmod>
         <changefreq>daily</changefreq>
@@ -153,7 +160,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -167,7 +174,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
         <lastmod>2020-01-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
