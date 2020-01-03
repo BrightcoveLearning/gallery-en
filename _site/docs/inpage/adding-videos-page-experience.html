@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Brightcove Gallery Documentation</title>
+  <title>Adding Videos to an In-Page Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,10 +34,16 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
       
       
       
-      <li class="breadcrumb-item active" aria-current="page">Brightcove Gallery Documentation</li>
+      <li class="breadcrumb-item"><a href="/docs/inpage/">In-Page Experiences</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Adding Videos to an In-Page Experience</li>
     </ol>
   </nav>
 </header>
@@ -241,113 +247,98 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
 <article class="bcls-article">
-  <h1>Brightcove Gallery&trade; Documentation</h1>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-location-arrow"></i> </div>
-      <div class="card-content">
-        <h2><a href="/get-started/index.html">Getting Started</a></h2>
-        <p>Just getting started with Brightcove Gallery?</p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/experiences/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-phone-laptop"></i> </div>
-      <div class="card-content">
-        <h2 id="experiences"><a href="/docs/index.html">Creating Experiences</a></h2>
-        <p>Learn how to create Gallery Experiences.</p>
-        <ul>
-          <li>Portals</li>
-          <li>In-Page</li>
-          <li>Live</li>
-          <li>Landing Page</li>
-        </ul>
-      </div>
-    </section>
-<section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Training</a></h2>
-        <p>On-Demand Training and Galllery product training videos.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/training-demand-introduction-gallery">Introduction to Gallery</a></li>
-          <li><a href="get-started/training-demand-building-portal-experiences-using-gallery.html">Creating Portal Experiences</a></li>
-          <li><a href="get-started/training-demand-building-page-experiences-using-gallery.html">Creating In-Page Experiences</a></li>
-          <li><a href="https://support.brightcove.com/gallery-training-videos">Gallery Training Videos</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Configuring Settings</a></h2>
-        <p>Learn how to configure Gallery Settings.</p>
-        <ul>
-          <li>Selecting a Default Player</li>
-          <li><a href="/docs/videos/index.html">View All...</a></li>
-        </ul>
-      </div>
-    </section>
-<section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">General Information</a></h2>
-        <p>General Gallery information.</p>
-        <ul>
-          <li><a href="/docs/general/gallery-system-requirements.html">Gallery System Requirements</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/docs/videos/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="fas fa-film"></i> </div>
-      <div class="card-content">
-        <h2 id="videos"><a href="/docs/videos/index.html">Developers</a></h2>
-        <p>Learn how to develop using the Gallery APIs.</p>
-        <ul>
-          <li><a href="https://support.brightcove.com/overview-page-experience-api">Overview: In-Page Experience API</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html">In-Page Experience API Reference (REST)</a></li>
-          <li><a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience API (JavaScript API)</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-bell"></i> </div>
-      <div class="card-content">
-        <h2><a href="/release-notes/index.html">Release Notes</a></h2>
-        <p>Learn about new product features and updates.</p>
-        <ul>
-          <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
-          <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
-        </ul>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card">
-      <div class="card-icon"> <i class="far fa-question-circle"></i> </div>
-      <div class="card-content">
-        <h2><a href="/support/index.html">Support</a></h2>
-        <p>Have a question or need help?</p>
-        <ul>
-          <li><a href="/support/viewing-brightcove-system-status-page.html">View Brightcove System Status</a></li>
-          <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
-        </ul>
-      </div>
-    </section>
+  <h1>Adding Videos to an In-Page Experience</h1>
+  <summary>In this topic you will learn how to add videos to an In-Page experience.</summary>
+  <section class="bcls-section">
+    <p>Video Cloud videos and YouTube videos can be added to an In-Page experience. To add videos to an In-Page experience, edit the experience and then click <strong>VIDEOS</strong> in the left navigation.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Before YouTube videos can be added to an experience, you must <a href="/node/16455">configure the YouTube settings</a>.</aside>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-videos.png" /></figure>
+    <p>Click <strong>Add Videos</strong> to open the video selector and then select a <strong>Source</strong>:</p>
+    <ul>
+      <li><strong>Video Cloud</strong> - Video Cloud video content will be used</li>
+      <li><strong>YouTube</strong> - YouTube video content will be used (see the <a href="#youtube">YouTube integration details</a> section of this document for details)</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: It is possible to add videos from both Video Cloud and YouTube to the same In-Page experience.</aside>
+    <p>If the <strong>YouTube</strong> source was selected, a channel selector will appear allowing you to select the YouTube channel to use.</p>
+    <p>When the Video Cloud <strong>Source</strong> is selected, select a method for how the videos should be added:</p>
+    <ul>
+      <li><strong><a href="#manual">Select Videos</a></strong> - Videos will be manually selected and used</li>
+      <li><strong><a href="#useplaylist">Select Playlist</a></strong> - Videos from a playlist will be used</li>
+      <li><strong><a href="#useplaylistrefID">Use Reference ID</a></strong> - Videos from a playlist reference ID will be used</li>
+    </ul>
+    <p>After videos have been selected, they will be displayed in the body of the page. In this example, a Video Cloud playlist was used.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-video-list.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: After making any changes to an experience, make sure you <a href="node/16795">republish the experience</a> so the changes appear on sites that display the experience.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="manual">Manually selecting videos</h2>
+    <p>To manually select videos, select a <strong>Method</strong> of <strong>Select Videos</strong>. With a Video Cloud source, the video selector will display a list of the 100 most recently updated videos in your Video Cloud account. New videos will be fetched as you page down. With a YouTube source, all of the videos in the selected channel will be displayed. Click on a video to select it, click it again to unselect it. Use the search field to <a href="#searchvids">search for videos</a>. In this example, a Video Cloud source was selected.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-videos-manual.png" /></figure>
+    <p>When you are done, click <strong>Add</strong>.</p>
+    <div id="searchvids" class="BCL-subsection">
+      <h3>Searching for videos</h3>
+      <p>The <strong>Search</strong> field can be used to search for videos. When searching Video Cloud videos, Gallery will search the video name, short and long descriptions, tags and custom fields. When searching YouTube videos, Gallery uses the YouTube search API.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-search.png" /></figure>
+      <p>Click <strong>More Search Options</strong> for finer control over what fields are searched and to include and exclude text. Note that this options is only available when a Video Cloud source is used.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-search-options.png" /></figure>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="useplaylist">Using a playlist</h2>
+    <p>To use the videos in a playlist, select a <strong>Method</strong> of <strong>Select Playlist</strong>. With a Video Cloud source, the video selector will display a list of the 20 most recently updated playlists in your Video Cloud account. With a YouTube source, the video selector will display a list of all the playlists in the selected channel. The Search field can be used to search for playlists. In this example, a Video Cloud source was selected.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-videos-playlist.png" /></figure>
+    <p>Note that only a single playlist can be selected. When you are done, click <strong>Select</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="useplaylistrefID">Using a playlist reference ID</h2>
+    <p>To use the videos in a playlist by specifying a playlist reference ID, select a <strong>Method</strong> of <strong>Use Reference ID</strong>. This option is only supported when using a Video Cloud source. The video selector provides a field to enter the <strong>Playlist Reference ID</strong>. By using a playlist reference ID, the videos in the experience can easily changed by re-assigning the reference ID to another playlist using the Media module. The experience doesn't need to be edited and republished when&nbsp;you need to change the videos that appear in the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-videos-playlist-ref-id.png" /></figure>
+    <p>Note that only a single playlist reference ID can be used. When you are done, click <strong>Select</strong>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="cta">Adding interactivity to videos</h2>
+    <p>Interactions and companion components can be added to a video and displayed as the video is played. Interactions include <strong>links</strong> and <strong>cards</strong> and are displayed as part of the player when a video is played. Companion components include <strong>HTML</strong>, <strong>images</strong> and <strong>text</strong> objects and are displayed outside the player.</p>
+    <p>Videos that have been configured with interactivity will display an icon in the <strong>Interactivity</strong> column indicating the type of interaction(s). In the following example, <strong>link</strong> and <strong>card</strong> interactions and a <strong>companion image</strong> have been configured.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16791-interactivity.png" /></figure>
+    <p>For information on adding and configuring interactions and companion components, see:</p>
+    <ul>
+      <li><a href="node/16797">Adding Interactions to an In-Page Experience</a></li>
+      <li><a href="node/16831">Configuring Companion Components for an In-Page Experience</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="remove">Removing videos from an In-Page experience</h2>
+    <p>The process to remove videos from an In-Page experience is dependent upon the <strong>Method</strong> selected to add the videos:</p>
+    <ul>
+      <li><strong>Select Videos</strong> - Check the checkbox next to the video(s) to remove and then click <strong>Remove Video(s)</strong>. You can also click the delete icon (<img alt="" src="/assets/images/experiences/inpage/node16791-delete-icon.png" />) in the <strong>Actions</strong> column.</li>
+      <li><strong>Select Playlist</strong> - Click <strong>Remove Playlist</strong> to remove all the videos</li>
+      <li><strong>Use Reference ID</strong> - Click <strong>Remove Playlist</strong> to remove all the videos</li>
+    </ul>
+    <p>When a video is removed, any interactions or companion components configured on that video <strong>will not</strong> be deleted. If the video is then re-added to the experience, the interactions and companion components will reappear.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="youtube">YouTube integration details</h2>
+    <ul>
+      <li>YouTube videos can't be downloaded</li>
+      <li>Before YouTube videos can be added to a video site, you must configure the YouTube settings</li>
+      <li>YouTube videos must have a privacy setting of Public</li>
+      <li>Currently, Gallery does not collect analytics data for YouTube videos. YouTube videos in an In-Page experience will not display any analytics data in the Experience Analytics dashboard</li>
+      <li>YouTube videos played inside Brightcove Players with the IMA plugin will not display ads on mobile devices</li>
+      <li>Customers' use of YouTube is subject to YouTube's <a href="https://www.youtube.com/static?template=terms">terms and conditions</a></li>
+      <li>When searching, all collections must consist of YouTube videos and the videos must be owned by the selected channel</li>
+    </ul>
   </section>
 </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -436,6 +427,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>
