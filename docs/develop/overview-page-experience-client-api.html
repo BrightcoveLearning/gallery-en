@@ -1,0 +1,56 @@
+---
+title: Overview: In-Page Experience Client API
+parent: Develop
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Overview: In-Page Experience Client API</h1>
+  <summary>This topic provides an overview of the In-Page Experience Client API. If you are looking for the platform API to create and manage in-page experiences see <a href="/node/18614">Overview: In-Page Experience API.</summary>
+  <section class="bcls-section">
+    <h2 id="introduction">Introduction</h2>
+    <p>The In-Page Experiences Client API is a JavaScript library that helps you manage the behavior of the In-Page Experience at runtime, similar to the way the Brightcove Player API is used to control the behavior of the player. The API is available on any page that runs one or more Brightcove embedded experiences. It is designed to help 3rd parties with Brightcove experiences integration. Provides access to current player, videos and state information as well as listeners for playback-related events.</p>
+    <p>See the full <a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">API reference</a> for details of the available methods and events.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="getting_started">Getting started.</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: for a fuller explanation of how to use the API, see <a href="/node/18680">In-Page Experience Client API Sample</a>. Here we will just focus on the code for using the API.</aside>
+    <pre class="line-numbers">
+<code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06"&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
+    <p>The easiest way to get a reference to the experience is to give it an <code class="notranslate">id</code> (in the <code class="notranslate">div</code> tag). The <code class="notranslate">id</code> can be anything you like as long as it is unique within the page, but since the experience id itself is there in the URL for the script (see the highlighted part of the code above), you might as well use that:</p>
+    <pre class="line-numbers">
+<code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06" id="experience_5bb2134180b4990011750f06"&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
+    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code class="notranslate">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/node/16793#advanced">custom HTML block</a> in the experience itself.</p>
+    <pre class="line-numbers">
+<code class="language-javascript notranslate">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
+    <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code class="notranslate">clientApi</code> object:</p>
+    <pre class="line-numbers">
+<code class="language-javascript notranslate">var <span class="bcls-highlight">experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06'),
+experienceApi</span>,
+video,
+current_video = document.getElementById('current_video'),
+video_paused = document.getElementById('video_paused');
+
+<span class="bcls-highlight">experienceApi = experience.clientApi</span>;
+
+// get initial video
+video = <span class="bcls-highlight">experienceApi.getCurrentVideo()</span>;
+current_video.textContent = video.name;
+
+// event listeners
+experienceApi.on('videoChanged', function() {
+  video = experienceApi.getCurrentVideo();
+  current_video.textContent = video.name;
+});
+
+experienceApi.on('videoStarted', function() {
+  video_paused.textContent = 'false';
+});
+
+experienceApi.on('videoPaused', function() {
+  video_paused.textContent = 'true';
+});
+</code></pre>
+  </section>
+</article>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Getting Started</title>
+  <title></title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -34,12 +34,10 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
       
       
       
-      
-      <li class="breadcrumb-item active" aria-current="page">Getting Started</li>
+      <li class="breadcrumb-item active" aria-current="page"></li>
     </ol>
   </nav>
 </header>
@@ -243,140 +241,66 @@
       </div>
   <!-- bootstrap layout -->
 
-<style>
-  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
-    font-size: 3rem;
-    color:rgb(213, 37, 125);
-    margin-right: 1rem;
-  }
-  .card-icon I {
-    color: rgb(213, 37, 125);
-  }
-</style>
-<article class="bcls-article"> 
-  <h1><i class="far fa-location-arrow"></i> Getting Started</h1>
-  <p>Brightcove Gallery&trade; makes it easy to create and publish  videos  experiences so viewers can consume your content wherever they may be. This page describes the key concepts to help you understand and be successful using Gallery to create video experiences. For more information, see the following concepts:</p>
-  <p>Sign up for a free trial account <a href="https://register.brightcove.com">here</a>.</p>
-  <table width="100%" border="0">
-	<tbody>
-		<tr bgcolor="#CCCCCC">
-			<th width="32%" scope="col">Concept</th>
-			<th width="68%" scope="col">Description</th>
-		</tr>
-		<tr>
-			<td><strong>Getting Started</strong></td>
-			<td>
-			<p>&nbsp;</p>
+<article class="bcls-article">
+  <h1>Overview: In-Page Experience Client API</h1>
+  <summary>This topic provides an overview of the In-Page Experience Client API. If you are looking for the platform API to create and manage in-page experiences see <a href="/node/18614">Overview: In-Page Experience API.</summary>
+  <section class="bcls-section">
+    <h2 id="introduction">Introduction</h2>
+    <p>The In-Page Experiences Client API is a JavaScript library that helps you manage the behavior of the In-Page Experience at runtime, similar to the way the Brightcove Player API is used to control the behavior of the player. The API is available on any page that runs one or more Brightcove embedded experiences. It is designed to help 3rd parties with Brightcove experiences integration. Provides access to current player, videos and state information as well as listeners for playback-related events.</p>
+    <p>See the full <a href="https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html">API reference</a> for details of the available methods and events.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="getting_started">Getting started.</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: for a fuller explanation of how to use the API, see <a href="/node/18680">In-Page Experience Client API Sample</a>. Here we will just focus on the code for using the API.</aside>
+    <pre class="line-numbers">
+<code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06"&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
+    <p>The easiest way to get a reference to the experience is to give it an <code class="notranslate">id</code> (in the <code class="notranslate">div</code> tag). The <code class="notranslate">id</code> can be anything you like as long as it is unique within the page, but since the experience id itself is there in the URL for the script (see the highlighted part of the code above), you might as well use that:</p>
+    <pre class="line-numbers">
+<code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06" id="experience_5bb2134180b4990011750f06"&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
+    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code class="notranslate">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/node/16793#advanced">custom HTML block</a> in the experience itself.</p>
+    <pre class="line-numbers">
+<code class="language-javascript notranslate">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
+    <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code class="notranslate">clientApi</code> object:</p>
+    <pre class="line-numbers">
+<code class="language-javascript notranslate">var <span class="bcls-highlight">experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06'),
+experienceApi</span>,
+video,
+current_video = document.getElementById('current_video'),
+video_paused = document.getElementById('video_paused');
 
-			<p>These documents will give you a set of hands-on steps you can follow to create Gallery experiences.</p>
+<span class="bcls-highlight">experienceApi = experience.clientApi</span>;
 
-			<ul>
-				<li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating and Publishing a Portal Experience</a></li>
-				<li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating and Publishing an In-Page Experience</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
+// get initial video
+video = <span class="bcls-highlight">experienceApi.getCurrentVideo()</span>;
+current_video.textContent = video.name;
 
-<hr />
-<table width="100%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Product Overview</strong></td>
-			<td width="68%">
-			<p>&nbsp;</p>
+// event listeners
+experienceApi.on('videoChanged', function() {
+  video = experienceApi.getCurrentVideo();
+  current_video.textContent = video.name;
+});
 
-			<p>These topics provide a high level overview of working with Gallery.</p>
+experienceApi.on('videoStarted', function() {
+  video_paused.textContent = 'false';
+});
 
-			<ul>
-				<li><a href="/get-started/getting-started-brightcove-gallery.html">Getting Started with Brightcove Gallery</a></li>
-				<li><a href="/get-started/overview-gallery-experiences.html">Overview of Gallery Experiences</a></li>
-				<li><a href="/get-started/creating-and-managing-gallery-experiences.html">Creating and Managing Gallery Experiences</a></li>
-				<li><a href="/get-started/training-demand-introduction-gallery.html">Training on Demand: Introduction to Gallery</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="100%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Templates</strong></td>
-			<td width="68%">
-			<p>Templates control the overall look and feel of the experience. Learn about the types of templates that are available.</p>
-
-			<ul>
-				<li><a href="/docs/portal/overview-gallery-portal-templates.html">Overview of Gallery Portal Templates</a></li>
-				<li><a href="/docs/inpage/overview-gallery-page-experience-templates.html">Overview of Gallery In-Page Experience Templates</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="100%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Configuring Gallery Settings</strong></td>
-			<td width="68%">
-			<p>Before creating a Portal, Event or Landing Page experience, Gallery needs to be configured with a default Brightcove Player to use.</p>
-
-			<ul>
-				<li><a href="/node/13856">Configuring Gallery Settings</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="100%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>Let's Build an Experience</strong></td>
-			<td width="68%">
-			<p>Select the type of Experience you want to create:</p>
-
-			<ul>
-				<li><a href="/node/13532">Portal</a></li>
-				<li><a href="/node/16796">In-Page</a></li>
-				<li><a href="/node/16637">Landing Page</a></li>
-				<li><a href="/node/15690">Event (Portal)</a></li>
-				<li><a href="/node/18545">Event (In-Page)</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<hr />
-<table width="100%" border="0">
-	<tbody>
-		<tr>
-			<td width="32%"><strong>On-Demand Training</strong></td>
-			<td width="68%">
-			<p>Training is also available to help you get started:</p>
-
-			<ul>
-				<li><a href="/get-started/training-demand-introduction-gallery.html">Introduction to Gallery</a></li>
-				<li><a href="/get-started/training-demand-building-portal-experiences-using-gallery.html">Building Portal Experiences using Gallery</a></li>
-				<li><a href="/get-started/training-demand-building-page-experiences-using-gallery.html">Building In-Page Experiences using Gallery</a></li>
-			</ul>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-
+experienceApi.on('videoPaused', function() {
+  video_paused.textContent = 'true';
+});
+</code></pre>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -384,7 +308,7 @@
 
 <hr>
 <div class="last-updated">
-  Page last updated on 03 Jan 2020
+  Page last updated on 06 Jan 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">
@@ -465,6 +389,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
 </body>

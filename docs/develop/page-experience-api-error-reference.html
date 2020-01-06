@@ -1,0 +1,71 @@
+---
+title: In-Page Experience API Error Reference
+parent: Develop
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>In-Page Experience API Error Reference</h1>
+  <summary>This topic provides an error reference for the In-Page Experience API (the platform API).</summary>
+  <section class="bcls-section">
+    <h2 id="inpage_experience_errors">In-Page Experience API errors</h2>
+    <table class="bcls-table">
+      <caption class="bcls-caption--table">
+      In-Page Experience API Error Reference
+      </caption>
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Error</th>
+          <th>Examples</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td style="vertical-align:top;"><code>400 BAD_REQUEST</code></td>
+          <td style="vertical-align:top;"><pre class="line-numbers">
+<code class="language-json">{
+  "status": 400,
+  "code": "BAD_REQUEST",
+  "message": "No template specified"
+}</code></pre>
+            <pre class="line-numbers">
+<code class="language-json">{
+  "status": 400,
+  "code": "BAD_REQUEST",
+  "message": "Specified template does not exist"
+}</code></pre>
+            <pre class="line-numbers">
+<code class="language-json">{
+  "status": 400,
+  "code": "BAD_REQUEST",
+  "details": [
+    "Path `name` is required."
+  ]
+}</code></pre></td>
+          <td style="vertical-align:top;">Usually a problem with the request body, such as omitting the <code>template</code> or some other required field, or specifying a template that does not exist</td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top;"><code>401 UNAUTHORIZED</code></td>
+          <td style="vertical-align:top;"><pre class="line-numbers">
+<code class="language-json">[
+  {
+    "error_code": "UNAUTHORIZED",
+    "message": "Permission denied."
+  }
+]</code></pre></td>
+          <td style="vertical-align:top;">Either no access token was sent with the request, or the client credentials used to create the access token did not have the correct permissions for the request</td>
+        </tr>
+        <tr>
+          <td style="vertical-align:top;"><code>404 NOT_FOUND</code></td>
+          <td style="vertical-align:top;"><pre class="line-numbers">
+<code class="language-json">{
+  "status": 404,
+  "code": "NOT_FOUND",
+  "message": "Experience 5bc2624e0f6f340011b not found"
+}</code></pre></td>
+          <td style="vertical-align:top;">The experience you are trying to update does not exist. It may have been deleted, or the experience id in the request may be incorrect.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
