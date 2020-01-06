@@ -1,0 +1,70 @@
+---
+title: Customizing the Appearance and Behavior of a Portal Experience
+parent: Portal Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Customizing the Appearance and Behavior of a Portal Experience</h1>
+  <summary>In this topic you will learn how to customize the appearance and behavior of a Portal experience.</summary>
+  <section class="bcls-section">
+    <p>To configure the Appearance and Behavior settings, edit the experience and click <strong>APPEARANCE AND BEHAVIOR</strong> in the left navigation. The following settings are available:</p>
+    <ul>
+      <li><a href="#template">Template Settings</a> - Configure settings specific to the template being used</li>
+      <li><a href="#header_footer">Header and Footer</a> - Configure a custom header/footer for the experience</li>
+      <li><a href="#custom">Custom</a> - Use custom CSS and JavaScript files</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="template">Configuring the template settings</h2>
+    <p>To configure the template settings, click <strong>APPEARANCE AND BEHAVIOR &gt; Template Settings</strong> in the left navigation. The template settings will vary based upon the template that is being used. Click a link for information on the settings that are specific to each template:</p>
+    <ul>
+      <li><a href="/node/18319">Catalogue</a></li>
+      <li><a href="/node/18318">Chronicle</a></li>
+      <li><a href="/node/18572">Marquee</a></li>
+      <li><a href="/node/18480">Live Event Portal</a></li>
+    </ul>
+    <p>Note that not all templates will have template settings.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="header_footer">Configuring custom header/footer HTML</h2>
+    <p>Gallery provides the option of using a custom header and/or footer for the site. This provides the ability to customize a portal experience so it more closely matches the look and feel of your corporate sites. A custom header/footer can also be configured at the account level. For information on configuring a custom header/footer at the account level, see <a href="/node/13856">Configuring Gallery Settings</a>.</p>
+    <p>To configure a portal experience to use a custom header or footer, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Design the header/footer to use for your site. The header/footer can contain any valid HTML, JavaScript or CSS code.</li>
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-header-footer.png" /></figure>
+      </li>
+      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
+      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
+      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
+      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <div class="BCL-subsection">
+      <h3>Notes on using custom headers and footers</h3>
+      <ul>
+        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
+        <li>There is no explicit character limit on the header and footer HTML</li>
+        <li>External CSS and JavaScript files are supported</li>
+        <li>The code should follow responsive design principles so it will scale properly across devices</li>
+        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
+      </ul>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom">Configuring custom settings</h2>
+    <p>The custom settings provide the ability to customize the look and feel of the site. To configure the custom settings, click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-custom-settings.png" /></figure>
+    <p>The following settings are available:</p>
+    <ul>
+      <li><strong>Custom CSS URL</strong> - Used to specify the location of a custom .css file to customize the style. Click the <strong>View CSS</strong> link to view the CSS file currently being used to style the site.</li>
+      <li><strong>Custom JavaScript URL</strong> - Used to specify the location of a custom .js file to customize the style and/or behavior of the site.</li>
+      <li><strong>Custom Favicon URL</strong> - Used to specify the location of the favicon to use for the site. Browsers that provide favicon support typically display the favicon on page's browser tab and next to the page's name in a list of bookmarks.</li>
+      <li><strong>Custom Mobile App Icon</strong> - Used to select an image that will be used as a home screen icon when the site is saved to your device home screen. Brightcove recommends that you upload a high resolution (we recommend 1024 px x 1024 px), square image and Gallery will scale the image and use a version best suited to your device.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-app-icon.png" /></figure>
+      </li>
+      <li><strong>Custom Response Headers</strong> - Enter HTTP headers which will be sent in response to requests to the portal. For example, headers might be added to add a Content Security Policy (CSP) or HTTP-Strict-Transport-Security (HSTS).</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: Brightcove Consulting offers services to help customize Gallery experiences. Contact your Brightcove Account Manager for more information.</aside>
+  </section>
+</article>

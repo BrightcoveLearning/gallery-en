@@ -1,0 +1,57 @@
+---
+title: Overview: In-Page Experience API
+parent: Develop
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Overview: In-Page Experience API</h1>
+  <summary>This topic provides an overview of the In-Page Experiences API.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>There are two APIs associated with In-Page Experiences, but they are used for very different purposes:</p>
+    <dl>
+      <dt>In-Page Experiences API (REST)</dt>
+      <dd>
+        <p>The In-Page Experiences API is a REST API that allows you to manage In-Page experiences programmatically. It is primarily intended for use in integrating the Video Cloud platform with your CMS application.</p>
+        <p>Also see the full <a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#/">API Reference</a> for complete details of the available requests.</p>
+      </dd>
+      <dt>In-Page Experiences Client API</dt>
+      <dd>
+        <p>The In-Page Experiences Client API is a JavaScript library that helps you manage the behavior of the In-Page Experience at runtime, similar to the way the Brightcove Player API is used to control the behavior of the player. The API is available on any page that runs one or more Brightcove embedded experiences. See the <a href="/node/18682">Overview: In-Page Experience Client API</a> for more information.</p>
+      </dd>
+    </dl>
+    <p>The remainder of this overview deals with the REST API for managing your In-Page Experiences on the backend.</p>
+    <p>For a general introduction to In-Page experiences, see <a href="/node/16789">Overview: Creating, Editing and Publishing In-Page Experiences</a>.</p>
+    <p>The sections that follow provide an overview of the 4 groups of REST API requests:</p>
+    <ul>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#templates">Templates</a></li>
+      <li><a href="#themes">Themes</a></li>
+      <li><a href="#fonts">Fonts</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="experiences">Experiences</h2>
+    <p>Requests for Experiences fall into three sub-categories:</p>
+    <dl>
+      <dt>Manage experiences</dt>
+      <dd>These requests allow you get a list of all the experiences for the account. You can also create a new experience, and get, update, or delete a specific experience. Finally, you can duplicate an experience to create a starting point for a new one.</dd>
+      <dt>Publish/Unpublish experiences</dt>
+      <dd>These requests all to get a list of all templates for the account or a particular template.</dd>
+      <dt>Manage status for live experiences</dt>
+      <dd>These two requests allow you either get the current status of a live experience or change that status (from <code>preEvent </code> to <code>live </code>, for example).</dd>
+    </dl>
+  </section>
+  <section class="bcls-section">
+    <h2 id="templates">Templates</h2>
+    <p>Templates control the overall look and feel of an experience. Custom templates cannot be created, but there are several standard templates, and more may be added over time. The API allows you to get a list of templates available to your account, or to retrieve a specific template.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="themes">Themes</h2>
+    <p>Themes allow you to customize a template to create the look and feel you want for your experience. The API provides methods to fully manage you themes, creating, getting, updating or deleting them.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="fonts">Fonts</h2>
+    <p>You can use your own fonts. These methods let you add fonts, update them, get them or delete them. These are web fonts, loaded via CSS.</p>
+  </section>
+</article>
