@@ -1,0 +1,70 @@
+---
+title: Creating the Post-Event State for a Portal Event Experience
+parent: Live Event Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Creating the Post-Event State for a Portal Event Experience</h1>
+  <summary>In this topic you will learn how to create the post-event state for a Live Event Portal experience.</summary>
+  <section class="bcls-section">
+    <p>The Live Event Portal template provides <a href="/node/15691">pre-event</a>, <a href="/node/15692">live event</a>, post-event, video archive and video detail page templates. These page templates can be customized so the site has a different appearance before, during and after a live event. The post-event state is what the site will display when the live event has completed.</p>
+    <p>To create the post-event homepage state for a site, create a new Live Event Portal experience. In the Gallery Site Editor, click <strong>PAGES</strong> in the left navigation and then click <strong>Home Page: Post-Event</strong>.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15693-post-event-selected.png" /></figure>
+    <p>The post-event home page state provides the following content areas.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15693-post-event-content-areas.png" /></figure>
+    <ul>
+      <li><strong>A - Home Logo and Name</strong> - Used to return viewer back to the home page. There are two placeholders here so you may choose to have an image followed by text for example.</li>
+      <li><strong>B - Link to Video Archive</strong> - Used to view all video collections that have been created for the site.</li>
+      <li><strong>C - Twitter Settings</strong> - Provides the ability to use a Twitter feed widget. See <a href="#twitter">Configuring a Twitter feed</a>.</li>
+      <li><strong>D - Background image, text and links</strong> - Used to add a background image, subtitle text and links</li>
+      <li><strong>E - Live Event Name</strong> - Static text message</li>
+      <li><strong>F - </strong><strong>Live stream has ended message</strong> - Static text message</li>
+      <li><strong>G - Email sign-up settings</strong> - Used to configure email sign-up. See <a href="#emailsignup">Configuring email sign-up</a>.</li>
+      <li><strong>H - Add Videos</strong> - Used to add video collections to the site. See <a href="#addvideos">Adding videos</a> for more information.</li>
+      <li><strong>I - </strong><strong>Video Grid Box</strong> - Used to add calls-to-action, including custom HTML or images. See <a href="/node/15720">Configuring Calls to Action on a Portal Experience</a> for more information.</li>
+      <li><strong>J - Footer objects</strong> - Used to add text and links to page footer</li>
+    </ul>
+    <p>For information on adding images, links and text to a Gallery page template, see <a href="/node/13555">Customizing the Content of Portal Experience Pages</a>.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Site colors will vary based upon the theme that was selected.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="twitter">Configuring a Twitter feed</h2>
+    <p>The site can be configured with a Twitter embed on the page. For the types of embeds available, check the <a href="https://publish.twitter.com">Twitter website</a>. A sample likes timeline is shown below.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-twitter-feed-sample.png" /></figure>
+    <p>To add a Twitter feed, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li><a href="https://twitter.com/settings/widgets">Create a widget on the Twitter site</a>. For help on creating a Twitter widget, see the <a href="https://dev.twitter.com/web/embedded-timelines">Twitter developer documentation</a>.</li>
+      <li>Click on the <strong>Twitter Settings</strong> link on the page.</li>
+      <li>Copy the HTML for the Twitter widget and paste it into the Twitter Feed settings.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-twitter-widget.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="emailsignup">Configuring email sign-up</h2>
+    <p>The site can be configured so that site visitors can provide their email address.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15693-email-signup.png" /></figure>
+    <p>To add an email sign-up, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on the <strong>Email Sign-up Settings</strong> link on the page.</li>
+      <li>Configure the email sign-up properties as needed.
+        <ul>
+          <li><strong>Do not display e-mail lead form</strong> - Don't display the e-mail form</li>
+          <li><strong>Use the e-mail form provided with the template</strong> - Select to use the default email form provided with the template</li>
+          <li><strong>Use custom HTML provided by your marketing automation software</strong> - Select to use your custom form HTML for email capture
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15693-email-settings.png" /></figure>
+          </li>
+        </ul>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Once the email settings have been configured, return to the page and click on the <strong>Email Sign-up Message</strong> link and set the text that appears above the email sign-up field.</li>
+    </ol>
+    <p>All data captured by the email form can be exported using the <a href="/node/18585">Export Gallery Leads</a> option in the Audience module. Leads captured using custom HTML option are viewed inside of your marketing automation software.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="addvideo">Adding videos</h2>
+    <p>Click the <strong>+Add Videos</strong> link to add video collections to the site. For information on creating collections, see <a href="/node/13569">Adding Videos to a Portal Experience</a>.</p>
+    <p>The first collection in the list of collections will be displayed on the post-event home page. To view all the collections, click one of the videos on the home page or configure the <strong>Video Archive Link </strong> object so viewers can click it to view all collections.</p>
+  </section>
+</article>
