@@ -1,0 +1,50 @@
+---
+title: Quick Start: In-Page Experience Platform (REST) API
+parent: Develop
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Quick Start: In-Page Experience Platform (REST) API</h1>
+  <summary>The quick start provides examples of some of the API requests for managing In-Page Experiences, and provides a sample interface for using them.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>The In-Page Experience API allows you manage in-page experiences programmatically, making it particularly useful for CMS integrations, to allow users to create manage experiences from their own CMS instead of going to Gallery in Studio.</p>
+    <p>This quick start provides a sample implementation that allows users to:</p>
+    <ol>
+      <li>Get all in-page experience templates for an account</li>
+      <li>Create a basic experience from the selected template</li>
+      <li>Select either a playlist or list of videos to add to the experience</li>
+      <li>Update the experience with the selected videos/playlist</li>
+      <li>Publish the experience</li>
+    </ol>
+    <p>Below is a high-level view of the app logic.</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="App Logic" src="/assets/images/develop/Quick_Start_ In-Page_Experience_API_Application_Logic.svg" />
+      <figcaption class="bcls-caption--image">App Logic</figcaption>
+    </figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="the_app">The app</h2>
+    <p>You can find all the code for this app in <a href="https://github.com/BrightcoveLearning/18683-quick-start-page-experience-platform-rest-api">this GitHup repository</a>.</p>
+    <p data-height="1200" data-theme-id="dark" data-slug-hash="Bqzqre" data-default-tab="result" data-user="rcrooks1969" data-pen-title="Quick Start: In-Page Experience Platform API" class="codepen">See the Pen <a href="https://codepen.io/team/rcrooks1969/pen/Bqzqre/">Quick Start: In-Page Experience Platform API</a> by Brightcove Learning Services (<a href="https://codepen.io/rcrooks1969">@rcrooks1969</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script></section>
+  <section class="bcls-section">
+    <h2 id="Using_the_CodePen" class="bcls-expander-head">Using the CodePen</h2>
+    <div class="bcls-expander-content">
+      <p>Here are some tips to effectively use the above CodePen:</p>
+      <ul>
+        <li>Toggle the actual display of the player by clicking the <strong>Result</strong> button.</li>
+        <li>Click the <strong>HTML/CSS/JS</strong> buttons to display ONE of the code types.</li>
+        <li>Click <strong>Edit on CodePen</strong> in the upper right corner to fork this CodePen into your own account.</li>
+        <li>Find all the code associated with this sample in this <a href="https://github.com/BrightcoveLearning/18598-dynamic-ingest-api-sample-ingesting-low-priority-videos-dynamic-delivery">GitHub repository</a>.</li>
+      </ul>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="proxy">Proxy code</h2>
+    <p>In order to build your own version the sample app on this page, you must create and host your own proxy. (The proxies used by Brightcove Learning Services only accept requests from Brightcove domains.) You can download two versions of our proxy code:</p>
+    <ul>
+      <li><a href="//learning-services-media.brightcove.com/doc-assets/proxy/bcls-proxy-for-distribution.php.zip">This is a general version that expects client credentials to be passed with the request</a></li>
+      <li><a href="//learning-services-media.brightcove.com/doc-assets/proxy/doc-samples-proxy.php.zip">This version allows you to save your client credentials in the proxy itself on lines 25-26 (recommended)</a></li>
+    </ul>
+  </section>
+</article>
