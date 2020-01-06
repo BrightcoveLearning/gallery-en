@@ -1,0 +1,45 @@
+---
+title: Exporting Gallery Lead Data
+parent: Portal Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Exporting Gallery Lead Data</h1>
+  <summary>In this topic you will learn how to export lead form data collected through Gallery experiences.</summary>
+  <section class="bcls-section">
+    <p>Gallery lead form data is collected when a Gallery experience has been configured to use a lead form. For information on configuring a portal experience to collect lead data, see <a href="/node/18590">Using a Lead Form with a Portal Experience</a>.</p>
+    <p>When exporting Gallery leads from the Audience module, only data captured using Audience lead forms will be exported. Lead data from custom lead forms will be stored in your marketing automation software.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Only users with Administrator privileges will be able to download the lead data.</aside>
+    <p>To export Gallery lead data, follow these steps.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the <strong>Audience</strong> module.</li>
+      <li>Click <strong>Export Gallery Leads</strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18585-export-gallery-leads.png" /></figure>
+      </li>
+      <li>Select a Gallery experience to export the leads from.</li>
+      <li>Enter a <strong>Start Date</strong> and <strong>End Date</strong> for the leads.</li>
+      <li>Select an export format, <strong>Comma-Separated Values</strong> or <strong>Excel</strong>.</li>
+      <li>Click the <strong>Export</strong> button to download the lead data.</li>
+    </ol>
+    <p>The following fields will be included in the exported file:</p>
+    <ul>
+      <li><strong>All possible lead form fields</strong>
+        <ul>
+          <li>emailAddress</li>
+          <li>firstName</li>
+          <li>lastName</li>
+          <li>businessPhone</li>
+          <li>country</li>
+          <li>companyName</li>
+          <li>industry</li>
+        </ul>
+      </li>
+      <li><strong>externalId</strong> - ID used to uniquely identify the viewer</li>
+      <li><strong>playerId</strong> - Player ID that displayed the lead form</li>
+      <li><strong>videoId</strong> - Video ID of video being watched when data was collected</li>
+      <li><strong>pageUrl</strong> - Page URL viewer was on when data was collected</li>
+      <li><strong>createdAt</strong> - date and time data was collected</li>
+      <li><strong>experience</strong> - Name of experience being displayed when data was collected</li>
+    </ul>
+  </section>
+</article>
