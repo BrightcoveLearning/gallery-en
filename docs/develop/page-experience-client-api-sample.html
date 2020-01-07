@@ -1,0 +1,73 @@
+---
+title: In-Page Experience Client API Sample
+parent: Develop
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>In-Page Experience Client API Sample</h1>
+  <summary>This simple example demonstrates the use of the In-Page Experience Client API.</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>The In-Page Experience client API provides a JavaScript library similar to the Brightcove Player API. The API simplifies interacting and controlling your In-Page Experience on the page.</p>
+    <p>This basic sample shows you how to:</p>
+    <ol>
+      <li>Get a reference to the experience and then to the clientApi object, which has the methods.</li>
+      <li>Invoke API methods to set up listeners for various events and get information on the video currently loaded in the player.</li>
+      <li>Inject information into HTML elements you add to the experience UI.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="In_Page_Experience_Example">In-Page Experience Example</h2>
+    <div data-experience="5bb2134180b4990011750f06" id="experience_5bb2134180b4990011750f06">&nbsp;</div>
+    <script src="https://players.brightcove.net/1752604059001/experience_5bb2134180b4990011750f06/live.js"></script></section>
+  <section class="bcls-section">
+    <h2 id="steps_to_create_the_sample">Steps to create the sample</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>Create an In-Page Experience with a playlist (it does not matter how the playlist is displayed).</li>
+      <li>Publish the experience.</li>
+      <li>Copy and paste the experience embed code into an HTML page.</li>
+      <li>Add an <code class="notranslate">id</code> attribute to the <code class="notranslate">&lt;div&gt;</code> tag, with the value: <strong>customized_in_page_experience</strong>.</li>
+      <li>Go back to Studio and add a custom HTML component to the experience with the following code:
+        <pre class="line-numbers">
+<code class="language-javascript notranslate">&lt;div style="padding: .5em;border: 1px #64AAB2 solid; border-radius:.5em;"&gt;
+&lt;p&gt;Current Video: &lt;span id="current_video" style="color:RGB(155, 37, 86);font-weight:bold;"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Video Paused: &lt;span id="video_paused" style="color:RGB(155, 37, 86);font-weight:bold;"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+  var BCLS = ( function (window, document) {
+    var experience = window.top.bcov.gal.getEmbed('customized_in_page_experience'),
+    experienceApi,
+    video,
+    current_video = document.getElementById('current_video'),
+    video_paused = document.getElementById('video_paused');
+
+    experienceApi = experience.clientApi;
+
+    // get initial video
+    video = experienceApi.getCurrentVideo();
+    current_video.textContent = video.name;
+
+    // event listeners
+    experienceApi.on('videoChanged', function() {
+      video = experienceApi.getCurrentVideo();
+      current_video.textContent = video.name;
+    });
+
+    experienceApi.on('videoStarted', function() {
+      video_paused.textContent = 'false';
+    });
+
+    experienceApi.on('videoPaused', function() {
+      video_paused.textContent = 'true';
+    });
+
+  })(window, document);
+&lt;/script&gt;
+</code></pre>
+      </li>
+      <li>Set the component to display Before Play, Playing, and After Play.</li>
+      <li>Save your changes and re-publish the experience.</li>
+      <li>Browse your page, and you should see the box with "Current Video" and "Player Paused" messages. Note that because publishing is asynchronous, you may have to wait a minute, clear the browser cache, and refresh the page to see the changes.</li>
+    </ol>
+  </section>
+</article>

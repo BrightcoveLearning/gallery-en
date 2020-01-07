@@ -1,0 +1,77 @@
+---
+title: Configuring Gallery Settings
+parent: Settings
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Configuring Gallery Settings</h1>
+  <summary>This topic provides an overview of the Gallery settings that can be configured.</summary>
+  <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="3541177657001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>To configure the Gallery settings, open the Gallery module and click the <strong>Settings</strong> link at the top of the page. The following settings can be configured:</p>
+    <ul>
+      <li><a href="#players">Players</a></li>
+      <li><a href="#youtube">YouTube</a></li>
+      <li><a href="#domains">Custom Domains &amp; SSL</a></li>
+      <li><a href="#access">Access Control Profiles</a></li>
+      <li><a href="#html">Custom HTML</a></li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="gallery settings page" src="/assets/images/settings/node13547-settings-home.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="players">Selecting a default Video Cloud player</h2>
+    <p>Gallery should be configured with an account wide default video player that will be used on your Gallery sites. Players for individual Gallery sites can also be configured as part of the VIDEO AND PLAYBACK settings providing the ability to override the account wide default player. For more information, see <a href="/docs/portal/customizing-player-and-lead-form-settings-portal-experience.html">Customizing the Player and Lead Form Settings for a Portal Experience</a>.</p>
+    <p>As a best practice, we recommend you create and style dedicated players for your Gallery sites. If you haven't created a dedicated player for your Gallery site, you should start by doing so. For information on creating players, see <a href="/node/14049">Getting Started with the Players Module</a>.</p>
+    <p>To configure Gallery with a default video player, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Players</strong> in the left navigation.</li>
+      <li>Select your account wide default player from the list of players and then click <strong>Save</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="players" src="/assets/images/settings/node13547-players.png" /></figure>
+      </li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: A default player must be selected or portal experiences will fail to publish.</aside>
+    <p>Audience-enabled players are indicated with the Audience icon (<img alt="" src="https://img.brightcove.com/node13547-audience-icon.png" />). These players are configured with the Audience plugin and can track video engagement data. Hovering over the icon will display the Audience connection information.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node13547-audience-icon-hover.png" /></figure>
+    <p>For information on creating Audience-enabled players, see <a href="/node/16419">Creating an Audience-enabled Player</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="youtube">Configuring YouTube settings</h2>
+    <p>Gallery sites can contain videos from your Video Cloud account or from a YouTube account. Before YouTube videos can be added to a Gallery site, the YouTube settings must be configured. For information on these settings, see <a href="/docs/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="domains">Configuring custom domains and SSL</h2>
+    <p>When you first create a Gallery site, it is assigned a random domain with the format of <code>&lt;site-slug&gt;.bcovp0rtal.com</code>. Gallery provides the ability to publish Gallery sites at a Brightcove provided domain or using your own custom domain. Sites can also be secured using SSL. For information on configuring custom domains and SSL, see <a href="/docs/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="access">Configuring Access Control Profiles</h2>
+    <p>Access Control Profiles can be created to control access to Gallery sites. Access to a site can be limited by:</p>
+    <ul>
+      <li><strong>IP address</strong> - Access is limited based upon the IP address of the viewer</li>
+      <li><strong>SSO credentials</strong> - A user name a password are required for access</li>
+      <li><strong>Access Code </strong>- User is required to enter an access code before the site will display (useful when creating and testing a site)</li>
+    </ul>
+    <p>For information on creating Access Control Profiles, see <a href="/node/14029">Controlling Access to a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="html">Using custom header/footer HTML</h2>
+    <p>Gallery provides the option of using a custom header and/or footer for all of your sites. This provides the ability to customize your Gallery sites so they more closely match the look and feel of your corporate sites. A custom header/footer can also be configured for an individual site. For information on configuring a custom header/footer for a site, see <a href="/docs/portal/customizing-appearance-and-behavior-portal-experience.html">Customizing the Appearance and Behavior of a Portal Experience</a>.</p>
+    <p>To configure Gallery to use a custom header or footer, start by designing the header/footer to use for your sites. The header/footer can contain any valid HTML, JavaScript or CSS code. When done, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Custom HTML</strong> in the left navigation.</li>
+      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
+      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+    <div class="BCL-subsection">
+      <h3>Notes on using custom headers and footers</h3>
+      <ul>
+        <li>Gallery does not validate the HTML that is supplied for the header/footer</li>
+        <li>There is no explicit character limit on the header and footer HTML</li>
+        <li>External CSS and JavaScript files are supported</li>
+        <li>The custom HTML should follow responsive design principles so it will scale properly across devices</li>
+        <li>Brightcove has seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
+      </ul>
+    </div>
+  </section>
+</article>
