@@ -244,6 +244,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/downloading-videos-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/portal/exporting-gallery-lead-data.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -504,6 +511,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/general/troubleshooting-brightcove-gallery-issues.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/using-custom-fonts-portal-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
