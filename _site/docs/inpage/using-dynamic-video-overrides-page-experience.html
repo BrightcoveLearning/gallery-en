@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Using Dynamic Video Overrides in an In-Page Experience</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/inpage/">In-Page Experiences</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Using Dynamic Video Overrides in an In-Page Experience</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/index.html">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage-trial.html">Getting Started with your Brightcove Engage Trial</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage.html">Getting Started with Brightcove Engage</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-mobile-app-exp.html">Creating and Publishing Mobile App Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-web-exp.html">Creating and Publishing Web Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/using-brightcove-engage-app-prerelease.html">Using the Brightcove Engage Application</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-mobile-app.html">Step-by-Step - Creating and Publishing a Mobile App Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-web-exp.html">Step-by-Step Creating and Publishing a Web Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-training-videos.html">Brightcove Engage Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/docs/">Documentation <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/videos/">Managing Videos <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                        <li><a href="/docs/videos/editing-video-properties-using-quick-edit.html">Editing Video Properties with Quick Edit</a></li>
+                        
+                        <li><a href="/docs/videos/capturing-poster-and-thumbnail-images.html">Capturing Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/uploading-poster-and-thumbnail-images.html">Uploading Poster and Thumbnail Images</a></li>
+                        
+                        <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
+                        
+                        <li><a href="/docs/videos/how-to-search-for-videos.html">Search for Videos</a></li>
+                        
+                        <li><a href="/docs/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
+                        
+                        <li><a href="/docs/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
+                        
+                        <li><a href="/docs/videos/configuring-video-availability.html">Configuring Video Availability</a></li>
+                        
+                        <li><a href="/docs/videos/exporting-video-data.html">Exporting Video Data</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/experiences/">Creating Experiences <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/docs/experiences/managing-collections.html">Managing Collections</a></li>
+                        
+                        <li><a href="/docs/experiences/editing-experience-details.html">Editing Experience Details</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        
+                        <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-mobile-app-experiences.html">Styling Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/styling-web-experiences.html">Styling Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-mobile-app-experience.html">Previewing and Publishing Mobile App Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/previewing-publishing-web-experience.html">Previewing and Publishing Web Experiences</a></li>
+                        
+                        <li><a href="/docs/experiences/adding-logo-mobile-app-experience.html">Adding a Logo to Mobile App Experience Pages</a></li>
+                        
+                        <li><a href="/docs/experiences/customizing-content-web-experience-pages.html">Customizing the Content of Web Experience Pages</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/analytics/">Reviewing Analytics <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/docs/admin/">Administering Accounts <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-information.html">Managing Account Information</a></li>
+                        
+                        <li><a href="/docs/admin/managing-account-settings.html">Managing Account Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-video-fields.html">Managing Video Fields</a></li>
+                        
+                        <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
+                        
+                        <li><a href="/docs/admin/managing-profile-information.html">Managing Profile Information</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Using Dynamic Video Overrides in an In-Page Experience</h1>
+  <summary>In this topic you will learn how to use dynamic video overrides in an In-Page experience.</summary>
+  <section class="bcls-section">
+    <p>There may be times when you want to change the videos in an In-Page experience. For example, maybe the videos in an experience need to change based upon a selection the user makes or based upon navigating to other parts of a site. Instead of creating new in-page experiences, each with a different set of videos, it is possible to modify the embed code to assign the appropriate videos to an experience. Changes to the embed code vary based upon the type of embed code that is being used:</p>
+    <ul>
+      <li><a href="#embed">Recommended embed code</a></li>
+      <li><a href="#javascript">No JavaScript embed code</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="embed">Recommended embed code</h2>
+    <p>Typical In-Page experience embed code (Recommended option) looks like the following:</p>
+    <pre>
+<code class="language-html">&lt;div data-experience="597a2aa114b2ed00103052af"&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/live.js"&gt;&lt;/script&gt;</code></pre>
+    <p>To dynamically override the videos associated with an In-Page experience, the embed code can be changed to add an attribute to the <code>div</code> tag to specify the videos or the playlist to be used.</p>
+    <div class="BCL-subsection">
+      <h3>Specifying individual videos</h3>
+      <p>To specify individual videos to use, add the <code>data-video-ids</code> parameter to the <code>div</code> tag and then specify a comma-delimited list of video IDs.</p>
+      <pre>
+<code class="language-html">&lt;div data-experience="597a2aa114b2ed00103052af" 
+     <strong>data-video-ids="12345,56789"</strong>&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/live.js"&gt;&lt;/script&gt;
+</code></pre>
+    </div>
+    <div class="BCL-subsection">
+      <h3>Specifying a playlist</h3>
+      <p>To specify a playlist to use, add the <code>data-playlist-id</code> parameter to the <code>div</code> tag and then specify the playlist ID to use.</p>
+      <pre>
+<code class="language-html">&lt;div data-experience="597a2aa114b2ed00103052af" 
+     <strong>data-playlist-id="12345"</strong>&gt;&lt;/div&gt;
+&lt;script src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/live.js"&gt;&lt;/script&gt;</code></pre>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="javascript">No JavaScript embed code</h2>
+    <p>Typical In-Page experience embed code (No JavaScript option) looks like the following:</p>
+    <pre>
+<code class="language-html">&lt;iframe style="display:block;border:none;margin-left:auto;margin-right:auto;"
+src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/index.html"
+allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    <p>To dynamically override the videos associated with an In-Page experience, the embed code can be changed to add a parameter to the <code>src</code> attribute.</p>
+    <div class="BCL-subsection">
+      <h3>Specifying individual videos</h3>
+      <p>To specify individual videos to use, add the <code>videoIds</code> parameter and then specify a comma-delimited list of video IDs.</p>
+      <pre>
+<code class="language-html">&lt;iframe style="display:block;border:none;margin-left:auto;margin-right:auto;"
+src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/index.html<strong>?videoIds=12345,56789</strong>""
+allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
+    </div>
+    <div class="BCL-subsection">
+      <h3>Specifying a playlist</h3>
+      <p>To specify a playlist to use, add the <code>playlistId</code> parameter and then specify the playlist ID to use.</p>
+      <pre>
+<code class="language-html">&lt;iframe style="display:block;border:none;margin-left:auto;margin-right:auto;"
+src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/index.html<strong>?playlistId=12345</strong>"
+allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
+    </div>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 07 Jan 2020
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

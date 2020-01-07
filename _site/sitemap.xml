@@ -13,6 +13,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/inpage/adding-interactions-page-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/portal/adding-video-cloud-videos-portal-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -42,6 +49,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/portal/assigning-custom-domain-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/general/brightcove-gallery-cookies.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -265,6 +279,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-site-configuration-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/portal/customizing-site-features-portal-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -293,6 +314,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-video-and-playback-settings-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/portal/customizing-video-settings-portal-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -301,6 +329,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/portal/downloading-videos-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/develop/embedding-brightcove-page-experiences-cms.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -356,7 +391,14 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/</loc>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -370,14 +412,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
-        <lastmod>2020-01-07</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -574,6 +609,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/portal/using-custom-fonts-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/inpage/using-dynamic-video-overrides-page-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
