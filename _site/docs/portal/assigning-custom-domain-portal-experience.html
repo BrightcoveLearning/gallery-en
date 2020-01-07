@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Adding Videos to a Portal Experience</title>
+  <title>Assigning a Custom Domain to a Portal Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -43,7 +43,7 @@
       
       <li class="breadcrumb-item"><a href="/docs/portal/">Portal Experiences</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Adding Videos to a Portal Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Assigning a Custom Domain to a Portal Experience</li>
     </ol>
   </nav>
 </header>
@@ -248,70 +248,34 @@
   <!-- bootstrap layout -->
 
 <article class="bcls-article">
-  <h1>Adding Videos to a Portal Experience</h1>
-  <summary>In this topic you will learn how to create collections and select the videos that will be displayed on Portal experiences.</summary>
+  <h1>Assigning a Custom Domain to a Portal Experience</h1>
+  <summary>In this topic you will learn how to assign a custom domain to a Portal experience.</summary>
   <section class="bcls-section">
-    <p>Using the Gallery Collection Editor, you can select the videos to display on Portal experiences. With Portal experiences, videos are organized into collections. Collections can contain videos from a Video Cloud account or from a YouTube channel.</p>
-    <p>To add videos to a Portal experience, click the <strong>Videos</strong> icon in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-videos-menu.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create">Creating a collection</h2>
-    <p>Videos in a Portal experience are organized into collections. To create a collection, follow these steps:</p>
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="3543581066001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>Assigning a custom domain to a Gallery Portal experience provides a way to access the site at an easy to remember URL (vs. having a <code>site-slug.bcvp0rtal.com</code> URL). When using custom domains, you can also assign an optional path to the URL. Using paths allows you to utilize different templates, make microsites, campaigns, internal portals, etc, while still using the same domain. For example, <code>videos.brightcovegallery.com</code> can be expanded to also include paths like <code>videos.brightcovegallery.com/event</code> or <code>videos.brightcovegallery.com/product. </code>Paths allow publishers who have multiple sites and SSL to only have to setup SSL for one domain rather than each individual site-slug.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Custom domains have to be created as part of the Gallery settings <strong>before</strong> they can be assigned to a site. For information, see <a href="/node/16440">Configuring Custom Domains and SSL</a>.</aside>
+    <p>To assign a custom domain to a portal experience, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click the <strong>Videos</strong> icon in the left navigation. The Manage Collections page will open. The right side of the dialog displays a preview of the home page video layout for the selected template type.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-collection-editor.png" /></figure>
+      <li>Edit the experience.</li>
+      <li>Click <strong>SITE CONFIGURATION &gt; URL</strong> in the left navigation. The initial domain assigned to the site will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="list of domains" src="/assets/images/experiences/portal/node16440-url-ssl-start.png" /></figure>
       </li>
-      <li>Enter a name for the collection and press <strong>enter</strong>. The name will be displayed to viewers so make sure to use a meaningful name. Click the edit (<img alt="" src="/assets/images/experiences/portal/node13569-edit-icon.png" />) icon to edit the collection name.</li>
-      <li>(Optional) To indicate that this is a header collection, click the folder icon (<img alt="" src="/assets/images/experiences/portal/node13569-folder-icon.png" />). Header collections have no videos associated with them and are used for organization.</li>
+      <li><strong>(Optional)</strong> Uncheck the <strong>Active</strong> checkbox to disable the <code>site-xxxx.bcvp0rtal.com domain</code>. Typically publishers will disable the <code>site-xxxx.bcvp0rtal.com</code> when using a custom domain so it is not indexed by search engines.</li>
+      <li>Click <strong>Add Custom Domain</strong>.</li>
+      <li>By default, domains will be <strong>Active</strong>. Unchecking <strong>Active</strong> disables Gallery from routing on the entry but it does not free up the path/domain combination for use on another site.</li>
+      <li>Select a domain from the drop down list. The list of custom domains that were configured as part of the Gallery settings will be displayed. By default, domains will be active.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="select a domain" src="/assets/images/experiences/portal/node16440-select-domain.png" /></figure>
+      </li>
+      <li>Optionally, enter a path for the domain.</li>
+      <li>Add additional domains for the site by clicking <strong>Add Custom Domain</strong>.</li>
+      <li>When finished, click <strong>Save</strong>.</li>
     </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="edit">Editing a collection</h2>
-    <ol class="bcls-tasklist-restart">
-      <li>To edit a collection, click the collection name.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-edit-collection.png" /></figure>
-      </li>
-      <li>The Edit Collection page will open. The Edit Collection page is used to add videos to a collection and to configure additional collection properties.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-edit-collection-dialog.png" /></figure>
-      </li>
-      <li>The <strong>Change Collection</strong> dropdown will list all of the collections that have been created. Select the collection to edit.</li>
-      <li>The <strong>Collection Source </strong>specifies the source of the video content for the collection:
-        <ul>
-          <li><strong>Video Cloud</strong> - Video Cloud video content will be used. See <a href="/docs/portal/adding-video-cloud-videos-portal-experience.html">Adding Video Cloud Videos to a Portal Experience</a> for information.</li>
-          <li><strong>YouTube</strong> - YouTube video content will be used. See <a href="/docs/portal/adding-youtube-videos-portal-experience.html">Adding YouTube Videos to a Portal Experience</a> for information.</li>
-        </ul>
-      </li>
-      <li>Click <strong>Save</strong> to save changes.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting a collection</h2>
-    <p>To delete a collection, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click the <strong>Videos</strong> icon in the left navigation.</li>
-      <li>Click the <strong>Delete </strong> icon (<img alt="" src="/assets/images/experiences/portal/node13569-delete-icon.png" />) associated with the collection.</li>
-      <li>Click <strong>Delete </strong> to confirm the deletion.</li>
-      <li>Click <strong>Done</strong> when finished.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="order">Ordering and nesting collections</h2>
-    <p>To change the order of how the collections will appear on your site click the <strong>Videos</strong> icon in the left navigation.</p>
-    <div class="BCL-subsection">
-      <h3>Moving a collection</h3>
-      <p>Click and drag on the collection name or move icon (<img alt="" src="/assets/images/experiences/portal/node13569-move-icon.png" />) and drag the collection to a new position. The separator line indicates if the collections are at the same level or nested. In this example, the <strong>Brightcove Player</strong> collection is moved to the top. The separator line indicates that all collections are at the same level.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-move-collection-drag.png" /></figure>
-    </div>
-    <div class="BCL-subsection">
-      <h3>Nesting a collection</h3>
-      <p>Click and drag on the collection name or move icon (<img alt="" src="/assets/images/experiences/portal/node13569-move-icon.png" />) and drag the collection to a new position. Dragging to the right will indent the separator line indicating that this collection will be nested. In this example, the <strong>Upload Module</strong> collection is moved and the separator line indicates that it will be nested under the <strong>Video Cloud Studio</strong> collection.</p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-nest-collection-drag.png" /></figure>
-    </div>
-    <p>After the collection is nested, the nesting will be reflected in the Manage Collections dialog.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13569-nest-collection-view.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The number of levels that can be nested is based upon the template.</aside>
-    <p class="BCL-aside">The Showcase, Mosaic and Chronicle templates do not support nesting.</p>
+    <p>Click the delete icon (<img alt="delete icon" src="/assets/images/experiences/portal/node16440-delete-icon.png" />) to remove a custom domain.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: For any of the domain changes (including activating or deleting a domain) to take effect, the site must be published.</aside>
+    <p>The list of custom domains will be listed in the publishing dialog.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="publishing dialog" src="/assets/images/experiences/portal/node16440-publish.png" /></figure>
+    <p>To disable or remove any of the custom domains, edit the site, click <strong>SITE CONFIGURATION &gt; URL </strong>and uncheck the <strong>Active</strong> checkbox to deactivate the domain or click the delete icon (<img alt="delete icon" src="/assets/images/experiences/portal/node16440-delete-icon.png" />) to remove the custom domain.</p>
   </section>
 </article>
 
@@ -330,7 +294,7 @@
 
 <hr>
 <div class="last-updated">
-  Page last updated on 06 Jan 2020
+  Page last updated on 07 Jan 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">

@@ -34,6 +34,27 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/adding-youtube-videos-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/assigning-custom-domain-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/changing-player-layout-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/settings/configuring-access-control-profiles.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
