@@ -370,6 +370,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/get-started/gallery-training-videos.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/get-started/getting-started-brightcove-gallery.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -391,14 +398,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
-        <lastmod>2020-01-07</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -412,7 +412,14 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/</loc>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
