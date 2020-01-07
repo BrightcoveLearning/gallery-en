@@ -125,6 +125,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/configuring-third-party-tracking-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/inpage/configuring-video-downloads-page-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -574,6 +581,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/portal/using-lead-form-portal-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/using-site-editor-customize-portal-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
