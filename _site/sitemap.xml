@@ -139,6 +139,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/landing/creating-landing-page-experience.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/live/creating-live-event-page-experience.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -181,6 +188,20 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-catalogue-template-settings.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-chronicle-template-settings.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/portal/customizing-content-portal-experience-pages.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
@@ -189,6 +210,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/live/customizing-live-event-portal-settings.html</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/portal/customizing-marquee-template-settings.html</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -293,7 +321,14 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <lastmod>2020-01-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -314,14 +349,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/get-started/</loc>
-        <lastmod>2020-01-07</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/</loc>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-07</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
