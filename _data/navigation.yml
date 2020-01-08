@@ -3,27 +3,29 @@
 - section: Getting Started
   url: /get-started/
   docs:
-    - name: Getting Started with your Brightcove Engage Trial
-      url: /get-started/getting-started-brightcove-engage-trial.html
-    - name: Getting Started with Brightcove Engage
-      url: /get-started/getting-started-brightcove-engage.html
-    - name: Creating and Publishing Mobile App Experiences
-      url: /get-started/overview-create-edit-publish-mobile-app-exp.html
-    - name: Creating and Publishing Web Experiences
-      url: /get-started/overview-create-edit-publish-web-exp.html
-    - name: Using the Brightcove Engage Application
-      url: /get-started/using-brightcove-engage-app-prerelease.html
-    - name: Step-by-Step - Creating and Publishing a Mobile App Experience
-      url: /get-started/step-by-step-mobile-app.html
-    - name: Step-by-Step Creating and Publishing a Web Experience
-      url: /get-started/step-by-step-web-exp.html
-    - name: Brightcove Engage Training Videos
-      url: /get-started/brightcove-engage-training-videos.html
+    - name: Creating and Publishing a Portal Experience
+      url: /get-started/step-step-creating-and-publishing-portal-experience.html
+    - name: Creating and Publishing an In-Page Experience
+      url: /get-started/step-step-creating-and-publishing-page-experience.html
+    - name: Getting Started with Brightcove Gallery
+      url: /get-started/getting-started-brightcove-gallery.html
+    - name: Overview of Gallery Experiences
+      url: /get-started/overview-gallery-experiences.html
+    - name: Creating and Managing Gallery Experiences
+      url: /get-started/creating-and-managing-gallery-experiences.html
+    - name: Training on Demand: Introduction to Gallery
+      url: /get-started/training-demand-introduction-gallery.html
+    - name: Building Portal Experiences using Gallery
+      url: /get-started/training-demand-building-portal-experiences-using-gallery.html
+    - name: Building In-Page Experiences using Gallery
+      url: /get-started/training-demand-building-page-experiences-using-gallery.html
+    - name: Gallery Training Videos
+      url: /get-started/gallery-training-videos.html
 - section: Documentation
   url: /docs/
   docs:
-    - name: Managing Videos
-      url: /docs/videos/
+    - name: Portal Experiences
+      url: /docs/portal/
       docs:
         - name: Uploading Videos
           url: /docs/videos/uploading-videos.html
@@ -32,25 +34,8 @@
         - name: Editing Video Properties
           url: /docs/videos/editing-video-properties.html
         - name: Editing Video Properties with Quick Edit
-          url: /docs/videos/editing-video-properties-using-quick-edit.html
-        - name: Capturing Poster and Thumbnail Images
-          url: /docs/videos/capturing-poster-and-thumbnail-images.html
-        - name: Uploading Poster and Thumbnail Images
-          url: /docs/videos/uploading-poster-and-thumbnail-images.html
-        - name: Creating and Managing Playlists
-          url: /docs/videos/creating-and-managing-playlists.html
-        - name: Search for Videos
-          url: /docs/videos/how-to-search-for-videos.html
-        - name: Working with Shared Videos
-          url: /docs/videos/working-with-shared-videos.html
-        - name: Adding Text Tracks
-          url: /docs/videos/adding-text-tracks-to-a-video.html
-        - name: Configuring Video Availability
-          url: /docs/videos/configuring-video-availability.html
-        - name: Exporting Video Data
-          url: /docs/videos/exporting-video-data.html
-    - name: Creating Experiences
-      url: /docs/experiences/
+    - name: In-Page Experiences
+      url: /docs/inpage/
       docs:
         - name: Overview of Experience Templates
           url: /docs/experiences/overview-experience-templates.html
@@ -58,59 +43,76 @@
           url: /docs/experiences/managing-projects.html
         - name: Managing Collections
           url: /docs/experiences/managing-collections.html
-        - name: Editing Experience Details
-          url: /docs/experiences/editing-experience-details.html
-        - name: Creating and Managing Experiences
-          url: /docs/experiences/creating-and-managing-experiences.html
-        - name: Controlling Access to an Experience
-          url: /docs/experiences/controlling-access-experience.html
-        - name: Creating Access Control Profiles
-          url: /docs/experiences/creating-access-control-profiles.html
-        - name: Configuring Experience Settings
-          url: /docs/experiences/configuring-experience-settings.html
-        - name: Adding Videos to an Experience
-          url: /docs/experiences/adding-videos-experience.html
-        - name: Customizing Mobile App Experiences
-          url: /docs/experiences/using-experience-editor-customize-mobile-app-experience.html
-        - name: Customizing Web Experiences
-          url: /docs/experiences/using-experience-editor-customize-web-experience.html
-        - name: Styling Mobile App Experiences
-          url: /docs/experiences/styling-mobile-app-experiences.html
-        - name: Styling Web Experiences
-          url: /docs/experiences/styling-web-experiences.html
-        - name: Previewing and Publishing Mobile App Experiences
-          url: /docs/experiences/previewing-publishing-mobile-app-experience.html
-        - name: Previewing and Publishing Web Experiences
-          url: /docs/experiences/previewing-publishing-web-experience.html
-        - name: Adding a Logo to Mobile App Experience Pages
-          url: /docs/experiences/adding-logo-mobile-app-experience.html
-        - name: Customizing the Content of Web Experience Pages
-          url: /docs/experiences/customizing-content-web-experience-pages.html
-    - name: Reviewing Analytics
-      url: /docs/analytics/
+    - name: Live Event Experiences
+      url: /docs/live/
       docs:
-      - name: Reviewing Video Analytics
-        url: /docs/analytics/reviewing-video-analytics.html
-    - name: Administering Accounts
-      url: /docs/admin/
+      - name: Creating a Live Event Portal Experience
+        url: /docs/live/creating-live-event-portal-experience.html
+      - name: Creating the Pre-Event State for a Portal Event Experience
+        url: /docs/live/creating-pre-event-state-portal-event-experience.html
+      - name: Creating the Live Event State for a Portal Event Experience
+        url: /docs/live/creating-live-event-state-portal-event-experience.html
+      - name: Creating the Post-Event State for a Portal Event Experience
+        url: /docs/live/creating-post-event-state-portal-event-experience.html
+      - name: Customizing the Live Event Portal Settings
+        url: /docs/live/customizing-live-event-portal-settings.html
+      - name: Creating a Live Event In-Page Experience
+        url: /docs/live/creating-live-event-page-experience.html
+    - name: 
+      url: /docs/landing/
       docs:
-      - name: Managing Users
-        url: /docs/admin/managing-users.html
+      - name: Creating a Landing Page Experience
+        url: /docs/landing/creating-landing-page-experience.html
       - name: Managing Account Information
-        url: /docs/admin/managing-account-information.html
-      - name: Managing Account Settings
-        url: /docs/admin/managing-account-settings.html
-      - name: Managing Video Fields
-        url: /docs/admin/managing-video-fields.html
-      - name: Managing Media Sharing Settings
-        url: /docs/admin/managing-media-sharing-settings.html
-      - name: Managing Profile Information
-        url: /docs/admin/managing-profile-information.html
+      url: /docs/general/
+      docs:
+      - name: Gallery System Requirements
+        url: /docs/general/gallery-system-requirements.html
+      - name: Troubleshooting Brightcove Gallery Issues
+        url: /docs/general/troubleshooting-brightcove-gallery-issues.html
+      - name: Brightcove Gallery Cookies
+        url: /docs/general/brightcove-gallery-cookies.html
+    - name: Gallery Settings
+      url: /docs/settings/
+      docs:
+      - name: Configuring Gallery Settings
+        url: /docs/settings/configuring-gallery-settings.html
+      - name: Configuring YouTube Settings
+        url: /docs/settings/configuring-youtube-settings.html
+      - name: Configuring Access Control Profiles
+        url: /docs/settings/configuring-access-control-profiles.html
+      - name: Configuring Custom Domains and SSL
+        url: /docs/settings/configuring-custom-domains-and-ssl.html
+      - name: Securing a Portal Experience with SSL
+        url: /docs/settings/securing-portal-experience-ssl.html
+      - name: Configuring Single Sign-On with Active Directory Federation Services
+        url: /docs/settings/configuring-single-sign-active-directory-federation-services.html
+    - name: Developers
+      url: /docs/develop/
+      docs:
+      - name: In-Page Experience Code Snippets
+        url: /docs/develop/page-experience-code-snippets.html
+      - name: In-Page Experiences Custom CSS Reference
+        url: /docs/develop/page-experiences-custom-css-reference.html
+      - name: Embedding Brightcove In-Page Experiences in a CMS
+        url: /docs/develop/embedding-brightcove-page-experiences-cms.html
+      - name: Overview: In-Page Experience API
+        url: /docs/develop/overview-page-experience-api.html
+      - name: Overview: In-Page Experience Client API
+        url: /docs/develop/overview-page-experience-client-api.html
+      - name: In-Page Experience API Error Reference
+        url: /docs/develop/page-experience-api-error-reference.html
+      - name: In-Page Experience Client API Sample
+        url: /docs/develop/page-experience-client-api-sample.html
+      - name: Quick Start: In-Page Experience Platform (REST) API
+        url: /docs/develop/quick-start-page-experience-platform-rest-api.html
 - section: Release Notes
   url: /release-notes/
   docs:
-    - name: 2020
-      url: /release-notes/2020.html
+    - name: Gallery Release Notes
+      url: /release-notes/gallery-release-notes.html
+    - name: Gallery Template Release Notes
+      url: /release-notes/gallery-template-release-notes.html
 - section: Support
   url: /support/
   docs:
