@@ -26,10 +26,10 @@ title: Brightcove Gallery
 email: training@brightcove.com
 # TODO change description
 description: >- # this means to ignore newlines until "baseurl:"
-  Brightcove Campaign provides a set of tools to help enrich your corporate communications with video content.
+  Brightcove Gallery allows you to create engaging video experiences without the need for any technical knowledge or coding.
 # baseurl: "" # the subpath of your site, e.g. /blog
 # TODO change description
-site_url: "https://engage.support.brightcove.com"
+site_url: "https://gallery.support.brightcove.com"
 
 # Build settings
 # theme: minima
