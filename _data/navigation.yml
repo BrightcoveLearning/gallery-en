@@ -34,7 +34,7 @@
         - name: Editing Video Properties
           url: /experiences/portal/editing-video-properties.html
     - name: In-Page
-      url: /exeriences/inpage/
+      url: /experiences/inpage/
       docs:
         - name: 'Overview: Creating, Editing and Publishing In-Page Experiences'
           url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
