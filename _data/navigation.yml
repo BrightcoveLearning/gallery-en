@@ -120,11 +120,11 @@
   url: /general/
   docs:
     - name: Gallery System Requirements
-      url: /general/general/gallery-system-requirements.html
+      url: /general/gallery-system-requirements.html
     - name: Troubleshooting Brightcove Gallery Issues
-      url: /general/general/troubleshooting-brightcove-gallery-issues.html
+      url: /general/troubleshooting-brightcove-gallery-issues.html
     - name: Brightcove Gallery Cookies
-      url: /general/general/brightcove-gallery-cookies.html
+      url: /general/brightcove-gallery-cookies.html
 - section: Gallery Settings
   url: /settings/
   docs:
