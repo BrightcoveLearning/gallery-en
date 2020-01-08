@@ -1,5 +1,5 @@
 - section: Home
-  url: /index.html
+  url: /
 - section: Getting Started
   url: /get-started/
   docs:
@@ -13,7 +13,7 @@
       url: /get-started/overview-gallery-experiences.html
     - name: Creating and Managing Gallery Experiences
       url: /get-started/creating-and-managing-gallery-experiences.html
-    - name: Training on Demand: Introduction to Gallery
+    - name: 'Training on Demand: Introduction to Gallery'
       url: /get-started/training-demand-introduction-gallery.html
     - name: Building Portal Experiences using Gallery
       url: /get-started/training-demand-building-portal-experiences-using-gallery.html
@@ -57,11 +57,12 @@
         url: /docs/live/customizing-live-event-portal-settings.html
       - name: Creating a Live Event In-Page Experience
         url: /docs/live/creating-live-event-page-experience.html
-    - name: 
+    - name: Creating a Landing Page Experience
       url: /docs/landing/
       docs:
       - name: Creating a Landing Page Experience
         url: /docs/landing/creating-landing-page-experience.html
+    - name: General Documents
       url: /docs/general/
       docs:
       - name: Gallery System Requirements
@@ -88,22 +89,22 @@
     - name: Developers
       url: /docs/develop/
       docs:
-      - name: In-Page Experience Code Snippets
-        url: /docs/develop/page-experience-code-snippets.html
-      - name: In-Page Experiences Custom CSS Reference
-        url: /docs/develop/page-experiences-custom-css-reference.html
-      - name: Embedding Brightcove In-Page Experiences in a CMS
-        url: /docs/develop/embedding-brightcove-page-experiences-cms.html
-      - name: Overview: In-Page Experience API
-        url: /docs/develop/overview-page-experience-api.html
-      - name: Overview: In-Page Experience Client API
-        url: /docs/develop/overview-page-experience-client-api.html
-      - name: In-Page Experience API Error Reference
-        url: /docs/develop/page-experience-api-error-reference.html
-      - name: In-Page Experience Client API Sample
-        url: /docs/develop/page-experience-client-api-sample.html
-      - name: Quick Start: In-Page Experience Platform (REST) API
-        url: /docs/develop/quick-start-page-experience-platform-rest-api.html
+        - name: In-Page Experience Code Snippets
+          url: /docs/develop/page-experience-code-snippets.html
+        - name: In-Page Experiences Custom CSS Reference
+          url: /docs/develop/page-experiences-custom-css-reference.html
+        - name: Embedding Brightcove In-Page Experiences in a CMS
+          url: /docs/develop/embedding-brightcove-page-experiences-cms.html
+        - name: 'Overview: In-Page Experience API'
+          url: /docs/develop/overview-page-experience-api.html
+        - name: 'Overview: In-Page Experience Client API'
+          url: /docs/develop/overview-page-experience-client-api.html
+        - name: In-Page Experience API Error Reference
+          url: /docs/develop/page-experience-api-error-reference.html
+        - name: In-Page Experience Client API Sample
+          url: /docs/develop/page-experience-client-api-sample.html
+        - name: 'Quick Start: In-Page Experience Platform (REST) API'
+          url: /docs/develop/quick-start-page-experience-platform-rest-api.html
 - section: Release Notes
   url: /release-notes/
   docs:
