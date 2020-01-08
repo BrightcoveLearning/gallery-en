@@ -36,12 +36,66 @@
     - name: In-Page
       url: /exeriences/inpage/
       docs:
-        - name: Overview of Experience Templates
-          url: /experiences/inpage/overview-experience-templates.html
-        - name: Managing Projects
-          url: /experiences/inpage/managing-projects.html
-        - name: Managing Collections
-          url: /experiences/inpage/managing-collections.html
+        - name: 'Overview: Creating, Editing and Publishing In-Page Experiences'
+          url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
+        - name: Overview of Gallery In-Page Experience Templates
+          url: /experiences/inpage/overview-gallery-page-experience-templates.html
+        - name: Adding Components to an In-Page Experience
+          url: /experiences/inpage/adding-components-page-experience.html
+        - name: Adding Interactions to an In-Page Experience
+          url: /experiences/inpage/adding-interactions-page-experience.html
+        - name: Adding Videos to an In-Page Experience
+          url: /experiences/inpage/adding-videos-page-experience.html
+        - name: Configuring Companion Components for an In-Page Experience
+          url: /experiences/inpage/configuring-companion-components-page-experience.html
+        - name: Configuring the Details for an In-Page Experience
+          url: /experiences/inpage/configuring-details-page-experience.html
+        - name: Configuring the Settings for an In-Page Experience
+          url: /experiences/inpage/configuring-settings-page-experience.html
+        - name: Configuring Video Downloads for an In-Page Experience
+          url: /experiences/inpage/configuring-video-downloads-page-experience.html
+        - name: Creating Custom Themes for In-Page Experiences
+          url: /experiences/inpage/creating-custom-themes-page-experiences.html
+        - name: Customizing an In-Page Experience
+          url: /experiences/inpage/customizing-page-experience.html
+        - name: Customizing the Style of an In-Page Experience
+          url: /experiences/inpage/customizing-style-page-experience.html
+        - name: Previewing and Publishing an In-Page Experience
+          url: /experiences/inpage/previewing-and-publishing-page-experience.html
+        - name: Using Dynamic Video Overrides in an In-Page Experience
+          url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
+        - name: 
+          url:
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url:
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url:
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url:
+        - name: 
+          url: 
+        - name: 
+          url: 
+        - name: 
+          url: 
     - name: Live Event
       url: /experiences/live/
       docs:
@@ -75,36 +129,36 @@
   url: /settings/
   docs:
     - name: Configuring Gallery Settings
-      url: /settings/settings/configuring-gallery-settings.html
+      url: /settings/configuring-gallery-settings.html
     - name: Configuring YouTube Settings
-      url: /settings/settings/configuring-youtube-settings.html
+      url: /settings/configuring-youtube-settings.html
     - name: Configuring Access Control Profiles
-      url: /settings/settings/configuring-access-control-profiles.html
+      url: /settings/configuring-access-control-profiles.html
     - name: Configuring Custom Domains and SSL
-      url: /settings/settings/configuring-custom-domains-and-ssl.html
+      url: /settings/configuring-custom-domains-and-ssl.html
     - name: Securing a Portal Experience with SSL
-      url: /settings/settings/securing-portal-experience-ssl.html
+      url: /settings/securing-portal-experience-ssl.html
     - name: Configuring Single Sign-On with Active Directory Federation Services
-      url: /settings/settings/configuring-single-sign-active-directory-federation-services.html
+      url: /settings/configuring-single-sign-active-directory-federation-services.html
 - section: Developers
   url: /develop/
   docs:
     - name: In-Page Experience Code Snippets
-      url: /develop/develop/page-experience-code-snippets.html
+      url: /develop/page-experience-code-snippets.html
     - name: In-Page Experiences Custom CSS Reference
-      url: /develop/develop/page-experiences-custom-css-reference.html
+      url: /develop/page-experiences-custom-css-reference.html
     - name: Embedding Brightcove In-Page Experiences in a CMS
-      url: /develop/develop/embedding-brightcove-page-experiences-cms.html
+      url: /develop/embedding-brightcove-page-experiences-cms.html
     - name: 'Overview: In-Page Experience API'
-      url: /develop/develop/overview-page-experience-api.html
+      url: /develop/overview-page-experience-api.html
     - name: 'Overview: In-Page Experience Client API'
-      url: /develop/develop/overview-page-experience-client-api.html
+      url: /develop/overview-page-experience-client-api.html
     - name: In-Page Experience API Error Reference
-      url: /develop/develop/page-experience-api-error-reference.html
+      url: /develop/page-experience-api-error-reference.html
     - name: In-Page Experience Client API Sample
-      url: /develop/develop/page-experience-client-api-sample.html
+      url: /develop/page-experience-client-api-sample.html
     - name: 'Quick Start: In-Page Experience Platform (REST) API'
-      url: /develop/develop/quick-start-page-experience-platform-rest-api.html
+      url: /develop/quick-start-page-experience-platform-rest-api.html
 - section: Release Notes
   url: /release-notes/
   docs:
