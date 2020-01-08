@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Adding Components to an In-Page Experience</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/experiences/inpage/">In-Page Experiences</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Adding Components to an In-Page Experience</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating and Publishing a Portal Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating and Publishing an In-Page Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-gallery.html">Getting Started with Brightcove Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-gallery-experiences.html">Overview of Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/creating-and-managing-gallery-experiences.html">Creating and Managing Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-introduction-gallery.html">Training on Demand: Introduction to Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-portal-experiences-using-gallery.html">Building Portal Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-page-experiences-using-gallery.html">Building In-Page Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/gallery-training-videos.html">Gallery Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/">Experiences <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/portal/">Portal <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/portal/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/exeriences/inpage/">In-Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/inpage/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-collections.html">Managing Collections</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/live/">Live Event <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/live/creating-live-event-portal-experience.html">Creating a Live Event Portal Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-pre-event-state-portal-event-experience.html">Creating the Pre-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-state-portal-event-experience.html">Creating the Live Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-post-event-state-portal-event-experience.html">Creating the Post-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/customizing-live-event-portal-settings.html">Customizing the Live Event Portal Settings</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-page-experience.html">Creating a Live Event In-Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/landing/">Landing Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/landing/creating-landing-page-experience.html">Creating a Landing Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/">General <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/general/gallery-system-requirements.html">Gallery System Requirements</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/troubleshooting-brightcove-gallery-issues.html">Troubleshooting Brightcove Gallery Issues</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/brightcove-gallery-cookies.html">Brightcove Gallery Cookies</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/settings/">Gallery Settings <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/settings/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-access-control-profiles.html">Configuring Access Control Profiles</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-single-sign-active-directory-federation-services.html">Configuring Single Sign-On with Active Directory Federation Services</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/">Developers <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/develop/page-experience-code-snippets.html">In-Page Experience Code Snippets</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experiences-custom-css-reference.html">In-Page Experiences Custom CSS Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/embedding-brightcove-page-experiences-cms.html">Embedding Brightcove In-Page Experiences in a CMS</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-api.html">Overview: In-Page Experience API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-client-api.html">Overview: In-Page Experience Client API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-api-error-reference.html">In-Page Experience API Error Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-client-api-sample.html">In-Page Experience Client API Sample</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/quick-start-page-experience-platform-rest-api.html">Quick Start: In-Page Experience Platform (REST) API</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
+                  
+                
+                  
+                    <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Adding Components to an In-Page Experience</h1>
+  <summary>In this topic you will learn how to add components to  an In-Page experience.</summary>
+  <section class="bcls-section">
+    <p>Components can be added to an In-Page experience allowing you to customize and brand the experience. To add components to an In-Page experience, edit the experience and then click <strong>LAYOUT</strong> in the left navigation.</p>
+    <p>Click the plus icon (<img alt="" src="/assets/images/experiences/inpage/node16790-plus-icon.png" />) where you want to add a component and then select the type of component to add.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-select-component.png" /></figure>
+    <p>The following types of components can be added:</p>
+    <ul>
+      <li><a href="#ad">Advertisement</a></li>
+      <li><a href="#chat">Chat</a></li>
+      <li><a href="#custom">Custom HTML</a></li>
+      <li><a href="#imageobj">Image</a></li>
+      <li><a href="#textobj">Text</a></li>
+      <li><a href="#3play">3Play</a></li>
+      <li><a href="#twitter">Twitter Feed</a></li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: After making any changes to an experience, make sure you <a href="../../docs/inpage/node/16795">republish the experience</a> so the changes appear on sites that display the experience.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="ad">Adding an advertisement component</h2>
+    <p>To add an advertisement to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Advertisement</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the advertisement.</li>
+      <li>Enter the <strong>Header Ad Code</strong> and <strong>Ad Unit Code</strong>. <strong>Header Ad Code</strong> will be shared across all advertisements in the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-ad.png" /></figure>
+      </li>
+      <li>Select when the advertisement should be displayed.</li>
+      <li>Click <strong>Save</strong>. The advertisement will appear on the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-ad-placeholder.png" /></figure>
+      </li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: If you have an In-Page experience with multiple ads, ensure that each <strong> Ad Unit Code</strong> has a unique <code>div</code> id. You may need to edit the id of the <code>div</code> and the container parameter of <code>adblock1</code> to match that id.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="chat">Adding a chat component</h2>
+    <p>A third-party chat widget can be added to an experience to provide chat capabilities. To add a chat component to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Chat</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the chat component.</li>
+      <li>Enter the chat HTML code.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-chat.png" /></figure>
+      </li>
+      <li>Select when the chat should be displayed.</li>
+      <li>Click <strong>Save</strong>. The chat will be rendered on the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-chat-icon.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom">Adding a custom HTML component</h2>
+    <p>Custom components can be used to add your own custom HTML to an experience. For example, if you have created a custom lead form using a marketing automation platform (MAP), the lead form HTML from the MAP can be added to an In-Page experience using the Custom HTML component.</p>
+    <p>To add custom HTML to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Custom</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the HTML component.</li>
+      <li>Enter the custom HTML to add to the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-custom.png" /></figure>
+      </li>
+      <li>Select when the HTML should be displayed.</li>
+      <li>Click <strong>Save</strong>. The HTML will be rendered on the experience.</li>
+    </ol>
+    <p>If no HTML is entered, an HTML placeholder will be displayed.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-html-icon.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: The Gallery authoring environment will strip scripts out of custom HTML components for security reasons. The scripts will run when the In-Page experience is previewed and published. This could cause custom HTML components to look different, especially if they have a lot of JavaScript content.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="imageobj">Adding an image component</h2>
+    <p>To add an image to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Image</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the image.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-image.png" /></figure>
+      </li>
+      <li>To specify an image, you can:
+        <ul>
+          <li>Drag an image from the file system and then drop it on the drop area</li>
+          <li>Click <strong>browse</strong> and select an image from the file system</li>
+          <li>Enter the URL to a remote image file</li>
+        </ul>
+      </li>
+      <li>Set the image <strong>Size</strong>.
+        <ul>
+          <li><strong>Image will resize to container</strong> - Images that are larger in size than the container they are in will be scaled down to fit. Smaller images will not be upscaled.</li>
+          <li><strong>Width and Height</strong> - Manually enter a width and height for the image</li>
+        </ul>
+      </li>
+      <li>Set the image <strong>Alignment</strong>.</li>
+      <li>Enter a <strong>Clickthrough URL</strong>. This is the URL to go to when the image is clicked. You can also <strong>Open link in a new window</strong>.</li>
+      <li>Select when the image should be displayed.</li>
+      <li>Click <strong>Save</strong> to add the image to the experience.</li>
+    </ol>
+    <p>If no image is selected, an image placeholder will be displayed.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-image-icon.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="textobj">Adding a text component</h2>
+    <p>To add text to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong> Text</strong> on the component picker.</li>
+      <li>Enter the text to add to the experience. The toolbar can be used to format the text.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-rich-text.png" /></figure>
+      </li>
+      <li>Enter a <strong>Name</strong> for the text.</li>
+      <li>Select when the text should be displayed.</li>
+      <li>Click <strong>Save</strong> to add the text. The text will appear on the experience.</li>
+    </ol>
+    <p>If no text is entered, a text placeholder <img alt="" src="/assets/images/experiences/inpage/node16818-text-placeholder.png" /> will be displayed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="3play">Adding a 3Play component</h2>
+    <p>3Play components can be used to add a 3Play interactive transcript to an experience. This component will only work if your video captions were generated by <a href="http://www.3playmedia.com">3Play Media</a>. When this component is added to an experience, a <strong>Show Interactive Transcript</strong> link will appear. When clicked, the video transcript will appear. In the following example, a 3Play component was added below the video player and was configured to appear during the <strong>Playing</strong> state.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-3play-example.png" /></figure>
+    <p>For a live example, see <a href="https://support.brightcove.com/training-demand-video-cloud-essentials">this link</a> and play a video.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: To have the 3Play component enabled for your account, contact your account manager or <a href="https://help.brightcove.com/en/contact/create">Brightcove Support</a>.</aside>
+    <p>To add a 3Play component to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong> 3Play</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the 3Play component.</li>
+      <li>Enter your <strong>3Play Project ID</strong>. To find your 3Play Project ID, login to your 3Play account and click the <strong>Account Overview</strong> link in the page header. The <strong>Project ID</strong> will appear on that page.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-3play.png" /></figure>
+      </li>
+      <li>Select when the 3Play component should be displayed.</li>
+      <li>Click <strong>Save</strong> to add the 3Play component. The 3Play component will appear on the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-3play-placeholder.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="twitter">Adding a Twitter Feed component</h2>
+    <p>To add a Twitter Feed to an experience:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Twitter Feed</strong> on the component picker.</li>
+      <li>Enter a <strong>Name</strong> for the Twitter Feed.</li>
+      <li><a href="https://twitter.com/settings/widgets">Create a widget on the Twitter site</a>. For help on creating a Twitter widget, see the <a href="https://dev.twitter.com/web/embedded-timelines">Twitter developer documentation</a>.</li>
+      <li>Copy the HTML for the Twitter widget and paste it into the Twitter Feed settings.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-add-twitter.png" /></figure>
+      </li>
+      <li>Select when the Twitter Feed should be displayed.</li>
+      <li>Click <strong>Save</strong> to add the Twitter feed. The Twitter feed will appear on the experience.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16818-twitter-placeholder.png" /></figure>
+      </li>
+    </ol>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 08 Jan 2020
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

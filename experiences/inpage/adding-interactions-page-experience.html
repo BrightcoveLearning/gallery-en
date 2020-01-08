@@ -1,0 +1,121 @@
+---
+title: Adding Interactions to an In-Page Experience
+parent: In-Page Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Adding Interactions to an In-Page Experience</h1>
+  <summary>In this topic you will learn how to add card and link interactions to videos in an In-Page experience.</summary>
+  <section class="bcls-section">
+    <p>Videos can be configured with card and link interactions. As the video plays, interactions are displayed over the player. In the following example, a link is displayed in the bottom left of the player and a card is in the upper right. Cards will display an info icon (<img alt="" src="/assets/images/experiences/inpage/node16797-card-present-icon.png" />) the user can click on to open the card.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-card-link-example.png" /></figure>
+    <p>Some in-page experiences also support companion components. With companion components, content outside the player can change based on which video is playing. For example, when a product video is played, there might be a clickable image to the right of the player that will open up more details about that product. Companion components are similar to interactions, the difference being, interactions display over the video player itself. For information on companion components, see <a href="../../docs/inpage/node/16831">Configuring Companion Components for an In-Page Experience</a>.</p>
+    <p>To add interactions to a video, edit the experience and then click <strong>VIDEOS</strong> in the left navigation. To add an interaction to a video, select a video, click <strong>Add Interactivity</strong> and then click on the type of interactivity to add or click on the <strong>link</strong> (<img alt="" src="/assets/images/experiences/inpage/node16797-link-icon.png" />) or <strong>card (<img alt="" src="/assets/images/experiences/inpage/node16797-card-icon.png" />)</strong> interactivity icon associated with a video.</p>
+    <p>This topic contains the following sections:</p>
+    <ul>
+      <li><a href="#link">Adding a link interaction</a></li>
+      <li><a href="#card">Adding a card interaction</a></li>
+      <li><a href="#edit">Editing interactions</a></li>
+      <li><a href="#delete">Deleting interactions</a></li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on adding companion HTML, image and text interactions, see <a href="/node/16831">Configuring Companion Components for an In-Page Experience</a>.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: After making any changes to an experience, make sure you <a href="../../docs/inpage/node/16795">republish the experience</a> so the changes appear on sites that display the experience.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="link">Adding a link interaction</h2>
+    <p>To add a link interaction to a video:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a video to select it.</li>
+      <li>Click <strong>Add Interactivity &gt; Link</strong> or click on the<strong> link (<img alt="" src="/assets/images/experiences/inpage/node16797-link-icon.png" />)</strong> icon in the <strong>Actions</strong> column. The Interactivity editor will open.</li>
+      <li>Add the <strong>Link Text</strong> and <strong>Link URL</strong>. As values are entered, the link preview in the player will update. The slider below the player indicates the link start time and duration.</li>
+      <li>Choose a <strong>Playback Behavior</strong>:
+        <ul>
+          <li><strong>None</strong> - The video will continue to play when the link is clicked</li>
+          <li><strong>Pause on click</strong> - The video will pause when the link is clicked</li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-link-interactivity.png" /></figure>
+      </li>
+      <li>To configure the link start time and duration, click the <strong>Configure</strong> link.</li>
+      <li>Select a <strong>Start Time and Duration</strong>:
+        <ul>
+          <li><strong>Show for the entire video</strong> - The link will appear for the entire video</li>
+          <li><strong>Select a start time and duration</strong> - You will manually set the start time and duration for the link</li>
+        </ul>
+      </li>
+      <li>Set the <strong>Start Time</strong> and <strong>Duration</strong> for the link.
+        <aside class="bcls-aside bcls-aside--information">Note: The link duration can also be set using the slider under the player. Drag the left arrow to when the link should appear and then drag the right arrow to when the link should disappear.</aside>
+      </li>
+      <li>Check <strong>Until the video ends</strong> if you want to set a start time only and have the link appear until the video ends.</li>
+      <li>Check <strong>Apply this interaction to all videos in the layout</strong> if you want this link interaction to appear on all the videos in the experience.</li>
+      <li>To configure the link placement, click the <strong>Design</strong> link.</li>
+      <li>Click on a <strong>Placement</strong> to specify where the link should appear in the player.</li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: To assign the interaction to another video, select another video using the video selector dropdown list above the player.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="card">Adding a card interaction</h2>
+    <p>To add a card interaction to a video:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a video to select it.</li>
+      <li>Click <strong>Add Interactivity &gt; Card</strong> or click on the<strong> card (<img alt="" src="/assets/images/experiences/inpage/node16797-card-icon.png" />)</strong> icon in the <strong>Actions</strong> column. The Interactivity editor will open and a preview of the card will appear in the player.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-card-interactivity.png" /></figure>
+      </li>
+      <li>To add an image to the card, you can:
+        <ul>
+          <li>Drag an image and then drop it on the drop area</li>
+          <li>Click <strong>browse</strong> and select an image from the file system</li>
+          <li>Enter the URL to a remote image field in the text box</li>
+        </ul>
+      </li>
+      <li>Add a <strong>Card Title</strong>, <strong>Description</strong>, <strong>Link Text</strong> and <strong>Link URL</strong>. As values are entered, the card preview will update. The slider below the player indicates the card start time and duration.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-completed-card.png" /></figure>
+      </li>
+      <li>Choose a <strong>Playback Behavior</strong>:
+        <ul>
+          <li><strong>None</strong> - The video will continue to play when the link in the card is clicked</li>
+          <li><strong>Pause on open</strong> - The video will pause when the card is opened</li>
+          <li><strong>Pause on link click</strong> - The video will pause when the link in the card is clicked</li>
+        </ul>
+      </li>
+      <li>Select <strong>Open card automatically</strong> to have the card displayed automatically.</li>
+      <li>To configure the card start time and duration, click the <strong>Configure</strong> link.</li>
+      <li>Select a <strong>Start Time and Duration</strong>:
+        <ul>
+          <li><strong>Show for the entire video</strong> - The card will appear for the entire video</li>
+          <li><strong>Select a start time and duration</strong> - You will manually set the start time and duration for the card</li>
+        </ul>
+      </li>
+      <li>Set the <strong>Start Time</strong> and <strong>Duration</strong> for the card.
+        <aside class="bcls-aside bcls-aside--information">Note: The card duration can also be set using the slider under the player. Drag the left arrow to when the card should appear and then drag the right arrow to when the card should disappear.</aside>
+      </li>
+      <li>Check <strong>Until the video ends</strong> if you want to set a start time only and have the card appear until the video ends.</li>
+      <li>Check <strong>Apply this interaction to all videos in the layout</strong> if you want this card interaction to appear on all the videos in the experience.</li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: To assign the interaction to another video, select another video using the video selector dropdown list above the player.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing interactions</h2>
+    <p>Videos that have been configured with interactions will display an icon in the <strong>Interactivity</strong> column indicating the type of interaction(s).</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-interactivity.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: Companion icons (<img alt="" src="/assets/images/experiences/inpage/node16797-companion-icons.png" />) may also appear indicating that the video has companion components. For information on companion components, see <a href="../../docs/inpage/node/16831">Configuring Companion Components for an In-Page Experience</a>.</aside>
+    <p>Hovering over an icon in the <strong>Interactivity</strong> column will display all the interactions of that type. In this example, two links have been configured.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-two-links.png" /></figure>
+    <p>To edit an interaction on a video, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Hover over an icon in the <strong>Interactivity</strong> column and click on the edit (<img alt="" src="/assets/images/experiences/inpage/node16797-edit-icon.png" />) icon next to an interaction <strong>OR</strong> click the edit icon (<img alt="" src="/assets/images/experiences/inpage/node16797-edit-icon.png" />) in the <strong>Actions</strong> column or click the video title. The Interactivity editor will open.</li>
+      <li>Edit the interaction as appropriate.</li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting interactions</h2>
+    <p>To delete an interaction, hover over an icon in the <strong>Interactivity</strong> column and click on the delete (<img alt="" src="/assets/images/experiences/inpage/node16797-delete-icon.png" />) icon.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-delete-link.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: Clicking the delete icon in the <strong>Actions</strong> column will remove the video from the experience.</aside>
+    <p>You can also click the edit icon (<img alt="" src="/assets/images/experiences/inpage/node16797-edit-icon.png" />) in the <strong>Actions</strong> column to view the list of all the interactions and then click the appropriate delete (<img alt="" src="/assets/images/experiences/inpage/node16797-delete-icon.png" />) icon.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16797-list-of-interactions.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: If a video is deleted from an in-page experience, any interactions configured on that video will not be deleted. If the video is then re-added to the experience, the interactions will reappear.</aside>
+  </section>
+</article>

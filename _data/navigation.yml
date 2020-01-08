@@ -21,90 +21,90 @@
       url: /get-started/training-demand-building-page-experiences-using-gallery.html
     - name: Gallery Training Videos
       url: /get-started/gallery-training-videos.html
-- section: Documentation
-  url: /docs/
+- section: Experiences
+  url: /experiences/
   docs:
-    - name: Portal Experiences
-      url: /docs/portal/
+    - name: Portal
+      url: /experiences/portal/
       docs:
         - name: Uploading Videos
-          url: /docs/videos/uploading-videos.html
+          url: /experiences/portal/uploading-videos.html
         - name: Managing Videos
-          url: /docs/videos/managing-videos.html
+          url: /experiences/portal/managing-videos.html
         - name: Editing Video Properties
-          url: /docs/videos/editing-video-properties.html
-    - name: In-Page Experiences
-      url: /docs/inpage/
+          url: /experiences/portal/editing-video-properties.html
+    - name: In-Page
+      url: /exeriences/inpage/
       docs:
         - name: Overview of Experience Templates
-          url: /docs/experiences/overview-experience-templates.html
+          url: /experiences/inpage/overview-experience-templates.html
         - name: Managing Projects
-          url: /docs/experiences/managing-projects.html
+          url: /experiences/inpage/managing-projects.html
         - name: Managing Collections
-          url: /docs/experiences/managing-collections.html
-    - name: Live Event Experiences
-      url: /docs/live/
+          url: /experiences/inpage/managing-collections.html
+    - name: Live Event
+      url: /experiences/live/
       docs:
       - name: Creating a Live Event Portal Experience
-        url: /docs/live/creating-live-event-portal-experience.html
+        url: /experiences/live/creating-live-event-portal-experience.html
       - name: Creating the Pre-Event State for a Portal Event Experience
-        url: /docs/live/creating-pre-event-state-portal-event-experience.html
+        url: /experiences/live/creating-pre-event-state-portal-event-experience.html
       - name: Creating the Live Event State for a Portal Event Experience
-        url: /docs/live/creating-live-event-state-portal-event-experience.html
+        url: /experiences/live/creating-live-event-state-portal-event-experience.html
       - name: Creating the Post-Event State for a Portal Event Experience
-        url: /docs/live/creating-post-event-state-portal-event-experience.html
+        url: /experiences/live/creating-post-event-state-portal-event-experience.html
       - name: Customizing the Live Event Portal Settings
-        url: /docs/live/customizing-live-event-portal-settings.html
+        url: /experiences/live/customizing-live-event-portal-settings.html
       - name: Creating a Live Event In-Page Experience
-        url: /docs/live/creating-live-event-page-experience.html
-    - name: Creating a Landing Page Experience
-      url: /docs/landing/
+        url: /experiences/live/creating-live-event-page-experience.html
+    - name: Landing Page
+      url: /experiences/landing/
       docs:
       - name: Creating a Landing Page Experience
-        url: /docs/landing/creating-landing-page-experience.html
-    - name: General Documents
-      url: /docs/general/
-      docs:
-      - name: Gallery System Requirements
-        url: /docs/general/gallery-system-requirements.html
-      - name: Troubleshooting Brightcove Gallery Issues
-        url: /docs/general/troubleshooting-brightcove-gallery-issues.html
-      - name: Brightcove Gallery Cookies
-        url: /docs/general/brightcove-gallery-cookies.html
-    - name: Gallery Settings
-      url: /docs/settings/
-      docs:
-      - name: Configuring Gallery Settings
-        url: /docs/settings/configuring-gallery-settings.html
-      - name: Configuring YouTube Settings
-        url: /docs/settings/configuring-youtube-settings.html
-      - name: Configuring Access Control Profiles
-        url: /docs/settings/configuring-access-control-profiles.html
-      - name: Configuring Custom Domains and SSL
-        url: /docs/settings/configuring-custom-domains-and-ssl.html
-      - name: Securing a Portal Experience with SSL
-        url: /docs/settings/securing-portal-experience-ssl.html
-      - name: Configuring Single Sign-On with Active Directory Federation Services
-        url: /docs/settings/configuring-single-sign-active-directory-federation-services.html
-    - name: Developers
-      url: /docs/develop/
-      docs:
-        - name: In-Page Experience Code Snippets
-          url: /docs/develop/page-experience-code-snippets.html
-        - name: In-Page Experiences Custom CSS Reference
-          url: /docs/develop/page-experiences-custom-css-reference.html
-        - name: Embedding Brightcove In-Page Experiences in a CMS
-          url: /docs/develop/embedding-brightcove-page-experiences-cms.html
-        - name: 'Overview: In-Page Experience API'
-          url: /docs/develop/overview-page-experience-api.html
-        - name: 'Overview: In-Page Experience Client API'
-          url: /docs/develop/overview-page-experience-client-api.html
-        - name: In-Page Experience API Error Reference
-          url: /docs/develop/page-experience-api-error-reference.html
-        - name: In-Page Experience Client API Sample
-          url: /docs/develop/page-experience-client-api-sample.html
-        - name: 'Quick Start: In-Page Experience Platform (REST) API'
-          url: /docs/develop/quick-start-page-experience-platform-rest-api.html
+        url: /experiences/landing/creating-landing-page-experience.html
+- section: General
+  url: /general/
+  docs:
+    - name: Gallery System Requirements
+      url: /general/general/gallery-system-requirements.html
+    - name: Troubleshooting Brightcove Gallery Issues
+      url: /general/general/troubleshooting-brightcove-gallery-issues.html
+    - name: Brightcove Gallery Cookies
+      url: /general/general/brightcove-gallery-cookies.html
+- section: Gallery Settings
+  url: /settings/
+  docs:
+    - name: Configuring Gallery Settings
+      url: /settings/settings/configuring-gallery-settings.html
+    - name: Configuring YouTube Settings
+      url: /settings/settings/configuring-youtube-settings.html
+    - name: Configuring Access Control Profiles
+      url: /settings/settings/configuring-access-control-profiles.html
+    - name: Configuring Custom Domains and SSL
+      url: /settings/settings/configuring-custom-domains-and-ssl.html
+    - name: Securing a Portal Experience with SSL
+      url: /settings/settings/securing-portal-experience-ssl.html
+    - name: Configuring Single Sign-On with Active Directory Federation Services
+      url: /settings/settings/configuring-single-sign-active-directory-federation-services.html
+- section: Developers
+  url: /develop/
+  docs:
+    - name: In-Page Experience Code Snippets
+      url: /develop/develop/page-experience-code-snippets.html
+    - name: In-Page Experiences Custom CSS Reference
+      url: /develop/develop/page-experiences-custom-css-reference.html
+    - name: Embedding Brightcove In-Page Experiences in a CMS
+      url: /develop/develop/embedding-brightcove-page-experiences-cms.html
+    - name: 'Overview: In-Page Experience API'
+      url: /develop/develop/overview-page-experience-api.html
+    - name: 'Overview: In-Page Experience Client API'
+      url: /develop/develop/overview-page-experience-client-api.html
+    - name: In-Page Experience API Error Reference
+      url: /develop/develop/page-experience-api-error-reference.html
+    - name: In-Page Experience Client API Sample
+      url: /develop/develop/page-experience-client-api-sample.html
+    - name: 'Quick Start: In-Page Experience Platform (REST) API'
+      url: /develop/develop/quick-start-page-experience-platform-rest-api.html
 - section: Release Notes
   url: /release-notes/
   docs:

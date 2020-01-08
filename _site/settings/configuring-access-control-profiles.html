@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Configuring Access Control Profiles</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/settings/">Settings</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Configuring Access Control Profiles</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating and Publishing a Portal Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating and Publishing an In-Page Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-gallery.html">Getting Started with Brightcove Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-gallery-experiences.html">Overview of Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/creating-and-managing-gallery-experiences.html">Creating and Managing Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-introduction-gallery.html">Training on Demand: Introduction to Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-portal-experiences-using-gallery.html">Building Portal Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-page-experiences-using-gallery.html">Building In-Page Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/gallery-training-videos.html">Gallery Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/">Experiences <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/portal/">Portal <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/portal/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/exeriences/inpage/">In-Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/inpage/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-collections.html">Managing Collections</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/live/">Live Event <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/live/creating-live-event-portal-experience.html">Creating a Live Event Portal Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-pre-event-state-portal-event-experience.html">Creating the Pre-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-state-portal-event-experience.html">Creating the Live Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-post-event-state-portal-event-experience.html">Creating the Post-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/customizing-live-event-portal-settings.html">Customizing the Live Event Portal Settings</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-page-experience.html">Creating a Live Event In-Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/landing/">Landing Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/landing/creating-landing-page-experience.html">Creating a Landing Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/">General <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/general/gallery-system-requirements.html">Gallery System Requirements</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/troubleshooting-brightcove-gallery-issues.html">Troubleshooting Brightcove Gallery Issues</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/brightcove-gallery-cookies.html">Brightcove Gallery Cookies</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/settings/">Gallery Settings <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/settings/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-access-control-profiles.html">Configuring Access Control Profiles</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-single-sign-active-directory-federation-services.html">Configuring Single Sign-On with Active Directory Federation Services</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/">Developers <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/develop/page-experience-code-snippets.html">In-Page Experience Code Snippets</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experiences-custom-css-reference.html">In-Page Experiences Custom CSS Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/embedding-brightcove-page-experiences-cms.html">Embedding Brightcove In-Page Experiences in a CMS</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-api.html">Overview: In-Page Experience API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-client-api.html">Overview: In-Page Experience Client API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-api-error-reference.html">In-Page Experience API Error Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-client-api-sample.html">In-Page Experience Client API Sample</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/quick-start-page-experience-platform-rest-api.html">Quick Start: In-Page Experience Platform (REST) API</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
+                  
+                
+                  
+                    <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Configuring Access Control Profiles</h1>
+  <summary>In this topic you will learn how to configure access control profiles for a Gallery Portal experience. You can control access based on IP address, single sign-on (SSO), or an access code.</summary>
+  <section class="bcls-section">
+    <p>By default, when a Gallery portal experience is published, anyone with the site URL will be able to access the site. Access control profiles can be created to restrict access to a Gallery portal experience. Access control profiles are created as part of the Gallery settings and then the profiles are assigned to sites. Access control profiles can be created to restrict access based upon:</p>
+    <ul>
+      <li><a href="#ip">IP address</a></li>
+      <li><a href="#sso">Single sign-on</a></li>
+      <li><a href="#accesscode">Access code</a></li>
+    </ul>
+    <p>To create an access control profile, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/assets/images/settings/node16450-access-control-list.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: You may see access control profiles in your account that you did not create. If you had configured IP restrictions, SSO or an access code for site(s) before Gallery implemented access control profiles, those settings have been saved as access control profiles when the feature was released.</aside>
+      </li>
+      <li>Click <strong>Create Profile</strong>.</li>
+      <li>Give the profile a <strong>Name</strong>.</li>
+      <li><strong>(Optional)</strong> Configure a <strong>Session Timeout</strong> to specify the amount of time a user's session will last. A few notes:
+        <ul>
+          <li>This setting applies when using SSO and Access code</li>
+          <li>This is an "idle timeout". Whenever the Gallery server is hit (either through loading a page on the site or via an API call to the site) the timer is reset. This allows viewers to continually browse for longer than the specified timeout, but as soon as they go idle for longer than the timeout, they will be logged out. While a video is being watched, the Gallery server is not being accessed though, so the timeout value should be longer than your longest video.</li>
+          <li>Your SSO provider must be set to either force re-authentication or to have a session timeout of less than our timeout. If it's not, we'll redirect to your SSO provider after our timeout and they will immediately issue a response that the user is logged in.</li>
+        </ul>
+      </li>
+      <li>Select the option(s) to secure the site:
+        <ul>
+          <li><a href="#ip">IP address</a></li>
+          <li><a href="#sso">Single sign-on</a></li>
+          <li><a href="#accesscode">Access code</a></li>
+        </ul>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Create additional Access Control Profiles as needed.</li>
+    </ol>
+    <p>To edit or delete an access control profile, click the edit (<img alt="edit icon" src="http://img.brightcove.com/node16450-edit-icon.png" />) or delete (<img alt="delete icon" src="http://img.brightcove.com/node16450-delete-icon.png" />) buttons associated with the access control profile. Once access control profiles have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/node/14029">Controlling Access to a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="ip">Configuring IP restriction</h2>
+    <p>When creating an access control profile that uses IP restriction, viewers with an IP address outside of the predefined range will receive an error when they try to access the site.</p>
+    <p>To configure an access control profile to use IP restriction, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Select the <strong>Limited by IP address </strong> option.</li>
+      <li>Enter a range of IP addresses that can access the site. <a href="http://tools.ietf.org/html/rfc4632">CIDR block notation</a> is also supported.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="configure ip address" src="/assets/images/settings/node16450-ip-address.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sso">Configuring Single Sign-on</h2>
+    <p>When creating an access control profile that uses SSO, site visitors will be prompted to login with valid credentials before they can access the site. Gallery supports the Security Assertion Markup Language 2.0 (SAML 2.0) standard for exchanging authentication and authorization data between security domains.</p>
+    <p>Gallery supports most major Identity Providers, including:</p>
+    <ul>
+      <li>Ping</li>
+      <li>OneLogin</li>
+      <li>ADFS 2.0 / 3.0</li>
+      <li>Google G Suite</li>
+      <li>Shibboleth</li>
+      <li>Okta</li>
+      <li>Salesforce.com</li>
+    </ul>
+    <p>Other providers using the SAML 2.0 standard will also work. Gallery uses the <a href="https://github.com/bergie/passport-saml">passport-saml</a> library. Gallery does not support Identity Providers that do not work with this library.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Gallery requires SAML 2.0 for single sign-on authentication. SAML 1.1 is not supported.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: We only support single-byte characters.</aside>
+    <p>Your SSO provider will require an Assertion Consumer Service URL (ACS URL). The ACS URL is listed in the SSO section of the Access Control Profiles table.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="acs url" src="/assets/images/settings/node16450-acs-url.png" /></figure>
+    <p>The ACS URL defaults to <code>https://auth.bcvp0rtal.com/login/callback</code>. You can also override the ACS URL by providing your own URL. Both of these options can be used for configuring stricter SSO providers. For existing sites, <code>http(s)://&lt;site-root-url&gt;/login/callback</code> will still work but Brightcove recommends that publishers use <code>https://auth.bcvp0rtal.com/login/callback</code>. This endpoint takes care of forwarding SAML data to the correct site for any sites that use a path on a domain.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When using an IDP-initiated SSO workflow, the ACS URL specified in your SSO software should point to a Gallery site which is configured with that access control profile. In this case, the <code>https://auth.bcvp0rtal.com/login/callback</code> URL should not be used.</aside>
+    <p>To configure an access control profile to use SSO, follow these steps:</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="configure sso" src="/assets/images/settings/node16450-sso.png" /></figure>
+    <ol class="bcls-tasklist-restart">
+      <li>Select the <strong>SSO </strong> option.</li>
+      <li>If you have an export file of your SAML 2.0 metadata, click <strong>Select File</strong> to browse and select the metadata file. This will prefill the <strong>SAML 2.0 Endpoint</strong> and the <strong>X.509 Certificate</strong> fields.</li>
+      <li>Enter a value for the <strong>SAML 2.0 Endpoint (HTTP)</strong>. This value should be available from your SAML provider.</li>
+      <li>Enter a value for the <strong> X.509 Certificate</strong>. This value should be available from your SAML provider.</li>
+      <li>(Optional) Enter the <strong>SAML Issuer / Entity ID Override</strong>. Enter a value here to optionally override the SAML issuer.</li>
+      <li>(Optional) Enter the<strong> ACS URL Override</strong>. Enter a value here to optionally override the ACS URL.</li>
+      <li>(Optional) Enter the <strong>SAML AuthnContext Override</strong>. Enter a value here to optionally override the SAML AuthnContext.</li>
+      <li>(Optional) Enter any SAML attributes for that you want passed to your external JavaScript.</li>
+      <li>(Optional) Check <strong>Expose all attributes</strong> to expose all of the SAML attributes for use in external JavaScript.</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="accesscode">Configuring an access code</h2>
+    <p>When a site has an access code applied, viewers will be prompted to provide the correct access code when the access the site URL.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="access code prompt" src="/assets/images/settings/node16450-access-code-prompt.png" /></figure>
+    <p>If an incorrect access code is entered, the viewer will receive an error. Access codes are a good way to restrict access to a site while it is under construction. Access codes do not offer any site security or authentication.</p>
+    <p>To configure an access control profile to use an access code, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Select the <strong>Require Access Code </strong> option.</li>
+      <li>Enter the <strong>Access Code</strong> for the site.</li>
+      <li>Enter the <strong>Access Code Label</strong>. The <strong>Access Code Label</strong> will appear above where the user will enter their access code.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="configure access code" src="/assets/images/settings/node16450-access-code1.png" /></figure>
+      </li>
+      <li>(Optional) <a href="#style">Style the access control page</a>.</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="style">Styling the access control page</h2>
+    <p>The access control page can be styled to more closely match the look of your overall site. Gallery provides three styling options:</p>
+    <ul>
+      <li><a href="#defaultstyle">Default</a></li>
+      <li><a href="#imageborder">Image &amp; Border</a></li>
+      <li><a href="#custom">Custom</a></li>
+    </ul>
+    <h3 id="defaultstyle">Default styling</h3>
+    <p>With the default styling option, a Gallery logo, the Access Code Label and an access code field will always be displayed.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="access code prompt" src="/assets/images/settings/node16450-access-code-prompt.png" /></figure>
+    <h3 id="imageborder">Image &amp; Border styling</h3>
+    <p>The Image &amp; Border option allows for some basic customizations to the access control page. An example can be seen below.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="image border example" src="/assets/images/settings/node16450-image-border-example.png" /></figure>
+    <p>To customize the image and border styling, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Select <strong>Image &amp; Border</strong>.</li>
+      <li>Drag &amp; drop, browse, or add a link to the image to display on the access control page.</li>
+      <li>Enter a <strong>Clickthrough URL</strong>. The <strong>Clickthrough URL</strong> will make the image a clickable link.</li>
+      <li>Click on the color picker to select a <strong>Header Border Color</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="image border properties" src="/assets/images/settings/node16450-image-border-props.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <h3 id="custom">Custom styling</h3>
+    <p>The <strong>Custom</strong> styling option allows for more advanced customizations to the access control page. An example can be seen below.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="custom example" src="/assets/images/settings/node16450-custom-example.png" /></figure>
+    <p>To use the <strong>Custom</strong> option, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Select<strong> Custom</strong>.</li>
+      <li>Enter custom HTML for the header and footer.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="custom properties" src="/assets/images/settings/node16450-custom-props.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong></li>
+    </ol>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 08 Jan 2020
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

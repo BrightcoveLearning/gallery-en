@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- remember to remove the following line when the site is ready to go live -->
+  <!-- <meta name="robots" content="noindex" /> -->
+  <title>Using a Lead Form with a Portal Experience</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/bc-icons.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/tabs.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9e0492656a.js" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <!-- TODO - change logo to current product -->
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      
+      
+      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/experiences/portal/">Portal Experiences</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Using a Lead Form with a Portal Experience</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          
+            
+            <h5><a href="/">Home</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating and Publishing a Portal Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating and Publishing an In-Page Experience</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-gallery.html">Getting Started with Brightcove Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-gallery-experiences.html">Overview of Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/creating-and-managing-gallery-experiences.html">Creating and Managing Gallery Experiences</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-introduction-gallery.html">Training on Demand: Introduction to Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-portal-experiences-using-gallery.html">Building Portal Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/training-demand-building-page-experiences-using-gallery.html">Building In-Page Experiences using Gallery</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/gallery-training-videos.html">Gallery Training Videos</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/">Experiences <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/portal/">Portal <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/portal/uploading-videos.html">Uploading Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/managing-videos.html">Managing Videos</a></li>
+                        
+                        <li><a href="/experiences/portal/editing-video-properties.html">Editing Video Properties</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/exeriences/inpage/">In-Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/inpage/overview-experience-templates.html">Overview of Experience Templates</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-projects.html">Managing Projects</a></li>
+                        
+                        <li><a href="/experiences/inpage/managing-collections.html">Managing Collections</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/live/">Live Event <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/live/creating-live-event-portal-experience.html">Creating a Live Event Portal Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-pre-event-state-portal-event-experience.html">Creating the Pre-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-state-portal-event-experience.html">Creating the Live Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/creating-post-event-state-portal-event-experience.html">Creating the Post-Event State for a Portal Event Experience</a></li>
+                        
+                        <li><a href="/experiences/live/customizing-live-event-portal-settings.html">Customizing the Live Event Portal Settings</a></li>
+                        
+                        <li><a href="/experiences/live/creating-live-event-page-experience.html">Creating a Live Event In-Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/experiences/landing/">Landing Page <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/experiences/landing/creating-landing-page-experience.html">Creating a Landing Page Experience</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/">General <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/general/gallery-system-requirements.html">Gallery System Requirements</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/troubleshooting-brightcove-gallery-issues.html">Troubleshooting Brightcove Gallery Issues</a></li>
+                  
+                
+                  
+                    <li><a href="/general/general/brightcove-gallery-cookies.html">Brightcove Gallery Cookies</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/settings/">Gallery Settings <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/settings/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-access-control-profiles.html">Configuring Access Control Profiles</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a></li>
+                  
+                
+                  
+                    <li><a href="/settings/settings/configuring-single-sign-active-directory-federation-services.html">Configuring Single Sign-On with Active Directory Federation Services</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/">Developers <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/develop/page-experience-code-snippets.html">In-Page Experience Code Snippets</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experiences-custom-css-reference.html">In-Page Experiences Custom CSS Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/embedding-brightcove-page-experiences-cms.html">Embedding Brightcove In-Page Experiences in a CMS</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-api.html">Overview: In-Page Experience API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/overview-page-experience-client-api.html">Overview: In-Page Experience Client API</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-api-error-reference.html">In-Page Experience API Error Reference</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/page-experience-client-api-sample.html">In-Page Experience Client API Sample</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/develop/quick-start-page-experience-platform-rest-api.html">Quick Start: In-Page Experience Platform (REST) API</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/">Release Notes <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
+                  
+                
+                  
+                    <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/">Support <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">Open a Support Case</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">Viewing System Status</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- search bar -->
+      <div id="search_bar" class="search-bar">
+        <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
+        <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:akte0bfqhom"></script>
+        <div class="gcse-search"></div>
+      </div>
+  <!-- bootstrap layout -->
+
+<article class="bcls-article">
+  <h1>Using a Lead Form with a Portal Experience</h1>
+  <summary>In this topic, you will learn how to configure an Audience lead form for use in a Portal experience.</summary>
+  <section class="bcls-section">
+    <p>Lead forms can be used to capture viewer information as viewers watch videos and can be used with the following types of experiences:</p>
+    <ul>
+      <li class="language-editable">Portal</li>
+      <li class="language-editable">Live Event Portal</li>
+      <li class="language-editable">Landing Page</li>
+    </ul>
+    <p>With Portal, Live Event Portal and some Landing Page experiences, lead forms will be displayed inside the player. Lead forms can be configured to display after a specified number of videos have been viewed or after a predetermined time interval has passed. The following is an example of a lead form displayed inside of a player:</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="sample lead form" src="/assets/images/experiences/portal/node13702-sample-lead-form.png" /></figure>
+    <p>Landing Page experiences can also be configured to display a lead form on the body of the page, for example:</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="sample lead form" src="/assets/images/experiences/portal/node13702-landing-page-lead-form.png" /></figure>
+    <p>Lead data can be downloaded in comma separated or Excel file formats.</p>
+    <p>The steps to use a lead form are as follows:</p>
+    <ul>
+      <li class="language-editable"><a href="#create">Create a lead form using the Audience module</a></li>
+      <li class="language-editable"><a href="#assign">Assign the lead form to an Audience-enabled player</a></li>
+      <li class="language-editable"><a href="#configure">Configure an experience to use the lead form</a></li>
+      <li class="language-editable"><a href="#export">Export the lead data</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a lead form</h2>
+    <p>Lead forms are created using the Audience module. For complete steps to creating a lead form including all of the options that are available, see <a href="/node/15860">Creating an Audience Lead Form</a>. To create a lead form, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Open the Audience module.</li>
+      <li class="language-editable">Click <strong>Lead Forms</strong> in the left navigation.</li>
+      <li class="language-editable">Click <strong>Create Lead Form</strong>.</li>
+      <li class="language-editable">Enter a <strong>Name</strong> for the lead form.</li>
+      <li class="language-editable">Configure the lead form settings and then click <strong>Save</strong>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: No validation is performed on the lead form data that is entered.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: When a lead form is used on a Landing Page experience and the experience is configured to display the form in the body of the page, lead form timing and display settings will be ignored.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign">Assigning a lead form to an Audience-enabled player</h2>
+    <p>Lead forms can only be displayed in Audience-enabled players. An Audience-enabled player is a Brightcove Player that is configured with the Audience plugin. Audience-enabled players record video engagement data that can be viewed inside of the Audience module. To create an Audience-enabled-player, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Open the Audience module.</li>
+      <li class="language-editable">Click <strong>Audience Players</strong>.</li>
+      <li class="language-editable">Click <strong>Create Player</strong> to create a new Audience-enabled player.
+        <aside class="bcls-aside bcls-aside--information">Note: It is also possible to <a href="/node/16419#existingplayer">add the Audience plugin to an existing player</a>.</aside>
+      </li>
+      <li class="language-editable">Locate your player and use the <strong>Lead Form</strong> dropdown list to select the lead form to display.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="select lead form" src="/assets/images/experiences/portal/node13702-select-lead-form.png" /></figure>
+      </li>
+      <li class="language-editable">(Optional) If you are using Audience to track video engagement data, the player should be configured with a data connection using the <strong>Connect To</strong> dropdown list.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure">Configuring an experience to use a lead form</h2>
+    <p>After a lead form has been created and assigned to an Audience-enabled player, it can be used in a portal experience. To configure an experience to use a lead form, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Open the Gallery module.</li>
+      <li class="language-editable">Edit the experience that you want to add the lead form to.</li>
+      <li class="language-editable">Click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong> in the left navigation.</li>
+      <li class="language-editable">Select an Audience-enabled player that is configured with the lead form to display.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13702-choose-player.png" /></figure>
+      </li>
+      <li class="language-editable">After a player is selected, the <strong>Lead Form</strong> and <strong>Connection</strong> information will be displayed. Confirm this is correct.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13702-lead-form-info.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: If a Landing Page experience is configured to display a lead form in the body of the page, lead form timing and display settings will be ignored.</aside>
+      </li>
+      <li class="language-editable">Click <strong>Save</strong>.</li>
+    </ol>
+    <p>Make sure to <a href="../../docs/portal/node/13599#changes">republish the experience</a> after making any changes.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">Exporting lead data</h2>
+    <p>All lead data collected from Gallery lead forms is exported using the Audience module. See <a href="/node/18585">Exporting Gallery Lead Data</a> for information on how to export the Gallery lead data.</p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  Page last updated on 08 Jan 2020
+</div>
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove Support</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">System Status</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">Documentation</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>Training</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/privacy">Privacy</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">Terms &amp; Conditions</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/https-fix.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/setDate.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-beacon.js"></script>
+</body>
+
+</html>

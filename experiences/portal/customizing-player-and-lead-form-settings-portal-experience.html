@@ -1,0 +1,39 @@
+---
+title: Customizing the Player and Lead Form Settings for a Portal Experience
+parent: Portal Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Customizing the Player and Lead Form Settings for a Portal Experience</h1>
+  <summary>In this topic you will learn how to customize the player and lead form settings for a Portal experience.</summary>
+  <section class="bcls-section">
+    <p>To customize the Player and Lead Form settings, edit the Portal experience and click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong> in the left navigation. The Player and Lead Form settings allow the following to be configured for a Portal experience:</p>
+    <ul>
+      <li><a href="#player">Player</a></li>
+      <li><a href="#player_behavior">Player behavior</a></li>
+      <li><a href="#lead_form">Audience Lead Form and Connection</a></li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18599-player-lead-form-settings.png" /></figure>
+    <p>Make sure you republish the experience after making any changes to the Player and Lead Form settings.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="player">Using a site-specific player</h2>
+    <p>By default, all Portal experiences will use the account-wide default player that was selected as part of the <a href="../../docs/portal/node/13856#players">Gallery settings</a>. To use a site-specific player, select <strong>Use site-specific player</strong> and then select a player to use. Audience-enabled players are indicated with the Audience icon (<img alt="" src="https://img.brightcove.com/node18599-audience-icon.png" />). These players are configured with the Audience plugin and can track video engagement data. An Audience-enabled player must be used to use a lead form. Click <strong>Preview Player</strong> to see a player preview. Hovering over the Audience icon will display the Audience connection information.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18599-site-specific-player.png" /></figure>
+    <p>For information on creating Audience-enabled players, see <a href="/node/16419">Creating an Audience-enabled Player</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="player_behavior">Configuring player behavior</h2>
+    <p>The following player behavior settings can be configured:</p>
+    <ul>
+      <li><strong>Auto-Play Video</strong> - If checked, videos on the detail page will auto play. This setting overrides the <strong>Auto-Play Video on Player Load</strong> setting that is configured in the Players module. This setting is only available for Catalogue, Marquee, Publisher, Chronicle and Classic templates.</li>
+      <li><strong>After video finishes playing, autoplay the next video in the collection</strong> - If checked, the next video in a collection will start playing when a video finishes.</li>
+      <li><strong>Enable inline playback on iOS devices</strong> - If checked, enables inline playback on iOS devices when using Brightcove Player version 5.10.5 or newer. This setting adds the <code>playsinline</code> attribute to the player publishing code.</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sorting">Using a lead form</h2>
+    <p>Lead forms can be used to capture viewer information during video playback. For information on using a lead form, see <a href="/node/18590">Using a Lead Form with a Portal Experience</a>. When an Audience-enabled player is selected, the lead form being used (if any) and the Audience connection information will be displayed.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18599-lead-form-info.png" /></figure>
+  </section>
+</article>

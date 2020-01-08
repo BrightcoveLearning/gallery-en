@@ -1,0 +1,137 @@
+---
+title: Adding YouTube Videos to a Portal Experience
+parent: Portal Experiences
+grandparent: Documentation
+---
+<article class="bcls-article">
+  <h1>Adding YouTube Videos to a Portal Experience</h1>
+  <summary>In this topic you will learn how to add YouTube videos to a Portal experience.</summary>
+  <section class="bcls-section">
+    <p>Using the Gallery Collection Editor, you can select which videos to make available on a Portal experience. With Portal experiences, videos are organized into collections. Collections can contain videos from a <a href="/node/16505">Video Cloud account</a> or from a YouTube channel. This topic will focus on adding YouTube videos to a collection. For information on adding Video Cloud videos to a collection, see <a href="/experiences/portal/adding-video-cloud-videos-portal-experience.html">Adding Video Cloud Videos to a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="req">YouTube integration requirements</h2>
+    <ul>
+      <li>Before YouTube videos can be added to a video site, you must <a href="/settings/configuring-youtube-settings.html">configure the YouTube settings</a></li>
+      <li>Only videos in YouTube playlists can be included in a collection. Videos that are not part of a YouTube playlist will not be accessible through the Gallery collection manager. Playlists must also have the Playlist Privacy setting set to Public.</li>
+      <li>Private videos should not be in public playlists</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="limits">YouTube integration limitations</h2>
+    <ul>
+      <li>YouTube videos can't be downloaded</li>
+      <li>YouTube videos played inside Brightcove Players with the IMA plugin will not display ads on mobile devices</li>
+      <li>When searching, all collections must consist of YouTube videos and the videos must be owned by the selected channel</li>
+      <li>Customers' use of YouTube is subject to YouTube's <a href="https://www.youtube.com/static?template=terms">terms and conditions</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a collection</h2>
+    <p>Videos in a video site are organized into collections. To create a collection, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the <strong>VIDEOS</strong> in the left navigation. The Manage Collections page will open. The right side of the page displays a preview of the home page video layout for the selected template type.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node16420-new-collection.png" /></figure>
+      </li>
+      <li>Enter a name for the collection and press <strong>enter</strong>. The name will be displayed to viewers so make sure to use a meaningful name. Click the edit (<img alt="" src="/assets/images/experiences/portal/node16505-edit-icon.png" />) icon to edit the collection name.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing a collection</h2>
+    <ol class="bcls-tasklist-restart">
+      <li>To edit a collection, click the collection name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node16420-edit-collection.png" /></figure>
+      </li>
+      <li>The Edit Collection page will open. The Edit Collection page is used to add videos to a collection and to configure additional collection properties. The <strong>Change Collection</strong> dropdown will list all of the collections that have been created. Select the collection to edit. The preview on the right will show where the collection appears on the Home page.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node16420-edit-collection-dialog.png" /></figure>
+      </li>
+      <li>The <strong>Collection Source </strong>specifies the source of the video content for the collection:
+        <ul>
+          <li><strong>Video Cloud</strong> - Video Cloud video content will be used. For information, see <a href="/experiences/portal/adding-video-cloud-videos-portal-experience.html">Adding Video Cloud Videos to a Portal Experience</a>.</li>
+          <li><strong>YouTube</strong> - YouTube video content will be used.</li>
+        </ul>
+      </li>
+      <li>Select the YouTube <strong>Channel</strong> to use.</li>
+      <li>Select a <strong>Playlist</strong>. Only videos that are in a playlist will be displayed.</li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="details">Adding collection information</h2>
+    <p>Depending on the template selected, collection details can be configured. To add collection details, click the <strong> COLLECTION INFORMATION</strong> section. The collection information section provides the ability to add a collection image and collection description. Some social networks will use the image and description when a link to the experience is posted to social media sites.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node16420-collection-details.png" /></figure>
+    <p>The <strong>Collection Image</strong> is used to represent the collection on a Gallery site. If no collection image is specified, Gallery will assign one using the video thumbnail from the first video that are in the collection. To add a collection image, click <strong>Browse</strong> and select an image from the file system. You can also drag and drop an image to the designated area.</p>
+    <p>The <strong>Collection Description</strong> is used to describe the collection.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="faq">Frequently asked questions</h2>
+    <h4 id="1">1. How are Analytics reported?</h4>
+    <p>The Analytics module groups the number of plays for all YouTube videos and reports them as one item.</p>
+    <h4 id="2">2. Can a collection contain videos from both YouTube and Video Cloud sources?</h4>
+    <p>No. Each Gallery collection can only contain videos from one source. However, Gallery sites can include multiple collections so it is possible to have a Gallery site with content from both YouTube and Video Cloud.</p>
+    <h4 id="3">3. Do the YouTube videos in Gallery have to come from my own channel or can I use videos in other publishers’ channels?</h4>
+    <p>Videos in your own channel as well as videos from any “featured channel” that you’ve linked to can be used. This allows companies with multiple channels (all linked on YouTube) to include videos from any number of them in a single Gallery site. It is also possible to include videos from channels that don’t belong to you in your Gallery site.</p>
+    <h4 id="4">4. How is the YouTube video metadata used in Gallery?</h4>
+    <p>The following YouTube metadata is used by Gallery:</p>
+    <ul>
+      <li>ID</li>
+      <li>Title</li>
+      <li>Description</li>
+      <li>High-quality thumbnail URL</li>
+      <li>Duration</li>
+      <li>Published date</li>
+    </ul>
+    <p>This metadata is used the same way as the metadata from Video Cloud videos, it gets added to the <code>&lt;meta&gt;</code> tags in the head, used in the site map, etc.</p>
+    <h4 id="5">5. If the Brightcove Player configured for the Gallery site is an Audience-enabled player, will the Audience module capture viewing data for YouTube videos?</h4>
+    <p>Yes. Lead Forms are also supported.</p>
+    <h4 id="6">6. Are Gallery lead forms supported for YouTube videos?</h4>
+    <p>Yes.</p>
+    <h4 id="8">7. Are there any restrictions on which YouTube videos can be used in a Gallery site? For example, if the YouTube video does not "allow embedding", can the video be used? Also, what if a video is marked as unlisted or private?</h4>
+    <p>Yes.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th scope="col">&nbsp;</th>
+          <th colspan="4" align="center" scope="col">Video Status</th>
+        </tr>
+        <tr>
+          <th width="103">Video Owner</th>
+          <th width="61">Public</th>
+          <th width="73">Private</th>
+          <th width="164">Unlisted</th>
+          <th width="315">Does not allow embedding</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>Owned by user</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+        </tr>
+        <tr>
+          <td>Owned by others</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+        </tr>
+        <tr>
+          <td>In a playlist</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+          <td align="center">Yes</td>
+          <td align="center">No</td>
+        </tr>
+        <tr>
+          <td>Not in a playlist</td>
+          <td align="center">No</td>
+          <td align="center">No</td>
+          <td align="center">No</td>
+          <td align="center">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
