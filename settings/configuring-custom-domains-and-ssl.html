@@ -11,7 +11,7 @@ grandparent: Documentation
     <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
     <p>When you first create a Portal experience, it is assigned a random domain with the format of <code>&lt;site-slug&gt;.bcvp0rtal.com </code>. For example, <code>http://site-148393.bcvp0rtal.com </code>. When the site is published, viewers will be able to access the site at this domain. Gallery provides the ability to publish video sites at a Brightcove provided domain or at your own custom domain.</p>
     <p>Gallery Portal experiences can also be assigned to multiple URLs allowing publishers to use the same site for different functions without having to duplicate the site. For example, if you have a video site you want to use in a campaign and as your main video portal, you can brand different URLs and assign them all to the same site. No site duplication is needed and you can easily delete URLs when they are no longer needed.</p>
-    <p class="BCL-aside">Note: When working with SSL certificates, do not under any circumstances share your private key or send it to Brightcove Support.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When working with SSL certificates, do not under any circumstances share your private key or send it to Brightcove Support.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="bcdomain">Using a Brightcove provided domain</h2>
@@ -54,7 +54,7 @@ grandparent: Documentation
       </li>
       <li>Click <strong>Save</strong>. A list of configured domains will be displayed.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="list of domains" src="/assets/images/settings/node16440-domain-list.png" /></figure>
-        <p class="BCL-aside">Note: When using a Brightcove provided domain, the SSL status will always be <strong>Provided</strong>. This indicates that by adding <strong>https://</strong> to the beginning of the site URL, the data transmission between your browser and the Gallery site will be secure.</p>
+        <aside class="bcls-aside bcls-aside--information">Note: When using a Brightcove provided domain, the SSL status will always be <strong>Provided</strong>. This indicates that by adding <strong>https://</strong> to the beginning of the site URL, the data transmission between your browser and the Gallery site will be secure.</aside>
       </li>
       <li>Create additional domains as needed.</li>
     </ol>
@@ -63,7 +63,7 @@ grandparent: Documentation
   </section>
   <section class="bcls-section">
     <h2 id="cname">Configuring CNAME records with your hosting provider</h2>
-    <p class="BCL-aside">Note: CNAME records only need to be configured when custom domains will be assigned to a site. CNAME records DO NOT have to be created for sites using Brightcove provided domains.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: CNAME records only need to be configured when custom domains will be assigned to a site. CNAME records DO NOT have to be created for sites using Brightcove provided domains.</aside>
     <p>The steps to configure a CNAME (Canonical Name) record will differ based upon your hosting provider. You need to configure a CNAME record for each custom domain you will be using. If your site is configured to use SSL, the CNAME record should point to the CloudFront URL. See <a href="/node/15951">Securing a Portal Experience with SSL</a> for information. Note that custom domains must include a subdomain in order to be configured as a CNAME ex: <code>video </code> must be placed before <code>brightcovelearning.com </code> so I can configure my CNAME.</p>
     <p>The CNAME values are displayed as part of the Custom Domains &amp; SSL settings.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node16440-cname-list.png" /></figure>
