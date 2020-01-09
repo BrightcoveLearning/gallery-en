@@ -27,12 +27,70 @@
     - name: Portal
       url: /experiences/portal/
       docs:
-        - name: Uploading Videos
-          url: /experiences/portal/uploading-videos.html
-        - name: Managing Videos
-          url: /experiences/portal/managing-videos.html
-        - name: Editing Video Properties
-          url: /experiences/portal/editing-video-properties.html
+        - name: Indexing a Gallery Portal Experience
+          url: /experiences/portal/indexing-gallery-portal-experience.htmlIndexing a Gallery Portal 
+        - name: Creating, Editing and Publishing Portal Experiences
+          url: /experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html
+        - name: 'Overview: Creating, Editing and Publishing Portal Experiences'
+          url: /experiences/portal/overview-gallery-portal-templates.html
+        - name: Previewing and Publishing a Portal Experience
+          url: /experiences/portal/previewing-and-publishing-portal-experience.html
+        - name: Updating Gallery Templates
+          url: /experiences/portal/updating-gallery-templates.html
+        - name: Using Custom Fonts in a Portal Experience
+          url: /experiences/portal/using-custom-fonts-portal-experience.html
+        - name: Using a Lead Form with a Portal Experience
+          url: /experiences/portal/using-lead-form-portal-experience.html
+        - name: Using the Site Editor to Customize a Portal Experience
+          url: /experiences/portal/using-site-editor-customize-portal-experience.html
+        - name: Adding Video Cloud Videos to a Portal Experience
+          url: /experiences/portal/adding-video-cloud-videos-portal-experience.html
+        - name: Adding Videos to a Portal Experience
+          url: /experiences/portal/adding-videos-portal-experience.html
+        - name: Adding YouTube Videos to a Portal Experience
+          url: /experiences/portal/adding-youtube-videos-portal-experience.html
+        - name: Assigning a Custom Domain to a Portal Experience
+          url: /experiences/portal/assigning-custom-domain-portal-experience.html
+        - name: Changing the Player Layout on a Portal Experience
+          url: /experiences/portal/changing-player-layout-portal-experience.html
+        - name: Configuring Calls to Action on a Portal Experience
+          url: /experiences/portal/configuring-calls-action-portal-experience.html
+        - name: Configuring the Details for a Portal Experience
+          url: /experiences/portal/configuring-details-portal-experience.html
+        - name: Configuring Search Engine Optimization Settings for a Portal Experience
+          url: /experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html
+        - name: Configuring Third-Party Tracking for a Portal Experience
+          url: /experiences/portal/configuring-third-party-tracking-portal-experience.html
+        - name: Controlling Access to a Portal Experience
+          url: /experiences/portal/controlling-access-portal-experience.html
+        - name: Customizing the Appearance and Behavior of a Portal Experience
+          url: /experiences/portal/customizing-appearance-and-behavior-portal-experience.html
+        - name: Exporting Gallery Lead Data
+          url: /experiences/portal/exporting-gallery-lead-data.html
+        - name: Downloading Videos from a Portal Experience
+          url: /experiences/portal/downloading-videos-portal-experience.html
+        - name: Customizing the Video Settings for a Portal Experience
+          url: /experiences/portal/customizing-video-settings-portal-experience.html
+        - name: Customizing the Video and Playback Settings of a Portal Experience
+          url: /experiences/portal/customizing-video-and-playback-settings-portal-experience.html
+        - name: Customizing the Style of a Portal Experience
+          url: /experiences/portal/customizing-style-portal-experience.html
+        - name: Customizing the Social Settings for a Portal Experience
+          url: /experiences/portal/customizing-social-settings-portal-experience.html
+        - name: Customizing the Site Features of a Portal Experience
+          url: /experiences/portal/customizing-site-features-portal-experience.html
+        - name: Customizing the Site Configuration of a Portal Experience
+          url: /experiences/portal/customizing-site-configuration-portal-experience.html
+        - name: Customizing the Player and Lead Form Settings for a Portal Experience
+          url: /experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html
+        - name: Customizing the Marquee Template Settings
+          url: /experiences/portal/customizing-marquee-template-settings.html
+        - name: Customizing the Content of Portal Experience Pages
+          url: /experiences/portal/customizing-content-portal-experience-pages.html
+        - name: Customizing the Chronicle Template Settings
+          url: /experiences/portal/customizing-chronicle-template-settings.html
+        - name: Customizing the Catalogue Template Settings
+          url: /experiences/portal/customizing-catalogue-template-settings.html
     - name: In-Page
       url: /experiences/inpage/
       docs:
@@ -64,38 +122,14 @@
           url: /experiences/inpage/previewing-and-publishing-page-experience.html
         - name: Using Dynamic Video Overrides in an In-Page Experience
           url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
-        - name: 
-          url:
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url:
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url:
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url:
-        - name: 
-          url: 
-        - name: 
-          url: 
-        - name: 
-          url: 
+        - name: Reviewing the In-Page Experience Analytics Dashboard
+          url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
+        - name: Reviewing In-Page Experience Analytics
+          url: /experiences/inpage/reviewing-page-experience-analytics.html
+        - name: Reviewing In-Page Experience Calls-to-Action Analytics
+          url: /experiences/inpage/reviewing-page-experience-calls-action-analytics.html
+        - name: Reviewing In-Page Experience Video Analytics
+          url: /experiences/inpage/reviewing-page-experience-video-analytics.html
     - name: Live Event
       url: /experiences/live/
       docs:
