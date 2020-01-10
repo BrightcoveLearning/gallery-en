@@ -5,9 +5,9 @@ grandparent: Experiences
 ---
 <article class="bcls-article">
   <h1>Using Dynamic Video Overrides in an In-Page Experience</h1>
-  <summary>In this topic you will learn how to use dynamic video overrides in an In-Page experience.</summary>
+  <summary>In this topic you will learn how to use dynamic video overrides in an In-Page Experience.</summary>
   <section class="bcls-section">
-    <p>There may be times when you want to change the videos in an In-Page experience. For example, maybe the videos in an experience need to change based upon a selection the user makes or based upon navigating to other parts of a site. Instead of creating new in-page experiences, each with a different set of videos, it is possible to modify the embed code to assign the appropriate videos to an experience. Changes to the embed code vary based upon the type of embed code that is being used:</p>
+    <p>There may be times when you want to change the videos in an In-Page Experience. For example, maybe the videos in an experience need to change based upon a selection the user makes or based upon navigating to other parts of a site. Instead of creating new in-page experiences, each with a different set of videos, it is possible to modify the embed code to assign the appropriate videos to an experience. Changes to the embed code vary based upon the type of embed code that is being used:</p>
     <ul>
       <li><a href="#embed">Recommended embed code</a></li>
       <li><a href="#javascript">No JavaScript embed code</a></li>
@@ -15,11 +15,11 @@ grandparent: Experiences
   </section>
   <section class="bcls-section">
     <h2 id="embed">Recommended embed code</h2>
-    <p>Typical In-Page experience embed code (Recommended option) looks like the following:</p>
+    <p>Typical In-Page Experience embed code (Recommended option) looks like the following:</p>
     <pre>
 <code class="language-html">&lt;div data-experience="597a2aa114b2ed00103052af"&gt;&lt;/div&gt;
 &lt;script src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/live.js"&gt;&lt;/script&gt;</code></pre>
-    <p>To dynamically override the videos associated with an In-Page experience, the embed code can be changed to add an attribute to the <code>div</code> tag to specify the videos or the playlist to be used.</p>
+    <p>To dynamically override the videos associated with an In-Page Experience, the embed code can be changed to add an attribute to the <code>div</code> tag to specify the videos or the playlist to be used.</p>
     <div class="BCL-subsection">
       <h3>Specifying individual videos</h3>
       <p>To specify individual videos to use, add the <code>data-video-ids</code> parameter to the <code>div</code> tag and then specify a comma-delimited list of video IDs.</p>
@@ -40,12 +40,12 @@ grandparent: Experiences
   </section>
   <section class="bcls-section">
     <h2 id="javascript">No JavaScript embed code</h2>
-    <p>Typical In-Page experience embed code (No JavaScript option) looks like the following:</p>
+    <p>Typical In-Page Experience embed code (No JavaScript option) looks like the following:</p>
     <pre>
 <code class="language-html">&lt;iframe style="display:block;border:none;margin-left:auto;margin-right:auto;"
 src="https://players.brightcove.net/20318290001/experience_597a2aa114b2ed00103052af/index.html"
 allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;</code></pre>
-    <p>To dynamically override the videos associated with an In-Page experience, the embed code can be changed to add a parameter to the <code>src</code> attribute.</p>
+    <p>To dynamically override the videos associated with an In-Page Experience, the embed code can be changed to add a parameter to the <code>src</code> attribute.</p>
     <div class="BCL-subsection">
       <h3>Specifying individual videos</h3>
       <p>To specify individual videos to use, add the <code>videoIds</code> parameter and then specify a comma-delimited list of video IDs.</p>
