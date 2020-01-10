@@ -7,20 +7,20 @@
       url: /get-started/step-step-creating-and-publishing-portal-experience.html
     - name: Creating an In-Page Experience
       url: /get-started/step-step-creating-and-publishing-page-experience.html
+    - name: Creating and Managing Gallery Experiences
+      url: /get-started/creating-and-managing-gallery-experiences.html
+    - name: Gallery Training Videos
+      url: /get-started/gallery-training-videos.html
     - name: Getting Started with Brightcove Gallery
       url: /get-started/getting-started-brightcove-gallery.html
     - name: Overview of Gallery Experiences
       url: /get-started/overview-gallery-experiences.html
-    - name: Creating and Managing Gallery Experiences
-      url: /get-started/creating-and-managing-gallery-experiences.html
     - name: 'Training: Introduction to Gallery'
       url: /get-started/training-demand-introduction-gallery.html
     - name: 'Training: Building Portal Experiences'
       url: /get-started/training-demand-building-portal-experiences-using-gallery.html
     - name: 'Training: Building In-Page Experiences'
       url: /get-started/training-demand-building-page-experiences-using-gallery.html
-    - name: Gallery Training Videos
-      url: /get-started/gallery-training-videos.html
 - section: Experiences
   url: /experiences/
   docs:
