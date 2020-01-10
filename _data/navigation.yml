@@ -133,16 +133,16 @@
     - name: Live Event
       url: /experiences/live/
       docs:
+      - name: Creating a Live Event In-Page Experience
+        url: /experiences/live/creating-live-event-page-experience.html
       - name: Creating a Live Event Portal Experience
         url: /experiences/live/creating-live-event-portal-experience.html
-      - name: Creating the Pre-Event State
-        url: /experiences/live/creating-pre-event-state-portal-event-experience.html
       - name: Creating the Live Event State
         url: /experiences/live/creating-live-event-state-portal-event-experience.html
       - name: Creating the Post-Event State
         url: /experiences/live/creating-post-event-state-portal-event-experience.html
-      - name: Creating a Live Event In-Page Experience
-        url: /experiences/live/creating-live-event-page-experience.html
+      - name: Creating the Pre-Event State
+        url: /experiences/live/creating-pre-event-state-portal-event-experience.html
       - name: Customizing the Live Event Portal Settings
         url: /experiences/live/customizing-live-event-portal-settings.html
     - name: Landing Page
