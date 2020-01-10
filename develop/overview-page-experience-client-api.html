@@ -12,7 +12,7 @@ parent: Develop'
   </section>
   <section class="bcls-section">
     <h2 id="getting_started">Getting started.</h2>
-    <aside class="bcls-aside bcls-aside--information">Note: for a fuller explanation of how to use the API, see <a href="/node/18680">In-Page Experience Client API Sample</a>. Here we will just focus on the code for using the API.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: for a fuller explanation of how to use the API, see <a href="/develop/page-experience-client-api-sample.html">In-Page Experience Client API Sample</a>. Here we will just focus on the code for using the API.</aside>
     <pre class="line-numbers">
 <code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06"&gt;&lt;/div&gt;
 &lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
@@ -20,7 +20,7 @@ parent: Develop'
     <pre class="line-numbers">
 <code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06" id="experience_5bb2134180b4990011750f06"&gt;&lt;/div&gt;
 &lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
-    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code class="notranslate">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/node/16793#advanced">custom HTML block</a> in the experience itself.</p>
+    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code class="notranslate">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/experiences/inpage/configuring-settings-page-experience.html#advanced">custom HTML block</a> in the experience itself.</p>
     <pre class="line-numbers">
 <code class="language-javascript notranslate">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
     <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code class="notranslate">clientApi</code> object:</p>
