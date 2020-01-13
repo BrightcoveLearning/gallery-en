@@ -10,10 +10,10 @@
       <li class="breadcrumb-item"><a href="/">Home</a></li>
       {% endif %}
       {% if page.grandparent %}
-      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       {% endif %}
       {% if page.name == "index.html" and page.parent == "Documentation" %}
-      <li class="breadcrumb-item"><a href="/docs/">Documentation</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       {% endif %}
       {% if page.parent and page.parent != "Home" and page.name != "index.html" %}
       <li class="breadcrumb-item"><a href="{{ page.dir }}">{{ page.parent }}</a></li>
