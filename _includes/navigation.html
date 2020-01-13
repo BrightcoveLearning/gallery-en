@@ -4,9 +4,9 @@
         <nav class="sidenav">
           {% for item in site.data.navigation %}
             {% if item.docs == nil %}
-            <h5><a href="{{ item.url: }}">{{ item.section }}</a></h5>
+            <h5><a href="{{ item.url: }}">{{ item.name }}</a></h5>
             {% else %}
-              <h5 class="submenu-header"><a href="{{ item.url: }}">{{ item.section }} <strong>+</strong></a></h5>            
+              <h5 class="submenu-header"><a href="{{ item.url: }}">{{ item.name }} <strong>+</strong></a></h5>            
               <ul class="sidenav-submenu" style="display:none;">
                 {% for entry in item.docs %}
                   {% if entry.docs == nil %}

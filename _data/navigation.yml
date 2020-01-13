@@ -1,6 +1,8 @@
-- section: Home
+- section: 
+  name: Home
   url: /
-- section: Getting Started
+- section: 
+  name: Getting Started
   url: /get-started/
   docs:
     - name: Creating a Portal Experience
@@ -21,7 +23,8 @@
       url: /get-started/training-demand-building-portal-experiences-using-gallery.html
     - name: 'Training: Building In-Page Experiences'
       url: /get-started/training-demand-building-page-experiences-using-gallery.html
-- section: Experiences
+- section: 
+  name: Experiences
   url: /experiences/
   docs:
     - name: Portal
@@ -150,7 +153,8 @@
       docs:
       - name: Creating a Landing Page Experience
         url: /experiences/landing/creating-landing-page-experience.html
-- section: General
+- section: 
+  name: General
   url: /general/
   docs:
     - name: Gallery System Requirements
@@ -159,7 +163,8 @@
       url: /general/troubleshooting-brightcove-gallery-issues.html
     - name: Brightcove Gallery Cookies
       url: /general/brightcove-gallery-cookies.html
-- section: Gallery Settings
+- section: 
+  name: Gallery Settings
   url: /settings/
   docs:
     - name: Configuring Gallery Settings
@@ -174,7 +179,8 @@
       url: /settings/securing-portal-experience-ssl.html
     - name: Configuring Single Sign-On with ADFS
       url: /settings/configuring-single-sign-active-directory-federation-services.html
-- section: Developers
+- section: 
+  name: Developers
   url: /develop/
   docs:
     - name: In-Page Experience Code Snippets
@@ -193,14 +199,16 @@
       url: /develop/page-experience-client-api-sample.html
     - name: 'Quick Start: In-Page Experience Platform (REST) API'
       url: /develop/quick-start-page-experience-platform-rest-api.html
-- section: Release Notes
+- section: 
+  name: Release Notes
   url: /release-notes/
   docs:
     - name: Gallery Release Notes
       url: /release-notes/gallery-release-notes.html
     - name: Gallery Template Release Notes
       url: /release-notes/gallery-template-release-notes.html
-- section: Support
+- section: 
+  name: Support
   url: /support/
   docs:
     - name: Open a Support Case
