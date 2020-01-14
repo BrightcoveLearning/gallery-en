@@ -9,7 +9,7 @@
       url: /get-started/step-step-creating-and-publishing-portal-experience.html
     - name: Creating an In-Page Experience
       url: /get-started/step-step-creating-and-publishing-page-experience.html
-    - name: Creating and Managing Gallery Experiences
+    - name: Creating and Managing Experiences
       url: /get-started/creating-and-managing-gallery-experiences.html
     - name: Gallery Training Videos
       url: /get-started/gallery-training-videos.html
@@ -211,7 +211,7 @@
   name: Support
   url: /support/
   docs:
-    - name: Open a Support Case
+    - name: Opening a Support Case
       url: /support/opening-case-with-brightcove-support.html
     - name: Viewing System Status
       url: /support/viewing-brightcove-system-status-page.html
