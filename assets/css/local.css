@@ -1,0 +1,30 @@
+---
+layout: null
+---
+
+/* css specific to the site */
+
+.bcls-active {
+  border-left: 3px {{ site.product_color }} solid;
+}
+
+button.gsc-search-button {
+  background-color: {{ site.product_color }};
+}
+
+#___gcse_0 > div > div > form > table {
+  border: none;
+  border: 2px solid {{ site.product_color }};
+  background-color: white;
+  color: {{ site.product_color }}
+}
+
+h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+  font-size: 3rem;
+  color:{{site.product_color}};
+  margin-right: 1rem;
+}
+.card-icon i {
+  color: {{site.product_color}};
+}
+
