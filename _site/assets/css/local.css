@@ -4,16 +4,6 @@
   border-left: 3px rgb(213, 37, 125) solid;
 }
 
-button.gsc-search-button {
-  background-color: rgb(213, 37, 125);
-}
-
-#___gcse_0 > div > div > form > table {
-  border: none;
-  border: 2px solid rgb(213, 37, 125);
-  background-color: white;
-  color: rgb(213, 37, 125)
-}
 
 h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
   font-size: 3rem;
