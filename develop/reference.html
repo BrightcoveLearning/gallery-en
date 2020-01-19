@@ -1,0 +1,104 @@
+---
+title: In-Page Experiences Platform API Reference
+parent: Develop
+layout: api-reference
+---
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      div.col-lg-8 {
+        min-width: 97%;
+      }
+      header.page-header {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      h3.header {
+        position: relative;
+        top: 0;
+        background: RGB(45, 59, 108);
+        font-family: Montserrat, sans-serif;
+        padding:1em;
+        color:white;
+        font-weight: bold;
+        margin: 0;
+      }
+      h3.img {
+        margin: 0;
+      }
+      h3.header a {
+        color:white;
+        margin-left:1em;
+        margin-right: 1em;
+        text-decoration: none;
+      }
+      h3.header a:hover {
+        color:RGB(249, 218, 126);
+        text-decoration: underline;
+      }
+      .goWithLinks {
+        margin-left:1em;
+        margin-right: 1em;
+      }
+      button.goWithLinks {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .search-input, .search-icon {
+        display: none;
+      }
+      .search-block {
+        z-index: 9999;
+        color: white;
+        position: fixed;
+        top: 22em;
+        right: 1em;
+        padding-right: 1em;
+        text-align: right;
+        display: inline-block;
+        font-size: small;
+      }
+      .search-element {
+        border: 1px #ccc solid;
+        color: RGB(41, 45, 50);
+        margin: 0;
+      }
+      .last-updated {
+        text-align: left;
+      }
+      redoc {
+        position: relative;
+        top: 74px;
+        overflow-y: scroll;
+      }
+    </style>
+    <p class="search-block"><input id="search_field" placeholder="Search API Reference" class="search-element" style="margin-right:2px;" type="text"> <button id="search_back" class="search-element"><strong>&lt;</strong></button><button id="search_button" class="search-element">Search</button><button id="search_forward" class="search-element"><strong>&gt;</strong></button></p>
+    <redoc spec-url='openapi.yaml'  hide-hostname="false" suppress-warnings="true" lazy-rendering  native-scrollbars disable-search></redoc>
+    <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
+    <script>
+    var BCLS_api_search = ( function (window, document) {
+      var search_field = document.getElementById('search_field'),
+        search_button = document.getElementById('search_button'),
+        search_back = document.getElementById('search_back'),
+        search_forward = document.getElementById('search_forward');
+      search_button.addEventListener('click', function() {
+        console.log('search string', window.find(search_field.value, false, false, true, false, true, true));
+        window.find(search_field.value, false, false, true, false, true, true);
+      });
+      search_back.addEventListener('click', function() {
+        console.log('search string', window.find(search_field.value, false, true, true, false, true, true));
+        window.find(search_field.value, false, true, true, false, true, true);
+      });
+      search_forward.addEventListener('click', function() {
+        console.log('search string', window.find(search_field.value, false, false, true, false, true, true));
+        window.find(search_field.value, false, false, true, false, true, true);
+      });
+    })(window, document);
+    </script>

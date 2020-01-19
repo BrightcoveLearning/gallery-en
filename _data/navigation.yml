@@ -199,6 +199,10 @@
       url: /develop/page-experience-client-api-sample.html
     - name: 'Quick Start: In-Page Experience Platform (REST) API'
       url: /develop/quick-start-page-experience-platform-rest-api.html
+    - name: 'In-Page Experience Platform API Reference'
+      url: /develop/reference.html
+    - name: 'In-Page Experience Client API Reference'
+      url: 'https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html'
 - section: 
   name: Release Notes
   url: /release-notes/
