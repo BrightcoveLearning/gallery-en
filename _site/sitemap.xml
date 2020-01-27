@@ -650,6 +650,13 @@
     </url>
     
     <url>
+        <loc>https://gallery.support.brightcove.com/assets/js/search.js</loc>
+        <lastmod>2020-01-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html</loc>
         <lastmod>2020-01-27</lastmod>
         <changefreq>daily</changefreq>
