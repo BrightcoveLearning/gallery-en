@@ -38,6 +38,7 @@ site_url: "https://gallery.support.brightcove.com"
 product: Brightcove Gallery
 color: rgb(51, 51, 51)
 product_color: rgb(213, 37, 125)
+search_id: 017969773216783359937:6sd3di5mwuw
 defaults:
   - 
     scope:
