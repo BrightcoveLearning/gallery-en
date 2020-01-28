@@ -4,7 +4,6 @@
   border-left: 3px rgb(213, 37, 125) solid;
 }
 
-
 h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
   font-size: 3rem;
   color:rgb(213, 37, 125);
@@ -13,4 +12,9 @@ h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
 .card-icon i {
   color: rgb(213, 37, 125);
 }
+
+div.card-content > ul {
+  margin-left: -2.5rem;
+}
+
 
