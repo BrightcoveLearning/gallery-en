@@ -20,6 +20,18 @@
     /* ]]> */
     </script>
 
+
+<select id="site_select" style="margin-right: 1rem;">
+  <option value="">Other Brightcove Documentation</option>
+  {% for site in site.data.sites %}
+    {% if site.name != site.product %}
+      <option value="{{ site.url }}">{{ site.name }}</option>
+    {% endif %}
+  {% endfor %}
+</select>
+
+
+
     <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
   </div>
   <nav aria-label="breadcrumb">

@@ -1,0 +1,15 @@
+- Home:
+  name: Documentation Home
+  url: 'https://support.brightcove.com' 
+- Beacon:
+  name: Brightcove Beacon
+  url: 'https://beacon.support.brightcove.com' 
+- Campaign:
+  name: Brightcove Campaign
+  url: 'https://campaign.support.brightcove.com' 
+- Gallery:
+  name: Gallery
+  url: 'https://gallery.support.brightcove.com' 
+- Gallery:
+  name: Zencoder
+  url: 'https://zencoder.support.brightcove.com' 
