@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -38,9 +38,10 @@ site_url: "https://gallery.support.brightcove.com"
 product: Brightcove Gallery
 color: rgb(51, 51, 51)
 product_color: rgb(213, 37, 125)
-search_id: 017969773216783359937:6sd3di5mwuw
+search_id: "017969773216783359937:6sd3di5mwuw"
+feedbackify_id: "15026"
 defaults:
-  - 
+  -
     scope:
       path: ""
       type: "pages"
