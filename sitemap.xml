@@ -3,8 +3,8 @@ layout: null
 search: exclude
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="/assets/css/site/sitemap.css"?>
-<?xml-stylesheet type="text/xsl" href="/assets/css/site/sitemap.xsl"?>
+<?xml-stylesheet href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/sitemap.css"?>
+<?xml-stylesheet type="text/xsl" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/sitemap.xsl"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
