@@ -62,13 +62,6 @@
     </url>
     
     <url>
-        <loc>https://gallery.support.brightcove.com/bob-embed-test.html</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://gallery.support.brightcove.com/general/brightcove-gallery-cookies.html</loc>
         <lastmod>2020-02-20</lastmod>
         <changefreq>daily</changefreq>
@@ -412,7 +405,70 @@
     </url>
     
     <url>
+        <loc>https://gallery.support.brightcove.com/support/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/experiences/portal/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/experiences/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/experiences/landing/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/develop/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/get-started/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/experiences/inpage/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/general/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://gallery.support.brightcove.com/release-notes/</loc>
+        <lastmod>2020-02-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://gallery.support.brightcove.com/experiences/live/</loc>
         <lastmod>2020-02-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -427,69 +483,6 @@
     
     <url>
         <loc>https://gallery.support.brightcove.com/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/experiences/portal/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/develop/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/general/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/get-started/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/experiences/landing/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/experiences/inpage/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/support/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/experiences/live/</loc>
-        <lastmod>2020-02-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://gallery.support.brightcove.com/experiences/</loc>
         <lastmod>2020-02-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
