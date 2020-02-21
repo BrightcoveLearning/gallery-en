@@ -183,9 +183,10 @@ XML Sitemap<xsl:if test="sm:sitemapindex"> Index</xsl:if>
 <xsl:if test="not(sm:sitemapindex)"> - <span><xsl:value-of select="sm:urlset/sm:url/sm:loc"/></span></xsl:if>
 		</nav>
 <h3>
+<span><a href="https://pro-sitemaps.com">PRO-Sitemaps.com</a></span>
 <xsl:choose>
 <xsl:when  test="sm:sitemapindex"> 
-Total sitemap files listed in this index: <xsl:value-of select="count(sm:sitemapindex/sm:sitemap)"/>
+The number of sitemap files listed in this index: <xsl:value-of select="count(sm:sitemapindex/sm:sitemap)"/>
 </xsl:when>
 <xsl:otherwise> 
 The number of pages in this sitemap file: <xsl:value-of select="count(sm:urlset/sm:url)"/>
@@ -254,14 +255,17 @@ URL
 
 <div class="tdmain">
 <span><xsl:value-of select="$pno"/></span><a href="{$loc}"><xsl:value-of select="sm:loc"/></a></div>
+<xsl:if test="not(news:news)">
 <div class="tdappend">
 <xsl:apply-templates select="sm:*"/> 
 </div>
+</xsl:if>
 </div>
 
 <xsl:apply-templates select="xhtml:*"/> 
 <xsl:apply-templates select="image:*"/> 
 <xsl:apply-templates select="video:*"/> 
+<xsl:apply-templates select="news:*"/> 
 </xsl:for-each>
 </div>
   </xsl:template>
@@ -286,6 +290,16 @@ URL
 <xsl:apply-templates/> 
 </div>
   </xsl:template>
+
+  <xsl:template match="news:news">
+<div class="tr"> 
+<div class="url2">
+<div class="mx100"><xsl:value-of select="news:publication_date"/></div>
+<div class="tdmain"><xsl:value-of select="news:title"/></div>
+</div>
+</div>
+  </xsl:template>
+
   <xsl:template match="image:image">
 <div class="tr"> 
 <xsl:variable name="loc"><xsl:value-of select="image:loc"/></xsl:variable>
