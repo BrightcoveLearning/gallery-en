@@ -12,17 +12,17 @@
     - name: Creating and Managing Experiences
       url: /get-started/creating-and-managing-gallery-experiences.html
     - name: Gallery Training Videos
-      url: /get-started/gallery-training-videos.html
+      url: /training/gallery-training-videos.html
     - name: Getting Started with Brightcove Gallery
       url: /get-started/getting-started-brightcove-gallery.html
     - name: Overview of Gallery Experiences
       url: /get-started/overview-gallery-experiences.html
     - name: 'Training: Introduction to Gallery'
-      url: /get-started/training-demand-introduction-gallery.html
+      url: /training/training-demand-introduction-gallery.html
     - name: 'Training: Building Portal Experiences'
-      url: /get-started/training-demand-building-portal-experiences-using-gallery.html
+      url: /training/training-demand-building-portal-experiences-using-gallery.html
     - name: 'Training: Building In-Page Experiences'
-      url: /get-started/training-demand-building-page-experiences-using-gallery.html
+      url: /training/training-demand-building-page-experiences-using-gallery.html
 - section: 
   name: Experiences
   url: /experiences/
@@ -203,6 +203,18 @@
       url: /develop/reference.html
     - name: 'In-Page Experience Client API Reference'
       url: 'https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html'
+- section: 
+  name: Training
+  url: /training/
+  docs:
+    - name: Gallery Training Videos
+      url: /training/gallery-training-videos.html
+    - name: 'Training: Introduction to Gallery'
+      url: /training/training-demand-introduction-gallery.html
+    - name: 'Training: Building Portal Experiences'
+      url: /training/training-demand-building-portal-experiences-using-gallery.html
+    - name: 'Training: Building In-Page Experiences'
+      url: /training/training-demand-building-page-experiences-using-gallery.html
 - section: 
   name: Release Notes
   url: /release-notes/
