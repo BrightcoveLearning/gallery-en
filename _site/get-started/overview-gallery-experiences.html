@@ -28,25 +28,23 @@
 
 <header>
   <div class="div-header">
-    <!-- TODO - change logo to current product -->
-    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="height:90px; padding-top:10px; padding-bottom:10px"></a>
-    <!-- GTranslate: https://gtranslate.io/ -->
-    <select onchange="doGTranslate(this);" style="margin-right: 1rem;">
-      <option value="">Select a language</option>
-      <option value="en|en">English</option>
-          <option value="en|fr">Français</option>
-      <option value="en|de">Deutsch</option>
-      <option value="en|ja">日本語</option>
-      <option value="en|ko">한국어</option>
-      <option value="en|es">Español</option>
-    </select>
+    <a href="/"><img class="product-logo" src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/product-logos/logo-bc-gallery.svg" alt="product logo" style="max-height: 100px;max-width: 232px;"></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);" style="margin-right: 1rem;">
+  <option value="">Select a language</option>
+  <option value="en|en">English</option>
+  <option value="en|fr">Français</option>
+  <option value="en|de">Deutsch</option>
+  <option value="en|ja">日本語</option>
+  <option value="en|ko">한국어</option>
+  <option value="en|es">Español</option>
+</select>
 
-    <script type="text/javascript">
-    /* <![CDATA[ */
-    function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-    /* ]]> */
-    </script>
-
+<script type="text/javascript">
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
 
 <select id="site_select" style="margin-right: 1rem;">
   <option value="">Other Brightcove Documentation</option>
@@ -78,7 +76,6 @@
 </select>
 
 
-
     <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?language=en_US"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
   </div>
   <nav aria-label="breadcrumb">
@@ -88,14 +85,12 @@
       
       
       
-      
       <li class="breadcrumb-item"><a href="/get-started/">Getting Started</a></li>
       
       <li class="breadcrumb-item active" aria-current="page">Overview of Gallery Experiences</li>
     </ol>
   </nav>
 </header>
-
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
@@ -457,8 +452,9 @@
           
       </nav>
     </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
+
+<!-- bootstrap layout -->
+<div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
 
 <!-- search bar -->
 <div id="search_bar" class="search-bar">
@@ -538,7 +534,7 @@
             <a href="https://status.brightcove.com">System Status</a>
           </li>
           <li>
-            <a href="https://help.brightcove.com/en/contact/create">Contact Support</a>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US">Contact Support</a>
           </li>
           <li>
             <a href="https://support.brightcove.com/">Documentation</a>
@@ -552,10 +548,10 @@
 
         <ul class="menu">
           <li>
-            <a href="https://support.brightcove.com/online-training-courses" data-drupal-link-system-path="node/18286">Online Courses</a>
+            <a href="https://support.brightcove.com/online-training-courses">Online Courses</a>
           </li>
           <li>
-            <a href="https://support.brightcove.com/register-training" data-drupal-link-system-path="node/18270">Register for a course</a>
+            <a href="https://support.brightcove.com/register-training">Register for a course</a>
           </li>
         </ul>
 
@@ -569,7 +565,7 @@
             <a href="https://www.brightcove.com">Brightcove.com</a>
           </li>
           <li>
-            <a href="https://help.brightcove.com/en/contact" data-drupal-link-system-path="node/18330">Contact Us</a>
+            <a href="https://supportportal.brightcove.com/s/login/?language=en_US" data-drupal-link-system-path="node/18330">Contact Us</a>
           </li>
         </ul>
       </nav>
