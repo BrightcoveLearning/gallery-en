@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Embedding Brightcove In-Page Experiences in a CMS</title>
+  <title>Embedding In-Page Experiences in a CMS</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -87,7 +87,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/develop/">Develop</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Embedding Brightcove In-Page Experiences in a CMS</li>
+      <li class="breadcrumb-item active" aria-current="page">Embedding In-Page Experiences in a CMS</li>
     </ol>
   </nav>
 </header>
@@ -463,270 +463,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <div id="search_box" class="gcse-search"></div>
 </div>
 
-<article class="bcls-article">
-  <h1>Embedding Brightcove In-Page Experiences in a CMS</h1>
-  <summary>This topic provides guidelines for integrating Brightcove In-Page Experiences into your CMS.</summary>
-<section class="bcls-section">
-<h2 id="introduction">Introduction</h2>
+<script>
+  shared_content = '/shared-content/integration/embedding-brightcove-page-experiences-cms.html';
+</script>
 
-<p>In addition to the basic single video players and playlist players, Brightcove offers a multi-video player type, called In-page Experience. You want to allow users to easily embed an Experience and provide as much flexibility as possible in the generation of the Brightcove Experience embed code so they can control the look and feel without being HTML or JavaScript experts.</p>
-
-<p>Note that In-Page Experiences are part of Gallery, which is included in the <a href="https://www.brightcove.com/en/video-marketing-suite">Video Marketing Suite</a> and <a href="https://www.brightcove.com/en/enterprise-video-suite">Enterprise Video Suite</a>, and can also be purchased as an add-on package for Video Cloud. Contact your account manager for details.</p>
-</section>
-
-<section class="bcls-section">
-<h2 id="In_page_Experience_selection_dialog">In-page Experience selection dialog</h2>
-
-<p>There should be a dialog allowing the user to choose an In-Page Experience. This dialog should allow the user to set the fields listed below:</p>
-
-<ol>
-	<li><strong>Brightcove Account:</strong> The user should be able to choose a Brightcove account if one is not already selected.</li>
-	<li><strong>Search Filter:</strong> The user should be able to enter a search string to filter the list of displayed Experiences. If using Brightcove search API, the search string should be URI encoded.</li>
-	<li><strong>Order:</strong> The list of displayed Experiences should be sorted by name. The user should be able to select ascending or descending sort order. The default should be ascending.</li>
-</ol>
-
-<p>The dialog should have the following behavior:</p>
-
-<ol>
-	<li>Display a list of Experiences based on the user selection above. Allow the user to select one Experience.</li>
-	<li>For the displayed list of Experiences:
-	<ol type="a">
-		<li>Only published Experiences should be displayed</li>
-		<li>The Experience name, template, and ID should be shown.</li>
-	</ol>
-	</li>
-	<li>Display a clickable link that will open the Experience player in a new browser tab.</li>
-</ol>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="related_brightcove_documentation">Related Brightcove documentation</h3>
-
-<ul>
-	<li><a href="https://support.brightcove.com/integrating-your-cms-video-cloud">Integrating Your CMS with Video Cloud</a></li>
-	<li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#operation/GetExperiences">Get List of Experiences</a>
-	<ul>
-		<li>Sort by name in ascending order: <code>?sort=name</code></li>
-		<li>Sort by name in descending order: <code>?sort=-name</code></li>
-		<li>Search: <code>?q={searchstring}</code></li>
-	</ul>
-	</li>
-	<li><a href="https://docs.brightcove.com/in-page-exerience-api/v1/doc/index.html#operation/GetExperience">Get Details for an In-page Experience</a></li>
-</ul>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="example_dialog">Example dialog implementation</h3>
-
-<figure class="bcls-figure"><img class="bcls-image" alt="Sample Experience Selection Dialog" src="//learning-services-media.brightcove.com/doc-assets/node/18645-embedding-brightcove-page-experiences-cms/18645-sample-experience-select-dialog.png" />
-<figcaption class="bcls-caption--image">Sample Experience Selection Dialog</figcaption>
-</figure>
-</section>
-
-<section class="bcls-section">
-<h2 id="in_page_experience_embed_dialog">In-page Experience embed dialog</h2>
-
-<p>There should be a dialog allowing the user to control the formatting of the In-page Experience on the web page. This dialog should allow the user to set the fields listed below:</p>
-
-<ol>
-	<li><strong>Embed Type:</strong> The user should be able to choose between iFrame and Javascript embed code. The default should be Javascript.</li>
-	<li><strong>Sizing:</strong> The user should be able to select between Responsive or Fixed sizing.<sup><strong><a href="#note1-1">[1-1]</a></strong></sup>
-	<ol type="a">
-		<li>If iFrame, the default should be Fixed and Responsive should disabled.</li>
-		<li>If Javascript, the default should be Responsive.</li>
-	</ol>
-	</li>
-	<li><strong>Width, Height:</strong> The user should be able to enter Width and Height.<sup><strong><a href="#note1-1">[1-1]</a></strong></sup>
-	<ol type="a">
-		<li>If iFrame, the default should be Fixed and Responsive should disabled.</li>
-		<li>If Responsive, the Width and Height should be disabled.</li>
-	</ol>
-	</li>
-	<li><strong>Override Experience Videos:</strong> The user should be able to override the default videos in an Experience with a list of videos or with a playlist. If the user selects to overrides the Experience videos, allow the user to choose videos or a playlist per the “Overriding Experience Videos” section below.</li>
-</ol>
-
-<p>The dialog should have the following additional behavior:</p>
-
-<ol>
-	<li>The generated Brightcove embed code should be displayed to the user in the dialog.</li>
-	<li>The user should be able to make edits to the embed code. Even though we are trying to give the user as much flexibility as possible in configuring the embed code, there might be cases where they need to override what is automatically generated.</li>
-	<li>If the user modifies one of the previous selections in the dialog, the user’s edits will be overwritten by newly generated code.</li>
-</ol>
-
-<h4>Notes</h4>
-
-<ul>
-	<li id="note1-1"><sup><strong>[1-1]</strong></sup> If the CMS provides a native container for embedding code that allows the user to specify Responsive vs Fixed and Width/Height, it might make more sense to use the container for sizing and have the Brightcove embed code always be responsive.</li>
-</ul>
-</section>
-
-<section class="bcls-section">
-<h2 id="Overriding_Experience_videos">Overriding Experience videos</h2>
-
-<p>If the user chooses to override the Experience videos, the dialog should allow the user to set the fields listed below:</p>
-
-<ol>
-	<li><strong>Search Filter:</strong> The user should be able to enter a search string to filter the list of displayed videos or playlists. If using Brightcove search API, the search string should be URI encoded.</li>
-	<li><strong>Folder:</strong> The user should be able to select a Folder name from the Brightcove account to filter the list of displayed videos. The Brightcove API does not provide a built-in filter for folders so the client code will need to retrieve all videos and then filter by folder. (Does not apply to playlists)</li>
-	<li><strong>Limit:</strong> The user should be able to limit the number of videos returned, primarily to improve performance of the search. When using Brightcove search, the maximum limit that can be specified is 100. To return more than 100 videos, a paging mechanism must be implemented. Also, if the user has selected a Folder to filter, the client needs to request all videos in the account using the paging mechanism and then locally filter that list by Folder and return the number of videos specified by the user limit. (Does not apply to playlists)</li>
-	<li><strong>Sort By:</strong> The user should be able to select a sort field.
-	<ol type="a">
-		<li>For videos, the user should be able to choose the video name, updated date, creation date, start date, and total plays. The default should be the updated date.</li>
-		<li>For playlists, user chooses either the name and modified date. The default should be modified date.</li>
-	</ol>
-	</li>
-	<li><strong>Sort Order:</strong> The user should be able to select ascending or descending sort order. The default should be descending.</li>
-</ol>
-
-<p>The dialog should have the following behavior:</p>
-
-<ol>
-	<li>Display a list of videos or playlists based on the user selection above. Allow the user to select multiple videos or one playlist.</li>
-	<li>When displaying a list of videos:
-	<ol type="a">
-		<li>Only Active videos should be listed.</li>
-		<li>The thumbnail image, video name, and ID should be shown.</li>
-		<li>One or more videos can be selected.</li>
-	</ol>
-	</li>
-	<li>When displaying a list of playlists:
-	<ol type="a">
-		<li>If the playlist is a manual playlist, display the playlist name, ID, and the number of videos in the playlist.</li>
-		<li>If the playlist is a smart playlist, display the playlist name, ID and --- in place of the number of videos.</li>
-		<li>Only one playlist can be selected.</li>
-	</ol>
-	</li>
-	<li>Display a clickable link that will open the video or playlist player in a new browser tab.</li>
-</ol>
-
-<section class="bcls-subsection">
-<h3 id="Example_video_override_dialog_implementation">Example video override dialog implementation</h3>
-
-<figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="//learning-services-media.brightcove.com/doc-assets/node/18645-embedding-brightcove-page-experiences-cms/18645-sample-video-override-dialog.png" />
-<figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
-</figure>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="Example_playlist_override_dialog_implementation">Example playlist override dialog implementation</h3>
-
-<figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="//learning-services-media.brightcove.com/doc-assets/node/18645-embedding-brightcove-page-experiences-cms/18645-sample-playlist-override-dialog.png" />
-<figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
-</figure>
-</section>
-</section>
-
-<section class="bcls-section">
-<h2 id="Embed_parameters_and_code">Embed parameters and code</h2>
-
-<p>The section describes how to generate the Experience embed code based on user selections. The <code>%XYZ%</code> values are substituted into the embed code as described below.</p>
-
-<section class="bcls-subsection">
-<h3 id="commong_parameters">Common parameters</h3>
-
-<ul>
-	<li><code>%ACCOUNTID%</code> = User selected Brightcove account ID</li>
-	<li><code>%VIDEOIDLIST%</code> = User selected video ID’s, comma delimited with no spaces</li>
-	<li><code>%PLAYLISTID%</code> = User selected playlist ID</li>
-	<li><code>%EXPERIENCEID%</code> = User selected Video player ID or Playlist player ID</li>
-	<li><code>%CMS%</code> = Name of CMS</li>
-	<li><code>%CMSVERSION%</code> = Version of CMS</li>
-	<li><code>%CONNECTORVERSION%</code> = Version of connector</li>
-</ul>
-</section>
-</section>
-
-<section class="bcls-section">
-<h2 id="iframe_experience_player_embed">iFrame Experience player embed</h2>
-
-<section class="bcls-subsection">
-<h3 id="Parameters_for_responsive_sizing">Parameters for responsive sizing</h3>
-
-<p>N/A - Responsive option not selectable</p>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
-
-<pre>
-<code class="notranslate">%MAXWIDTH% = ‘’
-%MINWIDTH% = ‘’
-%WIDTH% = Width . ‘px’
-%HEIGHT% = Height . ‘px’</code></pre>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
-
-<pre>
-<code class="notranslate">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT%"&gt;
-  &lt;iframe src="https://players.brightcove.net/%ACCOUNTID%/experience_%EXPERIENCEID%/index.html?videoIds=%VIDEOIDLIST%
-    &amp;playlistId=%PLAYLISTID%
-    &amp;usage=cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experienceiframe" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" style="width:100%;height:100%;top:0px;bottom:0px;right:0px;left:0px;border:none;margin-left:auto;margin-right:auto;position:absolute"&gt;
-  &lt;/iframe&gt;
-&lt;/div&gt;</code></pre>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="example_iframe_video_experience">Example implementation</h3>
-
-<figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="//learning-services-media.brightcove.com/doc-assets/node/18645-embedding-brightcove-page-experiences-cms/18645-sample-iframe-video-embed-dialog.png" />
-<figcaption class="bcls-caption--image">Example Implementation</figcaption>
-</figure>
-</section>
-</section>
-
-<section class="bcls-section">
-<h2 id="inpage_experience_player_embed">JavaScript (in-page) Experience player embed</h2>
-
-<section class="bcls-subsection">
-<h3 id="Parameters_for_responsive_sizing">Parameters for responsive sizing</h3>
-
-<pre>
-<code class="notranslate">
-  %WIDTH% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
-  %HEIGHT% = ‘’<sup><strong><a href="#note2-1">[2-1]</a></strong></sup>
-</code></pre>
-
-<h4>Notes</h4>
-
-<ul>
-	<li id="note2-1"><sup><strong>[2-1]</strong></sup> Width and Height not user selectable</li>
-</ul>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="Parameters_for_fixed_sizing">Parameters for fixed sizing</h3>
-
-<pre>
-<code class="notranslate">
-  %WIDTH% = Width . ‘px’
-  %HEIGHT% = Height . ‘px’
-</code></pre>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="iframe_video_experience_embed">Brightcove embed code</h3>
-
-<pre>
-<code class="notranslate">&lt;div style="display:block;position:relative;width:%WIDTH%;height:%HEIGHT" data-experience="%EXPERIENCEID%" data-video-ids=”%VIDEOIDLIST% "
-  data-playlist-id=”%PLAYLISTID%" data-usage="cms:%CMS%:%CMSVERSION%:%CONNECTORVERSION%:experiencejavascript" style="
-  display: block;
-  position: relative; "&gt;
-&lt;/div&gt;
-&lt;script src="//players.brightcove.net/%ACCOUNTID%/experience_%EXPERIENCEID%/live.js "&gt;&lt;/script&gt;</code></pre>
-</section>
-
-<section class="bcls-subsection">
-<h3 id="example_inpage_video_experience">Example implementation</h3>
-
-<figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="//learning-services-media.brightcove.com/doc-assets/node/18645-embedding-brightcove-page-experiences-cms/18645-sample-inpage-video-embed-dialog.png" />
-<figcaption class="bcls-caption--image">Example Implementation</figcaption>
-</figure>
-</section>
-</section>
+<h1>Embedding In-Page Experiences in a CMS</h1>
+<summary>This topic provides guidelines for integrating Brightcove In-Page Experiences into your CMS.</summary>
+<article id="bcls_article" class="bcls-article">
 </article>
-
 
 <!-- complete bootstrap layout -->
     </div>
@@ -825,13 +569,14 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
   
-  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc-shared-content.js"></script>
   
   <script src="/assets/js/sites_nav.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
   <script src="/assets/js/feedback.js"></script>
   <script src="/assets/js/search.js"></script>
   <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:6sd3di5mwuw"></script>
+  <script src="/assets/js/share.js"></script>
 </body>
 
 </html>
