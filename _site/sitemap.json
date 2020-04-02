@@ -1,0 +1,522 @@
+[
+  {
+      "newURL": "https://gallery.support.brightcove.com/404.html",
+      "oldURL": "/404"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-components-page-experience.html",
+      "oldURL": "/adding-components-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-interactions-page-experience.html",
+      "oldURL": "/adding-interactions-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-video-cloud-videos-portal-experience.html",
+      "oldURL": "/adding-video-cloud-videos-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-videos-page-experience.html",
+      "oldURL": "/adding-videos-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-videos-portal-experience.html",
+      "oldURL": "/adding-videos-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-youtube-videos-portal-experience.html",
+      "oldURL": "/adding-youtube-videos-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/assigning-custom-domain-portal-experience.html",
+      "oldURL": "/assigning-custom-domain-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/brightcove-gallery-cookies.html",
+      "oldURL": "/brightcove-gallery-cookies"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/changing-player-layout-portal-experience.html",
+      "oldURL": "/changing-player-layout-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/configuring-access-control-profiles.html",
+      "oldURL": "/configuring-access-control-profiles"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-calls-action-portal-experience.html",
+      "oldURL": "/configuring-calls-action-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-companion-components-page-experience.html",
+      "oldURL": "/configuring-companion-components-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/configuring-custom-domains-and-ssl.html",
+      "oldURL": "/configuring-custom-domains-and-ssl"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-details-page-experience.html",
+      "oldURL": "/configuring-details-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-details-portal-experience.html",
+      "oldURL": "/configuring-details-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/configuring-gallery-settings.html",
+      "oldURL": "/configuring-gallery-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html",
+      "oldURL": "/configuring-search-engine-optimization-settings-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-settings-page-experience.html",
+      "oldURL": "/configuring-settings-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/configuring-single-sign-active-directory-federation-services.html",
+      "oldURL": "/configuring-single-sign-active-directory-federation-services"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-third-party-tracking-portal-experience.html",
+      "oldURL": "/configuring-third-party-tracking-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-video-downloads-page-experience.html",
+      "oldURL": "/configuring-video-downloads-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/configuring-youtube-settings.html",
+      "oldURL": "/configuring-youtube-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/controlling-access-portal-experience.html",
+      "oldURL": "/controlling-access-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/creating-and-managing-gallery-experiences.html",
+      "oldURL": "/creating-and-managing-gallery-experiences"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/creating-custom-themes-page-experiences.html",
+      "oldURL": "/creating-custom-themes-page-experiences"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/landing/creating-landing-page-experience.html",
+      "oldURL": "/creating-landing-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-page-experience.html",
+      "oldURL": "/creating-live-event-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-portal-experience.html",
+      "oldURL": "/creating-live-event-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-state-portal-event-experience.html",
+      "oldURL": "/creating-live-event-state-portal-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-post-event-state-portal-event-experience.html",
+      "oldURL": "/creating-post-event-state-portal-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-pre-event-state-portal-event-experience.html",
+      "oldURL": "/creating-pre-event-state-portal-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-appearance-and-behavior-portal-experience.html",
+      "oldURL": "/customizing-appearance-and-behavior-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-catalogue-template-settings.html",
+      "oldURL": "/customizing-catalogue-template-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-chronicle-template-settings.html",
+      "oldURL": "/customizing-chronicle-template-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-content-portal-experience-pages.html",
+      "oldURL": "/customizing-content-portal-experience-pages"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/customizing-live-event-portal-settings.html",
+      "oldURL": "/customizing-live-event-portal-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-marquee-template-settings.html",
+      "oldURL": "/customizing-marquee-template-settings"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing-page-experience.html",
+      "oldURL": "/customizing-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html",
+      "oldURL": "/customizing-player-and-lead-form-settings-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-site-configuration-portal-experience.html",
+      "oldURL": "/customizing-site-configuration-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-site-features-portal-experience.html",
+      "oldURL": "/customizing-site-features-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-social-settings-portal-experience.html",
+      "oldURL": "/customizing-social-settings-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing-style-page-experience.html",
+      "oldURL": "/customizing-style-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-style-portal-experience.html",
+      "oldURL": "/customizing-style-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-video-and-playback-settings-portal-experience.html",
+      "oldURL": "/customizing-video-and-playback-settings-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-video-settings-portal-experience.html",
+      "oldURL": "/customizing-video-settings-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/downloading-videos-portal-experience.html",
+      "oldURL": "/downloading-videos-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/embedding-brightcove-page-experiences-cms.html",
+      "oldURL": "/embedding-brightcove-page-experiences-cms"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html",
+      "oldURL": "/exporting-gallery-lead-data"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/release-notes/gallery-release-notes.html",
+      "oldURL": "/gallery-release-notes"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/gallery-system-requirements.html",
+      "oldURL": "/gallery-system-requirements"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/release-notes/gallery-template-release-notes.html",
+      "oldURL": "/gallery-template-release-notes"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/gallery-training-videos.html",
+      "oldURL": "/gallery-training-videos"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/getting-started-brightcove-gallery.html",
+      "oldURL": "/getting-started-brightcove-gallery"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/icons.html",
+      "oldURL": "/icons"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/indexing-gallery-portal-experience.html",
+      "oldURL": "/indexing-gallery-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/opening-case-with-brightcove-support.html",
+      "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html",
+      "oldURL": "/overview-creating-editing-and-publishing-page-experiences"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html",
+      "oldURL": "/overview-creating-editing-and-publishing-portal-experiences"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/overview-gallery-experiences.html",
+      "oldURL": "/overview-gallery-experiences"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/overview-gallery-page-experience-templates.html",
+      "oldURL": "/overview-gallery-page-experience-templates"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/overview-gallery-portal-templates.html",
+      "oldURL": "/overview-gallery-portal-templates"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/overview-page-experience-api.html",
+      "oldURL": "/overview-page-experience-api"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/overview-page-experience-client-api.html",
+      "oldURL": "/overview-page-experience-client-api"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/page-experience-api-error-reference.html",
+      "oldURL": "/page-experience-api-error-reference"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/page-experience-client-api-sample.html",
+      "oldURL": "/page-experience-client-api-sample"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/page-experience-code-snippets.html",
+      "oldURL": "/page-experience-code-snippets"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/page-experiences-custom-css-reference.html",
+      "oldURL": "/page-experiences-custom-css-reference"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/previewing-and-publishing-page-experience.html",
+      "oldURL": "/previewing-and-publishing-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/previewing-and-publishing-portal-experience.html",
+      "oldURL": "/previewing-and-publishing-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/quick-start-page-experience-platform-rest-api.html",
+      "oldURL": "/quick-start-page-experience-platform-rest-api"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics-dashboard.html",
+      "oldURL": "/reviewing-page-experience-analytics-dashboard"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics.html",
+      "oldURL": "/reviewing-page-experience-analytics"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-calls-action-analytics.html",
+      "oldURL": "/reviewing-page-experience-calls-action-analytics"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-video-analytics.html",
+      "oldURL": "/reviewing-page-experience-video-analytics"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html",
+      "oldURL": "/securing-portal-experience-ssl"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/step-step-creating-and-publishing-page-experience.html",
+      "oldURL": "/step-step-creating-and-publishing-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/step-step-creating-and-publishing-portal-experience.html",
+      "oldURL": "/step-step-creating-and-publishing-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/template.html",
+      "oldURL": "/template"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/training-demand-building-page-experiences-using-gallery.html",
+      "oldURL": "/training-demand-building-page-experiences-using-gallery"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/training-demand-building-portal-experiences-using-gallery.html",
+      "oldURL": "/training-demand-building-portal-experiences-using-gallery"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/training-demand-introduction-gallery.html",
+      "oldURL": "/training-demand-introduction-gallery"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/troubleshooting-brightcove-gallery-issues.html",
+      "oldURL": "/troubleshooting-brightcove-gallery-issues"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/updating-gallery-templates.html",
+      "oldURL": "/updating-gallery-templates"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-custom-fonts-portal-experience.html",
+      "oldURL": "/using-custom-fonts-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/using-dynamic-video-overrides-page-experience.html",
+      "oldURL": "/using-dynamic-video-overrides-page-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-lead-form-portal-experience.html",
+      "oldURL": "/using-lead-form-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-site-editor-customize-portal-experience.html",
+      "oldURL": "/using-site-editor-customize-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
+      "oldURL": "/viewing-brightcove-system-status-page"
+  },
+]
+
