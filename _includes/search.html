@@ -2,5 +2,9 @@
 <div id="search_bar" class="search-bar">
   <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
   <!-- <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:6sd3di5mwuw"></script> -->
-  <div id="search_box" class="gcse-search"></div>
+  <p style="text-align: right;position:relative;font-weight: bold;">
+<button style="position: fixed;top:9rem;right:0;padding-right: 1rem;padding-left:1rem;z-index: 9999999;background:{{ site.product_color }};color:Snow" onclick="javascript:displayChat()">Search {{ site.product }} Docs &nbsp;&nbsp; <i class="fal fa-search" style="color:Snow"></i></button> </p>
+
+    <div id="talla_chat" style="width: 366px; height: 45%; display: none; position: fixed; bottom: 1rem; right: 3%; z-index: 999999;">
+    </div>
 </div>
