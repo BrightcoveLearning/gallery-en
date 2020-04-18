@@ -19,7 +19,11 @@ var token =
     Talla.OptionBeaconCTA("Search {{ site.product }} Docs"),
     Talla.OptionOpenIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
     Talla.OptionBotIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
-    Talla.OptionAutodetectSession
+    Talla.OptionAutodetectSession,
+    //---- NEW-----Redirects to portal
+    Talla.OptionRequestSubmittedCallback( function(widget, data) {
+      window.open("https://supportportal.brightcove.com/s/login/?language=en_US&startURL=%2Fs%2F&ec=302")
+    })
   );
 // configure to load up as custom placement
 Talla.chat = Talla.config.configure(Talla.OptionLoadChat);
