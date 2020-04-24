@@ -280,12 +280,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/",
+      "newURL": "https://gallery.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -295,12 +290,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/general/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
@@ -310,7 +300,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -325,7 +315,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
       "oldURL": "/index"
   },
 
@@ -335,12 +330,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/settings/",
+      "newURL": "https://gallery.support.brightcove.com/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
       "oldURL": "/index"
   },
 
@@ -447,6 +447,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-video-analytics.html",
       "oldURL": "/reviewing-page-experience-video-analytics"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/securing-portal-experience-auth0.html",
+      "oldURL": "/securing-portal-experience-auth0"
   },
 
   {
