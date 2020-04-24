@@ -1,0 +1,114 @@
+---
+title: Securing a Portal Experience with Auth0
+parent: Gallery Settings
+---
+<article class="bcls-article">
+  <h1>Securing a Portal Experience with Auth0</h1>
+  <summary>In this topic you will learn how to secure Portal Experiences using Auth0 SSO.</summary>
+  <section class="bcls-section">
+    <p>When an experience is secured using SSO, users will be required to authenticate before they can access the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-login.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The steps and images in this topic are using the <a href="https://auth0.com/signup?&signUpData=%7B%22category%22%3A%22button%22%7D&email=undefined">trial version</a> of Auth0.</aside>
+    <p>The steps in this topic assumed you have created a Auth0 trial account and have confirmed your account through email.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="access_control">Creating an Access Control Profile</h2>
+    <p>You need to create an Access Control Profile that will be used to secure any experiences you want to secure using SSO.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Login to Video Cloud Studio.</li>
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>In the left navigation click <strong>Access Control Profiles</strong>.</li>
+      <li>Click <strong>Create Profile</strong>.</li>
+      <li>Give the profile a <strong>Name</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-acp-name.png" /></figure>
+      </li>
+      <li>Check the <strong>SSO</strong> option.</li>
+    </ol>
+    <p>To complete the Access Control Profile, you need some values that will be provided as part of the Auth0  application creation process. After creating a new Auth0 application, we can finish creating this profile.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="app">Creating an Application</h2>
+    <p>Next, you need to create an application that will be secured using Auth0. As part of the application creation process, the signing certificate and SAML protocol URL will be used by the Access Control Profile created in the previous section.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to your Auth0  account.</li>
+      <li>On the <strong>Getting Started</strong> page, in the left navigation, click <strong> Applications</strong>.</li>
+      <li>On the <strong> Applications</strong> page, click <strong>+ CREATE APPLICATION</strong>. </li>
+      <li>Enter a <strong>Name</strong> for the application.</li>
+      <li>Select an application type of <strong>Regular Web Applications</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-create-app.png" /></figure>
+      </li>
+      <li>Click<strong> CREATE</strong>.</li>
+      <li>Click the <strong>Settings</strong> link below the application name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-app-settings.png" /></figure>
+      </li>
+      <li>(Optional) Locate the <strong>Application Logo</strong> field and enter a URL to your application logo. This will cause your logo to appear on the login page vs. the Auth0 logo.</li>
+      <li>Confirm that the <strong>Token Endpoint Authentication Method</strong> is set to <strong>POST</strong>.</li>
+      <li>In the <strong>Allow Callback URLs</strong> field, add the following URL: <code>https://auth.bcvp0rtal.com/login/callback</code></li>
+      <li>At the bottom of the page, click the <strong>Show Advanced Settings</strong> link.</li>
+      <li>Click the <strong>Certificates</strong> link.</li>
+      <li>Copy the <strong>Signing Certificate</strong> to the clipboard.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-signing-cert.png" /></figure>
+      </li>
+      <li>Return to Gallery and the Access Control Profile you created in the prior section.</li>
+      <li>Paste the Signing Certificate into the <strong>X.509 Certificate</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-cert-pasted-gallery.png" /></figure>
+      </li>
+      <li>Remove the <strong>---BEGIN CERTIFICATE---</strong> and <strong>---END CERTIFICATE---</strong> lines from the <strong>X.509 Certificate</strong> field.</li>
+      <li>Return to  Auth0.</li>
+      <li>Click the <strong>Endpoints</strong> link.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-endpoints-link.png" /></figure>
+      </li>
+      <li>Locate the <strong>SAML Protocol URL</strong> and copy it to the clipboard.</li>
+      <li>Return to Gallery and the Access Control Profile you created in the prior section.</li>
+      <li>Paste the SAML Protocol URL into the <strong>SAML 2.0 Endpoint (HTTP)</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-saml-pasted-gallery.png" /></figure>
+      </li>
+      <li>Check the <strong>Expose all attributes</strong> option at the bottom of the page.</li>
+      <li>Click <strong>Save</strong> to save the Access Control Profile.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-acp-created.png" /></figure>
+      </li>
+      <li>Return to Auth0.</li>
+      <li>At the top of the page below the application name, click the <strong>Addons</strong> link.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-addons.png" /></figure>
+      </li>
+      <li>Enable the <strong>SAML2 WEB APP</strong> option.</li>
+      <li>In the <strong>Application  Callback URL</strong> field, add the following URL: <code>https://auth.bcvp0rtal.com/login/callback</code>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: This value may already be populated.</aside>
+      </li>
+      <li>Scroll to the bottom of the dialog and click <strong>ENABLE</strong>.</li>
+      <li>Close the dialog.</li>
+    </ol>
+    <p>Make sure you save the changes to the application settings.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="user">Creating a User in Auth0</h2>
+    <p>This topic uses a trial account of Auth0. By default, no users are created. You may need to add a user to complete the testing process.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Return to  Auth0.</li>
+      <li>In the left navigation, click <strong> Users &amp; Roles &gt; Users</strong>.</li>
+      <li>Click <strong>+ CREATE USER</strong>.</li>
+      <li>Enter the user info and click <strong>CREATE</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-create-user.png" /></figure>
+      </li>
+    </ol>
+    <p>&nbsp;</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign-acp">Assign the Access Control Profile to an experience</h2>
+    <p>The last step is to assign the Access Control Profile that was created to the experience(s) you want to secure.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Return to Gallery.</li>
+      <li>Edit the experience you want to secure.</li>
+      <li>In the left navigation, click <strong>SITE CONFIGURATION &gt; Access Control</strong>.</li>
+      <li>Select the <strong>Access Control Profile</strong> that is associated with the Auth0 SSO configuration.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-select-access-control.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li><strong>Publish</strong> the experience.</li>
+    </ol>
+    <p>When you access the experience, you should be prompted by Auth0 to login.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-login.png" /></figure>
+    </p>
+  </section>
+</article>
