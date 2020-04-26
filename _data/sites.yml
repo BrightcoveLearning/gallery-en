@@ -10,6 +10,9 @@
 - Campaign:
   name: Brightcove Campaign
   url: 'https://campaign.support.brightcove.com' 
+- Campaign:
+  name: Brightcove Engage
+  url: 'https://engage.support.brightcove.com' 
 - Live:
   name: Brightcove Live
   url: 'https://live.support.brightcove.com' 
