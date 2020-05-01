@@ -1,9 +1,12 @@
 ---
-title: Search
+title: Search Results
 parent: Home
+layout: search
 ---
 
-<script type="text/javascript" 
-    id="bcs_js_snippet"
-    src="https://ui.customsearch.ai/api/ux/rendering-js?customConfig={{ site.bing_custom_config_id }}&market=en-US&version=latest&q=">
-</script>
+<h1>{{ page.title }}</h1>
+<p style="position: fixed;right:.1rem;top:8rem;z-index: 999999;font-size: small;border: 1px {{ site.product_color }}solid;padding:4px;"><a href="https://support.brightcove.com">Search All Docs Instead<i class="far fa-external-link-square-alt"></i></a></p>
+    <!-- This div is used to host the search box -->
+    <div id="results-search-box"></div>
+    <!-- This div is used to host the search response -->
+    <div id="results-search-response"></div>
