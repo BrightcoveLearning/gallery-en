@@ -12,7 +12,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="/assets/css/site/bc-icons.css"> -->
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/landing-page.css">
@@ -22,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
 </head>
 
 <body class="body">
@@ -495,16 +495,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
 
 <!-- search bar -->
-<div id="search_bar" class="search-bar">
-  <!-- TODO - cx value below must be changed for each site and new GCS instance set up-->
-  <!-- <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:6sd3di5mwuw"></script> -->
-  <div style="text-align: right;position:relative;font-weight: bold;">
-    <button style="position: fixed;top:9rem;right:0;padding-right: 1rem;padding-left:1rem;z-index: 9999999;background:rgb(213, 37, 125);color:Snow;font-weight: bold;" onclick="javascript:displayChat()"><i class="fal fa-search" style="color:Snow;"></i> Search</button>
-    <p style="position: fixed;right:.1rem;top:2.3rem;z-index: 999999;font-size: small;border: 1px rgb(213, 37, 125)solid;padding:4px;"><a href="https://support.brightcove.com">Search All Docs <i class="far fa-external-link-square-alt"></i></a></p>
-</div>
-    <div id="talla_chat" style="width: 60%; height: 80%; display: none; position: fixed; top: 12rem; right: 2rem; z-index: 999999;">
-    </div>
-</div>
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+  
+    
+
 
 <article class="bcls-article">
   <h1>Brightcove Gallery&trade; Product Updates</h1>
@@ -687,6 +681,24 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </div>
   </div>
 </footer>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -701,11 +713,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <script src="/assets/js/sites_nav.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/bcls-utils.js"></script>
   <script src="/assets/js/feedback.js"></script>
-  <!-- <script src="/assets/js/search.js"></script> -->
-  <!-- <script async src="https://cse.google.com/cse.js?cx=017969773216783359937:6sd3di5mwuw"></script> -->
-  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
-  <script src="/assets/js/talla-init.js"></script>
-  <!-- <script src="/assets/js/tallafix.js"></script> -->
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <script src="/assets/js/sajari-index.js"></script>
 </body>
 
 </html>
