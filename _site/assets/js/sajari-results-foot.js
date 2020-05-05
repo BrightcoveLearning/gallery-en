@@ -1,4 +1,17 @@
   var getUrlParam = function(e){var t = new RegExp("[?&]" + e.replace(/[\[\]]/g, "\\$&") + "(=([^&#]*)|&|#|$)"),a = t.exec(window.location.href);return a && a[2] ? decodeURIComponent(a[2].replace(/\+/g, " ")) : ""};
+  var domain = location.hostname,
+  site_domain,
+  filter,
+  lang = domain.split('.')[0],
+  lang_prefix = '';
+
+  if (lang === 'ja' || lang === 'ko' || lang === 'es' || lang === 'fr' || lang === 'de' || lang === 'zh-tw') {
+    lang_prefix = lang + '.';
+  }
+  site_domain = lang_prefix + 'gallery.support.brightcove.com';
+  filter = "domain='" + site_domain +  "'";
+  console.log('filter', filter);
+  
   var searchInterface = sajari.init({
       mode: "inline",
       project: "1588255093746585379", // Set this to your project.
@@ -13,6 +26,6 @@
       maxSuggestions: 5, // Maximum number of suggestions to show.
       results: {"showImages": false }, // Configure the results.
       values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values.
-      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:"domain='gallery.support.brightcove.com'"}, {title:"All Brightcove Documentation",filter:""}]}, // User selectable filters
+      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}, {title:"All Brightcove Documentation",filter:""}]}, // User selectable filters
       styling: { theme: { colors: { brand: { primary: "#333" }}}}
   });
