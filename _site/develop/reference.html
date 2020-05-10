@@ -186,11 +186,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         z-index: 9999;
         color: white;
         position: fixed;
-        top: 22em;
-        right: 1em;
+        top: 15em;
+        right: -25em;
         padding-right: 1em;
         text-align: right;
-        display: inline-block;
         font-size: small;
       }
       .search-element {
@@ -211,24 +210,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <redoc spec-url='openapi.yaml'  hide-hostname="false" suppress-warnings="true" lazy-rendering  native-scrollbars disable-search></redoc>
     <script src="https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js"> </script>
     <script>
-    var BCLS_api_search = ( function (window, document) {
-      var search_field = document.getElementById('search_field'),
-        search_button = document.getElementById('search_button'),
-        search_back = document.getElementById('search_back'),
-        search_forward = document.getElementById('search_forward');
-      search_button.addEventListener('click', function() {
-        console.log('search string', window.find(search_field.value, false, false, true, false, true, true));
-        window.find(search_field.value, false, false, true, false, true, true);
-      });
-      search_back.addEventListener('click', function() {
-        console.log('search string', window.find(search_field.value, false, true, true, false, true, true));
-        window.find(search_field.value, false, true, true, false, true, true);
-      });
-      search_forward.addEventListener('click', function() {
-        console.log('search string', window.find(search_field.value, false, false, true, false, true, true));
-        window.find(search_field.value, false, false, true, false, true, true);
-      });
-    })(window, document);
+    <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/apidoc-search.js"></script>
     </script>
 
 <!-- complete bootstrap layout -->
