@@ -836,7 +836,7 @@ components:
           type: string
           description: >-
             Base URL for fetching video information from the [Playback
-            API](https://support.brightcove.com/playback-api). For IP restricted
+            API](https://apis.support.brightcove.com/playback/). For IP restricted
             accounts this should be set to
             https://edge-elb.api.brightcove.com/playback/v1, otherwise this
             should be null
@@ -844,7 +844,7 @@ components:
           type: string
           description: >-
             Policy key for fetching video information from the [Playback
-            API](https://support.brightcove.com/playback-api).
+            API](https://apis.support.brightcove.com/playback/).
         youtubeKey:
           type: string
           description: >-
@@ -2082,9 +2082,9 @@ components:
       type: oauth2
       description: >-
         Brightcove OAuth API. See the [support
-        documentation](https://support.brightcove.com/oauth-api) or [Getting
+        documentation](https://apis.support.brightcove.com/oauth/) or [Getting
         Access
-        Tokens](https://support.brightcove.com/oauth-api-sample-get-access-token)
+        Tokens](https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html
         to learn more
       flows:
         clientCredentials:
