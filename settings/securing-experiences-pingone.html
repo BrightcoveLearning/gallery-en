@@ -1,0 +1,106 @@
+---
+title: Securing a Portal Experience with PingOne
+parent: Gallery Settings
+---
+<article class="bcls-article">
+  <h1>Securing a Portal Experience with PingOne</h1>
+  <summary>In this topic you will learn how to secure Portal Experiences using PingOne SSO.</summary>
+  <section class="bcls-section">
+    <p>When an experience is secured using SSO, users will be required to authenticate before they can access the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-login.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The steps and images in this topic are using the <a href="https://www.pingidentity.com/en/trials.html">trial version</a> of PingOne SSO.</aside>
+    <p>The steps in this topic assumed you have created a PingOne trial account and have confirmed your account through email.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="identity">Creating an identity repository</h2>
+    <p>Start by creating an identity repository. </p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Login to your PingOne account. The <strong>Dashboard</strong> page will appear.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-dashboard.png" /></figure>
+      </li>
+      <li>Click <strong>SETUP</strong> in the header. The <strong>Settings</strong> page will open.</li>
+      <li>Click <strong>Connect to an Identity Repository</strong>.</li>
+      <li>Click on <strong>PINGONE DIRECTORY</strong> and then click <strong>Next</strong>.</li>
+      <li>Confirm that the directory has been configured.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-directory-configured.png" /></figure>
+      </li>
+      <li>Click <strong>Next</strong>.</li>
+      <li>For the <strong>MAP ATTRIBUTES</strong> section, keep the default values and click <strong>Finished</strong>.</li>
+    </ol>
+    The PingOne Directory page will display the directory statistics.</section>
+  <section class="bcls-section">
+    <h2 id="create_app">Creating an application</h2>
+    <p>Next, we'll create an application that will be secured using SSO.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Click <strong>APPLICATIONS</strong> in the header. The <strong>My Applications</strong> page will open.</li>
+      <li>Click <strong>Add Application</strong>.</li>
+      <li>Select <strong>New SAML Application</strong>.</li>
+      <li>Enter an <strong>Application Name</strong> and <strong>Application Description</strong>.</li>
+      <li>Select a <strong>Category</strong> (recommend <strong>Communication</strong>).</li>
+      <li><strong>(Optional)</strong> Click <strong>Change</strong> and browse and select an icon for the application.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-app-details.png" /></figure>
+      </li>
+      <li>Click <strong>Continue to Next Step</strong>.</li>
+      <li>On the <strong>Application Configuration</strong> page, locate the <strong>SAML Metadata</strong> field.</li>
+      <li>Click the <strong>Download</strong> link.</li>
+    </ol>
+    The downloaded file will be needed when creating an Access Control Profile in Brightcove Gallery.</section>
+  <section class="bcls-section">
+    <h2 id="access_control">Creating an Access Control Profile</h2>
+    <p>You need to create an Access Control Profile that will be used to secure any experiences you want to secure using SSO.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Login to your Brightcove Gallery account.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
+      <li>Click <strong>Create Profile</strong>.</li>
+      <li>Give the profile a <strong>Name</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-acp-name.png" /></figure>
+      </li>
+      <li>Check the <strong>SSO</strong> option.</li>
+      <li>Locate the <strong>Import SSO metadata</strong> section and then click <strong>Select File</strong>.</li>
+      <li>Browse and select the SAML metadata file you downloaded from PingOne (in the previous section).</li>
+      <li>Confirm that values for the <strong>SAML 2.0 Endpoint</strong> and <strong>X.509 Certificate</strong> have been filled in.</li>
+      <li>Click <strong>Save</strong> and confirm that the profile was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-acp-created.png" /></figure>
+      </li>
+      <li>Click on the <strong>Metadata URL</strong> field and save the XML file.</li>
+    </ol>
+    <p>The XML file will be needed to complete the application configuration in PingOne.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="complete_app">Completing the application configuration </h2>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Return to the PingOne application.</li>
+      <li>On the <strong>Application Configuration</strong> section, locate the <strong>Upload Metadata</strong> field.</li>
+      <li>Click <strong>Select File</strong> and browse and select the file you downloaded after creating the Access Control Profile in Brightcove Gallery.</li>
+      <li>Confirm the <strong>Assertion Consumer Service (ACS)</strong> and <strong>Entity ID</strong> fields were filled in with values after the import.</li>
+      <li>Click <strong>Continue to Next Step</strong>.</li>
+      <li>On the <strong>SSO Attribute Mapping</strong> page, click <strong>Continue to Next Step</strong>.</li>
+      <li>On the <strong>Group Access</strong> page, locate the <strong>Users@directory</strong> group and then click <strong>Add</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-groups.png" /></figure>
+      </li>
+      <li>Click <strong>Continue to Next Step</strong>.</li>
+      <li>Click<strong> Finish</strong>.</li>
+      <li>Confirm that the application  is <strong>Active</strong> and <strong>Enabled</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-application-created.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="experience">Assign the Access Control Profile to an experience</h2>
+    <p>The last step is to assign the Access Control Profile that was created to the experience(s) you want to secure.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Return to Brightcove Gallery.</li>
+      <li>Edit the experience you want to secure.</li>
+      <li>In the left navigation, click <strong>SITE CONFIGURATION &gt; Access Control</strong>.</li>
+      <li>Select the <strong>Access Control Profile</strong> that is associated with the PingOne SSO configuration.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-select-access-control.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li><strong>Publish</strong> the experience.</li>
+    </ol>
+    <p>When you access the experience, you should be prompted by PingOne to login.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/ping-one-login.png" /></figure>
+    </p>
+  </section>
+</article>
