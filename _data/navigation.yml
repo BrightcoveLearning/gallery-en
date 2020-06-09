@@ -177,6 +177,8 @@
       url: /settings/configuring-custom-domains-and-ssl.html
     - name: Securing a Portal Experience with Auth0
       url: /settings/securing-portal-experience-auth0.html
+    - name: Securing a Portal Experience with Okta
+      url: /settings/securing-portal-experience-okta.html
     - name: Securing a Portal Experience with SSL
       url: /settings/securing-portal-experience-ssl.html
     - name: Configuring Single Sign-On with ADFS

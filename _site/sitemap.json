@@ -285,6 +285,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/release-notes/",
       "oldURL": "/index"
   },
@@ -295,7 +300,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
       "oldURL": "/index"
   },
 
@@ -305,22 +310,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -477,6 +477,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/settings/securing-portal-experience-auth0.html",
       "oldURL": "/securing-portal-experience-auth0"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/securing-portal-experience-okta.html",
+      "oldURL": "/securing-portal-experience-okta"
   },
 
   {
