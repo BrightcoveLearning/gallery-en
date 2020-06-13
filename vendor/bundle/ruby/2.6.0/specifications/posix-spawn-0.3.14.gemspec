@@ -18,10 +18,10 @@ Gem::Specification.new do |s|
   s.files = ["COPYING".freeze, "HACKING".freeze, "bin/posix-spawn-benchmark".freeze, "ext/extconf.rb".freeze]
   s.homepage = "https://github.com/rtomayko/posix-spawn".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.0.3".freeze
+  s.rubygems_version = "3.0.6".freeze
   s.summary = "posix_spawnp(2) for ruby".freeze
 
-  s.installed_by_version = "3.0.3" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.0.6" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
