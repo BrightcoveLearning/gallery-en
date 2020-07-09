@@ -523,9 +523,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="introduction">Introduction</h2>
     
-    <p>In addition to the basic single video players and playlist players, Brightcove offers a multi-video player type, called In-page Experience. You want to allow users to easily embed an Experience and provide as much flexibility as possible in the generation of the Brightcove Experience embed code so they can control the look and feel without being HTML or JavaScript experts.</p>
+    <p>In addition to the basic single video players and playlist players, Brightcove offers a multi-video player type, called In-Page Experiences. You want to allow users to easily embed an experience and provide as much flexibility as possible in the generation of the Brightcove Experience embed code so they can control the look and feel without being HTML or JavaScript experts.</p>
     
-    <p>Note that In-Page Experiences are part of Gallery, which is included in the <a href="https://www.brightcove.com/en/video-marketing-suite">Video Marketing Suite</a> and <a href="https://www.brightcove.com/en/enterprise-video-suite">Enterprise Video Suite</a>, and can also be purchased as an add-on package for Video Cloud. Contact your account manager for details.</p>
+    <p>Note that In-Page Experiences are part of Gallery, which is included in  <a href="https://www.brightcove.com/en/video-marketing-suite">Video Marketing Suite</a> and <a href="https://www.brightcove.com/en/enterprise-video-suite">Enterprise Video Suite</a>, and can also be purchased as an add-on package for Video Cloud. Contact your account manager for details.</p>
     </section>
     
     <section class="bcls-section">
@@ -572,7 +572,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-subsection">
     <h3 id="example_dialog">Example dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Experience Selection Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-experience-select-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Experience Selection Dialog" src="https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-experience-select-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Experience Selection Dialog</figcaption>
     </figure>
     </section>
@@ -580,10 +580,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-section">
     <h2 id="in_page_experience_embed_dialog">In-page Experience embed dialog</h2>
     
-    <p>There should be a dialog allowing the user to control the formatting of the In-page Experience on the web page. This dialog should allow the user to set the fields listed below:</p>
+    <p>There should be a dialog allowing the user to control the formatting of the In-Page Experience on the web page. This dialog should allow the user to set the fields listed below:</p>
     
     <ol>
-      <li><strong>Embed Type:</strong> The user should be able to choose between iFrame and Javascript embed code. The default should be Javascript.</li>
+      <li><strong>Embed Type:</strong> The user should be able to choose between iFrame and JavaScript embed code. The default should be JavaScript.</li>
       <li><strong>Sizing:</strong> The user should be able to select between Responsive or Fixed sizing.<sup><strong><a href="#note1-1">[1-1]</a></strong></sup>
       <ol type="a">
         <li>If iFrame, the default should be Fixed and Responsive should disabled.</li>
@@ -596,7 +596,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <li>If Responsive, the Width and Height should be disabled.</li>
       </ol>
       </li>
-      <li><strong>Override Experience Videos:</strong> The user should be able to override the default videos in an Experience with a list of videos or with a playlist. If the user selects to overrides the Experience videos, allow the user to choose videos or a playlist per the “Overriding Experience Videos” section below.</li>
+      <li><strong>Override Experience Videos:</strong> The user should be able to override the default videos in an experience with a list of videos or with a playlist. If the user selects to overrides the experience videos, allow the user to choose videos or a playlist per the “Overriding Experience Videos” section below.</li>
     </ol>
     
     <p>The dialog should have the following additional behavior:</p>
@@ -617,7 +617,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-section">
     <h2 id="Overriding_Experience_videos">Overriding Experience videos</h2>
     
-    <p>If the user chooses to override the Experience videos, the dialog should allow the user to set the fields listed below:</p>
+    <p>If the user chooses to override the experience videos, the dialog should allow the user to set the fields listed below:</p>
     
     <ol>
       <li><strong>Search Filter:</strong> The user should be able to enter a search string to filter the list of displayed videos or playlists. If using Brightcove search API, the search string should be URI encoded.</li>
@@ -656,7 +656,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-subsection">
     <h3 id="Example_video_override_dialog_implementation">Example video override dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-video-override-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-video-override-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
     </figure>
     </section>
@@ -664,7 +664,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-subsection">
     <h3 id="Example_playlist_override_dialog_implementation">Example playlist override dialog implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-playlist-override-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Sample Video Override Dialog" src="https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-playlist-override-dialog.png" />
     <figcaption class="bcls-caption--image">Sample Video Override Dialog</figcaption>
     </figure>
     </section>
@@ -724,7 +724,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-subsection">
     <h3 id="example_iframe_video_experience">Example implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-iframe-video-embed-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-iframe-video-embed-dialog.png" />
     <figcaption class="bcls-caption--image">Example Implementation</figcaption>
     </figure>
     </section>
@@ -774,7 +774,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <section class="bcls-subsection">
     <h3 id="example_inpage_video_experience">Example implementation</h3>
     
-    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="/https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-embedding-brightcove-page-experiences-cms/18645-sample-inpage-video-embed-dialog.png" />
+    <figure class="bcls-figure"><img class="bcls-image" alt="Example Implementation" src="https://general.support.brightcove.com/assets/images/shared-content/integrations/18645-sample-inpage-video-embed-dialog.png" />
     <figcaption class="bcls-caption--image">Example Implementation</figcaption>
     </figure>
     </section>
