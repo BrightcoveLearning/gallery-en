@@ -1,0 +1,74 @@
+---
+title: Integrating Pigeonhole with a Virtual Event Experience
+parent: Virtual Event
+grandparent: Experiences
+---
+<article class="bcls-article">
+  <h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
+  <section class="bcls-section">
+    <p>Pigeonhole can be used to easily add live Q&amp;A to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  live event and then sessions can be created for each video you want to add Q&amp;A to. Once the sessions are created, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole Q&amp;A pod to display next to the video player for chosen videos.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pigeonhole">Creating a new Pigeonhole event</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-add-new.png" /></figure>
+      </li>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-new-event.png" /></figure>
+      </li>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-add-new-session.png" /></figure>
+      </li>
+      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong>.</li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-agenda.png" /></figure>
+      </li>
+      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-new-session-created.png" /></figure>
+      </li>
+    </ol>
+    <p>The Pigeonhole will be displayed next to the video using a line of JavaScript code pasted into a custom field for the video. The format of the code will be:</p>
+    <code>
+    <pre>&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em>/q/<em>session ID</em>&quot;&gt;&lt;/iframe&gt;</pre>
+    </code>
+    <p>To get the values for the <strong>event passcode</strong> and <strong>session ID</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>On the <strong>Sessions</strong> tab, click <strong>Edit</strong> next to the event. The <strong>Session ID</strong> will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-get-session-id.png" /></figure>
+      </li>
+      <li>To get the event passcode, locate the event name in the header. The event passcode is displayed below the event name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-get-passcode.png" /></figure>
+      </li>
+    </ol>
+    <p>With these values, construct the code that will be used in the custom field for the video. In this example the code will be:</p>
+    <code>
+    <pre>&lt;iframe src=&quot;https://pigeonhole.at/<em>******</em>/q/<em>1061623</em>&quot;&gt;&lt;/iframe&gt;</pre>
+    </code> </section>
+  <section class="bcls-section">
+    <h2 id="custom_field">Creating a custom field</h2>
+    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video (if any), a custom field is used. To create a custom field, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li><strong></strong>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
+      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
+      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
+      <li><strong>Save</strong> the custom field.</li>
+    </ol>
+    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="qa">Adding Q&amp;A to a video</h2>
+    <p>To </p>
+  </section>
+</article>
