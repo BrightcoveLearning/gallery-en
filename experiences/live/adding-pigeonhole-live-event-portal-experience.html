@@ -1,0 +1,88 @@
+---
+title: 'Adding Pigeonhole Q&A to a Live Event Portal Experience'
+parent: Live Event
+grandparent: Experiences
+---
+<h1>Adding Pigeonhole Q&A to a Live Event Portal Experience</h1>
+<article class="bcls-article">
+  <summary>In this topic you will learn how to add Q&amp;A capabilities to a Live Event Portal Experience.</summary>
+  <section class="bcls-section">
+    <p>Pigeonhole can be used to easily add live Q&amp;A to  a Live Event Portal Experience. Typically, a new Pigeonhole is created for the  event and then a session is  created for the live event. Once the session is created, Pigeonhole embed code is pasted into the Live Event template. The embed code will cause the Pigeonhole Q&amp;A pod to display next to the live event player.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pigeonhole">Creating a  Pigeonhole event and session</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new.png" /></figure>
+      </li>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-event.png" /></figure>
+      </li>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new-session.png" /></figure>
+      </li>
+      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong>.</li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-agenda.png" /></figure>
+      </li>
+      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-session-created.png" /></figure>
+      </li>
+      <li>Click <strong>More settings</strong> in the left navigation.</li>
+      <li>Click the <strong>Integrations</strong> tab at the top of the page.</li>
+      <li>Scroll down to the <strong>Others</strong> section.</li>
+      <li>Locate <strong>Brightcove Gallery Embed</strong> and click <strong>Integrate</strong>.</li>
+      <li><strong>(Optional)</strong> If your Gallery Experience will be secured using SSO, select <strong>Allow automatic attendee sign-in using SAML attributes</strong>. This will retrieve the user’s name and email address and automatically sign them in on Pigeonhole Live when the Pigeonhole Live widget loads. If this is not checked, users will appear as anonymous inside Pigeonhole. Click <strong>Save</strong>.</li>
+      <li>On the Brightcove Gallery Embed dialog, select your Q&amp;A session from the dropdown list.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-embed-code-dialog.png" /></figure>
+      </li>
+      <li>Click <strong>Get embed code</strong>.</li>
+      <li>Click on the embed code and copy it to the clipboard. This is the code that will be embedded on the Gallery experience. </li>
+      <li>Click <strong>Close</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add-experience">Adding a Pigeonhole to an experience</h2>
+    <p>The Pigeonhole embed code must be added to an experience in order for a Pigeonhole to display. To add the embed code to an experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li><strong></strong>Click on the Live Event experience to edit.</li>
+      <li>Click on the <strong>Twitter Settings</strong> link.</li>
+      <li>In the <strong>Twitter Feed</strong> section, paste in the Pigeonhole embed code.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-twitter-feed.png" /></figure>
+      </li>
+      <li><strong>(Optional) </strong>Paste the embed code into the <strong>Live</strong> and <strong>Post-Event</strong> pages as well.</li>
+      <li><strong>Save</strong> and <strong>Publish</strong> the changes.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sso-attributes">Passing SSO values to Gallery</h2>
+    <p>If your Gallery Experience will be secured using SSO and you selected the <strong>Allow automatic attendee sign-in using SAML attributes</strong> option when creating your session, there are a couple of things that must be done to ensure that the SSO attributes are available to Pigeonhole. If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the Gallery module.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
+      <li>Click the edit icon for the profile being used to secure the experience.</li>
+      <li>Ensure that the <strong>Expose all attributes</strong> setting is checked.</li>
+    </ol>
+    <p>You also need to ensure that the correct SSO attributes are mapped so they can be accessed by Pigeonhole. Pigeonhole looks for the following values:</p>
+    <ul>
+      <li><code>emailaddress</code></li>
+      <li><code>name</code></li>
+    </ul>
+    <p>The example below shows these attributes being exposed from inside the Okta SSOAdmin page.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
+    </p>
+    <p>If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
+  </section>
+</article>
