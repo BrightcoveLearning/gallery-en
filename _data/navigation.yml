@@ -136,6 +136,10 @@
     - name: Live Event
       url: /experiences/live/
       docs:
+      - name: 'Adding Pigeonhole to a Live In-Page'
+        url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
+      - name: 'Adding Pigeonhole to a Live Portal'
+        url: /experiences/live/adding-pigeonhole-live-event-portal-experience.html
       - name: Creating a Live Event In-Page Experience
         url: /experiences/live/creating-live-event-page-experience.html
       - name: Creating a Live Event Portal Experience
