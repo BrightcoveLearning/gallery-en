@@ -3,7 +3,7 @@
   url: /
 - section: 
   name: Getting Started
-  url: /get-started/
+  url: /get-started/index.html
   docs:
     - name: Creating a Portal Experience
       url: /get-started/step-step-creating-and-publishing-portal-experience.html
@@ -25,10 +25,10 @@
       url: /training/training-demand-building-page-experiences-using-gallery.html
 - section: 
   name: Experiences
-  url: /experiences/
+  url: /experiences/index.html
   docs:
     - name: Portal
-      url: /experiences/portal/
+      url: /experiences/portal/index.html
       docs:
         - name: Adding Video Cloud Videos
           url: /experiences/portal/adding-video-cloud-videos-portal-experience.html
@@ -95,7 +95,7 @@
         - name: Using the Site Editor to Customize an Experience
           url: /experiences/portal/using-site-editor-customize-portal-experience.html
     - name: In-Page
-      url: /experiences/inpage/
+      url: /experiences/inpage/index.html
       docs:
         - name: Adding Components
           url: /experiences/inpage/adding-components-page-experience.html
@@ -134,7 +134,7 @@
         - name: Using Dynamic Video Overrides
           url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
     - name: Live Event
-      url: /experiences/live/
+      url: /experiences/live/index.html
       docs:
       - name: 'Adding Pigeonhole to a Live In-Page'
         url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
@@ -153,13 +153,13 @@
       - name: Customizing the Live Event Portal Settings
         url: /experiences/live/customizing-live-event-portal-settings.html
     - name: Landing Page
-      url: /experiences/landing/
+      url: /experiences/landing/index.html
       docs:
       - name: Creating a Landing Page Experience
         url: /experiences/landing/creating-landing-page-experience.html
 - section: 
   name: General
-  url: /general/
+  url: /general/index.html
   docs:
     - name: Gallery System Requirements
       url: /general/gallery-system-requirements.html
@@ -169,7 +169,7 @@
       url: /general/brightcove-gallery-cookies.html
 - section: 
   name: Gallery Settings
-  url: /settings/
+  url: /settings/index.html
   docs:
     - name: Configuring Gallery Settings
       url: /settings/configuring-gallery-settings.html
@@ -189,7 +189,7 @@
       url: /settings/configuring-single-sign-active-directory-federation-services.html
 - section: 
   name: Developers
-  url: /develop/
+  url: /develop/index.html
   docs:
     - name: In-Page Experience Code Snippets
       url: /develop/page-experience-code-snippets.html
@@ -213,7 +213,7 @@
       url: 'https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html'
 - section: 
   name: Training
-  url: /training/
+  url: /training/index.html
   docs:
     - name: Gallery Training Videos
       url: /training/gallery-training-videos.html
@@ -227,7 +227,7 @@
       url: /training/brightcove-university.html
 - section: 
   name: Release Notes
-  url: /release-notes/
+  url: /release-notes/index.html
   docs:
     - name: Gallery Release Notes
       url: /release-notes/gallery-release-notes.html
@@ -235,7 +235,7 @@
       url: /release-notes/gallery-template-release-notes.html
 - section: 
   name: Support
-  url: /support/
+  url: /support/index.html
   docs:
     - name: 'Brightcove Answers'
       url: '/support/brightcove-answer.html'
