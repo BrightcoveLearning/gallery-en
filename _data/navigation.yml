@@ -1,6 +1,6 @@
 - section: 
   name: Home
-  url: /
+  url: /index.html
 - section: 
   name: Getting Started
   url: /get-started/index.html
