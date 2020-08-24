@@ -131,6 +131,8 @@
           url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
         - name: Reviewing Video Analytics
           url: /experiences/inpage/reviewing-page-experience-video-analytics.html
+        - name: Updating Gallery Templates
+          url: /experiences/portal/updating-gallery-templates.html
         - name: Using Dynamic Video Overrides
           url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
     - name: Live Event
@@ -140,6 +142,10 @@
         url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
       - name: 'Adding Pigeonhole to a Live Portal'
         url: /experiences/live/adding-pigeonhole-live-event-portal-experience.html
+      - name: Assigning a Custom Domain
+        url: /experiences/portal/assigning-custom-domain-portal-experience.html
+      - name: Controlling Access
+        url: /experiences/portal/controlling-access-portal-experience.html
       - name: Creating a Live Event In-Page Experience
         url: /experiences/live/creating-live-event-page-experience.html
       - name: Creating a Live Event Portal Experience
@@ -152,11 +158,24 @@
         url: /experiences/live/creating-pre-event-state-portal-event-experience.html
       - name: Customizing the Live Event Portal Settings
         url: /experiences/live/customizing-live-event-portal-settings.html
+      - name: Previewing and Publishing
+        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+
     - name: Landing Page
       url: /experiences/landing/index.html
       docs:
+      - name: Assigning a Custom Domain
+        url: /experiences/portal/assigning-custom-domain-portal-experience.html
       - name: Creating a Landing Page Experience
         url: /experiences/landing/creating-landing-page-experience.html
+      - name: Exporting Gallery Lead Data
+        url: /experiences/portal/exporting-gallery-lead-data.html
+      - name: Previewing and Publishing
+        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+      - name: Using a Lead Form
+        url: /experiences/portal/using-lead-form-portal-experience.html
+      - name: Using the Site Editor to Customize an Experience
+        url: /experiences/portal/using-site-editor-customize-portal-experience.html
 - section: 
   name: General
   url: /general/index.html
