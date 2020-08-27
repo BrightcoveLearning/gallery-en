@@ -1,0 +1,63 @@
+---
+title: Customizing the Header of a Virtual Event  Experience
+parent: Virtual Event
+grandparent: Experiences
+layout: staging
+---
+<article class="bcls-article">
+  <h1>Customizing the Header of a Virtual Event  Experience</h1>
+  <summary>In this topic you will learn how to customize the header of Virtual Event  Experience pages.</summary>
+  <section class="bcls-section">
+    <p>The header will appear at the top of all the pages. The header is constructed from values in the configuration file.
+      The header is made up of the following components:</p>
+    <ul>
+      <li>Header logo</li>
+      <li>Links</li>
+      <li>Social icons</li>
+      <li>Search</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-header.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="logo">Header logo</h2>
+    <p>The header image is specified by the <code>images</code> object in the configuration file.</p>
+    <ul>
+      <li><code>header_logo</code> - URL to image to appear in the header</li>
+    </ul>
+    .Png and .jpg files are supported.</section>
+  <section class="bcls-section">
+    <h2 id="links">Links</h2>
+    <p>By default, the <strong>HOME</strong>, <strong>LIVE STREAM</strong> and <strong>ON-DEMAND SESSIONS</strong> links are hardcoded in the template:</p>
+    <ul>
+      <li><strong>HOME</strong> - Goes to home, top of page</li>
+      <li><strong>LIVE STREAM</strong> - Goes to the featured collection (top video player) </li>
+      <li><strong>ON-DEMAND SESSIONS</strong> - Goes to the tracks section </li>
+    </ul>
+    <p>Additional links can be added by editing the <code>header_links</code> object in the configuration file.</p>
+    <ul>
+      <li><code>link_url</code> - Destination URL</li>
+      <li><code>label</code> - Label to appear in the header</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="social">Social icons</h2>
+    <p>By default, the header will display social icons:</p>
+    <ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>Twitter</li>
+      <li>LinkedIn</li>
+      <li>YouTube</li>
+    </ul>
+    The icons can be edited/removed by editing the <code>social</code> object in the configuration file.
+    <ul>
+      <li><code>link_url</code> - Destination URL for the image</li>
+      <li><code>image_url</code> - Social image to appear in the header</li>
+    </ul>
+    <p>To remove a social icon, remove the appropriate entry from the configuration file.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="search">Search</h2>
+    <p>To enable search and display the search field, <a href="/experiences/portal/customizing-site-features-portal-experience.html">enable search for the experience</a>. By default, the search field in the header will display a single line for text entry.  The search box in the example has been styled to display as a textfield.</p>
+  </section>
+</article>
