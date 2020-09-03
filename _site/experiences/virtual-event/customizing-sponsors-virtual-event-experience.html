@@ -558,6 +558,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </ul>
     <p>The <code>sponsors</code> object in the configuration file also has parameters to control where in the homepage the sponsor information is displayed. For information on positioning the sponsors section, see <a href="/experiences/virtual-event/positioning-content-homepage.html">Positioning Content on the Home Page</a>. </p>
   </section>
+  <section class="bcls-section">
+    <h2 id="css">Sponsor specific styling</h2>
+    <h3>Remove filter and opacity from logo images</h3>
+    <p>By default, logo images which will not appear as expected. The following CSS resolves that issue so images appear as expected.</p>
+    <pre><code>
+.bc-sponsors-section .bc-sponsors-list img {
+    -webkit-filter: none;
+    filter: none;
+    opacity: 1;
+}
+</code>
+  </pre>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
