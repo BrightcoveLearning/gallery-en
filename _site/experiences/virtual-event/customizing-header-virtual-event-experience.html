@@ -596,6 +596,19 @@ The social icons that appear in the header can be edited/removed by editing the 
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/header-search-default.png" /></figure>
     <p>The search box in the example has been styled to display a box around the search field.</p>
   </section>
+  <section class="bcls-section">
+    <h2 id="css">Header specific CSS</h2>
+    <p>By default, links added to the header will not appear when using a mobile device. The following CSS resolves that issue.</p>
+    <pre><code>
+for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
+  let link = ciabConfig.header_links[i];
+  let li = document.createElement('li');
+  let ul = document.getElementById('main-nav-cat');
+  li.className = 'main-nav-category main-nav-category-home';
+  li.innerHTML = ('<a href="'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
+}
+    </code></pre>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
