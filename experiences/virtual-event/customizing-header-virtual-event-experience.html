@@ -57,8 +57,9 @@ The social icons that appear in the header can be edited/removed by editing the 
     <p>The search box in the example has been styled to display a box around the search field.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="css">Header specific CSS</h2>
-    <p>By default, links added to the header will not appear when using a mobile device. The following CSS resolves that issue.</p>
+    <h2 id="css">Header specific styling</h2>
+      <h3>Links on mobile devices</h3>
+    <p>By default, links added to the header will not appear when using a mobile device. The following JavaScript resolves that issue.</p>
     <pre><code>
 for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
   let link = ciabConfig.header_links[i];
@@ -67,6 +68,52 @@ for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
   li.className = 'main-nav-category main-nav-category-home';
   li.innerHTML = ('<a href="'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
 }
+    </code></pre>
+    <h3>Formatting the search field</h3>
+    <p>By default, the search field will display a single line for text entry. The following CSS formats the search field as a textbox.</p>
+    <pre><code>
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input {
+	background-color: transparent;
+	color: #fff;
+	padding: 0;
+	margin-top: -10px;
+	/* width: 80px; */
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: .88;
+	text-transform: uppercase;
+	display: block;
+    padding: 2px 5px 2px 30px;
+	width: inherit;
+	border: 1px solid #fff;
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-webkit-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-moz-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input:-ms-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-ms-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
     </code></pre>
   </section>
 </article>
