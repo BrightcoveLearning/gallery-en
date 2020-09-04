@@ -6,7 +6,7 @@ layout: staging
 ---
 <article class="bcls-article">
   <h1>Virtual Event Styling Examples</h1>
-  <summary>This topic provides some sample CSS and JavaScript that can be used to customize the Virtual Event template.</summary>
+  <summary>This topic provides some sample code that can be used to customize the Virtual Event template.</summary>
   <section class="bcls-section">
     <h2 id="social">Social sharing icons</h2>
     <p>By default, if Social Sharing icons are enabled, they will not appear next to videos on the video detail pages. The following CSS will display the social icons on the video detail pages.</p>
@@ -31,5 +31,18 @@ layout: staging
 }
     </code></pre>
     <aside class="bcls-aside bcls-aside--information">Note: For information on the properties that can be used with the <code>background</code> property, see <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">this link</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="background-video">Hero background video</h2>
+    <p>The following static content object can be added to the  configuration file to add a background video to the site. This should replace the existing hero image in the configuration file.</p>
+    <pre><code>
+"static_content": [{
+      "insert_target": ".bcg-fixed-width-container",
+      "insert_mode": "prepend",
+      "content": "&lt;div class='video-bg'&gt;&lt;video loop muted autoplay class='video-bg__video'&gt;&lt;source src='https://solutions.brightcove.com/bcls/gallery/loop.mp4' type='video/mp4'&gt;&lt;/video&gt;&lt;/div&gt; &lt;div class='bc-hero-section' style='padding-bottom:65px;position: relative;'&gt;&lt;div id='hero-logo'&gt;&lt;/div&gt;&lt;/div&gt;",
+      "require_roles": [],
+      "omit_roles": []
+    }
+    </code></pre>
   </section>
 </article>

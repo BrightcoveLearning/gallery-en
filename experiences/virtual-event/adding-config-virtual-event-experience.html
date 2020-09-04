@@ -5,51 +5,24 @@ grandparent: Experiences
 layout: staging
 ---
 <article class="bcls-article">
-  <h1>Adding the Configuration File to the Template</h1>
-  <summary>In this topic you will learn how to customize the appearance and behavior of a Portal Experience.</summary>
+  <h1>Adding the Configuration File to the Experience</h1>
+  <summary>In this topic you will learn how to add the configuration file to a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>To configure the Appearance and Behavior settings, edit the experience and click <strong>APPEARANCE AND BEHAVIOR</strong> in the left navigation. The following settings are available:</p>
-    <ul>
-      <li><a href="#template">Template Settings</a> - Configure settings specific to the template being used</li>
-      <li><a href="#header_footer">Header and Footer</a> - Configure a custom header/footer for the experience</li>
-      <li><a href="#custom">Custom</a> - Use custom CSS and JavaScript files</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="template">Configuring the template settings</h2>
-    <p>To configure the template settings, click <strong>APPEARANCE AND BEHAVIOR &gt; Template Settings</strong> in the left navigation. The template settings will vary based upon the template that is being used. Click a link for information on the settings that are specific to each template:</p>
-    <ul>
-      <li><a href="/experiences/portal/customizing-catalogue-template-settings.html">Catalogue</a></li>
-      <li><a href="/experiences/portal/customizing-chronicle-template-settings.html">Chronicle</a></li>
-      <li><a href="/experiences/portal/customizing-marquee-template-settings.html">Marquee</a></li>
-      <li><a href="/experiences/live/customizing-live-event-portal-settings.html">Live Event Portal</a></li>
-    </ul>
-    <p>Note that not all templates will have template settings.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="header_footer">Configuring custom header/footer HTML</h2>
-    <p>Gallery provides the option of using a custom header and/or footer for the site. This provides the ability to customize a Portal Experience so it more closely matches the look and feel of your corporate sites. A custom header/footer can also be configured at the account level. For information on configuring a custom header/footer at the account level, see <a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a>.</p>
-    <p>To configure a Portal Experience to use a custom header or footer, follow these steps.</p>
+    <p>The Virtual Event  Experience requires a configuration file be included with the site. The configuration file includes  site settings, layout options, event schedule, speakers and other content that will be displayed. After creating a new Virtual Event Experience, adding the configuration file is the first thing that should be done </p>
+    <p>To add the configuration file to a Virtual Event Experience, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Design the header/footer to use for your site. The header/footer can contain any valid HTML, JavaScript or CSS code.</li>
+      <li>Go to the following link:<br/>
+        <code>https://virtual-events-experience.s3.amazonaws.com/v1/config.txt</code></li>
+      <li>Copy the content to the clipboard.</li>
+      <li>Open the Gallery module.</li>
+      <li>Edit the experience.</li>
       <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-header-footer.png" /></figure>
+        <figure class="bcls-figure"></figure>
       </li>
-      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
-      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
-      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
-      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
-      <li>Click<strong> Save</strong>.</li>
+      <li>Paste the configuration file into the <strong>Custom Header HTML</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/config-json.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>. </li>
     </ol>
-    <div class="BCL-subsection">
-      <h3>Notes on using custom headers and footers</h3>
-      <ul>
-        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
-        <li>There is no explicit character limit on the header and footer HTML</li>
-        <li>External CSS and JavaScript files are supported</li>
-        <li>The code should follow responsive design principles so it will scale properly across devices</li>
-        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
-      </ul>
-    </div>
   </section>
 </article>
