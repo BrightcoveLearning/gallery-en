@@ -345,17 +345,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/general/",
+      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
       "oldURL": "/index"
   },
 
@@ -405,7 +400,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -647,6 +647,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/virtual-event-styling-examples.html",
       "oldURL": "/virtual-event-styling-examples"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/working-static-content.html",
+      "oldURL": "/working-static-content"
   },
 ]
 
