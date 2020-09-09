@@ -8,21 +8,35 @@ layout: staging
   <h1>Positioning Content on the Home Page</h1>
   <summary>In this topic you will learn how to position objects  that appear on   the Virtual Event  Experience homepage.</summary>
   <section class="bcls-section">
-    <p>Speaker images and a short bio can be added to the Virtual Event homepage. </p>
-<figure class="bcls-figure"></figure>
-    <p>The speaker information is customized by editing the <code>speakers</code> object in the configuration file.</p>
+    <p>Several objects in the configuration file have parameters which allow you to specify where the object should appear on the page. For example, static content, speakers, tracks and sponsors all have the ability to be repositioned on the page. Objects that can be positioned will have the following attributes in the configuration file:</p>
+    <figure class="bcls-figure"></figure>
     <ul>
-      <li><code>name</code> - Speaker name</li>
-      <li><code>description</code> - Speaker information that displays below their image</li>
-      <li><code>image_url</code> - Speaker image</li>
-      <li><code>link_url</code> - Destination URL for the image (may link to speaker LinkedIn page for example)</li>
+      <li><code>insert_target</code> - A CSS selector (using a simple class or ID format); the element matched by this selector will be used as the starting point for where the given object is rendered</li>
+      <li><code>insert_mode</code> - How the content is inserted
+        <ul>
+          <li><code>after</code></li>
+          <li><code>before</code></li>
+          <li><code>append</code></li>
+          <li><code>prepend</code></li>
+        </ul>
+      </li>
     </ul>
-    <p>The <code>speakers</code> object in the configuration file also has parameters to control where in the homepage the speaker information is displayed.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="target">Determining the target</h2>
+    <p>The <code>insert_target</code> parameter expects a CSS selector (using a simple class or ID format). The element matched by this selector will be used as the starting point for where the given object is rendered. The best way to determine the CSS selector or ID to use is to browse to the virtual event homepage and then use the browser developer tools to inspect the elements in the page. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/objects-div-structure.png" /></figure>
+    <p>You will notice that the main sections of the homepage are organized using <code>&lt;div&gt;</code> tags.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="mode">Choosing the insert mode</h2>
+    <p>When inserting an object into a page, the <code>insert_mode</code> attribute will determine where the object is inserted in the hierarchy.</p>
     <ul>
-      <li><code>name</code> - Speaker name</li>
-      <li><code>description</code> - Speaker information that displays below their image</li>
+      <li><code>after</code></li>
+      <li><code>before</code></li>
+      <li><code>append</code></li>
+      <li><code>prepend</code></li>
     </ul>
     <p>&nbsp;</p>
   </section>
 </article>
-
