@@ -551,7 +551,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Several objects in the configuration file have parameters which allow you to specify where the object should appear on the page. For example, static content, speakers, tracks and sponsors all have the ability to be repositioned on the page. Objects that can be positioned will have the following attributes in the configuration file:</p>
     <figure class="bcls-figure"></figure>
     <ul>
-      <li><code>insert_target</code> - A CSS selector (using a simple class or ID format); the element matched by this selector will be used as the starting point for where the given object is rendered</li>
+      <li><code>insert_target</code> - A CSS selector (a simple class or ID) that will be used as the starting point for where the given object is rendered</li>
       <li><code>insert_mode</code> - How the content is inserted
         <ul>
           <li><code>after</code></li>
@@ -570,14 +570,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="mode">Choosing the insert mode</h2>
-    <p>When inserting an object into a page, the <code>insert_mode</code> attribute will determine where the object is inserted in the hierarchy.</p>
+    <p>After determing where in the hieracrchy to insert the object, the <code>insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
     <ul>
-      <li><code>after</code></li>
-      <li><code>before</code></li>
-      <li><code>append</code></li>
-      <li><code>prepend</code></li>
+      <li><code>after</code> - Puts the object after the specified <code>div</code> at the same level</li>
+      <li><code>before</code> - Puts the object before the specified <code>div</code> at the same level</li>
+      <li><code>append</code> - Puts the object inside the specified <code>div</code> as the last child</li>
+      <li><code>prepend</code> - Puts the object inside the specified <code>div</code> as the first child</li>
     </ul>
-    <p>&nbsp;</p>
+    <p>The diagram below demonstrates the effect of the various <code>insert_mode</code> values.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example.png" /></figure>
   </section>
 </article>
 
@@ -596,7 +597,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 01 Sep 2020
+  Page last updated on 09 Sep 2020
 </div>
 
 
