@@ -570,7 +570,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="mode">Choosing the insert mode</h2>
-    <p>After determing where in the hieracrchy to insert the object, the <code>insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
+    <p>After determining where in the hierarchy to insert the object, the <code>insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
     <ul>
       <li><code>after</code> - Puts the object after the specified <code>div</code> at the same level</li>
       <li><code>before</code> - Puts the object before the specified <code>div</code> at the same level</li>
@@ -578,6 +578,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><code>prepend</code> - Puts the object inside the specified <code>div</code> as the first child</li>
     </ul>
     <p>The diagram below demonstrates the effect of the various <code>insert_mode</code> values.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example-graphic.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sample">Object positioning example</h2>
+    <p>The following code samples demonstrates how to use a static content object to insert a title above the secondary collection.</p>
+    <pre><code>
+{
+    "insert_target": ".bc-on-demand-section",
+    "insert_mode": "prepend",
+    "content": "&lt;h2 class='bc-on-demand-section-title'&gt;ON-DEMAND SESIONS&lt;/h2&gt;",
+    "require_roles": [],
+    "omit_roles": []
+}
+        </code></pre>
+    <p>Using the browser tools, you can see the <code>h2</code> was inserted as the first element inside the <code>bc-on-demand-section div</code>.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example.png" /></figure>
   </section>
 </article>
