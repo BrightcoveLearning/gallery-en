@@ -350,6 +350,16 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/",
       "oldURL": "/index"
   },
@@ -360,37 +370,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/settings/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "newURL": "https://gallery.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -400,17 +380,37 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/general/",
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
       "oldURL": "/index"
   },
 
@@ -632,6 +632,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-lead-form-portal-experience.html",
       "oldURL": "/using-lead-form-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-simulated-live-videos.html",
+      "oldURL": "/using-simulated-live-videos"
   },
 
   {
