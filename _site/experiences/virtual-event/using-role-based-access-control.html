@@ -549,12 +549,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
   <section class="bcls-section">
     <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
-    <p>To configure role-based access control, start by determining how the content will be restricted and create the appropriate configuration file. Some sample configurations are outlined in the following sections. Next, associate the configuration file with the experience. Finally, tag the videos appropriately.</p>
+    <p>To configure role-based access control, start by determining how the content will be restricted and create the appropriate role-based access configuration file. Some sample configurations are outlined in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
     <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="single-premium">Single premium role</h2>
-    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to a user with “premium_user” as a role. Premium users can still see all of the content general users can see. Use of a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
+    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
     <pre><code>
 {
      "advancedRoleFilter": "true",
@@ -630,7 +630,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="merged-rules">Merged rules example</h2>
-    <p>This contrived example illustrates how the different values can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content ​plus​ premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
+    <p>This contrived example illustrates how the different options can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content ​plus​ premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
     <pre><code>
 {
      "advancedRoleFilter": "true",
@@ -651,8 +651,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="assign">Assigning an access profile</h2>
-    <p>Once you have created an access profile to control access to content, associate the access profile with the experience.</p>
+    <h2 id="assign">Assigning a role-based access profile</h2>
+    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
     <ol class="bcls-tasklist">
       <li>Copy the access control profile to the clipboard.</li>
       <li>Open the Gallery module.</li>
