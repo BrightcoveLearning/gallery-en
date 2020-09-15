@@ -549,9 +549,36 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
   <section class="bcls-section">
     <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
-    <p>To configure role-based access control, start by determining how the content will be restricted and create the appropriate role-based access configuration file. Some sample configurations are outlined in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
+    <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
     <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
   </section>
+    <section class="bcls-section">
+    <h2 id="creating">Creating a role-based access configuration file</h2>
+    <p>The role-based access control is configured using a separate role-based access configuration file. The format of the file is as follows:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {}
+}   
+   </code></pre>
+    <p>The property values in the file control how the access is applied to the experience.</p>
+    <ul>
+      <li><strong>advancedRoleFilter</strong> - When set to <strong>true</strong>, enables role-based access control</li>
+      <li><strong>defaultIncludeTags</strong> - The tag(s) that must be on all videos for them to be shown  in the Virtual Event Experience. This allows you to only display only a subset of videos in the account in the Virtual Event Experience.</li>
+      <li><strong>defaultIgnoreTags</strong> - Videos with these tag(s) will not be displayed to users who are not part of a role</li>
+      <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
+      <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
+      <li><strong>ignoreByRole</strong> - Augments the <code>defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
+      <li><strong>includeByRole</strong> - </li>
+      <li><strong>allowByRole</strong> - Augments the <code>defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code>defaultIncludeTags</code> as well as the tag(s) listed here.</li>
+    </ul>
+  Some sample configuration files are provided in the following sections.</section>
   <section class="bcls-section">
     <h2 id="single-premium">Single premium role</h2>
     <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
@@ -560,7 +587,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
      "advancedRoleFilter": "true",
      "defaultIncludeTags": ["virtual_event"],
      "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role", "valueDelimiter": ",",
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
      "ignoreByRole": {},
      "includeByRole": {},
      "allowByRole": {
@@ -660,10 +688,25 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</li>
       <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
+          <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
       </li>
       <li>Click<strong> Save</strong>.</li>
     </ol>
     <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
+  </section>
+    <section class="bcls-section">
+    <h2 id="attributes">Exposing SAML attributes</h2>
+    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
+      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
+      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
   </section>
 </article>
 
