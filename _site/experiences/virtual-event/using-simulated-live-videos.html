@@ -548,8 +548,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 <article class="bcls-article">
   <summary>In this topic you will learn how to configure VOD videos so they appear as if they are live.</summary>
   <section class="bcls-section">
-    <p><strong>Simulive</strong> is short for <em>simulated live</em> and is a way in which VOD content can be shown to end users as if it is live. Simulive content is appealing to event organizers as it allows for pre-recording of content and extensive testing prior to go-live. It reduces risks that may arise from potential day-of failures for traditional live events which occur due to encoder issues or other  logistics. Simulive videos will display a countdown timer with the video to indicate when it will be live.</p>
-<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
+    <p><strong>Simulive</strong> is short for <em>simulated live</em> and is a way in which VOD content can be shown to end users as if it is live. Simulive content is appealing to event organizers as it allows for pre-recording of content and extensive testing prior to go-live. It reduces risks that may arise from potential day-of failures for traditional live events which occur due to encoder issues or other  logistics. Simulive videos will display a countdown timer with the video to indicate when it will be live. The example below is a simulive video in the featured collection.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-featured-countdown.png" /></figure>
+    <p>For videos in the primary and secondary collections, the countdown timer will appear on the card for the video.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-primary-countdown.png" /></figure>
     <p>To use simulive content in a Virtual Event Experience , the following must be done:</p>
     <ul>
       <li>Configure the simulive player plugin</li>
@@ -557,46 +559,74 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Create a simulive custom field</li>
       <li>Configure simulive video properties</li>
     </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: The text that displays as part of the countdown timer is in the <code>labels</code> object in the configuration file and can easily be customized or localized.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="plugin">Configuring the simulive player plugin</h2>
     <p>The Simulive player plugin should be configured for the player used in your Virtual Event Experience.</p>
-<ol class="bcls-tasklist">
-      <li class="language-editable">Click <strong>Players</strong> in the navigation header to open the Players module.</li>
-      <li class="language-editable">Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <strong>New Player</strong>, name the player and then click <strong>Save</strong>.</li>
-      <li class="language-editable">Click the link for the player you want to configure.</li>
-      <li class="language-editable">Click <strong>Plugins</strong> in the left navigation menu.</li>
-      <li class="language-editable">Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
-      <li class="language-editable">For the <strong> Plugin Name</strong> enter </li>
-      <li class="language-editable">For the <strong>JavaScript URL</strong> enter:</li>
-      <li class="language-editable">For the <strong>CSS URL</strong> enter:</li>
-      <li class="language-editable">Click <strong>Save</strong> to save the changes.</li>
+    <ol class="bcls-tasklist">
+      <li>Click <strong>Players</strong> in the navigation header to open the Players module.</li>
+      <li>Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <strong>New Player</strong>, name the player and then click <strong>Save</strong>.</li>
+      <li>Click the link for the player you want to configure.</li>
+      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+      <li>Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
+      <li>For the <strong> Plugin Name</strong> enter <code>simulivePlugin</code>.</li>
+      <li>For the <strong>JavaScript URL</strong> enter:<br/>
+        <code>https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.js</code></li>
+      <li>For the <strong>CSS URL</strong> enter:<br/>
+        <code>https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.css</code></li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="custom_player">Configuring a custom player</h2>
-    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video (if any), a custom field is used. To create a custom field, follow these steps.</p>
+    <p>To configure the Virtual Event Experience to use the custom player, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li></li>
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong> in the left navigation.
+        <figure class="bcls-figure"></figure>
+      </li>
+      <li>Select the <strong>Use site-specific player</strong> option and select the player configured with the Simulive plugin.</li>
+      <li>Click <strong>Save</strong>.
     </ol>
-    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="custom_field">Creating a simulive custom field</h2>
-    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
+    <p>A custom field is used to store the date and time a video will be available. To create the simulive custom field, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Open the Media module.</li>
-      <li></li>
+      <li>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li>Click <strong>Add Custom Field</strong>.</li>
+      <li>Create a new custom field using the following values.
+        <ul>
+          <li><strong>Display Name</strong> - Simulive Start</li>
+          <li><strong>Internal Name</strong> - simulive_start</li>
+          <li><strong>Type</strong> - Text</li>
+          <li><strong>Description</strong> - Expected format is is YYYY-MM-DDTHH:MM:SS-HH:MM</li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-custom-field.png" /></figure>
+      </li>
+      <li>Click <strong>Save Field</strong>.</li>
     </ol>
-  </section>
-    <section class="bcls-section">
+    For information on creating custom fields, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</section>
+  <section class="bcls-section">
     <h2 id="assign_fields">Configuring simulive video properties</h2>
-    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
+    <p>The custom field <strong>Simulive Start</strong> will hold the date and time a video will be available. The video will not be viewable until the Simulive Start time has been reached. Simulive videos must also be tagged <strong>simulive</strong>. To configure a video as a simulive video, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the Media module.</li>
-      <li></li>
+      <li>Click on a video title to open the properties.</li>
+      <li>Locate the <strong>VIDEO PROPERTIES</strong> section and click <strong>Edit</strong>.</li>
+      <li>Tag the video with <strong>simulive</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-tag.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
+      <li>Enter a date and time value for the <strong>Simulive Start</strong> field.
+        The correct format of the field is <code>YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code>YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code>HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code>-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-simulive-start.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
     </ol>
   </section>
 </article>
@@ -616,7 +646,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 11 Sep 2020
+  Page last updated on 14 Sep 2020
 </div>
 
 
