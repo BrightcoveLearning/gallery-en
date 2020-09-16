@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Customizing the Event Sponsors</title>
+  <title>Customizing the Event Speakers</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Customizing the Event Sponsors</li>
+      <li class="breadcrumb-item active" aria-current="page">Customizing the Event Speakers</li>
     </ol>
   </nav>
 </header>
@@ -545,31 +545,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Customizing the Event Sponsors</h1>
-  <summary>In this topic you will learn how to customize the event sponsors that appear on   the Virtual Event  Experience homepage. </summary>
+  <h1>Customizing the Event Speakers</h1>
+  <summary>In this topic you will learn how to customize the event speakers that appear on the Virtual Event  Experience homepage.</summary>
   <section class="bcls-section">
-    <p>Sponsor images  can be added to the Virtual Event homepage. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsors-example.png" /></figure>
-    <p>The sponsor information is customized by editing the <code>sponsors</code> object in the configuration file.</p>
+    <p>Speaker images and a short bio can be added to the Virtual Event homepage. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speakers-example.png" /></figure>
+    <p>The speaker information is customized by editing the <code>speakers</code> object in the configuration file.</p>
     <ul>
-      <li><code>name</code> - Sponsor name</li>
-      <li><code>image_url</code> - Sponsor logo, the images will be resized to 100px wide</li>
-      <li><code>link_url</code> - Destination URL for the image</li>
+      <li><code>name</code> - Speaker name</li>
+      <li><code>description</code> - Speaker information that displays below their image</li>
+      <li><code>image_url</code> - Speaker image. Recommend a max width of 200px. Images will not be resized</li>
+      <li><code>link_url</code> - (optional) Destination URL for the image (may link to speaker LinkedIn page for example)</li>
     </ul>
-    <p>The <code>sponsors</code> object in the configuration file also has parameters to control where in the homepage the sponsor information is displayed. For information on positioning the sponsors section, see <a href="/experiences/virtual-event/positioning-content-homepage.html">Positioning Content on the Home Page</a>. </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="css">Sponsor specific styling</h2>
-    <h3>Remove filter and opacity from logo images</h3>
-    <p>By default, logo images which will not appear as expected. The following CSS can be used to resolve that issue so images appear as expected.</p>
-    <pre><code>
-.bc-sponsors-section .bc-sponsors-list img {
-    -webkit-filter: none;
-    filter: none;
-    opacity: 1;
-}
-</code>
-  </pre>
+    <p>By default, the template CSS configures the the speaker images  with a <code>border-radius</code> of 50% which will make the images circular.</p>
+    <p>The <code>speakers</code> object in the configuration file also has parameters to control where in the homepage the speaker information is displayed. For information on positioning the speakers section, see <a href="/experiences/virtual-event-temp/positioning-content-homepage.html">Positioning Content on the Home Page</a>. </p>
   </section>
 </article>
 
@@ -588,7 +577,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 08 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Positioning Content on the Home Page</title>
+  <title>Customizing the Header of a Virtual Event  Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Positioning Content on the Home Page</li>
+      <li class="breadcrumb-item active" aria-current="page">Customizing the Header of a Virtual Event  Experience</li>
     </ol>
   </nav>
 </header>
@@ -545,55 +545,119 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Positioning Content on the Home Page</h1>
-  <summary>In this topic you will learn how to position objects  that appear on   the Virtual Event  Experience homepage.</summary>
+  <h1>Customizing the Header of a Virtual Event  Experience</h1>
+  <summary>In this topic you will learn how to customize the header of Virtual Event  Experience pages.</summary>
   <section class="bcls-section">
-    <p>Several objects in the configuration file have parameters which allow you to specify where the object should appear on the page. For example, static content, speakers, tracks and sponsors all have the ability to be repositioned on the page. Objects that can be positioned will have the following attributes in the configuration file:</p>
-    <figure class="bcls-figure"></figure>
+    <p>The header will appear at the top of all the pages. The header is constructed from values in the configuration file.
+      The header is made up of the following components:</p>
     <ul>
-      <li><code>insert_target</code> - A CSS selector (a simple class or ID) that will be used as the starting point for where the given object is rendered</li>
-      <li><code>insert_mode</code> - How the content is inserted
-        <ul>
-          <li><code>after</code></li>
-          <li><code>before</code></li>
-          <li><code>append</code></li>
-          <li><code>prepend</code></li>
-        </ul>
-      </li>
+      <li>Header logo</li>
+      <li>Links</li>
+      <li>Social icons</li>
+      <li>Search</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-header.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="logo">Header logo</h2>
+    <p>The header image is specified by the <code>images</code> object in the configuration file.</p>
+    <ul>
+      <li><code>header_logo</code> - URL to image to appear in the header</li>
+    </ul>
+    .Png and .jpg files are supported.</section>
+  <section class="bcls-section">
+    <h2 id="links">Links</h2>
+    <p>By default, the <strong>HOME</strong>, <strong>LIVE STREAM</strong> and <strong>ON-DEMAND SESSIONS</strong> links are hardcoded in the template:</p>
+    <ul>
+      <li><strong>HOME</strong> - Goes to home, top of page</li>
+      <li><strong>LIVE STREAM</strong> - Goes to the featured collection (top video player) </li>
+      <li><strong>ON-DEMAND SESSIONS</strong> - Goes to the tracks section </li>
+    </ul>
+    <p>Additional links can be added by editing the <code>header_links</code> object in the configuration file.</p>
+    <ul>
+      <li><code>link_url</code> - Destination URL</li>
+      <li><code>label</code> - Label to appear in the header</li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="target">Determining the target</h2>
-    <p>The <code>insert_target</code> parameter expects a CSS selector (using a simple class or ID format). The element matched by this selector will be used as the starting point for where the given object is rendered. The best way to determine the CSS selector or ID to use is to browse to the virtual event homepage and then use the browser developer tools to inspect the elements in the page. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/objects-div-structure.png" /></figure>
-    <p>You will notice that the main sections of the homepage are organized using <code>&lt;div&gt;</code> tags.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="mode">Choosing the insert mode</h2>
-    <p>After determining where in the hierarchy to insert the object, the <code>insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
+    <h2 id="social">Social icons</h2>
+    <p>By default, the header will display social icons:</p>
     <ul>
-      <li><code>after</code> - Puts the object after the specified <code>div</code> at the same level</li>
-      <li><code>before</code> - Puts the object before the specified <code>div</code> at the same level</li>
-      <li><code>append</code> - Puts the object inside the specified <code>div</code> as the last child</li>
-      <li><code>prepend</code> - Puts the object inside the specified <code>div</code> as the first child</li>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>Twitter</li>
+      <li>LinkedIn</li>
+      <li>YouTube</li>
     </ul>
-    <p>The diagram below demonstrates the effect of the various <code>insert_mode</code> values.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example-graphic.png" /></figure>
+    The social icons that appear in the header can be edited/removed by editing the <code>social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event-temp/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</section>
+  <section class="bcls-section">
+    <h2 id="search">Search</h2>
+    <p>To enable search and display the search field, <a href="/experiences/portal/customizing-site-features-portal-experience.html">enable search for the experience</a>. By default, the search field in the header will display a single line for text entry. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/header-search-default.png" /></figure>
+    <p>The search box in the example has been styled to display a box around the search field.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="sample">Object positioning example</h2>
-    <p>The following code samples demonstrates how to use a static content object to insert a title above the secondary collection.</p>
+    <h2 id="css">Header specific styling</h2>
+    <h3>Links on mobile devices</h3>
+    <p>By default, links added to the header will not appear when using a mobile device. The following JavaScript resolves that issue.</p>
     <pre><code>
-{
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "prepend",
-    "content": "&lt;h2 class='bc-on-demand-section-title'&gt;ON-DEMAND SESIONS&lt;/h2&gt;",
-    "require_roles": [],
-    "omit_roles": []
+for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
+  let link = ciabConfig.header_links[i];
+  let li = document.createElement('li');
+  let ul = document.getElementById('main-nav-cat');
+  li.className = 'main-nav-category main-nav-category-home';
+  li.innerHTML = ('<a href="../virtual-event/'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
 }
-        </code></pre>
-    <p>Using the browser tools, you can see the <code>h2</code> was inserted as the first element inside the <code>bc-on-demand-section div</code>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example.png" /></figure>
+    </code></pre>
+    <h3>Formatting the search field</h3>
+    <p>By default, the search field will display a single line for text entry. The following CSS formats the search field as a textbox.</p>
+    <pre><code>
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box {
+    margin-right: 45px;
+    width: 170px;
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input {
+	background-color: transparent;
+	color: #fff;
+	margin-top: -10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: .88;
+	text-transform: uppercase;
+	display: block;
+    padding: 2px 5px 2px 30px;
+	width: inherit;
+	border: 1px solid #fff;
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-webkit-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-moz-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input:-ms-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-ms-input-placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::placeholder {
+	text-transform: uppercase;
+	color: #fff
+}
+
+    </code></pre>
   </section>
 </article>
 
@@ -612,7 +676,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 10 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

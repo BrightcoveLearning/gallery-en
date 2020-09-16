@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Configuring the Social Icons for a Virtual Event  Experience</title>
+  <title>Integrating Pigeonhole with a Virtual Event Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Configuring the Social Icons for a Virtual Event  Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Integrating Pigeonhole with a Virtual Event Experience</li>
     </ol>
   </nav>
 </header>
@@ -544,25 +544,77 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
 <article class="bcls-article">
-  <h1>Configuring the Social Icons for a Virtual Event  Experience</h1>
-  <summary>In this topic you will learn how to customize the social icons that appear in   Virtual Event  Experience pages.</summary>
+  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>Social icons can be added to Virtual Event experiences so that viewers can easily access your social media sites. By default, social icons will be displayed in the header and footer of all site pages:</p>
-    <ul>
-      <li>Facebook</li>
-      <li>Instagram</li>
-      <li>Twitter</li>
-      <li>LinkedIn</li>
-      <li>YouTube</li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/social-icons-example.png" /></figure>
-    <p>The icons that appear can be edited/removed by editing the <code>social</code> object in the configuration file.</p>
-    <ul>
-      <li><code>link_url</code> - Destination URL for the image</li>
-      <li><code>image_url</code> - Social image to appear in the header</li>
-    </ul>
-    <p>To remove a social icon, remove the appropriate entry from the configuration file.</p>
+    <p>Pigeonhole can be used to easily add live Q&amp;A to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  live event and then sessions can be created for each video you want to add Q&amp;A to. Once the sessions are created, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole Q&amp;A pod to display next to the video player for chosen videos.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pigeonhole">Creating a new Pigeonhole event</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
+      </li>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
+      </li>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
+      </li>
+      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong>.</li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
+      </li>
+      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
+      </li>
+      <li>Click <strong>More settings</strong> in the left navigation.</li>
+      <li>Click the <strong>Integrations</strong> tab at the top of the page.</li>
+      <li>Scroll down to the <strong>Others</strong> section.</li>
+      <li>Locate <strong>Brightcove Gallery Embed</strong> and click <strong>Integrate</strong>.</li>
+      <li><strong>(Optional)</strong> If your Gallery Experience will be secured using SSO, select <strong>Allow automatic attendee sign-in using SAML attributes</strong>. This will retrieve the user’s name and email address and automatically sign them in on Pigeonhole Live when the Pigeonhole Live widget loads. If this is not checked, users will appear as anonymous inside Pigeonhole. Click <strong>Save</strong>.</li>
+      <li>On the Brightcove Gallery Embed dialog, select your Q&amp;A session from the dropdown list.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-embed-code-dialog.png" /></figure>
+      </li>
+      <li>Click <strong>Get embed code</strong>.</li>
+      <li>Click on the embed code and copy it to the clipboard. This is the code that will be embedded on the Gallery experience. </li>
+      <li>Click <strong>Close</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom_field">Creating a custom field</h2>
+    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video (if any), a custom field is used. To create a custom field, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li><strong></strong>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
+      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
+      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
+      <li><strong>Save</strong> the custom field.</li>
+    </ol>
+    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="qa">Adding Q&amp;A to a video</h2>
+    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Media module.</li>
+      <li>Click on a video to open the video properties.</li>
+      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
+      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
   </section>
 </article>
 
@@ -581,7 +633,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Aug 2020
+  Page last updated on 26 Aug 2020
 </div>
 
 

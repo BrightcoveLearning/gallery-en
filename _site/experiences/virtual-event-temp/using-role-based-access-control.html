@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Organizing Video Collections in a Virtual Event Experience</title>
+  <title>Using Role-Based Access Control</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Organizing Video Collections in a Virtual Event Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Using Role-Based Access Control</li>
     </ol>
   </nav>
 </header>
@@ -544,74 +544,169 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <h1>Organizing Video Collections in a Virtual Event Experience</h1>
-  <summary>In this topic you will learn how to organize video collections in a Virtual Event Experience.</summary>
+  <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
   <section class="bcls-section">
-    <h2 id="layout">Template collection organization</h2>
-    <p>Using the Gallery Collection Editor, you can select the videos to display on a Virtual Event Experience. Like other portal-type experiences, videos are organized into collections. The order of  the collections in the Gallery Collection Editor will control how they appear on the virtual event homepage.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: For information on creating collections and adding  videos to a collection, see <a href="/experiences/portal/adding-videos-portal-experience.html">Adding Videos to a Portal Experience</a>.</aside>
-    <p>The Virtual Event template has four main areas where videos are displayed as designated in the sample site:</p>
-    <ol>
-      <li><strong>Featured collection</strong> - Typically used to feature the live or <a href="/experiences/virtual-event/using-simulated-live-videos.html">simulive content</a> that will be displayed throughout the event. This should ideally be ordered based on its go-live time from earliest to latest for the best experience.</li>
-      <li><strong>Primary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
-      <li><strong>Secondary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
-      <li><strong>Tracks</strong> - Typically used for VOD content</li>
-    </ol>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-layout-example.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: To insert a title above the primary/secondary collection, add a static content object to the configuration file. For information, see <a href="/experiences/virtual-event/working-static-content.html">Working with Static Content</a>.</aside>
-    <p>When ordering collections in Gallery, the collections should be ordered in the following manner:</p>
-    <ul>
-      <li>Collection 1 - Featured collection</li>
-      <li>Collection 2 - Secondary collection</li>
-      <li>Collection 3 - Primary collection</li>
-      <li>Collection 4 - Tracks</li>
-    </ul>
-    <p>For the above example, the collections would be created as follows:</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
-    <p>Some additional steps are required to configured the tracks. Tracks are covered in the <a href="#tracks">Configuring event tracks</a> section below. <strong>Playlist</strong> or <strong>Custom</strong> based collections can be used but if the event will use <a href="/experiences/virtual-event/using-role-based-access-control.html">role-based access control</a> to prevent users of certain roles from seeing some content, Playlists should ​not​ be used as playlists don’t support role-based access control filtering.</p>
-    <p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
-    </p>
-  </section>
-  <section class="bcls-section"> </section>
-  <section class="bcls-section">
-    <h2 id="tracks">Configuring event tracks</h2>
-    <p>When creating the tracks, follow the guidelines below to make sure they appear correctly in the experience:</p>
-    <ul>
-      <li>The tracks collection should be the fourth collection</li>
-      <li>The collection name will appear in the virtual event template so use a meaningful name
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-ui-sample.png" /></figure>
-      </li>
-      <li>The tracks collection will be a nested collection, no videos will appear in this collection</li>
-      <li>Create child collections under the tracks collection for each track
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-example.png" /></figure>
-      </li>
-      <li>Assign videos to the child collections, remember, do not use playlists when creating the collections</li>
-    </ul>
+    <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
+    <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="track-url">Configuring the tracks URL</h2>
-    <p>Once the collections have been created, the configuration file needs to be updated so that the On-Demand Sessions link in the header will direct to the correct URL. The name used for the tracks collection (collection 4) will be used in the URL to access the tracks page. To ensure the URL is set correctly, confirm the following.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Review the configuration file and locate the <code>breakout_collection</code> object.</li>
-      <li> The <code>collection</code> parameter contains the URL of the tracks page. For example:<br/>
-        <pre><code>
-"breakout_collection": {
-    "collection": "/category/videos/tracks",
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "after"
-},
-          </code></pre>
+    <h2 id="creating">Creating a role-based access configuration file</h2>
+    <p>The role-based access control is configured using a separate role-based access configuration file. The format of the file is as follows:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {}
+}   
+   </code></pre>
+    <p>The property values in the file control how the access is applied to the experience.</p>
+    <ul>
+      <li><strong>advancedRoleFilter</strong> - When set to <strong>true</strong>, enables role-based access control</li>
+      <li><strong>defaultIncludeTags</strong> - The tag(s) that must be on all videos for them to be shown  in the Virtual Event Experience. This allows you to only display only a subset of videos in the account in the Virtual Event Experience.</li>
+      <li><strong>defaultIgnoreTags</strong> - Videos with these tag(s) will not be displayed to users who are not part of a role</li>
+      <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
+      <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
+      <li><strong>ignoreByRole</strong> - Augments the <code>defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
+      <li><strong>includeByRole</strong> - </li>
+      <li><strong>allowByRole</strong> - Augments the <code>defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code>defaultIncludeTags</code> as well as the tag(s) listed here.</li>
+    </ul>
+    Some sample configuration files are provided in the following sections.</section>
+  <section class="bcls-section">
+    <h2 id="single-premium">Single premium role</h2>
+    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {
+          "premium_user": ["premium"]
+     }
+}   
+   </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="tiered-content">Tiered content access</h2>
+    <p>Similar to the first scenario, but with multiple tiers where each tier gets access to more content and can still see all content for the lower tiers. User roles are “tier_1”, “tier_2”, and “tier_3” while users without one of these roles will not see any tiered content. Tags are “tier1”, “tier2”, and “tier3” respectively:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["tier1", "tier2", "tier3"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {
+          "tier_1": ["tier1"],
+          "tier_2": ["tier1", "tier2"],
+          "tier_3": ["tier1", "tier2", "tier3"]
+     } 
+} 
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="split-content">Split content access</h2>
+    <p>In this example, the two user roles only see videos tagged specifically for their role. A user without a role won’t see content for either of the tags:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["tag1", "tag2"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {
+          "role1": ["tag1"],
+          "role2": ["tag2"]
+     },
+     "allowByRole": {}
+}    
+    </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="language">Segmentation by language</h2>
+    <p>Using the split-based approach, content can be served based on a SAML attribute containing the user’s language:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": [],
+     "roleAttribute": "language",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {
+          "en": ["english"],
+          "es": ["spanish"],
+          "jp": ["japanese"]
+     },
+     "allowByRole": {}
+}     
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="merged-rules">Merged rules example</h2>
+    <p>This contrived example illustrates how the different options can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content plus premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
+    <pre><code>
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {
+          "premium_user": ["promotional"]
+     },
+     "includeByRole": { "expired_user": ["promotional"]
+     },
+     "allowByRole": {
+          "trial_user": ["promotional"],
+          "premium_user": ["premium"]
+     }
+}
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign">Assigning a role-based access profile</h2>
+    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
+    <ol class="bcls-tasklist">
+      <li>Copy the access control profile to the clipboard.</li>
+      <li>Open the Gallery module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</li>
+      <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
       </li>
-      <li>The last path in the <code>collection</code> URL should reflect the name of your tracks collection (collection 4). For example, if your tracks collection (collection 4) is named Sessions, the collection parameter would be updated to:<br/>
-        <pre><code>
-"collection": "/category/videos/sessions",      
-          </code></pre>
-      </li>
-      <li>To verify the configuration, click the On-Demand Sessions link in the header. The tracks session should appear. Clicking on a track should open the videos in a track. If you see a 404 error, there is a configuration issue.</li>
+      <li>Click<strong> Save</strong>.</li>
     </ol>
-    <p>&nbsp;</p>
+    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="attributes">Exposing SAML attributes</h2>
+    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
+      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
+      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
   </section>
 </article>
 
@@ -630,7 +725,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 14 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 
