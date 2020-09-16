@@ -8,16 +8,22 @@ layout: staging
   <h1>Configuring the Event Schedule</h1>
   <summary>In this topic you will learn how to customize the event schedule of a Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <p>Objects such as images, links and social icons  can be added to Virtual Event  Experience pages allowing you to customize and brand your video experience. The header is cusomized by edit the config file for the template</p>
-    <aside class="bcls-aside bcls-aside--information">Note: Some pages also provide the ability for the player layout to be changed. For more information, see <a href="../portal/changing-player-layout-portal-experience.html">Changing the Player Layout on a Portal Experience</a>.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="logo">Adding a logo</h2>
-    <p>Using the Site Editor, you can add objects such as images, text and links to a page. Start by editing an experience and then click <strong>PAGES</strong> in the left navigation. The page template will display plus icons (<img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" />) indicating that objects that can be added to the page. Hover over the plus icon and click it to add the appropriate object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-hover-plus.png" /></figure>
-    <p>The page template may also contain text objects that are part of the template. Hovering over them will display an <strong>Edit</strong> button. Click the object or <strong>Edit</strong> button to edit the object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-edit-text.png" /></figure>
-    <p>Note that the objects that can be added or edited are based upon the template that was selected when the experience was first created.</p>
-    <figure class="bcls-figure"></figure>
+    <p>The event schedule is typically used to display the scheduled live events that appear in the featured collection.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/schedule-example.png" /></figure>
+    <p>Based upon the number of days in the schedule, a <strong>Show</strong> dropdown will appear allowing the viewer to select the day's schedule to view.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/schedule-example-show.png" /></figure>
+    <p>The schedule information is customized by editing the <code>schedule</code> object in the configuration file.</p>
+    <ul>
+      <li><code>name</code> - Session name</li>
+      <li><code>description</code> - Session description</li>
+      <li><code>starts_at</code> - Session start date and time</li>
+      <li><code>ends_at</code> - Session end date and time</li>
+      <li><code>live_id</code> - Not used</li>
+      <li><code>vod_id</code> - Video ID</li>
+      <li><code>speakers</code> - Session speaker information</li>
+      <li><code>image_url</code> - Session image. Default image size is  320px x 180px. Images will be cropped to this size.<br>
+      </li>
+    </ul>
+    <p>The <code>schedule</code> object in the configuration file also has parameters for the <code>title</code> that appears above the schedule and to set whether the schedule displays in an <code>expanded</code> mode.</p>
   </section>
 </article>
