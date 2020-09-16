@@ -35,7 +35,7 @@ layout: staging
       <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
       <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
       <li><strong>ignoreByRole</strong> - Augments the <code>defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
-      <li><strong>includeByRole</strong> - </li>
+      <li><strong>includeByRole</strong> - Users with assigned role will only see videos with specified tag</li>
       <li><strong>allowByRole</strong> - Augments the <code>defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code>defaultIncludeTags</code> as well as the tag(s) listed here.</li>
     </ul>
     Some sample configuration files are provided in the following sections.</section>
