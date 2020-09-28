@@ -16,14 +16,14 @@ parent: Develop
     <pre class="line-numbers">
 <code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06"&gt;&lt;/div&gt;
 &lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
-    <p>The easiest way to get a reference to the experience is to give it an <code class="notranslate">id</code> (in the <code class="notranslate">div</code> tag). The <code class="notranslate">id</code> can be anything you like as long as it is unique within the page, but since the experience id itself is there in the URL for the script (see the highlighted part of the code above), you might as well use that:</p>
+    <p>The easiest way to get a reference to the experience is to give it an <code translate="No">id</code> (in the <code translate="No">div</code> tag). The <code translate="No">id</code> can be anything you like as long as it is unique within the page, but since the experience id itself is there in the URL for the script (see the highlighted part of the code above), you might as well use that:</p>
     <pre class="line-numbers">
 <code class="language-html notranslate">&lt;div data-experience="5bb2134180b4990011750f06" id="experience_5bb2134180b4990011750f06"&gt;&lt;/div&gt;
 &lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
-    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code class="notranslate">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/experiences/inpage/configuring-settings-page-experience.html#advanced">custom HTML block</a> in the experience itself.</p>
+    <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code translate="No">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/experiences/inpage/configuring-settings-page-experience.html#advanced">custom HTML block</a> in the experience itself.</p>
     <pre class="line-numbers">
 <code class="language-javascript notranslate">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
-    <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code class="notranslate">clientApi</code> object:</p>
+    <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code translate="No">clientApi</code> object:</p>
     <pre class="line-numbers">
 <code class="language-javascript notranslate">var <span class="bcls-highlight">experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06'),
 experienceApi</span>,
