@@ -551,55 +551,55 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <h2 id="setup">Before you get started</h2>
     <p>Complete these initial setup steps:</p>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Enable RelayState for iDP-initiated sign on by following the instructions <a href="https://jorgequestforknowledge.wordpress.com/2014/10/16/enabling-relaystate-in-adfs-versions/">here</a>. The location varies depending on the version of ADFS that is being using.</li>
-      <li class="language-editable">Restart the ADFS service so the changes are applied.</li>
+      <li >Enable RelayState for iDP-initiated sign on by following the instructions <a href="https://jorgequestforknowledge.wordpress.com/2014/10/16/enabling-relaystate-in-adfs-versions/">here</a>. The location varies depending on the version of ADFS that is being using.</li>
+      <li >Restart the ADFS service so the changes are applied.</li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="add_gallery_profile">Adding a Gallery Access Control Profile</h2>
     <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Open <strong>Administrative Tools</strong> from the Windows Start menu or Control Panel and then open the <strong>AD FS Management</strong> application.
+      <li >Open <strong>Administrative Tools</strong> from the Windows Start menu or Control Panel and then open the <strong>AD FS Management</strong> application.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-ad-fs-mgmt.png" /></figure>
       </li>
-      <li class="language-editable">Open <strong>Services &gt; Certificates</strong> in the left hand explorer panel.
+      <li >Open <strong>Services &gt; Certificates</strong> in the left hand explorer panel.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-list.png" /></figure>
       </li>
-      <li class="language-editable">Double-click on the <strong>Token-signing</strong> certificate that you want to use.
+      <li >Double-click on the <strong>Token-signing</strong> certificate that you want to use.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate.png" /></figure>
       </li>
-      <li class="language-editable">Click on the <strong>Details</strong> tab and click <strong>Copy to File…</strong>
+      <li >Click on the <strong>Details</strong> tab and click <strong>Copy to File…</strong>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-details.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Next</strong> in the export wizard, then select the <strong>Base-64 encoded X.509 (.CER)</strong> option.
+      <li >Click <strong>Next</strong> in the export wizard, then select the <strong>Base-64 encoded X.509 (.CER)</strong> option.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-certificate-export-wizard.png" /></figure>
       </li>
-      <li class="language-editable">Save the certificate file to your local file system and then open it in a text editor. This is the certificate that will be used to setup the Gallery access control profile.</li>
-      <li class="language-editable">Open the Gallery module.</li>
-      <li class="language-editable">Click <strong>Settings</strong>.</li>
-      <li class="language-editable">Click <strong>Access Control Profiles</strong> in the left navigation.</li>
-      <li class="language-editable">Click <strong>Create Profile</strong>.</li>
-      <li class="language-editable">Give it a <strong>Name</strong> and then select <strong>SSO - Requires a username and password for access</strong>.
+      <li >Save the certificate file to your local file system and then open it in a text editor. This is the certificate that will be used to setup the Gallery access control profile.</li>
+      <li >Open the Gallery module.</li>
+      <li >Click <strong>Settings</strong>.</li>
+      <li >Click <strong>Access Control Profiles</strong> in the left navigation.</li>
+      <li >Click <strong>Create Profile</strong>.</li>
+      <li >Give it a <strong>Name</strong> and then select <strong>SSO - Requires a username and password for access</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-new-access-control-profile.png" /></figure>
       </li>
-      <li class="language-editable">In the <strong>SAML 2.0 Endpoint (HTTP)</strong> field, enter the URL to the iDP-initiated sign-on page for your ADFS server. This usually ends in <code translate="No">IdpInitiatedSignOn.aspx</code>. For example, if the SP-initiated sign-on link is <code translate="No">https://sso-test.brightcove.com/adfs/ls</code>, the iDP-initiated sign-on page is <code translate="No">https://sso-test.brightcove.com/adfs/ls/IdpInitiatedSignOn.aspx</code>.</li>
-      <li class="language-editable">Check the <strong>My SSO System is ADFS (Active Directory Federation Services)</strong> option.</li>
-      <li class="language-editable">Copy and paste the certificate that you saved in step 6 into the <strong>X.509 Certificate</strong> field.
+      <li >In the <strong>SAML 2.0 Endpoint (HTTP)</strong> field, enter the URL to the iDP-initiated sign-on page for your ADFS server. This usually ends in <code translate="No">IdpInitiatedSignOn.aspx</code>. For example, if the SP-initiated sign-on link is <code translate="No">https://sso-test.brightcove.com/adfs/ls</code>, the iDP-initiated sign-on page is <code translate="No">https://sso-test.brightcove.com/adfs/ls/IdpInitiatedSignOn.aspx</code>.</li>
+      <li >Check the <strong>My SSO System is ADFS (Active Directory Federation Services)</strong> option.</li>
+      <li >Copy and paste the certificate that you saved in step 6 into the <strong>X.509 Certificate</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-x509-cert.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Save</strong> to save the access control profile. The new access control profile should appear in the list of profiles.
+      <li >Click <strong>Save</strong> to save the access control profile. The new access control profile should appear in the list of profiles.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-profile-list.png" /></figure>
       </li>
-      <li class="language-editable">Back in the AD FS Management application, open <strong> Relying Party Trusts</strong>.
+      <li >Back in the AD FS Management application, open <strong> Relying Party Trusts</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trusts.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Add Relying Party Trust…</strong> in the right hand panel.</li>
-      <li class="language-editable">Click <strong>Start</strong> in the wizard and then paste the <strong>Metadata URL</strong> that was displayed in step 15 into the <strong>Federation metadata address</strong> field.
+      <li >Click <strong>Add Relying Party Trust…</strong> in the right hand panel.</li>
+      <li >Click <strong>Start</strong> in the wizard and then paste the <strong>Metadata URL</strong> that was displayed in step 15 into the <strong>Federation metadata address</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="../assets/images/settings/node18595-relying-party-trust-wizard.png" /></figure>
       </li>
-      <li class="language-editable">Click <strong>Next</strong> and then give your relying party trust a name.
+      <li >Click <strong>Next</strong> and then give your relying party trust a name.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trust-name.png" /></figure>
       </li>
-      <li class="language-editable">Continue clicking <strong>Next</strong> until the <strong>Finish</strong> step. Uncheck the <strong>Configure claims issuance policy for this application</strong> checkbox. Click <strong>Close</strong>.
+      <li >Continue clicking <strong>Next</strong> until the <strong>Finish</strong> step. Uncheck the <strong>Configure claims issuance policy for this application</strong> checkbox. Click <strong>Close</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node18595-relying-party-trust-finish.png" /></figure>
       </li>
     </ol>
