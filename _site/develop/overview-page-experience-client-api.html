@@ -564,10 +564,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 &lt;script src="https://players.brightcove.net/1752604059001/<span class="bcls-highlight">experience_5bb2134180b4990011750f06</span>/live.js"&gt;&lt;/script&gt;</code></pre>
     <p>Now you are ready to get a reference to the experience in JavaScript. Remember that the experience is implemented in an <code translate="No">iframe</code>, so you can't easily communicate with it from a script in the parent page. Instead, you need to place your script in a <a href="/experiences/inpage/configuring-settings-page-experience.html#advanced">custom HTML block</a> in the experience itself.</p>
     <pre class="line-numbers">
-<code class="language-javascript notranslate">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
+<code class="language-javascript" translate="No">var experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06');</code></pre>
     <p>Once you have a reference to the experience, you can invoke methods from the API. Note that all methods are on the child <code translate="No">clientApi</code> object:</p>
     <pre class="line-numbers">
-<code class="language-javascript notranslate">var <span class="bcls-highlight">experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06'),
+<code class="language-javascript" translate="No">var <span class="bcls-highlight">experience = window.top.bcov.gal.getEmbed('experience_5bb2134180b4990011750f06'),
 experienceApi</span>,
 video,
 current_video = document.getElementById('current_video'),
