@@ -15,12 +15,12 @@ grandparent: Experiences
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-google-help.png" /></figure>
     <p>Per the Google help, the following line should be embedded in the document.</p>
     <pre>
-  <code>&lt;link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"&gt;</code></pre>
+  <code translate="No">&lt;link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"&gt;</code></pre>
     <p>To include this line in a Portal Experience, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
       <li class="language-editable">Edit the experience.</li>
       <li class="language-editable">Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer </strong>in the left navigation.</li>
-      <li class="language-editable">Paste the <code><strong>&lt;link&gt;</strong></code> tag into the <strong>Custom Header HTML</strong> field.
+      <li class="language-editable">Paste the <code translate="No"><strong>&lt;link&gt;</strong></code> tag into the <strong>Custom Header HTML</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-custom-header.png" /></figure>
       </li>
       <li class="language-editable">Click <strong>Save</strong>.</li>
@@ -28,7 +28,7 @@ grandparent: Experiences
   </section>
   <section class="bcls-section">
     <h2 id="associate">Creating CSS for the custom font</h2>
-    <p>To use the custom font, a <code><strong>style</strong></code> tag will be added to the portal <strong>Custom Header HTML</strong> field to style the appropriate text objects.</p>
+    <p>To use the custom font, a <code translate="No"><strong>style</strong></code> tag will be added to the portal <strong>Custom Header HTML</strong> field to style the appropriate text objects.</p>
     <p>The development tools provided with your browser are helpful in getting the class names of the objects on the page that you want to style (objects we want to change the font for). Note that the element names will changed based upon the template being used. In the example below, we will change the font for the featured video and the font used for the video names that appear in the video grid on the page. Screenshots are taken using Google Chrome.</p>
     <ol class="bcls-tasklist-restart">
       <li class="language-editable">Using your browser development tools, inspect the element on the experience that you want to change the font for. In this case, the featured video title is being inspected. Locate the class name for the object.
@@ -36,7 +36,7 @@ grandparent: Experiences
       </li>
       <li class="language-editable">Add the appropriate CSS to the <strong>Custom Header HTML</strong> field to style the featured video title with the new font.
         <pre>
-  <code>
+  <code translate="No">
       &lt;style&gt;
         .video-name {
          font-family:Acme;
@@ -47,9 +47,9 @@ grandparent: Experiences
       <li class="language-editable">Locate the class name for the video titles in the grid.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-grid-video-title.png" /></figure>
       </li>
-      <li class="language-editable">Add the appropriate CSS inside the existing <code><strong>&lt;style&gt;</strong></code> tag to style the video titles in the grid with the new font.
+      <li class="language-editable">Add the appropriate CSS inside the existing <code translate="No"><strong>&lt;style&gt;</strong></code> tag to style the video titles in the grid with the new font.
         <pre>
-<code>
+<code translate="No">
       .bc-video-browser .bc-video-grid-items .bc-video-grid-item .caption {
        font-family:Acme;
     }
@@ -57,7 +57,7 @@ grandparent: Experiences
       </li>
       <li class="language-editable">Confirm that the <strong>Custom Header HTML</strong> field contains the following.
         <pre>
-<code>&lt;link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"&gt;
+<code translate="No">&lt;link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"&gt;
   &lt;style&gt;
       .video-name {
       font-family:Acme;
@@ -75,6 +75,6 @@ grandparent: Experiences
       </li>
       <li class="language-editable">When done, <strong>Publish</strong> the experience.</li>
     </ol>
-    <p>The complete CSS file for the template can be viewed by clicking on the <strong>View CSS</strong> link as part of the <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> settings. If you wanted to change all instances of a font, you could search for all occurrences of <code><strong>font-family</strong></code> in the template CSS and add the appropriate entries to your <code><strong>&lt;style&gt;</strong></code> tag.</p>
+    <p>The complete CSS file for the template can be viewed by clicking on the <strong>View CSS</strong> link as part of the <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> settings. If you wanted to change all instances of a font, you could search for all occurrences of <code translate="No"><strong>font-family</strong></code> in the template CSS and add the appropriate entries to your <code translate="No"><strong>&lt;style&gt;</strong></code> tag.</p>
   </section>
 </article>

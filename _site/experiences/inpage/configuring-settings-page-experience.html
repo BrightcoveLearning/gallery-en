@@ -585,26 +585,26 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </div>
     <div class="BCL-subsection">
       <h3>Working with IP restricted accounts</h3>
-      <p><a href="https://player.support.brightcove.com/content-protection/restricting-video-playback-using-ip-address.html">IP restricted accounts</a> outside of North America require modification of the Playback API <code>base_url</code> in the player. In-Page Experiences will copy this <code>base_url</code> from the player when the experience is created and when a player is selected for the experience. If the <code>base_url</code> on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround:</p>
+      <p><a href="https://player.support.brightcove.com/content-protection/restricting-video-playback-using-ip-address.html">IP restricted accounts</a> outside of North America require modification of the Playback API <code translate="No">base_url</code> in the player. In-Page Experiences will copy this <code translate="No">base_url</code> from the player when the experience is created and when a player is selected for the experience. If the <code translate="No">base_url</code> on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround:</p>
       <ol class="bcls-tasklist-restart">
         <li>Go to the Player Settings page for the experience.</li>
         <li>Select a different player than the one that's currently selected.</li>
         <li>Re-select the initial player.</li>
         <li><strong>Save</strong> and then <strong>publish</strong> the experience.</li>
       </ol>
-      <p>This will update the <code>base_url</code> for the experience to match that of the initial player.</p>
+      <p>This will update the <code translate="No">base_url</code> for the experience to match that of the initial player.</p>
     </div>
     <p>When done, click <strong>Save</strong> to save the changes.</p>
     <div class="BCL-subsection">
       <h3>Working with domain restricted Players</h3>
-      <p>&nbsp;Domain restricted players require modification of the Policy Key&nbsp;in the player. In-Page Experiences will copy this <font face="monospace">policy_key</font>&nbsp;from the player when the experience is created and when a player is selected for the experience. If the&nbsp;<code>policy_key</code>&nbsp;on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround if they update their list of approved domains:</p>
+      <p>&nbsp;Domain restricted players require modification of the Policy Key&nbsp;in the player. In-Page Experiences will copy this <font face="monospace">policy_key</font>&nbsp;from the player when the experience is created and when a player is selected for the experience. If the&nbsp;<code translate="No">policy_key</code>&nbsp;on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround if they update their list of approved domains:</p>
       <ol class="bcls-tasklist-restart">
         <li>Go to the Player Settings page for the experience.</li>
         <li>Select a different player than the one that's currently selected.</li>
         <li>Re-select the initial player.</li>
         <li><strong>Save</strong> and then <strong>publish</strong> the experience.</li>
       </ol>
-      <p>This will update the <code>policy_key</code>&nbsp;for the experience to match that of the initial player.</p>
+      <p>This will update the <code translate="No">policy_key</code>&nbsp;for the experience to match that of the initial player.</p>
     </div>
     <p>When done, click <strong>Save</strong> to save the changes.</p>
   </section>
@@ -690,12 +690,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Use site description in search engine results and when site is shared</strong> - When checked, will use the site description in the &lt;meta&gt; description tags, including the Facebook and Twitter meta tags. If not checked, the description for the featured video is used.</li>
       <li><strong>Site Image</strong> - This is the image that will be shown when the home page of a portal site is shared on Facebook or Twitter.</li>
       <li><strong>Keywords</strong> - Meta keywords that will be added to all site pages. Adding "birds,animals,fish, animal world" will result in the following being added to the page HTML:<br />
-        <code>&lt;meta name="keywords" content="birds,animals,fish,animal world"&gt;</code></li>
+        <code translate="No">&lt;meta name="keywords" content="birds,animals,fish,animal world"&gt;</code></li>
       <li><strong>Meta Tags</strong> - Used to add additional meta tags for the site. These tags will be added to all site pages. Example:<br />
-        <code>&lt;meta name="myCustomTag" content="myCustomValue"&gt;</code></li>
+        <code translate="No">&lt;meta name="myCustomTag" content="myCustomValue"&gt;</code></li>
       <li><strong>Include custom video fields in page metadata</strong> - When checked, will add custom fields as meta tags. For example, a custom field of <strong>year</strong> with a value of <strong>2018</strong> will add:<br />
-        <code>&lt;meta name="year" content="2018"&gt;</code></li>
-      <li><strong>Include canonical URL in page metadata</strong> - When checked, will add a <code><strong>rel=canonical</strong></code> meta tag in the source which helps improve SEO. This is a feature that tells Google to treat all the pages with the same <code>rel=canonical</code> link as a single entry. For example, mysite.com/video/mypage.html is the same as mysite.com/video/mypage.html?username=foobar.</li>
+        <code translate="No">&lt;meta name="year" content="2018"&gt;</code></li>
+      <li><strong>Include canonical URL in page metadata</strong> - When checked, will add a <code translate="No"><strong>rel=canonical</strong></code> meta tag in the source which helps improve SEO. This is a feature that tells Google to treat all the pages with the same <code translate="No">rel=canonical</code> link as a single entry. For example, mysite.com/video/mypage.html is the same as mysite.com/video/mypage.html?username=foobar.</li>
       <li><strong>Remove video titles from their URLs</strong> - When checked, the video name will not be included as part of the URL to the video detail page, just the video ID will be in the URL.</li>
     </ul>
   </section>
@@ -781,7 +781,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </div>
     <div class="BCL-subsection">
       <h3 id="deeplink">Video Link Query Parameter</h3>
-      <p>The Video Link Query Parameter can be used to specify the query string parameter that will be used when deep linking to a video. Deep linking is typically used for search/SEO and when sharing videos to social media platforms. By default, Gallery will use <code>videoID</code>.</p>
+      <p>The Video Link Query Parameter can be used to specify the query string parameter that will be used when deep linking to a video. Deep linking is typically used for search/SEO and when sharing videos to social media platforms. By default, Gallery will use <code translate="No">videoID</code>.</p>
       <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-deep-link-url-settings.png" /></figure>
     </div>
   </section>

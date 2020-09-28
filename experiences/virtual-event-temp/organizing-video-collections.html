@@ -54,9 +54,9 @@ layout: staging
     <h2 id="track-url">Configuring the tracks URL</h2>
     <p>Once the collections have been created, the configuration file needs to be updated so that the On-Demand Sessions link in the header will direct to the correct URL. The name used for the tracks collection (collection 4) will be used in the URL to access the tracks page. To ensure the URL is set correctly, confirm the following.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Review the configuration file and locate the <code>breakout_collection</code> object.</li>
-      <li> The <code>collection</code> parameter contains the URL of the tracks page. For example:<br/>
-        <pre><code>
+      <li>Review the configuration file and locate the <code translate="No">breakout_collection</code> object.</li>
+      <li> The <code translate="No">collection</code> parameter contains the URL of the tracks page. For example:<br/>
+        <pre><code translate="No">
 "breakout_collection": {
     "collection": "/category/videos/tracks",
     "insert_target": ".bc-on-demand-section",
@@ -64,8 +64,8 @@ layout: staging
 },
           </code></pre>
       </li>
-      <li>The last path in the <code>collection</code> URL should reflect the name of your tracks collection (collection 4). For example, if your tracks collection (collection 4) is named Sessions, the collection parameter would be updated to:<br/>
-        <pre><code>
+      <li>The last path in the <code translate="No">collection</code> URL should reflect the name of your tracks collection (collection 4). For example, if your tracks collection (collection 4) is named Sessions, the collection parameter would be updated to:<br/>
+        <pre><code translate="No">
 "collection": "/category/videos/sessions",      
           </code></pre>
       </li>

@@ -19,7 +19,7 @@ layout: staging
       <li>Create a simulive custom field</li>
       <li>Configure simulive video properties</li>
     </ul>
-    <aside class="bcls-aside bcls-aside--information">Note: The text that displays as part of the countdown timer is in the <code>labels</code> object in the configuration file and can easily be customized or localized.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: The text that displays as part of the countdown timer is in the <code translate="No">labels</code> object in the configuration file and can easily be customized or localized.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="plugin">Configuring the simulive player plugin</h2>
@@ -30,11 +30,11 @@ layout: staging
       <li>Click the link for the player you want to configure.</li>
       <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
       <li>Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
-      <li>For the <strong> Plugin Name</strong> enter <code>simulivePlugin</code>.</li>
+      <li>For the <strong> Plugin Name</strong> enter <code translate="No">simulivePlugin</code>.</li>
       <li>For the <strong>JavaScript URL</strong> enter:<br/>
-        <code>https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.js</code></li>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.js</code></li>
       <li>For the <strong>CSS URL</strong> enter:<br/>
-        <code>https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.css</code></li>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.css</code></li>
       <li>Click <strong>Save</strong> to save the changes.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
@@ -83,7 +83,7 @@ layout: staging
       <li>Click <strong>Save</strong>.</li>
       <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
       <li>Enter a date and time value for the <strong>Simulive Start</strong> field.
-        The correct format of the field is <code>YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code>YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code>HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code>-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
+        The correct format of the field is <code translate="No">YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code translate="No">YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code translate="No">HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code translate="No">-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-simulive-start.png" /></figure>
       </li>
       <li>Click <strong>Save</strong>.</li>
@@ -91,6 +91,6 @@ layout: staging
   </section>
   <section class="bcls-section">
     <h2 id="policy-key">Updating the policy key value</h2>
-    <p>In order for the countdown timer to display on simulive videos, the policy key value in the configuration file needs to be updated with a search-enabled policy key. Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code>policyKey</code> value in the configuration file and republish the experience.</p>
+    <p>In order for the countdown timer to display on simulive videos, the policy key value in the configuration file needs to be updated with a search-enabled policy key. Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code translate="No">policyKey</code> value in the configuration file and republish the experience.</p>
   </section>
 </article>
