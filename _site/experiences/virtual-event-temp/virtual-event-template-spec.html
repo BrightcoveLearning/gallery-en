@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Creating the Pre-Event State for a Portal Event Experience</title>
+  <title>Virtual Event Template Specifications</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -119,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/live/">Live Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating the Pre-Event State for a Portal Event Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Virtual Event Template Specifications</li>
     </ol>
   </nav>
 </header>
@@ -545,76 +546,76 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Creating the Pre-Event State for a Portal Event Experience</h1>
-  <summary>In this topic you will learn how to create the pre-event state for a Live Event Portal Experience.</summary>
+  <h1>Virtual Event Template Specifications</h1>
+  <summary>This topic provides an overview of the content requirements for the Virtual Event template.</summary>
   <section class="bcls-section">
-    <p>The Live Event Portal template provides pre-event, <a href="/experiences/live/creating-live-event-state-portal-event-experience.html">live</a>, <a href="/experiences/live/creating-post-event-state-portal-event-experience.html">post-event</a>, video archive and video detail page templates. The pre-event, live and port-event page templates can be customized so the site has a different appearance before, during and after a live event. The pre-event state is what the site will display before the live event begins.</p>
-    <p>To create the pre-event home page state for a site, create a new Portal Experience&nbsp;using the Live Event Portal template. In the Gallery Site Editor, click <strong>PAGES</strong> in the left navigation. Confirm that the <strong>Pre-Event</strong> state is selected.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-pre-event-selected.png" /></figure>
-    <p>The pre-event home page state provides the following content areas.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-pre-event-content-areas.png" /></figure>
-    <ul>
-      <li><strong>A - Banner</strong> - Used to add calls-to-action including custom HTML, images and advertisements. See <a href="/experiences/portal/configuring-calls-action-portal-experience.html">Configuring Calls to Action on a Portal Experience</a> for more information.</li>
-      <li><strong>B - Home Logo and Name</strong> - Used to return viewer back to the home page. There are two placeholders here so you may choose to have an image followed by text for example. Images will be scaled down to a height of 55px and a max width of 495px.</li>
-      <li><strong>C - Link to Video Archive</strong> - Used to view all video collections that have been created for the site. Note that the first collection in the list will be considered a "featured collection" and will be displayed in the body of the pre-event page (area H below).</li>
-      <li><strong>D - Twitter Settings</strong> - Provides the ability to use a Twitter feed widget. See <a href="#twitter">Configuring a Twitter feed</a>.</li>
-      <li><strong>E - Background image, text and links</strong> - Used to add a background image, subtitle text and links</li>
-      <li><strong>F - Countdown Settings</strong> - Provides a countdown timer until the start of the event. See <a href="#timer">Configuring a countdown timer</a>.</li>
-      <li><strong>G - Pre-event Message</strong> - Static text message</li>
-      <li><strong>H - </strong><strong>Add Videos</strong> - Used to add video collections to the site. See <a href="#addvideos">Adding videos</a> for more information.</li>
-      <li><strong>I - Video Grid Box</strong> - Used to add calls-to-action, including custom HTML or images. See <a href="/experiences/portal/configuring-calls-action-portal-experience.html">Configuring Calls to Action on a Portal Experience</a> for more information.</li>
-      <li><strong>J - Footer objects</strong> - Used to add text and links to the page footer</li>
-    </ul>
-    <p>For information on adding images, links and static text to portal page templates, see <a href="/experiences/portal/customizing-content-portal-experience-pages.html">Customizing the Content of Portal Experience Pages</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: Site colors will vary based upon the theme that is selected.</aside>
+    <h2 id="videos">Videos</h2>
+    <p>Video and audio recommendations are listed below.</p>
+    <h3 class="BCL_subsectionTitle">Video</h3>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td  style="width:25%"><strong>Format</strong></td>
+          <td  style="width:75%">MP4</td>
+        </tr>
+        <tr>
+          <td ><strong>Codec</strong></td>
+          <td >H.264</td>
+        </tr>
+        <tr>
+          <td ><strong>Bitrate</strong></td>
+          <td >2x the bitrate of the highest rendition</td>
+        </tr>
+        <tr>
+          <td ><strong>Frame rate</strong></td>
+          <td >Constant, usually between 15 - 60 frames per second</td>
+        </tr>
+        <tr>
+          <td ><strong>Aspect ratio</strong></td>
+          <td >Your video aspect ratio will be preserved. An aspect ratio of 16:9 is common.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="BCL_subsectionTitle">Audio</h3>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td  style="width:25%"><strong>Codec</strong></td>
+          <td  style="width:75%">AAC (Advanced Audio Codec)</td>
+        </tr>
+        <tr>
+          <td ><strong>Bit rate</strong></td>
+          <td >Constant, 128 kbps</td>
+        </tr>
+        <tr>
+          <td ><strong>Channels</strong></td>
+          <td >Stereo</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For recommendations on best practices for recording, exporting, uploading and publishing your videos to ensure optimum playback, see <a href="https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html">Best Practices: The Video Creating, Transcoding, and Uploading Workflow</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="twitter">Configuring a Twitter feed</h2>
-    <p>The site can be configured with a Twitter embed on the page. For the types of embeds available, check the <a href="https://publish.twitter.com">Twitter website</a>. A sample likes timeline is shown below.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-twitter-feed-sample.png" /></figure>
-    <p>To add a Twitter feed, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li><a href="https://publish.twitter.com/">Create a widget on the Twitter site</a>. For help on creating a Twitter widget, see the <a href="https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview">Twitter developer documentation</a>.</li>
-      <li>Click on the <strong>Twitter Settings</strong> link on the page.</li>
-      <li>Copy the HTML for the Twitter widget and paste it into the <strong>Twitter Feed</strong> settings.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-twitter-widget.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
+    <h2 id="images">Images</h2>
+    <p> Various images are used throughout the Virtual Event template. Image recommendations are listed below.</p>
+    <h3>Background Image</h3>
+    <p>The image size depends on the breakpoints the customer is trying to support, more often than not 1920x1080 works, but the image should be optimized so it's not gigantic for best performance. </p>
+    <h3>Header Logo</h3>
+    <p>The header logo image will be proportionally scaled down to 178px wide.</p>
+    <h3>Agenda</h3>
+    <p>Default image size is 320px x 180px. Images will be cropped to this size.</p>
+    <h3>Speakers</h3>
+    <p>Speaker images should have a max width of 200px. Images will not be resized.  By default, the template CSS configures the speaker images with a border-radius of 50% which will make the images circular.</p>
+    <h3>Sponsors</h3>
+    <p>The sponsor images will be resized to 100px wide.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="timer">Configuring a countdown timer</h2>
-    <p>The site can be configured with a countdown timer that displays the number of months, days, hours and minutes before the live event begins. A sample countdown timer is shown below.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-event-countdown-sample.png" /></figure>
-    <p>When the countdown reaches zero, the text <strong>Coming Soon</strong> will appear in place of the countdown timer. To add a countdown timer, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on the <strong>Countdown Settings</strong> link on the page.</li>
-      <li>Locate the <strong>Event Countdown</strong> section and add the date and time of the live event.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-event-countdown.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Click on the text above the countdown timer to customize it.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: You, the publisher, are responsible for changing the <a href="/experiences/live/creating-live-event-portal-experience.html#setstate">home page state</a>. Gallery will never automatically switch the home page  state.</aside>
+    <h2 id="fonts">Fonts</h2>
+    <p>The template is optimized to work with the <strong>Roboto Condensed</strong> font.  This font can be assigned using the <strong>Style</strong> menu inside of the Gallery interface. Other fonts can be used but may require changes to CSS files. For information about using custom fonts, see <a href="/experiences/portal/using-custom-fonts-portal-experience.html">Using Custom Fonts in a Portal Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="calendar">Configuring a calendar reminder</h2>
-    <p>The site can be configured so users can click a link to download a calendar reminder. A sample calendar reminder is shown below.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-calendar-sample.png" /></figure>
-    <p>Clicking the calendar link will download an .ics file which is a global format for calendar files used by programs including Google Calendar, Apple Calendar, and Microsoft Outlook. Note that the calendar reminder will not be displayed unless the calendar settings are configured.</p>
-    <p>To configure the settings for the calendar reminder .ics file, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on the <strong>Countdown Settings</strong> link.</li>
-      <li>Configure the calendar reminder .ics file details.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/node15691-ics-config.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="addvideos">Adding videos</h2>
-    <p>Click the <strong>+Add Videos</strong> link to add video collections to the site. For information on creating collections, see <a href="/experiences/portal/adding-videos-portal-experience.html">Adding Videos to a Portal Experience</a>.</p>
-    <p>The first collection in the list of collections will be displayed on the pre-event home page. To view all the collections, click one of the videos on the home page or configure the <strong>Video Archive Link</strong> object so viewers can click it to view all collections.</p>
+    <h2 id="schedule">Schedule</h2>
+    <p>The schedule is typically used to list the schedule of live events. The schedule can display the session name, speakers and date and time for the session. A countdown timer will appear next to the session and a View button will appear when the session is live. For information on configuring the event schedule, see <a href="/experiences/virtual-event-temp/configuring-event-schedule-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
   </section>
 </article>
 
@@ -633,7 +634,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 30 Sep 2020
+  Page last updated on 01 Oct 2020
 </div>
 
 
