@@ -1,12 +1,6 @@
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
-        <p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="Navigation Menu"></p>
-          <ul id="in_prod_nav" class="pager" style="display: none;">
-            <li><a href="#"><img src="/assets/images/feather/chevron-left.svg" alt="back"></a></li>
-            <li>&nbsp;&nbsp;&nbsp;&nbsp;Beacon Documentation&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li><a href="#"><img src="/assets/images/feather/chevron-right.svg" alt="forward"></a></li>
-          </ul>
         <nav class="sidenav" id="side_nav">
           {% for item in site.data.navigation %}
             {% if item.docs == nil %}
