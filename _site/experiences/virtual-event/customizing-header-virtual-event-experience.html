@@ -120,7 +120,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
       <li class="breadcrumb-item active" aria-current="page">Customizing the Header of a Virtual Event  Experience</li>
     </ol>
@@ -597,7 +597,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>LinkedIn</li>
       <li>YouTube</li>
     </ul>
-    The social icons that appear in the header can be edited/removed by editing the <code translate="No">social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event-temp/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</section>
+    The social icons that appear in the header can be edited/removed by editing the <code translate="No">social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</section>
   <section class="bcls-section">
     <h2 id="search">Search</h2>
     <p>To enable search and display the search field, <a href="/experiences/portal/customizing-site-features-portal-experience.html">enable search for the experience</a>. By default, the search field in the header will display a single line for text entry. </p>
@@ -614,7 +614,7 @@ for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
   let li = document.createElement('li');
   let ul = document.getElementById('main-nav-cat');
   li.className = 'main-nav-category main-nav-category-home';
-  li.innerHTML = ('<a href="../virtual-event/'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
+  li.innerHTML = ('<a href="'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
 }
     </code></pre>
     <h3>Formatting the search field</h3>
@@ -684,7 +684,7 @@ for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

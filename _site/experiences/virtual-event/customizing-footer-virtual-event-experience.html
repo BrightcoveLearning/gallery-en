@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Working with Static Content</title>
+  <title>Customizing the Footer of a Virtual Event  Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Working with Static Content</li>
+      <li class="breadcrumb-item active" aria-current="page">Customizing the Footer of a Virtual Event  Experience</li>
     </ol>
   </nav>
 </header>
@@ -552,70 +552,35 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Working with Static Content</h1>
-  <summary>In this topic you will learn how to add static content to a Virtual Event Experience.</summary>
+  <h1>Customizing the Footer of a Virtual Event  Experience</h1>
+  <summary>In this topic you will learn how to customize the footer of Virtual Event  Experience pages.</summary>
   <section class="bcls-section">
-    <p>Static text objects are used to inject custom HTML into the template. This sample hero banner was constructed using a combination of text and images and injected into the top of the page.</p>
+    <p>The footer will appear at the bottom of all the pages. The footer is constructed from values in the configuration file.
+      Each footer item in the configuration file will have an associated:</p>
+    <ul>
+      <li>Link URL</li>
+      <li>Label</li>
+      <li>Group</li>
+    </ul>
+    <p>Groups are used to control where the label/link appears in the footer. There are four available groups:</p>
+    <ul>
+      <li> <strong>Group 0</strong> - Used for HTML callouts</li>
+      <li><strong>Group 1</strong> - Used for legal text and copyright information</li>
+      <li><strong>Groups 2 &amp; 3</strong> - Used for lists of links (recommended to use a max of 5 links)</li>
+    </ul>
     <p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-hero-banner.png" /></figure>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/footer-example.png" /></figure>
     </p>
-    <p>Static content can be any HTML and can be injected anywhere in the template. Static content objects are added to the <code translate="No">static_content</code> object in  the configuration file</p>
-    <p>The Virtual Event template has four main areas where videos are displayed as designated in the sample site:</p>
-    <ol>
-      <li>Featured collection</li>
-      <li>Primary collection</li>
-      <li>Secondary collection</li>
-      <li>Tracks</li>
-    </ol>
-    <p>When ordering collections in Gallery, the collections should be ordered in the following manner:</p>
-    <ul>
-      <li>Collection 1 - Featured collection</li>
-      <li>Collection 2 - Secondary collection</li>
-      <li>Collection 3 - Primary collection</li>
-      <li>Collection 4 - Tracks</li>
-    </ul>
-    <p>For the above example, the collections would be created as follows:</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
-    <p>Some additional steps are required to configured the tracks. Tracks are covered in the <a href="#tracks">Configuring event tracks</a> section below. When adding videos to collections, Brightcove recommends using <strong>Custom</strong> criteria and then selecting the field and value to use. Brightcove doesn't recommend using the <strong>Playlist</strong> criteria option. This is especially important if you will be using role-based access control.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
+    <p>The social icons that appear in the footer can be edited/removed by editing the <code translate="No">social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="tracks">Configuring event tracks</h2>
-    <p>When creating the tracks, follow the guidelines below to make sure they appear correctly in the experience:</p>
+    <h2 id="links">Adding links to the footer</h2>
+    <p>Footer links are configured by editing the <code translate="No">footer_links</code> object in the configuration file.</p>
     <ul>
-      <li>The tracks collection should be the fourth collection</li>
-      <li>The collection name will appear in the virtual event template so use a meaningful name
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-ui-sample.png" /></figure>
-      </li>
-      <li>The tracks collection will be a nested collection, no videos will appear in this collection</li>
-      <li>Create child collections under the tracks collection for each track
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-example.png" /></figure>
-      </li>
-      <li>Assign videos to the child collections, remember, do not use playlists when creating the collections</li>
+      <li><code translate="No">link_url</code> - Destination URL</li>
+      <li><code translate="No">label</code> - Label to appear in the footer</li>
+      <li><code translate="No">group</code> - Group the link appears in</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="track-url">Configuring the tracks URL</h2>
-    <p>Once the collections have been created, the configuration file needs to be updated so that the On-Demand Sessions link in the header will direct to the correct URL. The name used for the tracks collection (collection 4) will be used in the URL to access the tracks page. To ensure the URL is set correctly, confirm the following.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Review the configuration file and locate the <code translate="No">breakout_collection</code> object.</li>
-      <li> The <code translate="No">collection</code> parameter contains the URL of the tracks page. For example:<br/>
-        <pre><code translate="No">
-"breakout_collection": {
-    "collection": "/category/videos/tracks",
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "after"
-},
-          </code></pre>
-      </li>
-      <li>The last path in the <code translate="No">collection</code> URL should reflect the name of your tracks collection (collection 4). For example, if your tracks collection (collection 4) is named Sessions, the collection parameter would be updated to:<br/>
-        <pre><code translate="No">
-"collection": "/category/videos/sessions",      
-          </code></pre>
-      </li>
-      <li>To verify the configuration, click the On-Demand Sessions link in the header. The tracks session should appear. Clicking on a track should open the videos in a track. If you see a 404 error, there is a configuration issue.</li>
-    </ol>
-    <p>&nbsp;</p>
   </section>
 </article>
 
@@ -634,7 +599,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

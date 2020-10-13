@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Overview of the Virtual Event Template</title>
+  <title>Virtual Event Styling Examples</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Overview of the Virtual Event Template</li>
+      <li class="breadcrumb-item active" aria-current="page">Virtual Event Styling Examples</li>
     </ol>
   </nav>
 </header>
@@ -552,98 +552,45 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Overview of the Virtual Event Template</h1>
-  <summary>This topic provides a brief overview of the sections provided with the  Virtual Event template. Links to other detailed topics are also provided for each section.</summary>
+  <h1>Virtual Event Styling Examples</h1>
+  <summary>This topic provides some sample code that can be used to customize the Virtual Event template.</summary>
   <section class="bcls-section">
-    <h2 id="header">Header</h2>
-    <p>The header will appear at the top of all the pages. The header is constructed from values in the configuration file.
-      The header is made up of the following components:</p>
-    <ul>
-      <li>Header logo</li>
-      <li>Links</li>
-      <li>Social icons</li>
-      <li>Search</li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-header.png" /></figure>
-    <p>For information on customizing the header, see <a href="/experiences/virtual-event-temp/customizing-header-virtual-event-experience.html">Customizing the Header of a Virtual Event  Experience</a>.</p>
+    <h2 id="social">Social sharing icons</h2>
+    <p>By default, if the <a href="/experiences/portal/customizing-social-settings-portal-experience.html#video_sharing">video sharing settings</a> are enabled for the experience, they will not appear next to videos on the video detail pages. The following CSS will display the social icons on the video detail pages.</p>
+    <pre><code translate="No">
+.share-list {
+  display: block !important;
+}
+.share-list a {
+  display: inline-block !important;
+}
+.share-list li {
+  display: block !important;
+}
+    </code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="hero">Hero banner</h2>
-    <p>The hero banner is created using a static text object in the configuration file. Static text objects are used to inject custom HTML into the template. The hero banner in this example was constructed using a combination of text and images.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-hero-banner.png" /></figure>
-    <p>Static content can be any HTML and can be injected anywhere in the template. For information on working with static content objects, see <a href="/experiences/virtual-event-temp/working-static-content.html">Working with Static Content</a>.</p>
+    <h2 id="background-image">Site background image</h2>
+    <p>The following CSS can be used to add a background image to the site.</p>
+    <pre><code translate="No">
+.main-content {
+   background: #152538 url(https://solutions.brightcove.com/vet/excursion-con/bg.png) no-repeat center;
+}
+    </code></pre>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on the properties that can be used with the <code translate="No">background</code> property, see <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">this link</a>.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="featured">Featured collection</h2>
-    <p>The featured collection is the first video collection that appears in the template. The featured collection is typically used to showcase live videos. Navigation arrows are available so users can navigate through the featured videos. A Q&amp;A widget can also be associated with each video. For information on creating collections and adding videos, see <a href="/experiences/virtual-event-temp/organizing-video-collections.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-featured-collection.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="header">Primary collection</h2>
-    <p>The primary collection is the second video collection that appears in the template. Navigation arrows are available so users can navigate through the  videos. For information on creating collections and adding videos, see <a href="/experiences/virtual-event-temp/organizing-video-collections.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-primary-collection.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="schedule">Schedule</h2>
-    <p>The schedule is typically used to list the schedule of live events. The schedule can display the session name, speakers and date and time for the session. A countdown timer will appear next to the session and a View button will appear when the session is live. For information on configuring the event schedule, see <a href="/experiences/virtual-event-temp/configuring-event-schedule-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-schedule.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="speakers">Speakers</h2>
-    <p>The speakers section can be used to highlight the featured speakers. For each speaker you can display the:</p>
-    <ul>
-      <li>Speaker image</li>
-      <li>Name</li>
-      <li>Short bio</li>
-      <li>Link to an external speaker page</li>
-    </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-speakers.png" /></figure>
-    <p>For information on configuring the speaker section, see <a href="/experiences/virtual-event-temp/customizing-speakers-virtual-event-experience.html">Customizing the Event Speakers</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="secondary">Secondary collection</h2>
-    <p>The secondary collection is the third video collection that appears in the template. Navigation arrows are available so users can navigate through the  videos. For information on creating collections and adding videos, see <a href="/experiences/virtual-event-temp/organizing-video-collections.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-secondary-collection.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="tracks">Tracks</h2>
-    <p>The tracks area is a series of collections that is typically used to display VOD videos. Clicking on a track will display the videos in that track. For information on creating collections and adding videos, see <a href="/experiences/virtual-event-temp/organizing-video-collections.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-tracks.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="static">Static content</h2>
-    <p>The learn more grid is created using a static text object in the configuration file. Static text objects are used to inject custom HTML into the template.</p>
-    <p>Static content can be any HTML and can be injected anywhere in the template. For information on working with static content objects, see <a href="/experiences/virtual-event-temp/working-static-content.html">Working with Static Content</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-static-content.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sponsors">Sponsors</h2>
-    <p>The sponsors section can be used to highlight the event sponsors. For each sponsor you can display the:</p>
-    <ul>
-      <li>Sponsor logo</li>
-      <li>Link to an external speaker page</li>
-    </ul>
-    <p>For information on customizing the header, see <a href="/experiences/virtual-event-temp/customizing-header-virtual-event-experience.html">Customizing the Header of a Virtual Event  Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-sponsors.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="footer">Footer</h2>
-    <p>The footer will appear at the bottom of all the pages. The footer is constructed from values in the configuration file.
-      The footer is made up of the following components:</p>
-    <ul>
-      <li>Primary callout area</li>
-      <li>Legal text and copyright</li>
-      <li>Two columns of links</li>
-      <li>Social icons</li>
-    </ul>
-    <figure class="bcls-figure">
-      <p><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-footer.png" /></p>
-      <p>For information on customizing the footer, see <a href="/experiences/virtual-event-temp/customizing-footer-virtual-event-experience.html">Customizing the Footer of a Virtual Event  Experience</a>.</p>
-    </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="css">Template specific styling</h2>
-    <p>Additional styling to the Virtual Event template can be done by using custom CSS and JavaScript. For information, see the <a href="/experiences/virtual-event-temp/virtual-event-styling-examples.html">Virtual Event Styling Examples</a> topic.</p>
+    <h2 id="background-video">Hero background video</h2>
+    <p>The following static content object can be added to the  configuration file to add a background video to the site. This should replace the existing hero image in the configuration file.</p>
+    <pre><code translate="No">
+"static_content": [{
+      "insert_target": ".bcg-fixed-width-container",
+      "insert_mode": "prepend",
+      "content": "&lt;div class='video-bg'&gt;&lt;video loop muted autoplay class='video-bg__video'&gt;&lt;source src='https://solutions.brightcove.com/bcls/gallery/loop.mp4' type='video/mp4'&gt;&lt;/video&gt;&lt;/div&gt; &lt;div class='bc-hero-section' style='padding-bottom:65px;position: relative;'&gt;&lt;div id='hero-logo'&gt;&lt;/div&gt;&lt;/div&gt;",
+      "require_roles": [],
+      "omit_roles": []
+    }
+    </code></pre>
   </section>
 </article>
 

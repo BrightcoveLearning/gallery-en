@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Customizing the Event Speakers</title>
+  <title>Adding the Configuration File to the Template</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Customizing the Event Speakers</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding the Configuration File to the Template</li>
     </ol>
   </nav>
 </header>
@@ -552,20 +552,30 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Customizing the Event Speakers</h1>
-  <summary>In this topic you will learn how to customize the event speakers that appear on the Virtual Event  Experience homepage.</summary>
+  <h1>Adding the Configuration File to the Experience</h1>
+  <summary>In this topic you will learn how to add the configuration file to a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>Speaker images and a short bio can be added to the Virtual Event homepage. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speakers-example.png" /></figure>
-    <p>The speaker information is customized by editing the <code translate="No">speakers</code> object in the configuration file.</p>
-    <ul>
-      <li><code translate="No">name</code> - Speaker name</li>
-      <li><code translate="No">description</code> - Speaker information that displays below their image. This is limited to approximately 3 lines of 15 words.</li>
-      <li><code translate="No">image_url</code> - Speaker image. Recommend a max width of 200px. Images will not be resized</li>
-      <li><code translate="No">link_url</code> - (optional) Destination URL for the image (may link to speaker LinkedIn page for example)</li>
-    </ul>
-    <p>By default, the template CSS configures the  speaker images  with a <code translate="No">border-radius</code> of 50% which will make the images circular.</p>
-    <p>The <code translate="No">speakers</code> object in the configuration file also has parameters to control where in the homepage the speaker information is displayed. For information on positioning the speakers section, see <a href="/experiences/virtual-event-temp/positioning-content-homepage.html">Positioning Content on the Home Page</a>. </p>
+    <p>The Virtual Event  Experience requires a configuration file be included with the site. The configuration file includes  site settings, layout options, event schedule, speakers and other content that will be displayed. After creating a new Virtual Event Experience, adding the configuration file is the first thing that should be done </p>
+    <p>To add the configuration file to a Virtual Event Experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Go to the following link:<br/>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/config.txt</code></li>
+      <li>Copy the content to the clipboard.</li>
+      <li>Open the Gallery module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.</li>
+      <li>Paste the configuration file into the <strong>Custom Header HTML</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/config-json.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="policy-key">Updating the <code>policyKey</code> and <code>assetBaseUrl</code> values</h2>
+    <p>In order for the countdown timer to display on simulive videos, the <code>policyKey</code> value in the configuration file needs to be updated with a search-enabled policy key. <strong>The value that is supplied will not work for your account.</strong> Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code translate="No">policyKey</code> value in the configuration file.</p>
+    <p>The <code>assetBaseUrl</code> value path is used to load files used by the template. This can be left alone in most cases unless a high degree of customization is being performed. The path value that is there should be removed.</p>
+    <p>After the <code>policyKey</code> and <code>assetBaseUrl</code> values have been updated in the configuration file, republish the experience.</p>
   </section>
 </article>
 
@@ -584,7 +594,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 06 Oct 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

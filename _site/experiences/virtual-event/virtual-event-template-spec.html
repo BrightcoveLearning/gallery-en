@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Using Role-Based Access Control</title>
+  <title>Virtual Event Template Specifications</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Using Role-Based Access Control</li>
+      <li class="breadcrumb-item active" aria-current="page">Virtual Event Template Specifications</li>
     </ol>
   </nav>
 </header>
@@ -551,169 +551,77 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
+  <h1>Virtual Event Template Specifications</h1>
+  <summary>This topic provides an overview of the content requirements for the Virtual Event template.</summary>
   <section class="bcls-section">
-    <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
-    <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
+    <h2 id="videos">Video and Audio</h2>
+    <p>Video and audio recommendations are listed below.</p>
+    <h3 class="BCL_subsectionTitle">Video</h3>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td  style="width:25%"><strong>Format</strong></td>
+          <td  style="width:75%">MP4</td>
+        </tr>
+        <tr>
+          <td ><strong>Codec</strong></td>
+          <td >H.264, H.265</td>
+        </tr>
+        <tr>
+          <td ><strong>Bitrate</strong></td>
+          <td >2x the bitrate of the highest rendition</td>
+        </tr>
+        <tr>
+          <td ><strong>Frame rate</strong></td>
+          <td >Constant, usually between 15 - 60 frames per second</td>
+        </tr>
+        <tr>
+          <td ><strong>Aspect ratio</strong></td>
+          <td >Your video aspect ratio will be preserved. An aspect ratio of 16:9 is common.</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="BCL_subsectionTitle">Audio</h3>
+    <table class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td  style="width:25%"><strong>Codec</strong></td>
+          <td  style="width:75%">AAC (Advanced Audio Codec)</td>
+        </tr>
+        <tr>
+          <td ><strong>Bit rate</strong></td>
+          <td >Constant, 128 kbps</td>
+        </tr>
+        <tr>
+          <td ><strong>Channels</strong></td>
+          <td >Stereo</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>For recommendations on best practices for recording, exporting, uploading and publishing your videos to ensure optimum playback, see <a href="https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html">Best Practices: The Video Creating, Transcoding, and Uploading Workflow</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="creating">Creating a role-based access configuration file</h2>
-    <p>The role-based access control is configured using a separate role-based access configuration file. The format of the file is as follows:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {}
-}   
-   </code></pre>
-    <p>The property values in the file control how the access is applied to the experience.</p>
-    <ul>
-      <li><strong>advancedRoleFilter</strong> - When set to <strong>true</strong>, enables role-based access control</li>
-      <li><strong>defaultIncludeTags</strong> - The tag(s) that must be on all videos for them to be shown  in the Virtual Event Experience. This allows you to only display only a subset of videos in the account in the Virtual Event Experience.</li>
-      <li><strong>defaultIgnoreTags</strong> - Videos with these tag(s) will not be displayed to users who are not part of a role</li>
-      <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
-      <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
-      <li><strong>ignoreByRole</strong> - Augments the <code translate="No">defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
-      <li><strong>includeByRole</strong> - Users with assigned role will only see videos with specified tag</li>
-      <li><strong>allowByRole</strong> - Augments the <code translate="No">defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code translate="No">defaultIncludeTags</code> as well as the tag(s) listed here.</li>
-    </ul>
-    Some sample configuration files are provided in the following sections.</section>
-  <section class="bcls-section">
-    <h2 id="single-premium">Single premium role</h2>
-    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {
-          "premium_user": ["premium"]
-     }
-}   
-   </code></pre>
+    <h2 id="images">Images</h2>
+    <p> Various images are used throughout the Virtual Event template. Image recommendations are listed below.</p>
+    <h3>Background Image</h3>
+    <p>The image size depends on the breakpoints the customer is trying to support, more often than not 1920x1080 works, but the image should be optimized so it's not gigantic for best performance. </p>
+    <h3>Header Logo</h3>
+    <p>The header logo image will be proportionally scaled down to 178px wide.</p>
+    <h3>Agenda</h3>
+    <p>Default image size is 320px x 180px. Images will be cropped to this size.</p>
+    <h3>Speakers</h3>
+    <p>Speaker images should have a max width of 200px. Images will not be resized.  By default, the template CSS configures the speaker images with a border-radius of 50% which will make the images circular. The speaker bio displayed below the speaker is limited to approximately 3 lines of 15 words.</p>
+    <h3>Sponsors</h3>
+    <p>The sponsor images will be resized to 100px wide.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="tiered-content">Tiered content access</h2>
-    <p>Similar to the first scenario, but with multiple tiers where each tier gets access to more content and can still see all content for the lower tiers. User roles are “tier_1”, “tier_2”, and “tier_3” while users without one of these roles will not see any tiered content. Tags are “tier1”, “tier2”, and “tier3” respectively:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["tier1", "tier2", "tier3"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {
-          "tier_1": ["tier1"],
-          "tier_2": ["tier1", "tier2"],
-          "tier_3": ["tier1", "tier2", "tier3"]
-     } 
-} 
-      </code></pre>
+    <h2 id="fonts">Fonts</h2>
+    <p>The template is optimized to work with the <strong>Roboto Condensed</strong> font.  This font can be assigned using the <strong>Style</strong> menu inside of the Gallery interface. Other fonts can be used but may require changes to CSS files. For information about using custom fonts, see <a href="/experiences/portal/using-custom-fonts-portal-experience.html">Using Custom Fonts in a Portal Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="split-content">Split content access</h2>
-    <p>In this example, the two user roles only see videos tagged specifically for their role. A user without a role won’t see content for either of the tags:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["tag1", "tag2"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {
-          "role1": ["tag1"],
-          "role2": ["tag2"]
-     },
-     "allowByRole": {}
-}    
-    </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="language">Segmentation by language</h2>
-    <p>Using the split-based approach, content can be served based on a SAML attribute containing the user’s language:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": [],
-     "roleAttribute": "language",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {
-          "en": ["english"],
-          "es": ["spanish"],
-          "jp": ["japanese"]
-     },
-     "allowByRole": {}
-}     
-      </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="merged-rules">Merged rules example</h2>
-    <p>This contrived example illustrates how the different options can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content plus premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {
-          "premium_user": ["promotional"]
-     },
-     "includeByRole": { "expired_user": ["promotional"]
-     },
-     "allowByRole": {
-          "trial_user": ["promotional"],
-          "premium_user": ["premium"]
-     }
-}
-      </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="assign">Assigning a role-based access profile</h2>
-    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
-    <ol class="bcls-tasklist">
-      <li>Copy the access control profile to the clipboard.</li>
-      <li>Open the Gallery module.</li>
-      <li>Edit the experience.</li>
-      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</li>
-      <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
-      </li>
-      <li>Click<strong> Save</strong>.</li>
-    </ol>
-    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="attributes">Exposing SAML attributes</h2>
-    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
-    <ol class="bcls-tasklist">
-      <li>Open the Gallery module.</li>
-      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
-      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
-      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
-      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
-      </li>
-      <li>Click<strong> Save</strong>.</li>
-    </ol>
+    <h2 id="schedule">Schedule</h2>
+    <p>The schedule is typically used to list the schedule of live events. There is no limit to the number of items that can appear in the schedule. The schedule can display the session name, speakers and date and time for the session. A countdown timer will appear next to the session and a View button will appear when the session is live. The session description is not displayed on the page itself but can be displayed using custom JavaScript. For information on configuring the event schedule, see <a href="/experiences/virtual-event/configuring-event-schedule-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
   </section>
 </article>
 
@@ -732,7 +640,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Sep 2020
+  Page last updated on 13 Oct 2020
 </div>
 
 

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Positioning Content on the Home Page</title>
+  <title>Using Simulated Live Videos</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Positioning Content on the Home Page</li>
+      <li class="breadcrumb-item active" aria-current="page">Using Simulated Live Videos</li>
     </ol>
   </nav>
 </header>
@@ -551,56 +551,94 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Using Simulated Live Videos</h1>
 <article class="bcls-article">
-  <h1>Positioning Content on the Home Page</h1>
-  <summary>In this topic you will learn how to position objects  that appear on   the Virtual Event  Experience homepage.</summary>
+  <summary>In this topic you will learn how to configure VOD videos so they appear as if they are live.</summary>
   <section class="bcls-section">
-    <p>Several objects in the configuration file have parameters which allow you to specify where the object should appear on the page. For example, static content, speakers, tracks and sponsors all have the ability to be repositioned on the page. Objects that can be positioned will have the following attributes in the configuration file:</p>
-    <figure class="bcls-figure"></figure>
+    <p><strong>Simulive</strong> is short for <em>simulated live</em> and is a way in which VOD content can be shown to end users as if it is live. Simulive content is appealing to event organizers as it allows for pre-recording of content and extensive testing prior to go-live. It reduces risks that may arise from potential day-of failures for traditional live events which occur due to encoder issues or other  logistics. Simulive videos will display a countdown timer with the video to indicate when it will be live. The example below is a simulive video in the featured collection.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-featured-countdown.png" /></figure>
+    <p>For videos in the primary and secondary collections, the countdown timer will appear on the card for the video.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-primary-countdown.png" /></figure>
+    <p>To use simulive content in a Virtual Event Experience , the following must be done:</p>
     <ul>
-      <li><code translate="No">insert_target</code> - A CSS selector (a simple class or ID) that will be used as the starting point for where the given object is rendered</li>
-      <li><code translate="No">insert_mode</code> - How the content is inserted
-        <ul>
-          <li><code translate="No">after</code></li>
-          <li><code translate="No">before</code></li>
-          <li><code translate="No">append</code></li>
-          <li><code translate="No">prepend</code></li>
-        </ul>
+      <li>Configure the simulive player plugin</li>
+      <li>Associate the player with the experience</li>
+      <li>Create a simulive custom field</li>
+      <li>Configure simulive video properties</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: The text that displays as part of the countdown timer is in the <code translate="No">labels</code> object in the configuration file and can easily be customized or localized.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="plugin">Configuring the simulive player plugin</h2>
+    <p>The Simulive player plugin should be configured for the player used in your Virtual Event Experience.</p>
+    <ol class="bcls-tasklist">
+      <li>Click <strong>Players</strong> in the navigation header to open the Players module.</li>
+      <li>Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <strong>New Player</strong>, name the player and then click <strong>Save</strong>.</li>
+      <li>Click the link for the player you want to configure.</li>
+      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+      <li>Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
+      <li>For the <strong> Plugin Name</strong> enter <code translate="No">simulivePlugin</code>.</li>
+      <li>For the <strong>JavaScript URL</strong> enter:<br/>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.js</code></li>
+      <li>For the <strong>CSS URL</strong> enter:<br/>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/videojs-simulive-plugin.css</code></li>
+      <li>Click <strong>Save</strong> to save the changes.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom_player">Configuring a custom player</h2>
+    <p>To configure the Virtual Event Experience to use the custom player, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong> in the left navigation.
+        <figure class="bcls-figure"></figure>
       </li>
-    </ul>
+      <li>Select the <strong>Use site-specific player</strong> option and select the player configured with the Simulive plugin.</li>
+      <li>Click <strong>Save</strong>.
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="target">Determining the target</h2>
-    <p>The <code translate="No">insert_target</code> parameter expects a CSS selector (using a simple class or ID format). The element matched by this selector will be used as the starting point for where the given object is rendered. The best way to determine the CSS selector or ID to use is to browse to the virtual event homepage and then use the browser developer tools to inspect the elements in the page. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/objects-div-structure.png" /></figure>
-    <p>You will notice that the main sections of the homepage are organized using <code translate="No">&lt;div&gt;</code> tags.</p>
+    <h2 id="custom_field">Creating a simulive custom field</h2>
+    <p>A custom field is used to store the date and time a video will be available. To create the simulive custom field, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li>Click <strong>Add Custom Field</strong>.</li>
+      <li>Create a new custom field using the following values.
+        <ul>
+          <li><strong>Display Name</strong> - Simulive Start</li>
+          <li><strong>Internal Name</strong> - simulive_start</li>
+          <li><strong>Type</strong> - Text</li>
+          <li><strong>Description</strong> - Expected format is is YYYY-MM-DDTHH:MM:SS-HH:MM</li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-custom-field.png" /></figure>
+      </li>
+      <li>Click <strong>Save Field</strong>.</li>
+    </ol>
+    For information on creating custom fields, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</section>
+  <section class="bcls-section">
+    <h2 id="assign_fields">Configuring simulive video properties</h2>
+    <p>The custom field <strong>Simulive Start</strong> will hold the date and time a video will be available. The video will not be viewable until the Simulive Start time has been reached. Simulive videos must also be tagged <strong>simulive</strong>. To configure a video as a simulive video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Media module.</li>
+      <li>Click on a video title to open the properties.</li>
+      <li>Locate the <strong>VIDEO PROPERTIES</strong> section and click <strong>Edit</strong>.</li>
+      <li>Tag the video with <strong>simulive</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-tag.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
+      <li>Enter a date and time value for the <strong>Simulive Start</strong> field.
+        The correct format of the field is <code translate="No">YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code translate="No">YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code translate="No">HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code translate="No">-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-simulive-start.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="mode">Choosing the insert mode</h2>
-    <p>After determining where in the hierarchy to insert the object, the <code translate="No">insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
-    <ul>
-      <li><code translate="No">after</code> - Puts the object after the specified <code translate="No">div</code> at the same level</li>
-      <li><code translate="No">before</code> - Puts the object before the specified <code translate="No">div</code> at the same level</li>
-      <li><code translate="No">append</code> - Puts the object inside the specified <code translate="No">div</code> as the last child</li>
-      <li><code translate="No">prepend</code> - Puts the object inside the specified <code translate="No">div</code> as the first child</li>
-    </ul>
-    <p>The diagram below demonstrates the effect of the various <code translate="No">insert_mode</code> values.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example-graphic.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sample">Object positioning example</h2>
-    <p>The following code samples demonstrates how to use a static content object to insert a title above the secondary collection.</p>
-    <pre><code translate="No">
-{
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "prepend",
-    "content": "&lt;h2 class='bc-on-demand-section-title'&gt;ON-DEMAND SESIONS&lt;/h2&gt;",
-    "require_roles": [],
-    "omit_roles": []
-}
-        </code></pre>
-    <p>Using the browser tools, you can see the <code translate="No">h2</code> was inserted as the first element inside the <code translate="No">bc-on-demand-section div</code>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example.png" /></figure>
+    <h2 id="policy-key">Updating the policy key value</h2>
+    <p>In order for the countdown timer to display on simulive videos, the policy key value in the configuration file needs to be updated with a search-enabled policy key. Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code translate="No">policyKey</code> value in the configuration file and republish the experience.</p>
   </section>
 </article>
 
@@ -619,7 +657,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 28 Sep 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

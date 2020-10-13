@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Integrating Pigeonhole with a Virtual Event Experience</title>
+  <title>Using Role-Based Access Control</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -120,9 +120,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event-temp/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Integrating Pigeonhole with a Virtual Event Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Using Role-Based Access Control</li>
     </ol>
   </nav>
 </header>
@@ -551,76 +551,168 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
+<h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
+  <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add live Q&amp;A to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  live event and then sessions can be created for each video you want to add Q&amp;A to. Once the sessions are created, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole Q&amp;A pod to display next to the video player for chosen videos.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
+    <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
+    <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="pigeonhole">Creating a new Pigeonhole event</h2>
-    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
+    <h2 id="creating">Creating a role-based access configuration file</h2>
+    <p>The role-based access control is configured using a separate role-based access configuration file. The format of the file is as follows:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {}
+}   
+   </code></pre>
+    <p>The property values in the file control how the access is applied to the experience.</p>
+    <ul>
+      <li><strong>advancedRoleFilter</strong> - When set to <strong>true</strong>, enables role-based access control</li>
+      <li><strong>defaultIncludeTags</strong> - The tag(s) that must be on all videos for them to be shown  in the Virtual Event Experience. This allows you to only display only a subset of videos in the account in the Virtual Event Experience.</li>
+      <li><strong>defaultIgnoreTags</strong> - Videos with these tag(s) will not be displayed to users who are not part of a role</li>
+      <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
+      <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
+      <li><strong>ignoreByRole</strong> - Augments the <code translate="No">defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
+      <li><strong>includeByRole</strong> - Users with assigned role will only see videos with specified tag</li>
+      <li><strong>allowByRole</strong> - Augments the <code translate="No">defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code translate="No">defaultIncludeTags</code> as well as the tag(s) listed here.</li>
+    </ul>
+    Some sample configuration files are provided in the following sections.</section>
+  <section class="bcls-section">
+    <h2 id="single-premium">Single premium role</h2>
+    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {
+          "premium_user": ["premium"]
+     }
+}   
+   </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="tiered-content">Tiered content access</h2>
+    <p>Similar to the first scenario, but with multiple tiers where each tier gets access to more content and can still see all content for the lower tiers. User roles are “tier_1”, “tier_2”, and “tier_3” while users without one of these roles will not see any tiered content. Tags are “tier1”, “tier2”, and “tier3” respectively:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["tier1", "tier2", "tier3"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {},
+     "allowByRole": {
+          "tier_1": ["tier1"],
+          "tier_2": ["tier1", "tier2"],
+          "tier_3": ["tier1", "tier2", "tier3"]
+     } 
+} 
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="split-content">Split content access</h2>
+    <p>In this example, the two user roles only see videos tagged specifically for their role. A user without a role won’t see content for either of the tags:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["tag1", "tag2"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {
+          "role1": ["tag1"],
+          "role2": ["tag2"]
+     },
+     "allowByRole": {}
+}    
+    </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="language">Segmentation by language</h2>
+    <p>Using the split-based approach, content can be served based on a SAML attribute containing the user’s language:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": [],
+     "roleAttribute": "language",
+     "valueDelimiter": ",",
+     "ignoreByRole": {},
+     "includeByRole": {
+          "en": ["english"],
+          "es": ["spanish"],
+          "jp": ["japanese"]
+     },
+     "allowByRole": {}
+}     
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="merged-rules">Merged rules example</h2>
+    <p>This contrived example illustrates how the different options can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content plus premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
+    <pre><code translate="No">
+{
+     "advancedRoleFilter": "true",
+     "defaultIncludeTags": ["virtual_event"],
+     "defaultIgnoreTags": ["premium"],
+     "roleAttribute": "role",
+     "valueDelimiter": ",",
+     "ignoreByRole": {
+          "premium_user": ["promotional"]
+     },
+     "includeByRole": { "expired_user": ["promotional"]
+     },
+     "allowByRole": {
+          "trial_user": ["promotional"],
+          "premium_user": ["premium"]
+     }
+}
+      </code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign">Assigning a role-based access profile</h2>
+    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
     <ol class="bcls-tasklist">
-      <li>Log in to your Pigeonhole account.</li>
-      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
+      <li>Copy the access control profile to the clipboard.</li>
+      <li>Open the Gallery module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</li>
+      <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
       </li>
-      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
-      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
-      </li>
-      <li>Click <strong>Continue</strong>.</li>
-      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
-      </li>
-      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong>.</li>
-      <li>Enter a <strong>Session name</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
-      </li>
-      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
-      <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
-      </li>
-      <li>Click <strong>More settings</strong> in the left navigation.</li>
-      <li>Click the <strong>Integrations</strong> tab at the top of the page.</li>
-      <li>Scroll down to the <strong>Others</strong> section.</li>
-      <li>Locate <strong>Brightcove Gallery Embed</strong> and click <strong>Integrate</strong>.</li>
-      <li><strong>(Optional)</strong> If your Gallery Experience will be secured using SSO, select <strong>Allow automatic attendee sign-in using SAML attributes</strong>. This will retrieve the user’s name and email address and automatically sign them in on Pigeonhole Live when the Pigeonhole Live widget loads. If this is not checked, users will appear as anonymous inside Pigeonhole. Click <strong>Save</strong>.</li>
-      <li>On the Brightcove Gallery Embed dialog, select your Q&amp;A session from the dropdown list.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-embed-code-dialog.png" /></figure>
-      </li>
-      <li>Click <strong>Get embed code</strong>.</li>
-      <li>Click on the embed code and copy it to the clipboard. This is the code that will be embedded on the Gallery experience. </li>
-      <li>Click <strong>Close</strong>.</li>
+      <li>Click<strong> Save</strong>.</li>
     </ol>
+    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="custom_field">Creating a custom field</h2>
-    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video (if any), a custom field is used. To create a custom field, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Log in to Video Cloud Studio.</li>
-      <li><strong></strong>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
-      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
-      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
-      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
-      <li><strong>Save</strong> the custom field.</li>
-    </ol>
-    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="qa">Adding Q&amp;A to a video</h2>
-    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the Media module.</li>
-      <li>Click on a video to open the video properties.</li>
-      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
-      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
+    <h2 id="attributes">Exposing SAML attributes</h2>
+    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the Gallery module.</li>
+      <li>Click the <strong>Settings</strong> link on the Gallery home page.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
+      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
+      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
+      <li>Click<strong> Save</strong>.</li>
     </ol>
   </section>
 </article>
@@ -640,7 +732,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 06 Oct 2020
+  Page last updated on 16 Sep 2020
 </div>
 
 

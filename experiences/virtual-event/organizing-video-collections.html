@@ -1,25 +1,25 @@
 ---
-title: Working with Static Content
+title: Organizing Video Collections in a Virtual Event Experience
 parent: Virtual Event
 grandparent: Experiences
 layout: staging
 ---
 <article class="bcls-article">
-  <h1>Working with Static Content</h1>
-  <summary>In this topic you will learn how to add static content to a Virtual Event Experience.</summary>
+  <h1>Organizing Video Collections in a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to organize video collections in a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>Static text objects are used to inject custom HTML into the template. This sample hero banner was constructed using a combination of text and images and injected into the top of the page.</p>
-    <p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-hero-banner.png" /></figure>
-    </p>
-    <p>Static content can be any HTML and can be injected anywhere in the template. Static content objects are added to the <code translate="No">static_content</code> object in  the configuration file</p>
+    <h2 id="layout">Template collection organization</h2>
+    <p>Using the Gallery Collection Editor, you can select the videos to display on a Virtual Event Experience. Like other portal-type experiences, videos are organized into collections. The order of  the collections in the Gallery Collection Editor will control how they appear on the virtual event homepage.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on creating collections and adding  videos to a collection, see <a href="/experiences/portal/adding-videos-portal-experience.html">Adding Videos to a Portal Experience</a>.</aside>
     <p>The Virtual Event template has four main areas where videos are displayed as designated in the sample site:</p>
     <ol>
-      <li>Featured collection</li>
-      <li>Primary collection</li>
-      <li>Secondary collection</li>
-      <li>Tracks</li>
+      <li><strong>Featured collection</strong> - Typically used to feature the live or <a href="/experiences/virtual-event/using-simulated-live-videos.html">simulive content</a> that will be displayed throughout the event. This should ideally be ordered based on its go-live time from earliest to latest for the best experience.</li>
+      <li><strong>Primary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
+      <li><strong>Secondary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
+      <li><strong>Tracks</strong> - Typically used for VOD content</li>
     </ol>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-layout-example.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: To insert a title above the primary/secondary collection, add a static content object to the configuration file. For information, see <a href="/experiences/virtual-event/working-static-content.html">Working with Static Content</a>.</aside>
     <p>When ordering collections in Gallery, the collections should be ordered in the following manner:</p>
     <ul>
       <li>Collection 1 - Featured collection</li>
@@ -29,9 +29,13 @@ layout: staging
     </ul>
     <p>For the above example, the collections would be created as follows:</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
-    <p>Some additional steps are required to configured the tracks. Tracks are covered in the <a href="#tracks">Configuring event tracks</a> section below. When adding videos to collections, Brightcove recommends using <strong>Custom</strong> criteria and then selecting the field and value to use. Brightcove doesn't recommend using the <strong>Playlist</strong> criteria option. This is especially important if you will be using role-based access control.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: The Virtual Event template supports a maximum of 24 collections.</aside>
+    <p>Some additional steps are required to configured the tracks. Tracks are covered in the <a href="#tracks">Configuring event tracks</a> section below. <strong>Playlist</strong> or <strong>Custom</strong> based collections can be used but if the event will use <a href="/experiences/virtual-event/using-role-based-access-control.html">role-based access control</a> to prevent users of certain roles from seeing some content, Playlists should ​not​ be used as playlists don’t support role-based access control filtering.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
+    </p>
   </section>
+  <section class="bcls-section"> </section>
   <section class="bcls-section">
     <h2 id="tracks">Configuring event tracks</h2>
     <p>When creating the tracks, follow the guidelines below to make sure they appear correctly in the experience:</p>
