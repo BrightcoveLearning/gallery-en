@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Overview of the Virtual Event Template</title>
+  <title>Customizing the Appearance and Behavior of a Virtual Event Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -128,9 +128,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Portal</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Overview of the Virtual Event Template</li>
+      <li class="breadcrumb-item active" aria-current="page">Customizing the Appearance and Behavior of a Virtual Event Experience</li>
     </ol>
   </nav>
 </header>
@@ -560,101 +560,80 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Overview of the Virtual Event Template</h1>
-  <summary>This topic provides a brief overview of the sections provided with the  Virtual Event template. Links to other detailed topics are also provided for each section.</summary>
+  <h1>Customizing the Appearance and Behavior of a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to customize the appearance and behavior of a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <h2 id="header">Header</h2>
-    <p>The header will appear at the top of all the pages. The header is constructed from values in the configuration file.
-      The header is made up of the following components:</p>
+    <p>To configure the Appearance and Behavior settings, edit the experience and click <strong>APPEARANCE AND BEHAVIOR</strong> in the left navigation. The following settings are available:</p>
     <ul>
-      <li>Header logo</li>
-      <li>Links</li>
-      <li>Social icons</li>
-      <li>Search</li>
+      <li><a href="#header_footer">Header and Footer</a> - Configure a custom header/footer for the experience</li>
+      <li><a href="#custom">Custom</a> - Use custom CSS and JavaScript files</li>
+      <li><a href="#background">Background Image and Video</a> - Configure a background image or video</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-header.png" /></figure>
-    <p>For information on customizing the header, see <a href="/experiences/virtual-event/customizing-header-virtual-event-experience.html">Customizing the Header of a Virtual Event  Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="hero">Hero banner</h2>
-    <p>The hero banner is created using a static text object in the configuration file. Static text objects are used to inject custom HTML into the template. The hero banner in this example was constructed using a combination of text and images.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-hero-banner.png" /></figure>
-    <p>Static content can be any HTML and can be injected anywhere in the template. For information on working with static content objects, see <a href="/experiences/virtual-event/working-static-content.html">Working with Static Content</a>.</p>
+    <h2 id="header_footer">Configuring custom header/footer HTML</h2>
+    <p>Gallery provides the option of using a custom header and/or footer for the site. This provides the ability to customize a Portal Experience so it more closely matches the look and feel of your corporate sites. A custom header/footer can also be configured at the account level. For information on configuring a custom header/footer at the account level, see <a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a>.</p>
+    <p>To configure a Portal Experience to use a custom header or footer, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Design the header/footer to use for your site. The header/footer can contain any valid HTML, JavaScript or CSS code.</li>
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-header-footer.png" /></figure>
+      </li>
+      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
+      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
+      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
+      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <div class="BCL-subsection">
+      <h3>Notes on using custom headers and footers</h3>
+      <ul>
+        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
+        <li>There is no explicit character limit on the header and footer HTML</li>
+        <li>External CSS and JavaScript files are supported</li>
+        <li>The code should follow responsive design principles so it will scale properly across devices</li>
+        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
+      </ul>
+    </div>
   </section>
   <section class="bcls-section">
-    <h2 id="featured">Featured collection</h2>
-    <p>The featured collection is the first video collection that appears in the template. The featured collection is typically used to showcase live videos. Navigation arrows are available so users can navigate through the featured videos. A Q&amp;A widget can also be associated with each video. For information on creating collections and adding videos, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-featured-collection.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The Featured collection supports a maximum of 24 videos.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="header">Primary collection</h2>
-    <p>The primary collection is the second video collection that appears in the template. Navigation arrows are available so users can navigate through the  videos. For information on creating collections and adding videos, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-primary-collection.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The Primary collection supports a maximum of 24 videos.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="schedule">Schedule</h2>
-    <p>The schedule is typically used to list the schedule of live events. The schedule can display the session name, speakers and date and time for the session. A countdown timer will appear next to the session and a View button will appear when the session is live. For information on configuring the event schedule, see <a href="/experiences/virtual-event/configuring-event-schedule-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-schedule.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="speakers">Speakers</h2>
-    <p>The speakers section can be used to highlight the featured speakers. For each speaker you can display the:</p>
+    <h2 id="custom">Configuring custom settings</h2>
+    <p>The custom settings provide the ability to customize the look and feel of the site. To configure the custom settings, click <strong>APPEARANCE AND BEHAVIOR &gt; Custom</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-custom-settings.png" /></figure>
+    <p>The following settings are available:</p>
     <ul>
-      <li>Speaker image</li>
-      <li>Name</li>
-      <li>Short bio</li>
-      <li>Link to an external speaker page</li>
+      <li><strong>Custom CSS URL</strong> - Used to specify the location of a custom .css file to customize the style. Click the <strong>View CSS</strong> link to view the CSS file currently being used to style the site.</li>
+      <li><strong>Custom JavaScript URL</strong> - Used to specify the location of a custom .js file to customize the style and/or behavior of the site.</li>
+      <li><strong>Custom Favicon URL</strong> - Used to specify the location of the favicon to use for the site. Browsers that provide favicon support typically display the favicon on page's browser tab and next to the page's name in a list of bookmarks.</li>
+      <li><strong>Custom Mobile App Icon</strong> - Used to select an image that will be used as a home screen icon when the site is saved to your device home screen. Brightcove recommends that you upload a high resolution (we recommend 1024 px x 1024 px), square image and Gallery will scale the image and use a version best suited to your device.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-app-icon.png" /></figure>
+      </li>
+      <li><strong>Custom Response Headers</strong> - Enter HTTP headers which will be sent in response to requests to the portal. For example, headers might be added to add a Content Security Policy (CSP) or HTTP-Strict-Transport-Security (HSTS).</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-speakers.png" /></figure>
-    <p>For information on configuring the speaker section, see <a href="/experiences/virtual-event/customizing-speakers-virtual-event-experience.html">Customizing the Event Speakers</a>.</p>
   </section>
-  <section class="bcls-section">
-    <h2 id="secondary">Secondary collection</h2>
-    <p>The secondary collection is the third video collection that appears in the template. Navigation arrows are available so users can navigate through the  videos. For information on creating collections and adding videos, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-secondary-collection.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The Secondary collection supports a maximum of 24 videos.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="tracks">Tracks</h2>
-    <p>The tracks area is a series of collections that is typically used to display VOD videos. Clicking on a track will display the videos in that track. For information on creating collections and adding videos, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-tracks.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="static">Static content</h2>
-    <p>The learn more grid is created using a static text object in the configuration file. Static text objects are used to inject custom HTML into the template.</p>
-    <p>Static content can be any HTML and can be injected anywhere in the template. For information on working with static content objects, see <a href="/experiences/virtual-event/working-static-content.html">Working with Static Content</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-static-content.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sponsors">Sponsors</h2>
-    <p>The sponsors section can be used to highlight the event sponsors. For each sponsor you can display the:</p>
-    <ul>
-      <li>Sponsor logo</li>
-      <li>Link to an external speaker page</li>
-    </ul>
-    <p>For information on customizing the header, see <a href="/experiences/virtual-event/customizing-header-virtual-event-experience.html">Customizing the Header of a Virtual Event  Experience</a>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-sponsors.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="footer">Footer</h2>
-    <p>The footer will appear at the bottom of all the pages. The footer is constructed from values in the configuration file.
-      The footer is made up of the following components:</p>
-    <ul>
-      <li>Primary callout area</li>
-      <li>Legal text and copyright</li>
-      <li>Two columns of links</li>
-      <li>Social icons</li>
-    </ul>
-    <figure class="bcls-figure">
-      <p><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-footer.png" /></p>
-      <p>For information on customizing the footer, see <a href="/experiences/virtual-event/customizing-footer-virtual-event-experience.html">Customizing the Footer of a Virtual Event  Experience</a>.</p>
-    </figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="css">Template specific styling</h2>
-    <p>Additional styling to the Virtual Event template can be done by using custom CSS and JavaScript. For information, see the <a href="/experiences/virtual-event/virtual-event-styling-examples.html">Virtual Event Styling Examples</a> topic.</p>
+    <section class="bcls-section">
+    <h2 id="background">Configuring a background image or video</h2>
+    <p>Gallery provides the option of displaying a custom background image or video  for the site. To configure a background image or video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-header-footer.png" /></figure>
+      </li>
+      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
+      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
+      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
+      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <div class="BCL-subsection">
+      <h3>Notes on using custom headers and footers</h3>
+      <ul>
+        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
+        <li>There is no explicit character limit on the header and footer HTML</li>
+        <li>External CSS and JavaScript files are supported</li>
+        <li>The code should follow responsive design principles so it will scale properly across devices</li>
+        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
+      </ul>
+    </div>
   </section>
 </article>
 
