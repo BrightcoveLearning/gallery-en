@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Customizing the Header of a Virtual Event  Experience</title>
+  <title>Customizing the Footer of a Virtual Event  Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -128,9 +128,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/pages-to-delete/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Customizing the Header of a Virtual Event  Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Customizing the Footer of a Virtual Event  Experience</li>
     </ol>
   </nav>
 </header>
@@ -560,120 +560,35 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Customizing the Header of a Virtual Event  Experience</h1>
-  <summary>In this topic you will learn how to customize the header of Virtual Event  Experience pages.</summary>
+  <h1>Customizing the Footer of a Virtual Event  Experience</h1>
+  <summary>In this topic you will learn how to customize the footer of Virtual Event  Experience pages.</summary>
   <section class="bcls-section">
-    <p>The header will appear at the top of all the pages. The header is constructed from values in the configuration file.
-      The header is made up of the following components:</p>
+    <p>The footer will appear at the bottom of all the pages. The footer is constructed from values in the configuration file.
+      Each footer item in the configuration file will have an associated:</p>
     <ul>
-      <li>Header logo</li>
-      <li>Links</li>
-      <li>Social icons</li>
-      <li>Search</li>
+      <li>Link URL</li>
+      <li>Label</li>
+      <li>Group</li>
     </ul>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/template-overview-header.png" /></figure>
+    <p>Groups are used to control where the label/link appears in the footer. There are four available groups:</p>
+    <ul>
+      <li> <strong>Group 0</strong> - Used for HTML callouts</li>
+      <li><strong>Group 1</strong> - Used for legal text and copyright information</li>
+      <li><strong>Groups 2 &amp; 3</strong> - Used for lists of links (recommended to use a max of 5 links)</li>
+    </ul>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/footer-example.png" /></figure>
+    </p>
+    <p>The social icons that appear in the footer can be edited/removed by editing the <code translate="No">social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="logo">Header logo</h2>
-    <p>The header image is specified by the <code translate="No">images</code> object in the configuration file.</p>
-    <ul>
-      <li><code translate="No">header_logo</code> - URL to image to appear in the header</li>
-    </ul>
-    <p>.Png and .jpg files are supported. The header logo  will be proportionally scaled down to 178px wide.</p>
-</section>
-  <section class="bcls-section">
-    <h2 id="links">Links</h2>
-    <p>By default, the <strong>HOME</strong>, <strong>LIVE STREAM</strong> and <strong>ON-DEMAND SESSIONS</strong> links are hardcoded in the template:</p>
-    <ul>
-      <li><strong>HOME</strong> - Goes to home, top of page</li>
-      <li><strong>LIVE STREAM</strong> - Goes to the featured collection (top video player) </li>
-      <li><strong>ON-DEMAND SESSIONS</strong> - Goes to the tracks section </li>
-    </ul>
-    <p>Additional links can be added by editing the <code translate="No">header_links</code> object in the configuration file.</p>
+    <h2 id="links">Adding links to the footer</h2>
+    <p>Footer links are configured by editing the <code translate="No">footer_links</code> object in the configuration file.</p>
     <ul>
       <li><code translate="No">link_url</code> - Destination URL</li>
-      <li><code translate="No">label</code> - Label to appear in the header</li>
+      <li><code translate="No">label</code> - Label to appear in the footer</li>
+      <li><code translate="No">group</code> - Group the link appears in</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="social">Social icons</h2>
-    <p>By default, the header will display social icons:</p>
-    <ul>
-      <li>Facebook</li>
-      <li>Instagram</li>
-      <li>Twitter</li>
-      <li>LinkedIn</li>
-      <li>YouTube</li>
-    </ul>
-    The social icons that appear in the header can be edited/removed by editing the <code translate="No">social</code> object in the configuration file. For information, see <a href="/experiences/virtual-event/configuring-social-icons-virtual-event-experience.html">Configuring the Social Icons for a Virtual Event  Experience</a>.</section>
-  <section class="bcls-section">
-    <h2 id="search">Search</h2>
-    <p>To enable search and display the search field, <a href="/experiences/portal/customizing-site-features-portal-experience.html">enable search for the experience</a>. By default, the search field in the header will display a single line for text entry. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/header-search-default.png" /></figure>
-    <p>The search box in the example has been styled to display a box around the search field.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="css">Header specific styling</h2>
-    <h3>Links on mobile devices</h3>
-    <p>By default, links added to the header will not appear when using a mobile device. The following JavaScript resolves that issue.</p>
-    <pre><code translate="No">
-for (let i = 0, l = ciabConfig.header_links.length; i < l; i++) {
-  let link = ciabConfig.header_links[i];
-  let li = document.createElement('li');
-  let ul = document.getElementById('main-nav-cat');
-  li.className = 'main-nav-category main-nav-category-home';
-  li.innerHTML = ('<a href="'+ link.link_url +'">' + link.label + '</a>'); ul.appendChild(li);
-}
-    </code></pre>
-    <h3>Formatting the search field</h3>
-    <p>By default, the search field will display a single line for text entry. The following CSS formats the search field as a textbox.</p>
-    <pre><code translate="No">
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box {
-    margin-right: 45px;
-    width: 170px;
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input {
-	background-color: transparent;
-	color: #fff;
-	margin-top: -10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: .88;
-	text-transform: uppercase;
-	display: block;
-    padding: 2px 5px 2px 30px;
-	width: inherit;
-	border: 1px solid #fff;
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-webkit-input-placeholder {
-	text-transform: uppercase;
-	color: #fff
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-moz-placeholder {
-	text-transform: uppercase;
-	color: #fff
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input:-ms-input-placeholder {
-	text-transform: uppercase;
-	color: #fff
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::-ms-input-placeholder {
-	text-transform: uppercase;
-	color: #fff
-}
-
-.bc-custom-header-nav .bc-nav-menu .main-header-search-box input.main-header-search-input::placeholder {
-	text-transform: uppercase;
-	color: #fff
-}
-
-    </code></pre>
   </section>
 </article>
 

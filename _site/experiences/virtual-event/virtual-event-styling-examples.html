@@ -577,29 +577,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 }
     </code></pre>
   </section>
-  <section class="bcls-section">
-    <h2 id="background-image">Site background image</h2>
-    <p>The following CSS can be used to add a background image to the site.</p>
-    <pre><code translate="No">
-.main-content {
-   background: #152538 url(https://solutions.brightcove.com/vet/excursion-con/bg.png) no-repeat center;
-}
-    </code></pre>
-    <aside class="bcls-aside bcls-aside--information">Note: For information on the properties that can be used with the <code translate="No">background</code> property, see <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">this link</a>.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="background-video">Hero background video</h2>
-    <p>The following static content object can be added to the  configuration file to add a background video to the site. This should replace the existing hero image in the configuration file.</p>
-    <pre><code translate="No">
-"static_content": [{
-      "insert_target": ".bcg-fixed-width-container",
-      "insert_mode": "prepend",
-      "content": "&lt;div class='video-bg'&gt;&lt;video loop muted autoplay class='video-bg__video'&gt;&lt;source src='https://solutions.brightcove.com/bcls/gallery/loop.mp4' type='video/mp4'&gt;&lt;/video&gt;&lt;/div&gt; &lt;div class='bc-hero-section' style='padding-bottom:65px;position: relative;'&gt;&lt;div id='hero-logo'&gt;&lt;/div&gt;&lt;/div&gt;",
-      "require_roles": [],
-      "omit_roles": []
-    }
-    </code></pre>
-  </section>
 </article>
 
 <!-- complete bootstrap layout -->

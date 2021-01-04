@@ -611,29 +611,25 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><strong>Custom Response Headers</strong> - Enter HTTP headers which will be sent in response to requests to the portal. For example, headers might be added to add a Content Security Policy (CSP) or HTTP-Strict-Transport-Security (HSTS).</li>
     </ul>
   </section>
-    <section class="bcls-section">
+  <section class="bcls-section">
     <h2 id="background">Configuring a background image or video</h2>
-    <p>Gallery provides the option of displaying a custom background image or video  for the site. To configure a background image or video, follow these steps.</p>
+    <p>Gallery provides the option of displaying a custom background image or video  for the site. To configure a background image or video, click <strong>APPEARANCE AND BEHAVIOR &gt; Background Image and Video</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-background-image.png" /></figure>
+    <h3>Adding a background image</h3>
     <ol class="bcls-tasklist-restart">
-      <li>Click <strong>APPEARANCE AND BEHAVIOR &gt; Header and Footer</strong> in the left navigation.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-header-footer.png" /></figure>
+      <li>To specify an image, you can:
+        <ul>
+          <li>Drag an image from the file system and then drop it on the drop area</li>
+          <li>Click <strong>browse</strong> and select an image from the file system</li>
+          <li>Enter the URL to a remote image file</li>
+        </ul>
       </li>
-      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
-      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
-      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
-      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
       <li>Click<strong> Save</strong>.</li>
     </ol>
-    <div class="BCL-subsection">
-      <h3>Notes on using custom headers and footers</h3>
-      <ul>
-        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
-        <li>There is no explicit character limit on the header and footer HTML</li>
-        <li>External CSS and JavaScript files are supported</li>
-        <li>The code should follow responsive design principles so it will scale properly across devices</li>
-        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
-      </ul>
-    </div>
+    <p>Click <strong>Remove</strong> to remove the image.</p>
+    <h3>Adding a background video</h3>
+    <p>A Video Cloud video can also be used as a background video. Paste a Video Cloud video ID in the <strong>Video ID</strong> field and click <strong>Save</strong>.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: If the Video ID is invalid the uploaded background image or the default background image will be displayed.</aside>
   </section>
 </article>
 

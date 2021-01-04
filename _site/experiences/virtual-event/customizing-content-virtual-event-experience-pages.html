@@ -563,21 +563,56 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <h1>Customizing the Content of Virtual Event Experience Pages</h1>
   <summary>In this topic you will learn how to customize the content of Virtual Event Experience pages.</summary>
   <section class="bcls-section">
-    <p>Objects such as text, images and links can be added to Portal Experience pages allowing you to customize and brand your video experience.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: The process to add objects to a page will vary slightly depending on the template. The screen shots in this topic were taken using the Marquee template.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: Some pages also provide the ability for the player layout to be changed. For more information, see <a href="../portal/changing-player-layout-portal-experience.html">Changing the Player Layout on a Portal Experience</a>.</aside>
+    <p>Objects such as text, images and links can be added to Virtual Event Experience pages allowing you to customize and brand your video experience.</p>
   </section>
   <section class="bcls-section">
     <h2 id="objects">Adding objects to pages</h2>
-    <p>Using the Site Editor, you can add objects such as images, text and links to a page. Start by editing an experience and then click <strong>PAGES</strong> in the left navigation. The page template will display plus icons (<img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" />) indicating that objects that can be added to the page. Hover over the plus icon and click it to add the appropriate object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-hover-plus.png" /></figure>
+    <p>Using the Site Editor, you can add objects such as images, text, links and a welcome message to a page. Start by editing an experience and then click <strong>PAGES</strong> in the left navigation. The page template will display plus icons (<img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" />) indicating that objects that can be added to the page. </p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-page-placeholders.png" /></figure>
+    <p>Hover over the plus icon and click it to add the appropriate object.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-hover-plus.png" /></figure>
     <p>The page template may also contain text objects that are part of the template. Hovering over them will display an <strong>Edit</strong> button. Click the object or <strong>Edit</strong> button to edit the object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-edit-text.png" /></figure>
-    <p>Note that the objects that can be added or edited are based upon the template that was selected when the experience was first created.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-page-placeholders1.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-edit-text.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="text">Adding text to a page</h2>
+    <h2 id="logo">Adding a logo to the page header</h2>
+    <p>The logo can be  text or an image file. For images, JPEG and PNG  images are supported. To add a logo to the page header, click <strong>+ Add Logo</strong>in the page header.</p>
+    <h3>Adding a text logo</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Use the text editor on the <strong>Text</strong> tab to enter and format text for the header.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-logo-text.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <h3>Adding an image logo</h3>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the <strong>Image</strong> tab. The image browser dialog will open.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-logo-image.png" /></figure>
+      </li>
+      <li>To specify an image, you can:
+        <ul>
+          <li>Drag an image from the file system and then drop it on the drop area</li>
+          <li>Click <strong>browse</strong> and select an image from the file system</li>
+          <li>Enter the URL to a remote image file</li>
+        </ul>
+      </li>
+      <li>Click <strong>Save</strong> when done.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="menulinks">Adding menu links</h2>
+    <p>Menu links can be added to pages to provide a way for users to navigate to other parts of your site. Menu links can be added to both the page header and footer. To add menu links to a page:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>+Add Menu Links</strong>.</li>
+      <li>Enter the <strong>Text</strong> and <strong>Link</strong>. Check <strong>New Window</strong> if you want the link to open in a new browser window.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-menu-links.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+    <p>Additional navigation links can be entered by clicking <img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" /> in the header. To add addtional footer links, clicking <strong>+ Add Menu Links</strong>. To edit a link, click on it.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="welcome">Adding a welcome message</h2>
     <p>Text can be added to a page in a couple of different ways:</p>
     <ul>
       <li>By clicking on the <strong>+Add Image or Text</strong> link</li>
@@ -606,27 +641,35 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </ol>
     </div>
   </section>
-  <section class="bcls-section">
-    <h2 id="image">Adding an image to the page header</h2>
-    <p>Images will be resized (never upscaled) based upon the template. The image uploader may display recommended image dimensions depending on where the image is being used. JPEG, PNG and GIF images are supported. To add an image to the page header:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on <img alt="" src="/assets/images/experiences/portal/node13555-image-text-link.png" />.</li>
-      <li>Click the <strong>Image</strong> tab. The image browser dialog will open.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-upload-image1.png" /></figure>
-      </li>
-      <li>Click <strong> browse</strong> and then browse and select an image from the file system. Click <strong>Save</strong> when done.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="navlink">Adding navigation links to the page header</h2>
-    <p>Navigation links can be added to the top of the page and provide a way for users to navigate to other parts of your site. To add a navigation link to a page:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>+Add Menu Link</strong>s in the page header.</li>
-      <li>Enter the <strong>Text</strong> and <strong>Link</strong>. Check <strong>New Window</strong> if you want the link to open in a new browser window. Click <strong>Save</strong> when done.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-add-nav-link1.png" /></figure>
-      </li>
-    </ol>
-    <p>Additional navigation links can be entered by clicking <strong>+Add Link</strong>. To edit a link, click on it.</p>
+    <section class="bcls-section">
+    <h2 id="text">Adding a welcome message</h2>
+    <p>Text can be added to a page in a couple of different ways:</p>
+    <ul>
+      <li>By clicking on the <strong>+Add Image or Text</strong> link</li>
+      <li>By clicking on any of the text placeholders on the page</li>
+    </ul>
+    <div class="BCL-subsection">
+      <h3>Add text by clicking on the <strong>+Add Image or Text</strong> link</h3>
+      <p>To add text to the page by clicking on the <strong>+Add Image or Text </strong>link:</p>
+      <ol class="bcls-tasklist-restart">
+        <li>Click on <img alt="" src="/assets/images/experiences/portal/node13555-image-text-link.png" />.</li>
+        <li>Enter your text. The formatting bar can be used to format the text. Click <strong>Save</strong> when done.
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-enter-text-header.png" /></figure>
+        </li>
+      </ol>
+    </div>
+    <div class="BCL-subsection">
+      <h3>Add text by clicking on a text placeholder</h3>
+      <p>Pages may contain numerous text objects as part of the template. Click on the text object to edit it.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-text-placeholders1.png" /></figure>
+      <p>To add your text:</p>
+      <ol class="bcls-tasklist-restart">
+        <li>Click one of the placeholder objects.</li>
+        <li>Enter your text and click <strong>Save</strong>.
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node13555-text-entered-click-save.png" /></figure>
+        </li>
+      </ol>
+    </div>
   </section>
   <section class="bcls-section">
     <h2 id="navlinkfooter">Adding navigation links to the page footer</h2>
