@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Creating a Virtual Event Experience</title>
+  <title>Using the Site Editor to Customize a Virtual Event Experience</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -128,9 +128,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Portal</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating a Virtual Event Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Using the Site Editor to Customize a Virtual Event Experience</li>
     </ol>
   </nav>
 </header>
@@ -560,45 +560,65 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Creating a Virtual Event  Experience</h1>
-  <summary>In this topic you will learn about creating a Virtual Event  Experience.</summary>
+  <h1>Using the Site Editor to Customize a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to use the Site Editor to customize the look and feel of an experience.</summary>
   <section class="bcls-section">
-    <p>Gallery provides a Virtual Event  template which can be used to create Virtual Event  Experiences for hosting and delivering virtual events. After creating a new Virtual Event  Experience, you will be prompted to pre-populate the experience. Brightcove recommends choosing <strong>No thanks</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/creating-exp-exp-overview.png" /></figure>
-    <p>Much of the experience customization is done using a configuration file. The configuration file is added to the template as part of the experience header. After creating a new Virtual Event Portal Experience, the first thing that should be done is to <a href="#config">add the configuration file to the template</a>. </p>
-    <p>The configuration file controls some of the general template options and is also used to:</p>
+    <p>The Gallery Site Editor is used to customize the look and feel of experiences. Click on the experience title to open the Site Editor. The Site Editor provides the ability to:</p>
     <ul>
-      <li><a href="#header">Customize the header</a></li>
-      <li><a href="/experiences/virtual-event/customizing-footer-virtual-event-experience.html">Customize the footer</a></li>
-      <li><a href="/experiences/virtual-event/configuring-event-schedule-virtual-event-experience.html">Configure the event schedule</a></li>
-      <li><a href="/experiences/virtual-event/customizing-speakers-virtual-event-experience.html">Customize the event speakers</a></li>
-      <li><a href="/experiences/virtual-event/customizing-sponsors-virtual-event-experience.html">Customize the event sponsors</a></li>
+      <li><a href="#objects">Add objects to pages</a></li>
+      <li><a href="#videos">Add videos to a site</a></li>
+      <li><a href="#style">Customize the site style</a></li>
+      <li><a href="#cta">Configure calls-to-action</a></li>
+      <li><a href="#app_behavior">Customize appearance and behavior</a></li>
+      <li><a href="#site_features">Customize site features</a></li>
+      <li><a href="#video_playback">Customize video and playback</a></li>
+      <li><a href="#site_config">Customize the site configuration</a></li>
+      <li><a href="#details">Configure the site details</a></li>
     </ul>
-    <p>The process to add videos to the experience is  similar to other Gallery Portal Experiences although the Virtual Event template does expect the collections to be organized in a specific way. For information, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Organizing Video Collections in a Virtual Event Experience</a>.</p>
+    <p>These options are accessed by clicking the menus in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-nav.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="config">Adding the configuration file to the template</h2>
-    <p>The Virtual Event Portal Experience requires a configuration file be included with the site. The configuration file includes  site settings, layout options, event schedule, speakers and other content that will be displayed. After creating a new Virtual Event Experience, adding the configuration file is the first thing that should be done. For information on how to add the configuration file, see <a href="/experiences/virtual-event/adding-config-virtual-event-experience.html">Adding the Configuration File to the Experience</a>.</p>
+    <h2 id="objects">Adding objects to a page</h2>
+    <p>Objects such as text, images and URLs can be added to pages allowing you to customize and brand your video experience. To learn how to add objects to video site pages, see <a href="/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html">Customizing the Content of Virtual Event Experience Pages</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="header">Configuring the header</h2>
-    <p>The header displays at the top of all the pages and provides a way to brand and add social icons to the site. For more information on configuring the header, see <a href="/experiences/virtual-event/customizing-header-virtual-event-experience.html">Customizing the Header for a Virtual Event Experience</a>.</p>
+    <h2 id="videos">Adding videos to a site</h2>
+    <p>To add videos to a site, click <strong>VIDEOS</strong> in the left navigation. For complete details on how to add videos to a video site, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Adding Videos to a Virtual Event Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="footer">Configuring the footer</h2>
-    <p>The footer displays at the bottom of all the pages and provides a way to brand and add social icons and links to the site. For more information on configuring the footer, see <a href="/experiences/live/creating-pre-event-state-portal-event-experience.html">Configuring the Footer for a Virtual Event Experience</a>.</p>
+    <h2 id="style">Customizing the site style</h2>
+    <p>To customize the colors and fonts used on the site, or to select another theme, click <strong>STYLE</strong> in the left navigation. For complete details on how to customize the style, see <a href="/experiences/portal/customizing-style-portal-experience.html">Customizing the Style of a Portal Experience</a>.</p>
   </section>
-        <section class="bcls-section">
-  <h2 id="schedule">Configuring the event schedule</h2>
-  <p>The event schedule is typically used to list the schedule of live events. For more information on configuring the event schedule, see <a href="/experiences/virtual-event/configuring-event-schedule-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
-        </section>
-    <section class="bcls-section">
-  <h2 id="speakers">Customizing the event speakers</h2>
-  <p>The speakers section is used to highlight the event speakers. For more information on customizing the event speakers, see <a href="/experiences/virtual-event/customizing-speakers-virtual-event-experience.html">Customizing the Event Speakers</a>.</p>
+  <section class="bcls-section">
+    <h2 id="cta">Configuring calls-to-action</h2>
+    <p>Calls to action provide the ability to include custom HTML, images or advertisements on a page. Not all templates support calls to action. To configure calls to action, click <strong>CALLS-TO-ACTION</strong> in the left navigation.</p>
+    <p>For complete details on configuring calls to action, see <a href="/experiences/portal/configuring-calls-action-portal-experience.html">Configuring Calls to Action on a Portal Experience</a>.</p>
   </section>
-    <section class="bcls-section">
-  <h2 id="sponsors">Customizing the event sponsors</h2>
-  <p>The sponsors section is used to highlight the event sponsors. For more information on customizing the event sponsors, see <a href="/experiences/virtual-event/customizing-sponsors-virtual-event-experience.html">Customizing the Event Sponsors</a>.</p>
+  <section class="bcls-section">
+    <h2 id="app_behavior">Customizing the appearance and behavior</h2>
+    <p>The appearance and behavior settings are used to configure the template settings, use a custom header/footer and provide custom CSS and JavaScript files. To configure the appearance and behavior settings, click <strong>APPEARANCE AND BEHAVIOR</strong> in the left navigation.</p>
+    <p>For complete details on the appearance and behavior settings, see <a href="/experiences/portal/customizing-appearance-and-behavior-portal-experience.html">Customizing the Appearance and Behavior of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="site_features">Customizing site features</h2>
+    <p>The site feature settings are used to enable site search, configure social sharing options and allow commenting on videos. To configure the site features, click <strong>SITE FEATURES</strong> in the left navigation.</p>
+    <p>For complete details on how to customize the site features, see <a href="/experiences/portal/customizing-site-features-portal-experience.html">Customizing the Site Features of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="video_playback">Customizing the video and playback settings</h2>
+    <p>The video and playback settings provide the ability to select a custom player for the experience, configure Audience integration and lead forms and configure videos options such as downloads and related links. To customize the video and playback settings, click <strong>VIDEO AND PLAYBACK</strong> in the left navigation.</p>
+    <p>For complete details on configuring the video and playback settings, see <a href="/experiences/portal/customizing-video-and-playback-settings-portal-experience.html">Customizing the Video and Playback Settings of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="site_config">Customizing the site configuration</h2>
+    <p>The site configuration settings provide the ability to host the site at a custom domain, secure it using SSL or restrict access to the site. To configure the site configuration, click <strong>SITE CONFIGURATION</strong> in the left navigation.</p>
+    <p>For complete details on site configuration settings, see <a href="/experiences/portal/customizing-site-configuration-portal-experience.html">Customizing the Site Configuration of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="details">Configuring the site details</h2>
+    <p>The overview settings provide the ability to edit the name, description and language for the site. To configure the site details, click <strong>OVERVIEW</strong> in the left navigation.</p>
+    <p>For complete details on configuring the site details, see <a href="/experiences/portal/configuring-details-portal-experience.html">Configuring the Details for a Portal Experience</a>.</p>
   </section>
 </article>
 
@@ -617,7 +637,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 13 Oct 2020
+  Page last updated on 04 Jan 2021
 </div>
 
 

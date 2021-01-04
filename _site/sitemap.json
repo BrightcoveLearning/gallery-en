@@ -45,6 +45,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/adding-videos-virtual-event-experience.html",
+      "oldURL": "/adding-videos-virtual-event-experience"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-youtube-videos-portal-experience.html",
       "oldURL": "/adding-youtube-videos-portal-experience"
   },
@@ -222,6 +227,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-content-portal-experience-pages.html",
       "oldURL": "/customizing-content-portal-experience-pages"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html",
+      "oldURL": "/customizing-content-virtual-event-experience-pages"
   },
 
   {
@@ -435,11 +445,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/organizing-video-collections.html",
-      "oldURL": "/organizing-video-collections"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html",
       "oldURL": "/overview-creating-editing-and-publishing-page-experiences"
   },
@@ -647,6 +652,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-site-editor-customize-portal-experience.html",
       "oldURL": "/using-site-editor-customize-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html",
+      "oldURL": "/using-site-editor-customize-virtual-event-experience"
   },
 
   {
