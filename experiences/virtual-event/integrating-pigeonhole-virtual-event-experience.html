@@ -12,7 +12,7 @@ layout: staging
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="pigeonhole">Creating a new Pigeonhole event</h2>
+    <h2 id="pigeonhole">Creating a new Pigeonhole event and session</h2>
     <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
     <ol class="bcls-tasklist">
       <li>Log in to your Pigeonhole account.</li>
@@ -37,18 +37,25 @@ layout: staging
       <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
       </li>
-      <li>Click <strong>More settings</strong> in the left navigation.</li>
-      <li>Click the <strong>Integrations</strong> tab at the top of the page.</li>
-      <li>Scroll down to the <strong>Others</strong> section.</li>
-      <li>Locate <strong>Brightcove Gallery Embed</strong> and click <strong>Integrate</strong>.</li>
-      <li><strong>(Optional)</strong> If your Gallery Experience will be secured using SSO, select <strong>Allow automatic attendee sign-in using SAML attributes</strong>. This will retrieve the user’s name and email address and automatically sign them in on Pigeonhole Live when the Pigeonhole Live widget loads. If this is not checked, users will appear as anonymous inside Pigeonhole. Click <strong>Save</strong>.</li>
-      <li>On the Brightcove Gallery Embed dialog, select your Q&amp;A session from the dropdown list.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-embed-code-dialog.png" /></figure>
-      </li>
-      <li>Click <strong>Get embed code</strong>.</li>
-      <li>Click on the embed code and copy it to the clipboard. This is the code that will be embedded on the Gallery experience. </li>
-      <li>Click <strong>Close</strong>.</li>
     </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="embed-code">Generating the Pigeonhole embed code</h2>
+    <p>In order for a Pigeonhole to display next to a video, the following iframe embed code will be added to video using a Video Cloud custom field. The format of the code will be:</p>
+    <code>
+    <pre>&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em>/q/<em>session ID</em>&quot;&gt;&lt;/iframe&gt;</pre>
+    </code>
+    <p>To get the values for the <strong>event passcode</strong> and <strong>session ID</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist">
+      <li>In Pigeonhole, click <strong>Agenda</strong> in the left navigation.</li>
+      <li>On the <strong>Sessions</strong> tab, click the dropdown arrow next to the event. The <strong>Session ID</strong> will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-get-session-id.png" /></figure>
+      </li>
+      <li>To get the event passcode, locate the event name in the header. The event passcode is displayed below the event name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual_event/phole-get-passcode.png" /></figure>
+      </li>
+    </ol>
+    <p>The above code with your event passcode and session ID will be added to the appropriate video.</p>
   </section>
   <section class="bcls-section">
     <h2 id="custom_field">Creating a custom field</h2>
