@@ -603,8 +603,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Paste in your <strong>Server Private Key</strong>. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
         <figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-private-key.png" /></figure>
       </li>
-      <li>Paste in your <strong>Chain of CA Certificates</strong>. If your certificate was signed by a root CA, then only the root certificate CA needs to be pasted in. &nbsp;This should not include your own certificate. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
-        <figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-cert-chain.png" /></figure>
+      <li>Paste in your <strong>Chain of CA Certificates</strong>. If your certificate was signed by a root CA, then only the root certificate CA needs to be pasted in. &nbsp;This should not include your own certificate. The certificate order is immediate cert. &gt; any other intermediary &gt; root (the root certificate is optional). <br>
+        Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
+<figure class="bcls-figure"><img alt="" src="/assets/images/settings/node15951-cert-chain.png" /></figure>
       </li>
       <li>Click<strong> Save</strong>. The site details will be displayed.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/node15951-save-changes.png" /></figure>
