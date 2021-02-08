@@ -12,5 +12,24 @@ layout: staging
   <section class="bcls-section">
     <h2 id="Introduction">Introduction</h2>
 		<p>You can see reporting events for your virtual events by aggregated by device and location, in addition to the account, viewer and video analytics for a particular account. This information can help you better organize your upcoming virtual events to maximize the viewer engagement.</p>
+		<p>This data can be downloaded using the Analytics API, and can be returned in JSON, CSV, or XLXS format. The next section provides a brief introduction to the Analytics API. If you already know how to use it, you may skip to the following section for information on getting analytics data for virtual events.</p>
   </section>
+	<section class="bcls-section">
+		<h2 id="Analytics_API">The Analytics API</h2>
+		<p>Like other <a href="https://apis.support.brightcove.com/">platform APIs</a>, the Analytics API is a RESTful API that allows you to interact with the Video Cloud platform programmatically. It returns analytics data based on various URL parameters that you include with the request. By default the data is returned in JSON format, but you can request CSV or XLXS data to be opened in spreadsheet app instead.</p>
+		<h3>How to make requests</h3>
+		<p>Requests to RESTful APIs are made to a URL, the same way that a browser makes a request to a URL to retrieve a web page. However, you cannot simply paste the API request into a browser, because the request must be authenticated (we are getting to that) to show that you are authorized to get the data. There are many tools to help you do it, however. Here is a short list:</p>
+		<ul>
+			<li><a href="https://apis.support.brightcove.com/general/use-insomnia-api-requests.html">Insomnia</a> (a popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/use-postman-api-requests.html">Postman</a> (another popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/concepts-api-tester.html">Online API Tester</a> created by Brightcove Learning Services</li>
+			<li><a href="https://apis.support.brightcove.com/getting-started/concepts-testing-tools-brightcove-apis.html#shell">api-tester.sh</a> (a curl-based shell script created by Brightcove Learning Services)</li>
+		</ul>
+		<h3>Authenticating requests</h3>
+		<p>This is going to sound harder than it really is, but stay with me - we will get to how to do it without much effort.</p>
+		<p>To protect your data, Analytics API requests must include an Authorization header that contains an access token:</p>
+		<pre><code class="language-http" translate="No">Authorization: bearer <span class="bcls-input">your access token</span></code></pre>
+		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
+		<p>The preparation consists of getting a <code>client_id</code> and a <code>client_secret</code> using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it).</p>
+	</section>
 </article>
