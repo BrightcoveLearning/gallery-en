@@ -1,0 +1,73 @@
+---
+title: Exporting Virtual Event Viewer Data
+description: This topic explains how to export virtual event viewer data for a Virtual Event using the Analytics API.
+parent: Virtual Event
+grandparent: Experiences
+layout: staging
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+		<p>You can see reporting events for your virtual events by aggregated by device and location, in addition to the account, viewer and video analytics for a particular account. This information can help you better organize your upcoming virtual events to maximize the viewer engagement.</p>
+		<p>This data can be downloaded using the Analytics API, and can be returned in JSON, CSV, or XLXS format. The next section provides a brief introduction to the Analytics API. If you already know how to use it, you may skip to the following section for information on getting analytics data for virtual events.</p>
+  </section>
+	<section class="bcls-section">
+		<h2 id="Analytics_API">The Analytics API</h2>
+		<p>Like other <a href="https://apis.support.brightcove.com/">platform APIs</a>, the Analytics API is a RESTful API that allows you to interact with the Video Cloud platform programmatically. It returns analytics data based on various URL parameters that you include with the request. By default the data is returned in JSON format, but you can request CSV or XLXS data to be opened in spreadsheet app instead.</p>
+		<aside class="bcls-aside bcls-aside--information language-editable">Note that this document covers only what you need to know to get analytics data for virtual events. Consult the general <a href="https://apis.support.brightcove.com/analytics-api/index.html">Analytics API documentation</a> for other uses.</aside>
+		<h3>How to make requests</h3>
+		<p>Requests to RESTful APIs are made to a URL, the same way that a browser makes a request to a URL to retrieve a web page. However, you cannot simply paste the API request into a browser, because the request must be authenticated (we are getting to that) to show that you are authorized to get the data. There are many tools to help you do it, however. Here is a short list:</p>
+		<ul>
+			<li><a href="https://apis.support.brightcove.com/general/use-insomnia-api-requests.html">Insomnia</a> (a popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/use-postman-api-requests.html">Postman</a> (another popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/concepts-api-tester.html">Online API Tester</a> created by Brightcove Learning Services</li>
+			<li><a href="https://apis.support.brightcove.com/getting-started/concepts-testing-tools-brightcove-apis.html#shell">api-tester.sh</a> (a curl-based shell script created by Brightcove Learning Services)</li>
+		</ul>
+		<h3>Authenticating requests</h3>
+		<p>To protect your data, Analytics API requests must include an Authorization header that contains an access token:</p>
+		<pre><code class="language-http" translate="No">Authorization: bearer <span class="bcls-input">your access token</span></code></pre>
+		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
+		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code>client_id</code> and a <code>client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
+		<ol class="bcls-tasklist-restart">
+			<li>Click <span class="button-blue">Register New Application</span>.</li>
+			<li>In the dialog that opens enter "Analytics" for the name.</li>
+			<li>Select the account(s) you want to use the API for.</li>
+			<li>
+				Under <strong>Exposed Brightcove APIs</strong>, select <strong>Read</strong> under <strong>Analytics</strong> and <strong>Video Read</strong> under <strong>CMS</strong>:
+				<figure class="bcls-figure">
+					<img class="bcls-image" src="/assets/images/experiences/virtual-event/analytics-api-permissions.png" alt="API Permissions">
+					<figcaption class="bcls-caption--image">API Permissions</figcaption>
+				</figure>
+			</li>
+			<li>Click <span class="button-blue">Save</span>.</li>
+			<li>
+				A new dialog will display the <strong>Client ID</strong> <strong>Client Secret</strong>. Copy and save them both in a secure place where you can find them again.
+				<aside class="bcls-aside bcls-aside--warning language-editable">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
+			</li>
+		</ol>
+		<h3>The access token</h3>
+		<p>The access token is retrieved from another Brightcove API using the client credentials. You can do that yourself, but again, any of the tools listed in the previous section will take your client credentials and get the access token for you, and put it into the request header sent with your Analytics API request.</p>
+	</section>
+  <section class="bcls-section">
+    <h2 id="API_request">The Analytics API request</h2>
+    <p>Here is the form of the Analytics API request:</p>
+    <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{accountId}</span>
+&from=<span class="bcls-highlight">{yyyy-mm-dd}</span>
+&to=<span class="bcls-highlight">{yyyy-mm-dd}</span>
+&dimensions=viewer,video,country,city,region,device_type
+&fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
+&sort=-video_view&limit=20&format=csv</code></pre>
+		<aside class="bcls-aside bcls-aside--information language-editable">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
+		<h3>Notes:</h3>
+		<ul>
+			<li>The <code>from</code> parameter is optional - the default is 30 days ago.</li>
+			<li>The <code>to</code> parameter is optional - the default is <code>now</code>.</li>
+			<li>The <code>limit</code> parameter is optional - the default is 10 items; you can set it to any number or <code>allows</code>.</li>
+			<li>The <code>format</code> parameter is optional - the default is <code>json</code> and the allowable values are <code>json</code>, <code>csv</code> or <code>xlxs</code>.</li>
+		</ul>
+
+  </section>
+</article>
