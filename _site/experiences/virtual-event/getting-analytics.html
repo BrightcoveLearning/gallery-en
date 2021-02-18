@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="This topic explains how to export virtual event viewer data for a Virtual Event using the Analytics API.">
   
-  <title>Integrating Pigeonhole with a Virtual Event Experience</title>
+  <title>Exporting Virtual Event Viewer Data</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -132,7 +132,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Integrating Pigeonhole with a Virtual Event Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Exporting Virtual Event Viewer Data</li>
     </ol>
   </nav>
 </header>
@@ -561,87 +561,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
-<h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
+<h1>Exporting Virtual Event Viewer Data</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
+  <summary>This topic explains how to export virtual event viewer data for a Virtual Event using the Analytics API.</summary>
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add live Q&amp;A, polls, surveys, etc. to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  live event and then sessions can be created for each video you want to add Pigeonhole functionality to. Once the sessions are created, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole pod to display next to the video player for chosen videos.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="pigeonhole">Creating a new Pigeonhole event and session</h2>
-    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Pigeonhole functionality added to it.</p>
-    <ol class="bcls-tasklist">
-      <li>Log in to your Pigeonhole account.</li>
-      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
-      </li>
-      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
-      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
-      </li>
-      <li>Click <strong>Continue</strong>.</li>
-      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
-      </li>
-      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong> (other session types can also be used).</li>
-      <li>Enter a <strong>Session name</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
-      </li>
-      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
-      <li>Click <strong>Add Q&amp;A</strong> and confirm the session was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
-      </li>
-      <li>Create other sessions as needed.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="embed-code">Generating the Pigeonhole embed code</h2>
-    <p>In order for a Pigeonhole to display next to a video, iframe embed code will be added to video using a Video Cloud custom field. The format of the code will be:</p>
-    <code>
-    <pre>&lt;iframe src=&quot;<em>Pigeonhole URL</em>&quot;&gt;&lt;/iframe&gt;</pre>
-    </code>
-    <p>To get the value for the <strong>pigeonhole URL</strong>, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In Pigeonhole, click <strong>Run your event</strong> in the left navigation.</li>
-      <li>Click the link in the <strong>Invite your attendees</strong> section.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-invite-attendees.png" /></figure>
-      </li>
-      <li>Confirm that a  new browser tab with a list of all sessions opens.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-list.png" /></figure>
-      </li>
-      <li>Click the enter link for the appropriate session, for example, <strong>Enter this Q&amp;A</strong>. Note that the link will change based upon the session type.</li>
-      <li>Confirm that the Pigeonhole opens in a new browser tab. The Pigeonhole URL is displayed in the browser address bar.</li>
-    </ol>
-    <p>The <strong>iframe</strong> tag with the  Pigeonhole URL will be added to the appropriate video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="custom_field">Creating a custom field</h2>
-    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video, a custom field is used. To create a custom field, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Log in to Video Cloud Studio.</li>
-      <li><strong></strong>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
-      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
-      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
-      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
-      <li><strong>Save</strong> the custom field.</li>
-    </ol>
-    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="pigeonhole">Adding a Pigeonhole to a video</h2>
-    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the Media module.</li>
-      <li>Click on a video to open the video properties.</li>
-      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
-      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
+    <h2 id="Introduction">Introduction</h2>
+		<p>You can see reporting events for your virtual events by aggregated by device and location, in addition to the account, viewer and video analytics for a particular account. This information can help you better organize your upcoming virtual events to maximize the viewer engagement.</p>
   </section>
 </article>
 
@@ -660,7 +585,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 13 Jan 2021
+  Page last updated on 03 Feb 2021
 </div>
 
 
