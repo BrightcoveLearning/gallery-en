@@ -10,14 +10,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 /* ]]> */
 </script>
 
-    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-      <option value="">Other Brightcove Docs</option>
-      {% for site in site.data.sites %}
-        {% if site.name != site.product %}
-          <option value="{{ site.url }}">{{ site.name }}</option>
-        {% endif %}
-      {% endfor %}
-    </select>
 
 
     <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="support"> Contact Support</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="system status"> System Status</a></span>
