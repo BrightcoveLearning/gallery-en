@@ -14,14 +14,14 @@
             {% if item.docs == nil %}
             <h5><a href="{{ item.url }}">{{ item.name }}</a></h5>
             {% else %}
-              <h5 class="submenu-header"><a href="{{ item.url }}">{{ item.name }} <strong>+</strong></a></h5>
+              <h5 class="submenu-header"><a href="{{ item.url }}"><span style="color:#8E9093">+</span>&nbsp;&nbsp;{{ item.name }}</a></h5>
               <ul class="sidenav-submenu" style="display:none;">
                 {% for entry in item.docs %}
                   {% if entry.docs == nil %}
                     <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
                   {% else %}
                     <li class="submenu-header">
-                      <a href="{{ entry.url }}">{{ entry.name }} <strong>+</strong></a>
+                      <a href="{{ entry.url }}"><span style="color:#8E9093">+</span>&nbsp;&nbsp;{{ entry.name }}</a>
                       <ul class="sidenav-subsubmenu" style="display:none;">
                         {% for doc in entry.docs %}
                         <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>

@@ -4,17 +4,11 @@ layout: null
 
 /* css specific to the site */
 
-.bcls-active {
-  border-left: 3px {{ site.product_color }} solid;
-}
 
 h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
   font-size: 3rem;
   color:{{site.product_color}};
   margin-right: 1rem;
-}
-.card-icon i {
-  color: {{site.product_color}};
 }
 
 div.card-content > ul {
