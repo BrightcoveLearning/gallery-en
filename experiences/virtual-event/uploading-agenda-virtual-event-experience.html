@@ -1,0 +1,34 @@
+---
+title: Uploading an Event Agenda File
+parent: Virtual Event
+grandparent: Experiences
+layout: staging
+---
+<article class="bcls-article">
+  <h1>Uploading an Event Agenda File</h1>
+  <summary>In this topic you will learn how to upload an external agenda file to initially populate the agenda for a  Virtual Event  Experience.</summary>
+  <section class="bcls-section">
+    <p>You may have created an event agenda in Microsoft Excel or another spreadsheet application. The agenda module supports uploading an external .csv agenda file so that all of the agenda items don't have to be manually entered into the agenda module. </p>
+    <aside class="bcls-aside bcls-aside--information">Note: Brightcove recommends <a href="uploading-speakers-virtual-event-experience.html">uploading a list of speakers</a> before uploading an external agenda file.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="req">Import file requirements</h2>
+    <p>In order to import your existing agenda into the agenda module, the agenda should have been created in a spreadsheet application (i.e. Microsoft Excel, Apple Numbers or Google Sheets. These applications allow the data to be exported to a .csv file. The agenda module can only import a .csv file.</p>
+    <p>The agenda module looks for the existence of certain column names. These columns will be mapped to the appropriate fields in the agenda module. At a minimum, the following fields should exist in your agenda .csv file:</p>
+    <ul>
+      <li><code translate="No">name</code> - Session name</li>
+      <li><code translate="No">start_date</code> - Session start date</li>
+      <li><code translate="No">end_date</code> - Session end date</li>
+      <li><code translate="No">start_time</code> - Session start time</li>
+      <li><code translate="No">end_time</code> - Session end time</li>
+    </ul>
+    <p>The following columns are optional, but if they exist in your .csv file, they will also be imported into the agenda module:</p>
+    <ul>
+      <li><code translate="No">desc</code> - Session description</li>
+      <li><code translate="No">speaker-email</code> - Comma separated list of speaker email addresses for the session</li>
+      <li><code translate="No">track</code> - Value that identifies the track (i.e. technical, sales, marketing)</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </section>
+</article>
