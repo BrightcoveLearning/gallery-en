@@ -360,7 +360,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/",
+      "newURL": "https://gallery.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -420,7 +420,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/general/",
+      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -437,6 +437,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/integrating-pigeonhole-virtual-event-experience.html",
       "oldURL": "/integrating-pigeonhole-virtual-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/integrating-pigeonhole-virtual-event-experience2.html",
+      "oldURL": "/integrating-pigeonhole-virtual-event-experience2"
   },
 
   {
