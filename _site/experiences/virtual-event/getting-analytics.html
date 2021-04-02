@@ -591,7 +591,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 		<p>To protect your data, Analytics API requests must include an Authorization header that contains an access token:</p>
 		<pre><code class="language-http" translate="No">Authorization: bearer <span class="bcls-input">your access token</span></code></pre>
 		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
-		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code>client_id</code> and a <code>client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
+		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code translate="no">client_id</code> and a <code translate="no">client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
 		<ol class="bcls-tasklist-restart">
 			<li>Click <span class="button-blue">Register New Application</span>.</li>
 			<li>In the dialog that opens enter "Analytics" for the name.</li>
@@ -615,27 +615,63 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <section class="bcls-section">
     <h2 id="API_request">The Analytics API request</h2>
     <p>Here is the form of the Analytics API request:</p>
-    <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{accountId}</span>
+    <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{account1_id,account2_id}</span>
 &from=<span class="bcls-highlight">{yyyy-mm-dd}</span>
 &to=<span class="bcls-highlight">{yyyy-mm-dd}</span>
-&dimensions=viewer,video,country,city,region,device_type
-&fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
+&dimensions=viewer,application,video,country,city,region,device_type,protocol
+&fields=video,video.name,viewer,application,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
 &sort=-video_view&limit=20&format=csv</code></pre>
 		<aside class="bcls-aside bcls-aside--information language-editable">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
-		<h3>Notes:</h3>
-		<ul>
-			<li>The <code>from</code> parameter is optional - the default is 30 days ago.</li>
-			<li>The <code>to</code> parameter is optional - the default is <code>now</code>.</li>
-			<li>The <code>limit</code> parameter is optional - the default is 10 items; you can set it to any number or <code>allows</code>.</li>
-			<li>The <code>format</code> parameter is optional - the default is <code>json</code> and the allowable values are <code>json</code>, <code>csv</code> or <code>xlxs</code>.</li>
-		</ul>
+		<h3>Required parameters</h3>
+		<table class="bcls-table">
+			<caption class="bcls-caption--table">Required Parameters</caption>
+			<thead class="bcls-table__head">
+					<tr>
+							<th>Parameter</th>
+							<th>Required Values</th>
+							<th>Optional Values</th>
+					</tr>
+			</thead>
+			<tbody class="bcls-table__body">
+					<tr>
+							<td><code translate="no">accounts</code></td>
+							<td>one or more accounts IDs</td>
+							<td></td>
+					</tr>
+					<tr>
+							<td><code translate="no">dimensions</code></td>
+							<td>
+								<ul>
+									<li><code translate="no">viewer</code></li>
+									<li><code translate="no">application</code></li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li><code translate="no">account</code></li>
+									<li><code translate="no">video</code></li>
+									<li><code translate="no">country</code></li>
+									<li><code translate="no">region</code></li>
+									<li><code translate="no">city</code></li>
+									<li><code translate="no">device_type</code></li>
+									<li><code translate="no">protocol</code></li>
+								</ul>
+							</td>
+					</tr>
+			</tbody>
+	</table>
+	<p>See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#params">Parameters</a> for some additional optional parameters that can be used to the set the date range, sort the results, set the response format, etc.</p>
 		<details>
 			<summary>Sample API Response (CSV)</summary>
-<pre><code>"video","video.name","viewer","country","region","city","device_type","time","video_view","video_percent_viewed","video_seconds_viewed"
-	"6213365712001","Huddle 23rd November 2020","james.harding@lovehoney.co.uk","GB","GB-WLS","Newport","mobile","1606847553834","3","1.94","11"</code></pre>
+<pre><code translate="no">"video","video.name","viewer","country","region","city","device_type","time","video_view","video_percent_viewed","video_seconds_viewed"
+	"6213365712001","Huddle 23rd November 2020","james.jones@newtport.uk","GB","GB-WLS","Newport","mobile","1606847553834","3","1.94","11"</code></pre>
 		</details>
 
   </section>
+	<section class="bcls-section">
+		<h2 id="where_filters">Where filters</h2>
+		<p>You can filter the results using the <code translate="no"></code></p>
+	</section>
 </article>
 
 <!-- complete bootstrap layout -->
