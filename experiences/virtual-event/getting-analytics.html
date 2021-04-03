@@ -100,15 +100,64 @@ layout: staging
 			</tbody>
 	</table>
 	<p>See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#params">Parameters</a> for some additional optional parameters that can be used to the set the date range, sort the results, set the response format, etc.</p>
-		<details>
-			<summary>Sample API Response (CSV)</summary>
-<pre><code translate="no">"video","video.name","viewer","country","region","city","device_type","time","video_view","video_percent_viewed","video_seconds_viewed"
-	"6213365712001","Huddle 23rd November 2020","james.jones@newtport.uk","GB","GB-WLS","Newport","mobile","1606847553834","3","1.94","11"</code></pre>
-		</details>
 
   </section>
 	<section class="bcls-section">
 		<h2 id="where_filters">Where filters</h2>
-		<p>You can filter the results using the <code translate="no"></code></p>
+		<p>You can filter the results using the <code translate="no">where</code> parameter. See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#filterValues">Where filters</a> for details</p>
+	</section>
+	<section class="bcls-section">
+		<h2 id="fields">Fields</h2>
+		<h3>Collected directly from the player</h3>
+		<ul>
+			<li><code translate="no">viewer</code>: Event viewer(SSO ID or device id or unique string based on user-agent and IP), taken from the <code translate="no">user</code> field</li>
+			<li><code translate="no">application</code>: virtual event experience id, if null default value = <code translate="no">account_id</code></li>
+			<li><code translate="no">time</code>: timestamp of the last event received</li>
+			<li><code translate="no">video</code></li>
+			<li><code translate="no">country</code></li>
+			<li><code translate="no">region</code></li>
+			<li><code translate="no">city</code></li>
+			<li><code translate="no">device_type</code></li>
+		</ul>
+		<h3>Aggregated metrics</h3>
+		<ul>
+			<li><code translate="no">video_view</code>: the total number of times <code translate="no">video_view</code> was sent by the player (note that <code translate="no">video_view</code> is <strong>not</strong> sent when the viewer pauses and restarts a video, or watches the video multiple times without refreshing the page)</li>
+		</ul>
+		<h3>Calculated fields</h3>
+		<ul>
+			<li>
+				<code translate="no">video_seconds_viewed</code>:
+				<ul>
+					<li>Highest range value received by Collector API irrespective of order</li>
+					<li>Note that events describing ranges over 20 seconds are discarded by the Analytics system, which could result in an inaccurate value if the player was not correctly instrumented to send ranges of 20 seconds or less - see <a href="https://apis.support.brightcove.com/data-collection/overview-data-collection-api-v2.html">Overview: Data Collection API</a></li>
+				</ul>
+			</li>
+			<li><code translate="no">video_percent_viewed</code>: video_seconds_viewed/video_duration *100 (this value will be missing or inaccurate if the video duration was not sent to the data collector)</li>
+			<li><code translate="no">video_engagement_xx</code>: the total number of views at the xx video_percent_viewed (xx = 1, 25, 50, 75, or 100)</li>
+		</ul>
+		<details>
+			<summary>Sample API Response (JSON)</summary>
+<pre><code class="language-json" translate="no">{
+	4    "item_count": 1,
+	5    "items": [
+	6        {
+	7            "viewer": "applicationtest@brightcove.com",
+	8            "country": "GB",
+	9            "video_seconds_viewed": 253,
+	10            "city": "London",
+	11            "video_percent_viewed": 527.08,
+	12            "device_type": "other",
+	13            "video": "70701475639202",
+	14            "video_view": 46,
+	15            "region": "GB-ENG"
+	16        }
+	17    ],
+	18    "summary": {
+	19        "video_seconds_viewed": 253,
+	20        "video_percent_viewed": 527.08,
+	21        "video_view": 46
+	22    }
+	23}</code></pre>
+		</details>
 	</section>
 </article>
