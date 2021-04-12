@@ -12,6 +12,7 @@ parent: Gallery Settings
       <li><a href="#sso">Single sign-on</a></li>
       <li><a href="#accesscode">Access code</a></li>
     </ul>
+    <p>Note that a Gallery Portal Experience can only be configured with a single Access Control Profile. Each Access Control Profile can have only one access restriction type. For example, it is not possible to create a profile that uses both IP address and an access code. Also, when single sign-on is used, only one identity provider can be configured per profile.</p>
     <p>To create an access control profile, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the Gallery module.</li>
@@ -29,8 +30,8 @@ parent: Gallery Settings
           <li>Your SSO provider must be set to either force re-authentication or to have a session timeout of less than our timeout. If it's not, we'll redirect to your SSO provider after our timeout and they will immediately issue a response that the user is logged in.</li>
         </ul>
       </li>
-      <li>Select the option(s) to secure the site. <strong>Only one option per Access Control Profile should be selected</strong>:
-<ul>
+      <li>Select the option(s) to secure the site. <strong>Only one option per Access Control Profile can be selected</strong>:
+        <ul>
           <li><a href="#ip">IP address</a></li>
           <li><a href="#sso">Single sign-on</a></li>
           <li><a href="#accesscode">Access code</a></li>
