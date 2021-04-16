@@ -660,6 +660,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>(Optional) Enter the <strong>SAML Issuer / Entity ID Override</strong>. Enter a value here to optionally override the SAML issuer.</li>
       <li>(Optional) Enter the<strong> ACS URL Override</strong>. Enter a value here to optionally override the ACS URL.</li>
       <li>(Optional) Enter the <strong>SAML AuthnContext Override</strong>. Enter a value here to optionally override the SAML AuthnContext.</li>
+      <li>(Optional) Choose to disable the <strong>Default AuthnContext</strong>. By default, for SSO profiles, Gallery will send PasswordProtectedTransport as SAML authentication context. Sometimes this is not supported by the Identity providers. When this option is checked, Gallery will not send the the authentication context request.</li>
       <li>(Optional) Enter any SAML attributes for that you want passed to your external JavaScript.</li>
       <li>(Optional) Check <strong>Expose all attributes</strong> to expose all of the SAML attributes for use in external JavaScript.</li>
       <li>Click <strong>Save</strong>.</li>
@@ -734,7 +735,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 12 Feb 2021
+  Page last updated on 12 Apr 2021
 </div>
 
 
