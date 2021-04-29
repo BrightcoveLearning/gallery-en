@@ -582,13 +582,16 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>The <code translate="No">sponsors</code> object in the configuration file also has parameters to control where in the homepage the sponsor information is displayed. For information on positioning the sponsors section, see <a href="/experiences/virtual-event/positioning-content-homepage.html">Positioning Content on the Home Page</a>. </p>
   </section>
   <section class="bcls-section">
-    <h2 id="css">Removing opacity from logo images</h2>
-    <p>By default, logo images are styled with an opacity level of 80%. The following CSS can be used to set the opacity to 100%.</p>
+    <h2 id="css">Removing opacity and sizing logo images</h2>
+    <p>By default, logo images are styled with an opacity level of 80%. The following CSS style can be used to set the opacity to 100%. The <code>max-width</code> property can be used to change the size of the images.</p>
     <pre><code translate="No">
+&lt;style&gt;
 .bc-sponsors-section .bc-sponsors-list img {
     -webkit-filter: none;
     opacity: 1;
+    max-width: 200;
 }
+&lt;/style&gt;
 </code></pre>
     Edit the experience and add the CSS to the top of the <strong>Custom Header HTML</strong>. field.
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsors-opacity-css.png" /></figure>
