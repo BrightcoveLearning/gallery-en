@@ -618,8 +618,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{account1_id,account2_id}</span>
 &from=<span class="bcls-highlight">{yyyy-mm-dd}</span>
 &to=<span class="bcls-highlight">{yyyy-mm-dd}</span>
-&dimensions=viewer,application,video,country,city,region,device_type,protocol
-&fields=video,video.name,viewer,application,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
+&dimensions=viewer,video,country,city,region,device_type,protocol
+&fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
 &sort=-video_view&limit=20&format=csv</code></pre>
 		<aside class="bcls-aside bcls-aside--information language-editable">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
 		<h3>Required parameters</h3>
@@ -643,7 +643,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 							<td>
 								<ul>
 									<li><code translate="no">viewer</code></li>
-									<li><code translate="no">application</code></li>
+									<!-- <li><code translate="no">application</code></li> -->
 								</ul>
 							</td>
 							<td>
@@ -672,7 +672,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 		<h3>Collected directly from the player</h3>
 		<ul>
 			<li><code translate="no">viewer</code>: Event viewer(SSO ID or device id or unique string based on user-agent and IP), taken from the <code translate="no">user</code> field</li>
-			<li><code translate="no">application</code>: virtual event experience id, if null default value = <code translate="no">account_id</code></li>
+			<!-- <li><code translate="no">application</code>: virtual event experience id, if null default value = <code translate="no">account_id</code></li> -->
 			<li><code translate="no">time</code>: timestamp of the last event received</li>
 			<li><code translate="no">video</code></li>
 			<li><code translate="no">country</code></li>
@@ -702,7 +702,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 	4    "item_count": 1,
 	5    "items": [
 	6        {
-	7            "viewer": "applicationtest@brightcove.com",
+	7            "viewer": "test@brightcove.com",
 	8            "country": "GB",
 	9            "video_seconds_viewed": 253,
 	10            "city": "London",
