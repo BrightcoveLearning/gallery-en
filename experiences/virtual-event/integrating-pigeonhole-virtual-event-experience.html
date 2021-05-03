@@ -86,4 +86,40 @@ layout: staging
       <li>Click <strong>Save</strong>.</li>
     </ol>
   </section>
+  <section class="bcls-section">
+    <h2 id="sso-attributes">Passing user SSO information to Pigeonhole</h2>
+    <p>If your Virtual Event Experience is secured using SSO, it is possible to pass user SSO  information to Pigeonhole so that users can be tracked inside of Pigeonhole. The following sections walk through the settings and steps that are needed  to pass SSO information to Pigeonhole.</p>
+    <h3>Map SSO attributes</h3>
+    <p>You  need to ensure that the correct SSO attributes are mapped so they can be passed to your experience and then to Pigeonhole. The integration Pigeonhole looks for the following values:</p>
+    <ul>
+      <li><code translate="No">fname</code> - User's name</li>
+      <li><code translate="No">nameID</code> - User's email address</li>
+    </ul>
+    <p>The example below shows these attributes being exposed from inside the Okta SSOAdmin page.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
+    <h3>Expose attributes in the Access Control Profile</h3>
+    <p>Ensure that the Access Control Profile used to secure the experience has the <strong>Expose all attributes</strong> option checked.  If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
+      <li>Click the edit icon for the profile being used to secure the experience.</li>
+      <li>Ensure that the <strong>Expose all attributes</strong> setting is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-sso-expose.png" /></figure>
+      </li>
+    </ol>
+    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.</p>
+    <h3>Configure Pigeonhole settings</h3>
+    <p>Settings for the Pigeonhole event must also be configured.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Edit the event in Pigeonhole.</li>
+      <li>In the left navigation, click <strong>More settings</strong>.</li>
+      <li>Click the <strong>Attendees</strong> tab.</li>
+      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.</li>
+      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
+      <li>Check the <strong>Enable registrant profile for this event</strong> option.</li>
+    </ol>
+    <p>If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
+  </section>
 </article>
