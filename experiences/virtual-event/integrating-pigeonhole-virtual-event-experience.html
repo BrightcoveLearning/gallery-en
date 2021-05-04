@@ -61,6 +61,21 @@ layout: staging
     <p>The <strong>iframe</strong> tag with the  Pigeonhole URL will be added to the appropriate video.</p>
   </section>
   <section class="bcls-section">
+    <h2 id="ph_settings">Configuring event settings</h2>
+    <p>Settings for the Pigeonhole event must also be configured so the SSO information can be used to create a user profile.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the left navigation, click <strong>More settings</strong>.</li>
+      <li>Click the <strong>Attendees</strong> tab.</li>
+      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-profile-info.png" /></figure>
+      </li>
+      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
+      <li>Check the <strong>Enable registrant profile for this event</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-reg-profiles.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
     <h2 id="custom_field">Creating a custom field</h2>
     <p>In order for the Virtual Event template to know which Pigeonhole to display for a video, a custom field is used. To create a custom field, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
@@ -95,7 +110,7 @@ layout: staging
       <li><code translate="No">fname</code> - User's name</li>
       <li><code translate="No">nameID</code> - User's email address</li>
     </ul>
-    <p>The example below shows these attributes being exposed from inside the Okta SSOAdmin page.</p>
+    <p>The example below shows these attributes being exposed from inside the Okta SSO Admin page.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
     <h3>Expose attributes in the Access Control Profile</h3>
     <p>Ensure that the Access Control Profile used to secure the experience has the <strong>Expose all attributes</strong> option checked.  If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
@@ -108,18 +123,7 @@ layout: staging
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-sso-expose.png" /></figure>
       </li>
     </ol>
-    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.</p>
-    <h3>Configure Pigeonhole settings</h3>
-    <p>Settings for the Pigeonhole event must also be configured.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Edit the event in Pigeonhole.</li>
-      <li>In the left navigation, click <strong>More settings</strong>.</li>
-      <li>Click the <strong>Attendees</strong> tab.</li>
-      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.</li>
-      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
-      <li>Check the <strong>Enable registrant profile for this event</strong> option.</li>
-    </ol>
-    <p>If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
+    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.    If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
   </section>
 </article>
