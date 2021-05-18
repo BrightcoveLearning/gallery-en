@@ -155,6 +155,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/creating-agenda-virtual-event-experience.html",
+      "oldURL": "/creating-agenda-virtual-event-experience"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/get-started/creating-and-managing-gallery-experiences.html",
       "oldURL": "/creating-and-managing-gallery-experiences"
   },
@@ -620,8 +625,8 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/uploading-agenda-virtual-event-experience.html",
-      "oldURL": "/uploading-agenda-virtual-event-experience"
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/uploading-customizing-agenda-virtual-event-experience.html",
+      "oldURL": "/uploading-customizing-agenda-virtual-event-experience"
   },
 
   {
