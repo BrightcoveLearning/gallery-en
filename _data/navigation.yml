@@ -260,6 +260,8 @@
       url: '/support/viewing-brightcove-system-status-page.html'
     - name: 'Opening a Support Case'
       url: '/support/opening-case-with-brightcove-support.html'
+    - name: 'Reset Your Support Portal Password'
+      url: '/support/reset-support-portal-password.html'
     - name: 'Contact Sales'
       url: '/support/contact-sales.html'
 # TODO correct and add additional sections/pages

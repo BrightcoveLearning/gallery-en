@@ -360,7 +360,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/general/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
       "oldURL": "/index"
   },
 
@@ -370,32 +370,22 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/settings/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
       "oldURL": "/index"
   },
 
@@ -410,7 +400,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -420,12 +420,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
       "oldURL": "/index"
   },
 
@@ -537,6 +537,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/reset-support-portal-password.html",
+      "oldURL": "/reset-support-portal-password"
   },
 
   {
