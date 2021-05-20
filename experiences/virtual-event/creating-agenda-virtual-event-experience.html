@@ -16,9 +16,9 @@ layout: staging
     <p>When creating the initial agenda file, you can download a sample agenda file and edit it or use an existing agenda file you may have created. The agenda module looks for the existence of specific column names. These columns will be mapped to the appropriate fields in the agenda module. Other columns that may be in your agenda file will be ignored by the agenda module. In order to upload an agenda file, the following columns are required:</p>
     <ul>
       <li><code translate="No">name</code> - Session name</li>
-      <li><code translate="No">start_date</code> - Session start date in MM/DD/YYYY format</li>
+      <li><code translate="No">start_date</code> - Session start date (MM/DD/YYYY format)</li>
       <li><code translate="No">start_time</code> - Session start time</li>
-      <li><code translate="No">timezone</code> - Timezone for start_time</li>
+      <li><code translate="No">timezone</code> - Timezone for start_time (using zone ID from the <a href="https://nodatime.org/TimeZones">IANA time zones</a>)</li>
       <li><code translate="No">duration</code> - Session duration in minutes</li>
     </ul>
     <p>The following columns are optional, but if they exist in your agenda file, they will also be imported into the agenda module:</p>
@@ -30,8 +30,8 @@ layout: staging
       <li><code translate="No">speaker2_first</code> - Speaker 2 first name</li>
       <li><code translate="No">speaker2_last</code> - Speaker 2 last name</li>
       <li><code translate="No">speaker2_email</code> - Speaker 2 email address</li>
-      <li><code translate="No">track</code> - Value that identifies the track (i.e. technical, sales, marketing)</li>
-      <li><code translate="No">session_type</code> - Session type</li>
+      <li><code translate="No">track</code> - Value that identifies the track (i.e. technical, sales, marketing). If blank, then it will default to our special <strong>All</strong> setting which means it's a session that spans all tracks.</li>
+      <li><code translate="No">session_type</code> - Session type (keynote, session, other)</li>
       <li><code translate="No">video _id</code> - Video ID</li>
       <li><code translate="No">related _label</code> - Label for the related link that will appear in the Agenda module</li>
       <li><code translate="No">related_link</code> - URL link to session handout, slides, etc.</li>
