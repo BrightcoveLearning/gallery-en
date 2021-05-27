@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Virtual Event Template Specifications</title>
+  <title>Managing Event Speakers</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -62,7 +62,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Virtual Event Template Specifications</li>
+      <li class="breadcrumb-item active" aria-current="page">Managing Event Speakers</li>
     </ol>
   </nav>
 </header>
@@ -572,76 +572,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Virtual Event Template Specifications</h1>
-  <summary>This topic provides an overview of the content requirements for the Virtual Event template.</summary>
+  <h1>Managing Event Speakers</h1>
+  <summary>In this topic you will learn how to manage the event speakers for a  Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <h2 id="videos">Video and Audio</h2>
-    <p>Video and audio recommendations are listed below.</p>
-    <h3 class="BCL_subsectionTitle">Video</h3>
-    <table class="bcls-table">
-      <tbody class="bcls-table__body">
-        <tr>
-          <td  style="width:25%"><strong>Format</strong></td>
-          <td  style="width:75%">MP4</td>
-        </tr>
-        <tr>
-          <td ><strong>Codec</strong></td>
-          <td >H.264, H.265</td>
-        </tr>
-        <tr>
-          <td ><strong>Bitrate</strong></td>
-          <td >2x the bitrate of the highest rendition</td>
-        </tr>
-        <tr>
-          <td ><strong>Frame rate</strong></td>
-          <td >Constant, usually between 15 - 60 frames per second</td>
-        </tr>
-        <tr>
-          <td ><strong>Aspect ratio</strong></td>
-          <td >Your video aspect ratio will be preserved. An aspect ratio of 16:9 is common.</td>
-        </tr>
-      </tbody>
-    </table>
-    <h3 class="BCL_subsectionTitle">Audio</h3>
-    <table class="bcls-table">
-      <tbody class="bcls-table__body">
-        <tr>
-          <td  style="width:25%"><strong>Codec</strong></td>
-          <td  style="width:75%">AAC (Advanced Audio Codec)</td>
-        </tr>
-        <tr>
-          <td ><strong>Bit rate</strong></td>
-          <td >Constant, 128 kbps</td>
-        </tr>
-        <tr>
-          <td ><strong>Channels</strong></td>
-          <td >Stereo</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>For recommendations on best practices for recording, exporting, uploading and publishing your videos to ensure optimum playback, see <a href="https://studio.support.brightcove.com/general/best-practices-video-creating-transcoding-and-uploading-workflow.html">Best Practices: The Video Creating, Transcoding, and Uploading Workflow</a>.</p>
+    <p>To access the Agenda module, click on a Virtual Event Experience to open the Gallery Site Editor and then click<strong> SITE FEATURES &gt; Agenda</strong>.
+<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-module-home.png" /></figure>
+    <p>From the home page you can:</p>
+    <ul>
+      <li><a href="#create">Create and manage experiences</a></li>
+      <li><a href="#configure">Configure Gallery settings</a>  </li>
+    </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="images">Images</h2>
-    <p> Various images are used throughout the Virtual Event template. Image recommendations are listed below.</p>
-    <h3>Background Image</h3>
-    <p>The image size depends on the breakpoints the customer is trying to support, more often than not 1920x1080 works, but the image should be optimized so it's not gigantic for best performance. </p>
-    <h3>Header Logo</h3>
-    <p>The header logo image will be proportionally scaled down to 178px wide.</p>
-    <h3>Agenda</h3>
-    <p>Default image size is 320px x 180px. Images will be cropped to this size.</p>
-    <h3>Speakers</h3>
-    <p>Speaker images should have a max width of 200px. Images will not be resized.  By default, the template CSS configures the speaker images with a border-radius of 50% which will make the images circular. The speaker bio displayed below the speaker is limited to approximately 3 lines of 15 words.</p>
-    <h3>Sponsors</h3>
-    <p>The sponsor images will be resized to 100px wide and have opacity set to 80%. <a href="customizing-sponsors-virtual-event-experience.html">Sample CSS</a> is provided to override this behavior.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="fonts">Fonts</h2>
-    <p>The template is optimized to work with the <strong>Roboto Condensed</strong> font.  This font can be assigned using the <strong>Style</strong> menu inside of the Gallery interface. Other fonts can be used but may require changes to CSS files. For information about using custom fonts, see <a href="/experiences/portal/using-custom-fonts-portal-experience.html">Using Custom Fonts in a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="schedule">Schedule</h2>
-    <p>The schedule is typically used to list the schedule of live events. There is no limit to the number of items that can appear in the schedule. The schedule can display the session name, speakers and date and time for the session. A countdown timer will appear next to the session and a View button will appear when the session is live. The session description is not displayed on the page itself but can be displayed using custom JavaScript. For information on configuring the event schedule, see <a href="/experiences/virtual-event/pages-to-delete/configuring-event-agenda-virtual-event-experience.html">Configuring the Event Schedule</a>.</p>
+    <h2 id="configure">Configuring Gallery settings</h2>
+    <p>When creating a Portal Experience, Gallery must be configured with&nbsp;a default player. To learn more about Gallery settings, see <a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a>.</p>
   </section>
 </article>
 
