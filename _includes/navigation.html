@@ -24,7 +24,18 @@
                       <a href="{{ entry.url }}"><span style="color:#8E9093">+</span>&nbsp;&nbsp;{{ entry.name }}</a>
                       <ul class="sidenav-subsubmenu" style="display:none;">
                         {% for doc in entry.docs %}
-                        <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+                          {% if doc.docs == nil %}
+                            <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+                          {% else %}
+                          <li>
+                            <a href="{{ doc.url }}"><span style="color:#8E9093">+</span>&nbsp;&nbsp;{{ doc.name }}</a>
+                            <ul class="sidenav-subsubmenu" style="display:none;">
+                              {% for subdoc in doc.docs %}
+                              <li><a href="{{ subdoc.url }}">{{ subdoc.name }}</a></li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                          {% endif %}
                         {% endfor %}
                       </ul>
                     </li>
