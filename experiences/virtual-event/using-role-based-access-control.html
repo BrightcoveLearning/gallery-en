@@ -2,11 +2,12 @@
 title: Using Role-Based Access Control
 parent: Virtual Event
 grandparent: Experiences
+description: In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.
 layout: staging
 ---
 <h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
     <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
