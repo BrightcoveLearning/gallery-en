@@ -738,8 +738,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li><code translate="No">speaker3_last</code> - Speaker 3 last name</li>
       <li><code translate="No">speaker3_email</code> - Speaker 3 email address (used to uniquely identify a speaker)</li>
       <li><code translate="No">track</code> - Value that identifies the track (i.e. technical, sales, marketing). If blank, then it will default to a special <strong>All</strong> setting which means it's a session that spans all tracks.</li>
-      <li><code translate="No">session_type</code> - Session type (keynote, session, other)</li>
-      <li><code translate="No">video _id</code> - Video ID</li>
+      <li><code translate="No">session_type</code> - Session type (session, keynote, meeting, other)</li>
+      <li><code translate="No">video _id</code> - Video ID (for session, keynote and other session types)</li>
+      <li><code translate="No">url</code> - Meeting URL (for meeting session types)</li>
       <li><code translate="No">related _label</code> - Label for the related link that will appear in the Agenda module</li>
       <li><code translate="No">related_link</code> - URL link to a session handout, slides, etc.</li>
     </ul>
