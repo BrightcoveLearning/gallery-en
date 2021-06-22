@@ -718,7 +718,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 	<section class="bcls-section">
 		<h2 id="Analytics_API">The Analytics API</h2>
 		<p>Like other <a href="https://apis.support.brightcove.com/">platform APIs</a>, the Analytics API is a RESTful API that allows you to interact with the Video Cloud platform programmatically. It returns analytics data based on various URL parameters that you include with the request. By default the data is returned in JSON format, but you can request CSV or XLXS data to be opened in spreadsheet app instead.</p>
-		<aside class="bcls-aside bcls-aside--information language-editable">Note that this document covers only what you need to know to get analytics data for virtual events. Consult the general <a href="https://apis.support.brightcove.com/analytics-api/index.html">Analytics API documentation</a> for other uses.</aside>
+		<aside class="bcls-aside bcls-aside--information">Note that this document covers only what you need to know to get analytics data for virtual events. Consult the general <a href="https://apis.support.brightcove.com/analytics-api/index.html">Analytics API documentation</a> for other uses.</aside>
 		<h3>How to make requests</h3>
 		<p>Requests to RESTful APIs are made to a URL, the same way that a browser makes a request to a URL to retrieve a web page. However, you cannot simply paste the API request into a browser, because the request must be authenticated (we are getting to that) to show that you are authorized to get the data. There are many tools to help you do it, however. Here is a short list:</p>
 		<ul>
@@ -746,7 +746,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 			<li>Click <span class="button-blue">Save</span>.</li>
 			<li>
 				A new dialog will display the <strong>Client ID</strong> <strong>Client Secret</strong>. Copy and save them both in a secure place where you can find them again.
-				<aside class="bcls-aside bcls-aside--warning language-editable">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
+				<aside class="bcls-aside bcls-aside--warning">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
 			</li>
 		</ol>
 		<h3>The access token</h3>
@@ -761,7 +761,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 &dimensions=viewer,video,country,city,region,device_type,protocol
 &fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
 &sort=-video_view&limit=20&format=csv</code></pre>
-		<aside class="bcls-aside bcls-aside--information language-editable">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
+		<aside class="bcls-aside bcls-aside--information">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
 		<h3>Required parameters</h3>
 		<table class="bcls-table">
 			<caption class="bcls-caption--table">Required Parameters</caption>
