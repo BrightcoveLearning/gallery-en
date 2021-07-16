@@ -37,9 +37,6 @@
 - VideoCloudAddOns:
   name: -- VIDEO CLOUD ADD-ONS --
   url: '' 
-- Audience:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience'
-  url: 'https://studio.support.brightcove.com/audience/index.html'
 - Campaign:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign'
   url: 'https://campaign.support.brightcove.com' 
