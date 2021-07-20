@@ -3,25 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to create a Landing Page experience.">
+  <meta name="description" content="In this topic you will learn how to add interactivity to a breakout room.">
   
-  <title>Creating a Landing Page Experience</title>
+  <title>Adding Interactivity to a Breakout Room</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
-  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
   <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
@@ -41,7 +31,6 @@
   gtag('config', 'UA-2728311-17');
 </script>
   <script src="/assets/js/sajari-head.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="body">
@@ -71,9 +60,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/landing/">Landing Page</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating a Landing Page Experience</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding Interactivity to a Breakout Room</li>
     </ol>
   </nav>
 </header>
@@ -714,80 +703,127 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     
 
 
+<h1>Adding Interactivity to a Breakout Room</h1>
 <article class="bcls-article">
-  <h1>Creating a Landing Page Experience</h1>
-  <summary>In this topic you will learn how to create a Landing Page experience.</summary>
+  <summary>In this topic you will learn how to add interactivity to a breakout room.</summary>
   <section class="bcls-section">
-    <p>The Landing Page template allows you to create an experience that displays a single video and can optionally capture viewer information. For example, you might create an email blast for a new product with a link to a landing page site. The site would display a product video and allow viewers to enter their information to receive more information.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-example.png" /></figure>
-    <p>The process to create and publish a Landing Page experience is similar to experiences that use the other templates. However, when creating a Landing Page experience, there are some layout options and site settings documented here that you might want to take advantage of.</p>
+    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  live event and then sessions can be created for each video you want to add Pigeonhole functionality to. Once the sessions are created, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole pod to display next to the video player for chosen videos.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="create">Creating a Landing Page experience</h2>
-    <p>To create a Landing Page experience, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the Gallery module and click the <strong>Experiences</strong> link at the top of the page.</li>
-      <li>Click <strong>New Experience</strong>. A list of templates will display.</li>
-      <li>Locate the <strong>Landing Page</strong> template and click <strong>Choose</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-landing-page-thumb.png" /></figure>
+    <h2 id="pigeonhole">Creating a new Pigeonhole event and session</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Pigeonhole functionality added to it.</p>
+    <ol class="bcls-tasklist">
+      <li>Log in to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
       </li>
-    </ol>
-    <p>The Gallery Site Editor will open.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="layout">Changing the landing page layout</h2>
-    <p>The layout of the landing page can be configured to optionally display a call-to-action or a lead form. To change the layout of the landing page, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the Gallery Site Editor, click <strong>PAGES </strong> in the left navigation.</li>
-      <li>Click the <strong>Change Layout</strong> dropdown.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-change-layout.png" /></figure>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
       </li>
-      <li>Click on a layout option link:
-        <ul>
-          <li><strong>Sidebar CTA/Ad and Lead Form</strong> - Displays a lead form and call-to-action in the right sidebar to the right of the player</li>
-          <li><strong>Sidebar CTA/Ad</strong> - Displays only a call-to-action in right sidebar to the right of the player</li>
-          <li><strong>No Sidebar CTA/Ad</strong> - Nothing is displayed in right sidebar to the right of the player</li>
-        </ul>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
       </li>
-    </ol>
-    <p>The preview in the Gallery Site Editor will update to display the layout. A single video, images, text, links and calls-to-action can be added as needed. For information on using the Gallery Site Editor to customize the site, see <a href="/experiences/portal/using-site-editor-customize-portal-experience.html">Using the Site Editor to Customize a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="subdomain">Using the single video selector</h2>
-    <p>When using the landing page template, only a single video can be displayed. The landing page template uses the single video selector dialog vs. the collection editor used by the other templates. To select a video, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>VIDEOS</strong> in the left navigation.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-select-video.png" /></figure>
+      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong> (other session types can also be used).</li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
       </li>
-      <li>Select a <strong>Video Source</strong>, both <strong>Video Cloud</strong> and <strong>YouTube</strong> are supported.</li>
-      <li>Select the video criteria:
-        <ul>
-          <li><strong>Playlist</strong> - The video resides in a playlist. Select a playlist and then select the video.</li>
-          <li><strong>Search</strong> - Enter search criteria for the video. The Video ID, name and short and long description fields will be searched.</li>
-        </ul>
+      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Q&amp;A</strong> and confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
       </li>
-      <li>Select a single video.</li>
-      <li>Click <strong>Save</strong> to save the changes.</li>
+      <li>Create other sessions as needed.</li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="leadform">Configuring a lead form</h2>
-    <p>In order to use a lead form, a Campaign-enabled player that is configured with a lead form must be selected.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-configure-lead-form.png" /></figure>
-    <p>To select a Campaign-enabled player to use on the landing page, click <strong>VIDEO AND PLAYBACK &gt; Player and Lead Form</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-lead-form-settings.png" /></figure>
-    <p>Campaign-enabled players are indicated with a Campaign icon (<img alt="" src="/assets/images/experiences/landing/node16637-audience-icon.png" />). After a Campaign-enabled player is selected, the dialog will update to display the lead form and Campaign connection information.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/landing/node16637-audience-info.png" /></figure>
-    <p>For information on creating lead forms and working with Campaign-enabled players, see <a href="/experiences/portal/using-lead-form-portal-experience.html">Using a Lead Form with a Portal Experience</a>.</p>
+    <h2 id="embed-code">Generating the Pigeonhole embed code</h2>
+    <p>In order for a Pigeonhole to display next to a video, iframe embed code will be added to video using a Video Cloud custom field. The format of the code will be:</p>
+    <code translate="no">
+    <pre>&lt;iframe src=&quot;<em>Pigeonhole URL</em>&quot;&gt;&lt;/iframe&gt;</pre>
+    </code>
+    <p>To get the value for the <strong>pigeonhole URL</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Pigeonhole, click <strong>Run your event</strong> in the left navigation.</li>
+      <li>Click the link in the <strong>Invite your attendees</strong> section.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-invite-attendees.png" /></figure>
+      </li>
+      <li>Confirm that a  new browser tab with a list of all sessions opens.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-list.png" /></figure>
+      </li>
+      <li>Click the enter link for the appropriate session, for example, <strong>Enter this Q&amp;A</strong>. Note that the link will change based upon the session type.</li>
+      <li>Confirm that the Pigeonhole opens in a new browser tab. The Pigeonhole URL is displayed in the browser address bar.</li>
+    </ol>
+    <p>The <strong>iframe</strong> tag with the  Pigeonhole URL will be added to the appropriate video.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="subdomain">Configuring a subdomain</h2>
-    <p>Custom domains and subdomains provide an easy way to publish the site on a unique URL. For example, you may create multiple landing pages and have them published to <code translate="No">mycustomurl.com/bike_campaign</code> and <code translate="No">mycustomurl.com/shoes_campaign</code>. For information on creating custom domains, see <a href="/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a> and <a href="/experiences/portal/assigning-custom-domain-portal-experience.html">Assigning a Custom Domain to a Portal Experience</a>.</p>
+    <h2 id="ph_settings">Configuring event settings</h2>
+    <p>Settings for the Pigeonhole event must also be configured so the SSO information can be used to create a user profile.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the left navigation, click <strong>More settings</strong>.</li>
+      <li>Click the <strong>Attendees</strong> tab.</li>
+      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-profile-info.png" /></figure>
+      </li>
+      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
+      <li>Check the <strong>Enable registrant profile for this event</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-reg-profiles.png" /></figure>
+      </li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="leads">Exporting lead data</h2>
-    <p>All data captured in lead forms can be exported using the Campaign module. For information, see <a href="/experiences/portal/exporting-gallery-lead-data.html">Exporting Gallery Lead Data</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: Only users with Administrator privileges will be able to export the lead data.</aside>
+    <h2 id="custom_field">Creating a custom field</h2>
+    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video, a custom field is used. To create a custom field, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Log in to Video Cloud Studio.</li>
+      <li><strong></strong>In the navigation header, click <strong>ADMIN</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
+      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
+      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
+      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
+      <li><strong>Save</strong> the custom field.</li>
+    </ol>
+    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pigeonhole">Adding a Pigeonhole to a video</h2>
+    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Media module.</li>
+      <li>Click on a video to open the video properties.</li>
+      <li>Locate the <strong>CUSTOM FIELDS</strong> section and click <strong>Edit</strong>.</li>
+      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sso-attributes">Passing user SSO information to Pigeonhole</h2>
+    <p>If your Virtual Event Experience is secured using SSO, it is possible to pass user SSO  information to Pigeonhole so that users can be tracked inside of Pigeonhole. The following sections walk through the settings and steps that are needed  to pass SSO information to Pigeonhole.</p>
+    <h3>Map SSO attributes</h3>
+    <p>You  need to ensure that the correct SSO attributes are mapped so they can be passed to your experience and then to Pigeonhole. The integration Pigeonhole looks for the following values:</p>
+    <ul>
+      <li><code translate="No">fname</code> - User's name</li>
+      <li><code translate="No">nameID</code> - User's email address</li>
+    </ul>
+    <p>The example below shows these attributes being exposed from inside the Okta SSO Admin page.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
+    <h3>Expose attributes in the Access Control Profile</h3>
+    <p>Ensure that the Access Control Profile used to secure the experience has the <strong>Expose all attributes</strong> option checked.  If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
+      <li>Click the edit icon for the profile being used to secure the experience.</li>
+      <li>Ensure that the <strong>Expose all attributes</strong> setting is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-sso-expose.png" /></figure>
+      </li>
+    </ol>
+    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.    If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
   </section>
 </article>
 
@@ -806,7 +842,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 19 Jul 2021
+  Page last updated on 20 Jul 2021
 </div>
 
 
