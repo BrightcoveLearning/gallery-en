@@ -760,15 +760,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
               <li>Keynote</li>
               <li>Meeting</li>
               <li>Other</li>
+              <li>Breakout Room</li>
             </ul>
           </li>
-          <li>Video ID - Available with Session, Keynote and Other session types</li>
-          <li>URL - Available with Meeting session type</li>
-          <li>Cover Image</li>
-          <li>Related Content - Can be used to provide a link to session content (handouts or slides)
+          <li>Session Type Parameters - Based upon the Session Type that is selected, additional parameters will be displayed:
             <ul>
-              <li>Label - Label for the content</li>
-              <li>URL - Link to the content</li>
+              <li><strong>Video ID</strong> - Video ID of the video to display for this session (available with Session, Keynote and Other session types)</li>
+              <li><strong>URL</strong> - Meeting URL to open (available with Meeting session type)</li>
+              <li><strong>Pigeonhole Session ID and Pigeonhole Passcode</strong> - The <a href="integrating-pigeonhole-virtual-event-experience.html#phole-session">Pigeonhole Session ID</a> and <a href="integrating-pigeonhole-virtual-event-experience.html#phole-passcode">Passcode</a> are needed to display a Pigeonhole along with the breakout room (available with Breakout Room session type)</li>
+            </ul>
+          </li>
+          <li>Cover Image</li>
+          <li>Related Content - Can be used to provide a link to session content, for example, handouts or slides
+            <ul>
+              <li><strong>Label</strong> - Label for the content</li>
+              <li><strong>URL</strong> - Link to the content</li>
             </ul>
           </li>
         </ul>
