@@ -370,7 +370,22 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
       "oldURL": "/index"
   },
 
@@ -380,12 +395,27 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/settings/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -400,42 +430,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/develop/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -652,6 +652,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/uploading-speakers-virtual-event-experience.html",
       "oldURL": "/uploading-speakers-virtual-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-brightcove-web-conferencing.html",
+      "oldURL": "/using-brightcove-web-conferencing"
   },
 
   {
