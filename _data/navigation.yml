@@ -229,7 +229,7 @@
     - name: 'In-Page Experience Platform API Reference'
       url: /develop/reference.html
     - name: 'In-Page Experience Client API Reference'
-      url: 'https://docs.brightcove.com/in-page-exerience-client-api/ClientApi.html'
+      url: 'https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html'
 - section: 
   name: Training
   url: /training/index.html
