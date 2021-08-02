@@ -29,41 +29,42 @@ description: This simple example demonstrates the use of the In-Page Experience 
       <li>Add an <code translate="No">id</code> attribute to the <code translate="No">&lt;div&gt;</code> tag, with the value: <strong>customized_in_page_experience</strong>.</li>
       <li>Go back to Studio and add a custom HTML component to the experience with the following code:
         <pre class="line-numbers">
-<code class="language-javascript" translate="No">&lt;div style="padding: .5em;border: 1px #64AAB2 solid; border-radius:.5em;"&gt;
-&lt;p&gt;Current Video: &lt;span id="current_video" style="color:RGB(155, 37, 86);font-weight:bold;"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Video Paused: &lt;span id="video_paused" style="color:RGB(155, 37, 86);font-weight:bold;"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;script&gt;
-  var BCLS = ( function (window, document) {
-    var experience = window.top.bcov.gal.getEmbed('customized_in_page_experience'),
-    experienceApi,
-    video,
-    current_video = document.getElementById('current_video'),
-    video_paused = document.getElementById('video_paused');
-
-    experienceApi = experience.clientApi;
-
-    // get initial video
-    video = experienceApi.getCurrentVideo();
-    current_video.textContent = video.name;
-
-    // event listeners
-    experienceApi.on('videoChanged', function() {
-      video = experienceApi.getCurrentVideo();
-      current_video.textContent = video.name;
-    });
-
-    experienceApi.on('videoStarted', function() {
-      video_paused.textContent = 'false';
-    });
-
-    experienceApi.on('videoPaused', function() {
-      video_paused.textContent = 'true';
-    });
-
-  })(window, document);
-&lt;/script&gt;
-</code></pre>
+<code class="language-javascript" translate="No">&lt;div style=&quot;padding: .5em;border: 1px #64AAB2 solid; border-radius:.5em;&quot;&gt;
+  &lt;p&gt;Current Video: &lt;span id=&quot;current_video&quot; style=&quot;color:RGB(155, 37, 86);font-weight:bold;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;p&gt;Video Paused: &lt;span id=&quot;video_paused&quot; style=&quot;color:RGB(155, 37, 86);font-weight:bold;&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    var BCLS = ( function (window, document) {
+      var experience = window.top.bcov.gal.getEmbed(&#39;customized_in_page_experience&#39;),
+      experienceApi,
+      video,
+      current_video = document.getElementById(&#39;current_video&#39;),
+      video_paused = document.getElementById(&#39;video_paused&#39;);
+  
+      experienceApi = experience.clientApi;
+  
+      // get initial video
+      experienceApi.once(&#39;videoLoaded&#39;, function() {
+        video = experienceApi.getCurrentVideo();
+        current_video.textContent = video.name;
+      });
+  
+      // event listeners
+      experienceApi.on(&#39;videoChanged&#39;, function() {
+        video = experienceApi.getCurrentVideo();
+        current_video.textContent = video.name;
+      });
+  
+      experienceApi.on(&#39;videoStarted&#39;, function() {
+        video_paused.textContent = &#39;false&#39;;
+      });
+  
+      experienceApi.on(&#39;videoPaused&#39;, function() {
+        video_paused.textContent = &#39;true&#39;;
+      });
+  
+    })(window, document);
+  &lt;/script&gt;</code></pre>
       </li>
       <li>Set the component to display Before Play, Playing, and After Play.</li>
       <li>Save your changes and re-publish the experience.</li>
