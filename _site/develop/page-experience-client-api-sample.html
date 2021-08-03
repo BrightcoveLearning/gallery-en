@@ -758,9 +758,29 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       // try it, and if it fails keep waiting a second and try again
       function getExperience () {
         var t;
-        experience = window.top.bcov.gal.getEmbed(&#39;customized_in_page_experience&#39;);
+        experience = window.top.bcov.gal.getEmbed(&#39;YOUR_ExperienceID_Here&#39;);
         if (experience) {
           experienceApi = experience.clientApi;
+          // get initial video
+          experienceApi.once(&#39;videoLoaded&#39;, function() {
+            video = experienceApi.getCurrentVideo();
+            current_video.textContent = video.name;
+          });
+      
+          // event listeners
+          experienceApi.on(&#39;videoChanged&#39;, function() {
+            video = experienceApi.getCurrentVideo();
+            current_video.textContent = video.name;
+          });
+      
+          experienceApi.on(&#39;videoStarted&#39;, function() {
+            video_paused.textContent = &#39;false&#39;;
+          });
+      
+          experienceApi.on(&#39;videoPaused&#39;, function() {
+            video_paused.textContent = &#39;true&#39;;
+          });
+
         } else {
           t = window.setTimeout(getExperience, 1000);
         }
@@ -769,25 +789,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       getExperience();
   
   
-      // get initial video
-      experienceApi.once(&#39;videoLoaded&#39;, function() {
-        video = experienceApi.getCurrentVideo();
-        current_video.textContent = video.name;
-      });
-  
-      // event listeners
-      experienceApi.on(&#39;videoChanged&#39;, function() {
-        video = experienceApi.getCurrentVideo();
-        current_video.textContent = video.name;
-      });
-  
-      experienceApi.on(&#39;videoStarted&#39;, function() {
-        video_paused.textContent = &#39;false&#39;;
-      });
-  
-      experienceApi.on(&#39;videoPaused&#39;, function() {
-        video_paused.textContent = &#39;true&#39;;
-      });
   
     })(window, document);
   &lt;/script&gt;</code></pre>
