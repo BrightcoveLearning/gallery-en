@@ -746,13 +746,28 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   &lt;/div&gt;
   &lt;script&gt;
     var BCLS = ( function (window, document) {
-      var experience = window.top.bcov.gal.getEmbed(&#39;customized_in_page_experience&#39;),
+      var experience,
       experienceApi,
       video,
       current_video = document.getElementById(&#39;current_video&#39;),
       video_paused = document.getElementById(&#39;video_paused&#39;);
+
+      
+      // code may execute before the experience has fully loaded
+      // to ensure you get a reference to the experience,
+      // try it, and if it fails keep waiting a second and try again
+      function getExperience () {
+        var t;
+        experience = window.top.bcov.gal.getEmbed(&#39;customized_in_page_experience&#39;);
+        if (experience) {
+          experienceApi = experience.clientApi;
+        } else {
+          t = window.setTimeout(getExperience, 1000);
+        }
+      }
+
+      getExperience();
   
-      experienceApi = experience.clientApi;
   
       // get initial video
       experienceApi.once(&#39;videoLoaded&#39;, function() {
