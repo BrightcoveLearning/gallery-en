@@ -9,23 +9,37 @@ layout: staging
   <h1>Managing the Event Agenda</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>The agenda module supports uploading an external .csv agenda file so that all of the agenda items don't have to be manually entered into the agenda module. Uploading an agenda file is how the event agenda is initially created. After an agenda is uploaded, it can be edited using the Agenda module.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: For information on creating an agenda file for upload, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="upload">Uploading an agenda file</h2>
-    <p>Before  importing your existing agenda into the Agenda module, the agenda file should be exported to a .csv file. <strong>The Agenda module can only import a .csv file.</strong></p>
-    <p>Using the Gallery Site Editor, you can upload and configure the event agenda. To upload an agenda file to a Virtual Event Experience, follow these steps.</p>
+    <p>The Agenda module provides the ability to enter the agenda items manually or by uploading  an external .csv agenda file so that all of the agenda items don't have to be entered manually. For information on creating an agenda file for upload, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>.    </p>
+    <p>Using the Gallery Site Editor, you can create or upload an event agenda using the Agenda module. To access the Agenda module, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li>Click the experience name to open the Gallery Site Editor.</li>
       <li><code translate="No"></code>In the left navigation, click<strong> SITE FEATURES &gt; Agenda</strong>.</li>
+    </ol>
+  </section>
+    <section class="bcls-section">
+    <h2 id="new">Creating a new agenda</h2>
+    <p>To create a new agenda for the experience, click <strong>New agenda</strong> in the Agenda module.</p>
+                <p>
+                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-new.png" /></figure>
+                  
+                </p>
+                <p>The agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience. Click on the <strong>Event name</strong> to add tracks and sessions.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="upload">Uploading an agenda file</h2>
+    <p>Before  importing your existing agenda into the Agenda module, the agenda file should be exported to a .csv file. <strong>The Agenda module can only import a .csv file. </strong>To upload an agenda file to a Virtual Event Experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
       <li>Click <strong>Upload Agenda</strong>.</li>
       <li>Browse and select the agenda file to upload.</li>
       <li>Confirm the agenda is listed on the <strong>My agenda</strong> page.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-imported.png" /></figure>
       </li>
     </ol>
-    <p>If any errors occur during the agenda import, a message will be displayed. After the import, the <strong>Status</strong> will be <strong>DEACTIVATED</strong>. Agendas with a status of <strong>DEACTIVATED</strong> will not be displayed in the Virtual Event Experience. To delete the agenda, click the delete icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />).</p>
+    <p>If any errors occur during the agenda import, a message will be displayed. After the import, the agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting the agenda</h2>
+    <p>To delete the agenda, click the delete icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />) next to the agenda.</p>
   </section>
   <section class="bcls-section">
     <h2 id="export">Exporting the agenda file</h2>
@@ -38,15 +52,14 @@ layout: staging
   </section>
   <section class="bcls-section">
     <h2 id="title">Editing the agenda title</h2>
-    <p>The agenda title will be displayed on the experience homepage above the agenda. By default, the agenda title will be set to the agenda file name that was imported. </p>
+    <p>The agenda title will be displayed on the experience homepage above the agenda. To edit the agenda title, click the edit icon, enter a title and then press <strong>enter</strong>.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-title.png" /></figure>
-    <p>To edit the agenda title, click the edit icon, enter a title and then press <strong>enter</strong>.</p>
   </section>
   <section class="bcls-section">
     <h2 id="view">Viewing the agenda</h2>
-    <p>After an agenda file has been uploaded, it will appear on the <strong>My agenda</strong> page.<strong></strong> To view the agenda details, click on the <strong>Event name</strong>. The agenda will open displaying the details.</p>
+    <p>After an agenda file has been created, it will appear on the <strong>My agenda</strong> page.<strong></strong> To view the agenda details, click on the <strong>Event name</strong>. The agenda will open displaying the details.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-details.png" /></figure>
-    <p>Click a date on the left side of the page to view the agenda for that day. The tracks are displayed in the column headers at the top of the page.</p>
+    <p>Click a date on the left side of the page to view the agenda for that day. The tracks are displayed as column headers at the top of the page.</p>
   </section>
   <section class="bcls-section">
     <h2 id="adding_sessions">Adding a session</h2>
