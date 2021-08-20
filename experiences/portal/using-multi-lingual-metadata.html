@@ -1,0 +1,110 @@
+---
+title: Using Multi-Lingual Metadata
+description: In this topic you will learn how to use multi-lingual video metadata in a Portal Experience.
+parent: Portal
+grandparent: Experiences
+---
+<article class="bcls-article">
+  <h1>{{ page.title }}</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>The multi-lingual metadata feature allows you to enter video metadata in multiple languages and then configure a Portal Experience to display the video metadata in the same language that the experience is configured for.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Multi-lingual metadata is not enabled by default. Contact your account manager if you would like to have it turned on for your account(s).</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="configure">Configuring the account languages</h2>
+    <p>Before you can add multi-lingual metadata to your videos, you must configure a primary language and one or more additional languages as part of the account settings. For information on how to do this, see <a href="https://studio.support.brightcove.com/admin/configuring-language-settings.html">Configuring Language Settings</a>.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/language-settings.png" /></figure>
+    </p>
+    <p>When configuring additional languages, many languages have multiple dialects to choose from. Gallery currently supports these languages and ISO codes.</p>
+    <table width="41%" class="bcls-table">
+      <tbody class="bcls-table__body">
+        <tr>
+          <td width="64%"><strong>Language</strong></td>
+          <td width="36%">ISO Code</td>
+        </tr>
+        <tr>
+          <td >English (US)</td>
+          <td >en-us</td>
+        </tr>
+        <tr>
+          <td >German</td>
+          <td >de-de</td>
+        </tr>
+        <tr>
+          <td >Spanish</td>
+          <td >es-es</td>
+        </tr>
+        <tr>
+          <td >French</td>
+          <td >fr-fr</td>
+        </tr>
+        <tr>
+          <td >Japanese</td>
+          <td >ja-jp</td>
+        </tr>
+        <tr>
+          <td >Korean</td>
+          <td >ko-kr</td>
+        </tr>
+        <tr>
+          <td >Russian</td>
+          <td >ru-ru</td>
+        </tr>
+        <tr>
+          <td >Simplified Chinese</td>
+          <td >zh-cn</td>
+        </tr>
+        <tr>
+          <td >Traditional Chinese</td>
+          <td >zh-tw</td>
+        </tr>
+      </tbody>
+    </table>
+    <aside class="bcls-aside bcls-aside--information">Note: Make sure the ISO code(s) of the additional languages you add are listed in the above table or you will not see localized metadata in your experience.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add">Adding multi-lingual metadata</h2>
+    <p>To add multi-lingual metadata to a video, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Media module.</li>
+      <li><code translate="No"></code>Click the video title link to open the video properties page.</li>
+      <li>Select the language to add metadata for using the language selector. <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/language-select-language.png" />
+        <aside class="bcls-aside bcls-aside--information">Note: Multi-lingual metadata cannot be added to videos that were transcoded using a Legacy ingest profile.</aside>
+      </li>
+      <li>Enter the localized value(s) and then click <strong>Save</strong>.</li>
+    </ol>
+    <p> The following video property sections support multi-lingual metadata:</p>
+    <ul>
+      <li>Video Information</li>
+      <li>Audio Tracks</li>
+      <li>Images</li>
+      <li>Custom Fields</li>
+      <li>Text Tracks </li>
+    </ul>
+    For more information,  see <a href="https://studio.support.brightcove.com/media/working-multi-lingual-metadata.html">Working with Multi-Lingual Metadata</a>.</section>
+  <section class="bcls-section">
+    <h2 id="exp-language">Setting the experience language</h2>
+    <p>The <strong>Experience Language</strong> setting controls  the Gallery specific text that is displayed on the experience. To configure the <strong>Experience Language</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click on an experience title to open the Gallery Site Editor.</li>
+      <li>In the left navigation, click <strong>OVERVIEW</strong>.</li>
+      <li>Select the <strong>Experience Language</strong>. <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/language-experience-language.png" /> </li>
+      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="local-metadata">Enabling localized video metadata</h2>
+    <p>In order to have the multi-lingual video metadata appear, the <strong>Language</strong> setting for the experience must be configured.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the Gallery module.</li>
+      <li>Click on an experience title to open the Gallery Site Editor.</li>
+      <li>In the left navigation, click <strong>SITE FEATURES &gt; Language</strong>.</li>
+      <li>Select the <strong>Use metadata's language as default</strong> option.</li>
+      <li>Click <strong>Save</strong>.<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/language-experience-metadata.png" /> </li>
+    </ol>
+    <p>Make sure you  republish the experience.</p>
+  </section>
+</article>
