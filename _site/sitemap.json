@@ -370,12 +370,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/training/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
@@ -385,27 +380,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
       "oldURL": "/index"
   },
 
@@ -415,17 +390,42 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/",
+      "newURL": "https://gallery.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -435,7 +435,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "newURL": "https://gallery.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -676,11 +676,6 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-multi-lingual-metadata.html",
-      "oldURL": "/using-multi-lingual-metadata"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-multi-lingual-metadata.html",
       "oldURL": "/using-multi-lingual-metadata"
   },
 
