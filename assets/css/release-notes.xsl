@@ -49,7 +49,7 @@
 							<xsl:value-of select="description" />
             </p>
             <p class="release-note__more">
-							<a href="{ link }" class="post__more">Read more</a>
+							<a href="{ link }" class="post__more" target="_blank">Read more</a>
 						</p>
 
 					</li>
