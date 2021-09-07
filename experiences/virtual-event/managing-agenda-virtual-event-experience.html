@@ -9,21 +9,20 @@ layout: staging
   <h1>Managing the Event Agenda</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>The Agenda module provides the ability to enter the agenda items manually or by uploading  an external .csv agenda file so that all of the agenda items don't have to be entered manually. For information on creating an agenda file for upload, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>.    </p>
+    <p>The Agenda module provides the ability to enter the agenda items manually or by uploading  an external .csv agenda file so that all of the agenda items don't have to be entered manually. For information on creating an agenda file for upload, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>. </p>
     <p>Using the Gallery Site Editor, you can create or upload an event agenda using the Agenda module. To access the Agenda module, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li>Click the experience name to open the Gallery Site Editor.</li>
       <li><code translate="No"></code>In the left navigation, click<strong> SITE FEATURES &gt; Agenda</strong>.</li>
     </ol>
   </section>
-    <section class="bcls-section">
+  <section class="bcls-section">
     <h2 id="new">Creating a new agenda</h2>
     <p>To create a new agenda for the experience, click <strong>New agenda</strong> in the Agenda module.</p>
-                <p>
-                  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-new.png" /></figure>
-                  
-                </p>
-                <p>The agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience. Click on the <strong>Event name</strong> to add tracks and sessions.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-new.png" /></figure>
+    </p>
+    <p>The agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience. Click on the <strong>Event name</strong> to add tracks and sessions.</p>
   </section>
   <section class="bcls-section">
     <h2 id="import">Importing an agenda file</h2>
@@ -52,12 +51,12 @@ layout: staging
   </section>
   <section class="bcls-section">
     <h2 id="title">Editing the agenda title</h2>
-    <p>The agenda title will be displayed on the experience homepage above the agenda. To edit the agenda title, click the edit icon, enter a title and then press <strong>enter</strong>.</p>
+    <p>The agenda title will be displayed on the experience homepage above the agenda. To edit the agenda title, click on the <strong>Event name</strong> to open the agenda editor. Click the edit icon, enter a title and then press <strong>enter</strong>.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-title.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="view">Viewing the agenda</h2>
-    <p>After an agenda file has been created, it will appear on the <strong>My agenda</strong> page.<strong></strong> To view the agenda details, click on the <strong>Event name</strong>. The agenda will open displaying the details.</p>
+    <p>After an agenda file has been created, it will appear on the <strong>My agenda</strong> page.<strong></strong> To view the agenda details, click on the <strong>Event name</strong>. The agenda editor will open displaying the details.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-details.png" /></figure>
     <p>Click a date on the left side of the page to view the agenda for that day. The tracks are displayed as column headers at the top of the page.</p>
   </section>
@@ -73,12 +72,12 @@ layout: staging
       <li>Enter the session information.
         <ul>
           <li>Session Name</li>
-          <li>Speakers - Click <strong>Select Speakers</strong> and <a href="#select_speakers">select one or more speakers</a> for the session</li>
+          <li>Speakers - Click <strong>Select speakers</strong> and <a href="#select_speakers">select one or more speakers</a> for the session</li>
           <li>Start Date</li>
           <li>Start Time</li>
           <li>Duration - Session duration; for <strong>Interactive Room</strong> session types, the session will automatically end 5 minutes after the specified duration time</li>
           <li>Description</li>
-          <li>Track - Select a track to assign the session to</li>
+          <li>Track - Select a track to assign the session to; see the <a href="#add_track">Adding a new track</a> section below for details on adding new tracks</li>
           <li>Session Type
             <ul>
               <li>Session</li>
@@ -92,7 +91,7 @@ layout: staging
             <ul>
               <li><strong>Video ID</strong> - Video ID of the video to display for this session (available with <strong>Session</strong>, <strong>Keynote</strong> and <strong>Other</strong> session types)</li>
               <li><strong>URL</strong> - Meeting URL to open (available with <strong>Meeting</strong> session type)</li>
-              <li><strong>Pigeonhole Session ID and Pigeonhole Passcode</strong> - The <a href="integrating-pigeonhole-virtual-event-experience.html#phole-session">Pigeonhole Session ID</a> and <a href="integrating-pigeonhole-virtual-event-experience.html#phole-passcode">Passcode</a> are needed to display a Pigeonhole along with the breakout room (available with <strong>Breakout Room</strong> session type)</li>
+              <li><strong>Pigeonhole Session ID and Pigeonhole Passcode</strong> - The <a href="integrating-pigeonhole-virtual-event-experience.html#phole-session">Pigeonhole Session ID</a> and <a href="integrating-pigeonhole-virtual-event-experience.html#phole-passcode">Passcode</a> are needed to display a Pigeonhole along with the breakout room (available with <strong>Interactive Room</strong> session type)</li>
             </ul>
           </li>
           <li>Cover Image - The cover image appears with the session  in the agenda display</li>
@@ -108,7 +107,10 @@ layout: staging
       <li>Click <strong>Save</strong>.</li>
     </ol>
     <p>Confirm the session is added to the agenda. If there are multiple sessions in the same track scheduled at the same time, they will be highlighted and appear next to each other.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-same-time.png" /></figure>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-same-time.png" /></figure>
+    </p>
+    <p>To resolve session overlaps, edit a session and change the time or drag a session to a new time slot.</p>
   </section>
   <section class="bcls-section">
     <h2 id="editing_sessions">Editing and deleting sessions</h2>
@@ -119,7 +121,7 @@ layout: staging
     <p>To add speaker(s) to a session, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li>Click on a session to open the session editor.</li>
-      <li>Click <strong>Select Speakers</strong>.</li>
+      <li>Click <strong>Select speakers</strong>.</li>
       <li>Select one or more speakers or click <strong>Create speaker</strong> to create a new speaker.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-select-speaker.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: For information on creating speakers, see <a href="managing-event-speakers.html">Managing Event Speakers</a>.</aside>
