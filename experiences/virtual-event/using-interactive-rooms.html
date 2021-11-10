@@ -101,7 +101,6 @@ layout: staging
       </tbody>
     </table>
     <aside class="bcls-aside bcls-aside--information">Note: Screen sharing is not supported on mobile devices.</aside>
-
     <h4>Asking a question</h4>
     <p>In meetings where all attendees are muted, the hand icon can be used to notify the speaker that an attendee has a question or would like to speak. Click the hand icon to &quot;raise your hand&quot;.</p>
     <table width="303">
@@ -124,10 +123,14 @@ layout: staging
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-queue-icons.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="issues">Known issues</h2>
-    <h3>Unable to select an audio output device in some browsers</h3>
+    <h2 id="issues">Known issues/behaviors</h2>
+    <h4>Unable to select an audio output device in some browsers</h4>
     <p>Firefox and Safari have known issues disallowing them from listing audio output devices on these browsers. While clients can continue the meeting using the default device, they will not be able to select devices in meetings. Chrome and Firefox on iOS also have the same issue.
       
       Android Chrome has a known issue switching between Bluetooth audio output devices. While clients can continue the meeting using the default device, there is a bug related to switching to a Bluetooth audio output.</p>
+    <h4>Presenters sharing videos</h4>
+    <p>Attendees will have no audio from  videos that are screen shared by a presenter. This is the expected behavior.</p>
+    <h4>I notice that if I turn on camera and put the browsers in background, others in the meeting will see black tile in Safari/Chrome/Firefox in iOS and frozen tile in Chrome in Android, is this a known issue?</h4>
+    <p>This is the default behavior that is specific to each browser. In Android, the video stream is muted when in background and thus, the video will show the last frame. Note that for Android, if an attendee joins later after the video stream is in background, it will show as a blank tile since the last frame is blank.</p>
   </section>
 </article>
