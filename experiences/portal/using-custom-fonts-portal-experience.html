@@ -15,8 +15,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
     <p>The <a href="https://fonts.google.com">Google Font directory</a> provides open source fonts that can be used on web pages. Locate a font to use and then click <strong>Select this style</strong>. In this topic, the <strong>Acme</strong> font will be used.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-google-help.png" /></figure>
     <p>Per the Google help, the following lines should be embedded in the document.</p>
-    <pre>
-<code translate="No">&lt;link rel="preconnect" href="https://fonts.gstatic.com"&gt; <br _ngcontent-sro-c57="">&lt;link href="https://fonts.googleapis.com/css2?<span _ngcontent-sro-c57="">family=<span _ngcontent-sro-c57="">Acme</span>&amp;</span>display=swap" rel="stylesheet"&gt;</code></pre>
+    <pre>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; <br _ngcontent-fmy-c29="">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; <br _ngcontent-fmy-c29="">&lt;link href="https://fonts.googleapis.com/css2?<span _ngcontent-fmy-c29="">family=<span _ngcontent-fmy-c29="">Acme</span>&amp;</span>display=swap" rel="stylesheet"&gt;</pre>
     <p>To include these lines in a Portal Experience, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
       <li>Edit the experience.</li>
@@ -58,8 +57,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
       </li>
       <li>Confirm that the <strong>Custom Header HTML</strong> field contains the following.
         <pre>
-<code translate="No">&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt; <br>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Acme&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;style&gt;
+<code translate="No">&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt; <br>&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt; <br>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Acme&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;&lt;style&gt;
       .video-name {
       font-family:Acme;
     }
