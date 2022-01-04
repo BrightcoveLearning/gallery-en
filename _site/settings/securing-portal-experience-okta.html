@@ -726,28 +726,31 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>When an experience is secured using SSO, users will be required to authenticate before they can access the experience.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-login.png" /></figure>
     <aside class="bcls-aside bcls-aside--information">Note: The steps and images in this topic are using the <a href="https://www.okta.com/free-trial">trial version</a> of Okta SSO.</aside>
-    <p>The steps in this topic assumed you have signed up for an Okta trial account, signed into your account and can access the Okta Dashboard page.</p>
+    <p>The steps in this topic assumed you have signed up for an Okta trial account and can sign into your account.</p>
   </section>
   <section class="bcls-section">
     <h2 id="identity">Creating an application</h2>
     <p>Start by creating an application. </p>
     <ol class="bcls-tasklist-restart" style="--s:1">
       <li>Log in to your Okta trial account.</li>
-      <li>Click <strong>Applications</strong> in the top navigation.</li>
-      <li>On the Applications page, click <strong>Add Application</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-add-new-app.png" /></figure>
+      <li>Click <strong>Admin</strong> at the top of the page.</li>
+      <li>Enter your account password and click <strong>Verify</strong>.</li>
+      <li>You will be required to set up a security method. Click <strong>Set up</strong> next to the method you want to use.</li>
+      <li>When you have successfully logged in, confirm that the Dashboard Getting Started page  appears.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-get-started.png" /></figure>
       </li>
-      <li>Click <strong>Create New App</strong>. </li>
-      <li>Select a <strong>Platform</strong> of <strong>Web</strong> and a <strong>Sign on method</strong> of <strong>SAML 2.0</strong>.
+      <li>Click <strong>Applications &gt; Applications</strong> in the left navigation.</li>
+      <li>On the Applications page, click <strong>Create App Integration</strong>.</li>
+      <li>Select a Sign-in method of <strong>SAML 2.0</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-create-new-app-dialog.png" /></figure>
       </li>
-      <li>Click <strong>Create</strong>.</li>
+      <li>Click <strong>Next</strong>.</li>
       <li>Enter an <strong>App name</strong>.</li>
       <li>(Optional) Browse and select and <strong>App logo</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-new-app-general-settings.png" /></figure>
       </li>
       <li>Click <strong>Next</strong>.</li>
-      <li>Set the <strong>Single sign on URL</strong> to <strong>https://auth.bcvp0rtal.com/login/callback</strong>.</li>
+      <li>Set the <strong>Single sign on URL</strong> to <code>https://auth.bcvp0rtal.com/login/callback</code>.</li>
       <li>For the <strong>Audience URI (SP Entity ID)</strong> enter the Okta URL for your Okta homepage. This will be listed on the new account email you received from Okta when your trial account was created.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/okta-new-app-saml-settings.png" /></figure>
       </li>
@@ -784,7 +787,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="users2">Assigning group permissions</h2>
-    <p>The final step in Okta is to give all users in Okta access to the Brightcove Engage application.</p>
+    <p>The final step in Okta is to give all users in Okta access to the   application that was created.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
       <li>Return to the Okta Dashboard.</li>
       <li>For the Okta application you created, click the <strong>Assignments</strong> tab.
