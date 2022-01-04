@@ -749,20 +749,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Next, you need to create an application that will be secured using Auth0. As part of the application creation process, the signing certificate and SAML protocol URL will be used by the Access Control Profile created in the previous section.</p>
     <ol class="bcls-tasklist-restart">
       <li>Log in to your Auth0  account.</li>
-      <li>On the <strong>Getting Started</strong> page, in the left navigation, click <strong> Applications</strong>.</li>
-      <li>On the <strong> Applications</strong> page, click <strong>+ CREATE APPLICATION</strong>. </li>
+      <li>On the <strong>Getting Started</strong> page, in the left navigation, click <strong> Applications &gt; Applications</strong>.</li>
+      <li>On the <strong> Applications</strong> page, click <strong>+ Create Application</strong>. </li>
       <li>Enter a <strong>Name</strong> for the application.</li>
       <li>Select an application type of <strong>Regular Web Applications</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-create-app.png" /></figure>
       </li>
-      <li>Click<strong> CREATE</strong>.</li>
+      <li>Click<strong> Create</strong>.</li>
       <li>Click the <strong>Settings</strong> link below the application name.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-app-settings.png" /></figure>
       </li>
       <li>(Optional) Locate the <strong>Application Logo</strong> field and enter a URL to your application logo. This will cause your logo to appear on the login page vs. the Auth0 logo.</li>
-      <li>Confirm that the <strong>Token Endpoint Authentication Method</strong> is set to <strong>POST</strong>.</li>
+      <li>Confirm that the <strong>Token Endpoint Authentication Method</strong> is set to <strong>Post</strong>.</li>
       <li>In the <strong>Allow Callback URLs</strong> field, add the following URL: <code translate="No">https://auth.bcvp0rtal.com/login/callback</code></li>
-      <li>At the bottom of the page, click the <strong>Show Advanced Settings</strong> link.</li>
+      <li>At the bottom of the page, expand the <strong> Advanced Settings</strong>.</li>
       <li>Click the <strong>Certificates</strong> link.</li>
       <li>Copy the <strong>Signing Certificate</strong> to the clipboard.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-signing-cert.png" /></figure>
@@ -783,17 +783,17 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li>Check the <strong>Expose all attributes</strong> option at the bottom of the page.</li>
       <li>Click <strong>Save</strong> to save the Access Control Profile.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-acp-created.png" /></figure>
       </li>
       <li>Return to Auth0.</li>
       <li>At the top of the page below the application name, click the <strong>Addons</strong> link.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-addons.png" /></figure>
       </li>
       <li>Enable the <strong>SAML2 WEB APP</strong> option.</li>
+      <li>Click the <strong>Settings</strong> tab.</li>
       <li>In the <strong>Application  Callback URL</strong> field, add the following URL: <code translate="No">https://auth.bcvp0rtal.com/login/callback</code>
         <aside class="bcls-aside bcls-aside--information">Note: This value may already be populated.</aside>
       </li>
-      <li>Scroll to the bottom of the dialog and click <strong>ENABLE</strong>.</li>
+      <li>Scroll to the bottom of the dialog and click <strong>Enable</strong>.</li>
       <li>Close the dialog.</li>
     </ol>
     <p>Make sure you save the changes to the application settings.</p>
@@ -803,9 +803,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>This topic uses a trial account of Auth0. By default, no users are created. You may need to add a user to complete the testing process.</p>
     <ol class="bcls-tasklist-restart">
       <li>Return to  Auth0.</li>
-      <li>In the left navigation, click <strong> Users &amp; Roles &gt; Users</strong>.</li>
-      <li>Click <strong>+ CREATE USER</strong>.</li>
-      <li>Enter the user info and click <strong>CREATE</strong>.
+      <li>In the left navigation, click <strong> User Management &gt; Users</strong>.</li>
+      <li>Click <strong>+ Create User</strong>.</li>
+      <li>Enter the user info and click <strong>Create</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/settings/auth0-create-user.png" /></figure>
       </li>
     </ol>
