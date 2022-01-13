@@ -733,7 +733,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
 		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code translate="no">client_id</code> and a <code translate="no">client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
 		<ol class="bcls-tasklist-restart">
-			<li>Click <span class="button-blue">Register New Application</span>.</li>
+			<li>Click <strong>ADMIN &gt; API Authentication</strong>.</li>
+			<li>Click <span class="button-blue"><strong>Register New Application</strong></span>.</li>
 			<li>In the dialog that opens enter "Analytics" for the name.</li>
 			<li>Select the account(s) you want to use the API for.</li>
 			<li>
@@ -743,7 +744,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 					<figcaption class="bcls-caption--image">API Permissions</figcaption>
 				</figure>
 			</li>
-			<li>Click <span class="button-blue">Save</span>.</li>
+			<li>Click <span class="button-blue"><strong>Save</strong></span>.</li>
 			<li>
 				A new dialog will display the <strong>Client ID</strong> <strong>Client Secret</strong>. Copy and save them both in a secure place where you can find them again.
 				<aside class="bcls-aside bcls-aside--warning">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
