@@ -21,7 +21,7 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="playersettings">Configuring player settings</h2>
-    <p>The player settings control the player that is used and the player behavior for the experience. To configure the player settings, edit the experience and then click <strong>SETTINGS &gt; Player</strong> in the left navigation.</p>
+    <p>The player settings control the player that is used and the player behavior for the experience. To configure the player settings, edit the experience and then click <strong>Settings &gt; Player</strong> in the left navigation.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-player-settings.png" /></figure>
     <div class="BCL-subsection">
       <h3>Selecting a player</h3>
@@ -70,7 +70,7 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="videosettings">Configuring video settings</h2>
-    <p>The video settings control some of the video display options and control whether the video can be downloaded. These settings only apply when the video is in the <strong>PLAYING</strong> state. To configure the video settings, edit the experience and then click <strong>SETTINGS &gt; Video</strong> in the left navigation.</p>
+    <p>The video settings control some of the video display options and control whether the video can be downloaded. These settings only apply when the video is in the <strong>PLAYING</strong> state. To configure the video settings, edit the experience and then click <strong>Settings &gt; Video</strong> in the left navigation.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-video-settings.png" /></figure>
     <div class="BCL-subsection">
       <h3>Related Link</h3>
@@ -101,7 +101,7 @@ description: In this topic you will learn how to customize the settings for an I
     <h2 id="social">Configuring social settings</h2>
     <p>The social settings control the social sharing options that are available when videos are playing. Social sharing icons appear above the player when the experience is in the <strong>PLAYING</strong> state. When a video is shared to a social media site, a link or image will appear directing the viewer back to the experience.</p>
     <p>Gallery uses a social media metadata proxy service. This service is used whenever a video or event is shared out from an In-Page Experience, and is part of the URL which is shared. It will redirect viewers to the page on which the In-Page Experience is embedded, however, crawlers will see metadata about the video/event instead. In this way, social media crawlers will get information about the video/event which is being shared and can present more relevant information to the end-user on the social media site, while end-users are still able to access the original page.</p>
-    <p>To configure the social settings, edit the experience and then click <strong>SETTINGS &gt; Social</strong> in the left navigation.</p>
+    <p>To configure the social settings, edit the experience and then click <strong>Settings &gt; Social</strong> in the left navigation.</p>
     <aside class="bcls-aside bcls-aside--information">Note: The social settings can also be configured when editing the experience in the <strong>LAYOUT</strong> state by clicking on the <em>Configure sharing</em> link.</aside>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-social-settings.png" /></figure>
     <div class="BCL-subsection">
@@ -125,7 +125,7 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="seo">Accessing SEO settings</h2>
-    <p>The SEO settings allow you to generate a site map and search feed for the In-Page Experience. To access the SEO settings, edit the experience and then click <strong>SETTINGS &gt; SEO</strong> in the left navigation.</p>
+    <p>The SEO settings allow you to generate a site map and search feed for the In-Page Experience. To access the SEO settings, edit the experience and then click <strong>Settings &gt; SEO</strong> in the left navigation.</p>
     <p>To generate a site map and/or search feed, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
       <li>Enter the <strong>Page URL</strong>. This is the URL of the site where the In-Page Experience will be published.</li>
@@ -136,42 +136,8 @@ description: In this topic you will learn how to customize the settings for an I
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-seo-settings.png" /></figure>
   </section>
   <section class="bcls-section">
-    <p>To configure the Search Engine Optimization settings for a Portal Experience, edit the experience and click <strong>SITE CONFIGURATION &gt; Search Engine Optimization</strong> in the left navigation. The following settings are available:</p>
-    <ul>
-      <li><a href="#details">Site Details</a> - Configure the site image, keywords and meta tags</li>
-      <li><a href="#sitemap">Site Map</a> - Access the site map and search feed URLs</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="details">Configuring the site details</h2>
-    <p>The Site Details settings can be configured to control how the portal is indexed by search engines. To access the Search Engine Optimization settings, edit the experience and click <strong>SITE CONFIGURATION &gt; Search Engine Optimization</strong> in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node18673-site-details.png" /></figure>
-    <p>The following settings can be configured:</p>
-    <ul>
-      <li><strong>Use site description in search engine results and when site is shared</strong> - When checked, will use the site description in the &lt;meta&gt; description tags, including the Facebook and Twitter meta tags. If not checked, the description for the featured video is used.</li>
-      <li><strong>Site Image</strong> - This is the image that will be shown when the home page of a portal site is shared on Facebook or Twitter.</li>
-      <li><strong>Keywords</strong> - Meta keywords that will be added to all site pages. Adding "birds,animals,fish, animal world" will result in the following being added to the page HTML:<br />
-        <code translate="No">&lt;meta name="keywords" content="birds,animals,fish,animal world"&gt;</code></li>
-      <li><strong>Meta Tags</strong> - Used to add additional meta tags for the site. These tags will be added to all site pages. Example:<br />
-        <code translate="No">&lt;meta name="myCustomTag" content="myCustomValue"&gt;</code></li>
-      <li><strong>Include custom video fields in page metadata</strong> - When checked, will add custom fields as meta tags. For example, a custom field of <strong>year</strong> with a value of <strong>2018</strong> will add:<br />
-        <code translate="No">&lt;meta name="year" content="2018"&gt;</code></li>
-      <li><strong>Include canonical URL in page metadata</strong> - When checked, will add a <code translate="No"><strong>rel=canonical</strong></code> meta tag in the source which helps improve SEO. This is a feature that tells Google to treat all the pages with the same <code translate="No">rel=canonical</code> link as a single entry. For example, mysite.com/video/mypage.html is the same as mysite.com/video/mypage.html?username=foobar.</li>
-      <li><strong>Remove video titles from their URLs</strong> - When checked, the video name will not be included as part of the URL to the video detail page, just the video ID will be in the URL.</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sitemap">Viewing the site map &amp; search feed</h2>
-    <p>The Site Map settings display the URLs for the site map and search feed. The site map can be downloaded and submitted to search engines. The search feed can be used by most search engine software as a way to add Gallery content to search results. To access the Search Engine Optimization settings, edit the experience and click <strong>SITE CONFIGURATION &gt; Search Engine Optimization</strong> in the left navigation.</p>
-    <p>To include the video tags in the site map, check the <strong>Include video tags in site map</strong> option. Note that only the first 32 tags are included. Adding tags to the site map exposes them to search engine web crawlers allowing visitors to find videos based on the video tags.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: These URLs will not be available until the site is published.</aside>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node18673-sitemap.png" /></figure>
-    <p>Site maps are cached for 24 hours. After 24 hours, they are removed from the cache and will be re-generated when they are accessed again. If videos are added to a Portal Experience, they will not be included in the site map until the site map is re-generated (after 24 hours) or until the site is republished.</p>
-    <p>For more information on building submitting a sitemap, see the <a href="https://support.google.com/webmasters/answer/183668">Google documentation</a>.</p>
-  </section>
-  <section class="bcls-section">
     <h2 id="tracking">Configuring tracking</h2>
-    <p>The tracking setting can be used to send tracking data to Google Analytics. To configure the tracking setting, edit the experience and then click <strong>SETTINGS &gt; Tracking</strong> in the left navigation.</p>
+    <p>The tracking setting can be used to send tracking data to Google Analytics. To configure the tracking setting, edit the experience and then click <strong>Settings &gt; Tracking</strong> in the left navigation.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-tracking.png" /></figure>
     <p>By providing a Google Analytics Tracking ID in the Tracking page, events occurring on the experience will be submitted to a Google Analytics account. Each event has a category in the form of <strong>Brightcove Experience {name} - {state}</strong> where <strong>{name}</strong> is the name of the experience, and <strong>{state}</strong> is the current playback state of the component (before, during, after). Each event may also have a relevant label, which is usually the ID of the video on which the event occurs. The following events are currently tracked (more will be added in the future as needed):</p>
     <table class="bcls-table">
@@ -234,7 +200,7 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="advanced">Configuring advanced settings</h2>
-    <p>The advanced settings can be used to <a href="#js">enter custom JavaScript</a> or to configure a <a href="#deeplink">video link query parameter</a>. To configure the custom settings, edit the experience and then click <strong>SETTINGS &gt; Advanced</strong> in the left navigation.</p>
+    <p>The advanced settings can be used to <a href="#js">enter custom JavaScript</a> or to configure a <a href="#deeplink">video link query parameter</a>. To configure the custom settings, edit the experience and then click <strong>Settings &gt; Advanced</strong> in the left navigation.</p>
     <div class="BCL-subsection">
       <h3 id="js">JavaScript</h3>
       <p>Enter the URL of a custom JavaScript file or paste in your custom JavaScript.</p>
