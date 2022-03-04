@@ -729,13 +729,13 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>The Simulive player plugin should be configured for the player used in your Virtual Event Experience. Contact your account manager to get  the information needed to configure the plugin.</p>
     <ol class="bcls-tasklist">
       <li>Click <strong>Players</strong> in the navigation header to open the Players module.</li>
-      <li>Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <strong>New Player</strong>, name the player and then click <strong>Save</strong>.</li>
+      <li>Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <span class="button-blue">+ Add Player</span>, name the player and then click <span class="button-blue">Save</span>.</li>
       <li>Click the link for the player you want to configure.</li>
       <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
       <li>Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
       <li>For the <strong> Plugin Name</strong> enter <code translate="No">simulivePlugin</code>.</li>
       <li>For the <strong>JavaScript URL</strong> and <strong>CSS URL</strong>, use the values provided by your account manager.</li>
-      <li>Click <strong>Save</strong> to save the changes.</li>
+      <li>Click <span class="button-blue">Save</span> to save the changes.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
   </section>
@@ -749,7 +749,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         <figure class="bcls-figure"></figure>
       </li>
       <li>Select the <strong>Use site-specific player</strong> option and select the player configured with the Simulive plugin.</li>
-      <li>Click <strong>Save</strong>.
+      <li>Click <span class="button-blue">Save</span>.
     </ol>
   </section>
   <section class="bcls-section">
@@ -767,7 +767,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </ul>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-custom-field.png" /></figure>
       </li>
-      <li>Click <strong>Save Field</strong>.</li>
+      <li>Click <span class="button-blue">Save Field</span>.</li>
     </ol>
     For information on creating custom fields, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</section>
   <section class="bcls-section">
@@ -776,23 +776,19 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <ol class="bcls-tasklist-restart">
       <li>Open the Media module.</li>
       <li>Click on a video title to open the properties.</li>
-      <li>Locate the <strong>VIDEO PROPERTIES</strong> section and click <strong>Edit</strong>.</li>
+      <li>Locate the <strong>Video Information</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
       <li>Tag the video with <strong>simulive</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-tag.png" /></figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
-      <li>Locate the <strong>Custom Fields</strong> section and click <strong>Edit</strong>.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>Locate the <strong>Custom Fields</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
       <li>Enter a date and time value for the <strong>Simulive Start</strong> field.
         The correct format of the field is <code translate="No">YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code translate="No">YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code translate="No">HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code translate="No">-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-simulive-start.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: Simulive relies on a given user's local computer time to determine when the event should start by comparing the local computer time and the configured <strong>Simulive Start</strong> time. For this reason, there may be cases where an  event may start earlier than expected for some users. This is typically due to these users' computer times being inaccurate.</aside>
       </li>
-      <li>Click <strong>Save</strong>.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="policy-key">Updating the policy key value</h2>
-    <p>In order for the countdown timer to display on simulive videos, the policy key value in the configuration file needs to be updated with a search-enabled policy key. Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code translate="No">policyKey</code> value in the configuration file and republish the experience.</p>
   </section>
 </article>
 
