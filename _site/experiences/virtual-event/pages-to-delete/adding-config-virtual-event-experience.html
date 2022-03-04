@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to position objects  that appear on   the Virtual Event  Experience homepage.">
+  <meta name="description" content="In this topic you will learn how to add the configuration file to a Virtual Event Experience.">
   
-  <title>Positioning Content on the Home Page</title>
+  <title>Adding the Configuration File to the Template</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -60,9 +60,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/experiences/virtual-event/">Virtual Event</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/virtual-event/pages-to-delete/">Virtual Event</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Positioning Content on the Home Page</li>
+      <li class="breadcrumb-item active" aria-current="page">Adding the Configuration File to the Template</li>
     </ol>
   </nav>
 </header>
@@ -708,55 +708,30 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 
 <article class="bcls-article">
-  <h1>Positioning Content on the Home Page</h1>
-  <summary>In this topic you will learn how to position objects  that appear on   the Virtual Event  Experience homepage.</summary>
+  <h1>Adding the Configuration File to the Experience</h1>
+  <summary>In this topic you will learn how to add the configuration file to a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>Several objects in the configuration file have parameters which allow you to specify where the object should appear on the page. For example, static content, speakers, tracks and sponsors all have the ability to be repositioned on the page. Objects that can be positioned will have the following attributes in the configuration file:</p>
-    <figure class="bcls-figure"></figure>
-    <ul>
-      <li><code translate="No">insert_target</code> - A CSS selector (a simple class or ID) that will be used as the starting point for where the given object is rendered</li>
-      <li><code translate="No">insert_mode</code> - How the content is inserted
-        <ul>
-          <li><code translate="No">after</code></li>
-          <li><code translate="No">before</code></li>
-          <li><code translate="No">append</code></li>
-          <li><code translate="No">prepend</code></li>
-        </ul>
+    <p>The Virtual Event  Experience requires a configuration file be included with the site. The configuration file includes  site settings, layout options, event schedule, speakers and other content that will be displayed. After creating a new Virtual Event Experience, adding the configuration file is the first thing that should be done </p>
+    <p>To add the configuration file to a Virtual Event Experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Go to the following link:<br/>
+        <code translate="No">https://virtual-events-experience.s3.amazonaws.com/v1/config.txt</code></li>
+      <li>Copy the content to the clipboard.</li>
+      <li>Open the Gallery module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>Appearance and Behavior &gt; Header and Footer</strong> in the left navigation.</li>
+      <li>Paste the configuration file into the <strong>Custom Header HTML</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/config-json.png" /></figure>
       </li>
-    </ul>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="target">Determining the target</h2>
-    <p>The <code translate="No">insert_target</code> parameter expects a CSS selector (using a simple class or ID format). The element matched by this selector will be used as the starting point for where the given object is rendered. The best way to determine the CSS selector or ID to use is to browse to the virtual event homepage and then use the browser developer tools to inspect the elements in the page. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/objects-div-structure.png" /></figure>
-    <p>You will notice that the main sections of the homepage are organized using <code translate="No">&lt;div&gt;</code> tags.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="mode">Choosing the insert mode</h2>
-    <p>After determining where in the hierarchy to insert the object, the <code translate="No">insert_mode</code> attribute will determine how the object is inserted in the hierarchy.</p>
-    <ul>
-      <li><code translate="No">after</code> - Puts the object after the specified <code translate="No">div</code> at the same level</li>
-      <li><code translate="No">before</code> - Puts the object before the specified <code translate="No">div</code> at the same level</li>
-      <li><code translate="No">append</code> - Puts the object inside the specified <code translate="No">div</code> as the last child</li>
-      <li><code translate="No">prepend</code> - Puts the object inside the specified <code translate="No">div</code> as the first child</li>
-    </ul>
-    <p>The diagram below demonstrates the effect of the various <code translate="No">insert_mode</code> values.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example-graphic.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sample">Object positioning example</h2>
-    <p>The following code samples demonstrates how to use a static content object to insert a title above the secondary collection.</p>
-    <pre><code translate="No">
-{
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "prepend",
-    "content": "&lt;h2 class='bc-on-demand-section-title'&gt;ON-DEMAND SESIONS&lt;/h2&gt;",
-    "require_roles": [],
-    "omit_roles": []
-}
-        </code></pre>
-    <p>Using the browser tools, you can see the <code translate="No">h2</code> was inserted as the first element inside the <code translate="No">bc-on-demand-section div</code>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/positioning-example.png" /></figure>
+    <h2 id="policy-key">Updating the <code translate="no">policyKey</code> and <code translate="no">assetBaseUrl</code> values</h2>
+    <p>In order for the countdown timer to display on simulive videos, the <code translate="no">policyKey</code> value in the configuration file needs to be updated with a search-enabled policy key. <strong>The value that is supplied will not work for your account.</strong> Failure to do this will result in no countdown being displayed with the videos. For steps to get a search-enabled policy key, see the developer document <a href="https://apis.support.brightcove.com/policy/getting-started/quick-start-policy-api.html">Code Sample: Generate a Policy Key</a>. After the new policy key is created, update the <code translate="No">policyKey</code> value in the configuration file.</p>
+    <p>The <code translate="no">assetBaseUrl</code> value path is used to load files used by the template. This can be left alone in most cases unless a high degree of customization is being performed. The path value that is there should be removed.</p>
+    <p>After the <code translate="no">policyKey</code> and <code translate="no">assetBaseUrl</code> values have been updated in the configuration file, republish the experience.</p>
   </section>
 </article>
 
@@ -775,7 +750,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 10 Jun 2021
+  Page last updated on 13 Jan 2022
 </div>
 
 
