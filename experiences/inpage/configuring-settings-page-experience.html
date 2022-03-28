@@ -48,7 +48,8 @@ description: In this topic you will learn how to customize the settings for an I
       <h3>Working with IP restricted accounts</h3>
       <p><a href="https://player.support.brightcove.com/content-protection/restricting-video-playback-using-ip-address.html">IP restricted accounts</a> outside of North America require modification of the Playback API <code translate="No">base_url</code> in the player. In-Page Experiences will copy this <code translate="No">base_url</code> from the player when the experience is created and when a player is selected for the experience. If the <code translate="No">base_url</code> on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround:</p>
       <ol class="bcls-tasklist-restart">
-        <li>Go to the Player Settings page for the experience.</li>
+        <li>Edit the experience.</li>
+        <li>Click <strong>Settings &gt; Player</strong> in the left navigation.</li>
         <li>Select a different player than the one that's currently selected.</li>
         <li>Re-select the initial player.</li>
         <li><strong>Save</strong> and then <strong>publish</strong> the experience.</li>
@@ -60,7 +61,8 @@ description: In this topic you will learn how to customize the settings for an I
       <h3>Working with domain restricted Players</h3>
       <p>&nbsp;Domain restricted players require modification of the Policy Key&nbsp;in the player. In-Page Experiences will copy this <font face="monospace">policy_key</font>&nbsp;from the player when the experience is created and when a player is selected for the experience. If the&nbsp;<code translate="No">policy_key</code>&nbsp;on a player for an existing experience is changed, Gallery will not automatically update this value since we don't know that it changed. As a workaround, publishers should follow these steps as a workaround if they update their list of approved domains:</p>
       <ol class="bcls-tasklist-restart">
-        <li>Go to the Player Settings page for the experience.</li>
+        <li>Edit the experience.</li>
+        <li>Click <strong>Settings &gt; Player</strong> in the left navigation.</li>
         <li>Select a different player than the one that's currently selected.</li>
         <li>Re-select the initial player.</li>
         <li><strong>Save</strong> and then <strong>publish</strong> the experience.</li>
@@ -71,7 +73,11 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="videosettings">Configuring video settings</h2>
-    <p>The video settings control some of the video display options and control whether the video can be downloaded. These settings only apply when the video is in the <strong>PLAYING</strong> state. To configure the video settings, edit the experience and then click <strong>Settings &gt; Video</strong> in the left navigation.</p>
+    <p>The video settings control some of the video display options and control whether the video can be downloaded. These settings only apply when the video is in the <strong>PLAYING</strong> state. To configure the video settings, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Edit the experience.</li>
+      <li>Click <strong>Settings &gt; Video</strong> in the left navigation.</li>
+    </ol>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-video-settings.png" /></figure>
     <div class="BCL-subsection">
       <h3>Related Link</h3>
@@ -94,15 +100,15 @@ description: In this topic you will learn how to customize the settings for an I
         <li>Provide a download link for each video</li>
         <li>Provide a download link for each video based upon a custom field value - Define a custom field and then set that field to true for any video that can be downloaded. For complete steps on configuring a download link for each video, see <a href="configuring-video-downloads-page-experience.html">Configuring Video Downloads for an In-Page Experience</a>.</li>
       </ul>
-        <aside class="bcls-aside bcls-aside--information">Note: The video must have at least one MP4 rendition available.</aside>
+      <aside class="bcls-aside bcls-aside--information">Note: The video must have at least one MP4 rendition available.</aside>
     </div>
     <p>When done, click <strong>Save</strong> to save the changes.</p>
   </section>
-<section class="bcls-section">
+  <section class="bcls-section">
     <h2 id="language">Configuring language settings</h2>
     <p>The <strong>Language</strong> setting can be used to indicate that video metadata should be displayed in the same language that the experience is configured for. For information, see <a href="/portal/using-multi-lingual-metadata.html">Using Multi-Lingual Metadata</a>.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/inpage/node16793-language-settings.png" /></figure>
-    </section>
+  </section>
   <section class="bcls-section">
     <h2 id="social">Configuring social settings</h2>
     <p>The social settings control the social sharing options that are available when videos are playing. Social sharing icons appear above the player when the experience is in the <strong>PLAYING</strong> state. When a video is shared to a social media site, a link or image will appear directing the viewer back to the experience.</p>
@@ -131,9 +137,10 @@ description: In this topic you will learn how to customize the settings for an I
   </section>
   <section class="bcls-section">
     <h2 id="seo">Accessing SEO settings</h2>
-    <p>The SEO settings allow you to generate a site map and search feed for the In-Page Experience. To access the SEO settings, edit the experience and then click <strong>Settings &gt; SEO</strong> in the left navigation.</p>
-    <p>To generate a site map and/or search feed, follow these steps:</p>
+    <p>The SEO settings allow you to generate a site map and search feed for the In-Page Experience. To generate a site map and/or search feed, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
+      <li>Edit the experience.</li>
+      <li>Click <strong>Settings</strong> &gt; <strong>SEO</strong> in the left navigation.</li>
       <li>Enter the <strong>Page URL</strong>. This is the URL of the site where the In-Page Experience will be published.</li>
       <li>Check whether video tags should be included.</li>
       <li>Click <span class="button-blue">Generate Code</span>.</li>
