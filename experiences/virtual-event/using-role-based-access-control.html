@@ -32,23 +32,59 @@ layout: staging
     Users in your SSO will be assigned one these roles and all agenda sessions will be tagged with one or more of these values. Role-based access control will  filter the agenda so  users only see the  sessions they have access to. For example, a user with a role of &quot;<strong>standard</strong>&quot; will only see sessions that are tagged &quot;<strong>standard</strong>&quot;.</section>
   <section class="bcls-section">
     <h2 id="assign-roles">Assigning roles to users in Auth0</h2>
-    <p>All users in your SSO should be assigned a role. The following steps can be used to assign roles to users using Auth0 SSO.</p>
+    <p>All users in your SSO should be assigned a role. Follow these steps  to assign roles to users using Auth0 SSO.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> User Management &gt; Users</strong>.</li>
+      <li>Click on a user to view the user details.</li>
+      <li>Assign the appropriate role to the user in the <strong>user_metadata</strong> section. Roles should be entered using the format <code>"role": assigned role</code>.
+        <p>In the following example, the user is assigned a <strong>role</strong> of <strong>vip</strong>.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-role.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Assign roles to all users.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="assign">Assigning a role-based access profile</h2>
-    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
-    <ol class="bcls-tasklist">
-      <li>Copy the access control profile to the clipboard.</li>
-      <li>Open the Gallery module.</li>
-      <li>Edit the experience.</li>
-      <li>Click <strong>Appearance and Behavior &gt; Custom</strong> in the left navigation.</li>
-      <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
+    <h2 id="pass-roles">Passing roles as SAML data  in Auth0</h2>
+    <p>In order to pass the role metadata from Auth0 to an experience, a rule needs to be created. A rule is  JavaScript code that can be used to extend Auth0's default behavior when authenticating a user. Follow these steps to create a rule to pass the role data.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> Auth Pipeline &gt; Rules</strong>.</li>
+      <li>Click <strong>+ Create</strong>.</li>
+      <li>Click <strong>&lt; &gt; Empty rule</strong>.</li>
+      <li>Enter a <strong>Name</strong> for the rule.</li>
+      <li>Paste the following code into the <strong>Script</strong> area.
+        <pre class="line-numbers"><code class="language-javascript" translate="No">
+function mapSamlAttributes(user, context, callback) {
+  context.samlConfiguration.mappings = {
+    'role': 'role',
+  };
+
+  callback(null, user, context);
+}
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-rule.png" /></figure>
       </li>
-      <li>Click<strong> Save</strong>.</li>
+      <li>Click <strong>Save changes</strong>.</li>
     </ol>
-    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="assign-roles-sessions">Controlling access to event sessions</h2>
+    <p>Access Control tags are used to restrict access to sessions. If a session has an <strong>Access Control tag</strong> of <strong>vip</strong>, the session will only appear for users with a <strong>role</strong> of <strong>vip</strong>. Follow these steps to assign an Access Control tag to a session.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>Site Features &gt;Agenda</strong> in the left navigation.</li>
+      <li>Click on the event agenda to open the agenda editor.</li>
+      <li>Click on a session.</li>
+      <li>In the <strong>Access Control tags</strong> field, enter the role(s) who have access to the session. In the following example, only users with the role <strong>vip</strong> will see this session in the agenda.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-session-access.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+        <aside class="bcls-aside bcls-aside--information">Note: The agenda must be activated before it will appear in a Virtual Event Experience.</aside>
+
   </section>
   <section class="bcls-section">
     <h2 id="attributes">Exposing SAML attributes</h2>
@@ -63,5 +99,6 @@ layout: staging
       </li>
       <li>Click<strong> Save</strong>.</li>
     </ol>
+    <p>Make sure you republish the experience so the changes appear.</p>
   </section>
 </article>
