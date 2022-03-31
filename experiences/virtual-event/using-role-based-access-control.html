@@ -87,7 +87,8 @@ function mapSamlAttributes(user, context, callback) {
   </section>
   <section class="bcls-section">
     <h2 id="attributes">Filtering the agenda based upon roles</h2>
-    <p>Custom code will be used to filter the agenda sessions based upon the user's role. Follow these steps to add the filtering code to the experience.</p>
+    <p>Custom code will be used to filter the agenda sessions based upon the user's role. In this code example, sessions with no Access Control tag will appear in all user agendas. For sessions that have an Access Control tag, if the role parameter of the user matches the Access Control tag for the session, that session will appear in the user's agenda.</p>
+    <p>Follow these steps to add the filtering code to the experience.</p>
     <ol class="bcls-tasklist">
       <li>Open the <strong>Gallery</strong> module.</li>
       <li>Edit the experience.</li>
@@ -108,7 +109,7 @@ function mapSamlAttributes(user, context, callback) {
         
           const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
         
-          // Looking for essions to be filtered out
+          // Looking for sessions to be filtered out
           const filteredSessions = sessions.filter((session) =&gt; {
             // If session does not have tags, do not filter the session
             if(!session["restricted_tags"].length) {
@@ -127,7 +128,7 @@ function mapSamlAttributes(user, context, callback) {
             // Creating an observer to watch for DOM changes that might put back a filtered session
             const observer = new MutationObserver(() =&gt; {
               filteredSessions.forEach(session =&gt; {
-                // Remove sessio item using its session id
+                // Remove session item using its session id
                 $(`[data-session-id='${session.id}']`).remove();
               });    
             });
