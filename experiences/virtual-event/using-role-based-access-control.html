@@ -37,7 +37,7 @@ layout: staging
       <li>Login to  your Auth0 account.</li>
       <li>In the left navigation, click <strong> User Management &gt; Users</strong>.</li>
       <li>Click on a user to view the user details.</li>
-      <li>Assign the appropriate role to the user in the <strong>user_metadata</strong> section. Roles should be entered using the format <code>"role": assigned role</code>.
+      <li>Assign the appropriate role to the user in the <strong>app_metadata</strong> section. Roles should be entered using the format <code>"role": assigned role</code>.
         <p>In the following example, the user is assigned a <strong>role</strong> of <strong>vip</strong>.</p>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-role.png" /></figure>
       </li>
@@ -83,19 +83,65 @@ function mapSamlAttributes(user, context, callback) {
       </li>
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-        <aside class="bcls-aside bcls-aside--information">Note: The agenda must be activated before it will appear in a Virtual Event Experience.</aside>
-
+    <aside class="bcls-aside bcls-aside--information">Note: The agenda must be activated before it will appear in a Virtual Event Experience.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="attributes">Exposing SAML attributes</h2>
-    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
+    <h2 id="attributes">Filtering the agenda based upon roles</h2>
+    <p>Custom code will be used to filter the agenda sessions based upon the user's role. Follow these steps to add the filtering code to the experience.</p>
     <ol class="bcls-tasklist">
-      <li>Open the Gallery module.</li>
-      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/icon-settings.png" />)  on the home page.</li>
-      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
-      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
-      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>In the left navigation, click <strong>Header and Footer</strong>.</li>
+      <li>Paste the following code into the <strong>Custom Header HTML</strong> field.
+          <pre class="line-numbers"><code class="language-javascript" translate="No">
+        &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
+        
+        &lt;script&gt;
+        $(document).ready(() =&gt; {
+          // Get role from SAML data and Agenda sessions from site
+          const role = window.bcGallery.filteredAssemblerData.samlAttributes ? window.bcGallery.filteredAssemblerData.samlAttributes.role : null;
+        
+          if (!role) {
+            console.log("Error filtering Agenda sessions. No role specified on SAML data.");
+            return;
+          }
+        
+          const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
+        
+          // Looking for essions to be filtered out
+          const filteredSessions = sessions.filter((session) =&gt; {
+            // If session does not have tags, do not filter the session
+            if(!session["restricted_tags"].length) {
+                return false;
+            }
+            const restrictedTags = session["restricted_tags"];
+            if(!restrictedTags.includes(role)) {
+              return true;
+            }
+            return false;
+          });
+        
+          if(filteredSessions.length) {
+            const contentWrapper = document.querySelector('.bcg-fixed-width-container');
+        
+            // Creating an observer to watch for DOM changes that might put back a filtered session
+            const observer = new MutationObserver(() =&gt; {
+              filteredSessions.forEach(session =&gt; {
+                // Remove sessio item using its session id
+                $(`[data-session-id='${session.id}']`).remove();
+              });    
+            });
+        
+            observer.observe(contentWrapper, {
+              attributes:    true,
+              childList:     true,
+              characterData: true 
+            });
+          }
+        });
+        &lt;/script&gt;
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-agenda-filter-code.png" /></figure>
       </li>
       <li>Click<strong> Save</strong>.</li>
     </ol>
