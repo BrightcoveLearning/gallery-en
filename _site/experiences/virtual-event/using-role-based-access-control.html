@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.">
+  <meta name="description" content="In this topic you will learn how to use role-based access control to restrict the sessions that appear in an event agenda based upon the user's role.">
   
   <title>Using Role-Based Access Control</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -714,167 +714,146 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to use role-based access control to restrict the videos that appear in an experience based upon the user's role.</summary>
+  <summary>In this topic you will learn how to use role-based access control to restrict the sessions that appear in an event agenda based upon the user's role.</summary>
   <section class="bcls-section">
-    <p>If users are required to login to your Virtual Event Experience, role-based access control can be used to filter the videos that are shown to users based on their role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and Video Cloud tags. Brightcove recommends that all videos have one tag to identify them for the event plus additional tags for any role-based filtering that needs to occur.</p>
-    <p>To configure role-based access control, start by determining how the content will be restricted and create an appropriate role-based access configuration file. Some sample configurations are provided in the following sections. Next, associate the role-based configuration file with the experience. Finally, tag the videos appropriately.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: When creating video collections, <strong>Playlists</strong> should not be used for the collection criteria as playlists don’t support role-based access control filtering. Use <strong>Custom</strong> criteria instead.</aside>
+    <p>Role-based access control can be used to filter the sessions that appear in the session agenda based on a user's role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and session tags. Brightcove recommends that all sessions have at least one tag for the role-based filtering to occur.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="creating">Creating a role-based access configuration file</h2>
-    <p>The role-based access control is configured using a separate role-based access configuration file. The format of the file is as follows:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {}
-}   
-   </code></pre>
-    <p>The property values in the file control how the access is applied to the experience.</p>
+    <h2 id="start">Before you get started</h2>
+    <p>Before configuring role-based access control for a Virtual Event Experience, these initial setup steps should be completed:</p>
+    <ol class="bcls-tasklist-restart" >
+      <li>You should create a Virtual Event Experience and have created an event agenda.</li>
+      <li>The Virtual Event Experience should be secured using an access control profile.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The steps and images in this topic are using the <a href="https://auth0.com/signup?&signUpData=%7B%22category%22%3A%22button%22%7D&email=undefined">trial version</a> of Auth0.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on securing an experience using Auth0, see <a href="/settings/securing-portal-experience-auth0.html">Securing a Portal Experience with Auth0</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="roles">Roles and tags</h2>
+    <p>To configure role-based access control, start by determining how the sessions will be restricted and then create the appropriate role-based access tags that will be assigned to each user and each session. For example, you may decide to use the following roles/tags:</p>
     <ul>
-      <li><strong>advancedRoleFilter</strong> - When set to <strong>true</strong>, enables role-based access control</li>
-      <li><strong>defaultIncludeTags</strong> - The tag(s) that must be on all videos for them to be shown  in the Virtual Event Experience. This allows you to only display only a subset of videos in the account in the Virtual Event Experience.</li>
-      <li><strong>defaultIgnoreTags</strong> - Videos with these tag(s) will not be displayed to users who are not part of a role</li>
-      <li><strong>roleAttribute</strong> - SAML attribute on the user record that comes back from the user management system. Any SAML attribute can be used.</li>
-      <li><strong>valueDelimiter</strong> - Delimiter used to separate multiple roles (if multiple roles can be returned)</li>
-      <li><strong>ignoreByRole</strong> - Augments the <code translate="No">defaultIgnoreTags</code> by additionally ignoring more tags based upon the user's role. This is used to remove even more videos the user can see based upon their role.</li>
-      <li><strong>includeByRole</strong> - Users with assigned role will only see videos with specified tag</li>
-      <li><strong>allowByRole</strong> - Augments the <code translate="No">defaultIncludeTags</code> by additionally adding more tags based upon the user's role. This is used to display more videos to a user based upon their role. User's with the specified role will see videos tagged with <code translate="No">defaultIncludeTags</code> as well as the tag(s) listed here.</li>
+      <li>standard</li>
+      <li>enterprise</li>
+      <li>vip</li>
     </ul>
-    Some sample configuration files are provided in the following sections.</section>
+    Users in your SSO will be assigned one these roles and all agenda sessions will be tagged with one or more of these values. Role-based access control will  filter the agenda so  users only see the  sessions they have access to. For example, a user with a role of &quot;<strong>standard</strong>&quot; will only see sessions that are tagged &quot;<strong>standard</strong>&quot;.</section>
   <section class="bcls-section">
-    <h2 id="single-premium">Single premium role</h2>
-    <p>In this scenario, general users can view most content, but a subset of content tagged with the “premium” tag is available only to users with the role of “premium_user”. Premium users can still see all of the content general users can see. Using a “virtual_event” tag restricts the site to only show content from the account specifically tagged for the event:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {
-          "premium_user": ["premium"]
-     }
-}   
-   </code></pre>
+    <h2 id="assign-roles">Assigning roles to users in Auth0</h2>
+    <p>All users in your SSO should be assigned a role. Follow these steps  to assign roles to users using Auth0 SSO.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> User Management &gt; Users</strong>.</li>
+      <li>Click on a user to view the user details.</li>
+      <li>Assign the appropriate role to the user in the <strong>app_metadata</strong> section. Roles should be entered using the format <code>"role": assigned role</code>.
+        <p>In the following example, the user is assigned a <strong>role</strong> of <strong>vip</strong>.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-role.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Assign roles to all users.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="tiered-content">Tiered content access</h2>
-    <p>Similar to the first scenario, but with multiple tiers where each tier gets access to more content and can still see all content for the lower tiers. User roles are “tier_1”, “tier_2”, and “tier_3” while users without one of these roles will not see any tiered content. Tags are “tier1”, “tier2”, and “tier3” respectively:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["tier1", "tier2", "tier3"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {},
-     "allowByRole": {
-          "tier_1": ["tier1"],
-          "tier_2": ["tier1", "tier2"],
-          "tier_3": ["tier1", "tier2", "tier3"]
-     } 
-} 
-      </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="split-content">Split content access</h2>
-    <p>In this example, the two user roles only see videos tagged specifically for their role. A user without a role won’t see content for either of the tags:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["tag1", "tag2"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {
-          "role1": ["tag1"],
-          "role2": ["tag2"]
-     },
-     "allowByRole": {}
-}    
-    </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="language">Segmentation by language</h2>
-    <p>Using the split-based approach, content can be served based on a SAML attribute containing the user’s language:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": [],
-     "roleAttribute": "language",
-     "valueDelimiter": ",",
-     "ignoreByRole": {},
-     "includeByRole": {
-          "en": ["english"],
-          "es": ["spanish"],
-          "jp": ["japanese"]
-     },
-     "allowByRole": {}
-}     
-      </code></pre>
-  </section>
-  <section class="bcls-section">
-    <h2 id="merged-rules">Merged rules example</h2>
-    <p>This contrived example illustrates how the different options can be combined. A general user will see all content tagged “virtual_event” that is not tagged “premium”. A user with the “premium_user” role will see all general content plus premium content, but will not see content tagged with “promotional”. A user with a “trial_user” role will see general content and premium content, but will also see content tagged with “promotional”. A user with the “expired_user” role will see only videos tagged as promotional:</p>
-    <pre><code translate="No">
-{
-     "advancedRoleFilter": "true",
-     "defaultIncludeTags": ["virtual_event"],
-     "defaultIgnoreTags": ["premium"],
-     "roleAttribute": "role",
-     "valueDelimiter": ",",
-     "ignoreByRole": {
-          "premium_user": ["promotional"]
-     },
-     "includeByRole": { "expired_user": ["promotional"]
-     },
-     "allowByRole": {
-          "trial_user": ["promotional"],
-          "premium_user": ["premium"]
-     }
+    <h2 id="pass-roles">Passing roles as SAML data  in Auth0</h2>
+    <p>In order to pass the role metadata from Auth0 to an experience, a rule needs to be created. A rule is  JavaScript code that can be used to extend Auth0's default behavior when authenticating a user. Follow these steps to create a rule to pass the role data.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> Auth Pipeline &gt; Rules</strong>.</li>
+      <li>Click <strong>+ Create</strong>.</li>
+      <li>Click <strong>&lt; &gt; Empty rule</strong>.</li>
+      <li>Enter a <strong>Name</strong> for the rule.</li>
+      <li>Paste the following code into the <strong>Script</strong> area.
+        <pre class="line-numbers"><code class="language-javascript" translate="No">
+function mapSamlAttributes(user, context, callback) {
+  context.samlConfiguration.mappings = {
+    'role': 'role'
+  };
+
+  callback(null, user, context);
 }
-      </code></pre>
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-rule.png" /></figure>
+      </li>
+      <li>Click <strong>Save changes</strong>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="assign">Assigning a role-based access profile</h2>
-    <p>Once you have created a role-based access profile to control access to content, associate it with the experience.</p>
+    <h2 id="assign-roles-sessions">Controlling access to event sessions</h2>
+    <p>Access Control tags are used to restrict access to sessions. If a session has an <strong>Access Control tag</strong> of <strong>vip</strong>, the session will only appear for users with a <strong>role</strong> of <strong>vip</strong>. Follow these steps to assign an Access Control tag to a session.</p>
     <ol class="bcls-tasklist">
-      <li>Copy the access control profile to the clipboard.</li>
-      <li>Open the Gallery module.</li>
+      <li>Open the <strong>Gallery</strong> module.</li>
       <li>Edit the experience.</li>
-      <li>Click <strong>Appearance and Behavior &gt; Custom</strong> in the left navigation.</li>
-      <li>Paste the access profile configuration  into the <strong>Custom Template JSON</strong> field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-json.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: If this field is not displayed, the account has not been enabled for role-based access control.</aside>
+      <li>Click <strong>Site Features &gt;Agenda</strong> in the left navigation.</li>
+      <li>Click on the event agenda to open the agenda editor.</li>
+      <li>Click on a session.</li>
+      <li>In the <strong>Access Control tags</strong> field, enter the role(s) who have access to the session. In the following example, only users with the role <strong>vip</strong> will see this session in the agenda.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-session-access.png" /></figure>
       </li>
-      <li>Click<strong> Save</strong>.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-    <p>Make sure you <a href="/portal/previewing-and-publishing-portal-experience.html">republish the experience</a> so the changes appear.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: The agenda must be activated before it will appear in a Virtual Event Experience.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="attributes">Exposing SAML attributes</h2>
-    <p>In order for the experience to access the role attribute  from your SSO/registration system provider, ensure that the SSO settings are configured correctly.</p>
+    <h2 id="attributes">Filtering the agenda based upon roles</h2>
+    <p>Custom code will be used to filter the agenda sessions based upon the user's role. In this code example, sessions with no Access Control tag will appear in all user agendas. For sessions that have an Access Control tag, if the role parameter of the user matches the Access Control tag for the session, that session will appear in the user's agenda.</p>
+    <p>Follow these steps to add the filtering code to the experience.</p>
     <ol class="bcls-tasklist">
-      <li>Open the Gallery module.</li>
-      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/icon-settings.png" />)  on the home page.</li>
-      <li>In the left navigation, click <strong>Access Control Profiles</strong>. A list of created Access Control Profiles will be displayed.</li>
-      <li>Click the edit icon for the profile the Virtual Event Experience is using.</li>
-      <li>Confirm that the <strong>Expose all attributes</strong> option at the bottom of the page is checked.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-expose-attributes.png" /></figure>
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>In the left navigation, click <strong>Header and Footer</strong>.</li>
+      <li>Paste the following code into the <strong>Custom Header HTML</strong> field.
+          <pre class="line-numbers"><code class="language-javascript" translate="No">
+        &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
+        
+        &lt;script&gt;
+        $(document).ready(() =&gt; {
+          // Get role from SAML data and Agenda sessions from site
+          const role = window.bcGallery.filteredAssemblerData.samlAttributes ? window.bcGallery.filteredAssemblerData.samlAttributes.role : null;
+        
+          if (!role) {
+            console.log("Error filtering Agenda sessions. No role specified on SAML data.");
+            return;
+          }
+        
+          const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
+        
+          // Looking for sessions to be filtered out
+          const filteredSessions = sessions.filter((session) =&gt; {
+            // If session does not have tags, do not filter the session
+            if(!session["restricted_tags"].length) {
+                return false;
+            }
+            const restrictedTags = session["restricted_tags"];
+            if(!restrictedTags.includes(role)) {
+              return true;
+            }
+            return false;
+          });
+        
+          if(filteredSessions.length) {
+            const contentWrapper = document.querySelector('.bcg-fixed-width-container');
+        
+            // Creating an observer to watch for DOM changes that might put back a filtered session
+            const observer = new MutationObserver(() =&gt; {
+              filteredSessions.forEach(session =&gt; {
+                // Remove session item using its session id
+                $(`[data-session-id='${session.id}']`).remove();
+              });    
+            });
+        
+            observer.observe(contentWrapper, {
+              attributes:    true,
+              childList:     true,
+              characterData: true 
+            });
+          }
+        });
+        &lt;/script&gt;
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-agenda-filter-code.png" /></figure>
       </li>
       <li>Click<strong> Save</strong>.</li>
     </ol>
+    <p>Make sure you republish the experience so the changes appear.</p>
   </section>
 </article>
 
@@ -893,7 +872,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 13 Jan 2022
+  Page last updated on 31 Mar 2022
 </div>
 
 

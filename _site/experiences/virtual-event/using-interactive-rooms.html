@@ -720,7 +720,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>
       <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/agenda-session-type.png" /></figure>
     </p>
-    <p>When the session start date and time are reached, a <strong>LIVE NOW</strong> button will appear on the agenda. Attendees can click the button to enter the interactive room.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Interactive Rooms currently support up to 25 participants (speakers and attendees). If more than 25 participants attempt to enter a room, they will receive a message that the room is full.</aside>
+    <p>When the session start date and time are reached, a <strong>JOIN SESSION</strong> button will appear on the agenda. Attendees can click the button to enter the interactive room.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/breakout-live.png" /></figure>
     <p>To use interactive rooms, the Virtual Event Experience must be secured using SSO. The experience will inspect the user ID used to login. If the user ID matches an email address for one of the session speakers, that user will be presented with the speaker interface. All other users will be presented with the attendee interface.</p>
   </section>
@@ -749,7 +750,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <p>Click the people icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-people.png" /> ) to toggle the display of meeting attendees. The attendee list will display on the right side of the page. If the attendee camera is enabled, their image will be displayed.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-list.png" /></figure>
     <h4>Using chat</h4>
-    <p>Click the chat icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-chat.png" /> ) to open the chat panel.</p>
+    <p>If chat has been enabled for the session, click the chat icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-chat.png" /> ) to open the chat panel.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/chat-panel.png" /></figure>
     <h4>Viewing related content</h4>
     <p>The presenter may have provided links to related content. Click the materials icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-materials.png" /> ) to view the download links that have been provided. The materials icon will only appear if related content has been added to the session.</p>
@@ -781,7 +782,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </table>
     <p>&nbsp;</p>
     <h4>Enabling your camera</h4>
-    <p>If the speaker has enabled camera access, you can turn on your camera by clicking the camera icon.</p>
+    <p>If the speaker has enabled camera access, you can turn on your camera by clicking the camera icon. Cameras can only be activated if you have raised your hand and you are in the queue.</p>
     <table width="271">
       <tbody>
         <tr>
@@ -840,7 +841,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       Android Chrome has a known issue switching between Bluetooth audio output devices. While clients can continue the meeting using the default device, there is a bug related to switching to a Bluetooth audio output.</p>
     <h4>Presenters sharing videos</h4>
     <p>Attendees will have no audio from  videos that are screen shared by a presenter. This is the expected behavior.</p>
-    <h4>I notice that if I turn on camera and put the browsers in background, others in the meeting will see black tile in Safari/Chrome/Firefox in iOS and frozen tile in Chrome in Android, is this a known issue?</h4>
+    <h4>If you turn on your camera and put the browser in background, others in the meeting will see black tile in Safari/Chrome/Firefox in iOS and frozen tile in Chrome in Android</h4>
     <p>This is the default behavior that is specific to each browser. In Android, the video stream is muted when in background and thus, the video will show the last frame. Note that for Android, if an attendee joins later after the video stream is in background, it will show as a blank tile since the last frame is blank.</p>
   </section>
 </article>
@@ -860,7 +861,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 07 Mar 2022
+  Page last updated on 05 Apr 2022
 </div>
 
 
