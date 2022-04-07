@@ -72,7 +72,7 @@ function mapSamlAttributes(user, context, callback) {
   <section class="bcls-section">
     <h2 id="assign-roles-sessions">Controlling access to event sessions</h2>
     <p>Access Control tags are used to restrict access to sessions. If a session has an <strong>Access Control tag</strong> of <strong>vip</strong>, the session will only appear for users with a <strong>role</strong> of <strong>vip</strong>. Follow these steps to assign an Access Control tag to a session.</p>
-    <ol class="bcls-tasklist">
+    <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Gallery</strong> module.</li>
       <li>Edit the experience.</li>
       <li>Click <strong>Site Features &gt;Agenda</strong> in the left navigation.</li>
@@ -89,7 +89,7 @@ function mapSamlAttributes(user, context, callback) {
     <h2 id="attributes">Filtering the agenda based upon roles</h2>
     <p>Custom code will be used to filter the agenda sessions based upon the user's role. In this code example, sessions with no Access Control tag will appear in all user agendas. For sessions that have an Access Control tag, if the role parameter of the user matches the Access Control tag for the session, that session will appear in the user's agenda.</p>
     <p>Follow these steps to add the filtering code to the experience.</p>
-    <ol class="bcls-tasklist">
+    <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Gallery</strong> module.</li>
       <li>Edit the experience.</li>
       <li>In the left navigation, click <strong>Header and Footer</strong>.</li>
