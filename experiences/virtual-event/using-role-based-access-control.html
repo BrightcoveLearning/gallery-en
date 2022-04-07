@@ -95,24 +95,24 @@ function mapSamlAttributes(user, context, callback) {
       <li>In the left navigation, click <strong>Header and Footer</strong>.</li>
       <li>Paste the following code into the <strong>Custom Header HTML</strong> field.
           <pre class="line-numbers"><code class="language-javascript" translate="No">
-        &lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
         
-        &lt;script&gt;
-        $(document).ready(() =&gt; {
-          // Get role from SAML data and Agenda sessions from site
-          const role = window.bcGallery.filteredAssemblerData.samlAttributes ? window.bcGallery.filteredAssemblerData.samlAttributes.role : null;
+&lt;script&gt;
+$(document).ready(() =&gt; {
+    // Get role from SAML data and Agenda sessions from site
+    const role = window.bcGallery.filteredAssemblerData.samlAttributes ? window.bcGallery.filteredAssemblerData.samlAttributes.role : null;
         
-          if (!role) {
-            console.log("Error filtering Agenda sessions. No role specified on SAML data.");
+    if (!role) {
+            console.log("Error filtering Agenda sessions. No role specified on SAML data.");
             return;
           }
         
-          const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
+const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
         
-          // Looking for sessions to be filtered out
-          const filteredSessions = sessions.filter((session) =&gt; {
-            // If session does not have tags, do not filter the session
-            if(!session["restricted_tags"].length) {
+// Looking for sessions to be filtered out
+const filteredSessions = sessions.filter((session) =&gt; {
+// If session does not have tags, do not filter the session
+if(!session["restricted_tags"].length) {
                 return false;
             }
             const restrictedTags = session["restricted_tags"];
@@ -120,27 +120,27 @@ function mapSamlAttributes(user, context, callback) {
               return true;
             }
             return false;
-          });
+});
         
-          if(filteredSessions.length) {
-            const contentWrapper = document.querySelector('.bcg-fixed-width-container');
+if(filteredSessions.length) {
+    const contentWrapper = document.querySelector('.bcg-fixed-width-container');
         
-            // Creating an observer to watch for DOM changes that might put back a filtered session
-            const observer = new MutationObserver(() =&gt; {
-              filteredSessions.forEach(session =&gt; {
-                // Remove session item using its session id
-                $(`[data-session-id='${session.id}']`).remove();
-              });    
-            });
+    // Creating an observer to watch for DOM changes that might put back a filtered session
+    const observer = new MutationObserver(() =&gt; {
+        filteredSessions.forEach(session =&gt; {
+            // Remove session item using its session id
+            $(`[data-session-id='${session.id}']`).remove();
+         });    
+    });
         
-            observer.observe(contentWrapper, {
+    observer.observe(contentWrapper, {
               attributes:    true,
               childList:     true,
               characterData: true 
             });
-          }
-        });
-        &lt;/script&gt;
+        }
+    });
+&lt;/script&gt;
 </code></pre>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-agenda-filter-code.png" /></figure>
       </li>
