@@ -4,7 +4,7 @@ echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
 read COMMITMESSAGE
 git pull
 bundle update
-bundle exec jekyll build --trace --incremental
+bundle exec jekyll build --trace
 setopt localoptions rmstarsilent
 rm -f _site/feed.xml
 git add --all

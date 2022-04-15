@@ -24,10 +24,19 @@
   url: 'https://general.support.brightcove.com' 
 - VideoEssentials:
   name: -- VIDEO ESSENTIALS --
-  url: '' 
-- Beacon:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon'
+  url: ''
+- AudienceInsights:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights'
+  url: 'https://audience-insights.support.brightcove.com' 
+- BeaconStudio:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Studio'
+  url: 'https://beacon-help.support.brightcove.com' 
+- BeaconClassic:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic'
   url: 'https://beacon.support.brightcove.com' 
+- CorpTV:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;CorpTV'
+  url: 'https://corptv.support.brightcove.com'
 - Live:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live'
   url: 'https://live.support.brightcove.com' 
