@@ -246,7 +246,9 @@
     - name: 'Training: Building In-Page Experiences'
       url: /training/training-demand-building-page-experiences-using-gallery.html
     - name: Online Training Courses
-      url: /training/online-training-courses.html      
+      url: /training/online-training-courses.html
+    - name: Register for Instructor-led Training
+      url: /training/register-training.html
     - name: Brightcove University Training Courses
       url: /training/brightcove-university.html
 - section: 
