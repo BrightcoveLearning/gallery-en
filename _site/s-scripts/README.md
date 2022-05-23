@@ -1,2 +1,0 @@
-# s-scripts
-GitHub Scripts
