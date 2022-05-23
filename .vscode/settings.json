@@ -13,6 +13,7 @@
       "sideBar.border": "#120A02",
       "editor.background": "#251504",
       "editorGroupHeader.tabsBackground": "#371F06",
+      "editorInfo.border": "#ff3333",
       "activityBar.background": "#120A02",
       "tab.activeBackground": "#251504",
       "tab.inactiveBackground": "#120A02",
@@ -21,8 +22,7 @@
       "badge.background": "#371F06",
       "panel.background": "#371F06",
       "widget.shadow": "#452708",
-      "focusBorder": "#452708",
-      "editorInfo.border": "#ff3333"
+      "focusBorder": "#452708"
     },
     "titleBar.activeForeground": "#BFC5FF",
     "titleBar.activeBackground": "#000643",

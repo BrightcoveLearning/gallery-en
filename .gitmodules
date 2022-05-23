@@ -1,0 +1,15 @@
+[submodule "s-scripts"]
+	path = s-scripts
+	url = https://github.com/BrightcoveLearning/s-scripts
+[submodule "_includes/s-jekyll-page-includes"]
+	path = _includes/s-jekyll-page-includes
+	url = https://github.com/BrightcoveLearning/s-jekyll-page-includes
+[submodule "_includes/s-support"]
+	path = _includes/s-support
+	url = https://github.com/BrightcoveLearning/s-support
+[submodule "assets/images/s-support-img"]
+	path = assets/images/s-support-img
+	url = https://github.com/BrightcoveLearning/s-support-img
+[submodule "assets/images/s-feather-img"]
+	path = assets/images/s-feather-img
+	url = https://github.com/BrightcoveLearning/s-feather-img

@@ -375,27 +375,12 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/settings/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/release-notes/",
       "oldURL": "/index"
   },
 
@@ -405,12 +390,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
+      "newURL": "https://gallery.support.brightcove.com/training/",
       "oldURL": "/index"
   },
 
@@ -420,12 +400,32 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/develop/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
@@ -445,6 +445,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/support/known-issues-studio-brightcove-player-and-apis.html",
+      "oldURL": "/known-issues-studio-brightcove-player-and-apis"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/managing-agenda-virtual-event-experience.html",
       "oldURL": "/managing-agenda-virtual-event-experience"
   },
@@ -460,12 +465,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/training/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
@@ -560,12 +565,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/training/register-training.html",
       "oldURL": "/register-training"
   },
 
