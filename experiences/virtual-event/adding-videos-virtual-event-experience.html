@@ -10,7 +10,7 @@ layout: staging
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
     <p>Using the Gallery Collection Editor, you can select the videos to display on a Virtual Event Experience. Like other portal-type experiences, videos are organized into collections.</p>
-    <p>To add videos to a Virtual Event Experience, click <strong>Videos</strong> in the left navigation.</p>
+    <p>To add videos to a Virtual Event Experience, edit an experience and then click <strong>Videos</strong> in the left navigation.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-videos-menu.png" /></figure>
   </section>
   <section class="bcls-section">
@@ -36,10 +36,6 @@ layout: staging
     </ul>
     <p>For the above example, the collections would be created as follows:</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
-    <p>Some additional steps are required to configured the tracks. Tracks are covered in the <a href="#tracks">Configuring event tracks</a> section below. <strong>Playlist</strong> or <strong>Custom</strong> based collections can be used but if the event will use <a href="/experiences/virtual-event/using-role-based-access-control.html">role-based access control</a> to prevent users of certain roles from seeing some content, playlists should ​not​ be used as playlists don’t support role-based access control filtering.</p>
-    <p>
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-criteria-example.png" /></figure>
-    </p>
   </section>
   <section class="bcls-section">
     <h2 id="tracks">Configuring event tracks</h2>
@@ -53,31 +49,6 @@ layout: staging
       <li>Create child collections under the tracks collection for each track
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-tracks-example.png" /></figure>
       </li>
-      <li>Do not use playlists when creating the collections</li>
-      <li>The position of the tracks section is specified in the configuration file and <a href="/experiences/virtual-event/pages-to-delete/positioning-content-homepage.html">can be changed</a> by editing the <code translate="No">breakout_collection</code> object in the configuration file</li>
     </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="track-url">Configuring the tracks URL</h2>
-    <p>Once the collections have been created, the configuration file needs to be updated so that the On-Demand Sessions link in the header will direct to the correct URL. The name used for the tracks collection (collection 4) will be used in the URL to access the tracks page. To ensure the URL is set correctly, confirm the following.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Review the configuration file and locate the <code translate="No">breakout_collection</code> object.</li>
-      <li> The <code translate="No">collection</code> parameter contains the URL of the tracks page. For example:<br/>
-        <pre><code translate="No">
-"breakout_collection": {
-    "collection": "/category/videos/tracks",
-    "insert_target": ".bc-on-demand-section",
-    "insert_mode": "after"
-},
-          </code></pre>
-      </li>
-      <li>The last path in the <code translate="No">collection</code> URL should reflect the name of your tracks collection (collection 4). For example, if your tracks collection (collection 4) is named 'Sessions', the collection parameter would be updated to:<br/>
-        <pre><code translate="No">
-"collection": "/category/videos/sessions",      
-          </code></pre>
-      </li>
-      <li>To verify the configuration, click the On-Demand Sessions link in the header. The tracks session should appear. Clicking on a track should open the videos in a track. If you see a 404 error, there is a configuration issue.</li>
-    </ol>
-    <p>&nbsp;</p>
   </section>
 </article>
