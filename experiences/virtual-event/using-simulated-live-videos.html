@@ -196,7 +196,7 @@ layout: staging
             <td><code>modalAfterEvent</code></td>
             <td>Number</td>
             <td><code>1</code></td>
-            <td>If 0:
+            <td>If <code>0</code>:
               <ul>
                 <li>For a single video, the end screen will not be displayed at the end of the simulive video.
                 </li>
@@ -205,7 +205,7 @@ layout: staging
                 <li>The page will display the respective VOD asset(s) on refresh.
                 </li>
               </ul>
-              <p>If 1:</p>
+              <p>If <code>1</code>:</p>
               <ul>
                 <li>For a single video, the end screen will be displayed at the end of the simulive video.
                 </li>
@@ -214,7 +214,7 @@ layout: staging
                 <li>The page will display the respective VOD asset(s) on refresh.
                 </li>
               </ul>
-              <p>If 2:</p>
+              <p>If <code>2</code>:</p>
               <ul>
                 <li>For a single video, the end screen will be displayed at the end of the simulive video.
                 </li>
@@ -231,15 +231,15 @@ only applicable when using a playlist
 </td>
             <td>Boolean</td>
             <td><code>false</code></td>
-            <td>If false, the countdown timer will be displayed before each video in the playlist given that each video has a valid timestamp added.<br><br>
-            On true, the countdown timer will ONLY be displayed before the start time of the first video in the playlist and all other videos will play back-to-back.</td>
+            <td>If <code>false</code>, the countdown timer will be displayed before each video in the playlist given that each video has a valid timestamp added.<br><br>
+            On <code>true</code>, the countdown timer will ONLY be displayed before the start time of the first video in the playlist and all other videos will play back-to-back.</td>
           </tr>
           <tr>
             <td><code>tagValue</code></td>
             <td>string</td>
             <td><code>simulive</code></td>
-            <td>All videos using simulive features must have a consistent tag. simulive is suggested but if a custom tag is preferred, it can be set here.<br><br>
-            The Simulive plugin will not activate features unless one of the video content tags match the tagValue string.
+            <td>All videos using simulive features must have a consistent tag. <code>simulive</code> is suggested but if a custom tag is preferred, it can be set here.<br><br>
+            The Simulive plugin will not activate features unless one of the video content tags match the <code>tagValue</code> string.
             </td>
           </tr>
       </tbody>
