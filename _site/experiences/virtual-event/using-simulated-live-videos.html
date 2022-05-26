@@ -764,6 +764,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Click <span class="button-blue">Save</span> to save the changes.</li>
     </ol>
     <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: Plugin options can be used to customize the plugin name, text displayed and to configure an end time.  For information, see the <a href="simulive-options">Simulive player plugin options</a> section.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="custom_player">Configuring a custom player</h2>
@@ -816,6 +817,44 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
   </section>
+<section class="bcls-section">
+    <h2 id="simulive-options">Simulive player plugin options</h2>
+    <p>The Simulive player plugin options (JSON) can be used to customize the behavior of the simulive plugin. To configure the simulive plugin options, follow these steps.</p>
+    <ol class="bcls-tasklist">
+      <li>Open the <strong>Players</strong> module.</li>
+      <li>Click the link for the simulive player.</li>
+      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
+      <li>Click the plugin to open the plugin properties.</li>
+      <li>Add the appropriate options documented in the table below.</li>
+      <li>Click <span class="button-blue">Save</span> to save the changes and then publish the player.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
+    <h3>Sample plugin Options (JSON)</h3>
+<pre class="line-numbers"><code class="language-html" translate="No">
+{
+  "labels": {
+    "countdown": {
+      "live": "Live in:",
+      "day": "day",
+      "days": "days",
+      "hour": "hour",
+      "hours": "hours",
+      "minute": "minute",
+      "minutes": "minutes",
+      "second": "second",
+      "seconds": "seconds"
+    },
+    "ended": "Live event has ended."
+  },
+  "customStartFieldName": "simulive_start",
+  "customEndFieldName": "simulive_end",
+  "tagValue": "simulive",
+  "playlistInSuccession": false,
+  "modalAfterEvent": 1
+}
+
+    </code></pre>
+  </section>
 </article>
 
 <!-- complete bootstrap layout -->
@@ -833,7 +872,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 24 May 2022
+  Page last updated on 25 May 2022
 </div>
 
 
