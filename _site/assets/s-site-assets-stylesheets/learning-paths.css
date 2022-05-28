@@ -1,0 +1,52 @@
+.learning-path-wrapper {
+  position: fixed;
+  top: 17em;
+  right: 2em;
+  width: 110px;
+  max-width: 110px;
+  text-align: center;
+  padding: 1em;
+  background-color: #e5e5e5;
+}
+
+.learning-path-wrapper h4 {
+  margin-top: 0;
+}
+
+.learning-path-item {
+  border: 2px #666 solid;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 1.2rem;
+  vertical-align: middle;
+}
+
+.learning-path-item a {
+  font-size: 1.2rem;
+}
+
+.learning-path-item.selected {
+  background-color: #fef4db;
+  border: 2px rgb(180, 98, 4) solid;
+}
+
+span.learning-path {
+  background-color: #999;
+  color: #999;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  width: 3px;
+  min-width: 3px;
+  height: 12px;
+  min-height: 12px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
