@@ -34,3 +34,11 @@
 	path = assets/s-site-assets-images
 	url = https://github.com/BrightcoveLearning/s-site-assets-images
   branch = main
+[submodule "_includes/s-training"]
+	path = _includes/s-training
+	url = https://github.com/BrightcoveLearning/s-training
+  branch = main
+[submodule "assets/images/s-training-img"]
+	path = assets/images/s-training-img
+	url = https://github.com/BrightcoveLearning/s-training-img
+  branch = main
