@@ -65,7 +65,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/brightcove-university.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/brightcove-university.html",
       "oldURL": "/brightcove-university"
   },
 
@@ -340,7 +340,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/gallery-training-videos.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/gallery-training-videos.html",
       "oldURL": "/gallery-training-videos"
   },
 
@@ -365,32 +365,27 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/training/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/settings/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -405,32 +400,37 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/landing/",
       "oldURL": "/index"
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
       "oldURL": "/index"
   },
 
@@ -465,12 +465,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
@@ -570,7 +570,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
       "oldURL": "/register-training"
   },
 
@@ -640,18 +640,33 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/training-demand-building-page-experiences-using-gallery.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-building-page-experiences-using-gallery.html",
       "oldURL": "/training-demand-building-page-experiences-using-gallery"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/training-demand-building-portal-experiences-using-gallery.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-building-portal-experiences-using-gallery.html",
       "oldURL": "/training-demand-building-portal-experiences-using-gallery"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/training/training-demand-introduction-gallery.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-introduction-gallery.html",
       "oldURL": "/training-demand-introduction-gallery"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-introduction-video-cloud-analytics.html",
+      "oldURL": "/training-demand-introduction-video-cloud-analytics"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-introduction-video-cloud.html",
+      "oldURL": "/training-demand-introduction-video-cloud"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/training-demand-video-cloud-basics.html",
+      "oldURL": "/training-demand-video-cloud-basics"
   },
 
   {
@@ -712,6 +727,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html",
       "oldURL": "/using-site-editor-customize-virtual-event-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/video-cloud-studio-training-videos.html",
+      "oldURL": "/video-cloud-studio-training-videos"
   },
 
   {
