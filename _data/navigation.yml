@@ -17,12 +17,8 @@
       url: /get-started/getting-started-brightcove-gallery.html
     - name: Overview of Gallery Experiences
       url: /get-started/overview-gallery-experiences.html
-    - name: 'Training: Introduction to Gallery'
-      url: /training/training-demand-introduction-gallery.html
-    - name: 'Training: Building Portal Experiences'
-      url: /training/training-demand-building-portal-experiences-using-gallery.html
-    - name: 'Training: Building In-Page Experiences'
-      url: /training/training-demand-building-page-experiences-using-gallery.html
+    - name: Training
+      url: /get-started/training/index.html
 - section: 
   name: Experiences
   url: /experiences/index.html
@@ -233,24 +229,6 @@
       url: /develop/reference.html
     - name: 'In-Page Experience Client API Reference'
       url: 'https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html'
-- section: 
-  name: Training
-  url: /training/index.html
-  docs:
-    - name: Gallery Training Videos
-      url: /training/gallery-training-videos.html
-    - name: 'Training: Introduction to Gallery'
-      url: /training/training-demand-introduction-gallery.html
-    - name: 'Training: Building Portal Experiences'
-      url: /training/training-demand-building-portal-experiences-using-gallery.html
-    - name: 'Training: Building In-Page Experiences'
-      url: /training/training-demand-building-page-experiences-using-gallery.html
-    - name: Online Training Courses
-      url: /training/online-training-courses.html
-    - name: Register for Instructor-led Training
-      url: /training/register-training.html
-    - name: Brightcove University Training Courses
-      url: /training/brightcove-university.html
 - section: 
   name: Release Notes
   url: /release-notes/index.html
