@@ -56,7 +56,7 @@ var BCLS_toc = (function (window, document) {
 			toc_items;
 
     // check window width to set the elements to use
-    if (window.innerWidth < 1360) {
+    if (window.innerWidth < 1650) {
       if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
         navEl = centered_in_page_toc
         navWrapper = centered_inpage_nav

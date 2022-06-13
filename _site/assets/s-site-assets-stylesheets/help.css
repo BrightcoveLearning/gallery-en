@@ -1,0 +1,440 @@
+@import url(https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap);
+
+body, .body {
+	font-family: 'Public Sans', sans-serif;
+	font-size: 14px;
+	counter-reset: figure 0 table 0 step 0;
+	background-color: white;
+	color: rgb(1, 5, 14);
+	margin: 16px 24px;
+	position: relative;
+}
+
+h1 {
+	height: auto;
+	color: rgb(1, 5, 14);
+	font-size: 2.5rem;
+	font-weight: 800;
+	letter-spacing: -0.5px;
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+summary {
+	display: block;
+}
+
+.breadcrumb {
+	padding: 0 1rem;
+	margin-left: 2px;
+}
+
+.breadcrumb-item, .breadcrumb-item.active {
+	font-size: 1em;
+	/* line-height: 16px; */
+	color: rgb(8, 8, 140);
+}
+
+.breadcrumb-item * {
+	color: rgb(8, 8, 140);
+}
+
+.bcls-article {
+	font-size: 14px;
+}
+
+.bcls-section {
+	/*  padding-top: .5em; */
+}
+
+.external-link-icon {
+	height: .9em;
+	margin-left: .2rem;
+	vertical-align: text-top;
+}
+
+#breadcrumbs {
+	margin-left: -15px;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+#breadcrumbs>ol {
+	background-color: rgb(255, 255, 255);
+	color: rgb(8, 8, 140);
+	z-index: 9999;
+}
+
+article>summary {
+	margin-bottom: 16px;
+	font-size: 14px;
+	cursor: auto;
+}
+
+p, div, ul, ol {
+	margin-bottom: 1em !important;
+	font-size: 14px;
+}
+
+a, section a {
+	color: rgb(8, 8, 140) !important;
+	text-decoration: none;
+	background-color: transparent
+}
+
+a, .a, a::visited, a::hover {
+	color: rgb(8, 8, 140)!important;
+}
+
+.bcls-section a, .bcls-section a::visited, .bcls-section a::hover {
+	color: rgb(8, 8, 140)!important;
+}
+
+a::hover {
+	text-decoration: underline;
+}
+
+ul.doc-links {
+	list-style: none;
+	margin-left: -2em;
+}
+
+/* details */
+
+*, details::before, details::after {
+	box-sizing: border-box;
+}
+
+details {
+	background-color: rgb(255, 255, 255);
+	margin: 0 auto 0;
+	padding: 0;
+	width: 100%;
+	/* max-width: calc(100% - 48px); */
+	position: relative;
+	border-bottom: 1px solid rgb(229, 230, 230);
+	border-right: none;
+	border-left: none;
+	border-radius: 0;
+}
+
+details.details-section:first-of-type {
+	border-top: 1px solid rgb(229, 230, 230);
+}
+details.details-item:first-of-type {
+	border-top: 1px solid rgb(229, 230, 230);
+}
+
+details.details-nested:last-of-type {
+	border-bottom: none;
+}
+
+details::before {
+	width: 100%;
+	height: 100%;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .15;
+	pointer-events: none;
+	transition: opacity .2s;
+	z-index: -1;
+}
+
+details[open] {
+	/* background-color: whitesmoke; */
+}
+
+details[open]::before {
+	/* opacity: .6; */
+}
+
+details>summary {
+	padding: 16px .5em 20px .5em;
+	display: block;
+	position: relative;
+	font-size: 14px;
+	font-weight: normal;
+	cursor: pointer;
+	outline: none;
+	margin: 0 0 -8px 0;
+}
+
+details>summary::after {
+	float: right;
+	height: .5rem;
+	width: .5rem;
+	margin-right: 1rem;
+	content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
+}
+details>summary::-webkit-details-marker {
+	display: none;
+}
+
+details[open]>summary::after {
+	float: right;
+	height: .5rem;
+	width: .5rem;
+	content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
+}
+
+details[open]>summary {
+	border: none;
+	outline: none;
+}
+
+details.details-section>summary {
+	color: rgb(1, 5, 14);
+	font-weight: bold;
+}
+
+details.details-item>summary, details.details-item>summary {
+	color: rgb(8, 8, 140);
+}
+
+details>summary::before, details>summary::after {
+	/* width: .75em;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: '';
+    background-color: currentColor;
+    text-align: right; */
+	transform: translateY(-50%);
+	transition: transform .2s ease-in-out;
+}
+
+details.details-section[open]>summary {
+	background-color: rgb(249, 249, 249);
+}
+
+details.details-item[open]>summary  {
+	background-color: rgb(242, 244, 249);
+}
+
+details.details-nested[open]>summary  {
+	background-color: rgb(242, 244, 249);
+}
+
+details.details-item>summary {
+	color: rgb(8, 8, 140);
+}
+
+details.details-nested>summary {
+	color: rgb(8, 8, 140);
+}
+
+details section {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	margin: 16px 0;
+	padding: 16px 0 8px 0;
+	padding-top: 0;
+}
+
+details section p {
+	margin-left: 1rem;
+}
+
+details::after {
+	transform: translateY(-50%) rotate(90deg);
+}
+
+details[open] {
+	/* transform: translateY(-50%) rotate(180deg); */
+}
+
+.-webkit-details-marker {
+	display: none;
+}
+
+/* task list for steps */
+
+.bcls-tasklist {
+	list-style: none;
+	list-style-type: none;
+	margin-left: 0;
+	padding-top: 24px;
+}
+
+.bcls-tasklist>li::before {
+	color: rgb(1, 5, 14);
+	content: counters(step, ".") " ";
+	font-size: 1.3em;
+	font-weight: bold;
+	left: -2em;
+	line-height: 1;
+	position: absolute;
+	text-align: right;
+	top: 0;
+	width: 1.5em;
+}
+
+.bcls-tasklist>li {
+	border-left: 4px solid rgb(229, 230, 230);
+	list-style: none;
+	margin-bottom: 16px;
+	margin-left: -1em;
+	min-height: 1.7em;
+	padding-left: 1em;
+	position: relative;
+	counter-increment: step;
+}
+
+.bcls-tasklist-restart {
+	list-style: none;
+	list-style-type: none;
+	margin-left: 0;
+	padding-top: 24px;
+	counter-reset: rstep calc(var(--s) - 1);
+}
+
+.bcls-tasklist-restart>li {
+	border-left: 4px solid rgb(229, 230, 230);
+	list-style: none;
+	margin-bottom: 16px;
+	margin-left: -1em;
+	min-height: 1.7em;
+	padding-left: 1em;
+	position: relative;
+	counter-increment: rstep;
+}
+
+.bcls-tasklist-restart>li::before {
+	color: rgb(1, 5, 14);
+	content: counters(rstep, ".") " ";
+	/* counter-increment: rstep; */
+	font-size: 1.3em;
+	font-weight: bold;
+	left: -2em;
+	line-height: 1;
+	position: absolute;
+	text-align: right;
+	top: 0;
+	width: 1.5em;
+}
+
+.bcls-tasklist-restart ul, .bcls-tasklist-restart ol {
+	margin-bottom: 1rem;
+	;
+}
+
+.bcl-highlight, .bcls-highlight {
+	background-color: rgb(255, 255, 201);
+	border: 1px rgb(255, 204, 52) solid;
+	padding: 1px;
+}
+
+.ui-image {
+	cursor: not-allowed;
+	width: auto;
+	vertical-align: middle;
+	height: 1.5em;
+}
+
+.imageWithText {
+	width: auto;
+	vertical-align: middle;
+	height: 1.5em;
+}
+
+/* in-app help text buttons */
+.button-blue, .button-blue-text, .button-blue-text-bordered, .button-red, .button-red-text, .button-gray {
+	/* font-family: 'Public Sans'; */
+	font-weight: bold;
+	font-size: .9rem;
+	padding: .4rem;
+	white-space: nowrap;
+}
+.button-blue {
+	color: rgb(255, 255, 255);
+	background-color: rgb(9, 45, 189);
+}
+.button-blue-text {
+	color: rgb(8, 8, 140);
+	background-color: rgb(255, 255, 255);
+}
+.button-blue-text-bordered {
+	color: rgb(8, 8, 140);
+	background-color: rgb(255, 255, 255);
+  border: 1px rgb(229,230,230) solid;
+  border-radius: 1px;
+}
+.button-red {
+	color: rgb(255, 255, 255);
+	background-color: rgb(211, 61, 0);
+}
+.button-red-text {
+	color: rgb(211, 61, 0);
+	background-color: rgb(255, 255, 255);
+}
+.button-red-text-border {
+  color: rgb(211, 61, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px rgb(211, 61, 0) solid;
+  border-radius: 2px;
+	padding: 4px;;
+}
+.button-gray {
+	background-color: rgb(242, 244, 249);
+}
+.button-icon {
+	white-space: nowrap;
+  padding-right: .15rem;
+  height: 1rem;
+}
+
+/* info, tips, warnings */
+
+aside, .bcls-aside {
+  margin-bottom: 1em;
+  padding: 1em 2em 1em 3.5em;
+}
+
+.bcls-aside--information {
+  background-color: #f2f4f9;
+  border-left: 4px solid #092dbd;
+}
+
+.bcls-aside--information:before {
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
+  float: left;
+  margin-left: -2.5em;
+}
+
+
+.bcls-aside--tip {
+  background-color: #d7f6e6;
+  border-left: 4px solid #009e4f;
+}
+
+.bcls-aside--tip:before {
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.svg);
+  float: left;
+  /* color: rgb(8, 8, 139);
+  height: 28px; */
+  margin-left: -2.5em;
+}
+
+
+.bcls-aside--warning {
+  background-color: #fffbf2;
+  border-left: 4px solid #ffba00;
+}
+
+.bcls-aside--warning:before {
+  content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-gray.svg);
+  float: left;
+  margin-left: -2.5em;
+}
+
