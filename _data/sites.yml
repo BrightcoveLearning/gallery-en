@@ -3,7 +3,7 @@
   url: 'https://support.brightcove.com' 
 - VideoCloud:
   name: -- VIDEO CLOUD --
-  url: '' 
+  url: 'https://support.brightcove.com/' 
 - Studio:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio'
   url: 'https://studio.support.brightcove.com' 
@@ -24,7 +24,7 @@
   url: 'https://general.support.brightcove.com' 
 - VideoEssentials:
   name: -- VIDEO ESSENTIALS --
-  url: ''
+  url: 'https://support.brightcove.com/'
 - AudienceInsights:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights'
   url: 'https://audience-insights.support.brightcove.com' 
@@ -45,19 +45,22 @@
   url: 'https://zencoder.support.brightcove.com' 
 - VideoCloudAddOns:
   name: -- VIDEO CLOUD ADD-ONS --
-  url: '' 
-- Campaign:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign'
-  url: 'https://campaign.support.brightcove.com' 
-- Engage:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage'
-  url: 'https://engage.support.brightcove.com' 
+  url: 'https://support.brightcove.com/' 
 - Gallery:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery'
   url: 'https://gallery.support.brightcove.com' 
 - Social:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social'
   url: 'https://studio.support.brightcove.com/social/index.html' 
+- Interactivity:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Interactivity'
+  url: 'https://interactions.support.brightcove.com/index.html' 
 - SSAI:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI'
   url: 'https://ssai.support.brightcove.com' 
+- Campaign:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign'
+  url: 'https://campaign.support.brightcove.com' 
+- Engage:
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage'
+  url: 'https://engage.support.brightcove.com' 
