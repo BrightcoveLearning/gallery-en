@@ -1,3 +1,5 @@
+bold=`tput bold`
+normal=`tput sgr0`
 echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
 read COMMITMESSAGE 
 cd ..
@@ -6,8 +8,6 @@ bundle update
 bundle exec jekyll build --trace
 setopt localoptions rmstarsilent
 rm -f _site/feed.xml
-bold=`tput bold`
-normal=`tput sgr0`
 git pull
 git add .
 git commit -m $COMMITMESSAGE

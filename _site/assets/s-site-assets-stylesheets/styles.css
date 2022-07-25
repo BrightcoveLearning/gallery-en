@@ -780,6 +780,10 @@
             text-decoration: underline;
         }
         
+        .bcls-question::before {
+            content: "+ ";
+        }
+        
         .bcls-answer {
             display: none;
         }

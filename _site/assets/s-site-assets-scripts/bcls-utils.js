@@ -129,24 +129,24 @@ var BCLS_player_fix = ( function (window, document) {
 
 var BCLS_faq = (function (window, document) {
     'use strict';
-    var // elements
+    let // elements
         questions = document.getElementsByClassName('bcls-question'),
         answers = document.getElementsByClassName('bcls-answer');
     function showAnswer(evt) {
-        var answerNumber = parseInt(this.id.substring(1)),
+        let answerNumber = parseInt(this.id.substring(1)),
             i = 0,
             iMax = answers.length;
         // hide all answers except the one for the selected question
         for (i = 0; i < iMax; i++) {
-            if (i === answerNumber) {
-                answers[i].style.display = 'block';
-            } else {
+            if (i === answerNumber && answers[i].style.display === 'block') {
                 answers[i].style.display = 'none';
+            } else if (i === answerNumber) {
+                answers[i].style.display = 'block';
             }
         }
     }
     function init() {
-        var i = 0, iMax = 0;
+        let i = 0, iMax = 0;
         if (questions) {
             iMax = questions.length;
         }
