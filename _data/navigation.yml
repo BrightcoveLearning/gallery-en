@@ -158,6 +158,45 @@
         url: /experiences/live/customizing-live-event-portal-settings.html
       - name: Previewing and Publishing
         url: /experiences/portal/previewing-and-publishing-portal-experience.html
+    - name: Virtual Event
+      url: /experiences/virtual-event/index.html
+      docs:
+      - name: Adding Videos
+        url: /experiences/virtual-event/adding-videos-virtual-event-experience.html
+      - name: Creating an Event Agenda File
+        url: /experiences/virtual-event/creating-agenda-virtual-event-experience.html
+      - name: Creating an Event Speakers File
+        url: /experiences/virtual-event/creating-speakers-virtual-event-experience.html
+      - name: Creating a Virtual Event Experience
+        url: /experiences/virtual-event/creating-virtual-event-experience.html
+      - name: Customizing the Appearance and Behavior
+        url: /experiences/virtual-event/customizing-appearance-and-behavior-virtual-event-experience.html
+      - name: Customizing the Content of Pages
+        url: /experiences/virtual-event/customizing-content-virtual-event-experience-pages.html
+      - name: Customizing the Style
+        url: /experiences/virtual-event/customizing-style-virtual-event-experience.html
+      - name: Exporting Virtual Event Viewer Data
+        url: /experiences/virtual-event/getting-analytics.html
+      - name: Getting Started with the Agenda Module
+        url: /experiences/virtual-event/getting-started-agenda-module.html
+      - name: Integrating Pigeonhole
+        url: /experiences/virtual-event/integrating-pigeonhole-virtual-event-experience.html
+      - name: Managing the Event Agenda
+        url: /experiences/virtual-event/managing-agenda-virtual-event-experience.html
+      - name: Managing Event Speakers
+        url: /experiences/virtual-event/managing-event-speakers.html
+      - name: Managing Event Sponsors
+        url: /experiences/virtual-event/managing-event-sponsors.html
+      - name: Overview of the Virtual Event Template
+        url: /experiences/virtual-event/overview-virtual-event-template.html
+      - name: Using Interactive Rooms
+        url: /experiences/virtual-event/using-interactive-rooms.html
+      - name: Using Role-Based Access Control
+        url: /experiences/virtual-event/using-role-based-access-control.html
+      - name: Using Simulated Live Videos
+        url: /experiences/virtual-event/using-simulated-live-videos.html
+      - name: Using the Site Editor
+        url: /experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html
     - name: Landing Page
       url: /experiences/landing/index.html
       docs:
