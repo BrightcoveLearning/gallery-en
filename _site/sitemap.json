@@ -10,11 +10,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/adding-config-virtual-event-experience.html",
-      "oldURL": "/adding-config-virtual-event-experience"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-interactions-page-experience.html",
       "oldURL": "/adding-interactions-page-experience"
   },
@@ -230,16 +225,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/customizing-footer-virtual-event-experience.html",
-      "oldURL": "/customizing-footer-virtual-event-experience"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/customizing-header-virtual-event-experience.html",
-      "oldURL": "/customizing-header-virtual-event-experience"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/live/customizing-live-event-portal-settings.html",
       "oldURL": "/customizing-live-event-portal-settings"
   },
@@ -275,11 +260,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/customizing-sponsors-virtual-event-experience.html",
-      "oldURL": "/customizing-sponsors-virtual-event-experience"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing-style-page-experience.html",
       "oldURL": "/customizing-style-page-experience"
   },
@@ -302,11 +282,6 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-video-settings-portal-experience.html",
       "oldURL": "/customizing-video-settings-portal-experience"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/displaying-speakers-homepage.html",
-      "oldURL": "/displaying-speakers-homepage"
   },
 
   {
@@ -365,7 +340,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "newURL": "https://gallery.support.brightcove.com/develop/",
       "oldURL": "/index"
   },
 
@@ -375,7 +350,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "newURL": "https://gallery.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
       "oldURL": "/index"
   },
 
@@ -395,7 +380,17 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
@@ -411,26 +406,6 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/live/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -537,11 +512,6 @@
   {
       "newURL": "https://gallery.support.brightcove.com/develop/page-experiences-custom-css-reference.html",
       "oldURL": "/page-experiences-custom-css-reference"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/positioning-content-homepage.html",
-      "oldURL": "/positioning-content-homepage"
   },
 
   {
@@ -690,11 +660,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/using-role-based-access-control-OLD.html",
-      "oldURL": "/using-role-based-access-control-OLD"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-role-based-access-control.html",
       "oldURL": "/using-role-based-access-control"
   },
@@ -717,16 +682,6 @@
   {
       "newURL": "https://gallery.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
       "oldURL": "/viewing-brightcove-system-status-page"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/virtual-event-template-spec.html",
-      "oldURL": "/virtual-event-template-spec"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/pages-to-delete/working-static-content.html",
-      "oldURL": "/working-static-content"
   },
 ]
 
