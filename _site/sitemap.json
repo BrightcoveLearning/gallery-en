@@ -340,7 +340,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
       "oldURL": "/index"
   },
 
@@ -351,6 +351,11 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
       "oldURL": "/index"
   },
 
@@ -381,11 +386,6 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/",
       "oldURL": "/index"
   },
 
@@ -642,11 +642,6 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/using-dynamic-video-overrides-page-experience.html",
       "oldURL": "/using-dynamic-video-overrides-page-experience"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/using-interactive-rooms.html",
-      "oldURL": "/using-interactive-rooms"
   },
 
   {
