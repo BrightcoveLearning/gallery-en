@@ -610,11 +610,12 @@
             border-radius: 1rem;
             padding: .4rem;
             background-color: rgb(249, 249, 249);
+            margin-bottom: .2rem;
         }
         
         details>summary {
             border: .1rem rgb(249, 249, 249) solid;
-            font-size: 1.8rem;
+            font-size: 1rem;
             color: rgb(8, 8, 140);
             padding: .4rem;
             outline: none;
