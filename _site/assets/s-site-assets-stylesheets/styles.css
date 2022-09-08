@@ -630,6 +630,7 @@
             white-space: -o-pre-wrap;
             word-wrap: break-word;
             display: inline-flex;
+            align-items: center;
         }
         
         details>summary>* {
