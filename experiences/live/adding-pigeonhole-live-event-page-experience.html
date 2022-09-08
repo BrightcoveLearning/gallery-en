@@ -40,7 +40,7 @@ description: 'In this topic you will learn how to add Q&amp;A capabilities to a 
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="add-experience">Generating the Pigeonhole embed code</h2>
+    <h2 id="generate-code">Generating the Pigeonhole embed code</h2>
     <p>In order for the Pigeonhole to display in the experience, the following code will be added using a custom component on the experience. The format of the code will be:</p>
     <code translate="No">
     <pre>&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em>/i/<em>session ID</em>&quot; style=&quot;border:1px #333333 solid;border-radius:3px&quot; name=&quot;Pigeonhole Live&quot; scrolling=&quot;no&quot; frameborder=&quot;1&quot; marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot; height=&quot;600&quot; width=&quot;100%&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
@@ -75,11 +75,18 @@ description: 'In this topic you will learn how to add Q&amp;A capabilities to a 
       <li>Click <span class="button-blue">Save</span>. The HTML will be rendered on the experience.</li>
       <li>In the left navigation click <strong>Settings</strong> &gt; <strong>Advanced</strong>.</li>
       <li>Paste the following code into the JavaScript URL field.
-          <pre><code translate="No">https://static.pigeonhole.at/brightcove-plugin/phl-brightcove-gallery-inpage.js</code></pre></li>
+        <pre><code translate="No">https://static.pigeonhole.at/brightcove-plugin/phl-brightcove-gallery-inpage.js</code></pre>
+      </li>
       <li>Click <span class="button-blue">Save</span>.</li>
       <li><strong>Publish</strong> the changes to the experience.</li>
     </ol>
     <p>When you preview the experience, the Pigeonhole should display.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-ipx-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="tracking">How attendees are tracked</h2>
+    <p>Attendees are tracked using browser sessions, which means an attendee is identified and accounted for (tracked) each time they generate a new session (either by using multiple browsers or devices, or if they clean cookies and reenter the experience).</p>
+    <p>Sessions start when the Pigeonhole widget is loaded, whether the viewer has signed in as anonymous or using a name. Session info is stored in cookies. Viewers can enter the experience multiple times using the same browser session and a single viewer will be registered. If the viewer enters the experience using a different browser or device, a new user session will be created  (causing a duplicate attendee/session). Duplicate sessions  may also happen if two or more experiences with a widget are embedded in the same page or if the session cookie expires or gets deleted.</p>
+    <p>To avoid duplicate sessions, ensure that only one Pigeonhole widget is loaded per page and avoid having viewers use other devices or browsers.</p>
   </section>
 </article>
