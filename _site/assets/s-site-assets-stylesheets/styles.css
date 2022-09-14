@@ -861,8 +861,8 @@
             overflow: hidden;
         }
         
-        .bcls-active {
-            color: #01050e !important;
+        .bcls-active, [aria-current="page"] {
+            color: #F3951D !important;
             font-weight: 800;
         }
         /* docs header */
