@@ -861,9 +861,12 @@
             overflow: hidden;
         }
         
-        .bcls-active, [aria-current="page"] {
-            color: #F3951D !important;
+        .bcls-active {
             font-weight: 800;
+        }
+        [aria-current="page"] {
+            color: #F3951D !important;
+            font-weight: bold;
         }
         /* docs header */
         

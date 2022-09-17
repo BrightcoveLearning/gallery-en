@@ -3,6 +3,8 @@
 // had a listener for changing window width
 
 var BCLS_site = (function(window, document) {
+  
+  
   var all_sidenav_links = document.querySelectorAll(".sidenav a"),
     href = window.location.pathname,
     i,
