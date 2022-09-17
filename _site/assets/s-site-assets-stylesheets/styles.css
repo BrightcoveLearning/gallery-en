@@ -861,10 +861,7 @@
             overflow: hidden;
         }
         
-        .bcls-active {
-            font-weight: 800;
-        }
-        [aria-current="page"] {
+        [aria-current="page"], .bcls-active {
             color: #F3951D !important;
             font-weight: bold;
         }
