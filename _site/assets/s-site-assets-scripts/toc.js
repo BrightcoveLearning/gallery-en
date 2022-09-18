@@ -179,9 +179,8 @@ var BCLS_toc = (function (window, document) {
   function toggle_nav_menu () {
     if (nav_menu_collapsed) {
       if (bc_veggie_burger_wrapper) {
-        bc_veggie_burger_wrapper.setAttribute('style', 'display:none;')
-        side_nav.setAttribute('style', 'display:block;')
-        nav_menu_collapsed = false
+        side_nav.setAttribute('style', 'display:block;');
+        nav_menu_collapsed = false;
       }
     } else {
       if (bc_veggie_burger_wrapper) {
