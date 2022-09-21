@@ -254,11 +254,15 @@ console.log('nav_menu_collapsed', nav_menu_collapsed);
   if (bc_veggie_burger_wrapper) {
     bc_veggie_burger.addEventListener('click', function () {
       if (nav_menu_collapsed) {
-        side_nav.setAttribute('style', 'display:block;')
+        side_nav.setAttribute('style', 'display:block;');
+        document.querySelector('#main_content').removeAttribute('style');
         nav_menu_collapsed = false
       } else {
         side_nav.setAttribute('style', 'display:none;')
-        nav_menu_collapsed = true
+        nav_menu_collapsed = true;
+        if (window.innerWidth > 800) {
+          document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
+        }
       }
     })
   }
