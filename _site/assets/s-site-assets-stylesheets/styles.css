@@ -75,6 +75,7 @@
         article,
         bcls-article {
             padding: 1em;
+            max-width: 1200px;
         }
         
         article a,
@@ -96,6 +97,10 @@
         
         article>summary {
             display: block !important;
+        }
+
+        #main_content {
+            transition: margin-left 0.5s;
         }
         
         header a {

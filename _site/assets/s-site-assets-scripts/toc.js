@@ -1,3 +1,4 @@
+
 var BCLS_toc = (function (window, document) {
   var side_nav_created = false,
     in_page_nav_right = true,
@@ -178,20 +179,16 @@ var BCLS_toc = (function (window, document) {
    */
   function toggle_nav_menu () {
     if (nav_menu_collapsed) {
-      if (bc_veggie_burger_wrapper) {
-        side_nav.setAttribute('style', 'display:block;');
-        nav_menu_collapsed = false;
-      }
-    } else {
-      if (bc_veggie_burger_wrapper) {
-        bc_veggie_burger_wrapper.setAttribute(
-          'style',
-          'display:block;background:none;'
-        )
-        side_nav.setAttribute('style', 'display:none;')
-        nav_menu_collapsed = true
-      }
+      side_nav.setAttribute('style', 'display:block;');
+      document.querySelector('#main_content').removeAttribute('style');
+      nav_menu_collapsed = false
+  } else {
+    side_nav.setAttribute('style', 'display:none;')
+    nav_menu_collapsed = true;
+    if (window.innerWidth > 800) {
+      document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
     }
+}
   }
 
   // run the function
@@ -264,12 +261,17 @@ console.log('nav_menu_collapsed', nav_menu_collapsed);
           document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
         }
       }
-    })
+    });
   }
 
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
     bc_veggie_burger_wrapper.setAttribute('style', 'display:none');
+  }
+  // hide nav by default on landing pages
+  if (location.pathname.substring(location.pathname.lastIndexOf('/')) === '/index.html' || location.pathname.substring(location.pathname.lastIndexOf('/')) === '/') {
+    console.log('turning off nav menu');
+    toggle_nav_menu();
   }
 
   // this creates a public method, allow it to be run again (imported content for example)
