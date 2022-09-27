@@ -99,7 +99,7 @@
             display: block !important;
         }
 
-        #main_content {
+        #main_content, #side_nav {
             transition: margin-left 0.5s;
         }
         

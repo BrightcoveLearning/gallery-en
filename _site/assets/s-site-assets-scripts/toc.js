@@ -179,17 +179,21 @@ var BCLS_toc = (function (window, document) {
    */
   function toggle_nav_menu () {
     if (nav_menu_collapsed) {
-      side_nav.setAttribute('style', 'display:block;');
+      side_nav.setAttribute('style', 'margin-left: 1em;display: inline-block;border-right: 1px solid #e5e5e6;padding-right: 1em;');
       document.querySelector('#main_content').removeAttribute('style');
-      nav_menu_collapsed = false
-  } else {
-    side_nav.setAttribute('style', 'display:none;')
-    nav_menu_collapsed = true;
-    if (window.innerWidth > 800) {
-      document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
+      nav_menu_collapsed = false;
+      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/x.svg');
+    } else {
+      side_nav.setAttribute('style', 'margin-left: -500px; margin-right: 6em;display: inline-block;border-right: 1px solid #e5e5e6; padding-right: 1em;')
+      nav_menu_collapsed = true;
+      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/menu.svg');
+      if (window.innerWidth > 800) {
+        document.querySelector('#main_content').setAttribute('style', 'margin-left: 20em;');
+      } else {
+        document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
+      }
     }
 }
-  }
 
   // run the function
   if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
@@ -249,19 +253,7 @@ console.log('nav_menu_collapsed', nav_menu_collapsed);
 
   // listener for burger click
   if (bc_veggie_burger_wrapper) {
-    bc_veggie_burger.addEventListener('click', function () {
-      if (nav_menu_collapsed) {
-        side_nav.setAttribute('style', 'display:block;');
-        document.querySelector('#main_content').removeAttribute('style');
-        nav_menu_collapsed = false
-      } else {
-        side_nav.setAttribute('style', 'display:none;')
-        nav_menu_collapsed = true;
-        if (window.innerWidth > 800) {
-          document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
-        }
-      }
-    });
+    bc_veggie_burger.addEventListener('click', toggle_nav_menu);
   }
 
   // if inside iframe, hide appropriate elements
