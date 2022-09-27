@@ -140,6 +140,9 @@ var BCLS_toc = (function (window, document) {
 					location.hash = this.firstElementChild.getAttribute('href');
 				});
 			}
+
+      // get collection of in-page links
+      let in_page_links = document.querySelectorAll('#in_page_nav>li');
     }
 
     /**
