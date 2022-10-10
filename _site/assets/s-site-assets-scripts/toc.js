@@ -1,6 +1,6 @@
 
-var BCLS_toc = (function (window, document) {
-  var side_nav_created = false,
+let BCLS_toc = (function (window, document) {
+  let side_nav_created = false,
     in_page_nav_right = true,
     side_nav = document.getElementById('side_nav'),
     bc_veggie_burger_wrapper = document.getElementById(
@@ -17,7 +17,26 @@ var BCLS_toc = (function (window, document) {
     product_logo = document.querySelector('.product-logo'),
     product_logo_full_path = product_logo.getAttribute('src'),
     product_logo_small_path =
-      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg';
+      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg',
+    h2s = document.querySelectorAll('h2["id"]');
+    console.log('h2s', h2s);
+
+  /**
+   * Check to see if an element is in the viewport
+   * @param {node} thisElement the element to check
+   */
+  function elementInViewport(thisElement) {
+
+    var bounding = thisElement.getBoundingClientRect();
+
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+
+        console.log('Element is in the viewport!');
+    } else {
+
+        console.log('Element is NOT in the viewport!');
+    }
+  }
 
   /**
    * Removes all child elements (eg the items in a list)
