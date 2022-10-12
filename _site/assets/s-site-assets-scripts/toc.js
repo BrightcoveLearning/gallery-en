@@ -18,7 +18,7 @@ let BCLS_toc = (function (window, document) {
     product_logo_full_path = product_logo.getAttribute('src'),
     product_logo_small_path =
       'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg',
-    h2s = document.querySelectorAll('h2["id"]');
+    h2s = document.querySelectorAll('h2[id]');
     console.log('h2s', h2s);
 
   /**
