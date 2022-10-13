@@ -1087,6 +1087,11 @@
             color: #4D5056;
             padding-left: 3px;
         }
+
+        #in_page_nav li.in-view,
+        #centered_in_page_toc li.in-view {
+            font-weight: bold;
+        }
         
         #in_page_nav li a,
         #centered_in_page_toc li a {

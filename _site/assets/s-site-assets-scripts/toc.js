@@ -18,25 +18,44 @@ let BCLS_toc = (function (window, document) {
     product_logo_full_path = product_logo.getAttribute('src'),
     product_logo_small_path =
       'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg',
-    h2s = document.querySelectorAll('h2[id]');
-    console.log('h2s', h2s);
+    h2s = document.querySelectorAll('h2[id]'),
+    toc_items,
+    toc_links;
+
+  /**
+   * Add a class to an element
+   * @param {node} el the element
+   * @param {string} cls the class to add
+   */
+  function addClass (el, cls) {
+    el.classList.add(cls);
+  }
+  
+  /**
+   * Remove a class from an element
+   * @param {node} el the element
+   * @param {string} cls the class to add
+   */
+  function removeClass (el, cls) {
+    el.classList.remove(cls);
+  }
 
   /**
    * Check to see if an element is in the viewport
-   * @param {node} thisElement the element to check
+   * @param {node} el the element to check
    */
-  function elementInViewport(thisElement) {
+  function isScrolledIntoView(el) {
+    let rect = el.getBoundingClientRect();
+    let elemTop = rect.top;
+    let elemBottom = rect.bottom;
 
-    var bounding = thisElement.getBoundingClientRect();
-
-    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-
-        console.log('Element is in the viewport!');
-    } else {
-
-        console.log('Element is NOT in the viewport!');
-    }
+    // Only completely visible elements return true:
+    let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
   }
+
 
   /**
    * Removes all child elements (eg the items in a list)
@@ -72,8 +91,7 @@ let BCLS_toc = (function (window, document) {
       i,
       iMax,
       frag = document.createDocumentFragment(),
-      parent,
-			toc_items;
+      parent;
 
     // check window width to set the elements to use
     if (window.innerWidth < 1650) {
@@ -152,6 +170,9 @@ let BCLS_toc = (function (window, document) {
 
 			// make whole LI clickable
 			toc_items = document.querySelectorAll('li.toc-item');
+      console.log('toc_items', toc_items);
+      toc_links = document.querySelectorAll('li.toc-item a');
+      console.log('toc_links', toc_links);
 			iMax = toc_items.length;
 			for (i = 0; i < iMax; i++) {
 				toc_items[i].setAttribute('style', 'cursor:pointer;')
@@ -277,6 +298,36 @@ console.log('nav_menu_collapsed', nav_menu_collapsed);
   if (bc_veggie_burger_wrapper) {
     bc_veggie_burger.addEventListener('click', toggle_nav_menu);
   }
+
+  // listener for scroll events
+  window.addEventListener('scroll',(event) => {
+    let i = 0,
+      iMax = h2s.length;
+    for (i; i<iMax; i++) {
+      let thisID = h2s[i].getAttribute('id');
+      if (isScrolledIntoView(h2s[i])) {
+        if (toc_links) {
+          let i = 0,
+          iMax = toc_links.length;
+          for (i; i < iMax; i++) {
+            if (toc_links[i].getAttribute('href') === '#' + thisID) {
+              addClass(toc_items[i], 'in-view');
+            }
+          }
+        }
+      } else {
+        if (toc_links) {
+          let i = 0,
+          iMax = toc_links.length;
+          for (i; i < iMax; i++) {
+            if (toc_links[i].getAttribute('href') === '#' + thisID) {
+              removeClass(toc_items[i], 'in-view');
+            }
+          }
+        }
+      }
+    }
+  });
 
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
