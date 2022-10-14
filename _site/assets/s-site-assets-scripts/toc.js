@@ -204,14 +204,15 @@ let BCLS_toc = (function (window, document) {
           document.querySelector(linkTarget).scrollIntoView({
             behavior: 'smooth'
           })
-          jMax = navItems.length
-          for (j = 0; j < jMax; j++) {
-            navItems[j].removeAttribute('style')
-          }
-          this.setAttribute(
-            'style',
-            'font-weight:bold;'
-          )
+          // the lines below are no longer needed - scroll event handler now take care of this
+          // jMax = navItems.length
+          // for (j = 0; j < jMax; j++) {
+          //   navItems[j].removeAttribute('style')
+          // }
+          // this.setAttribute(
+          //   'style',
+          //   'font-weight:bold;'
+          // )
         })
       }
     }
