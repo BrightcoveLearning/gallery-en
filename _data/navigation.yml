@@ -131,8 +131,6 @@
           url: /experiences/portal/updating-gallery-templates.html
         - name: Using Dynamic Video Overrides
           url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
-        - name: Using Multi-Lingual Metadata
-          url: /experiences/portal/using-multi-lingual-metadata.html
     - name: Live Event
       url: /experiences/live/index.html
       docs:
