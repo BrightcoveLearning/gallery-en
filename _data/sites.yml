@@ -5,10 +5,10 @@
   name: -- VIDEO CLOUD --
   url: 'https://support.brightcove.com/' 
 - Studio:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Marketing Studio'
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio'
   url: 'https://studio.support.brightcove.com' 
 - Marketing Studio:
-  name: '&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio'
+  name: '&nbsp;&nbsp;&nbsp;&nbsp;Marketing Studio'
   url: 'https://mstudio.support.brightcove.com' 
 - Player:
   name: '&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development'
