@@ -1084,6 +1084,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
     </ol>
     <p>The above code with your event passcode and session ID will be used in your experience.</p>
+    <h3>Defaulting Pigeonhole to display the agenda</h3>
+    <p>The embed code can be edited to display the Pigeonhole agenda. Modify the <code>src</code> parameter to remove the <code>session id</code>:</p>
+    <pre><code translate="No">&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em><em></em>&quot; style=&quot;border:1px #333333 solid;border-radius:3px&quot; name=&quot;Pigeonhole Live&quot; scrolling=&quot;no&quot; frameborder=&quot;1&quot; marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot; height=&quot;600&quot; width=&quot;100%&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+    <p>This will cause the agenda to be displayed in the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-agenda-display.png" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="add-experience">Adding a Pigeonhole to an experience</h2>
