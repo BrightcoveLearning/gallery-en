@@ -1,4 +1,5 @@
 git submodule add https://github.com/BrightcoveLearning/s-scripts
+git submodule add https://github.com/BrightcoveLearning/s-doc-updates
 cd _data
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-data
 cd ../_includes
