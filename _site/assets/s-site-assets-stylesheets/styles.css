@@ -883,6 +883,7 @@
             margin: 0 auto;
             border-radius: 40px;
             overflow: hidden;
+            background-color: white;
         }
         
         [aria-current="page"], .bcls-active {
