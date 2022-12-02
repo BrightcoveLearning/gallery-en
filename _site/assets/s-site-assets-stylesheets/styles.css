@@ -503,7 +503,7 @@
         }
         
         .bcls-aside--information:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
+            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info.svg);
             float: left;
             margin-left: -2.5em;
         }
@@ -514,8 +514,8 @@
         }
         
         .bcls-aside--tip:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.svg);
-            float: left;
+          content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.webp);
+          float: left;
             /* color: rgb(8, 8, 139);
   height: 28px; */
             margin-left: -2.5em;
