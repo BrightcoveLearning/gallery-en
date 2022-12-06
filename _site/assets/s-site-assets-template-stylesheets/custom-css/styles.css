@@ -1,0 +1,71 @@
+/* Footer styles */
+.a-text,
+.h5-text {
+    color: darkgray;
+    text-decoration: none;
+}
+
+.a-text:hover {
+    color: white;
+}
+
+/* Navigation styles */
+.nav-link::before {
+    background-color: #f4f6fc !important;
+}
+
+.theme-icon-holder {
+    background: #fff !important;
+    color: #4EA9D1 !important;
+}
+
+.form-select:focus {
+    border-color: #4EA9D1 !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(146, 216, 248, 0.25) !important;
+}
+
+[aria-current="page"] {
+    color: #4EA9D1 !important;
+}
+
+a.theme-link:hover {
+    color: #4EA9D1 !important;
+    text-decoration-color: #4EA9D1 !important;
+}
+
+/* Landing Page styles */
+
+.span-icon {
+    text-align: center;
+    color: #4EA9D1;
+}
+
+.card-hover {
+    /* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important; */
+    background: rgb(237, 237, 237) !important;
+}
+
+.card-hover:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    background: white !important;
+}
+
+.card-hover:hover .card-icon-holder {
+    background: rgb(237, 237, 237) !important;
+}
+
+.icon-theme {
+    background: white !important;
+    border-radius: 50%;
+}
+
+/* Index pages styles */
+a.theme-link:hover {
+    color: #101010 !important;
+    text-decoration-color: #101010 !important;
+   
+}
+.docs-content {
+    padding-bottom: 200px;
+}
