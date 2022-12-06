@@ -16,6 +16,7 @@ cd ..
 echo 'Adding site assets'
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-favicons
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-stylesheets
+git submodule add https://github.com/BrightcoveLearning/s-site-assets-template-stylesheets
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-scripts
 git submodule add https://github.com/BrightcoveLearning/s-site-assets-images
 cd ..

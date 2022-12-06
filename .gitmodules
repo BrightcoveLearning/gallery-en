@@ -54,3 +54,7 @@
   path = _includes/s-template-page-includes
   url = https://github.com/BrightcoveLearning/s-template-page-includes
   branch = main
+[submodule "assets/s-site-assets-template-stylesheets"]
+  path = assets/s-site-assets-template-stylesheets
+  url = https://github.com/BrightcoveLearning/s-site-assets-template-stylesheets
+  branch = main
