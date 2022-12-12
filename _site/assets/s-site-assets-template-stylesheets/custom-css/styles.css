@@ -34,6 +34,10 @@ a.theme-link:hover {
     text-decoration-color: #4EA9D1 !important;
 }
 
+.docs-nav .nav-item {
+    margin-left: 3.3rem;
+}
+
 /* Landing Page styles */
 
 .span-icon {
