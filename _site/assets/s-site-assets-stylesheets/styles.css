@@ -1,28 +1,4 @@
-        /* html {
-  scroll-behavior: smooth;
-} */
 
-/* Fonts */
-
-/* @font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/assets/s-site-assets-stylesheets/fonts/poppins-latin.woff2') format('woff2'), url('/assets/s-site-assets-stylesheets/fonts/poppins-latin-ext.woff2') format('woff2');
- }
- @font-face {
- font-family: 'articulat-cf';
- font-style: normal;
- font-weight: 400;
- src: url('/assets/s-site-assets-stylesheets/fonts/open-sans-latin.woff2') format('woff2'), url('/assets/s-site-assets-stylesheets/fonts/open-sans-latin-ext.woff2') format('woff2');
-        
- @font-face {
- font-family: 'Source Code Pro';
- font-style: normal;
- font-weight: 400;
- src: url('/assets/s-site-assets-stylesheets/fonts/source-code-pro-latin.woff2') format('woff2'), url('/assets/s-site-assets-stylesheets/fonts/source-code-pro-latin-ext.woff2') format('woff2'); 
- }
- */
         
         body,
         .body {
@@ -497,33 +473,33 @@
         }
         
         .bcls-aside--information {
-            background-color: #C3DCE7;
+            background-color: #c9e2ef;
             border: none;
             border-left: 4px solid #4EA9D1;
         }
         
         .bcls-aside--information:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info.svg);
+            content: url(/assets/s-site-assets-images/asides/info.svg);
             float: left;
             margin-left: -2.5em;
         }
         
         .bcls-aside--tip {
-            background-color: #DBC3CA;
-            border-left: 4px solid #AA6C7E;
+            background-color: #fdfcf2;
+            border-left: 4px solid #EFD900;
         }
         
         .bcls-aside--tip:before {
-          content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.webp);
+          content: url(/assets/s-site-assets-images/asides/lightbulb-green.webp);
           float: left;
             /* color: rgb(8, 8, 139);
   height: 28px; */
-            margin-left: -2.5em;
+            margin-left: -3em;
         }
         
         .bcls-aside--warning {
-            background-color: #F0EBB6;
-            border-left: 4px solid #EFD900;
+            background-color: #f2e2e6;
+            border-left: 4px solid #AA6C7E;
         }
         
         .bcls-aside--warning code {
@@ -531,7 +507,7 @@
         }
         
         .bcls-aside--warning:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-orange.svg);
+            content: url(/assets/s-site-assets-images/asides/alert-triangle-orange.svg);
             float: left;
             margin-left: -2.5em;
         }
