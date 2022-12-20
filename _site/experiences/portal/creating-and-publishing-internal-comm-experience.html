@@ -3,31 +3,33 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="In this topic you will learn how to create an Internal Communication Portal Experience.">
   
-  <title>Search Results</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/s-site-assets-favicons/site.webmanifest">  
-  <link href="/assets/s-site-assets-stylesheets/fonts/public-sans.css" rel="stylesheet">
-  <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
-  <link href="/assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
-  <link href="/assets/s-site-assets-stylesheets/fonts/articulat-site.css" rel="stylesheet">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+  <title>Creating and Publishing an Internal Communications Portal Experience</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/prism.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/styles.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/learning-paths/learning-paths.css">
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/landing-page.css">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/tabs.css">
   <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="/assets/s-site-assets-stylesheets/fonts/public-sans.css" rel="stylesheet">
+  <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
+  <link href="/assets/s-site-assets-stylesheets/fonts/articulat-site.css" rel="stylesheet">
+  <link href="/assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/fonts/articulat-site.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
+
+  
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XBJC11HF8Z"></script>
 <script translate="no">
@@ -38,8 +40,9 @@
   gtag('config', 'G-XBJC11HF8Z');
 </script>
   <script src="/assets/s-site-assets-scripts/sajari-head.js"></script>
-  <script src="/assets/s-site-assets-scripts/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
+
 
 <body class="body">
 
@@ -73,7 +76,15 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <li class="breadcrumb-item first-item"><a href="/">Home</a></li>
     
       
-        <li class="breadcrumb-item active" aria-current="page">Search Results</li>
+        <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
+      
+    
+      
+        <li class="breadcrumb-item"><a href="/experiences/portal/">Portal</a></li>
+      
+    
+      
+        <li class="breadcrumb-item active" aria-current="page">Creating and Publishing an Internal Communications Portal Experience</li>
       
     
   </nav>
@@ -920,21 +931,151 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     <div class="col-lg-7" id="main_content">
   <!-- bootstrap layout -->
 
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;display: none;"></div>
 
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;margin-left:3em;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">Page Contents</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
 <!-- open in new tab/window -->
 <a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/s-feather-img/external-link.svg" alt="open in new tab" style="margin-top:4em;width: 1.5em;"></a>
+
+
+
   
     
 
 
-<h1>Search Results</h1>
-    <!-- This div is used to host the search box -->
-    <div id="results-search-box"></div>
-    <!-- This div is used to host the search response -->
-    <div id="results-search-response"></div>
-
+<article class="bcls-article">
+  <h1>Creating and Publishing an Internal Communications Portal Experience</h1>
+  <summary>In this topic you will learn how to create an Internal Communication Portal Experience.</summary>
+  <section class="bcls-section">
+    <p>To create a Portal Experience using Brightcove Gallery, you will complete the following tasks:</p>
+    <ul>
+      <li><a href="#create">Create a new Portal Experience</a></li>
+      <li><a href="#objects">Add objects to a page template</a></li>
+      <li><a href="#addvideos">Create collections and add videos to the collections</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create_portal">Creating a new experience</h2>
+    <p>To create a new Internal Communications Portal Experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the <strong>Experiences </strong>link at the top of the page.</li>
+      <li>Click <span class="button-blue">New Experience</span>.</li>
+      <li>Click the <strong>Portal</strong> tab at the top of the page. A list of Portal templates will be displayed.
+        Locate the <strong>Marquee</strong> template and click <span class="button-blue-text-bordered">Choose</span>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+            src="/assets/images/get-started/node13532-marquee.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: Once you select a template it can't be changed. For more
+          information Gallery templates, see the <a
+            href="/experiences/portal/overview-gallery-portal-templates.html">Overview of Gallery Portal Templates</a>
+          topic.</aside>
+      </li>
+      <li>Enter <strong>Animal World</strong> for the <strong>Experience Title</strong>. For the <strong>Pre-Populate
+          experience?</strong> setting, select <strong>No thanks</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+            src="/assets/images/get-started/node13532-new-project.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Create Experience</span>.</li>
+    </ol>
+    <p>The Gallery Site Editor will open. The Gallery Site Editor is used to customize the experience and provides the
+      ability to manage page layouts, add videos, choose styles and configure other settings for the portal. All of the
+      customization settings are accessed using the left navigation menu.</p>
+  </section>
+    <section class="bcls-section">
+    <h2 id="layout">Video collection organization</h2>
+    <p>The order of  the collections will control how they appear on the internal communications homepage.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on creating collections and adding  videos to a collection, see <a href="/experiences/portal/adding-videos-portal-experience.html">Adding Videos to a Portal Experience</a>.</aside>
+    <p>The Internal Communications template has four main areas where videos are displayed as designated in the sample site:</p>
+    <ol>
+      <li><strong>Featured collection</strong> - Typically used to feature the live or <a href="/experiences/virtual-event/using-simulated-live-videos.html">simulive content</a> that will be displayed throughout the event. This should ideally be ordered based on its go-live time from earliest to latest for the best experience.</li>
+      <li><strong>Primary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
+      <li><strong>Secondary collection</strong> - Can include anything but is typically used to feature specific VOD breakouts or content you want to drive additional attention to</li>
+      <li><strong>Tracks</strong> - Typically used for VOD content</li>
+    </ol>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-layout-example.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: The Featured, Primary and Secondary collections support a maximum of 24 videos.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: To insert a title above the primary/secondary collection, add a static content object to the configuration file. For information, see <a href="/experiences/virtual-event/pages-to-delete/working-static-content.html">Working with Static Content</a>.</aside>
+    <p>When ordering collections in Gallery, the collections should be ordered in the following manner:</p>
+    <ul>
+      <li>Collection 1 - Featured collection</li>
+      <li>Collection 2 - Primary collection</li>
+      <li>Collection 3 - Secondary collection</li>
+      <li>Collection 4 - Tracks</li>
+    </ul>
+    <p>For the above example, the collections would be created as follows:</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/collection-order-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="objects">Adding objects to a page template</h2>
+    <p>Each Portal template provides a set of page templates that can be customized. The page templates that are
+      provided depend upon the template that was selected when the experience was first created. The Marquee template
+      provides <strong>Home</strong>, <strong>Playback</strong> and <strong>Category</strong> page templates. These
+      pages can be seen in the left margin as part of the <strong>Pages</strong> menu.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+        src="/assets/images/get-started/node13532-page-templates.png" /></figure>
+    <p>For more information on adding objects to page templates, see <a
+        href="/experiences/portal/customizing-content-portal-experience-pages.html">Customizing the Content of Portal
+        Experience Pages</a>.</p>
+    <p>To add objects to a page template, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Pages</strong> in the left navigation.</li>
+      <li>Click the <strong>Home</strong> page in the left margin. Plus icons (<img alt=""
+          src="/assets/images/get-started/node13532-plus-icon.png" />) indicate areas on the page where objects can be
+        added. Static text objects on the page can be edited by clicking on them.</li>
+      <li>At the top of the page, click on <strong>+ Add Image or Text</strong>.</li>
+      <li>Click on the <strong>Image</strong> tab.</li>
+      <li>Click <strong>browse</strong> and then browse and select <strong>Animal World Logo.png</strong>. This file is
+        provided as part of the sample assets. Click <span class="button-blue">Save</span>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+            src="/assets/images/get-started/node13532-select-image.png" /></figure>
+      </li>
+      <li>Verify that the image appears in the page header.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+            src="/assets/images/get-started/node13532-header-image.png" /></figure>
+      </li>
+      <li>Scroll to the bottom of the page. Click on <strong>[YOUR BRAND]</strong>. Enter <strong>Animal World</strong>
+        for the title and then click <strong>Save</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt=""
+            src="/assets/images/get-started/node13532-animal-world-title.png" /></figure>
+      </li>
+      <li>Click on the <strong>Playback </strong> and <strong>Category</strong> pages in the left margin. Notice that
+        the header image and title text appear on those pages as well. Go back to the <strong>Home</strong> page.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: Having “_728_90” in the file name will cause the image to be blocked by most ad blockers.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="addvideos">Creating collections and adding videos to the collections</h2>
+    <p>Using the Gallery Site Editor, you can select which videos to display on the portal. When creating a Portal
+      Experience, videos are organized into collections. Collections are created based upon Video Cloud video metadata
+      and can include:</p>
+    <ul>
+      <li>Video Cloud playlists</li>
+      <li>Keywords</li>
+      <li>Custom metadata</li>
+      <li>Tags</li>
+    </ul>
+    <p>Videos from a YouTube account can also be added to collections. For more information on creating collections and
+      adding video to your site, see <a href="/experiences/portal/adding-videos-portal-experience.html">Adding Videos to
+        a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="not-supported">Portal settings currently not supported</h2>
+    <p>The Social settings provide viewers a way to easily share your content to popular social media sites. You can
+      also provide a way for viewers to quickly access your social media sites. For more information on customizing the
+      social settings, see <a href="/experiences/portal/customizing-social-settings-portal-experience.html">Customizing
+        the Social Settings for a Portal Experience</a>.</p>
+    <p>To configure the Social settings, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Site Features &gt; Social</strong> in the left navigation.
+      </li>
+    </ol>
+  </section>
+</article>
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -950,7 +1091,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 21 Jun 2020
+  Page last updated on 20 Dec 2022
 </div>
 
 
@@ -1059,7 +1200,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   <script src="/assets/s-site-assets-scripts/sajari-reindex.js"></script>
   <script src="/assets/js/feedback.js"></script>
   
-  <script src="/assets/s-site-assets-scripts/sajari-results-foot.js"></script>
+  <script src="/assets/s-site-assets-scripts/sajari-search-foot.js"></script>
   
   <script translate="no">
     feather.replace()
