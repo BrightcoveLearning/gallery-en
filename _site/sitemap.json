@@ -155,11 +155,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/creating-and-publishing-internal-comm-experience.html",
-      "oldURL": "/creating-and-publishing-internal-comm-experience"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/creating-custom-themes-page-experiences.html",
       "oldURL": "/creating-custom-themes-page-experiences"
   },
@@ -450,12 +445,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
@@ -697,6 +692,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
       "oldURL": "/viewing-brightcove-system-status-page"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/working-with-internal-comm-template.html",
+      "oldURL": "/working-with-internal-comm-template"
   },
 ]
 
