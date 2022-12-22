@@ -38,6 +38,29 @@ a.theme-link:hover {
     margin-left: 3.3rem;
 }
 
+.nav-item {
+    padding: 0.5rem 1rem;}
+
+/* Page Contents Menu Styles */
+
+#right_side_nav {
+    max-width: 20%;
+    top: 230px;
+    right: 5%;
+    display: inline-block;
+    position: fixed;
+    padding-left: 2em;
+}
+
+#in_page_nav {
+    list-style: none;
+}
+
+#in_page_nav>li {
+    margin-left: -2em;
+}
+
+
 /* Landing Page styles */
 
 .span-icon {
@@ -68,8 +91,8 @@ a.theme-link:hover {
 a.theme-link:hover {
     color: #101010 !important;
     text-decoration-color: #101010 !important;
-   
 }
+
 .docs-content {
     padding-bottom: 200px;
 }
@@ -77,4 +100,91 @@ a.theme-link:hover {
 div#main_content.container {
     margin-left: 20em;
     max-width: 75%;
+}
+
+.in-view {
+    font-weight: bold;
+}
+
+/* Doc Page Styles */
+
+article.docs-article {
+    padding: 0px;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+/* images */
+
+img {
+    /* margin-top: 1em;
+margin-bottom: 1rem; */
+    max-width: 100%;
+    height: auto;
+}
+
+.bcls-caption--image:before {
+    counter-increment: figure;
+    content: "Figure "counter(figure) ": ";
+}
+
+figcaption {
+    font-size: .7em;
+}
+
+/* tables */
+
+.bcls-table {
+    overflow-x: scroll;
+}
+
+/* info, tips, warnings */
+
+.bcls-aside {
+    margin-bottom: 1em;
+    padding: 1em 2em 1em 3.5em;
+}
+
+.bcls-aside code {
+    font-size: inherit;
+}
+
+.bcls-aside--information {
+    background-color: #c9e2ef;
+    border: none;
+    border-left: 4px solid #4EA9D1;
+}
+
+.bcls-aside--information:before {
+    content: url(/assets/s-site-assets-images/asides/info.svg);
+    float: left;
+    margin-left: -2.5em;
+}
+
+.bcls-aside--tip {
+    background-color: #fdfcf2;
+    border-left: 4px solid #EFD900;
+}
+
+.bcls-aside--tip:before {
+    content: url(/assets/s-site-assets-images/asides/lightbulb-green.webp);
+    float: left;
+    /* color: rgb(8, 8, 139);
+height: 28px; */
+    margin-left: -3em;
+}
+
+.bcls-aside--warning {
+    background-color: #f2e2e6;
+    border-left: 4px solid #AA6C7E;
+}
+
+.bcls-aside--warning code {
+    color: #FF5000 !important;
+}
+
+.bcls-aside--warning:before {
+    content: url(/assets/s-site-assets-images/asides/alert-triangle-orange.svg);
+    float: left;
+    margin-left: -2.5em;
 }

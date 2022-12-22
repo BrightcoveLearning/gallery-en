@@ -5,6 +5,7 @@
 const sidebarToggler = document.getElementById('docs-sidebar-toggler');
 const sidebar = document.getElementById('docs-sidebar');
 const sidebarLinks = document.querySelectorAll('#docs-sidebar .scrollto');
+const path = window.location.pathname;
 
 
 
@@ -17,38 +18,44 @@ window.onload=function()
 
 window.onresize=function() 
 { 
+  if (path === '/' || path === '/index.html') {
+    sidebar.classList.remove('sidebar-visible');
+    sidebar.classList.add('sidebar-hidden');
+  } else {
     responsiveSidebar(); 
+  }  
 };
 
 
 function responsiveSidebar() {
-	    sidebar.classList.remove('sidebar-visible');
-		sidebar.classList.add('sidebar-hidden');
-   		let w = window.innerWidth;
-		let url = window.location.href;
-		if(w >= 1200 && url.includes('.html')) {
-			sidebar.classList.remove('sidebar-hidden');
-			sidebar.classList.add('sidebar-visible');
-			
-		} else {
-			
-			console.log('smaller');
-			sidebar.classList.remove('sidebar-visible');
-			sidebar.classList.add('sidebar-hidden');
-		}
+      sidebar.classList.remove('sidebar-visible');
+    sidebar.classList.add('sidebar-hidden');
+      let w = window.innerWidth;
+    let url = window.location.href;
+    let path = window.location.pathname;
+    if(w >= 1200 && url.includes('.html')) {
+      sidebar.classList.remove('sidebar-hidden');
+      sidebar.classList.add('sidebar-visible');
+      
+    }  else {
+      
+      console.log('smaller');
+      sidebar.classList.remove('sidebar-visible');
+      sidebar.classList.add('sidebar-hidden');
+    }
 };
 
 sidebarToggler.addEventListener('click', () => {
-	if (sidebar.classList.contains('sidebar-visible')) {
-		console.log('visible');
-		sidebar.classList.remove('sidebar-visible');
-		sidebar.classList.add('sidebar-hidden');
-		
-	} else {
-		console.log('hidden');
-		sidebar.classList.remove('sidebar-hidden');
-		sidebar.classList.add('sidebar-visible');
-	}
+  if (sidebar.classList.contains('sidebar-visible')) {
+    console.log('visible');
+    sidebar.classList.remove('sidebar-visible');
+    sidebar.classList.add('sidebar-hidden');
+    
+  } else {
+    console.log('hidden');
+    sidebar.classList.remove('sidebar-hidden');
+    sidebar.classList.add('sidebar-visible');
+  }
 });
 
 
@@ -57,27 +64,27 @@ sidebarToggler.addEventListener('click', () => {
 /* Ref: https://github.com/iamdustan/smoothscroll */
 
 sidebarLinks.forEach((sidebarLink) => {
-	
-	sidebarLink.addEventListener('click', (e) => {
-		
-		e.preventDefault();
-		
-		var target = sidebarLink.getAttribute("href").replace('#', '');
-		
-		//console.log(target);
-		
+  
+  sidebarLink.addEventListener('click', (e) => {
+    
+    e.preventDefault();
+    
+    var target = sidebarLink.getAttribute("href").replace('#', '');
+    
+    //console.log(target);
+    
         document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
         
         
         //Collapse sidebar after clicking
-		if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200){
-			
-			sidebar.classList.remove('sidebar-visible');
-		    sidebar.classList.add('sidebar-hidden');
-		} 
-		
+    if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200){
+      
+      sidebar.classList.remove('sidebar-visible');
+        sidebar.classList.add('sidebar-hidden');
+    } 
+    
     });
-	
+  
 });
 
 
@@ -85,7 +92,7 @@ sidebarLinks.forEach((sidebarLink) => {
 /* Ref: https://github.com/cferdinandi/gumshoe  */
 // Initialize Gumshoe
 var spy = new Gumshoe('#docs-nav a', {
-	offset: 69 //sticky header height
+  offset: 69 //sticky header height
 });
 
 

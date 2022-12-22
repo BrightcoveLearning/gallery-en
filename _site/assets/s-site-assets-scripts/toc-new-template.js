@@ -9,6 +9,7 @@ let BCLS_toc = (function (window, document) {
     centered_in_page_toc = document.getElementById('centered_in_page_toc'),
     right_side_nav = document.getElementById('right_side_nav'),
     centered_inpage_nav = document.getElementById('centered_inpage_nav'),
+    article = document.querySelector('article.bcls-article'),
     // product_logo = document.querySelector('.product-logo'),
     // product_logo_full_path = product_logo.getAttribute('src'),
     // product_logo_small_path =
@@ -17,7 +18,15 @@ let BCLS_toc = (function (window, document) {
     toc_items,
     toc_links;
 
-  /**
+// if on an index page just remove page contents menus and leave
+// if (pathname === '/' || pathname.indexOf('/index.html') > 0) {
+//   centered_inpage_nav.setAttribute('style', 'display: none;');
+//   right_side_nav.setAttribute('style', 'display: none;');
+//   in_page_nav_right = false;
+//   return;
+// }
+
+/**
    * Add a class to an element
    * @param {node} el the element
    * @param {string} cls the class to add
@@ -73,16 +82,11 @@ let BCLS_toc = (function (window, document) {
    * Create the in-page navigation
    */
   function create_inpage_nav () {
-    let h2s = document.getElementsByTagName('h2'),
-      in_page_nav = document.getElementById('in_page_nav'),
-      centered_in_page_toc = document.getElementById('centered_in_page_toc'),
-      right_side_nav = document.getElementById('right_side_nav'),
-      centered_inpage_nav = document.getElementById('centered_in_page'),
-      navEl = in_page_nav,
+    let navEl = in_page_nav,
       navWrapper = right_side_nav,
       h2,
       li,
-      a,
+      link,
       option,
       value,
       i,
@@ -91,58 +95,59 @@ let BCLS_toc = (function (window, document) {
       parent;
 
     // check window width to set the elements to use
-    if (window.innerWidth < 1650) {
-      if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
-        navEl = centered_in_page_toc;
-        navWrapper = centered_inpage_nav;
-        in_page_nav_right = false;
-      } else {
-        navWrapper = null;
-        navEl = null;
-        centered_inpage_nav.setAttribute('style', 'display: none;');
-        removeAllChildNodes(centered_in_page_toc);
-        in_page_nav_right = false;
-      }
+    if (window.innerWidth < 1360) {
+      navWrapper = centered_in_page_toc;
+      navEl = centered_in_page_toc;
+      right_side_nav.setAttribute('style', 'display: none;');
+      article.removeAttribute('style');
+      removeAllChildNodes(in_page_nav);
+      in_page_nav_right = false;
     } else {
       in_page_nav_right = true;
-      console.log('in_page_nav_right', in_page_nav_right);
-    }
-
-
-    // if on index page, no inpage nav
-
-    if (pathname === '/' || pathname.indexOf('/index.html') > 0) {
-      navEl = null
-      navWrapper = null
-      centered_inpage_nav.setAttribute('style', 'display: none;')
-      removeAllChildNodes(centered_in_page_toc);
-      in_page_nav_right = false
+      centered_inpage_nav.setAttribute('style', 'display: none;');
+      article.setAttribute('style', 'max-width:75%;');
+      navWrapper = right_side_nav;
+      navEl = in_page_nav;
     }
 
     // in case this gets run multiple times by mistake, clear existing items
     if (navEl) {
       removeAllChildNodes(navEl)
     }
-    if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
-      // add first item
-      if (navEl === centered_in_page_toc) {
-        option = document.createElement('option');
-        option.setAttribute('class', 'toc-item');
-        option.textContent = 'Page Contents';
-        option.setAttribute('value', '#');
-        frag.appendChild(option)
-      }
+
+    // for centered inpage nav add first option
+    if (navEl === centered_in_page_toc) {
+      option = document.createElement('option');
+      option.setAttribute('class', 'toc-item');
+      option.textContent = 'Page Contents';
+      option.setAttribute('value', '#');
+      frag.appendChild(option)
+    }
 
       // add additional section items
       iMax = h2s.length
+      console.log('navEl', navEl);
+      
       for (i = 0; i < iMax; i++) {
         h2 = h2s[i]
-        if (h2.id) {
-          option = document.createElement('option')
-          option.setAttribute('class', 'toc-item')
-          option.setAttribute('value', '#' + h2.id)
-          option.textContent = h2.textContent
-          frag.appendChild(option)
+        if (in_page_nav_right) {
+          if (h2.id) {
+            li = document.createElement('li')
+            li.setAttribute('class', 'toc-item')
+            link = document.createElement('a')
+            link.setAttribute('href', '#' + h2.id)
+            link.textContent = h2.textContent
+            li.appendChild(link)
+            frag.appendChild(li)
+          }
+        } else {
+          if (h2.id) {
+            option = document.createElement('option')
+            option.setAttribute('class', 'toc-item')
+            option.setAttribute('value', '#' + h2.id)
+            option.textContent = h2.textContent
+            frag.appendChild(option)
+          }
         }
       }
 
@@ -153,21 +158,32 @@ let BCLS_toc = (function (window, document) {
         }
         // side nav is being generated; set the flag
         side_nav_created = true
-      } else {
+      } else { // no sections, remove inpage nav
         if (navEl) {
-          parent = navEl.parentNode
+          parent = navEl.parentNode;
           parent.setAttribute('style', 'display:none;')
         }
       }
 
-      // make whole LI clickable
-      navEl.addEventListener('change', function() {
-        let newHash = navEl.options[navEl.selectedIndex].value;
-        location.hash = newHash;
-       });
-
-      // get collection of in-page links
-      let in_page_links = document.querySelectorAll('#in_page_nav>li');
+      // event listeners
+      if (in_page_nav_right) {
+          toc_items = document.querySelectorAll('li.toc-item');
+          console.log('toc_items', toc_items);
+          toc_links = document.querySelectorAll('li.toc-item a');
+          console.log('toc_links', toc_links);
+          iMax = toc_items.length;
+          for (i = 0; i < iMax; i++) {
+            toc_items[i].setAttribute('style', 'cursor:pointer;')
+            toc_items[i].addEventListener('click', function(evt) {
+              location.hash = this.firstElementChild.getAttribute('href');
+            });
+          }
+      } else {
+        centered_in_page_toc.addEventListener('change', function() {
+          let newHash = centered_in_page_toc.options[centered_in_page_toc.selectedIndex].value;
+          location.hash = newHash;
+        });
+      }
     }
 
     /**
@@ -192,70 +208,34 @@ let BCLS_toc = (function (window, document) {
         })
       }
     }
-  }
 
-  /**
-   * toggle the main navigation menu
-   */
-  function toggle_nav_menu () {
-    if (nav_menu_collapsed) {
-      side_nav.setAttribute('style', 'margin-left: 1em;display: inline-block;border-right: 1px solid #e5e5e6;padding-right: 1em;');
-      document.querySelector('#main_content').removeAttribute('style');
-      nav_menu_collapsed = false;
-      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/x.svg');
-    } else {
-      side_nav.setAttribute('style', 'margin-left: -500px; margin-right: 6em;display: inline-block;border-right: 1px solid #e5e5e6; padding-right: 1em;')
-      nav_menu_collapsed = true;
-      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/menu.svg');
-      if (window.innerWidth > 800) {
-        document.querySelector('#main_content').setAttribute('style', 'margin-left: 20em;');
-      } else {
-        document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
-      }
-    }
-}
 
-  // run the function
-  if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
-    create_inpage_nav()
-  } else {
-    if (window.innerWidth < 1000) {
-      toggle_nav_menu()
-    }
-  }
 
   // set listener for window resize
   window.addEventListener('resize', function () {
-    // for in-page nav; don't do if an index page
-    if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
-      if (window.innerWidth > 1360) {
-        if (!in_page_nav_right && centered_inpage_nav) {
-          side_nav_created = false
-          centered_inpage_nav.setAttribute('style', 'display: none;')
-          centered_in_page_toc.innerHTML = ''
-          create_inpage_nav()
-        }
-      } else {
-        if (
-          right_side_nav &&
-          pathname !== '/' &&
-          pathname.indexOf('/index.html') < 0
-        ) {
-          if (in_page_nav_right) {
-            side_nav_created = false
-            right_side_nav.setAttribute('style', 'display:none;')
-            in_page_nav.innerHTML = ''
-            create_inpage_nav()
-          }
-        }
+
+    if (window.innerWidth > 1360) {
+      if (!in_page_nav_right && centered_inpage_nav) {
+        side_nav_created = false;
+        in_page_nav_right = true;
+        centered_inpage_nav.setAttribute('style', 'display: none;');
+        right_side_nav.removeAttribute('style');
+        removeAllChildNodes(centered_in_page_toc);
+        console.log('recreate right nav');
+        create_inpage_nav();
       }
     } else {
-      centered_inpage_nav.setAttribute('style', 'display: none;')
-      centered_in_page_toc.innerHTML = ''
+      if (right_side_nav) {
+        if (in_page_nav_right) {
+          side_nav_created = false
+          right_side_nav.setAttribute('style', 'display:none;');
+          centered_inpage_nav.removeAttribute('style');
+          removeAllChildNodes(in_page_nav);
+          create_inpage_nav();
+        }
+      }
     }
-    // product logo
-
-  })
+  });
 
 
   // listener for scroll events
@@ -297,6 +277,9 @@ let BCLS_toc = (function (window, document) {
   //   console.log('turning off nav menu');
   //   toggle_nav_menu();
   // }
+
+  // initial create
+  create_inpage_nav();
 
   // this creates a public method, allow it to be run again (imported content for example)
   return {
