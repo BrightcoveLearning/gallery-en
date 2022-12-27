@@ -95,7 +95,7 @@ let BCLS_toc = (function (window, document) {
       parent;
 
     // check window width to set the elements to use
-    if (window.innerWidth < 1360) {
+    if (window.innerWidth < 1750) {
       navWrapper = centered_in_page_toc;
       navEl = centered_in_page_toc;
       right_side_nav.setAttribute('style', 'display: none;');
@@ -214,7 +214,7 @@ let BCLS_toc = (function (window, document) {
   // set listener for window resize
   window.addEventListener('resize', function () {
 
-    if (window.innerWidth > 1360) {
+    if (window.innerWidth > 1750) {
       if (!in_page_nav_right && centered_inpage_nav) {
         side_nav_created = false;
         in_page_nav_right = true;
