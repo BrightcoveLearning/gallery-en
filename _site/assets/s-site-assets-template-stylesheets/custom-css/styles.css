@@ -117,8 +117,16 @@ article.bcls-article {
     margin-left: 2em;
 }
 
+div.py-5>h1 {
+    margin-left: 2rem;
+}
+
 summary {
     list-style: none;
+}
+
+section.bcls-section {
+    padding-top: 2rem;
 }
 
 /* images */

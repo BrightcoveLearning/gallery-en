@@ -94,6 +94,7 @@ let BCLS_toc = (function (window, document) {
       frag = document.createDocumentFragment(),
       parent;
 
+
     // check window width to set the elements to use
     if (window.innerWidth < 1750) {
       navWrapper = centered_in_page_toc;
@@ -105,7 +106,7 @@ let BCLS_toc = (function (window, document) {
     } else {
       in_page_nav_right = true;
       centered_inpage_nav.setAttribute('style', 'display: none;');
-      article.setAttribute('style', 'max-width:75%;');
+      article.setAttribute('style', 'max-width:72%;');
       navWrapper = right_side_nav;
       navEl = in_page_nav;
     }

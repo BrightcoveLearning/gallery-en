@@ -36,7 +36,12 @@
       inputAutoFocus: false, // Focus the input element on render.
       maxSuggestions: 5, // Maximum number of suggestions to show.
       results: {"showImages": false }, // Configure the results.
+<<<<<<< HEAD
+      values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values.
+      tabFilters: {defaultTab:"All Brightcove Documentation",tabs:[{title: "All Brightcove Documentation",filter:lang_filter}]}, // User selectable filters
+=======
       values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values
       tabFilters: tab_filters, // User selectable filters
+>>>>>>> e23b4145e02da2a8a3e6c8235de7349c879c3b6b
       styling: { theme: { colors: { brand: { primary: "#333" }}}}
   });

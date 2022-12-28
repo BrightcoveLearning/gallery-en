@@ -1,10 +1,10 @@
-/*----- Tabs -----*/
+/*---- Tabs ----*/
 .tabs {
   width: 100%;
   display: inline-block;
 }
 
-/*----- Tab Links -----*/
+/*---- Tab Links ----*/
 /* Clearfix */
 .tab-links:after {
   display: block;
@@ -43,7 +43,7 @@ section.tabs>ul>li.active a:hover {
 
 }
 
-/*----- Content of Tabs -----*/
+/*---- Content of Tabs ----*/
 .tab-content {
   padding: 15px;
   border-radius: 3px;
