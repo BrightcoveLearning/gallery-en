@@ -38,6 +38,27 @@ a.theme-link:hover {
     margin-left: 3.3rem;
 }
 
+.docs-nav .subsection-title {
+    margin-left: 1rem;
+}
+
+.section-items.list-unstyled.nav.flex-column.pb-3 li.section-title {
+white-space: nowrap;
+margin-left: 1rem;
+margin-bottom: 0;
+}
+
+.site-nav {
+    list-style: none;
+    list-style-type: none;
+    margin-left: -2rem;
+}
+
+.site-nav>.section-title {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 .nav-item {
     padding: 0 0;}
 
@@ -63,6 +84,10 @@ li li.nav-item {
     margin-left: -2em;
 }
 
+/* all page styles */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: articulat-cf, sans-serif;
+}
 
 /* Landing Page styles */
 
