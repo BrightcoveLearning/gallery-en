@@ -11,38 +11,33 @@ const path = window.location.pathname;
 
 /* ===== Responsive Sidebar ====== */
 
-window.onload=function() 
-{ 
-    responsiveSidebar(); 
+window.onload = function () {
+  responsiveSidebar();
 };
 
-window.onresize=function() 
-{ 
+window.onresize = function () {
   if (path === '/' || path === '/index.html') {
     sidebar.classList.remove('sidebar-visible');
     sidebar.classList.add('sidebar-hidden');
   } else {
-    responsiveSidebar(); 
-  }  
+    responsiveSidebar();
+  }
 };
 
 
 function responsiveSidebar() {
-      sidebar.classList.remove('sidebar-visible');
+  sidebar.classList.remove('sidebar-visible');
+  sidebar.classList.add('sidebar-hidden');
+  let w = window.innerWidth;
+  let url = window.location.href;
+  if (w >= 1200 && url.includes('.html')) {
+    sidebar.classList.remove('sidebar-hidden');
+    sidebar.classList.add('sidebar-visible');
+
+  } else {
+    sidebar.classList.remove('sidebar-visible');
     sidebar.classList.add('sidebar-hidden');
-      let w = window.innerWidth;
-    let url = window.location.href;
-    let path = window.location.pathname;
-    if(w >= 1200 && url.includes('.html')) {
-      sidebar.classList.remove('sidebar-hidden');
-      sidebar.classList.add('sidebar-visible');
-      
-    }  else {
-      
-      console.log('smaller');
-      sidebar.classList.remove('sidebar-visible');
-      sidebar.classList.add('sidebar-hidden');
-    }
+  }
 };
 
 sidebarToggler.addEventListener('click', () => {
@@ -50,7 +45,7 @@ sidebarToggler.addEventListener('click', () => {
     console.log('visible');
     sidebar.classList.remove('sidebar-visible');
     sidebar.classList.add('sidebar-hidden');
-    
+
   } else {
     console.log('hidden');
     sidebar.classList.remove('sidebar-hidden');
@@ -64,27 +59,27 @@ sidebarToggler.addEventListener('click', () => {
 /* Ref: https://github.com/iamdustan/smoothscroll */
 
 sidebarLinks.forEach((sidebarLink) => {
-  
+
   sidebarLink.addEventListener('click', (e) => {
-    
+
     e.preventDefault();
-    
+
     var target = sidebarLink.getAttribute("href").replace('#', '');
-    
+
     //console.log(target);
-    
-        document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
-        
-        
-        //Collapse sidebar after clicking
-    if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200){
-      
+
+    document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+
+
+    //Collapse sidebar after clicking
+    if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200) {
+
       sidebar.classList.remove('sidebar-visible');
-        sidebar.classList.add('sidebar-hidden');
-    } 
-    
-    });
-  
+      sidebar.classList.add('sidebar-hidden');
+    }
+
+  });
+
 });
 
 
@@ -99,7 +94,7 @@ var spy = new Gumshoe('#docs-nav a', {
 /* ====== SimpleLightbox Plugin ======= */
 /*  Ref: https://github.com/andreknieriem/simplelightbox */
 
-var lightbox = new SimpleLightbox('.simplelightbox-gallery a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery a', {/* options */ });
 
 
 

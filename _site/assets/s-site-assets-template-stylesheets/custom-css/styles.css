@@ -97,6 +97,10 @@ a {
     color: #4ea8d1;
 }
 
+a:hover {
+    color: #5eccff;
+}
+
 /* Landing Page styles */
 
 .span-icon {
@@ -124,10 +128,6 @@ a {
 }
 
 /* Index pages styles */
-a.theme-link:hover {
-    color: #101010 !important;
-    text-decoration-color: #101010 !important;
-}
 
 .docs-content {
     padding-bottom: 200px;
