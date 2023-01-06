@@ -184,6 +184,116 @@ figcaption {
 
 .bcls-table {
     overflow-x: scroll;
+    border-collapse: collapse;
+    border: 1px #ccc solid;
+    margin-bottom: 2em;
+}
+
+.bcls-table .bcls-table__head,
+.bcls-table-release-notes .bcls-table__head {
+    background-color: #ddd;
+}
+
+.bcls-table .bcls-table__head th,
+.bcls-table-release-notes .bcls-table__head th {
+    border: 1px #ccc solid;
+    padding: .5em;
+}
+
+.bcls-table .bcls-table__body td,
+.bcls-table-release-notes .bcls-table__body td {
+    border: 1px #ccc solid;
+    padding: .5em;
+}
+
+.bcls-caption--table {
+    font-size: .7em;
+}
+
+.bcls-caption--table:before {
+    counter-increment: table;
+    content: "Table "counter(table) ": ";
+}
+
+/* Task lists */
+
+        /* task list for steps */
+        
+        .bcls-tasklist {
+            list-style-type: none;
+            margin-left: 0;
+        }
+        
+        .bcls-tasklist>li::before {
+            color: #a1a1a1;
+            content: counters(step, ".") " ";
+            font-size: 1.5em;
+            font-weight: bold;
+            left: -2em;
+            line-height: 1;
+            position: absolute;
+            text-align: right;
+            top: 0;
+            width: 1.5em;
+        }
+        
+        .bcls-tasklist>li {
+            border-left: 5px solid #ddd;
+            margin-bottom: 20px;
+            min-height: 1.7em;
+            padding-left: 1em;
+            position: relative;
+            counter-increment: step;
+        }
+        
+        .bcls-tasklist ul,
+        .bcls-tasklist ol {
+            margin-bottom: 1rem;
+            ;
+        }
+        /* .bcls-tasklist ol li:before {
+  content: '';
+} */
+        
+        .bcls-tasklist-restart {
+            list-style-type: none;
+            margin-left: 0;
+            counter-reset: rstep calc(var(--s) - 1);
+        }
+        
+        .bcls-tasklist-restart>li {
+            border-left: 5px solid #ddd;
+            margin-bottom: 20px;
+            min-height: 1.7em;
+            padding-left: 1em;
+            position: relative;
+            counter-increment: rstep;
+        }
+        
+        .bcls-tasklist-restart>li::before {
+            color: #a1a1a1;
+            content: counters(rstep, ".") " ";
+            /* counter-increment: rstep; */
+            font-size: 1.5em;
+            font-weight: bold;
+            left: -2em;
+            line-height: 1;
+            position: absolute;
+            text-align: right;
+            top: 0;
+            width: 1.5em;
+        }
+        
+        .bcls-tasklist-restart ul,
+        .bcls-tasklist-restart ol {
+            margin-bottom: 1rem;
+            ;
+        }
+
+/* code */
+
+code {
+    font-family: 'Source Code Pro', monospace;
 }
 
 /* info, tips, warnings */
