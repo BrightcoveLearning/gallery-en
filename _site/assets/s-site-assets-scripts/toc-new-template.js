@@ -16,7 +16,8 @@ let BCLS_toc = (function (window, document) {
     //   'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg',
     h2s = document.querySelectorAll('h2[id]'),
     toc_items,
-    toc_links;
+    toc_links,
+    breakpoint = 1600;
 
 // if on an index page just remove page contents menus and leave
 // if (pathname === '/' || pathname.indexOf('/index.html') > 0) {
@@ -96,7 +97,7 @@ let BCLS_toc = (function (window, document) {
 
 
     // check window width to set the elements to use
-    if (window.innerWidth < 1750) {
+    if (window.innerWidth < breakpoint) {
       navWrapper = centered_in_page_toc;
       navEl = centered_in_page_toc;
       right_side_nav.setAttribute('style', 'display: none;');
@@ -215,7 +216,7 @@ let BCLS_toc = (function (window, document) {
   // set listener for window resize
   window.addEventListener('resize', function () {
 
-    if (window.innerWidth > 1750) {
+    if (window.innerWidth > breakpoint) {
       if (!in_page_nav_right && centered_inpage_nav) {
         side_nav_created = false;
         in_page_nav_right = true;

@@ -68,7 +68,8 @@ li li.nav-item {
 /* Page Contents Menu Styles */
 
 #right_side_nav {
-    max-width: 20%;
+    max-width: 250px;
+    font-size: .9rem;
     top: 230px;
     right: 5%;
     display: inline-block;
