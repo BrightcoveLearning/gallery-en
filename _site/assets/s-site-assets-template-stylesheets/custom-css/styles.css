@@ -92,6 +92,19 @@ li li.nav-item {
     margin-left: -2em;
 }
 
+/* index pages styles */
+
+section.bcls-card-small {
+    margin: 2rem;
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.bcls-card-small li {
+    margin-left: -1rem;;
+}
+
 /* Breadcrumbs */
 li.breadcrumb-item {
     margin-left: 0;
