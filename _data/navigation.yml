@@ -4,6 +4,8 @@
 - section: 
   name: Getting Started
   url: /get-started/index.html
+  icon: fa-regular fa-map-pin
+  description: These topics describe the key concepts to help you understand and be successful using Gallery to create video experiences.
   docs:
     - name: Creating a Portal Experience
       url: /get-started/step-step-creating-and-publishing-portal-experience.html
@@ -20,9 +22,13 @@
 - section: 
   name: Experiences
   url: /experiences/index.html
+  icon: fa-regular fa-browsers
+  description: Learn how to create and publish Gallery Experiences
   docs:
     - name: Portal
       url: /experiences/portal/index.html
+      icon: fa-regular fa-browser
+      description: Learn how to create, edit and publish Portal Experiences.
       docs:
         - name: Adding Video Cloud Videos
           url: /experiences/portal/adding-video-cloud-videos-portal-experience.html
@@ -92,6 +98,8 @@
           url: /experiences/portal/using-site-editor-customize-portal-experience.html
     - name: In-Page
       url: /experiences/inpage/index.html
+      icon: fa-regular fa-sidebar-flip
+      description: Learn how to create, edit and publish In-Page Experiences.
       docs:
         - name: Adding Components
           url: /experiences/inpage/adding-components-page-experience.html
@@ -133,6 +141,8 @@
           url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
     - name: Live Event
       url: /experiences/live/index.html
+      icon: fa-regular fa-satellite-dish
+      description: Learn how to create, edit and publish Live Event Experiences.
       docs:
       - name: 'Adding Pigeonhole to a Live In-Page'
         url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
@@ -158,6 +168,8 @@
         url: /experiences/portal/previewing-and-publishing-portal-experience.html
     - name: Virtual Event
       url: /experiences/virtual-event/index.html
+      icon: fa-regular fa-calendar-circle-user
+      description: Learn how to create, edit and publish Virtual Event Experiences.
       docs:
       - name: Adding Videos
         url: /experiences/virtual-event/adding-videos-virtual-event-experience.html
@@ -195,6 +207,8 @@
         url: /experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html
     - name: Landing Page
       url: /experiences/landing/index.html
+      icon: fa-regular fa-file-lines
+      description: Learn how to create, edit and publish Landing Page Experiences.
       docs:
       - name: Assigning a Custom Domain
         url: /experiences/portal/assigning-custom-domain-portal-experience.html
@@ -211,6 +225,8 @@
 - section: 
   name: General
   url: /general/index.html
+  icon: fa-regular fa-circle-info
+  description: General information about Brightcove Gallery.
   docs:
     - name: Gallery System Requirements
       url: /general/gallery-system-requirements.html
@@ -221,6 +237,8 @@
 - section: 
   name: Gallery Settings
   url: /settings/index.html
+  icon: fa-regular fa-gear
+  description: Learn how to configure Gallery Settings.
   docs:
     - name: Configuring Gallery Settings
       url: /settings/configuring-gallery-settings.html
@@ -241,6 +259,8 @@
 - section: 
   name: Developers
   url: /develop/index.html
+  icon: fa-regular fa-rectangle-code
+  description: Learn how to customize experiences using CSS and the Gallery APIs.
   docs:
     - name: In-Page Experience Code Snippets
       url: /develop/page-experience-code-snippets.html
@@ -265,6 +285,8 @@
 - section: 
   name: Release Notes
   url: /release-notes/index.html
+  icon: fa-regular fa-memo-pad
+  description: Learn about new product features and updates.
   docs:
     - name: Gallery Release Notes
       url: /release-notes/gallery-release-notes.html
@@ -273,6 +295,8 @@
 - section: 
   name: Support
   url: /support/index.html
+  icon: fa-regular fa-comments-question-check
+  description: Have a question or need help?
   docs:
     - name: 'Viewing the Brightcove System Status Page'
       url: '/support/viewing-brightcove-system-status-page.html'
