@@ -30,72 +30,102 @@
       icon: fa-regular fa-browser
       description: Learn how to create, edit and publish Portal Experiences.
       docs:
-        - name: Adding Video Cloud Videos
-          url: /experiences/portal/adding-video-cloud-videos-portal-experience.html
+        - name: Getting Started
+          url: /experiences/portal/getting-started/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Creating, Editing and Publishing Portal Experiences
+              url: /experiences/portal/getting-started/overview-creating-editing-and-publishing-portal-experiences.html
+            - name: Training - Introduction to Gallery
+              url: /get-started/training/training-demand-introduction-gallery.html
+            - name: Training - Building Portal Experiences
+              url: /get-started/training/training-demand-building-portal-experiences-using-gallery.html
+            - name: "Step-by-Step: Creating and Publishing a Portal Experience"
+              url: /get-started/step-step-creating-and-publishing-portal-experience.html
+        - name: Portal Templates
+          url: /experiences/portal/templates/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Overview of Portal Templates
+              url: /experiences/portal/templates/overview-gallery-portal-templates.html
+            - name: Updating Gallery Templates
+              url: /experiences/portal/templates/updating-gallery-templates.html
+            - name: Customizing the Catalogue Template Settings
+              url: /experiences/portal/templates/customizing-catalogue-template-settings.html
+            - name: Customizing the Chronicle Template Settings
+              url: /experiences/portal/templates/customizing-chronicle-template-settings.html
+            - name: Customizing the Marquee Template Settings
+              url: /experiences/portal/templates/customizing-marquee-template-settings.html
         - name: Adding Videos
-          url: /experiences/portal/adding-videos-portal-experience.html
-        - name: Adding YouTube Videos
-          url: /experiences/portal/adding-youtube-videos-portal-experience.html
-        - name: Assigning a Custom Domain
-          url: /experiences/portal/assigning-custom-domain-portal-experience.html
-        - name: Changing the Player Layout
-          url: /experiences/portal/changing-player-layout-portal-experience.html
-        - name: Configuring Calls to Action
-          url: /experiences/portal/configuring-calls-action-portal-experience.html
-        - name: Configuring SEO Settings
-          url: /experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html
-        - name: Configuring the Details for an Experience
-          url: /experiences/portal/configuring-details-portal-experience.html
-        - name: Configuring Third-Party Tracking
-          url: /experiences/portal/configuring-third-party-tracking-portal-experience.html
-        - name: Controlling Access
-          url: /experiences/portal/controlling-access-portal-experience.html
-        - name: Creating, Editing and Publishing Portal Experiences
-          url: /experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html   
-        - name: Customizing the Appearance and Behavior
-          url: /experiences/portal/customizing-appearance-and-behavior-portal-experience.html
-        - name: Customizing the Catalogue Template Settings
-          url: /experiences/portal/customizing-catalogue-template-settings.html
-        - name: Customizing the Chronicle Template Settings
-          url: /experiences/portal/customizing-chronicle-template-settings.html
-        - name: Customizing the Content of Portal Pages
-          url: /experiences/portal/customizing-content-portal-experience-pages.html
-        - name: Customizing the Marquee Template Settings
-          url: /experiences/portal/customizing-marquee-template-settings.html
-        - name: Customizing the Player and Lead Form Settings
-          url: /experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html
-        - name: Customizing the Site Configuration
-          url: /experiences/portal/customizing-site-configuration-portal-experience.html
-        - name: Customizing the Site Features
-          url: /experiences/portal/customizing-site-features-portal-experience.html
-        - name: Customizing the Social Settings
-          url: /experiences/portal/customizing-social-settings-portal-experience.html
-        - name: Customizing the Style
-          url: /experiences/portal/customizing-style-portal-experience.html
-        - name: Customizing the Video and Playback Settings
-          url: /experiences/portal/customizing-video-and-playback-settings-portal-experience.html
-        - name: Customizing the Video Settings
-          url: /experiences/portal/customizing-video-settings-portal-experience.html
-        - name: Downloading Videos
-          url: /experiences/portal/downloading-videos-portal-experience.html
-        - name: Exporting Gallery Lead Data
-          url: /experiences/portal/exporting-gallery-lead-data.html
-        - name: Indexing a Portal Experience
-          url: /experiences/portal/indexing-gallery-portal-experience.html
-        - name: Overview of Gallery Portal Templates
-          url: /experiences/portal/overview-gallery-portal-templates.html
-        - name: Previewing and Publishing
-          url: /experiences/portal/previewing-and-publishing-portal-experience.html
-        - name: Updating Gallery Templates
-          url: /experiences/portal/updating-gallery-templates.html
-        - name: Using a Lead Form
-          url: /experiences/portal/using-lead-form-portal-experience.html         
-        - name: Using Custom Fonts
-          url: /experiences/portal/using-custom-fonts-portal-experience.html
-        - name: Using Multi-Lingual Metadata
-          url: /experiences/portal/using-multi-lingual-metadata.html
-        - name: Using the Site Editor to Customize an Experience
-          url: /experiences/portal/using-site-editor-customize-portal-experience.html
+          url: /experiences/portal/videos/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Adding Videos
+              url: /experiences/portal/videos/adding-videos-portal-experience.html
+            - name: Adding Video Cloud Videos
+              url: /experiences/portal/videos/adding-video-cloud-videos-portal-experience.html
+            - name: Adding YouTube Videos
+              url: /experiences/portal/videos/adding-youtube-videos-portal-experience.html
+            - name: Downloading Videos
+              url: /experiences/portal/videos/downloading-videos-portal-experience.html
+        - name: Customizing Portals
+          url: /experiences/portal/customizing/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Using the Site Editor to Customize an Experience
+              url: /experiences/portal/customizing/using-site-editor-customize-portal-experience.html
+            - name: Customizing the Appearance and Behavior
+              url: /experiences/portal/customizing/customizing-appearance-and-behavior-portal-experience.html
+            - name: Customizing the Content of Portal Pages
+              url: /experiences/portal/customizing/customizing-content-portal-experience-pages.html
+            - name: Customizing the Player and Lead Form Settings
+              url: /experiences/portal/customizing/customizing-player-and-lead-form-settings-portal-experience.html
+            - name: Customizing the Site Configuration
+              url: /experiences/portal/customizing/customizing-site-configuration-portal-experience.html
+            - name: Customizing the Site Features
+              url: /experiences/portal/customizing/customizing-site-features-portal-experience.html
+            - name: Customizing the Social Settings
+              url: /experiences/portal/customizing/customizing-social-settings-portal-experience.html
+            - name: Customizing the Style
+              url: /experiences/portal/customizing/customizing-style-portal-experience.html
+            - name: Customizing the Video and Playback Settings
+              url: /experiences/portal/customizing/customizing-video-and-playback-settings-portal-experience.html
+            - name: Customizing the Video Settings
+              url: /experiences/portal/customizing/customizing-video-settings-portal-experience.html
+            - name: Using Custom Fonts
+              url: /experiences/portal/customizing/using-custom-fonts-portal-experience.html
+            - name: Changing the Player Layout
+              url: /experiences/portal/customizing/changing-player-layout-portal-experience.html
+            - name: Configuring the Details for an Experience
+              url: /experiences/portal/customizing/configuring-details-portal-experience.html
+            - name: Using Multi-Lingual Metadata
+              url: /experiences/portal/customizing/using-multi-lingual-metadata.html
+        - name: Other Portal Features
+          url: /experiences/portal/other/index.html
+          icon: fa-regular fa-browser
+          docs: 
+            - name: Configuring Calls to Action
+              url: /experiences/portal/other/configuring-calls-action-portal-experience.html
+            - name: Indexing a Portal Experience
+              url: /experiences/portal/other/indexing-gallery-portal-experience.html
+            - name: Using a Lead Form
+              url: /experiences/portal/other/using-lead-form-portal-experience.html
+            - name: Exporting Gallery Lead Data
+              url: /experiences/portal/other/exporting-gallery-lead-data.html
+            - name: Configuring SEO Settings
+              url: /experiences/portal/other/configuring-search-engine-optimization-settings-portal-experience.html
+            - name: Configuring Third-Party Tracking
+              url: /experiences/portal/other/configuring-third-party-tracking-portal-experience.html
+        - name: Publishing Portals
+          url: /experiences/portal/publishing/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Previewing and Publishing
+              url: /experiences/portal/publishing/previewing-and-publishing-portal-experience.html
+            - name: Assigning a Custom Domain
+              url: /experiences/portal/publishing/assigning-custom-domain-portal-experience.htm
+            - name: Controlling Access
+              url: /experiences/portal/publishing/controlling-access-portal-experience.html         
     - name: In-Page
       url: /experiences/inpage/index.html
       icon: fa-regular fa-sidebar-flip

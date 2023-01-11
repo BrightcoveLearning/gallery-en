@@ -1,0 +1,62 @@
+---
+title: Customizing the Video Settings for a Portal Experience
+parent: Portal
+grandparent: Experiences
+description: In this topic you will learn how to customize the video settings for a Portal Experience.
+---
+<article class="bcls-article">
+  <h1>Customizing the Video Settings for a Portal Experience</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>To customize the Video settings, edit the Portal Experience and click <strong>Video and Playback &gt; Video</strong> in the left navigation. The Video settings allow the following to be configured for a Portal Experience:</p>
+    <ul>
+      <li><a href="#sorting">Sorting</a></li>
+      <li><a href="#download">Video download</a></li>
+      <li><a href="#link">Related link</a></li>
+      <li><a href="#longdesc">Long description</a></li>
+      <li><a href="#security">Video security</a></li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-video-settings.png" /></figure>
+    <p>Make sure you republish the experience after making any changes to the Video settings.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sorting">Enabling video sorting</h2>
+    <p><strong>Enable sorting of videos (not available for playlist-based collections)</strong> - If checked, viewers will have the ability to sort videos in the collection. Sorting is not available for collections that were created using playlists. This setting is available only with the following templates:</p>
+    <ul>
+      <li>Catalogue</li>
+      <li>Discovery</li>
+      <li>Live Event Portal</li>
+      <li>Marquee</li>
+      <li>Mosaic</li>
+      <li>Publisher</li>
+      <li>Classic</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-sort.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="download">Configuring video downloads</h2>
+    <p>The <strong>Video Download</strong> settings provide the ability for viewers to download videos. The download link can be used to download the highest quality rendition.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18583-download.png" /></figure>
+    <p>The following options are available:</p>
+    <ul>
+      <li><strong>Do not allow video downloads</strong> - Video downloads are not permitted</li>
+      <li><strong>Provide a download link for each video</strong> - A download link will be provided for each video</li>
+      <li><strong>Provide a download link based upon a custom field value</strong> - Video downloads will be provided based upon a custom field value assigned to the video. When selecting this option, you define a custom field and then set that field to <strong>true</strong> for any video that can be downloaded. For complete steps on configuring a download link for each video, see <a href="/experiences/portal/videos/downloading-videos-portal-experience.html">Downloading Videos from a Portal Experience</a>.</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: The video must have at least one MP4 rendition available.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="link">Displaying related links</h2>
+    <p><strong>Show related link for each video</strong> - If checked, will display the related link for the video next to the video name. For more information on configuring a related link for a video, see <a href="https://studio.support.brightcove.com/media/editing-video-properties-using-media-module.html">Editing Video Properties using the Media Module</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="longdesc">Displaying the long description</h2>
+    <p><strong>Use long description (if available) on video detail page</strong> - If checked, the video long description will be displayed on the video detail page (instead of the short description).</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="security">Configuring video security</h2>
+    <p><strong>Restrict videos on site to those selected through custom search or smart playlist</strong> - If checked, when <a href="customizing-site-features-portal-experience.html">search is enabled</a> for the experience, only the videos in collections will be searched (search will only return videos that were added to a collection using a smart playlist or using a custom search). Also, if viewer tries to access a video that has been removed from a playlist, they will be redirected back to the experience home page.</p>
+    <p>If this option is not checked, when search is enabled for an experience, all videos in the Video Cloud account are searched (unless the include/exclude tag option is used).</p>
+    <aside class="bcls-aside bcls-aside--information">Note: If this option doesn't appear, contact your Brightcove Account Manager to get it enabled.</aside>
+  </section>
+</article>

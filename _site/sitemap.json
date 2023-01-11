@@ -25,7 +25,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-video-cloud-videos-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-video-cloud-videos-portal-experience.html",
       "oldURL": "/adding-video-cloud-videos-portal-experience"
   },
 
@@ -35,7 +35,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-videos-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-videos-portal-experience.html",
       "oldURL": "/adding-videos-portal-experience"
   },
 
@@ -45,12 +45,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/adding-youtube-videos-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-youtube-videos-portal-experience.html",
       "oldURL": "/adding-youtube-videos-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/assigning-custom-domain-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/assigning-custom-domain-portal-experience.html",
       "oldURL": "/assigning-custom-domain-portal-experience"
   },
 
@@ -65,7 +65,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/changing-player-layout-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/changing-player-layout-portal-experience.html",
       "oldURL": "/changing-player-layout-portal-experience"
   },
 
@@ -75,7 +75,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-calls-action-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/configuring-calls-action-portal-experience.html",
       "oldURL": "/configuring-calls-action-portal-experience"
   },
 
@@ -95,7 +95,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-details-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/configuring-details-portal-experience.html",
       "oldURL": "/configuring-details-portal-experience"
   },
 
@@ -105,7 +105,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-search-engine-optimization-settings-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/configuring-search-engine-optimization-settings-portal-experience.html",
       "oldURL": "/configuring-search-engine-optimization-settings-portal-experience"
   },
 
@@ -120,7 +120,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/configuring-third-party-tracking-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/configuring-third-party-tracking-portal-experience.html",
       "oldURL": "/configuring-third-party-tracking-portal-experience"
   },
 
@@ -140,7 +140,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/controlling-access-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/controlling-access-portal-experience.html",
       "oldURL": "/controlling-access-portal-experience"
   },
 
@@ -200,7 +200,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-appearance-and-behavior-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-appearance-and-behavior-portal-experience.html",
       "oldURL": "/customizing-appearance-and-behavior-portal-experience"
   },
 
@@ -210,17 +210,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-catalogue-template-settings.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/customizing-catalogue-template-settings.html",
       "oldURL": "/customizing-catalogue-template-settings"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-chronicle-template-settings.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/customizing-chronicle-template-settings.html",
       "oldURL": "/customizing-chronicle-template-settings"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-content-portal-experience-pages.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-content-portal-experience-pages.html",
       "oldURL": "/customizing-content-portal-experience-pages"
   },
 
@@ -235,7 +235,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-marquee-template-settings.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/customizing-marquee-template-settings.html",
       "oldURL": "/customizing-marquee-template-settings"
   },
 
@@ -245,22 +245,22 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-player-and-lead-form-settings-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-player-and-lead-form-settings-portal-experience.html",
       "oldURL": "/customizing-player-and-lead-form-settings-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-site-configuration-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-site-configuration-portal-experience.html",
       "oldURL": "/customizing-site-configuration-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-site-features-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-site-features-portal-experience.html",
       "oldURL": "/customizing-site-features-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-social-settings-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-social-settings-portal-experience.html",
       "oldURL": "/customizing-social-settings-portal-experience"
   },
 
@@ -270,7 +270,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-style-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-style-portal-experience.html",
       "oldURL": "/customizing-style-portal-experience"
   },
 
@@ -280,17 +280,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-video-and-playback-settings-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-video-and-playback-settings-portal-experience.html",
       "oldURL": "/customizing-video-and-playback-settings-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing-video-settings-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/customizing-video-settings-portal-experience.html",
       "oldURL": "/customizing-video-settings-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/downloading-videos-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/downloading-videos-portal-experience.html",
       "oldURL": "/downloading-videos-portal-experience"
   },
 
@@ -300,7 +300,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/exporting-gallery-lead-data.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/exporting-gallery-lead-data.html",
       "oldURL": "/exporting-gallery-lead-data"
   },
 
@@ -345,7 +345,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
       "oldURL": "/index"
   },
 
@@ -385,6 +385,36 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/",
       "oldURL": "/index"
   },
@@ -400,7 +430,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "newURL": "https://gallery.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -415,7 +445,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/indexing-gallery-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/indexing-gallery-portal-experience.html",
       "oldURL": "/indexing-gallery-portal-experience"
   },
 
@@ -465,7 +495,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/overview-creating-editing-and-publishing-portal-experiences.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/getting-started/overview-creating-editing-and-publishing-portal-experiences.html",
       "oldURL": "/overview-creating-editing-and-publishing-portal-experiences"
   },
 
@@ -480,7 +510,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/overview-gallery-portal-templates.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/overview-gallery-portal-templates.html",
       "oldURL": "/overview-gallery-portal-templates"
   },
 
@@ -525,7 +555,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/previewing-and-publishing-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/previewing-and-publishing-portal-experience.html",
       "oldURL": "/previewing-and-publishing-portal-experience"
   },
 
@@ -540,12 +570,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
       "oldURL": "/register-training"
   },
 
@@ -645,12 +675,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/updating-gallery-templates.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/updating-gallery-templates.html",
       "oldURL": "/updating-gallery-templates"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-custom-fonts-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/using-custom-fonts-portal-experience.html",
       "oldURL": "/using-custom-fonts-portal-experience"
   },
 
@@ -660,12 +690,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-lead-form-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/using-lead-form-portal-experience.html",
       "oldURL": "/using-lead-form-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-multi-lingual-metadata.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/using-multi-lingual-metadata.html",
       "oldURL": "/using-multi-lingual-metadata"
   },
 
@@ -680,7 +710,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/using-site-editor-customize-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/using-site-editor-customize-portal-experience.html",
       "oldURL": "/using-site-editor-customize-portal-experience"
   },
 
@@ -695,7 +725,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/working-with-internal-comm-template.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/working-with-internal-comm-template.html",
       "oldURL": "/working-with-internal-comm-template"
   },
 ]

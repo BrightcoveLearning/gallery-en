@@ -1,0 +1,29 @@
+---
+title: Customizing Portals
+description: Learn how to customize Portal Experiences.
+parent: Portal Experiences
+grandparent: Experiences
+layout: index_pages
+---
+
+<h1><i class="fa-regular fa-photo-film"></i> {{ page.title }}</h1>
+<article class="bcls-article">
+<br/>
+  <summary>{{ page.description }}</summary>
+  <section>
+    <h2 id="Topics_in_this_section">Topics</h2>
+    <ul class="bcls-topic-list">
+      {% for item in site.data.navigation %}
+      {% if item.name == page.parent %}
+      {% for entry in item.docs %}
+      {% if entry.name == page.title %}
+      {% for doc in entry.docs %}
+      <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+      {% endfor %}
+    </ul>
+</section>
+</article>
