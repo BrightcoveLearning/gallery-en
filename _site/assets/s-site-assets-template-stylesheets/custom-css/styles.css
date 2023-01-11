@@ -149,6 +149,9 @@ a:hover {
 }
 
 /* Index pages styles */
+a>code {
+    background-color: #e4f4fb;
+}
 
 .docs-content {
     padding-bottom: 200px;
