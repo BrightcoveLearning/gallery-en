@@ -5,12 +5,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-components-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/adding-components-page-experience.html",
       "oldURL": "/adding-components-page-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-interactions-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/adding-interactions-page-experience.html",
       "oldURL": "/adding-interactions-page-experience"
   },
 
@@ -30,7 +30,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/adding-videos-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/adding-videos-page-experience.html",
       "oldURL": "/adding-videos-page-experience"
   },
 
@@ -80,7 +80,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-companion-components-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-companion-components-page-experience.html",
       "oldURL": "/configuring-companion-components-page-experience"
   },
 
@@ -90,7 +90,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-details-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-details-page-experience.html",
       "oldURL": "/configuring-details-page-experience"
   },
 
@@ -110,7 +110,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-settings-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/configuring-settings-page-experience.html",
       "oldURL": "/configuring-settings-page-experience"
   },
 
@@ -125,7 +125,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/configuring-video-downloads-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/other/configuring-video-downloads-page-experience.html",
       "oldURL": "/configuring-video-downloads-page-experience"
   },
 
@@ -155,7 +155,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/creating-custom-themes-page-experiences.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/other/creating-custom-themes-page-experiences.html",
       "oldURL": "/creating-custom-themes-page-experiences"
   },
 
@@ -240,7 +240,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/customizing-page-experience.html",
       "oldURL": "/customizing-page-experience"
   },
 
@@ -265,7 +265,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing-style-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/customizing-style-page-experience.html",
       "oldURL": "/customizing-style-page-experience"
   },
 
@@ -345,32 +345,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/settings/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/develop/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/general/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/",
       "oldURL": "/index"
   },
 
@@ -385,12 +370,32 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/other/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/customizing/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/publishing/",
       "oldURL": "/index"
   },
 
@@ -405,12 +410,27 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/getting-started/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/general/",
       "oldURL": "/index"
   },
 
@@ -425,6 +445,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/develop/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
@@ -435,7 +460,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/settings/",
       "oldURL": "/index"
   },
 
@@ -490,7 +520,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/getting-started/overview-creating-editing-and-publishing-page-experiences.html",
       "oldURL": "/overview-creating-editing-and-publishing-page-experiences"
   },
 
@@ -505,7 +535,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/overview-gallery-page-experience-templates.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/overview-gallery-page-experience-templates.html",
       "oldURL": "/overview-gallery-page-experience-templates"
   },
 
@@ -550,7 +580,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/previewing-and-publishing-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/publishing/previewing-and-publishing-page-experience.html",
       "oldURL": "/previewing-and-publishing-page-experience"
   },
 
@@ -570,12 +600,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
       "oldURL": "/register-training"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
   },
 
@@ -585,22 +615,22 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics-dashboard.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/reviewing-page-experience-analytics-dashboard.html",
       "oldURL": "/reviewing-page-experience-analytics-dashboard"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/reviewing-page-experience-analytics.html",
       "oldURL": "/reviewing-page-experience-analytics"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-calls-action-analytics.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/reviewing-page-experience-calls-action-analytics.html",
       "oldURL": "/reviewing-page-experience-calls-action-analytics"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-video-analytics.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/reviewing-page-experience-video-analytics.html",
       "oldURL": "/reviewing-page-experience-video-analytics"
   },
 
@@ -685,7 +715,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/using-dynamic-video-overrides-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/other/using-dynamic-video-overrides-page-experience.html",
       "oldURL": "/using-dynamic-video-overrides-page-experience"
   },
 
