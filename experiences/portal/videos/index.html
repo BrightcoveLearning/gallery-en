@@ -13,17 +13,10 @@ layout: index_pages
   <section>
     <h2 id="Topics_in_this_section">Topics</h2>
     <ul class="bcls-topic-list">
-      {% for item in site.data.navigation %}
-      {% if item.name == page.parent %}
-      {% for entry in item.docs %}
-      {% if entry.name == page.title %}
-      {% for doc in entry.docs %}
-      <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+      <li><a href="/experiences/portal/videos/adding-videos-portal-experience.html">Adding Videos to a Portal Experience</a></li>
+      <li><a href="/experiences/portal/videos/adding-video-cloud-videos-portal-experience.html">Adding Video Cloud Videos to a Portal Experience</a></li>
+      <li><a href="/experiences/portal/videos/adding-youtube-videos-portal-experience.html">Adding YouTube Videos to a Portal Experience</a></li>
+      <li><a href="/experiences/portal/videos/downloading-videos-portal-experience.html">Downloading Videos from a Portal Experience</a></li>
     </ul>
 </section>
 </article>

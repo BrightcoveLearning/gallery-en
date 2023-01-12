@@ -13,17 +13,12 @@ layout: index_pages
   <section>
     <h2 id="Topics_in_this_section">Topics</h2>
     <ul class="bcls-topic-list">
-      {% for item in site.data.navigation %}
-      {% if item.name == page.parent %}
-      {% for entry in item.docs %}
-      {% if entry.name == page.title %}
-      {% for doc in entry.docs %}
-      <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
+      <li><a href="/experiences/portal/other/configuring-calls-action-portal-experience.html">Configuring Calls to Action</a></li>
+      <li><a href="/experiences/portal/other/indexing-gallery-portal-experience.html">Indexing a Gallery Portal Experience</a></li>
+      <li><a href="/experiences/portal/other/using-lead-form-portal-experience.html">Using a Lead Form</a></li>
+      <li><a href="/experiences/portal/other/exporting-gallery-lead-data.html">Exporting Gallery Lead Data</a></li>
+      <li><a href="/experiences/portal/other/configuring-search-engine-optimization-settings-portal-experience.html">Configuring Search Engine Optimization Settings</a></li>
+      <li><a href="/experiences/portal/other/configuring-third-party-tracking-portal-experience.html">Configuring Third-Party Tracking</a></li>
     </ul>
 </section>
 </article>
