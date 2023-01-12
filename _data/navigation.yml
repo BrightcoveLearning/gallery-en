@@ -42,7 +42,7 @@
               url: /get-started/training/training-demand-building-portal-experiences-using-gallery.html
             - name: "Step-by-Step: Creating and Publishing a Portal Experience"
               url: /get-started/step-step-creating-and-publishing-portal-experience.html
-        - name: Portal Templates
+        - name: Templates
           url: /experiences/portal/templates/index.html
           icon: fa-regular fa-browser
           docs:
@@ -68,7 +68,7 @@
               url: /experiences/portal/videos/adding-youtube-videos-portal-experience.html
             - name: Downloading Videos
               url: /experiences/portal/videos/downloading-videos-portal-experience.html
-        - name: Customizing Portals
+        - name: Customizing
           url: /experiences/portal/customizing/index.html
           icon: fa-regular fa-browser
           docs:
@@ -100,7 +100,7 @@
               url: /experiences/portal/customizing/configuring-details-portal-experience.html
             - name: Using Multi-Lingual Metadata
               url: /experiences/portal/customizing/using-multi-lingual-metadata.html
-        - name: Other Portal Features
+        - name: Other Features
           url: /experiences/portal/other/index.html
           icon: fa-regular fa-browser
           docs: 
@@ -116,7 +116,7 @@
               url: /experiences/portal/other/configuring-search-engine-optimization-settings-portal-experience.html
             - name: Configuring Third-Party Tracking
               url: /experiences/portal/other/configuring-third-party-tracking-portal-experience.html
-        - name: Publishing Portals
+        - name: Publishing
           url: /experiences/portal/publishing/index.html
           icon: fa-regular fa-browser
           docs:
@@ -131,44 +131,76 @@
       icon: fa-regular fa-sidebar-flip
       description: Learn how to create, edit and publish In-Page Experiences.
       docs:
-        - name: Adding Components
-          url: /experiences/inpage/adding-components-page-experience.html
-        - name: Adding Interactions
-          url: /experiences/inpage/adding-interactions-page-experience.html
-        - name: Adding Videos
-          url: /experiences/inpage/adding-videos-page-experience.html
-        - name: Configuring Companion Components
-          url: /experiences/inpage/configuring-companion-components-page-experience.html
-        - name: Configuring the Details for an Experience
-          url: /experiences/inpage/configuring-details-page-experience.html
-        - name: Configuring the Settings for an Experience
-          url: /experiences/inpage/configuring-settings-page-experience.html
-        - name: Configuring Video Downloads
-          url: /experiences/inpage/configuring-video-downloads-page-experience.html
-        - name: Creating Custom Themes
-          url: /experiences/inpage/creating-custom-themes-page-experiences.html
-        - name: Customizing an In-Page Experience
-          url: /experiences/inpage/customizing-page-experience.html
-        - name: Customizing the Style
-          url: /experiences/inpage/customizing-style-page-experience.html
-        - name: Overview of In-Page Experience Templates
-          url: /experiences/inpage/overview-gallery-page-experience-templates.html
-        - name: 'Overview: Creating and Publishing In-Page Experiences'
-          url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
-        - name: Previewing and Publishing
-          url: /experiences/inpage/previewing-and-publishing-page-experience.html
-        - name: Reviewing Analytics
-          url: /experiences/inpage/reviewing-page-experience-analytics.html
-        - name: Reviewing Calls-to-Action Analytics
-          url: /experiences/inpage/reviewing-page-experience-calls-action-analytics.html
-        - name: Reviewing the Analytics Dashboard
-          url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
-        - name: Reviewing Video Analytics
-          url: /experiences/inpage/reviewing-page-experience-video-analytics.html
-        - name: Updating Gallery Templates
-          url: /experiences/portal/updating-gallery-templates.html
-        - name: Using Dynamic Video Overrides
-          url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
+        - name: Getting Started
+          url: /experiences/in-page/getting-started/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: 'Overview: Creating and Publishing In-Page Experiences'
+              url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
+            - name: Training - Introduction to Gallery
+              url: /get-started/training/training-demand-introduction-gallery.html
+            - name: Training - Building In-Page Experiences
+              url: /get-started/training/training-demand-building-page-experiences-using-gallery.html
+            - name: "Step-by-Step: Creating and Publishing an In-Page Experience"
+              url: /get-started/step-step-creating-and-publishing-page-experience.html
+        - name: Templates
+          url: /experiences/in-page/templates/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Overview of In-Page Experience Templates
+              url: /experiences/inpage/overview-gallery-page-experience-templates.html
+            - name: Updating Gallery Templates
+              url: /experiences/portal/templates/updating-gallery-templates.html
+        - name: Customizing
+          url: /experiences/in-page/customizing/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Customizing an In-Page Experience
+              url: /experiences/inpage/customizing-page-experience.html
+            - name: Adding Components
+              url: /experiences/inpage/adding-components-page-experience.html
+            - name: Adding Videos
+              url: /experiences/inpage/adding-videos-page-experience.html
+            - name: Customizing the Style
+              url: /experiences/inpage/customizing-style-page-experience.html
+            - name: Adding Interactions
+              url: /experiences/inpage/adding-interactions-page-experience.html
+            - name: Configuring Companion Components
+              url: /experiences/inpage/configuring-companion-components-page-experience.html
+            - name: Configuring the Details for an Experience
+              url: /experiences/inpage/configuring-details-page-experience.html
+            - name: Configuring the Settings for an Experience
+              url: /experiences/inpage/configuring-settings-page-experience.html
+        - name: Other Features
+          url: /experiences/in-page/other/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Using Dynamic Video Overrides
+              url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
+            - name: Configuring Video Downloads
+              url: /experiences/inpage/configuring-video-downloads-page-experience.html
+            - name: Creating Custom Themes
+              url: /experiences/inpage/creating-custom-themes-page-experiences.html
+        - name: Publishing
+          url: /experiences/in-page/publishing/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Previewing and Publishing
+              url: /experiences/inpage/previewing-and-publishing-page-experience.html
+            - name: Updating Gallery Templates
+              url: /experiences/portal/updating-gallery-templates.html
+        - name: Analytics
+          url: /experiences/in-page/analytics/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Reviewing Analytics
+              url: /experiences/inpage/reviewing-page-experience-analytics.html
+            - name: Reviewing the Analytics Dashboard
+              url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
+            - name: Reviewing Video Analytics
+              url: /experiences/inpage/reviewing-page-experience-video-analytics.html
+            - name: Reviewing Calls-to-Action Analytics
+              url: /experiences/inpage/reviewing-page-experience-calls-action-analytics.html       
     - name: Live Event
       url: /experiences/live/index.html
       icon: fa-regular fa-satellite-dish

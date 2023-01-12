@@ -162,7 +162,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/adding-components-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/getting-started/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -171,7 +171,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/adding-interactions-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/templates/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -180,7 +180,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/adding-videos-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/customizing/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -189,7 +189,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/configuring-companion-components-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/other/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -198,7 +198,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/configuring-details-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/publishing/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -207,124 +207,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/configuring-settings-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/configuring-video-downloads-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/creating-custom-themes-page-experiences.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/customizing-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/customizing-style-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/overview-gallery-page-experience-templates.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/previewing-and-publishing-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-calls-action-analytics.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-analytics-dashboard.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/reviewing-page-experience-video-analytics.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/portal/updating-gallery-templates.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/inpage/using-dynamic-video-overrides-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/in-page/analytics/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
