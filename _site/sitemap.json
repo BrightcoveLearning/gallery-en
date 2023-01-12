@@ -345,11 +345,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
@@ -370,17 +365,17 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/inpage/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/customizing/",
       "oldURL": "/index"
   },
 
@@ -401,6 +396,11 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/virtual-event/getting-started/",
       "oldURL": "/index"
   },
 
@@ -480,6 +480,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/",
       "oldURL": "/index"
   },
@@ -515,12 +520,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/online-training-courses.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/online-training-courses.html",
       "oldURL": "/online-training-courses"
   },
 
