@@ -34,13 +34,13 @@
           url: /experiences/portal/getting-started/index.html
           icon: fa-regular fa-browser
           docs:
-            - name: Creating, Editing and Publishing Portal Experiences
+            - name: Creating, Editing and Publishing
               url: /experiences/portal/getting-started/overview-creating-editing-and-publishing-portal-experiences.html
             - name: Training - Introduction to Gallery
               url: /get-started/training/training-demand-introduction-gallery.html
             - name: Training - Building Portal Experiences
               url: /get-started/training/training-demand-building-portal-experiences-using-gallery.html
-            - name: "Step-by-Step: Creating and Publishing a Portal Experience"
+            - name: "Step-by-Step: Creating and Publishing"
               url: /get-started/step-step-creating-and-publishing-portal-experience.html
         - name: Templates
           url: /experiences/portal/templates/index.html
@@ -72,11 +72,11 @@
           url: /experiences/portal/customizing/index.html
           icon: fa-regular fa-browser
           docs:
-            - name: Using the Site Editor to Customize an Experience
+            - name: Using the Site Editor
               url: /experiences/portal/customizing/using-site-editor-customize-portal-experience.html
             - name: Customizing the Appearance and Behavior
               url: /experiences/portal/customizing/customizing-appearance-and-behavior-portal-experience.html
-            - name: Customizing the Content of Portal Pages
+            - name: Customizing the Content of Pages
               url: /experiences/portal/customizing/customizing-content-portal-experience-pages.html
             - name: Customizing the Player and Lead Form Settings
               url: /experiences/portal/customizing/customizing-player-and-lead-form-settings-portal-experience.html
@@ -96,7 +96,7 @@
               url: /experiences/portal/customizing/using-custom-fonts-portal-experience.html
             - name: Changing the Player Layout
               url: /experiences/portal/customizing/changing-player-layout-portal-experience.html
-            - name: Configuring the Details for an Experience
+            - name: Configuring the Details
               url: /experiences/portal/customizing/configuring-details-portal-experience.html
             - name: Using Multi-Lingual Metadata
               url: /experiences/portal/customizing/using-multi-lingual-metadata.html
@@ -147,7 +147,7 @@
           url: /experiences/in-page/templates/index.html
           icon: fa-regular fa-browser
           docs:
-            - name: Overview of In-Page Experience Templates
+            - name: Overview of Templates
               url: /experiences/inpage/templates/overview-gallery-page-experience-templates.html
             - name: Updating Gallery Templates
               url: /experiences/portal/templates/updating-gallery-templates.html
@@ -155,7 +155,7 @@
           url: /experiences/in-page/customizing/index.html
           icon: fa-regular fa-browser
           docs:
-            - name: Customizing an In-Page Experience
+            - name: Customizing an Experience
               url: /experiences/inpage/customizing/customizing-page-experience.html
             - name: Adding Components
               url: /experiences/inpage/customizing/adding-components-page-experience.html
@@ -167,9 +167,9 @@
               url: /experiences/inpage/customizing/adding-interactions-page-experience.html
             - name: Configuring Companion Components
               url: /experiences/inpage/customizing/configuring-companion-components-page-experience.html
-            - name: Configuring the Details for an Experience
+            - name: Configuring the Details
               url: /experiences/inpage/customizing/configuring-details-page-experience.html
-            - name: Configuring the Settings for an Experience
+            - name: Configuring the Settings
               url: /experiences/inpage/customizing/configuring-settings-page-experience.html
         - name: Other Features
           url: /experiences/in-page/other/index.html
