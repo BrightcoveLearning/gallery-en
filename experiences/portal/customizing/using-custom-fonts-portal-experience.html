@@ -13,7 +13,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
   <section class="bcls-section">
     <h2 id="css_file">Linking to a custom font file</h2>
     <p>The <a href="https://fonts.google.com">Google Font directory</a> provides open source fonts that can be used on web pages. Locate a font to use and then click <strong>Select this style</strong>. In this topic, the <strong>Acme</strong> font will be used.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-google-help.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/customizing/node18657-google-help.png" /></figure>
     <p>Per the Google help, the following lines should be embedded in the document.</p>
     <pre>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; <br _ngcontent-fmy-c29="">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; <br _ngcontent-fmy-c29="">&lt;link href="https://fonts.googleapis.com/css2?<span _ngcontent-fmy-c29="">family=<span _ngcontent-fmy-c29="">Acme</span>&amp;</span>display=swap" rel="stylesheet"&gt;</pre>
     <p>To include these lines in a Portal Experience, follow these steps:</p>
@@ -21,7 +21,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
       <li>Edit the experience.</li>
       <li>Click <strong>Appearance and Behavior &gt; Header and Footer </strong>in the left navigation.</li>
       <li>Paste the <code translate="No"><strong>&lt;link&gt;</strong></code> tag into the <strong>Custom Header HTML</strong> field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-custom-header.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/customizing/node18657-custom-header.png" /></figure>
       </li>
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
@@ -32,7 +32,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
     <p>The development tools provided with your browser are helpful in getting the class names of the objects on the page that you want to style (objects we want to change the font for). Note that the element names will changed based upon the template being used. In the example below, we will change the font for the featured video and the font used for the video names that appear in the video grid on the page. Screenshots are taken using Google Chrome.</p>
     <ol class="bcls-tasklist-restart">
       <li>Using your browser development tools, inspect the element on the experience that you want to change the font for. In this case, the featured video title is being inspected. Locate the class name for the object.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-feature-title.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/customizing/node18657-feature-title.png" /></figure>
       </li>
       <li>Add the appropriate CSS to the <strong>Custom Header HTML</strong> field to style the featured video title with the new font.
         <pre>
@@ -45,7 +45,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
       </code></pre>
       </li>
       <li>Locate the class name for the video titles in the grid.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-grid-video-title.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/customizing/node18657-grid-video-title.png" /></figure>
       </li>
       <li>Add the appropriate CSS inside the existing <code translate="No"><strong>&lt;style&gt;</strong></code> tag to style the video titles in the grid with the new font.
         <pre>
@@ -70,7 +70,7 @@ description: In this topic you will learn how to use custom fonts in a Portal Ex
       </li>
       <li>Click <span class="button-blue">Save</span>.</li>
       <li>Click <span class="button-blue">Preview</span> &gt; <strong>Responsive Preview</strong> to verify that the updated font displays.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18657-new-font.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/customizing/node18657-new-font.png" /></figure>
       </li>
       <li>When done, <span class="button-blue">Publish</span> the experience.</li>
     </ol>
