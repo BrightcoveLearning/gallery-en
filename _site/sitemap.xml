@@ -254,7 +254,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/adding-videos-virtual-event-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/getting-started/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -263,7 +263,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/creating-agenda-virtual-event-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/videos/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -272,7 +272,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/creating-speakers-virtual-event-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/agenda-speakers/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -281,7 +281,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/creating-virtual-event-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/customizing/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -290,115 +290,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/customizing-appearance-and-behavior-virtual-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/customizing-style-virtual-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/getting-analytics.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/getting-started-agenda-module.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/integrating-pigeonhole-virtual-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/managing-agenda-virtual-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/managing-event-speakers.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/managing-event-sponsors.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/overview-virtual-event-template.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/using-role-based-access-control.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/using-simulated-live-videos.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/virtual-event/other/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
