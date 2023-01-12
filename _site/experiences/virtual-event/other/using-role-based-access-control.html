@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Exporting Virtual Event Viewer Data</title>
+        <title>Using Role-Based Access Control</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to export virtual event viewer data.">
+        <meta name="description" content="In this topic you will learn how to use role-based access control to restrict the sessions that appear in an event agenda based upon the user's role.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -879,7 +879,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/getting-analytics.html" aria-current="page">Exporting Virtual Event Viewer Data</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/getting-analytics.html">Exporting Virtual Event Viewer Data</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Exporting Virtual Event Viewer Data</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/other/">Other</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Using Role-Based Access Control</li>
             
             
           </ol>
@@ -1249,161 +1253,149 @@
       <br>
       
       
-<h1>Exporting Virtual Event Viewer Data</h1>
+<h1>Using Role-Based Access Control</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to export virtual event viewer data.</summary>
+  <summary>In this topic you will learn how to use role-based access control to restrict the sessions that appear in an event agenda based upon the user's role.</summary>
   <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-		<p>You can see reporting events for your virtual events by aggregated by device and location, in addition to the account, viewer and video analytics for a particular account. This information can help you better organize your upcoming virtual events to maximize the viewer engagement.</p>
-		<p>This data can be downloaded using the Analytics API, and can be returned in JSON, CSV, or XLXS format. The next section provides a brief introduction to the Analytics API. If you already know how to use it, you may skip to the following section for information on getting analytics data for virtual events.</p>
+    <p>Role-based access control can be used to filter the sessions that appear in the session agenda based on a user's role. Role-based access control relies on a specified SAML attribute on the user object  returned by the user management system (i.e. registration system, SSO). Rules are defined based on user roles and session tags. Brightcove recommends that all sessions have at least one tag for the role-based filtering to occur.</p>
   </section>
-	<section class="bcls-section">
-		<h2 id="Analytics_API">The Analytics API</h2>
-		<p>Like other <a href="https://apis.support.brightcove.com/">platform APIs</a>, the Analytics API is a RESTful API that allows you to interact with the Video Cloud platform programmatically. It returns analytics data based on various URL parameters that you include with the request. By default the data is returned in JSON format, but you can request CSV or XLXS data to be opened in spreadsheet app instead.</p>
-		<aside class="bcls-aside bcls-aside--information">Note that this document covers only what you need to know to get analytics data for virtual events. Consult the general <a href="https://apis.support.brightcove.com/analytics/index.html">Analytics API documentation</a> for other uses.</aside>
-		<h3>How to make requests</h3>
-		<p>Requests to RESTful APIs are made to a URL, the same way that a browser makes a request to a URL to retrieve a web page. However, you cannot simply paste the API request into a browser, because the request must be authenticated (we are getting to that) to show that you are authorized to get the data. There are many tools to help you do it, however. Here is a short list:</p>
-		<ul>
-			<li><a href="https://apis.support.brightcove.com/general/use-insomnia-api-requests.html">Insomnia</a> (a popular cross-platform app)</li>
-			<li><a href="https://apis.support.brightcove.com/general/use-postman-api-requests.html">Postman</a> (another popular cross-platform app)</li>
-			<li><a href="https://apis.support.brightcove.com/general/concepts-api-tester.html">Online API Tester</a> created by Brightcove Learning Services</li>
-			<li><a href="https://apis.support.brightcove.com/getting-started/concepts-testing-tools-brightcove-apis.html#shell">api-tester.sh</a> (a curl-based shell script created by Brightcove Learning Services)</li>
-		</ul>
-		<h3>Authenticating requests</h3>
-		<p>To protect your data, Analytics API requests must include an Authorization header that contains an access token:</p>
-		<pre><code class="language-http" translate="No">Authorization: bearer <span class="bcls-input">your access token</span></code></pre>
-		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
-		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code translate="no">client_id</code> and a <code translate="no">client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
-		<ol class="bcls-tasklist-restart">
-			<li>In the primary navigation, click <strong>Admin &gt; API Authentication</strong>.</li>
-			<li>Click <span class="button-blue">Register New Application</span>.</li>
-			<li>In the dialog that opens enter "Analytics" for the name.</li>
-			<li>Select the account(s) you want to use the API for.</li>
-			<li>
-				Under <strong>Exposed Brightcove APIs</strong>, select <strong>Read</strong> under <strong>Analytics</strong> and <strong>Video Read</strong> under <strong>CMS</strong>:
-				<figure class="bcls-figure">
-					<img class="bcls-image" src="/assets/images/experiences/virtual-event/analytics-api-permissions.png" alt="API Permissions">
-					<figcaption class="bcls-caption--image">API Permissions</figcaption>
-				</figure>
-			</li>
-			<li>Click <span class="button-blue">Save</span>.</li>
-			<li>
-				A new dialog will display the <strong>Client ID</strong> <strong>Client Secret</strong>. Copy and save them both in a secure place where you can find them again.
-				<aside class="bcls-aside bcls-aside--warning">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
-			</li>
-		</ol>
-		<h3>The access token</h3>
-		<p>The access token is retrieved from another Brightcove API using the client credentials. You can do that yourself, but again, any of the tools listed in the previous section will take your client credentials and get the access token for you, and put it into the request header sent with your Analytics API request.</p>
-	</section>
   <section class="bcls-section">
-    <h2 id="API_request">The Analytics API request</h2>
-    <p>Here is the form of the Analytics API request:</p>
-    <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{account1_id,account2_id}</span>
-&from=<span class="bcls-highlight">{yyyy-mm-dd}</span>
-&to=<span class="bcls-highlight">{yyyy-mm-dd}</span>
-&dimensions=viewer,video,country,city,region,device_type,protocol
-&fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
-&sort=-video_view&limit=20&format=csv</code></pre>
-		<aside class="bcls-aside bcls-aside--information">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
-		<h3>Required parameters</h3>
-		<table class="bcls-table">
-			<caption class="bcls-caption--table">Required Parameters</caption>
-			<thead class="bcls-table__head">
-					<tr>
-							<th>Parameter</th>
-							<th>Required Values</th>
-							<th>Optional Values</th>
-					</tr>
-			</thead>
-			<tbody class="bcls-table__body">
-					<tr>
-							<td><code translate="no">accounts</code></td>
-							<td>one or more accounts IDs</td>
-							<td></td>
-					</tr>
-					<tr>
-							<td><code translate="no">dimensions</code></td>
-							<td>
-								<ul>
-									<li><code translate="no">viewer</code></li>
-									<!-- <li><code translate="no">application</code></li> -->
-								</ul>
-							</td>
-							<td>
-								<ul>
-									<li><code translate="no">account</code></li>
-									<li><code translate="no">video</code></li>
-									<li><code translate="no">country</code></li>
-									<li><code translate="no">region</code></li>
-									<li><code translate="no">city</code></li>
-									<li><code translate="no">device_type</code></li>
-									<li><code translate="no">protocol</code></li>
-								</ul>
-							</td>
-					</tr>
-			</tbody>
-	</table>
-	<p>See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#params">Parameters</a> for some additional optional parameters that can be used to the set the date range, sort the results, set the response format, etc.</p>
+    <h2 id="start">Before you get started</h2>
+    <p>Before configuring role-based access control for a Virtual Event Experience, these initial setup steps should be completed:</p>
+    <ol class="bcls-tasklist-restart" >
+      <li>You should create a Virtual Event Experience and have created an event agenda.</li>
+      <li>The Virtual Event Experience should be secured using an access control profile.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The steps and images in this topic are using the <a href="https://auth0.com/signup?&signUpData=%7B%22category%22%3A%22button%22%7D&email=undefined">trial version</a> of Auth0.</aside>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on securing an experience using Auth0, see <a href="/settings/securing-portal-experience-auth0.html">Securing a Portal Experience with Auth0</a>.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="roles">Roles and tags</h2>
+    <p>To configure role-based access control, start by determining how the sessions will be restricted and then create the appropriate role-based access tags that will be assigned to each user and each session. For example, you may decide to use the following roles/tags:</p>
+    <ul>
+      <li>standard</li>
+      <li>enterprise</li>
+      <li>vip</li>
+    </ul>
+    Users in your SSO will be assigned one these roles and all agenda sessions will be tagged with one or more of these values. Role-based access control will  filter the agenda so  users only see the  sessions they have access to. For example, a user with a role of &quot;<strong>standard</strong>&quot; will only see sessions that are tagged &quot;<strong>standard</strong>&quot;.</section>
+  <section class="bcls-section">
+    <h2 id="assign-roles">Assigning roles to users in Auth0</h2>
+    <p>All users in your SSO should be assigned a role. Follow these steps  to assign roles to users using Auth0 SSO.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> User Management &gt; Users</strong>.</li>
+      <li>Click on a user to view the user details.</li>
+      <li>Assign the appropriate role to the user in the <strong>app_metadata</strong> section. Roles should be entered using the format <code>"role": assigned role</code>.
+        <p>In the following example, the user is assigned a <strong>role</strong> of <strong>vip</strong>.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-role.png" /></figure>
+      </li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Assign roles to all users.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pass-roles">Passing roles as SAML data  in Auth0</h2>
+    <p>In order to pass the role metadata from Auth0 to an experience, a rule needs to be created. A rule is  JavaScript code that can be used to extend Auth0's default behavior when authenticating a user. Follow these steps to create a rule to pass the role data.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to  your Auth0 account.</li>
+      <li>In the left navigation, click <strong> Auth Pipeline &gt; Rules</strong>.</li>
+      <li>Click <strong>+ Create</strong>.</li>
+      <li>Click <strong>&lt; &gt; Empty rule</strong>.</li>
+      <li>Enter a <strong>Name</strong> for the rule.</li>
+      <li>Paste the following code into the <strong>Script</strong> area.
+        <pre class="line-numbers"><code class="language-javascript" translate="No">
+function mapSamlAttributes(user, context, callback) {
+  context.samlConfiguration.mappings = {
+    'role': 'role'
+  };
 
+  callback(null, user, context);
+}
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-auth0-rule.png" /></figure>
+      </li>
+      <li>Click <strong>Save changes</strong>.</li>
+    </ol>
   </section>
-	<section class="bcls-section">
-		<h2 id="where_filters">Where filters</h2>
-		<p>You can filter the results using the <code translate="no">where</code> parameter. See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#filterValues">Where filters</a> for details</p>
-	</section>
-	<section class="bcls-section">
-		<h2 id="fields">Fields</h2>
-		<h3>Collected directly from the player</h3>
-		<ul>
-			<li><code translate="no">viewer</code>: Event viewer(SSO ID or device id or unique string based on user-agent and IP), taken from the <code translate="no">user</code> field</li>
-			<!-- <li><code translate="no">application</code>: virtual event experience id, if null default value = <code translate="no">account_id</code></li> -->
-			<li><code translate="no">time</code>: timestamp of the last event received</li>
-			<li><code translate="no">video</code></li>
-			<li><code translate="no">country</code></li>
-			<li><code translate="no">region</code></li>
-			<li><code translate="no">city</code></li>
-			<li><code translate="no">device_type</code></li>
-		</ul>
-		<h3>Aggregated metrics</h3>
-		<ul>
-			<li><code translate="no">video_view</code>: the total number of times <code translate="no">video_view</code> was sent by the player (note that <code translate="no">video_view</code> is <strong>not</strong> sent when the viewer pauses and restarts a video, or watches the video multiple times without refreshing the page)</li>
-		</ul>
-		<h3>Calculated fields</h3>
-		<ul>
-			<li>
-				<code translate="no">video_seconds_viewed</code>:
-				<ul>
-					<li>Highest range value received by Collector API irrespective of order</li>
-					<li>Note that events describing ranges over 20 seconds are discarded by the Analytics system, which could result in an inaccurate value if the player was not correctly instrumented to send ranges of 20 seconds or less - see <a href="https://apis.support.brightcove.com/data-collection/overview-data-collection-api-v2.html">Overview: Data Collection API</a></li>
-				</ul>
-			</li>
-			<li><code translate="no">video_percent_viewed</code>: video_seconds_viewed/video_duration *100 (this value will be missing or inaccurate if the video duration was not sent to the data collector)</li>
-			<li><code translate="no">video_engagement_xx</code>: the total number of views at the xx video_percent_viewed (xx = 1, 25, 50, 75, or 100)</li>
-		</ul>
-		<details>
-			<summary>Sample API Response (JSON)</summary>
-<pre><code class="language-json" translate="no">{
-	4    "item_count": 1,
-	5    "items": [
-	6        {
-	7            "viewer": "test@brightcove.com",
-	8            "country": "GB",
-	9            "video_seconds_viewed": 253,
-	10            "city": "London",
-	11            "video_percent_viewed": 527.08,
-	12            "device_type": "other",
-	13            "video": "70701475639202",
-	14            "video_view": 46,
-	15            "region": "GB-ENG"
-	16        }
-	17    ],
-	18    "summary": {
-	19        "video_seconds_viewed": 253,
-	20        "video_percent_viewed": 527.08,
-	21        "video_view": 46
-	22    }
-	23}</code></pre>
-		</details>
-	</section>
+  <section class="bcls-section">
+    <h2 id="assign-roles-sessions">Controlling access to event sessions</h2>
+    <p>Access Control tags are used to restrict access to sessions. If a session has an <strong>Access Control tag</strong> of <strong>vip</strong>, the session will only appear for users with a <strong>role</strong> of <strong>vip</strong>. Follow these steps to assign an Access Control tag to a session.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>Click <strong>Site Features &gt;Agenda</strong> in the left navigation.</li>
+      <li>Click on the event agenda to open the agenda editor.</li>
+      <li>Click on a session.</li>
+      <li>In the <strong>Access Control tags</strong> field, enter the role(s) who have access to the session. In the following example, only users with the role <strong>vip</strong> will see this session in the agenda.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-session-access.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: The agenda must be activated before it will appear in a Virtual Event Experience.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="attributes">Filtering the agenda based upon roles</h2>
+    <p>Custom code will be used to filter the agenda sessions based upon the user's role. In this code example, sessions with no Access Control tag will appear in all user agendas. For sessions that have an Access Control tag, if the role parameter of the user matches the Access Control tag for the session, that session will appear in the user's agenda.</p>
+    <p>Follow these steps to add the filtering code to the experience.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Edit the experience.</li>
+      <li>In the left navigation, click <strong>Header and Footer</strong>.</li>
+      <li>Paste the following code into the <strong>Custom Header HTML</strong> field.
+          <pre class="line-numbers"><code class="language-javascript" translate="No">
+&lt;script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"&gt;&lt;/script&gt;
+        
+&lt;script&gt;
+$(document).ready(() =&gt; {
+    // Get role from SAML data and Agenda sessions from site
+    const role = window.bcGallery.filteredAssemblerData.samlAttributes ? window.bcGallery.filteredAssemblerData.samlAttributes.role : null;
+        
+    if (!role) {
+            console.log("Error filtering Agenda sessions. No role specified on SAML data.");
+            return;
+          }
+        
+const sessions = bcGallery.filteredAssemblerData.site.agenda.sessions;
+        
+// Looking for sessions to be filtered out
+const filteredSessions = sessions.filter((session) =&gt; {
+// If session does not have tags, do not filter the session
+if(!session["restricted_tags"].length) {
+                return false;
+            }
+            const restrictedTags = session["restricted_tags"];
+            if(!restrictedTags.includes(role)) {
+              return true;
+            }
+            return false;
+});
+        
+if(filteredSessions.length) {
+    const contentWrapper = document.querySelector('.bcg-fixed-width-container');
+        
+    // Creating an observer to watch for DOM changes that might put back a filtered session
+    const observer = new MutationObserver(() =&gt; {
+        filteredSessions.forEach(session =&gt; {
+            // Remove session item using its session id
+            $(`[data-session-id='${session.id}']`).remove();
+         });    
+    });
+        
+    observer.observe(contentWrapper, {
+              attributes:    true,
+              childList:     true,
+              characterData: true 
+            });
+        }
+});
+&lt;/script&gt;
+</code></pre>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/rbac-agenda-filter-code.png" /></figure>
+      </li>
+      <li>Click<strong> Save</strong>.</li>
+    </ol>
+    <p>Make sure you republish the experience so the changes appear.</p>
+  </section>
 </article>
 
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->

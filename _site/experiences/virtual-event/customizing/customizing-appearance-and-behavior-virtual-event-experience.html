@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Customizing the Content of Virtual Event Experience Pages</title>
+        <title>Customizing the Appearance and Behavior of a Virtual Event Experience</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to customize the content of Virtual Event Experience pages.">
+        <meta name="description" content="In this topic you will learn how to customize the appearance and behavior of a Virtual Event Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -867,7 +867,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html" aria-current="page">Customizing the Content of Pages</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html">Customizing the Content of Pages</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Customizing the Content of Virtual Event Experience Pages</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/customizing/">Customizing</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Customizing the Appearance and Behavior of a Virtual Event Experience</li>
             
             
           </ol>
@@ -1250,35 +1254,66 @@
       
       
 <article class="bcls-article">
-  <h1>Customizing the Content of Virtual Event Experience Pages</h1>
-  <summary>In this topic you will learn how to customize the content of Virtual Event Experience pages.</summary>
+  <h1>Customizing the Appearance and Behavior of a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to customize the appearance and behavior of a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>Objects such as text, images and links can be added to Virtual Event Experience pages allowing you to customize and brand your video experience.</p>
+    <p>To configure the Appearance and Behavior settings, edit the experience and click <strong>Appearance and Behavior</strong> in the left navigation. The following settings are available:</p>
+    <ul>
+      <li><a href="#header_footer">Header and Footer</a> - Configure a custom header/footer for the experience</li>
+      <li><a href="#custom">Custom</a> - Upload custom CSS, JavaScript and font files</li>
+      <li><a href="#background">Background Image and Video</a> - Configure a background image or video</li>
+    </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="objects">Adding objects to pages</h2>
-    <p>Using the Site Editor, you can add objects such as images, text, links and a welcome message to a page. Start by editing an experience and then click <strong>Pages</strong> in the left navigation. The page template will display plus icons (<img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" />) indicating where objects  can be added to the page. </p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-page-placeholders.png" /></figure>
-    <p>Hover over the plus icon and click it to add the appropriate object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-hover-plus.png" /></figure>
-    <p>The page template may also contain text objects that are part of the template. Hovering over them will display an <strong>Edit</strong> button. Click the object or <strong>Edit</strong> button to edit the object.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-edit-text.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="logo">Adding a logo to the page header</h2>
-    <p>The logo can be  text or an image file. For images, JPEG and PNG  images are supported. To add a logo to the page header, click <strong>+ Add Logo</strong> in the page header.</p>
-    <h3>Adding a text logo</h3>
+    <h2 id="header_footer">Configuring custom header/footer HTML</h2>
+    <p>Gallery provides the option of using a custom header and/or footer for the site. This provides the ability to customize a Virtual Event Experience so it more closely matches the look and feel of your corporate sites. A custom header/footer can also be configured at the account level. For information on configuring a custom header/footer at the account level, see <a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a>.</p>
+    <p>To configure a Virtual Event Experience to use a custom header or footer, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>Use the text editor on the <strong>Text</strong> tab to enter and format text for the header.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-logo-text.png" /></figure>
+      <li>Design the header/footer to use for your site. The header/footer can contain any valid HTML, JavaScript or CSS code.</li>
+      <li>Click on the experience <strong>Title</strong> to open the Gallery Site Editor.</li>
+      <li>In the left navigation, click <strong>Appearance and Behavior &gt; Header and Footer</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-header-footer.png" /></figure>
       </li>
+      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
+      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
+      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
+      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-    <h3>Adding an image logo</h3>
-    <ol class="bcls-tasklist-restart">
-      <li>Click the <strong>Image</strong> tab. The image browser dialog will open.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-logo-image.png" /></figure>
+    <div class="BCL-subsection">
+      <h3>Notes on using custom headers and footers</h3>
+      <ul>
+        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
+        <li>There is no explicit character limit on the header and footer HTML</li>
+        <li>External CSS and JavaScript files are supported</li>
+        <li>The code should follow responsive design principles so it will scale properly across devices</li>
+        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
+      </ul>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom">Configuring custom settings</h2>
+    <p>The custom settings provide the ability to customize the look and feel of the site. To configure the custom settings, click <strong>Appearance and Behavior &gt; Custom</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-custom-settings.png" /></figure>
+    <p>The following settings are available:</p>
+    <ul>
+      <li><strong>Custom CSS file</strong> - Click <strong>Upload file</strong> to upload a custom CSS file. This can be used  to customize the style.</li>
+      <li><strong>Custom JavaScript file</strong> - Click <strong>Upload file</strong> to upload a custom JavaScript file. This can be used to customize the style and/or behavior of the site.</li>
+      <li><strong>Custom Font file</strong> - Click <strong>Upload file</strong> to upload a custom font file. This font will appear as <strong>Custom Font</strong> in the Style &gt; Fonts &gt; Primary list. </li>
+      <li><strong>Custom Font file 2</strong> - Click <strong>Upload file</strong> to upload a custom font file. This font will appear as <strong>Custom Font</strong> in the Style &gt; Fonts &gt; Secondary list.</li>
+      <li><strong>Custom Favicon URL</strong> - Used to specify the location of the favicon to use for the site. Browsers that provide favicon support typically display the favicon on page's browser tab and next to the page's name in a list of bookmarks.</li>
+      <li><strong>Custom Mobile App Icon</strong> - Used to select an image that will be used as a home screen icon when the site is saved to your device home screen. Brightcove recommends that you upload a high resolution (we recommend 1024 px x 1024 px), square image and Gallery will scale the image and use a version best suited to your device.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-app-icon.png" /></figure>
       </li>
+      <li><strong>Custom Response Headers</strong> - Enter HTTP headers which will be sent in response to requests to the portal. For example, headers might be added to add a Content Security Policy (CSP) or HTTP-Strict-Transport-Security (HSTS).</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="background">Configuring a background image or video</h2>
+    <p>Gallery provides the option of displaying a custom background image or video  for the site. To configure a background image or video, click <strong>Appearance and Behavior &gt; Background Image and Video</strong> in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-background-image.png" /></figure>
+    <h3>Adding a background image</h3>
+    <ol class="bcls-tasklist-restart">
       <li>To specify an image, you can:
         <ul>
           <li>Drag an image from the file system and then drop it on the drop area</li>
@@ -1286,105 +1321,12 @@
           <li>Enter the URL to a remote image file</li>
         </ul>
       </li>
-      <li>Click <span class="button-blue">Save</span> when done.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="menulinks">Adding menu links</h2>
-    <p>Menu links can be added to the page header to provide a way for users to navigate to other parts of your site. To add menu links to the page header:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>+Add Menu Links </strong>in the header.</li>
-      <li>Enter the <strong>Text</strong> and <strong>Link</strong>. Check <strong>New Window</strong> if you want the link to open in a new browser window.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-add-menu-links.png" /></figure>
-      </li>
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-    <p>Additional navigation links can be entered by clicking <img alt="" src="/assets/images/experiences/portal/node13555-plus-icon.png" /> in the header. To add additional footer links, clicking <strong>+ Add Menu Links</strong>. To edit a link, click on it.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="welcome">Adding a welcome message</h2>
-    <p>A welcome message can be added to welcome visitors to the site and can contain text and an image. Custom HTML can be used for more advanced welcome messages. To add a welcome message, click <strong>+ Welcome Message</strong>.</p>
-    <div class="BCL-subsection">
-      <h3>Adding a text message</h3>
-      <p>The <strong>Text</strong> tab can be used to add text and/or an image. On the page, the image will appear below the text.</p>
-      <ol class="bcls-tasklist-restart">
-        <li>Enter your text. The formatting bar can be used to format the text.</li>
-        <li>To add  an image, you can:
-          <ul>
-            <li>Drag an image from the file system and then drop it on the drop area</li>
-            <li>Click <strong>browse</strong> and select an image from the file system</li>
-            <li>Enter the URL to a remote image file</li>
-          </ul>
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-welcome-text.png" /></figure>
-        </li>
-        <li>Click <span class="button-blue">Save</span>.</li>
-      </ol>
-    </div>
-    <div class="BCL-subsection">
-      <h3>Using custom HTML</h3>
-      <p>Custom HTML is useful when you want to have a more advanced layout that can't be created using the WYSIWYG editor on the <strong>Text</strong> tab. </p>
-      <ol class="bcls-tasklist-restart">
-        <li>Click the <strong>Custom HTML</strong> tab.</li>
-        <li>Paste in the custom HTML for the welcome message.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-welcome-html.png" /></figure>
-        </li>
-        <li>Click <span class="button-blue">Save</span>.</li>
-      </ol>
-    </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="navlinkfooter">Adding navigation links to the page footer</h2>
-    <p>Navigation links can  be added to the page footer. This is useful when you want to have a title and then a series of links below. For example:</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-footer-links-example.png" /></figure>
-    <p>The page footer navigation object consists of two parts, a <strong>PLACEHOLDER</strong> for the title and <strong>+Add Menu Links</strong> for the associated links.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-footer-nav-links.png" /></figure>
-    <p>To add navigation links to the page footer:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>PLACEHOLDER</strong>, enter a value for the header and click <strong>Save</strong>.</li>
-      <li>Click <strong>+Add Menu Links</strong> and enter the <strong>Text</strong>, <strong>Link </strong>URL and <strong>List Order</strong>. You can also specify the order of the links by setting the <strong>List Order</strong> value when the link is created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-footer-add-link.png" /></figure>
-      </li>
-    </ol>
-    <p>Additional navigation links can be entered by clicking <strong>+Add Menu Links</strong>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting objects from a page</h2>
-    <p>Text, images and links can be removed from the page in a couple of different ways.</p>
-    <div class="BCL-subsection">
-      <h3>To remove text or images from the page header</h3>
-      <ol class="bcls-tasklist-restart">
-        <li>Hover over the object and click the delete icon.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-delete-logo.png" /></figure>
-        </li>
-      </ol>
-    </div>
-    <div class="BCL-subsection">
-      <h3>To remove navigation links from the page header</h3>
-      <ol class="bcls-tasklist-restart">
-        <li>Click the link in the navigation header.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-delete-header-menu.png" /></figure>
-        </li>
-        <li>Click <strong>Delete</strong>.</li>
-      </ol>
-    </div>
-    <div class="BCL-subsection">
-      <h3>To remove navigation links from the page footer</h3>
-      <ol class="bcls-tasklist-restart">
-        <li>Click the link in the page footer.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-delete-footer-link.png" /></figure>
-        </li>
-        <li>Click <strong>Delete</strong>.</li>
-      </ol>
-    </div>
-    <div class="BCL-subsection">
-      <h3>To remove the welcome message or any text</h3>
-      <ol class="bcls-tasklist-restart">
-        <li>Click on the text object.</li>
-        <li>Clear the title text and click <span class="button-blue">Save</span>.
-          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-delete-footer-text.png" /></figure>
-        </li>
-      </ol>
-    </div>
+    <p>Click <span class="button-blue">Remove</span> to remove the image.</p>
+    <h3>Adding a background video</h3>
+    <p>A Video Cloud video can also be used as a background video. Paste a Video Cloud video ID in the <strong>Video ID</strong> field and click <span class="button-blue">Save</span>.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: If the Video ID is invalid, the uploaded background image or the default background image will be displayed.</aside>
   </section>
 </article>
 

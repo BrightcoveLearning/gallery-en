@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Using the Site Editor to Customize a Virtual Event Experience</title>
+        <title>Integrating Pigeonhole with a Virtual Event Experience</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to use the Site Editor to customize the look and feel of an experience.">
+        <meta name="description" content="In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -933,7 +933,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html" aria-current="page">Using the Site Editor</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html">Using the Site Editor</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Using the Site Editor to Customize a Virtual Event Experience</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/customizing/">Customizing</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Integrating Pigeonhole with a Virtual Event Experience</li>
             
             
           </ol>
@@ -1249,66 +1253,156 @@
       <br>
       
       
+<h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
 <article class="bcls-article">
-  <h1>Using the Site Editor to Customize a Virtual Event Experience</h1>
-  <summary>In this topic you will learn how to use the Site Editor to customize the look and feel of an experience.</summary>
+  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
   <section class="bcls-section">
-    <p>The Gallery Site Editor is used to customize the look and feel of experiences. Click on the experience title to open the Site Editor. The Site Editor provides the ability to:</p>
+    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  duration of the live event and then sessions can be created for each video or breakout room you want to add Pigeonhole functionality to. To add interactivity to videos, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole pod to display next to the video player for chosen videos.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
+    <p>For breakout rooms, the session ID and passcode are added to the breakout session in the agenda.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="new_session">Creating a new Pigeonhole event and sessions</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Pigeonhole functionality added to it.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
+      </li>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
+      </li>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
+      </li>
+      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong> (other session types can also be used).</li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
+      </li>
+      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Q&amp;A</strong> and confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
+      </li>
+      <li>Create additional sessions as needed.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="embed-code">Generating the Pigeonhole embed code</h2>
+    <p>In order for a Pigeonhole to display next to a video, iframe embed code will be added to video using a Video Cloud custom field. The format of the code will be:</p>
+    <code translate="no">
+    <pre>&lt;iframe src=&quot;<em>Pigeonhole URL</em>&quot;&gt;&lt;/iframe&gt;</pre>
+    </code>
+    <p>To get the value for the <strong>pigeonhole URL</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Pigeonhole, click <strong>Run your event</strong> in the left navigation.</li>
+      <li>Click the link in the <strong>Invite your attendees</strong> section.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-invite-attendees.png" /></figure>
+      </li>
+      <li>Confirm that a  new browser tab with a list of all sessions opens.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-list.png" /></figure>
+      </li>
+      <li>Click the enter link for the appropriate session, for example, <strong>Enter this Q&amp;A</strong>. Note that the link will change based upon the session type.</li>
+      <li>Confirm that the Pigeonhole opens in a new browser tab. The Pigeonhole URL is displayed in the browser address bar.</li>
+    </ol>
+    <p>The <strong>iframe</strong> tag with the  Pigeonhole URL will be added to the appropriate video.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="event_settings">Configuring event settings</h2>
+    <p>Settings for the Pigeonhole event must also be configured so the SSO information can be used to create a user profile.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In the left navigation, click <strong>More settings</strong>.</li>
+      <li>Click the <strong>Attendees</strong> tab.</li>
+      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-profile-info.png" /></figure>
+      </li>
+      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
+      <li>Check the <strong>Enable registrant profile for this event</strong> option.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-reg-profiles.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="custom_field">Creating a custom field</h2>
+    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video, a custom field is used. To create a custom field, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to Video Cloud Studio.</li>
+      <li><strong></strong>In the primary navigation, click <strong>Admin</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the Admin menu.</li>
+      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
+      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
+      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
+      <li><span class="button-blue">Save</span> the custom field.</li>
+    </ol>
+    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="add_video">Adding a Pigeonhole to a video</h2>
+    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Click on a video to open the video properties.</li>
+      <li>Locate the <strong>Custom Fields</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
+      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="phole-session">Getting the Pigeonhole session ID</h2>
+    <p>When a session type of Breakout Room is added to the agenda, Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to the breakout room. The agenda requires that the Pigeonhole session ID and passcode be entered. Follow these steps to get the Pigeonhole session ID.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to your Pigeonhole account.</li>
+      <li>Click the <strong>Event name</strong>.</li>
+      <li>Click <strong>Agenda</strong> in the left navigation.</li>
+      <li>Locate the breakout room session.</li>
+      <li>Click the dropdown arrow to display the <strong>Session ID</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-id.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="phole-passcode">Getting the Pigeonhole passcode</h2>
+    <p>When a session type of Breakout Room is added to the agenda,  the Pigeonhole session ID and passcode be must be entered. Follow these steps to get the Pigeonhole passcode.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Login to your Pigeonhole account.</li>
+      <li>Locate the <strong>Event name</strong>.</li>
+      <li>The Pigeonhole passcode is displayed above the event name<strong></strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-passcode.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sso-attributes">Passing user SSO information to Pigeonhole</h2>
+    <p>If your Virtual Event Experience is secured using SSO, it is possible to pass user SSO  information to Pigeonhole so that users can be tracked inside of Pigeonhole. The following sections walk through the settings and steps that are needed  to pass SSO information to Pigeonhole.</p>
+    <h3>Map SSO attributes</h3>
+    <p>You  need to ensure that the correct SSO attributes are mapped so they can be passed to your experience and then to Pigeonhole. The integration Pigeonhole looks for the following values:</p>
     <ul>
-      <li><a href="#objects">Add objects to pages</a></li>
-      <li><a href="#videos">Add videos to a site</a></li>
-      <li><a href="#style">Customize the site style</a></li>
-      <li><a href="#cta">Configure calls-to-action</a></li>
-      <li><a href="#app_behavior">Customize appearance and behavior</a></li>
-      <li><a href="#site_features">Customize site features</a></li>
-      <li><a href="#video_playback">Customize video and playback</a></li>
-      <li><a href="#site_config">Customize the site configuration</a></li>
-      <li><a href="#details">Configure the site details</a></li>
+      <li><code translate="No">fname</code> - User's name</li>
+      <li><code translate="No">nameID</code> - User's email address</li>
     </ul>
-    <p>These options are accessed by clicking the menus in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-nav.png" /></figure>
+    <p>The example below shows these attributes being exposed from inside the Okta SSO Admin page.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
+    <h3>Expose attributes in the Access Control Profile</h3>
+    <p>Ensure that the Access Control Profile used to secure the experience has the <strong>Expose all attributes</strong> option checked.  If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open the <strong>Gallery</strong> module.</li>
+      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/icon-settings.png" />)  on the home page.</li>
+      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
+      <li>Click the edit icon for the profile being used to secure the experience.</li>
+      <li>Ensure that the <strong>Expose all attributes</strong> setting is checked.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-sso-expose.png" /></figure>
+      </li>
+    </ol>
+    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.    If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="objects">Adding objects to a page</h2>
-    <p>Objects such as text, images and links can be added to pages allowing you to customize and brand your video experience. To learn how to add objects to pages, see <a href="/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html">Customizing the Content of Virtual Event Experience Pages</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="videos">Adding videos to a site</h2>
-    <p>To add videos to a site, click <strong>Videos</strong> in the left navigation. For complete details on how to add videos to a video site, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Adding Videos to a Virtual Event Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="style">Customizing the site style</h2>
-    <p>To customize the colors and fonts used on the site, or to select another theme, click <strong>Style</strong> in the left navigation. For complete details on how to customize the style, see <a href="/experiences/virtual-event/customizing-style-virtual-event-experience.html">Customizing the Style of a Virtual Event Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="cta">Configuring calls-to-action</h2>
-    <p>Calls to action provide the ability to include custom HTML, images or advertisements on a page. Not all templates support calls to action. To configure calls to action, click <strong>Calls-To-Action</strong> in the left navigation.</p>
-    <p>For complete details on configuring calls to action, see <a href="/experiences/portal/other/configuring-calls-action-portal-experience.html">Configuring Calls to Action on a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="app_behavior">Customizing the appearance and behavior</h2>
-    <p>The appearance and behavior settings are used to configure a custom header/footer, use custom CSS and JavaScript files and configure a background image or video. To configure the appearance and behavior settings, click <strong>Appearance and Behavior</strong> in the left navigation.</p>
-    <p>For complete details on the appearance and behavior settings, see <a href="/experiences/virtual-event/customizing-appearance-and-behavior-virtual-event-experience.html">Customizing the Appearance and Behavior of a Virtual Event Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="site_features">Customizing site features</h2>
-    <p>The site feature settings are used to enable site search, configure the event agenda, add event sponsors, configure the video metadata language, configure social sharing options and allow commenting on videos. To configure the site features, click <strong>Site Features</strong> in the left navigation.</p>
-    <p>For complete details on how to customize the site features, see <a href="/experiences/portal/customizing/customizing-site-features-portal-experience.html">Customizing the Site Features of a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="video_playback">Customizing the video and playback settings</h2>
-    <p>The video and playback settings provide the ability to select a custom player for the experience, configure Campaign integration and lead forms and configure videos options such as downloads and related links. To customize the video and playback settings, click <strong>Video and Playback</strong> in the left navigation.</p>
-    <p>For complete details on configuring the video and playback settings, see <a href="/experiences/portal/customizing/customizing-video-and-playback-settings-portal-experience.html">Customizing the Video and Playback Settings of a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="site_config">Customizing the site configuration</h2>
-    <p>The site configuration settings provide the ability to host the site at a custom domain, secure it using SSL or restrict access to the site. To configure the site configuration, click <strong>Site Configuration</strong> in the left navigation.</p>
-    <p>For complete details on site configuration settings, see <a href="/experiences/portal/customizing/customizing-site-configuration-portal-experience.html">Customizing the Site Configuration of a Portal Experience</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="details">Configuring the site details</h2>
-    <p>The overview settings provide the ability to edit the name, description and language for the site. To configure the site details, click<strong> Overview </strong>in the left navigation.</p>
-    <p>For complete details on configuring the site details, see <a href="/experiences/portal/customizing/configuring-details-portal-experience.html">Configuring the Details for a Portal Experience</a>.</p>
+    <h2 id="tracking">How attendees are tracked</h2>
+    <p>If the SSO information is provided, Pigeonhole can generate a unique ID for the attendee that will be the same across all devices, browsers and sessions. This will reduce the chance for duplicate sessions being recorded which can happen if the viewer enters the experience using a different browser or device. Duplicate sessions  may also happen if two or more experiences with a widget are embedded in the experience. If no SSO information is provided, then all the duplicate session  apply here as well.</p>
   </section>
 </article>
 

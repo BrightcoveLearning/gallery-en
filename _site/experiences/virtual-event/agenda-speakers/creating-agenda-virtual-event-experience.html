@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Integrating Pigeonhole with a Virtual Event Experience</title>
+        <title>Creating an Event Agenda File</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.">
+        <meta name="description" content="In this topic you will learn how to create an event agenda file that can be uploaded to initially populate an online agenda for a  Virtual Event  Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -891,7 +891,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/integrating-pigeonhole-virtual-event-experience.html" aria-current="page">Integrating Pigeonhole</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/integrating-pigeonhole-virtual-event-experience.html">Integrating Pigeonhole</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Integrating Pigeonhole with a Virtual Event Experience</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/agenda-speakers/">Agenda speakers</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Creating an Event Agenda File</li>
             
             
           </ol>
@@ -1249,156 +1253,45 @@
       <br>
       
       
-<h1>Integrating Pigeonhole with a Virtual Event Experience</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to integrate Pigeonhole with a Virtual Event Experience.</summary>
+  <h1>Creating an Event Agenda File</h1>
+  <summary>In this topic you will learn how to create an event agenda file that can be uploaded to initially populate an online agenda for a  Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to one or more videos in a Virtual Event experience. Typically, a new Pigeonhole is created for the  duration of the live event and then sessions can be created for each video or breakout room you want to add Pigeonhole functionality to. To add interactivity to videos, iframe embed code is associated with each video using a Video Cloud custom field. The embed code will cause the Pigeonhole pod to display next to the video player for chosen videos.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-example.png" /></figure>
-    <p>For breakout rooms, the session ID and passcode are added to the breakout session in the agenda.</p>
+    <p>In many cases, the event agenda  is initially created/organized using a  third-party tool, for example, Microsoft Excel or Google Sheets.  The Agenda module provides the ability to upload an external .csv agenda file  to initially create the event agenda. Once the agenda file is uploaded, it can be edited using the Agenda module.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: A sample agenda template file can be downloaded here.</aside>
   </section>
   <section class="bcls-section">
-    <h2 id="new_session">Creating a new Pigeonhole event and sessions</h2>
-    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Pigeonhole functionality added to it.</p>
-    <ol class="bcls-tasklist">
-      <li>Login to your Pigeonhole account.</li>
-      <li> Click <strong>+ Add Pigeonhole</strong> and click your account to use.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new.png" /></figure>
-      </li>
-      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
-      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-event.png" /></figure>
-      </li>
-      <li>Click <strong>Continue</strong>.</li>
-      <li>Now that the event is created the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> and click <strong>Create new</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-add-new-session.png" /></figure>
-      </li>
-      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong> (other session types can also be used).</li>
-      <li>Enter a <strong>Session name</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-agenda.png" /></figure>
-      </li>
-      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
-      <li>Click <strong>Add Q&amp;A</strong> and confirm the session was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-new-session-created.png" /></figure>
-      </li>
-      <li>Create additional sessions as needed.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="embed-code">Generating the Pigeonhole embed code</h2>
-    <p>In order for a Pigeonhole to display next to a video, iframe embed code will be added to video using a Video Cloud custom field. The format of the code will be:</p>
-    <code translate="no">
-    <pre>&lt;iframe src=&quot;<em>Pigeonhole URL</em>&quot;&gt;&lt;/iframe&gt;</pre>
-    </code>
-    <p>To get the value for the <strong>pigeonhole URL</strong>, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In Pigeonhole, click <strong>Run your event</strong> in the left navigation.</li>
-      <li>Click the link in the <strong>Invite your attendees</strong> section.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-invite-attendees.png" /></figure>
-      </li>
-      <li>Confirm that a  new browser tab with a list of all sessions opens.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-list.png" /></figure>
-      </li>
-      <li>Click the enter link for the appropriate session, for example, <strong>Enter this Q&amp;A</strong>. Note that the link will change based upon the session type.</li>
-      <li>Confirm that the Pigeonhole opens in a new browser tab. The Pigeonhole URL is displayed in the browser address bar.</li>
-    </ol>
-    <p>The <strong>iframe</strong> tag with the  Pigeonhole URL will be added to the appropriate video.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="event_settings">Configuring event settings</h2>
-    <p>Settings for the Pigeonhole event must also be configured so the SSO information can be used to create a user profile.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the left navigation, click <strong>More settings</strong>.</li>
-      <li>Click the <strong>Attendees</strong> tab.</li>
-      <li>Check the <strong>Allow creating attendee profiles through embed</strong> option.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-profile-info.png" /></figure>
-      </li>
-      <li>Scroll down to the <strong>Registrant Profiles</strong> section on the page.</li>
-      <li>Check the <strong>Enable registrant profile for this event</strong> option.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-reg-profiles.png" /></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="custom_field">Creating a custom field</h2>
-    <p>In order for the Virtual Event template to know which Pigeonhole to display for a video, a custom field is used. To create a custom field, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to Video Cloud Studio.</li>
-      <li><strong></strong>In the primary navigation, click <strong>Admin</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the Admin menu.</li>
-      <li>Create a new custom field named <strong>Chat Embed</strong>. </li>
-      <li>Confirm that the internal name is <strong>chat_embed</strong>.</li>
-      <li>Set the <strong>Type</strong> to be <strong>Text</strong>.</li>
-      <li><span class="button-blue">Save</span> the custom field.</li>
-    </ol>
-    <p>For information on creating custom fields in Video Cloud, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="add_video">Adding a Pigeonhole to a video</h2>
-    <p>To have a Pigeonhole appear next to a video in the Virtual Event template, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Media</strong> module.</li>
-      <li>Click on a video to open the video properties.</li>
-      <li>Locate the <strong>Custom Fields</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
-      <li>Paste the Pigeonhole embed code  into the <strong>Chat Embed</strong> custom field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-set-custom-field.png" /></figure>
-      </li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="phole-session">Getting the Pigeonhole session ID</h2>
-    <p>When a session type of Breakout Room is added to the agenda, Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to the breakout room. The agenda requires that the Pigeonhole session ID and passcode be entered. Follow these steps to get the Pigeonhole session ID.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to your Pigeonhole account.</li>
-      <li>Click the <strong>Event name</strong>.</li>
-      <li>Click <strong>Agenda</strong> in the left navigation.</li>
-      <li>Locate the breakout room session.</li>
-      <li>Click the dropdown arrow to display the <strong>Session ID</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-session-id.png" /></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="phole-passcode">Getting the Pigeonhole passcode</h2>
-    <p>When a session type of Breakout Room is added to the agenda,  the Pigeonhole session ID and passcode be must be entered. Follow these steps to get the Pigeonhole passcode.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Login to your Pigeonhole account.</li>
-      <li>Locate the <strong>Event name</strong>.</li>
-      <li>The Pigeonhole passcode is displayed above the event name<strong></strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-passcode.png" /></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="sso-attributes">Passing user SSO information to Pigeonhole</h2>
-    <p>If your Virtual Event Experience is secured using SSO, it is possible to pass user SSO  information to Pigeonhole so that users can be tracked inside of Pigeonhole. The following sections walk through the settings and steps that are needed  to pass SSO information to Pigeonhole.</p>
-    <h3>Map SSO attributes</h3>
-    <p>You  need to ensure that the correct SSO attributes are mapped so they can be passed to your experience and then to Pigeonhole. The integration Pigeonhole looks for the following values:</p>
+    <h2 id="naming">Column naming requirements</h2>
+    <p>When creating the initial agenda file, you can download a sample agenda template and edit it or use an existing agenda file you may have created. The Agenda module looks for the existence of specific column names. These columns will be mapped to the appropriate fields in the agenda module. Other columns that may be in your agenda file will be ignored by the Agenda module. In order to upload an agenda file, the following columns are required:</p>
     <ul>
-      <li><code translate="No">fname</code> - User's name</li>
-      <li><code translate="No">nameID</code> - User's email address</li>
+      <li><code translate="No">name</code> - Session name</li>
+      <li><code translate="No">start_date</code> - Session start date (MM/DD/YYYY format)</li>
+      <li><code translate="No">start_time</code> - Session start time</li>
+      <li><code translate="No">timezone</code> - Timezone for start_time (using zone ID from the <a href="https://nodatime.org/TimeZones">IANA time zones</a>)</li>
+      <li><code translate="No">duration</code> - Session duration in minutes</li>
+      <li><code translate="No">track</code> - Value that identifies the track (i.e. technical, sales, marketing);  a track name of <strong>ALL</strong> indicates that the session  spans all tracks (i.e. lunch, breaks)</li>
     </ul>
-    <p>The example below shows these attributes being exposed from inside the Okta SSO Admin page.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-okta-example.png" /></figure>
-    <h3>Expose attributes in the Access Control Profile</h3>
-    <p>Ensure that the Access Control Profile used to secure the experience has the <strong>Expose all attributes</strong> option checked.  If the SSO information is not available, users will appear as anonymous in Pigeonhole.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Gallery</strong> module.</li>
-      <li>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/icon-settings.png" />)  on the home page.</li>
-      <li>In the left navigation, click <strong>Access Control Profiles</strong>.</li>
-      <li>Click the edit icon for the profile being used to secure the experience.</li>
-      <li>Ensure that the <strong>Expose all attributes</strong> setting is checked.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-sso-expose.png" /></figure>
-      </li>
-    </ol>
-    <p>For information on configuring single sign-on, see <a href="/settings/configuring-access-control-profiles.html#sso">Configuring Access Control Profiles</a>.    If everything is configured correctly, the user info will display in Pigeonhole when the viewer logs into the experience.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-portal-example-highlight.png" /></figure>
-  </section>
-  <section class="bcls-section">
-    <h2 id="tracking">How attendees are tracked</h2>
-    <p>If the SSO information is provided, Pigeonhole can generate a unique ID for the attendee that will be the same across all devices, browsers and sessions. This will reduce the chance for duplicate sessions being recorded which can happen if the viewer enters the experience using a different browser or device. Duplicate sessions  may also happen if two or more experiences with a widget are embedded in the experience. If no SSO information is provided, then all the duplicate session  apply here as well.</p>
+    <p>The following columns are optional, but if they exist in your agenda file, they will also be imported into the agenda module:</p>
+    <ul>
+      <li><code translate="No">description</code> - Session description</li>
+      <li><code translate="No">speaker1_first</code> - Speaker first name</li>
+      <li><code translate="No">speaker1_last</code> - Speaker last name</li>
+      <li><code translate="No">speaker1_email</code> - Speaker email address (used to uniquely identify a speaker)</li>
+      <li><code translate="No">speaker2_first</code> - Speaker 2 first name</li>
+      <li><code translate="No">speaker2_last</code> - Speaker 2 last name</li>
+      <li><code translate="No">speaker2_email</code> - Speaker 2 email address (used to uniquely identify a speaker)</li>
+      <li><code translate="No">speaker3_first</code> - Speaker 3 first name</li>
+      <li><code translate="No">speaker3_last</code> - Speaker 3 last name</li>
+      <li><code translate="No">speaker3_email</code> - Speaker 3 email address (used to uniquely identify a speaker)</li>
+      <li><code translate="No">session_type</code> - Session type (session, keynote, meeting, other)</li>
+      <li><code translate="No">video _id</code> - Video ID (for session, keynote and other session types)</li>
+      <li><code translate="No">url</code> - Meeting URL (for meeting session types)</li>
+      <li><code translate="No">related _label</code> - Label for the related link that will appear in the Agenda module</li>
+      <li><code translate="No">related_link</code> - URL link to a session handout, slides, etc.</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--information">Note: Up to three speakers per session can be added. Additional speakers can be <a href="/experiences/virtual-event/agenda-speakers/managing-agenda-virtual-event-experience.html#select_speaker">added to a session</a> using the Agenda module.</aside>
+    <p>When you are ready to import your agenda into the Agenda module, export it as a .csv file. <strong>The Agenda module can only import a .csv file.</strong> For information on how to upload your agenda file into the Agenda module, see <a href="managing-agenda-virtual-event-experience.html">Managing the Event Agenda</a>.</p>
+    <p>&nbsp;</p>
   </section>
 </article>
 

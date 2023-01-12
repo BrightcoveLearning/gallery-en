@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Getting Started with the Agenda Module</title>
+        <title>Managing the Event Agenda</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This topic provides an overview of the Agenda module which is used to manage the event agenda and speakers for a Virtual Event Experience.">
+        <meta name="description" content="In this topic you will learn how to upload and configure the event  agenda  for a  Virtual Event  Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -885,7 +885,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/getting-started-agenda-module.html" aria-current="page">Getting Started with the Agenda Module</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/getting-started-agenda-module.html">Getting Started with the Agenda Module</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Getting Started with the Agenda Module</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/agenda-speakers/">Agenda speakers</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Managing the Event Agenda</li>
             
             
           </ol>
@@ -1250,34 +1254,166 @@
       
       
 <article class="bcls-article">
-  <h1>Getting Started with the Agenda Module</h1>
-  <summary>This topic provides an overview of the Agenda module which is used to manage the event agenda and speakers for a Virtual Event Experience.</summary>
+  <h1>Managing the Event Agenda</h1>
+  <summary>In this topic you will learn how to upload and configure the event  agenda  for a  Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <p>To access the Agenda module, click on a Virtual Event Experience to open the Gallery Site Editor and then click<strong> Site Features &gt; Agenda</strong>.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-module-home.png" /></figure>
-    <p>From the home page you can:</p>
+    <p>The Agenda module provides the ability to enter the agenda items manually or by uploading  an external .csv agenda file. For information on creating an agenda file for upload, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>. </p>
+    <p>Using the Gallery Site Editor, you can create or upload an event agenda using the Agenda module. To access the Agenda module, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the experience name to open the Gallery Site Editor.</li>
+      <li><code translate="No"></code>In the left navigation, click<strong> Site Features &gt; Agenda</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="new">Creating a new agenda</h2>
+    <p>To create a new agenda for the experience, click <span class="button-blue"><i data-feather="plus-square"></i> New agenda</span> in the Agenda module.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-new.png" /></figure>
+    </p>
+    <p>The agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience. Click on the <strong>Event name</strong> to add tracks and sessions.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="import">Importing an agenda file</h2>
+    <p>The Agenda module provides the ability to import an agenda .csv file. This provides an alternate way of creating sessions without having to use the Agenda UI. A sample file can be downloaded by clicking on the <strong>Download agenda template</strong> link at the top of the <strong>My agenda</strong> page. <strong>The Agenda module can only import  .csv files.</strong></p>
+    <p>To import an agenda file, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <span class="button-blue-text"><i data-feather="upload-cloud"></i> Import agenda</span>.</li>
+      <li>Browse and select the agenda file to upload.</li>
+      <li>Confirm the agenda is listed on the <strong>My agenda</strong> page.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-imported.png" /></figure>
+      </li>
+    </ol>
+    <p>If any errors occur during the agenda import, a message will be displayed. After the import, the agenda <strong>Status</strong> will be <strong>DEACTIVATED</strong> which indicates that the agenda will not be displayed in the Virtual Event Experience.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting the agenda</h2>
+    <p>To delete the agenda, click the delete icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />) next to the agenda and then confirm the delete.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">Exporting the agenda file</h2>
+    <p>The Agenda module provides the ability to export the agenda. Exporting the agenda can be useful when:</p>
     <ul>
-      <li><a href="#import_agenda">Import an  agenda file</a></li>
-      <li><a href="#new_agenda">Create a new agenda</a></li>
-      <li><a href="#manage_agenda">Manage the  agenda</a></li>
-      <li><a href="#speakers">Manage event speakers</a> </li>
+      <li>You want to export an event agenda to edit and then use in another experience</li>
+      <li>An event planner wants to to export a copy of the agenda and work with it in Microsoft Excel or another tool</li>
     </ul>
-    To return to the Gallery Site Editor from the Agenda module, click the <strong>Back to My Event</strong> link on the left side of the page.</section>
-  <section class="bcls-section">
-    <h2 id="import_agenda">Importing an  agenda file</h2>
-    <p>The Agenda module provides the ability to upload an external .csv agenda file  to initially create the event agenda. Once the agenda file is uploaded, it can be edited using the Agenda module. For information on creating an agenda file, see <a href="creating-agenda-virtual-event-experience.html">Creating an Event Agenda File</a>.</p>
+    <p>To export the agenda, click the download icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-download.png" />) next to the agenda.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="new_agenda">Creating a new agenda</h2>
-    <p>To create a new event agenda, click <span class="button-blue"><i data-feather="plus-square"></i> New agenda</span> and then click on the event name to start adding sessions. For complete information on creating and editing an event agenda, see <a href="managing-agenda-virtual-event-experience.html">Managing the Event Agenda</a>.</p>
+    <h2 id="title">Editing the agenda title</h2>
+    <p>The agenda title will be displayed on the experience homepage above the agenda. To edit the agenda title, click on the <strong>Event name</strong> to open the agenda editor. Click the edit icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-edit.png" />), enter a title and then press <strong>enter</strong>.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-title.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="manage_agenda">Managing the event agenda</h2>
-    <p>To edit the event agenda, click on it and make any changes as needed. For information, see <a href="managing-agenda-virtual-event-experience.html">Managing the Event Agenda</a>.</p>
+    <h2 id="edit">Editing the agenda</h2>
+    <p>After an agenda file has been created, it will appear on the <strong>My agenda</strong> page.<strong></strong> To view the agenda details, click on the <strong>Event name</strong>. The agenda editor will open displaying the details.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-details.png" /></figure>
+    <p>Click a date on the left side of the page to view the agenda for that day. The tracks are displayed as column headers at the top of the page.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="speakers">Managing the event speakers</h2>
-    <p>To manage the speakers associated with an event, click <strong>Speakers</strong> in the left navigation. For information on managing speakers, see <a href="managing-event-speakers.html">Managing Event Speakers</a>.</p>
+    <h2 id="adding_sessions">Adding a session</h2>
+    <p>To add a new session, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on the agenda to open the agenda editor.</li>
+      <li>Click on an open time slot or click <span class="button-blue-text"><i data-feather="plus-square"></i> Add Session</span> at the top of the page
+        .
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add.png" /></figure>
+      </li>
+      <li>Enter the session information.
+        <ul>
+          <li>Session Name</li>
+          <li>Session Type
+            <ul>
+              <li>Session</li>
+              <li>Keynote</li>
+              <li>Meeting</li>
+              <li>Other</li>
+            </ul>
+          </li>
+          <li>Session Type Parameters - Based upon the Session Type that is selected, additional parameters will be displayed:
+            <ul>
+              <li><strong>Video </strong> - Click <strong>Add video</strong> and select the video to display for this session (available with <strong>Session</strong>, <strong>Keynote</strong> and <strong>Other</strong> session types)</li>
+              <li><strong>URL</strong> - Meeting URL to open (available with <strong>Meeting</strong> session type)</li>
+              <li><strong>Pigeonhole Session ID and Pigeonhole Passcode</strong> - The <a href="../customizing/integrating-pigeonhole-virtual-event-experience.html#phole-session">Pigeonhole Session ID</a> and <a href="../customizing/integrating-pigeonhole-virtual-event-experience.html#phole-passcode">Passcode</a> are needed to display a Pigeonhole</li>
+            </ul>
+          </li>
+          <li>Speakers - Click <strong>Select speakers</strong> and <a href="#select_speakers">select one or more speakers</a> for the session</li>
+          <li>Start Date</li>
+          <li>Start Time</li>
+          <li>Duration - Session duration</li>
+          <li>Description</li>
+          <li>Track - Select a track to assign the session to; see the <a href="#add_track">Adding a new track</a> section below for details on adding new tracks</li>
+          <li>Cover Image - The cover image appears with the session  in the agenda display</li>
+          <li>Related Content - Can be used to provide a link to session content, for example, handouts or slides
+            <ul>
+              <li><strong>Label</strong> - Label for the content</li>
+              <li><strong>URL</strong> - Link to the content</li>
+            </ul>
+          </li>
+        </ul>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-details.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <p>Confirm the session is added to the agenda. If there are multiple sessions in the same track scheduled at the same time, they will be highlighted and appear next to each other.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-session-add-same-time.png" /></figure>
+    </p>
+    <p>To resolve session overlaps, edit a session and change the time or drag a session to a new time slot.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="editing_sessions">Editing and deleting sessions</h2>
+    <p>To edit or delete a session, click on a session to open the Edit Session panel. To edit the session, make any changes and click <span class="button-blue">Save</span>. To delete the session, click <span class="button-red">Delete Session <i data-feather="trash-2"></i></span>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="select_speaker">Adding speakers to a session</h2>
+    <p>To add speaker(s) to a session, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a session to open the session editor.</li>
+      <li>Click <span class="button-blue-text-bordered"> <i data-feather="plus-square"></i> Select speakers</span>.</li>
+      <li>Select one or more speakers or click <span class="button-blue">Create speaker <i data-feather="plus-square"></i></span> to create a new speaker.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-select-speaker.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: A maximum of 5 speakers can be added to a session<a href="managing-event-speakers.html"></a>.</aside>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">Note: For information on creating speakers, see <a href="managing-event-speakers.html">Managing Event Speakers</a>.</aside>
+    The <strong>Search</strong> field can be used to search for speakers.</section>
+  <section class="bcls-section">
+    <h2 id="add_track">Adding a new track</h2>
+    <p>Tracks are used to group related sessions. For example, a Marketing track might have all of the marketing related sessions. An agenda will typically have multiple tracks. To add a new track, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on the agenda to open the agenda editor.</li>
+      <li>Click <span class="button-blue-text"><i data-feather="plus-square"></i> Add Track</span> at the top of the agenda. A new <strong>Unnamed Track</strong> will be created. You may have to horizontally scroll the agenda to view it.</li>
+      <li>Click on the <strong>Unnamed Track</strong> to edit the name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-add-track.png" /></figure>
+      </li>
+      <li>Press <strong>enter</strong> to save the change.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit_track">Editing a  track</h2>
+    <p>To edit a  track, click on the track name, make any changes and press <strong>enter</strong> to save the changes.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-track-edit.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="reorder_track">Reordering tracks</h2>
+    <p> To change the order of tracks in the agenda, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on the agenda to open the agenda editor.</li>
+      <li>Hover over the track name to move, click the grab icon and drag the track to the new location.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-reorder-track.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="activate">Activating and deactivating an agenda</h2>
+    <p>The agenda status determines whether or not the agenda will be displayed in the associated Virtual Event Experience. The status is displayed in the page header below the agenda name.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/agenda-status.png" /></figure>
+    <ul>
+      <li><strong>ACTIVATED</strong> - The agenda will be displayed</li>
+      <li><strong>DEACTIVATED</strong> - The agenda will not be displayed</li>
+    </ul>
+    <p>To activate an agenda,  click <span class="button-blue">Activate</span> at the top of the page. To deactivate an agenda, click on it and click <span class="button-blue">Deactivate</span>. Note that after activating/deactivating an agenda, the experience doesn't need to be republished.</p>
   </section>
 </article>
 

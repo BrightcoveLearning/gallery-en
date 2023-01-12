@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Using Simulated Live Videos</title>
+        <title>Using the Site Editor to Customize a Virtual Event Experience</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to configure VOD videos so they appear as if they are live.">
+        <meta name="description" content="In this topic you will learn how to use the Site Editor to customize the look and feel of an experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -927,7 +927,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/using-simulated-live-videos.html" aria-current="page">Using Simulated Live Videos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/using-simulated-live-videos.html">Using Simulated Live Videos</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Using Simulated Live Videos</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/getting-started/">Getting started</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Using the Site Editor to Customize a Virtual Event Experience</li>
             
             
           </ol>
@@ -1249,246 +1253,66 @@
       <br>
       
       
-<h1>Using Simulated Live Videos</h1>
 <article class="bcls-article">
-  <summary>In this topic you will learn how to configure VOD videos so they appear as if they are live.</summary>
+  <h1>Using the Site Editor to Customize a Virtual Event Experience</h1>
+  <summary>In this topic you will learn how to use the Site Editor to customize the look and feel of an experience.</summary>
   <section class="bcls-section">
-    <p><strong>Simulive</strong> is short for <em>simulated live</em> and is a way in which VOD content can be shown to end users as if it is live. Simulive content is appealing to event organizers as it allows for pre-recording of content and extensive testing prior to go-live. It reduces risks that may arise from potential day-of failures for traditional live events which occur due to encoder issues or other  logistics. Simulive videos will display a countdown timer with the video to indicate when it will be live. The example below is a simulive video in the featured collection.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-featured-countdown.png" /></figure>
-    <p>For videos in the primary and secondary collections, the countdown timer will appear on the card for the video.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-primary-countdown.png" /></figure>
-    <aside class="bcls-aside bcls-aside--information">Note: The Simulive feature requires a paid license for the duration that it is being used whether that is during the testing period or in production. For more information on purchasing a license, please speak with your account manager.</aside>
-    <p>To use simulive content in a Virtual Event Experience, the following must be done:</p>
+    <p>The Gallery Site Editor is used to customize the look and feel of experiences. Click on the experience title to open the Site Editor. The Site Editor provides the ability to:</p>
     <ul>
-      <li>Configure the simulive player plugin</li>
-      <li>Associate the player with the experience</li>
-      <li>Create a simulive custom field</li>
-      <li>Configure simulive video properties</li>
+      <li><a href="#objects">Add objects to pages</a></li>
+      <li><a href="#videos">Add videos to a site</a></li>
+      <li><a href="#style">Customize the site style</a></li>
+      <li><a href="#cta">Configure calls-to-action</a></li>
+      <li><a href="#app_behavior">Customize appearance and behavior</a></li>
+      <li><a href="#site_features">Customize site features</a></li>
+      <li><a href="#video_playback">Customize video and playback</a></li>
+      <li><a href="#site_config">Customize the site configuration</a></li>
+      <li><a href="#details">Configure the site details</a></li>
     </ul>
+    <p>These options are accessed by clicking the menus in the left navigation.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/site-editor-nav.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="plugin">Configuring the simulive player plugin</h2>
-    <p>The Simulive player plugin should be configured for the player used in your Virtual Event Experience. Contact your account manager to get  the information needed to configure the plugin.</p>
-    <ol class="bcls-tasklist">
-      <li>Open the <strong>Players</strong> module.</li>
-      <li>Brightcove recommends creating a dedicated player for your Virtual Event Experience. If you haven't created a dedicated player, click <span class="button-blue">+ Add Player</span>, name the player and then click <span class="button-blue">Save</span>.</li>
-      <li>Click the link for the player you want to configure.</li>
-      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
-      <li>Click <strong>Add a Plugin &gt; Custom Plugin</strong>.</li>
-      <li>For the <strong> Plugin Name</strong> enter <code translate="No">simulivePlugin</code>.</li>
-      <li>For the <strong>JavaScript URL</strong> and <strong>CSS URL</strong>, use the values provided by your account manager.</li>
-      <li>Click <span class="button-blue">Save</span> to save the changes.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: Plugin options can be used to customize the plugin name, text displayed and to configure an end time.  For information, see the <a href="#simulive-options">Simulive player plugin options</a> section.</aside>
+    <h2 id="objects">Adding objects to a page</h2>
+    <p>Objects such as text, images and links can be added to pages allowing you to customize and brand your video experience. To learn how to add objects to pages, see <a href="/experiences/virtual-event/customizing/customizing-content-virtual-event-experience-pages.html">Customizing the Content of Virtual Event Experience Pages</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="custom_player">Configuring a custom player</h2>
-    <p>To configure the Virtual Event Experience to use the custom player, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Gallery</strong> module.</li>
-      <li>Edit the experience.</li>
-      <li>Click <strong>Video and Playback &gt; Player and Lead Form</strong> in the left navigation.
-        <figure class="bcls-figure"></figure>
-      </li>
-      <li>Select the <strong>Use site-specific player</strong> option and select the player configured with the Simulive plugin.</li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
+    <h2 id="videos">Adding videos to a site</h2>
+    <p>To add videos to a site, click <strong>Videos</strong> in the left navigation. For complete details on how to add videos to a video site, see <a href="/experiences/virtual-event/videos/adding-videos-virtual-event-experience.html">Adding Videos to a Virtual Event Experience</a>.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="custom_field">Creating a simulive custom field</h2>
-    <p>A custom field is used to store the date and time a video will be available. To create the simulive custom field, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In the primary navigation, click <strong>Admin</strong> and then <strong>Video Fields</strong>. Note that you must be an account administrator to access to the ADMIN menu.</li>
-      <li>Click <span class="button-blue">Add Custom Field</span>.</li>
-      <li>Create a new custom field using the following values.
-        <ul>
-          <li><strong>Display Name</strong> - Simulive Start</li>
-          <li><strong>Internal Name</strong> - simulive_start</li>
-          <li><strong>Type</strong> - Text</li>
-          <li><strong>Description</strong> - Expected format is is YYYY-MM-DDTHH:MM:SS-HH:MM</li>
-        </ul>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-custom-field.png" /></figure>
-      </li>
-      <li>Click <span class="button-blue">Save Field</span>.</li>
-    </ol>
-    For information on creating custom fields, see <a href="https://studio.support.brightcove.com/admin/creating-custom-metadata-fields.html">Creating Custom Metadata Fields</a>.</section>
-  <section class="bcls-section">
-    <h2 id="assign_fields">Configuring simulive video properties</h2>
-    <p>The custom field <strong>Simulive Start</strong> will hold the date and time a video will be available. The video will not be viewable until the Simulive Start time has been reached. Simulive videos must also be tagged <strong>simulive</strong>. To configure a video as a simulive video, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Media</strong> module.</li>
-      <li>Click on a video title to open the properties.</li>
-      <li>Locate the <strong>Video Information</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
-      <li>Tag the video with <strong>simulive</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-tag.png" /></figure>
-      </li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-      <li>Locate the <strong>Custom Fields</strong> section and click <span class="button-blue-text-bordered"> <i data-feather="edit-3"></i> Edit</span>.</li>
-      <li>Enter a date and time value for the <strong>Simulive Start</strong> field.
-        The correct format of the field is <code translate="No">YYYY-MM-DDTHH:MM:SS-HH:MM</code> where <code translate="No">YYYY-MM-DD</code> is the year, month and date with leading zeroes as appropriate, <code translate="No">HH:MM:SS</code> is the 24-time hour, minute, and second with leading zeroes as appropriate, and <code translate="No">-HH:MM</code> is the timezone offset (for example, -04:00 for UTC-4, +08:30 for UTC+8.5, etc).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/simulive-simulive-start.png" /></figure>
-        <aside class="bcls-aside bcls-aside--information">Note: Simulive relies on a given user's local computer time to determine when the event should start by comparing the local computer time and the configured <strong>Simulive Start</strong> time. For this reason, there may be cases where an  event may start earlier than expected for some users. This is typically due to these users' computer times being inaccurate.</aside>
-      </li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
+    <h2 id="style">Customizing the site style</h2>
+    <p>To customize the colors and fonts used on the site, or to select another theme, click <strong>Style</strong> in the left navigation. For complete details on how to customize the style, see <a href="/experiences/virtual-event/customizing/customizing-style-virtual-event-experience.html">Customizing the Style of a Virtual Event Experience</a>.</p>
   </section>
-<section class="bcls-section">
-    <h2 id="simulive-options">Simulive player plugin options</h2>
-    <p>The Simulive player plugin options (JSON) can be used to customize the behavior of the simulive plugin. To configure the simulive plugin options, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Players</strong> module.</li>
-      <li>Click the link for the simulive player.</li>
-      <li>Click <strong>Plugins</strong> in the left navigation menu.</li>
-      <li>Click the plugin to open the plugin properties.</li>
-      <li>Add the appropriate options documented in the table below.</li>
-      <li>Click <span class="button-blue">Save</span> to save the changes and then publish the player.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: Any changes made to a player may take up to 5 minutes to appear in published players.</aside>
-    <h3>Sample plugin Options (JSON)</h3>
-<pre class="line-numbers"><code class="language-json" translate="No">{
-  "labels": {
-    "countdown": {
-      "live": "Live in:",
-      "day": "day",
-      "days": "days",
-      "hour": "hour",
-      "hours": "hours",
-      "minute": "minute",
-      "minutes": "minutes",
-      "second": "second",
-      "seconds": "seconds"
-    },
-    "ended": "Live event has ended."
-  },
-  "customStartFieldName": "simulive_start",
-  "customEndFieldName": "simulive_end",
-  "tagValue": "simulive",
-  "playlistInSuccession": false,
-  "modalAfterEvent": 1
-}</code></pre>
-    <h3>Plugin Attributes</h3>
-<div style="overflow-x: scroll;">
-  <table class="bcls-table">
-      <thead class="bcls-table__head">
-          <tr>
-              <th>Attribute</th>
-              <th>Type</th>
-              <th>Default</th>
-              <th>Description</th>
-          </tr>
-      </thead>
-      <tbody class="bcls-table__body" valign="top">
-          <tr>
-              <td><code>customEndFieldName</code></td>
-              <td>String</td>
-              <td><code>simulive_end</code></td>
-              <td>Should match the Internal Name value of the Simulive End custom field defined in Studio. The plugin will attempt to match this string against player metadata keys to get the simulated live event’s end date/time.</td>
-          </tr>
-          <tr>
-            <td><code>customStartFieldName</code></td>
-            <td>String</td>
-            <td><code>simulive_start</code></td>
-            <td>Should match the Internal Name value of the Simulive Start custom field defined in Studio. The plugin will attempt to match this string against player metadata keys to get the simulated live event’s start date/time.</td>
-          </tr>
-          <tr>
-            <td><code>debug</code></td>
-            <td>Boolean</td>
-            <td><code>false</code></td>
-            <td>Setting to true will turn on debug logging for the plugin.</td>
-          </tr>
-          <tr>
-            <td><code>labels</code></td>
-            <td>Object</td>
-            <td>An object with countdown and ended values</td>
-            <td>An object describing the wording of the initial countdown modal and the final bookend modal.</td>
-          </tr>
-          <tr>
-            <td><code>labels.countdown</code></td>
-            <td>Object</td>
-            <td><p dir="ltr">An object with the following default key/value pairs:</p>
-              <br><code>
-              <ul>
-                <li>live: 'Live in:'
-                </li>
-                <li>day: 'day'
-                </li>
-                <li>days: 'days'
-                </li>
-                <li>hour: 'hour'
-                </li>
-                <li>minute: 'minute'
-                </li>
-                <li>minutes: 'minutes'
-                </li>
-                <li>second: 'second'
-                </li>
-                <li>seconds: 'seconds'
-                </li>
-            </ul></code></td>
-            <td>An object describing the individual parts of the initial countdown modal. With specific differentiation between singular and plural formats for time increments.</td>
-          </tr>
-          <tr>
-            <td><code>labels.ended</code></td>
-            <td>String</td>
-            <td><code>Live event has ended.</code></td>
-            <td>A string used in the final bookend modal at the end of a live event. This appears only if modalAfterEvent is set to 1 or 2.
-
-</td>
-          </tr>
-          <tr>
-            <td><code>modalAfterEvent</code></td>
-            <td>Number</td>
-            <td><code>1</code></td>
-            <td>If <code>0</code>:
-              <ul>
-                <li>For a single video, the end screen will not be displayed at the end of the simulive video.
-                </li>
-                <li>For a playlist, the end screen will not be displayed once the last simulive video in the playlist ends.
-                </li>
-                <li>The page will display the respective VOD asset(s) on refresh.
-                </li>
-              </ul>
-              <p>If <code>1</code>:</p>
-              <ul>
-                <li>For a single video, the end screen will be displayed at the end of the simulive video.
-                </li>
-                <li>For a playlist, the end screen will be displayed once the last simulive video in the playlist ends.
-                </li>
-                <li>The page will display the respective VOD asset(s) on refresh.
-                </li>
-              </ul>
-              <p>If <code>2</code>:</p>
-              <ul>
-                <li>For a single video, the end screen will be displayed at the end of the simulive video.
-                </li>
-                <li>For a playlist, the end screen will be displayed once the last simulive video in the playlist ends.
-                </li>
-                <li>The page will not display the respective VOD assets on refresh and the end screen will persist.
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><code>playlistInSuccession</code>
-only applicable when using a playlist
-</td>
-            <td>Boolean</td>
-            <td><code>false</code></td>
-            <td>If <code>false</code>, the countdown timer will be displayed before each video in the playlist given that each video has a valid timestamp added.<br><br>
-            On <code>true</code>, the countdown timer will ONLY be displayed before the start time of the first video in the playlist and all other videos will play back-to-back.</td>
-          </tr>
-          <tr>
-            <td><code>tagValue</code></td>
-            <td>string</td>
-            <td><code>simulive</code></td>
-            <td>All videos using simulive features must have a consistent tag. <code>simulive</code> is suggested but if a custom tag is preferred, it can be set here.<br><br>
-            The Simulive plugin will not activate features unless one of the video content tags match the <code>tagValue</code> string.
-            </td>
-          </tr>
-      </tbody>
-  </table>
-</div>
+  <section class="bcls-section">
+    <h2 id="cta">Configuring calls-to-action</h2>
+    <p>Calls to action provide the ability to include custom HTML, images or advertisements on a page. Not all templates support calls to action. To configure calls to action, click <strong>Calls-To-Action</strong> in the left navigation.</p>
+    <p>For complete details on configuring calls to action, see <a href="/experiences/portal/other/configuring-calls-action-portal-experience.html">Configuring Calls to Action on a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="app_behavior">Customizing the appearance and behavior</h2>
+    <p>The appearance and behavior settings are used to configure a custom header/footer, use custom CSS and JavaScript files and configure a background image or video. To configure the appearance and behavior settings, click <strong>Appearance and Behavior</strong> in the left navigation.</p>
+    <p>For complete details on the appearance and behavior settings, see <a href="/experiences/virtual-event/customizing/customizing-appearance-and-behavior-virtual-event-experience.html">Customizing the Appearance and Behavior of a Virtual Event Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="site_features">Customizing site features</h2>
+    <p>The site feature settings are used to enable site search, configure the event agenda, add event sponsors, configure the video metadata language, configure social sharing options and allow commenting on videos. To configure the site features, click <strong>Site Features</strong> in the left navigation.</p>
+    <p>For complete details on how to customize the site features, see <a href="/experiences/portal/customizing/customizing-site-features-portal-experience.html">Customizing the Site Features of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="video_playback">Customizing the video and playback settings</h2>
+    <p>The video and playback settings provide the ability to select a custom player for the experience, configure Campaign integration and lead forms and configure videos options such as downloads and related links. To customize the video and playback settings, click <strong>Video and Playback</strong> in the left navigation.</p>
+    <p>For complete details on configuring the video and playback settings, see <a href="/experiences/portal/customizing/customizing-video-and-playback-settings-portal-experience.html">Customizing the Video and Playback Settings of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="site_config">Customizing the site configuration</h2>
+    <p>The site configuration settings provide the ability to host the site at a custom domain, secure it using SSL or restrict access to the site. To configure the site configuration, click <strong>Site Configuration</strong> in the left navigation.</p>
+    <p>For complete details on site configuration settings, see <a href="/experiences/portal/customizing/customizing-site-configuration-portal-experience.html">Customizing the Site Configuration of a Portal Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="details">Configuring the site details</h2>
+    <p>The overview settings provide the ability to edit the name, description and language for the site. To configure the site details, click<strong> Overview </strong>in the left navigation.</p>
+    <p>For complete details on configuring the site details, see <a href="/experiences/portal/customizing/configuring-details-portal-experience.html">Configuring the Details for a Portal Experience</a>.</p>
   </section>
 </article>
 

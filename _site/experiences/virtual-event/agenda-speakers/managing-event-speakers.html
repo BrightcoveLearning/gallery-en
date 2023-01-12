@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Creating a Virtual Event Experience</title>
+        <title>Managing Event Speakers</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn about creating a Virtual Event  Experience.">
+        <meta name="description" content="In this topic you will learn how to manage the event speakers for a  Virtual Event  Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -855,7 +855,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/creating-virtual-event-experience.html" aria-current="page">Creating a Virtual Event Experience</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/creating-virtual-event-experience.html">Creating a Virtual Event Experience</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Creating a Virtual Event Experience</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/agenda-speakers/">Agenda speakers</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Managing Event Speakers</li>
             
             
           </ol>
@@ -1250,36 +1254,77 @@
       
       
 <article class="bcls-article">
-  <h1>Creating a Virtual Event  Experience</h1>
-  <summary>In this topic you will learn about creating a Virtual Event  Experience.</summary>
+  <h1>Managing Event Speakers</h1>
+  <summary>In this topic you will learn how to manage the event speakers for a  Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <p>Gallery provides a Virtual Event  template which can be used to create Virtual Event  Experiences for hosting and delivering virtual events. To create a new Virtual Event Experience, follow these steps.</p>
+    <p>Event speakers are managed using the Agenda module. If the agenda was initially populated using a  file upload, all event speakers that were included in the  agenda file upload will appear under the <strong>Event Speakers</strong> listing.</p>
+    <p>To access the Agenda module, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Click the <strong>Experiences </strong>link at the top of the page.</li>
-      <li>Click <span class="button-blue">New Experience</span>.</li>
-      <li>Click the <strong>Event</strong> tab at the top of the page. A list of Portal templates will be displayed. Locate the <strong>Virtual Event</strong> template and click <span class="button-blue-text-bordered">Choose</span>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/creating-exp-virtual-event.png" /></figure>
+      <li>Click on a Virtual Event Experience to open the Gallery Site Editor.</li>
+      <li>Click<strong> Site Features &gt; Agenda</strong>.</li>
+      <li>In the left navigation, click <strong>Speakers</strong>. By default, the <strong>Event Speakers</strong> link is selected displaying all speakers for the  current event.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speakers-module-home.png" /></figure>
       </li>
     </ol>
-    <p>After creating a new Virtual Event  Experience, you will be prompted to pre-populate the experience.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/creating-exp-exp-overview.png" /></figure>
-    <p>The process to add videos to the experience is  similar to other Gallery Portal Experiences although the Virtual Event template does expect the collections to be organized in a specific way. For information, see <a href="/experiences/virtual-event/adding-videos-virtual-event-experience.html">Adding Videos to a Virtual Event Experience</a>.</p>
+    <p>Clicking the <strong>All Speakers</strong> link will display all the speakers that have been assigned to all Virtual Event Experiences (account-wide). The speaker list can be sorted by clicking on a column header name.</p>
+    <p>The Agenda module provides the ability to enter speakers manually or by uploading  an external .csv speakers file. For information on creating a speakers file for upload, see <a href="creating-speakers-virtual-event-experience.html">Creating an Event Speakers File</a>. </p>
   </section>
   <section class="bcls-section">
-    <h2 id="header">Customizing the layout</h2>
-    <p>The Gallery Site Editor is used to customize the layout of pages. A logo, menu links, welcome message and the page footer can all be customized using the Gallery Site Editor. For more information on customizing the layout, see <a href="/experiences/virtual-event/customizing-content-virtual-event-experience-pages.html">Customizing the Content of Virtual Event Experience Pages</a>.</p>
+    <h2 id="create">Creating a speaker</h2>
+    <p>To create a new speaker, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <span class="button-blue"><i data-feather="plus-square"></i> Create speaker</span>.</li>
+      <li>Enter the speaker <strong>First Name</strong> and <strong>Last Name</strong>.</li>
+      <li>Enter the speaker <strong>Email</strong>.</li>
+      <li>Enter the speaker <strong>Title</strong> and <strong>Company</strong>.</li>
+      <li>Enter the speaker <strong>Bio</strong>.</li>
+      <li>For the <strong>Headshot</strong> image, click <strong>Upload Image</strong> or the upload icon and browse and select a speaker image.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speaker-create-speaker.png" /></figure>
+      </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="schedule">Configuring the event agenda</h2>
-    <p>The event agenda lists the schedule of live events and other sessions. When an agenda has been created and published, it will appear on the event homepage. For  information on creating the event agenda, see <a href="/experiences/virtual-event/managing-agenda-virtual-event-experience.html">Managing the Event Agenda</a>.</p>
+    <h2 id="import">Importing speakers</h2>
+    <p>The Agenda module provides the ability to import a list of speakers in a .csv file. This provides an alternate way of creating speakers without having to use the Agenda UI. A sample file can be downloaded by clicking on the <strong>Download speakers template</strong> link at the top of the <strong>Speakers</strong> page. <strong>The Agenda module can only import  .csv files.</strong></p>
+    <p>To import a speakers file, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <span class="button-blue"><i data-feather="upload-cloud"></i>  Import speakers</span>.</li>
+      <li>Browse and select the speakers file to upload.</li>
+    </ol>
+    <p>If any errors occur during the speakers import, a message will be displayed. Click the <strong>All Speakers</strong> link to see a list of all speakers.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="speakers">Managing the event speakers</h2>
-    <p>The Speakers section is automatically populated with all of the event speakers. All session speakers will appear in the Speakers section. For  information on managing the event speakers, see <a href="/experiences/virtual-event/managing-event-speakers.html">Managing Event Speakers</a>.</p>
+    <h2 id="edit">Editing a speaker</h2>
+    <p>To edit a new speaker, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a speaker to open the <strong>Edit Speaker</strong> panel.</li>
+      <li>Make any needed changes.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="sponsors">Managing the event sponsors</h2>
-    <p>The Sponsors section is used to highlight the event sponsors. For more information on customizing the event sponsors, see <a href="/experiences/virtual-event/managing-event-sponsors.html">Managing Event Sponsors</a>.</p>
+    <h2 id="delete">Deleting a speaker</h2>
+    <p>To delete a speaker, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a speaker to open the <strong>Edit Speaker</strong> panel.</li>
+      <li>Click <span class="button-red">Delete Speaker <i data-feather="trash-2"></i></span>.</li>
+      <li>Click <span class="button-blue">Delete speaker</span> to confirm the deletion.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="search">Searching for  speakers</h2>
+    <p>The <strong>Search speakers</strong> field at the top of the page can be used to search for speakers. Click the <strong>Event Speakers</strong> or <strong>All Speakers</strong> link to indicate which speakers to search. The speaker first name, last name, title and company fields will be searched.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/speakers-search.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">Exporting a speakers file</h2>
+    <p>The Agenda module provides the ability to export a list of speakers. Exporting the speaker list  can be useful when:</p>
+    <ul>
+      <li>You want to download the list of speakers and then upload it to use in another account</li>
+      <li>An event planner wants to to download a list of speakers and work with it in Microsoft Excel or another tool</li>
+    </ul>
+    <p>To export a list of speakers, click <span class="button-blue-text"><i data-feather="download"></i> Export speakers</span> at the top of the page.</p>
   </section>
 </article>
 

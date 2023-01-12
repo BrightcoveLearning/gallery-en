@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Managing Event Sponsors</title>
+        <title>Exporting Virtual Event Viewer Data</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to manage the event sponsors for a  Virtual Event  Experience.">
+        <meta name="description" content="In this topic you will learn how to export virtual event viewer data.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -909,7 +909,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/managing-event-sponsors.html" aria-current="page">Managing Event Sponsors</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/managing-event-sponsors.html">Managing Event Sponsors</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Managing Event Sponsors</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/other/">Other</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Exporting Virtual Event Viewer Data</li>
             
             
           </ol>
@@ -1249,96 +1253,161 @@
       <br>
       
       
+<h1>Exporting Virtual Event Viewer Data</h1>
 <article class="bcls-article">
-  <h1>Managing Event Sponsors</h1>
-  <summary>In this topic you will learn how to manage the event sponsors for a  Virtual Event  Experience.</summary>
+  <summary>In this topic you will learn how to export virtual event viewer data.</summary>
   <section class="bcls-section">
-    <p>Using the Gallery Site Editor, you can manage the event sponsors that appear on the experience homepage. Sponsors are organized into sponsor groups which represent the various sponsor levels. For example, your event might have &quot;gold&quot;, &quot;silver&quot; and &quot;bronze&quot; level sponsors. Once sponsor groups are created, sponsors can be added into each group. Sponsor groups and logos will appear on the experience homepage. </p>
-    <p>To manage the event sponsors:</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on an experience <strong>Title</strong> to edit it.</li>
-      <li>Click <strong>Site Features &gt; Sponsors </strong> in the left navigation.</li>
-    </ol>
-    <p>A list of sponsor groups will appear.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-groups-listing.png" /></figure>
+    <h2 id="Introduction">Introduction</h2>
+		<p>You can see reporting events for your virtual events by aggregated by device and location, in addition to the account, viewer and video analytics for a particular account. This information can help you better organize your upcoming virtual events to maximize the viewer engagement.</p>
+		<p>This data can be downloaded using the Analytics API, and can be returned in JSON, CSV, or XLXS format. The next section provides a brief introduction to the Analytics API. If you already know how to use it, you may skip to the following section for information on getting analytics data for virtual events.</p>
   </section>
+	<section class="bcls-section">
+		<h2 id="Analytics_API">The Analytics API</h2>
+		<p>Like other <a href="https://apis.support.brightcove.com/">platform APIs</a>, the Analytics API is a RESTful API that allows you to interact with the Video Cloud platform programmatically. It returns analytics data based on various URL parameters that you include with the request. By default the data is returned in JSON format, but you can request CSV or XLXS data to be opened in spreadsheet app instead.</p>
+		<aside class="bcls-aside bcls-aside--information">Note that this document covers only what you need to know to get analytics data for virtual events. Consult the general <a href="https://apis.support.brightcove.com/analytics/index.html">Analytics API documentation</a> for other uses.</aside>
+		<h3>How to make requests</h3>
+		<p>Requests to RESTful APIs are made to a URL, the same way that a browser makes a request to a URL to retrieve a web page. However, you cannot simply paste the API request into a browser, because the request must be authenticated (we are getting to that) to show that you are authorized to get the data. There are many tools to help you do it, however. Here is a short list:</p>
+		<ul>
+			<li><a href="https://apis.support.brightcove.com/general/use-insomnia-api-requests.html">Insomnia</a> (a popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/use-postman-api-requests.html">Postman</a> (another popular cross-platform app)</li>
+			<li><a href="https://apis.support.brightcove.com/general/concepts-api-tester.html">Online API Tester</a> created by Brightcove Learning Services</li>
+			<li><a href="https://apis.support.brightcove.com/getting-started/concepts-testing-tools-brightcove-apis.html#shell">api-tester.sh</a> (a curl-based shell script created by Brightcove Learning Services)</li>
+		</ul>
+		<h3>Authenticating requests</h3>
+		<p>To protect your data, Analytics API requests must include an Authorization header that contains an access token:</p>
+		<pre><code class="language-http" translate="No">Authorization: bearer <span class="bcls-input">your access token</span></code></pre>
+		<p>How do you get the access token? You can read all about it in <a href="https://apis.support.brightcove.com/oauth/guides/getting-access-tokens.html">Getting an Access Token</a>, but the short answer is that after you do a little preparation, any of the tools listed above (and many others) will get it for you.</p>
+		<p>The preparation consists of getting <strong>client credentials</strong>, which consist of a <code translate="no">client_id</code> and a <code translate="no">client_secret</code>. You can get these using the <a href="https://studio.brightcove.com/products/videocloud/admin/oauthsettings">Studio Admin page</a> (you have to be an Admin on your account or get an admin to do it):</p>
+		<ol class="bcls-tasklist-restart">
+			<li>In the primary navigation, click <strong>Admin &gt; API Authentication</strong>.</li>
+			<li>Click <span class="button-blue">Register New Application</span>.</li>
+			<li>In the dialog that opens enter "Analytics" for the name.</li>
+			<li>Select the account(s) you want to use the API for.</li>
+			<li>
+				Under <strong>Exposed Brightcove APIs</strong>, select <strong>Read</strong> under <strong>Analytics</strong> and <strong>Video Read</strong> under <strong>CMS</strong>:
+				<figure class="bcls-figure">
+					<img class="bcls-image" src="/assets/images/experiences/virtual-event/analytics-api-permissions.png" alt="API Permissions">
+					<figcaption class="bcls-caption--image">API Permissions</figcaption>
+				</figure>
+			</li>
+			<li>Click <span class="button-blue">Save</span>.</li>
+			<li>
+				A new dialog will display the <strong>Client ID</strong> <strong>Client Secret</strong>. Copy and save them both in a secure place where you can find them again.
+				<aside class="bcls-aside bcls-aside--warning">Once you close this dialog, there is no way to retrieve this client secret again. If you lose it, you will need to create a new one.</aside>
+			</li>
+		</ol>
+		<h3>The access token</h3>
+		<p>The access token is retrieved from another Brightcove API using the client credentials. You can do that yourself, but again, any of the tools listed in the previous section will take your client credentials and get the access token for you, and put it into the request header sent with your Analytics API request.</p>
+	</section>
   <section class="bcls-section">
-    <h2 id="create-group">Creating a sponsor group</h2>
-    <p>Sponsor groups are created to organize sponsors into levels. Creating a sponsor group allows you to group the sponsors by level and control the size of the sponsor logo image that will appear on the event homepage. To create a new sponsor group, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <span class="button-blue-text-bordered">+ Add group</span>.</li>
-      <li>Enter the <strong>Group Name</strong>.</li>
-      <li>Enter the <strong>Group row height</strong> (in pixels). The height must be between 1 and 300. The row height will control the image height of the sponsor logos in the group.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsors-add-group.png" /></figure>
-      </li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
+    <h2 id="API_request">The Analytics API request</h2>
+    <p>Here is the form of the Analytics API request:</p>
+    <pre><code class="language-http" translate="No">http://analytics.api.brightcove.com/v1/data?accounts=<span class="bcls-input">{account1_id,account2_id}</span>
+&from=<span class="bcls-highlight">{yyyy-mm-dd}</span>
+&to=<span class="bcls-highlight">{yyyy-mm-dd}</span>
+&dimensions=viewer,video,country,city,region,device_type,protocol
+&fields=video,video.name,viewer,country,region,city,device_type,time,video_view,video_percent_viewed,video_seconds_viewed
+&sort=-video_view&limit=20&format=csv</code></pre>
+		<aside class="bcls-aside bcls-aside--information">Note that there should be no line breaks in the request URL! linebreaks are added here for readability.</aside>
+		<h3>Required parameters</h3>
+		<table class="bcls-table">
+			<caption class="bcls-caption--table">Required Parameters</caption>
+			<thead class="bcls-table__head">
+					<tr>
+							<th>Parameter</th>
+							<th>Required Values</th>
+							<th>Optional Values</th>
+					</tr>
+			</thead>
+			<tbody class="bcls-table__body">
+					<tr>
+							<td><code translate="no">accounts</code></td>
+							<td>one or more accounts IDs</td>
+							<td></td>
+					</tr>
+					<tr>
+							<td><code translate="no">dimensions</code></td>
+							<td>
+								<ul>
+									<li><code translate="no">viewer</code></li>
+									<!-- <li><code translate="no">application</code></li> -->
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li><code translate="no">account</code></li>
+									<li><code translate="no">video</code></li>
+									<li><code translate="no">country</code></li>
+									<li><code translate="no">region</code></li>
+									<li><code translate="no">city</code></li>
+									<li><code translate="no">device_type</code></li>
+									<li><code translate="no">protocol</code></li>
+								</ul>
+							</td>
+					</tr>
+			</tbody>
+	</table>
+	<p>See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#params">Parameters</a> for some additional optional parameters that can be used to the set the date range, sort the results, set the response format, etc.</p>
+
   </section>
-  <section class="bcls-section">
-    <h2 id="edit-group">Editing a sponsor group</h2>
-    <p>To edit a sponsor group, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on a sponsor group name to open the <strong>Group settings</strong> panel.</li>
-      <li>Make any needed changes.</li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete-group">Deleting a sponsor group</h2>
-    <p>To delete a sponsor group, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click the checkbox next to the sponsor name to delete.</li>
-      <li>Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />.</li>
-      <li>If there are no sponsors in the group, click <span class="button-red">Delete</span> to confirm the delete.</li>
-      <li>If there are sponsors in the group, you can choose to move them to another group or delete them with the group. Click <span class="button-red">Delete</span> to confirm.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-delete-move.png" /></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="change-group-order">Changing the sponsor group order</h2>
-    <p>The order of the sponsors will control the order of how they are displayed on the event homepage. To change the order of the sponsor groups:</p>
-    <ul>
-      <li>Enter the sponsor order in the <strong>Order</strong> field <strong>OR</strong></li>
-      <li>Click on the grab handle for the sponsor group and drag the group to a new location
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-group-order.png" /></figure>
-      </li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="create-sponsor">Creating a sponsor</h2>
-    <p>To create a new sponsor, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click <strong>Site Features &gt; Sponsors </strong> in the left navigation. A list of sponsor groups will appear.</li>
-      <li>Click on the number in the <strong>Sponsors</strong> column for the group you want to add a sponsor to.</li>
-      <li>Click <span class="button-blue-text-bordered">+ Add sponsor</span>.</li>
-      <li>For the sponsor <strong>Image</strong>, click <strong>Upload image</strong> and browse and select a sponsor image.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-add-sponsor.png" /></figure>
-      </li>
-      <li>Enter the sponsor <strong>Name</strong> and <strong>Clickthrough URL</strong>.</li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="edit">Editing a sponsor</h2>
-    <p>To edit a  sponsor, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click on a sponsor <strong>Name</strong>.</li>
-      <li>To upload a new image, click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-upload.png" /> and browse and select a new image. Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-eye.png" /> to open the source image in a new browser tab.</li>
-      <li>Edit the <strong>Name</strong> and <strong>Clickthough URL</strong> as needed.</li>
-      <li>The Group listbox can be used to assign the sponsor to a different group.</li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="delete">Deleting a sponsor</h2>
-    <p>To delete a sponsor, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Click the checkbox next to the speaker to delete.</li>
-      <li>Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />.</li>
-      <li>Click <span class="button-red">Delete</span> to confirm the deletion.</li>
-    </ol>
-  </section>
+	<section class="bcls-section">
+		<h2 id="where_filters">Where filters</h2>
+		<p>You can filter the results using the <code translate="no">where</code> parameter. See <a href="https://apis.support.brightcove.com/analytics/getting-started/analytics-api-overview-dimensions-fields-and-parameters.html#filterValues">Where filters</a> for details</p>
+	</section>
+	<section class="bcls-section">
+		<h2 id="fields">Fields</h2>
+		<h3>Collected directly from the player</h3>
+		<ul>
+			<li><code translate="no">viewer</code>: Event viewer(SSO ID or device id or unique string based on user-agent and IP), taken from the <code translate="no">user</code> field</li>
+			<!-- <li><code translate="no">application</code>: virtual event experience id, if null default value = <code translate="no">account_id</code></li> -->
+			<li><code translate="no">time</code>: timestamp of the last event received</li>
+			<li><code translate="no">video</code></li>
+			<li><code translate="no">country</code></li>
+			<li><code translate="no">region</code></li>
+			<li><code translate="no">city</code></li>
+			<li><code translate="no">device_type</code></li>
+		</ul>
+		<h3>Aggregated metrics</h3>
+		<ul>
+			<li><code translate="no">video_view</code>: the total number of times <code translate="no">video_view</code> was sent by the player (note that <code translate="no">video_view</code> is <strong>not</strong> sent when the viewer pauses and restarts a video, or watches the video multiple times without refreshing the page)</li>
+		</ul>
+		<h3>Calculated fields</h3>
+		<ul>
+			<li>
+				<code translate="no">video_seconds_viewed</code>:
+				<ul>
+					<li>Highest range value received by Collector API irrespective of order</li>
+					<li>Note that events describing ranges over 20 seconds are discarded by the Analytics system, which could result in an inaccurate value if the player was not correctly instrumented to send ranges of 20 seconds or less - see <a href="https://apis.support.brightcove.com/data-collection/overview-data-collection-api-v2.html">Overview: Data Collection API</a></li>
+				</ul>
+			</li>
+			<li><code translate="no">video_percent_viewed</code>: video_seconds_viewed/video_duration *100 (this value will be missing or inaccurate if the video duration was not sent to the data collector)</li>
+			<li><code translate="no">video_engagement_xx</code>: the total number of views at the xx video_percent_viewed (xx = 1, 25, 50, 75, or 100)</li>
+		</ul>
+		<details>
+			<summary>Sample API Response (JSON)</summary>
+<pre><code class="language-json" translate="no">{
+	4    "item_count": 1,
+	5    "items": [
+	6        {
+	7            "viewer": "test@brightcove.com",
+	8            "country": "GB",
+	9            "video_seconds_viewed": 253,
+	10            "city": "London",
+	11            "video_percent_viewed": 527.08,
+	12            "device_type": "other",
+	13            "video": "70701475639202",
+	14            "video_view": 46,
+	15            "region": "GB-ENG"
+	16        }
+	17    ],
+	18    "summary": {
+	19        "video_seconds_viewed": 253,
+	20        "video_percent_viewed": 527.08,
+	21        "video_view": 46
+	22    }
+	23}</code></pre>
+		</details>
+	</section>
 </article>
 
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->

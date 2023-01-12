@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Customizing the Appearance and Behavior of a Virtual Event Experience</title>
+        <title>Managing Event Sponsors</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to customize the appearance and behavior of a Virtual Event Experience.">
+        <meta name="description" content="In this topic you will learn how to manage the event sponsors for a  Virtual Event  Experience.">
         
         <!-- Google Font -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"> -->
@@ -861,7 +861,7 @@
                   
                   
                   
-                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/virtual-event/customizing-appearance-and-behavior-virtual-event-experience.html" aria-current="page">Customizing the Appearance and Behavior</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/experiences/virtual-event/customizing-appearance-and-behavior-virtual-event-experience.html">Customizing the Appearance and Behavior</a></li>
                   
                   
                   
@@ -1228,7 +1228,11 @@
             
             
             
-            <li class="breadcrumb-item active" aria-current="page">Customizing the Appearance and Behavior of a Virtual Event Experience</li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/virtual-event/customizing/">Customizing</a></li>
+            
+            
+            
+            <li class="breadcrumb-item active" aria-current="page">Managing Event Sponsors</li>
             
             
           </ol>
@@ -1250,79 +1254,94 @@
       
       
 <article class="bcls-article">
-  <h1>Customizing the Appearance and Behavior of a Virtual Event Experience</h1>
-  <summary>In this topic you will learn how to customize the appearance and behavior of a Virtual Event Experience.</summary>
+  <h1>Managing Event Sponsors</h1>
+  <summary>In this topic you will learn how to manage the event sponsors for a  Virtual Event  Experience.</summary>
   <section class="bcls-section">
-    <p>To configure the Appearance and Behavior settings, edit the experience and click <strong>Appearance and Behavior</strong> in the left navigation. The following settings are available:</p>
-    <ul>
-      <li><a href="#header_footer">Header and Footer</a> - Configure a custom header/footer for the experience</li>
-      <li><a href="#custom">Custom</a> - Upload custom CSS, JavaScript and font files</li>
-      <li><a href="#background">Background Image and Video</a> - Configure a background image or video</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="header_footer">Configuring custom header/footer HTML</h2>
-    <p>Gallery provides the option of using a custom header and/or footer for the site. This provides the ability to customize a Virtual Event Experience so it more closely matches the look and feel of your corporate sites. A custom header/footer can also be configured at the account level. For information on configuring a custom header/footer at the account level, see <a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a>.</p>
-    <p>To configure a Virtual Event Experience to use a custom header or footer, follow these steps.</p>
+    <p>Using the Gallery Site Editor, you can manage the event sponsors that appear on the experience homepage. Sponsors are organized into sponsor groups which represent the various sponsor levels. For example, your event might have &quot;gold&quot;, &quot;silver&quot; and &quot;bronze&quot; level sponsors. Once sponsor groups are created, sponsors can be added into each group. Sponsor groups and logos will appear on the experience homepage. </p>
+    <p>To manage the event sponsors:</p>
     <ol class="bcls-tasklist-restart">
-      <li>Design the header/footer to use for your site. The header/footer can contain any valid HTML, JavaScript or CSS code.</li>
-      <li>Click on the experience <strong>Title</strong> to open the Gallery Site Editor.</li>
-      <li>In the left navigation, click <strong>Appearance and Behavior &gt; Header and Footer</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-header-footer.png" /></figure>
-      </li>
-      <li>Paste the header HTML into the <strong>Custom Header HTML</strong> field.</li>
-      <li>Select the <strong> Include default header below custom header</strong> option to display the default template header below your custom header.</li>
-      <li>Paste the footer HTML into the <strong>Custom Footer HTML</strong> field.</li>
-      <li>Select the <strong> Include default footer below custom footer</strong> option to display the default template footer below your custom footer.</li>
-      <li>Click <span class="button-blue">Save</span>.</li>
+      <li>Click on an experience <strong>Title</strong> to edit it.</li>
+      <li>Click <strong>Site Features &gt; Sponsors </strong> in the left navigation.</li>
     </ol>
-    <div class="BCL-subsection">
-      <h3>Notes on using custom headers and footers</h3>
-      <ul>
-        <li>Gallery doesn't do any validation on the HTML that is supplied for the header/footer</li>
-        <li>There is no explicit character limit on the header and footer HTML</li>
-        <li>External CSS and JavaScript files are supported</li>
-        <li>The code should follow responsive design principles so it will scale properly across devices</li>
-        <li>We have seen CSS conflicts when sites use Bootstrap (Gallery uses Bootstrap as well); make sure you check for and resolve any conflicts</li>
-      </ul>
-    </div>
+    <p>A list of sponsor groups will appear.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-groups-listing.png" /></figure>
   </section>
   <section class="bcls-section">
-    <h2 id="custom">Configuring custom settings</h2>
-    <p>The custom settings provide the ability to customize the look and feel of the site. To configure the custom settings, click <strong>Appearance and Behavior &gt; Custom</strong> in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-custom-settings.png" /></figure>
-    <p>The following settings are available:</p>
-    <ul>
-      <li><strong>Custom CSS file</strong> - Click <strong>Upload file</strong> to upload a custom CSS file. This can be used  to customize the style.</li>
-      <li><strong>Custom JavaScript file</strong> - Click <strong>Upload file</strong> to upload a custom JavaScript file. This can be used to customize the style and/or behavior of the site.</li>
-      <li><strong>Custom Font file</strong> - Click <strong>Upload file</strong> to upload a custom font file. This font will appear as <strong>Custom Font</strong> in the Style &gt; Fonts &gt; Primary list. </li>
-      <li><strong>Custom Font file 2</strong> - Click <strong>Upload file</strong> to upload a custom font file. This font will appear as <strong>Custom Font</strong> in the Style &gt; Fonts &gt; Secondary list.</li>
-      <li><strong>Custom Favicon URL</strong> - Used to specify the location of the favicon to use for the site. Browsers that provide favicon support typically display the favicon on page's browser tab and next to the page's name in a list of bookmarks.</li>
-      <li><strong>Custom Mobile App Icon</strong> - Used to select an image that will be used as a home screen icon when the site is saved to your device home screen. Brightcove recommends that you upload a high resolution (we recommend 1024 px x 1024 px), square image and Gallery will scale the image and use a version best suited to your device.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/portal/node18667-app-icon.png" /></figure>
-      </li>
-      <li><strong>Custom Response Headers</strong> - Enter HTTP headers which will be sent in response to requests to the portal. For example, headers might be added to add a Content Security Policy (CSP) or HTTP-Strict-Transport-Security (HSTS).</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="background">Configuring a background image or video</h2>
-    <p>Gallery provides the option of displaying a custom background image or video  for the site. To configure a background image or video, click <strong>Appearance and Behavior &gt; Background Image and Video</strong> in the left navigation.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/appearance-background-image.png" /></figure>
-    <h3>Adding a background image</h3>
+    <h2 id="create-group">Creating a sponsor group</h2>
+    <p>Sponsor groups are created to organize sponsors into levels. Creating a sponsor group allows you to group the sponsors by level and control the size of the sponsor logo image that will appear on the event homepage. To create a new sponsor group, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>To specify an image, you can:
-        <ul>
-          <li>Drag an image from the file system and then drop it on the drop area</li>
-          <li>Click <strong>browse</strong> and select an image from the file system</li>
-          <li>Enter the URL to a remote image file</li>
-        </ul>
+      <li>Click <span class="button-blue-text-bordered">+ Add group</span>.</li>
+      <li>Enter the <strong>Group Name</strong>.</li>
+      <li>Enter the <strong>Group row height</strong> (in pixels). The height must be between 1 and 300. The row height will control the image height of the sponsor logos in the group.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsors-add-group.png" /></figure>
       </li>
       <li>Click <span class="button-blue">Save</span>.</li>
     </ol>
-    <p>Click <span class="button-blue">Remove</span> to remove the image.</p>
-    <h3>Adding a background video</h3>
-    <p>A Video Cloud video can also be used as a background video. Paste a Video Cloud video ID in the <strong>Video ID</strong> field and click <span class="button-blue">Save</span>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: If the Video ID is invalid, the uploaded background image or the default background image will be displayed.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit-group">Editing a sponsor group</h2>
+    <p>To edit a sponsor group, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a sponsor group name to open the <strong>Group settings</strong> panel.</li>
+      <li>Make any needed changes.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete-group">Deleting a sponsor group</h2>
+    <p>To delete a sponsor group, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the checkbox next to the sponsor name to delete.</li>
+      <li>Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />.</li>
+      <li>If there are no sponsors in the group, click <span class="button-red">Delete</span> to confirm the delete.</li>
+      <li>If there are sponsors in the group, you can choose to move them to another group or delete them with the group. Click <span class="button-red">Delete</span> to confirm.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-delete-move.png" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="change-group-order">Changing the sponsor group order</h2>
+    <p>The order of the sponsors will control the order of how they are displayed on the event homepage. To change the order of the sponsor groups:</p>
+    <ul>
+      <li>Enter the sponsor order in the <strong>Order</strong> field <strong>OR</strong></li>
+      <li>Click on the grab handle for the sponsor group and drag the group to a new location
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-group-order.png" /></figure>
+      </li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create-sponsor">Creating a sponsor</h2>
+    <p>To create a new sponsor, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click <strong>Site Features &gt; Sponsors </strong> in the left navigation. A list of sponsor groups will appear.</li>
+      <li>Click on the number in the <strong>Sponsors</strong> column for the group you want to add a sponsor to.</li>
+      <li>Click <span class="button-blue-text-bordered">+ Add sponsor</span>.</li>
+      <li>For the sponsor <strong>Image</strong>, click <strong>Upload image</strong> and browse and select a sponsor image.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/sponsor-add-sponsor.png" /></figure>
+      </li>
+      <li>Enter the sponsor <strong>Name</strong> and <strong>Clickthrough URL</strong>.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="edit">Editing a sponsor</h2>
+    <p>To edit a  sponsor, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click on a sponsor <strong>Name</strong>.</li>
+      <li>To upload a new image, click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-upload.png" /> and browse and select a new image. Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-eye.png" /> to open the source image in a new browser tab.</li>
+      <li>Edit the <strong>Name</strong> and <strong>Clickthough URL</strong> as needed.</li>
+      <li>The Group listbox can be used to assign the sponsor to a different group.</li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">Deleting a sponsor</h2>
+    <p>To delete a sponsor, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Click the checkbox next to the speaker to delete.</li>
+      <li>Click <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/icon-delete.png" />.</li>
+      <li>Click <span class="button-red">Delete</span> to confirm the deletion.</li>
+    </ol>
   </section>
 </article>
 
