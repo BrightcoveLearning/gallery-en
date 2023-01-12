@@ -5,63 +5,33 @@ parent: Home
 <article class="bcls-article">
   <h1><i class="fa-regular fa-browsers"></i> {{ page.title }}</h1>
   <summary></summary>
-  <section class="card-wrapper">
-    <section onclick="window.location.pathname = '/experiences/portal/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="portal"><a href="/experiences/portal/index.html">Portal</a></h2>
-        <p>Learn how to create and publish Portal Experiences.</p>
-        <ul>
-          <li><a href="/experiences/portal/getting-started/overview-creating-editing-and-publishing-portal-experiences.html">Creating, Editing and Publishing Portal Experiences</a></li>
-          <li><a href="/experiences/portal/templates/overview-gallery-portal-templates.html">Overview of Gallery Portal Templates</a></li>
-          <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Creating a Portal Experience</a></li>
-        </ul>
-        <p><a href="/experiences/portal/index.html">View All...</a></p>
+  <section>
+      <div class="row">
+    {% for item in site.data.navigation %}
+    {% if item.name == page.title %}
+    {% for entry in item.docs %}
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <div>
+            {% if entry.docs %}
+            <h5 class="card-title text-center m-2">{{ entry.name }}</h5>
+            <ul class="list-group list-group-flush">
+              {% for subdoc in entry.docs %}
+              <li class="list-group-item"><a href="{{ subdoc.url }}" style="text-decoration: none;">{{ subdoc.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <h5 class="card-title">{{ entry.name }}</h5>
+            {% endif %}
+        </div>
+        <a class="card-link-mask" href="{{ entry.url }}"></a>
       </div>
-    </section>
-    <section onclick="window.location.pathname = '/experiences/inpage/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="inpage"><a href="/experiences/inpage/index.html">In-Page</a></h2>
-        <p>Learn how to create and publish In-Page Experiences.</p>
-        <ul>
-          <li><a href="/experiences/inpage/getting-started/overview-creating-editing-and-publishing-page-experiences.html">Creating, Editing and Publishing In-Page Experiences</a></li>
-          <li><a href="/experiences/inpage/templates/overview-gallery-page-experience-templates.html">Overview of Gallery In-Page Experience Templates</a></li>
-          <li><a href="/get-started/step-step-creating-and-publishing-page-experience.html">Creating an In-Page Experience</a></li>
-        </ul>
-        <p><a href="/experiences/inpage/index.html">View All...</a></p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/experiences/live/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="live"><a href="/experiences/live/index.html">Live Event</a></h2>
-        <p>Learn how to create and publish Live Event experiences.</p>
-        <ul>
-          <li><a href="/experiences/live/portal/creating-live-event-portal-experience.html">Creating a Live Event Portal Experience</a></li>
-          <li><a href="/experiences/live/in-page/creating-live-event-page-experience.html">Creating a Live Event In-Page Experience</a></li>
-        </ul>
-        <p><a href="/experiences/live/index.html">View All...</a></p>
-      </div>
-    </section>
-<section onclick="window.location.pathname = '/experiences/virtual-event/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="virtual-event"><a href="/experiences/virtual-event/index.html">Virtual Event</a></h2>
-        <p>Learn how to create and publish Virtual Event experiences.</p>
-        <ul>
-          <li><a href="/experiences/virtual-event/getting-started/creating-virtual-event-experience.html">Creating a Virtual Event Experience</a></li>
-          <li><a href="/experiences/virtual-event/getting-started/getting-started-agenda-module.html">Getting Started with the Agenda Module</a></li>
-          <li><a href="/experiences/virtual-event/agenda-speakers/managing-agenda-virtual-event-experience.html">Managing the Event Agenda</a></li>
-        </ul>
-        <p><a href="/experiences/virtual-event/index.html">View All...</a></p>
-      </div>
-    </section>
-    <section onclick="window.location.pathname = '/experiences/landing/';" class="bcls-card">
-      <div class="card-content">
-        <h2 id="landing"><a href="/experiences/landing/index.html">Landing Page</a></h2>
-        <p>Learn how to create and publish Landing Page experiences.</p>
-        <ul>
-          <li><a href="/experiences/landing/creating-landing-page-experience.html">Creating a Landing Page Experience</a></li>
-        </ul>
-        <p><a href="/experiences/landing/index.html">View All...</a></p>
-      </div>
-    </section>
-  </section>
+    </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
 </article>

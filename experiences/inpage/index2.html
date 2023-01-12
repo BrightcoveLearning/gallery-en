@@ -1,11 +1,13 @@
 ---
-title: Experiences 
-parent: Home
+title: In-Page Experiences
+parent: In-Page
+grandparent: Experiences
+description: Learn how to create, edit and publish In-Page Experiences.
 ---
-<article class="bcls-article">
-  <h1><i class="fa-regular fa-browsers"></i> {{ page.title }}</h1>
-  <summary></summary>
-  <section>
+<article class="bcls-article"> 
+  <h1><i class="fa-regular fa-sidebar-flip"></i> {{ page.title }}</h1>
+  <summary>{{ page.description }}</summary>
+    <section class="bcls-section">
       <div class="row">
     {% for item in site.data.navigation %}
     {% if item.name == page.title %}
@@ -33,6 +35,7 @@ parent: Home
     {% endif %}
     {% endfor %}
   </div>
-</section>
-    
+      
+      
+    </section>
 </article>
