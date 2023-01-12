@@ -226,7 +226,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/live/adding-pigeonhole-live-event-page-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/live/portal/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>
@@ -235,88 +235,7 @@
         
           <url>
             
-              <loc>https://gallery.support.brightcove.com/experiences/live/adding-pigeonhole-live-event-portal-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/portal/assigning-custom-domain-portal-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/portal/controlling-access-portal-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/creating-live-event-page-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/creating-live-event-portal-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/creating-live-event-state-portal-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/creating-post-event-state-portal-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/creating-pre-event-state-portal-event-experience.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/live/customizing-live-event-portal-settings.html</loc>
-            
-            <lastmod>2023-01-12</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-        
-          <url>
-            
-              <loc>https://gallery.support.brightcove.com/experiences/portal/previewing-and-publishing-portal-experience.html</loc>
+              <loc>https://gallery.support.brightcove.com/experiences/live/in-page/index.html</loc>
             
             <lastmod>2023-01-12</lastmod>
             <changefreq>daily</changefreq>

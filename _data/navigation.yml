@@ -136,7 +136,7 @@
           icon: fa-regular fa-browser
           docs:
             - name: 'Overview: Creating and Publishing In-Page Experiences'
-              url: /experiences/inpage/overview-creating-editing-and-publishing-page-experiences.html
+              url: /experiences/inpage/getting-started/overview-creating-editing-and-publishing-page-experiences.html
             - name: Training - Introduction to Gallery
               url: /get-started/training/training-demand-introduction-gallery.html
             - name: Training - Building In-Page Experiences
@@ -148,7 +148,7 @@
           icon: fa-regular fa-browser
           docs:
             - name: Overview of In-Page Experience Templates
-              url: /experiences/inpage/overview-gallery-page-experience-templates.html
+              url: /experiences/inpage/templates/overview-gallery-page-experience-templates.html
             - name: Updating Gallery Templates
               url: /experiences/portal/templates/updating-gallery-templates.html
         - name: Customizing
@@ -156,78 +156,88 @@
           icon: fa-regular fa-browser
           docs:
             - name: Customizing an In-Page Experience
-              url: /experiences/inpage/customizing-page-experience.html
+              url: /experiences/inpage/customizing/customizing-page-experience.html
             - name: Adding Components
-              url: /experiences/inpage/adding-components-page-experience.html
+              url: /experiences/inpage/customizing/adding-components-page-experience.html
             - name: Adding Videos
-              url: /experiences/inpage/adding-videos-page-experience.html
+              url: /experiences/inpage/customizing/adding-videos-page-experience.html
             - name: Customizing the Style
-              url: /experiences/inpage/customizing-style-page-experience.html
+              url: /experiences/inpage/customizing/customizing-style-page-experience.html
             - name: Adding Interactions
-              url: /experiences/inpage/adding-interactions-page-experience.html
+              url: /experiences/inpage/customizing/adding-interactions-page-experience.html
             - name: Configuring Companion Components
-              url: /experiences/inpage/configuring-companion-components-page-experience.html
+              url: /experiences/inpage/customizing/configuring-companion-components-page-experience.html
             - name: Configuring the Details for an Experience
-              url: /experiences/inpage/configuring-details-page-experience.html
+              url: /experiences/inpage/customizing/configuring-details-page-experience.html
             - name: Configuring the Settings for an Experience
-              url: /experiences/inpage/configuring-settings-page-experience.html
+              url: /experiences/inpage/customizing/configuring-settings-page-experience.html
         - name: Other Features
           url: /experiences/in-page/other/index.html
           icon: fa-regular fa-browser
           docs:
             - name: Using Dynamic Video Overrides
-              url: /experiences/inpage/using-dynamic-video-overrides-page-experience.html
+              url: /experiences/inpage/other/using-dynamic-video-overrides-page-experience.html
             - name: Configuring Video Downloads
-              url: /experiences/inpage/configuring-video-downloads-page-experience.html
+              url: /experiences/inpage/other/configuring-video-downloads-page-experience.html
             - name: Creating Custom Themes
-              url: /experiences/inpage/creating-custom-themes-page-experiences.html
+              url: /experiences/inpage/other/creating-custom-themes-page-experiences.html
         - name: Publishing
           url: /experiences/in-page/publishing/index.html
           icon: fa-regular fa-browser
           docs:
             - name: Previewing and Publishing
-              url: /experiences/inpage/previewing-and-publishing-page-experience.html
+              url: /experiences/inpage/publishing/previewing-and-publishing-page-experience.html
             - name: Updating Gallery Templates
-              url: /experiences/portal/updating-gallery-templates.html
+              url: /experiences/portal/templates/updating-gallery-templates.html
         - name: Analytics
           url: /experiences/in-page/analytics/index.html
           icon: fa-regular fa-browser
           docs:
             - name: Reviewing Analytics
-              url: /experiences/inpage/reviewing-page-experience-analytics.html
+              url: /experiences/inpage/analytics/reviewing-page-experience-analytics.html
             - name: Reviewing the Analytics Dashboard
-              url: /experiences/inpage/reviewing-page-experience-analytics-dashboard.html
+              url: /experiences/inpage/analytics/reviewing-page-experience-analytics-dashboard.html
             - name: Reviewing Video Analytics
-              url: /experiences/inpage/reviewing-page-experience-video-analytics.html
+              url: /experiences/inpage/analytics/reviewing-page-experience-video-analytics.html
             - name: Reviewing Calls-to-Action Analytics
-              url: /experiences/inpage/reviewing-page-experience-calls-action-analytics.html       
+              url: /experiences/inpage/analytics/reviewing-page-experience-calls-action-analytics.html
     - name: Live Event
       url: /experiences/live/index.html
-      icon: fa-regular fa-satellite-dish
+      icon: fa-regular fa-browser
       description: Learn how to create, edit and publish Live Event Experiences.
       docs:
-      - name: 'Adding Pigeonhole to a Live In-Page'
-        url: /experiences/live/adding-pigeonhole-live-event-page-experience.html
-      - name: 'Adding Pigeonhole to a Live Portal'
-        url: /experiences/live/adding-pigeonhole-live-event-portal-experience.html
-      - name: Assigning a Custom Domain
-        url: /experiences/portal/assigning-custom-domain-portal-experience.html
-      - name: Controlling Access
-        url: /experiences/portal/controlling-access-portal-experience.html
-      - name: Creating a Live Event In-Page Experience
-        url: /experiences/live/creating-live-event-page-experience.html
-      - name: Creating a Live Event Portal Experience
-        url: /experiences/live/creating-live-event-portal-experience.html
-      - name: Creating the Live Event State
-        url: /experiences/live/creating-live-event-state-portal-event-experience.html
-      - name: Creating the Post-Event State
-        url: /experiences/live/creating-post-event-state-portal-event-experience.html
-      - name: Creating the Pre-Event State
-        url: /experiences/live/creating-pre-event-state-portal-event-experience.html
-      - name: Customizing the Live Event Portal Settings
-        url: /experiences/live/customizing-live-event-portal-settings.html
-      - name: Previewing and Publishing
-        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+        - name: Portal
+          url: /experiences/live/portal/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Creating a Live Event Portal
+              url: /experiences/live/portal/creating-live-event-portal-experience.html
+            - name: Creating the Pre-Event State
+              url: /experiences/live/portal/creating-pre-event-state-portal-event-experience.html
+            - name: Creating the Live Event State
+              url: /experiences/live/portal/creating-live-event-state-portal-event-experience.html
+            - name: Creating the Post-Event State
+              url: /experiences/live/portal/creating-post-event-state-portal-event-experience.html
+            - name: Customizing the Settings
+              url: /experiences/live/portal/customizing-live-event-portal-settings.html
+            - name: Previewing and Publishing
+              url: /experiences/portal/portal/previewing-and-publishing-portal-experience.html
+            - name: Assigning a Custom Domain
+              url: /experiences/portal/portal/assigning-custom-domain-portal-experience.html
+            - name: Controlling Access
+              url: /experiences/portal/portal/controlling-access-portal-experience.html
+            - name: Adding Pigeonhole to a Live Portal
+              url: /experiences/live/portal/adding-pigeonhole-live-event-portal-experience.html
+        - name: In-Page
+          url: /experiences/live/in-page/index.html
+          icon: fa-regular fa-browser
+          docs:
+            - name: Creating a Live Event In-Page
+              url: /experiences/live/in-page/creating-live-event-page-experience.html
+            - name: Adding Pigeonhole
+              url: /experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html
+            - name: Previewing and Publishing
+              url: /experiences/inpage/publishing/previewing-and-publishing-page-experience.html   
     - name: Virtual Event
       url: /experiences/virtual-event/index.html
       icon: fa-regular fa-calendar-circle-user

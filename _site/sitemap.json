@@ -15,12 +15,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/adding-pigeonhole-live-event-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html",
       "oldURL": "/adding-pigeonhole-live-event-page-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/adding-pigeonhole-live-event-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/adding-pigeonhole-live-event-portal-experience.html",
       "oldURL": "/adding-pigeonhole-live-event-portal-experience"
   },
 
@@ -165,27 +165,27 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-page-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/creating-live-event-page-experience.html",
       "oldURL": "/creating-live-event-page-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-portal-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/creating-live-event-portal-experience.html",
       "oldURL": "/creating-live-event-portal-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-live-event-state-portal-event-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/creating-live-event-state-portal-event-experience.html",
       "oldURL": "/creating-live-event-state-portal-event-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-post-event-state-portal-event-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/creating-post-event-state-portal-event-experience.html",
       "oldURL": "/creating-post-event-state-portal-event-experience"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/creating-pre-event-state-portal-event-experience.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/creating-pre-event-state-portal-event-experience.html",
       "oldURL": "/creating-pre-event-state-portal-event-experience"
   },
 
@@ -230,7 +230,7 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/customizing-live-event-portal-settings.html",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/customizing-live-event-portal-settings.html",
       "oldURL": "/customizing-live-event-portal-settings"
   },
 
@@ -440,12 +440,22 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/portal/",
       "oldURL": "/index"
   },
 
   {
       "newURL": "https://gallery.support.brightcove.com/develop/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/",
       "oldURL": "/index"
   },
 
