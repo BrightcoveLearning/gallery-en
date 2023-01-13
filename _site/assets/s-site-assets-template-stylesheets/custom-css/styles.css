@@ -169,9 +169,9 @@ div#main_content.container {
 /* Doc Page Styles */
 
 article.bcls-article {
-    padding: 0px;
+    /* padding: 0px;
     display: inline-block;
-    margin-left: 2em;
+    margin-left: 2em; */
 }
 
 div.py-5>h1 {
