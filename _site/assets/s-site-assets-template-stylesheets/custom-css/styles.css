@@ -143,6 +143,10 @@ a:hover {
     background: rgb(237, 237, 237) !important;
 }
 
+.card-body {
+    cursor: pointer;
+}
+
 .icon-theme {
     background: white !important;
     border-radius: 50%;
