@@ -4,10 +4,6 @@ parent: Portal
 grandparent: Experiences
 description: Learn how to create, edit and publish Portal Experiences.
 ---
-<article class="bcls-article"> 
-  <h1><i class="fa-regular fa-browser"></i> {{ page.title }}</h1>
-  <summary>{{ page.description }}</summary>
-    <section class="bcls-section">
 <!-- TEMPLATE FOR SECTION THAT JUST HAS SUB-SECTIONS -->
 {% for item in site.data.navigation %}
   {% if item.name == page.title %}
@@ -39,7 +35,4 @@ description: Learn how to create, edit and publish Portal Experiences.
     </div>
   </article>
   {% endif %}
-{% endfor %}    
-  </section>
-    
-</article>
+{% endfor %}
