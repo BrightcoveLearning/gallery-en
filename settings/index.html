@@ -7,15 +7,32 @@ description: Learn how to configure Gallery Settings.
   <h1><i class="fa-regular fa-gear"></i> {{ page.title }}</h1>
   <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <ul>
-      <li><a href="/settings/configuring-access-control-profiles.html">Configuring Access Control Profiles</a></li>
-      <li><a href="/settings/configuring-custom-domains-and-ssl.html">Configuring Custom Domains and SSL</a></li>
-      <li><a href="/settings/configuring-gallery-settings.html">Configuring Gallery Settings</a></li>
-      <li><a href="/settings/configuring-single-sign-active-directory-federation-services.html">Configuring Single Sign-On with Active Directory Federation Services</a></li>
-      <li><a href="/settings/configuring-youtube-settings.html">Configuring YouTube Settings</a></li>
-      <li><a href="/settings/securing-portal-experience-auth0.html">Securing a Portal Experience with Auth0</a></li>
-      <li><a href="/settings/securing-portal-experience-okta.html">Securing a Portal Experience with Okta</a></li>
-      <li><a href="/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a></li>
-    </ul>
+    <div class="row">
+    {% for item in site.data.navigation %}
+    {% if item.name == page.title %}
+    {% for entry in item.docs %}
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <div>
+            {% if entry.docs %}
+            <h5 class="card-title text-center m-2">{{ entry.name }}</h5>
+            <ul class="list-group list-group-flush">
+              {% for subdoc in entry.docs %}
+              <li class="list-group-item"><a href="{{ subdoc.url }}" style="text-decoration: none;">{{ subdoc.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <h5 class="card-title">{{ entry.name }}</h5>
+            {% endif %}
+        </div>
+        <a class="card-link-mask" href="{{ entry.url }}"></a>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div>
   </section>
 </article>
