@@ -1,0 +1,66 @@
+---
+title: Portal Experiences
+parent: Portal
+grandparent: Experiences
+description: Learn how to create, edit and publish Portal Experiences.
+---
+<article class="bcls-article"> 
+  <h1><i class="fa-regular fa-browser"></i> {{ page.title }}</h1>
+  <summary>{{ page.description }}</summary>
+    <section class="bcls-section">
+    <div class="row">
+    {% for item in site.data.navigation %}
+    {% if item.name == page.title %}
+    {% for entry in item.docs %}
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <div>
+            {% if entry.docs %}
+            <h5 class="card-title text-center m-2">{{ entry.name }}</h5>
+            <ul class="list-group list-group-flush">
+              {% for subdoc in entry.docs %}
+              <li class="list-group-item"><a href="{{ subdoc.url }}" style="text-decoration: none;">{{ subdoc.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <h5 class="card-title">{{ entry.name }}</h5>
+            {% endif %}
+        </div>
+        <a class="card-link-mask" href="{{ entry.url }}"></a>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  </section>
+    <div class="row">
+    {% for item in site.data.navigation %}
+    {% if item.name == page.title %}
+    {% for entry in item.docs %}
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <div>
+            {% if entry.docs %}
+            <h5 class="card-title text-center m-2">{{ entry.name }}</h5>
+            <ul class="list-group list-group-flush">
+              {% for subdoc in entry.docs %}
+              <li class="list-group-item"><a href="{{ subdoc.url }}" style="text-decoration: none;">{{ subdoc.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <h5 class="card-title">{{ entry.name }}</h5>
+            {% endif %}
+        </div>
+        <a class="card-link-mask" href="{{ entry.url }}"></a>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</article>
