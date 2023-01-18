@@ -131,28 +131,53 @@ a:hover {
 
 .card-hover {
     /* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important; */
-    background: rgb(237, 237, 237) !important;
+    background: rgb(255, 255, 255) !important;
 }
 
 .card-hover:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(118, 187, 244, 0.375) !important;
     background: white !important;
 }
 
-.card-hover:hover .card-icon-holder {
+.card-icon-holder {
     background: rgb(237, 237, 237) !important;
 }
 
-.card-body {
-    cursor: pointer;
-}
-
 .icon-theme {
-    background: white !important;
+    background:rgb(237, 237, 237)!important;
     border-radius: 50%;
 }
 
 /* Index pages styles */
+details {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+details > summary {
+    background-color: #ddd;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+code {
+    background-color: #e4f4fb;
+}
+
 a>code {
     background-color: #e4f4fb;
 }
