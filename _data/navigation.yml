@@ -327,7 +327,7 @@
       - name: Using the Site Editor to Customize an Experience
         url: /experiences/portal/using-site-editor-customize-portal-experience.html
 - section: 
-  name: General
+  name: General Information
   url: /general/index.html
   icon: fa-regular fa-circle-info
   description: General information about Brightcove Gallery.
