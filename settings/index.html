@@ -8,18 +8,20 @@ description: Learn how to configure Gallery Settings.
   <summary>{{ page.description }}</summary>
     <br/>
   <section class="bcls-section">
-      <ul>
-        {% for item in site.data.navigation %}
-        {% if item.name == page.parent %}
-        {% for entry in item.docs %}
-        {% if entry.name == page.title %}
-        {% for doc in entry.docs %}
-        <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-        {% endif %}
-        {% endfor %}
-      </ul>
+<ul class="bcls-topic-list">
+          {% for item in site.data.navigation %}
+          {% if item.name == page.title %}
+          {% for entry in item.docs %}
+          <li><a href="{{ entry.url }}">{{ entry.name }}</a> {% if entry.docs %}
+            <ul>
+              {% for subentry in entry.docs %}
+              <li><a href="{{ subentry.url }}">{{ subentry.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %} </li>
+          {% endfor %}
+          {% endif %}
+          {% endfor %}
+        </ul>
   </section>
 </article>
