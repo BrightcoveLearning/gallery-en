@@ -645,12 +645,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
       "oldURL": "/register-training"
   },
 
@@ -800,8 +800,8 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/working-with-internal-comm-template.html",
-      "oldURL": "/working-with-internal-comm-template"
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/templates/working-with-immersion-template.html",
+      "oldURL": "/working-with-immersion-template"
   },
 ]
 
