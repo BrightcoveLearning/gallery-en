@@ -11,7 +11,7 @@ parent: Home
     {% if item.name == page.title %}
     {% for entry in item.docs %}
     <div class="col-12 col-lg-4 py-3">
-      <div class="card shadow-sm" style="background: white">
+      <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ entry.url }}'">
         <div class="card-body">
           <div>
             {% if entry.docs %}
