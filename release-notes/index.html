@@ -5,8 +5,31 @@ parent: Home
 <article class="bcls-article">
 
   <h1><i class="fa-regular fa-memo-pad"></i> {{ page.title }}</h1>
-  <ul>
-    <li><a href="/release-notes/gallery-release-notes.html">Gallery Release Notes</a></li>
-    <li><a href="/release-notes/gallery-template-release-notes.html">Gallery Template Release Notes</a></li>
-  </ul>
+  <br/>
+    <h2 id="Topics_in_this_section">Topics in this section</h2>
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            {% for item in site.data.navigation %}
+            {% if item.name == page.title %}
+            {% for entry in item.docs %}
+            <li class="list-group-item"><a href="{{ entry.url }}"
+                style="text-decoration: none;">{{ entry.name }}</a> {% if
+              entry.docs
+              %}
+              <ul class="list-group list-group-flush">
+                {% for subentry in entry.docs %}
+                <li class="list-group-item"><a href="{{ subentry.url }}"
+                    style="text-decoration: none;">{{ subentry.name }}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %} </li>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
 </article>
