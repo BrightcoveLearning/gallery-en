@@ -6,18 +6,31 @@ description: Learn how to customize experiences using CSS and the Gallery APIs.
 <article class="bcls-article"> 
   <h1><i class="fa-regular fa-rectangle-code"></i> {{ page.title }}</h1>
   <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <ul>
-      <li><a href="/develop/page-experiences-custom-css-reference.html">In-Page Experiences Custom CSS Reference</a></li>
-      <li><a href="/develop/page-experience-code-snippets.html">In-Page Experience Code Snippets</a></li>
-      <li><a href="/develop/embedding-brightcove-page-experiences-cms.html">Embedding Brightcove In-Page Experiences in a CMS</a></li>
-      <li><a href="https://apis.support.brightcove.com/ipx/getting-started/overview-page-experience-api.html">Overview: In-Page Experience API</a></li>
-      <li><a href="/develop/overview-page-experience-client-api.html">Overview: In-Page Experience Client API</a></li>
-      <li><a href="https://apis.support.brightcove.com/ipx/references/reference.html">In-Page Experience API Reference</a></li>
-      <li><a href="https://apis.support.brightcove.com/in-page-exerience-client-api/ClientApi.html">In-Page Experience Client API Reference</a></li>
-      <li><a href="/develop/page-experience-api-error-reference.html">In-Page Experience API Error Reference</a></li>
-      <li><a href="/develop/page-experience-client-api-sample.html">In-Page Experience Client API Sample</a></li>
-      <li><a href="https://apis.support.brightcove.com/ipx/getting-started/quick-start-page-experience-platform-rest-api.html">Quick Start: In-Page Experience Platform (REST) API</a></li>
-    </ul>
-  </section>
+  <br/>
+    <h2 id="Topics_in_this_section">Topics in this section</h2>
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card shadow-sm" style="background: white">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            {% for item in site.data.navigation %}
+            {% if item.name == page.title %}
+            {% for entry in item.docs %}
+            <li class="list-group-item"><a href="{{ entry.url }}"
+                style="text-decoration: none;">{{ entry.name }}</a> {% if
+              entry.docs
+              %}
+              <ul class="list-group list-group-flush">
+                {% for subentry in entry.docs %}
+                <li class="list-group-item"><a href="{{ subentry.url }}"
+                    style="text-decoration: none;">{{ subentry.name }}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %} </li>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
 </article>
