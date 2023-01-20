@@ -6,15 +6,13 @@ description: Learn how to create, edit and publish Portal Experiences.
 ---
 <article class="bcls-article">
   <h1><i class="fa-regular fa-browsers"></i> {{ page.title }}</h1>
+    <summary>{{ page.description }}</summary>
   <!-- Template for sub-section that has just pages -->
 {% for item in site.data.navigation %}
   {% if item.name == page.parent %}
     {% for section in item.docs %}
       {% if section.name == page.title %}
       <h1><i class="{{ item.icon }}"></i> {{ page.title }}</h1>
-      <article class="bcls-article">
-        <summary>{{ page.description }}</summary>
-
         <div class="col-12 col-lg-4 py-3">
           <div class="card shadow-sm" style="background: white" onclick="window.location.href = '{{ item.url }}'">
             <div class="card-body">
