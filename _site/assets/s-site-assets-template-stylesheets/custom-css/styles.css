@@ -129,6 +129,10 @@ a:hover {
     color: #4EA9D1;
 }
 
+.card-body {
+  cursor: pointer;
+}
+
 .card-hover {
     /* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important; */
     background: rgb(255, 255, 255) !important;
