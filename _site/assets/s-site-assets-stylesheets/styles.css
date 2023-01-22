@@ -626,68 +626,6 @@
         }
         /**** general element styles and classes *********= */
         
-        details {
-            border: 1px rgb(249, 249, 249) solid;
-            border-radius: 1rem;
-            padding: .4rem;
-            background-color: rgb(249, 249, 249);
-            margin-bottom: .2rem;
-        }
-        
-        details>summary {
-            border: .1rem rgb(249, 249, 249) solid;
-            font-size: 1rem;
-            color: rgb(8, 8, 140);
-            padding: .4rem;
-            outline: none;
-            white-space: pre-wrap;
-            white-space: -moz-pre-wrap;
-            white-space: -pre-wrap;
-            white-space: -o-pre-wrap;
-            word-wrap: break-word;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        details>summary>* {
-            /* font-size: 1.9rem; */
-            color: rgb(8, 8, 140);
-            display: inline;
-        }
-        
-        details>summary:focus {
-            border: .1rem rgb(249, 249, 249) solid;
-            outline: none;
-        }
-        
-        details>summary::-webkit-details-marker,
-        details>summary::marker {
-            display: none;
-            color: rgb(249, 249, 249);
-        }
-        
-        details>summary::before {
-            float: left;
-            height: .5rem;
-            width: .5rem;
-            margin-right: 1rem;
-            padding-right: 2rem;
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
-        }
-        
-        details[open]>summary::before {
-            float: left;
-            height: .5rem;
-            width: .5rem;
-            margin-right: 1rem;
-            padding-right: 2rem;
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
-        }
-        
-        details[open]>summary {
-            border: none;
-            outline: none;
-        }
         
         ol.integer {
             list-style-type: none;
