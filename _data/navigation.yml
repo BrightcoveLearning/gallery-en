@@ -221,11 +221,11 @@
             - name: Customizing the Settings
               url: /experiences/live/portal/customizing-live-event-portal-settings.html
             - name: Previewing and Publishing
-              url: /experiences/portal/portal/previewing-and-publishing-portal-experience.html
+              url: /experiences/portal/previewing-and-publishing-portal-experience.html
             - name: Assigning a Custom Domain
-              url: /experiences/portal/portal/assigning-custom-domain-portal-experience.html
+              url: /experiences/portal/assigning-custom-domain-portal-experience.html
             - name: Controlling Access
-              url: /experiences/portal/portal/controlling-access-portal-experience.html
+              url: /experiences/portal/controlling-access-portal-experience.html
             - name: Adding Pigeonhole to a Live Portal
               url: /experiences/live/portal/adding-pigeonhole-live-event-portal-experience.html
         - name: In-Page
