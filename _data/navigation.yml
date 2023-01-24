@@ -132,7 +132,7 @@
       description: Learn how to create, edit and publish In-Page Experiences.
       docs:
         - name: Getting Started
-          url: /experiences/in-page/getting-started/index.html
+          url: /experiences/inpage/getting-started/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: 'Overview: Creating and Publishing In-Page Experiences'
@@ -144,7 +144,7 @@
             - name: "Step-by-Step: Creating and Publishing an In-Page Experience"
               url: /get-started/step-step-creating-and-publishing-page-experience.html
         - name: Templates
-          url: /experiences/in-page/templates/index.html
+          url: /experiences/inpage/templates/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: Overview of Templates
@@ -152,7 +152,7 @@
             - name: Updating Gallery Templates
               url: /experiences/portal/templates/updating-gallery-templates.html
         - name: Customizing
-          url: /experiences/in-page/customizing/index.html
+          url: /experiences/inpage/customizing/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: Customizing an Experience
@@ -172,7 +172,7 @@
             - name: Configuring the Settings
               url: /experiences/inpage/customizing/configuring-settings-page-experience.html
         - name: Other Features
-          url: /experiences/in-page/other/index.html
+          url: /experiences/inpage/other/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: Using Dynamic Video Overrides
@@ -182,7 +182,7 @@
             - name: Creating Custom Themes
               url: /experiences/inpage/other/creating-custom-themes-page-experiences.html
         - name: Publishing
-          url: /experiences/in-page/publishing/index.html
+          url: /experiences/inpage/publishing/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: Previewing and Publishing
@@ -190,7 +190,7 @@
             - name: Updating Gallery Templates
               url: /experiences/portal/templates/updating-gallery-templates.html
         - name: Analytics
-          url: /experiences/in-page/analytics/index.html
+          url: /experiences/inpage/analytics/index.html
           icon: fa-regular fa-sidebar-flip
           docs:
             - name: Reviewing Analytics
