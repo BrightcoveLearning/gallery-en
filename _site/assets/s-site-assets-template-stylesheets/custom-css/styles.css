@@ -94,6 +94,17 @@ li li.nav-item {
 
 /* index pages styles */
 
+.nav-link {
+    color: #4ea8d1;
+}
+.nav-link:hover{
+    color: #5eccff
+}
+summary {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 section.bcls-card-small {
     margin: 2rem;
     margin-left: 0;
