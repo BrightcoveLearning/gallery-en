@@ -5,16 +5,34 @@ parent: Virtual Event Experiences
 grandparent: Experiences
 layout: index_pages
 ---
-
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
 <h1><i class="fa-regular fa-calendar-circle-user"></i> {{ page.title }}</h1>
 <article class="bcls-article">
-<br/>
-  <summary>{{ page.description }}</summary>
-  <section>
-    <h2 id="Topics_in_this_section">Topics</h2>
-    <ul class="bcls-topic-list">
-      <li><a href="adding-videos-virtual-event-experience.html">Adding Videos</a></li>
-      <li><a href="using-simulated-live-videos.html">Using Simulated Live Videos</a></li>
-    </ul>
-</section>
-</article>
+  <br/>
+    <summary>{{ page.description }}</summary>
+    <section>
+      <h2 id="Topics_in_this_section">Topics</h2>
+      <div class="col-12 col-lg-4 py-3">
+        <div class="card card-hover shadow-sm">
+          <div class="card-body">
+            <div class="card-text">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a
+                    href="adding-videos-virtual-event-experience.html">Adding
+                    Videos</a></li>
+                <li class="list-group-item"><a
+                    href="using-simulated-live-videos.html">Using Simulated Live
+                    Videos</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--//card-body-->
+        </div>
+        <!--//card-->
+      </div>
+    </section>
+  </article>

@@ -5,18 +5,32 @@ parent: Portal Experiences
 grandparent: Experiences
 layout: index_pages
 ---
-
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
 <h1><i class="fa-regular fa-browser"></i> {{ page.title }}</h1>
 <article class="bcls-article">
 <br/>
   <summary>{{ page.description }}</summary>
   <section>
     <h2 id="Topics_in_this_section">Topics</h2>
-    <ul class="bcls-topic-list">
-      <li><a href="overview-creating-editing-and-publishing-portal-experiences.html">Overview: Creating, Editing and Publishing Portal Experiences</a></li>
-      <li><a href="/get-started/training/training-demand-introduction-gallery.html">Training - Introduction to Gallery</a></li>
-      <li><a href="/get-started/training/training-demand-building-portal-experiences-using-gallery.html">Training - Building Portal Experiences using Gallery</a></li>
-      <li><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Step-by-Step: Creating and Publishing a Portal Experience</a></li>
-    </ul>
+    <div class="col-12 col-lg-4 py-3">
+      <div class="card card-hover shadow-sm">
+        <div class="card-body">
+          <div class="card-text">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="overview-creating-editing-and-publishing-portal-experiences.html">Overview: Creating, Editing and Publishing Portal Experiences</a></li>
+                <li class="list-group-item"><a href="/get-started/training/training-demand-introduction-gallery.html">Training - Introduction to Gallery</a></li>
+                <li class="list-group-item"><a href="/get-started/training/training-demand-building-portal-experiences-using-gallery.html">Training - Building Portal Experiences using Gallery</a></li>
+                <li class="list-group-item"><a href="/get-started/step-step-creating-and-publishing-portal-experience.html">Step-by-Step: Creating and Publishing a Portal Experience</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--//card-body--> 
+        </div>
+        <!--//card--> 
+      </div>
 </section>
 </article>
