@@ -1,0 +1,74 @@
+[
+  {
+    "id": "default/audio96",
+    "version": 5,
+    "name": "Default Audio96",
+    "kind": "audio",
+    "account_id": "default",
+    "created_at": "2016-06-06T23:39:51.876947888Z",
+    "updated_at": "2017-12-05T19:52:36.652493367Z",
+    "encoding_settings": {
+      "audio_bitrate": 96,
+      "audio_channels": 2,
+      "audio_codec": "aac",
+      "force_aac_profile": "aac-lc",
+      "forced_keyframe_rate": 1,
+      "fragment_duration": 2000,
+      "segment_seconds": 2
+    }
+  },
+  {
+    "id": "default/audio64",
+    "version": 5,
+    "name": "Default Audio64",
+    "kind": "audio",
+    "account_id": "default",
+    "created_at": "2016-06-06T23:39:51.49858741Z",
+    "updated_at": "2017-12-05T19:52:36.125618038Z",
+    "encoding_settings": {
+      "audio_bitrate": 64,
+      "audio_channels": 2,
+      "audio_codec": "aac",
+      "force_aac_profile": "aac-lc",
+      "forced_keyframe_rate": 1,
+      "fragment_duration": 2000,
+      "segment_seconds": 2
+    }
+  },
+  {
+    "id": "default/audio192",
+    "version": 2,
+    "name": "audio192",
+    "kind": "audio",
+    "account_id": "default",
+    "created_at": "2016-10-12T00:52:48.575372031Z",
+    "updated_at": "2017-03-22T14:20:39.115514582Z",
+    "encoding_settings": {
+      "audio_bitrate": 192,
+      "audio_channels": 2,
+      "audio_codec": "aac",
+      "force_aac_profile": "aac-lc",
+      "forced_keyframe_rate": 1,
+      "fragment_duration": 2000,
+      "segment_seconds": 2
+    }
+  },
+  {
+    "id": "default/audio128",
+    "version": 5,
+    "name": "Default Audio128",
+    "kind": "audio",
+    "account_id": "default",
+    "created_at": "2016-06-06T23:39:51.093305379Z",
+    "updated_at": "2017-12-05T19:52:35.587897334Z",
+    "encoding_settings": {
+      "audio_bitrate": 128,
+      "audio_channels": 2,
+      "audio_codec": "aac",
+      "force_aac_profile": "aac-lc",
+      "forced_keyframe_rate": 1,
+      "fragment_duration": 2000,
+      "segment_seconds": 2
+    }
+  }
+]
