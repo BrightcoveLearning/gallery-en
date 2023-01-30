@@ -30,7 +30,7 @@
       collection: "brightcove-documenation", // Set this to your collection.
       pipeline: "website",     // Set the search pipeline.
       instantPipeline: "autocomplete", // Set the instant pipeline.
-      attachSearchBox: document.getElementById("results-search-box"), // DOM element to render search box.
+      attachSearchBox: document.getElementById("nav-search-box"), // DOM element to render search box.
       attachSearchResponse: document.getElementById("results-search-response"), // DOM element to render search results.
       inputPlaceholder: "Search", // Placeholder text for the search box.
       inputAutoFocus: false, // Focus the input element on render.
