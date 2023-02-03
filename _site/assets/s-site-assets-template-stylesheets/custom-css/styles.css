@@ -1,8 +1,13 @@
 /* Header styles */
 
-body > div.page-header.theme-bg-dark.py-5.text-center.position-relative > div.container > div.page-intro.single-col-max.mx-auto a {
+body>div.page-header.theme-bg-dark.py-5.text-center.position-relative>div.container>div.page-intro.single-col-max.mx-auto a {
     color: #ffffff;
     font-weight: bold;
+}
+
+body {
+    counter-reset: figure 0 table 0 step 0;
+    position: relative;
 }
 
 /* Footer styles */
@@ -50,9 +55,9 @@ a.theme-link:hover {
 }
 
 .section-items.list-unstyled.nav.flex-column.pb-3 li.section-title {
-white-space: nowrap;
-margin-left: 1rem;
-margin-bottom: 0;
+    white-space: nowrap;
+    margin-left: 1rem;
+    margin-bottom: 0;
 }
 
 .site-nav {
@@ -67,10 +72,12 @@ margin-bottom: 0;
 }
 
 .nav-item {
-    padding: 0 0;}
+    padding: 0 0;
+}
 
 li li.nav-item {
-    padding: .3rem 0;}
+    padding: .3rem 0;
+}
 
 /* Page Contents Menu Styles */
 
@@ -97,9 +104,11 @@ li li.nav-item {
 .nav-link {
     color: #4ea8d1;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #5eccff
 }
+
 summary {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -113,13 +122,15 @@ section.bcls-card-small {
 }
 
 section.bcls-card-small li {
-    margin-left: -1rem;;
+    margin-left: -1rem;
+    ;
 }
 
 /* Breadcrumbs */
 li.breadcrumb-item {
     margin-left: 0;
 }
+
 /* all page styles */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: articulat-cf, sans-serif;
@@ -141,7 +152,7 @@ a:hover {
 }
 
 .card-body {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .card-hover {
@@ -159,83 +170,84 @@ a:hover {
 }
 
 .icon-theme {
-    background:rgb(237, 237, 237)!important;
+    background: rgb(237, 237, 237) !important;
     border-radius: 50%;
 }
 
 /* details blocks */
 
-  details {
+details {
     border: 1px solid #CCCCCC;
-      border-radius: 1rem;
-      padding: .5rem;
-      background-color: rgb(249, 249, 249);
-      margin-bottom: .2rem;
-  }
-  
-  details>summary {
-      border: .1rem rgb(249, 249, 249) solid;
-      font-size: 1rem;
-      color: rgb(8, 8, 140);
-      padding: .4rem;
-      outline: none;
-      white-space: pre-wrap;
-      white-space: -moz-pre-wrap;
-      white-space: -pre-wrap;
-      white-space: -o-pre-wrap;
-      word-wrap: break-word;
-      display: inline-flex;
-      align-items: center;
-  }
-  
-  details>summary>* {
-      /* font-size: 1.9rem; */
-      color: rgb(8, 8, 140);
-      display: inline;
-  }
-  
-  details>summary:focus {
-      border: .1rem rgb(249, 249, 249) solid;
-      outline: none;
-  }
-  
-  details>summary::-webkit-details-marker,
-  details>summary::marker {
-      display: none;
-      color: rgb(249, 249, 249);
-  }
-  
-  details>summary::before {
-      float: left;
-      height: .5rem;
-      width: .5rem;
-      margin-right: 1rem;
-      padding-right: 2rem;
-      content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
-  }
-  
-  details[open]>summary::before {
-      float: left;
-      height: .5rem;
-      width: .5rem;
-      margin-right: 1rem;
-      padding-right: 2rem;
-      content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
-  }
-  
-  details[open]>summary {
-      border: none;
-      outline: none;
-  }
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: rgb(249, 249, 249);
+    margin-bottom: .2rem;
+}
 
-  details[open] {
+details>summary {
+    border: .1rem rgb(249, 249, 249) solid;
+    font-size: 1rem;
+    color: rgb(8, 8, 140);
+    padding: .4rem;
+    outline: none;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    display: inline-flex;
+    align-items: center;
+}
+
+details>summary>* {
+    /* font-size: 1.9rem; */
+    color: rgb(8, 8, 140);
+    display: inline;
+}
+
+details>summary:focus {
+    border: .1rem rgb(249, 249, 249) solid;
+    outline: none;
+}
+
+details>summary::-webkit-details-marker,
+details>summary::marker {
+    display: none;
+    color: rgb(249, 249, 249);
+}
+
+details>summary::before {
+    float: left;
+    height: .5rem;
+    width: .5rem;
+    margin-right: 1rem;
+    padding-right: 2rem;
+    content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
+}
+
+details[open]>summary::before {
+    float: left;
+    height: .5rem;
+    width: .5rem;
+    margin-right: 1rem;
+    padding-right: 2rem;
+    content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
+}
+
+details[open]>summary {
+    border: none;
+    outline: none;
+}
+
+details[open] {
     border: 1px solid #CCCCCC;
     padding: .5rem;
-  }
+}
 
-  /* task list for steps */
-  
-  .bcls-tasklist {
+/* task list for steps 
+   see body rule for step definitions */
+
+.bcls-tasklist {
     list-style-type: none;
     margin-left: 0;
 }
@@ -441,6 +453,7 @@ figcaption {
     margin-bottom: 1rem;
     ;
 }
+
 /* .bcls-tasklist ol li:before {
 content: '';
 } */
@@ -484,9 +497,9 @@ content: '';
 
 
 td>code, th>code {
-  word-wrap: unset;
-  white-space: nowrap;
-  font-size: inherit;
+    word-wrap: unset;
+    white-space: nowrap;
+    font-size: inherit;
 }
 
 code,
@@ -496,37 +509,39 @@ samp {
 }
 
 .bcls-aside code {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 /* code blocks */
 
 code[class*="language-"], pre[class="line-numbers"] {
-  font-family: 'Source Code Pro', monospace !important;
+    font-family: 'Source Code Pro', monospace !important;
 }
 
 pre code {
-  font-size: .95rem !important;
-  background-color: unset;
-  background: unset;
+    font-size: .95rem !important;
+    background-color: unset;
+    background: unset;
 }
 
 
 pre code span {
-  font-family: 'Source Code Pro', monospace;
-  font-size: inherit;
+    font-family: 'Source Code Pro', monospace;
+    font-size: inherit;
 }
 
 pre {
-  font-family: 'Source Code Pro', monospace;
- }
+    font-family: 'Source Code Pro', monospace;
+}
 
-pre > code > span.line-numbers-rows > span {
-  font-size: 1.015rem;
+pre>code>span.line-numbers-rows>span {
+    font-size: 1.015rem;
 }
+
 .token.punctuation {
-  color: #666666;
+    color: #666666;
 }
+
 /* info, tips, warnings */
 
 .bcls-aside {
@@ -560,7 +575,7 @@ pre > code > span.line-numbers-rows > span {
     float: left;
     /* color: rgb(8, 8, 139);
 height: 28px; */
-    margin-left: -3em;
+    margin-left: -2.5em;
 }
 
 .bcls-aside--warning {
@@ -576,4 +591,65 @@ height: 28px; */
     content: url(/assets/s-site-assets-images/asides/alert-triangle-orange.svg);
     float: left;
     margin-left: -2.5em;
+}
+
+/* simulated UI buttons */
+/* in-app help text buttons */
+.button-blue,
+.button-blue-text,
+.button-blue-text-bordered,
+.button-red,
+.button-red-text,
+.button-gray {
+    /* font-family: 'articulat-cf'; */
+    font-weight: bold;
+    font-size: .9rem;
+    padding: .4rem;
+    white-space: nowrap;
+}
+
+.button-blue {
+    color: rgb(255, 255, 255);
+    background-color: rgb(9, 45, 189);
+}
+
+.button-blue-text {
+    color: rgb(8, 8, 140);
+    background-color: rgb(255, 255, 255);
+}
+
+.button-blue-text-bordered {
+    color: rgb(8, 8, 140);
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(229, 230, 230) solid;
+    border-radius: 1px;
+}
+
+.button-red {
+    color: rgb(255, 255, 255);
+    background-color: rgb(211, 61, 0);
+}
+
+.button-red-text {
+    color: rgb(211, 61, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.button-red-text-border {
+    color: rgb(211, 61, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(211, 61, 0) solid;
+    border-radius: 2px;
+    padding: 4px;
+    ;
+}
+
+.button-gray {
+    background-color: rgb(242, 244, 249);
+}
+
+.button-icon {
+    white-space: nowrap;
+    padding-right: .15rem;
+    height: 1rem;
 }
