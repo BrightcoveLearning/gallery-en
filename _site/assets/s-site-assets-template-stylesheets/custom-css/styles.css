@@ -250,11 +250,12 @@ details[open] {
 .bcls-tasklist {
     list-style-type: none;
     margin-left: 0;
+    counter-reset: none;
 }
 
 .bcls-tasklist>li::before {
     color: #a1a1a1;
-    content: counters(step, ".") " ";
+    content: counter(step, ".") " ";
     font-size: 1.5em;
     font-weight: bold;
     left: -2em;
@@ -283,7 +284,8 @@ details[open] {
 .bcls-tasklist-restart {
     list-style-type: none;
     margin-left: 0;
-    counter-reset: rstep calc(var(--s) - 1);
+    /* counter-reset: rstep calc(var(--s) - 1); */
+    counter-reset: rstep 0;
 }
 
 .bcls-tasklist-restart>li {
