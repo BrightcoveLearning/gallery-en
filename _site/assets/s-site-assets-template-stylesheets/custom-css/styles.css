@@ -6,7 +6,7 @@ body>div.page-header.theme-bg-dark.py-5.text-center.position-relative>div.contai
 }
 
 body {
-    counter-reset: figure 0 table 0 step 0;
+    counter-reset: figure 0 table 0 step 0 rstep ;
     position: relative;
 }
 
