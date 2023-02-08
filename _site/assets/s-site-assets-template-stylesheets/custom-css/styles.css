@@ -6,7 +6,7 @@ body>div.page-header.theme-bg-dark.py-5.text-center.position-relative>div.contai
 }
 
 body {
-    counter-reset: figure 0 table 0 step 0 rstep ;
+    counter-reset: figure 0 table 0 step 0;
     position: relative;
 }
 
@@ -253,6 +253,15 @@ details[open] {
     counter-reset: none;
 }
 
+.bcls-tasklist>li {
+    border-left: 5px solid #ddd;
+    margin-bottom: 20px;
+    min-height: 1.7em;
+    padding-left: 1em;
+    position: relative;
+    counter-increment: step;
+}
+
 .bcls-tasklist>li::before {
     color: #a1a1a1;
     content: counter(step, ".") " ";
@@ -266,26 +275,18 @@ details[open] {
     width: 1.5em;
 }
 
-.bcls-tasklist>li {
-    border-left: 5px solid #ddd;
-    margin-bottom: 20px;
-    min-height: 1.7em;
-    padding-left: 1em;
-    position: relative;
-    counter-increment: step;
-}
 
 .bcls-tasklist ul,
 .bcls-tasklist ol {
     margin-bottom: 1rem;
-    ;
 }
 
+/* Classes to restart li */
 .bcls-tasklist-restart {
     list-style-type: none;
     margin-left: 0;
     /* counter-reset: rstep calc(var(--s) - 1); */
-    counter-reset: rstep 0;
+    counter-reset: rrstep 0;
 }
 
 .bcls-tasklist-restart>li {
@@ -294,7 +295,7 @@ details[open] {
     min-height: 1.7em;
     padding-left: 1em;
     position: relative;
-    counter-increment: rstep;
+    counter-increment: rrstep;
 }
 
 .bcls-tasklist-restart>li::before {
@@ -310,6 +311,37 @@ details[open] {
     top: 0;
     width: 1.5em;
 }
+
+/* New classes for continue counter once we restart it */
+.bcls-tasklist-restart-rstep {
+    list-style-type: none;
+    margin-left: 0;
+    counter-reset: rstep 0;
+}
+
+.bcls-tasklist-restart-rstep>li {
+    border-left: 5px solid #ddd;
+    margin-bottom: 20px;
+    min-height: 1.7em;
+    padding-left: 1em;
+    position: relative;
+    counter-increment: rstep;
+}
+
+.bcls-tasklist-restart-rstep>li::before {
+    color: #a1a1a1;
+    content: counters(rstep, ".") " ";
+    font-size: 1.5em;
+    font-weight: bold;
+    left: -2em;
+    line-height: 1;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 1.5em;
+}
+
+
 
 .bcls-tasklist-restart ul,
 .bcls-tasklist-restart ol {
