@@ -380,6 +380,13 @@ div#main_content.container {
 
 /* Doc Page Styles */
 
+.bcls-section {
+    margin-top: 2.5em;
+    padding-top: .5em;
+    border-top: 1px #CCC solid;
+}
+
+
 article.bcls-article {
     /* padding: 0px;
     display: inline-block;
