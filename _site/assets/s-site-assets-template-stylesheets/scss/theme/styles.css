@@ -6,7 +6,7 @@ Error: Undefined variable: "$theme-text-color-secondary".
 3:  * Version: Bootstrap 5 v2.0
 4:  * Author: Xiaoying Riley
 5:  * Copyright: 3rd Wave Media Ltd.
-6:  * Website: http://themes.3rdwavemedia.com/
+6:  * Website: https://themes.3rdwavemedia.com/
 7:  * Twitter: @3rdwave_themes
 8: *\/
 9: @import "mixins";
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-text-color-secondary\".\A         on line 8 of /Users/bbailey/git/mstudio/assets/s-site-assets-template-stylesheets/scss/theme/_base.scss\A         from line 10 of /Users/bbailey/git/mstudio/assets/s-site-assets-template-stylesheets/scss/theme/styles.scss\A \A 3:  * Version: Bootstrap 5 v2.0\A 4:  * Author: Xiaoying Riley\A 5:  * Copyright: 3rd Wave Media Ltd.\A 6:  * Website: http://themes.3rdwavemedia.com/\A 7:  * Twitter: @3rdwave_themes\A 8: */\A 9: @import \"mixins\";\A 10: @import \"base\";\A 11: @import \"docs\";"; }
+  content: "Error: Undefined variable: \"$theme-text-color-secondary\".\A         on line 8 of /Users/bbailey/git/mstudio/assets/s-site-assets-template-stylesheets/scss/theme/_base.scss\A         from line 10 of /Users/bbailey/git/mstudio/assets/s-site-assets-template-stylesheets/scss/theme/styles.scss\A \A 3:  * Version: Bootstrap 5 v2.0\A 4:  * Author: Xiaoying Riley\A 5:  * Copyright: 3rd Wave Media Ltd.\A 6:  * Website: https://themes.3rdwavemedia.com/\A 7:  * Twitter: @3rdwave_themes\A 8: */\A 9: @import \"mixins\";\A 10: @import \"base\";\A 11: @import \"docs\";"; }

@@ -195,15 +195,19 @@ details>summary {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 details>summary>* {
     /* font-size: 1.9rem; */
     color: rgb(8, 8, 140);
-    display: inline;
-}
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
 details>summary:focus {
     border: .1rem rgb(249, 249, 249) solid;
@@ -220,6 +224,7 @@ details>summary::before {
     float: left;
     height: .5rem;
     width: .5rem;
+    margin-top: -1rem;
     margin-right: 1rem;
     padding-right: 2rem;
     content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
@@ -237,6 +242,10 @@ details[open]>summary::before {
 details[open]>summary {
     border: none;
     outline: none;
+}
+
+details[open]>blockquote {
+    margin-left: 3.4rem;
 }
 
 details[open] {
@@ -649,6 +658,15 @@ height: 28px; */
     white-space: nowrap;
 }
 
+.button-gray-border {
+    font-weight: bold;
+    font-size: .9rem;
+    padding: .4rem;
+    white-space: nowrap;
+    border: solid 2px #babfc3;
+    border-radius: 3px;
+}
+
 .button-blue {
     color: rgb(255, 255, 255);
     background-color: rgb(9, 45, 189);
@@ -680,7 +698,7 @@ height: 28px; */
     color: rgb(211, 61, 0);
     background-color: rgb(255, 255, 255);
     border: 1px rgb(211, 61, 0) solid;
-    border-radius: 2px;
+    border-radius: 1px;
     padding: 4px;
     ;
 }
@@ -693,4 +711,27 @@ height: 28px; */
     white-space: nowrap;
     padding-right: .15rem;
     height: 1rem;
+}
+
+/* FAQ Styles */
+
+.bcls-question {
+    color: #2346b7;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.bcls-question:hover {
+    text-decoration: underline;
+}
+
+.bcls-question::before {
+    content: "+  ";
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-right: 1rem;
+}
+
+.bcls-answer {
+    display: none;
 }
