@@ -661,7 +661,7 @@ height: 28px; */
 .button-gray-border {
     font-weight: bold;
     font-size: .9rem;
-    padding: .4rem;
+    padding: .2rem;
     white-space: nowrap;
     border: solid 2px #babfc3;
     border-radius: 3px;
@@ -705,6 +705,12 @@ height: 28px; */
 
 .button-gray {
     background-color: rgb(242, 244, 249);
+}
+
+.button-green {
+    background-color: #018060;
+    color: #FFFFFF;
+    padding: .2rem;
 }
 
 .button-icon {
