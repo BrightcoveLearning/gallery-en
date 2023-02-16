@@ -136,6 +136,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: 'Poppins', articulat-cf, sans-serif;
 }
 
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: calc(2.7rem + .6vw);
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: calc(1.8rem + .6vw);
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: calc(1.3rem + .6vw);
+}
+
 a {
     color: #4ea8d1;
 }
