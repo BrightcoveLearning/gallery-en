@@ -364,6 +364,7 @@ details[open] {
 h3 {
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: calc(1.2rem + .6vw);
 }
 
 code {
@@ -395,6 +396,11 @@ div#main_content.container {
     border-top: 1px #CCC solid;
 }
 
+.bcls-section h5 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;}
 
 article.bcls-article {
     /* padding: 0px;
