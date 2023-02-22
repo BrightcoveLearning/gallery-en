@@ -408,6 +408,19 @@ div#main_content.container {
 
 /* Doc Page Styles */
 
+.bcl-highlight,
+        .bcls-highlight {
+            background-color: rgb(255, 255, 201);
+            border: 1px rgb(255, 204, 52) solid;
+            padding: 1px;
+        }
+        
+        .bcls-input {
+            background-color: rgb(254, 246, 238);
+            border: 1px rgb(200, 119, 163) solid;
+            padding: 1px;
+        }
+
 .bcls-section {
     margin-top: 2.5em;
     padding-top: .5em;
