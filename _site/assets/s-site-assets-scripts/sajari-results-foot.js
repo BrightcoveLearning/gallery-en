@@ -19,7 +19,7 @@
   console.log('filter', filter);
   console.log('lang_filter', lang_filter);
   if (site_domain === 'support.brightcove.com') {
-    tab_filters = {defaultTab:"All Brightcove Documentation",tabs:[{title:"All Brightcove Documentation",filter:lang_filter}]};
+    tab_filters = {defaultTab:"All Brightcove Documentation",tabs:[{title:"All Brightcove Documentation",filter:filter}]};
   } else {
     tab_filters = {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}, {title:"All Brightcove Documentation",filter:lang_filter}]};
   }
