@@ -50,10 +50,14 @@
               url: /experiences/portal/templates/overview-gallery-portal-templates.html
             - name: Updating Gallery Templates
               url: /experiences/portal/templates/updating-gallery-templates.html
+            - name: Working with the Immersion Portal Template
+              url: /experiences/portal/templates/working-with-immersion-template.html
             - name: Customizing the Catalogue Template Settings
               url: /experiences/portal/templates/customizing-catalogue-template-settings.html
             - name: Customizing the Chronicle Template Settings
               url: /experiences/portal/templates/customizing-chronicle-template-settings.html
+            - name: Customizing the Immersion Template Settings
+              url: /experiences/portal/templates/customizing-immersion-template-settings.html
             - name: Customizing the Marquee Template Settings
               url: /experiences/portal/templates/customizing-marquee-template-settings.html
         - name: Adding Videos
