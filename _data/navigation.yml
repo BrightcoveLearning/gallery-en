@@ -225,11 +225,11 @@
             - name: Customizing the Settings
               url: /experiences/live/portal/customizing-live-event-portal-settings.html
             - name: Previewing and Publishing
-              url: /experiences/portal/previewing-and-publishing-portal-experience.html
+              url: /experiences/portal/publishing/previewing-and-publishing-portal-experience.html
             - name: Assigning a Custom Domain
-              url: /experiences/portal/assigning-custom-domain-portal-experience.html
+              url: /experiences/portal/publishing/assigning-custom-domain-portal-experience.html
             - name: Controlling Access
-              url: /experiences/portal/controlling-access-portal-experience.html
+              url: /experiences/portal/publishing/controlling-access-portal-experience.html
             - name: Adding Pigeonhole to a Live Portal
               url: /experiences/live/portal/adding-pigeonhole-live-event-portal-experience.html
         - name: In-Page
@@ -252,21 +252,21 @@
           icon: fa-regular fa-calendar-circle-user
           docs:
             - name: Creating a Virtual Event Experience
-              url: /experiences/virtual-event/creating-virtual-event-experience.html
+              url: /experiences/virtual-event/getting-started/creating-virtual-event-experience.html
             - name: Getting Started with the Agenda Module
-              url: /experiences/virtual-event/getting-started-agenda-module.html
+              url: /experiences/virtual-event/getting-started/getting-started-agenda-module.html
             - name: Overview of the Virtual Event Template
-              url: /experiences/virtual-event/overview-virtual-event-template.html
+              url: /experiences/virtual-event/getting-started/overview-virtual-event-template.html
             - name: Using the Site Editor
-              url: /experiences/virtual-event/using-site-editor-customize-virtual-event-experience.html
+              url: /experiences/virtual-event/getting-started/using-site-editor-customize-virtual-event-experience.html
         - name: Managing Videos
           url: /experiences/virtual-event/videos/index.html
           icon: fa-regular fa-calendar-circle-user
           docs:
             - name: Adding Videos
-              url: /experiences/virtual-event/adding-videos-virtual-event-experience.html
+              url: /experiences/virtual-event/videos/adding-videos-virtual-event-experience.html
             - name: Using Simulated Live Videos
-              url: /experiences/virtual-event/using-simulated-live-videos.html
+              url: /experiences/virtual-event/videos/using-simulated-live-videos.html
         - name: Agenda and Speakers
           url: /experiences/virtual-event/agenda-speakers/index.html
           icon: fa-regular fa-calendar-circle-user
@@ -296,7 +296,7 @@
             - name: Customizing the Site Features
               url: /experiences/portal/customizing/customizing-site-features-portal-experience.html
             - name: Customizing the Style
-              url: /experiences/virtual-event/customizing-style-virtual-event-experience.html
+              url: /experiences/virtual-event/customizing/customizing-style-virtual-event-experience.html
             - name: Customizing the Video and Playback Settings
               url: /experiences/portal/customizing/customizing-video-and-playback-settings-portal-experience.html
             - name: Integrating Pigeonhole
@@ -310,26 +310,26 @@
           icon: fa-regular fa-calendar-circle-user
           docs:
             - name: Using Role-Based Access Control
-              url: /experiences/virtual-event/using-role-based-access-control.html
+              url: /experiences/virtual-event/other/using-role-based-access-control.html
             - name: Exporting Virtual Event Viewer Data
-              url: /experiences/virtual-event/getting-analytics.html 
+              url: /experiences/virtual-event/other/getting-analytics.html 
     - name: Landing Page
       url: /experiences/landing/index.html
       icon: fa-regular fa-file-lines
       description: Learn how to create, edit and publish Landing Page Experiences.
       docs:
       - name: Assigning a Custom Domain
-        url: /experiences/portal/assigning-custom-domain-portal-experience.html
+        url: /experiences/portal/publishing/assigning-custom-domain-portal-experience.html
       - name: Creating a Landing Page Experience
         url: /experiences/landing/creating-landing-page-experience.html
       - name: Exporting Gallery Lead Data
-        url: /experiences/portal/exporting-gallery-lead-data.html
+        url: /experiences/portal/other/exporting-gallery-lead-data.html
       - name: Previewing and Publishing
-        url: /experiences/portal/previewing-and-publishing-portal-experience.html
+        url: /experiences/portal/publishing/previewing-and-publishing-portal-experience.html
       - name: Using a Lead Form
-        url: /experiences/portal/using-lead-form-portal-experience.html
+        url: /experiences/portal/other/using-lead-form-portal-experience.html
       - name: Using the Site Editor to Customize an Experience
-        url: /experiences/portal/using-site-editor-customize-portal-experience.html
+        url: /experiences/portal/customizing/using-site-editor-customize-portal-experience.html
 - section: 
   name: General Information
   url: /general/index.html
