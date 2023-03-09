@@ -339,6 +339,7 @@ details[open] {
     width: 1.5em;
 }
 
+
 /* New classes for continue counter once we restart it */
 .bcls-tasklist-restart-rstep {
     list-style-type: none;
