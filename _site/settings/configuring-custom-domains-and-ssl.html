@@ -5,6 +5,7 @@
         
         <!-- Meta -->
         <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="In this topic you will learn how to configure custom domains and SSL for a Portal Experience.">
@@ -15,7 +16,6 @@
         <link href="/assets/s-site-assets-stylesheets/fonts/source-code-pro.css" rel="stylesheet">
         
         <!-- FontAwesome JS-->
-        
         <script src="https://kit.fontawesome.com/d67c74a882.js" crossorigin="anonymous"></script>  
         
         <!-- Plugins CSS -->
@@ -44,7 +44,7 @@
     </head> 
 
     <body class="docs-page">
-        
+
 
 <header class="header fixed-top">
   <div class="branding docs-branding">
@@ -1476,9 +1476,9 @@
   </section>
   <section class="bcls-section">
     <h2 id="puburl">Using a custom domain (publisher registered)</h2>
-    <p>Video sites can also be hosted on your own custom domain that you register. This allows you to brand the URL and keep it consistent with your current website/URL naming construct. This requires you to register the domain name and then configure a custom CNAME record with your hosting provider. See the <a href="#cname">section below</a> for information on how to configure a CNAME record.</p>
+    <p>Video sites can also be hosted on your own custom domain that you have registered. This allows you to brand the URL and keep it consistent with your current website/URL naming construct. This requires you to register the domain name, verify domain ownership using a TXT record and  then configuring a custom CNAME record with your hosting provider. See the <a href="#cname">section below</a> for more information on how to configure a CNAME record.</p>
   </section>
-  <section class="bcls-section">
+  <section id="dnstxt" class="bcls-section">
     <h2 id="create">Creating a custom domain</h2>
     <p>To create a custom domain, follow these steps:</p>
     <ol class="bcls-tasklist-restart">
@@ -1489,19 +1489,22 @@
       <li>Select a domain option to use:
         <ul>
           <li><strong>brightcovegallery.com</strong> - The site domain will have the format <code translate="No">&lt;your domain&gt;.brightcovegallery.com</code>.</li>
-          <li><strong>gallery.video</strong> - The site domain will have the format <code translate="No">&lt;your domain&gt;.gallery.video </code>.</li>
-          <li><strong>Custom</strong> - Select to host the site on your own custom domain. When selecting this option, you will also have to <a href="#cname">configure a CNAME record with your hosting provider</a>.</li>
+          <li><strong>gallery.video</strong> - The site domain will have the format <code translate="No">&lt;your domain&gt;.gallery.video</code>.</li>
+          <li><strong>Custom</strong> - Select to host the site on your own custom domain. When selecting this option, you will also have to <a href="#cname">verify domain ownership and configure a CNAME record with your hosting provider</a>.</li>
         </ul>
       </li>
-      <li>Enter the domain name. A message will be displayed to indicate if the domain is valid or invalid. If the domain name is invalid, enter a new domain name.
+      <li>Enter the domain name. </li>
+      <li>If a Brightcove provided domain option was selected, a message will be displayed to indicate if the domain is valid or invalid. If the domain name is invalid, enter a new domain name.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-create-custom-domain.png" /></figure>
       </li>
+      <li>If a <strong>Custom</strong> domain option was selected, a <strong>RECORD NAME</strong> and <strong>VALUE</strong> will be displayed. <img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-create-custom-domain-txt.png" />
+        <p>You must deploy a DNS TXT record in your hosting account to validate ownership of the domain.  After the TXT record has been added, click <span class="button-blue-text-bordered">Validate</span> and confirm that a message appears saying the domain is valid.</p>
+        <img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-create-custom-domain-txt-confirm.png" /> </li>
       <li>If you are publishing the site using a Brightcove provided domain, there is an option to <strong>Enforce SSL on this domain</strong>. Check <strong>Enforce SSL on this domain (recommended) </strong>to enable a redirect from the non-SSL version of the site if a viewer goes to it.</li>
       <li>If you are publishing the site to your own custom domain, you have the option of securing the site using SSL. Check the <strong>Use SSL</strong> checkbox to secure the site using SSL. For information on using SSL, see <a href="/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a>.</li>
       <li>Check <strong>Enable Redirect</strong> to redirect this URL to another URL. Typically this would only be checked after this domain has been used for a while. When this option is selected, enter the <strong>Redirect URL</strong> this existing URL should be redirected to.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/settings/node16440-enable-redirect.png" /></figure>
-        Check <strong>Use a permanent redirect (HTTP status code 301)</strong> to indicate that the redirect is permanent. When a search engine spider finds a 301 status code in the response header of a web page, it understands that this web page no longer exists and replaces the indexed URL with the new one. This option will retain your old web page traffic and page rank.
-      </li>
+        Check <strong>Use a permanent redirect (HTTP status code 301)</strong> to indicate that the redirect is permanent. When a search engine spider finds a 301 status code in the response header of a web page, it understands that this web page no longer exists and replaces the indexed URL with the new one. This option will retain your old web page traffic and page rank. </li>
       <li>Click <span class="button-blue">Save</span>. A list of configured domains will be displayed.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="list of domains" src="/assets/images/settings/node16440-domain-list.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: When using a Brightcove provided domain, the SSL status will always be <strong>Provided</strong>. This indicates that by adding <strong>https://</strong> to the beginning of the site URL, the data transmission between your browser and the Gallery site will be secure.</aside>
