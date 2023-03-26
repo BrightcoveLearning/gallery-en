@@ -89,6 +89,7 @@ li li.nav-item {
     display: inline-block;
     position: fixed;
     padding-left: 2em;
+    overflow-y: scroll;
 }
 
 #in_page_nav {
