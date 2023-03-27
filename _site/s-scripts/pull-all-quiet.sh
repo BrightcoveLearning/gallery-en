@@ -1,7 +1,7 @@
 cd ..
 echo 'Check for updates in submodules'
 git submodule --quiet update --remote
-echo 'Checkout main for each submodle'
+echo 'Checkout main for each submodule'
 git submodule --quiet foreach git checkout main --quiet
 echo 'Pull all submodules'
 git submodule --quiet foreach git pull origin main --quiet

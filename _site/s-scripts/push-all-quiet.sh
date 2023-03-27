@@ -20,7 +20,7 @@ echo 'Pushing files in parent repo'
 git push --quiet
 echo 'Getting all submodules'
 git submodule --quiet foreach "git fetch origin main --quiet"
-echo 'Writing to submouldes'
+echo 'Writing to submodules'
 git submodule --quiet foreach "git checkout --quiet main ; git pull --quiet; git add . > /dev/null; git commit  --quiet -m '$COMMITMESSAGE';  git push --quiet"
 echo 'Syncing changed submodules with parent repo'
 git add . > /dev/null
