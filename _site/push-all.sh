@@ -1,2 +1,2 @@
 cd s-scripts
-zsh push-all.sh
+zsh push-all-quiet.sh

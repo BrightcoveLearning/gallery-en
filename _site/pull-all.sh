@@ -1,2 +1,2 @@
 cd s-scripts
-zsh pull-all.sh
+zsh pull-all-quiet.sh
