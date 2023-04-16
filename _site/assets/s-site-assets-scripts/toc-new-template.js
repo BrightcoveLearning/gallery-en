@@ -157,7 +157,7 @@ let BCLS_toc = (function (window, document) {
         navEl.appendChild(frag)
         if (in_page_nav_right) {
           implementHighlighting()
-        }
+          }
         // side nav is being generated; set the flag
         side_nav_created = true
       } else { // no sections, remove inpage nav

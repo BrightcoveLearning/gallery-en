@@ -1,3 +1,15 @@
+fix to make in-page links open below fixed header
+.bcls-section h2 {
+    scroll-padding-top: 10rem;
+}
+
+.anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+  }
+
 /* Header styles */
 
 body>div.page-header.theme-bg-dark.py-5.text-center.position-relative>div.container>div.page-intro.single-col-max.mx-auto a {
@@ -426,7 +438,7 @@ div#main_content.container {
         }
 
 .bcls-section {
-    margin-top: 2.5em;
+    margin-top: 6em;
     padding-top: .5em;
     border-top: 1px #CCC solid;
 }
