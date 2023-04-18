@@ -111,11 +111,11 @@ li li.nav-item {
 /* index pages styles */
 
 .nav-link {
-    color: #4ea8d1;
+    color: #000000;
 }
 
 .nav-link:hover {
-    color: #5eccff
+    color: #626568;
 }
 
 summary {
@@ -159,7 +159,7 @@ h2 {
     font-size: calc(1.8rem + .6vw);
     /* fix for anchors appearing behind fixed header */
     padding-top: 6rem;
-    margin-top: -6rem;
+    margin-top: -11rem;
 }
 
 
@@ -181,7 +181,7 @@ a:hover {
 
 .span-icon {
     text-align: center;
-    color: #4EA9D1;
+    color: #000000;
 }
 
 .card-body {
@@ -465,7 +465,7 @@ section.bcls-section {
 
 /* fix for anchors appearing behind fixed header */
 section.bcls-section {
-    scroll-padding-top: 6rem !important;
+    /* scroll-padding-top: 6rem !important; */
 }
 
 
