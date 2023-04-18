@@ -1,7 +1,3 @@
-fix to make in-page links open below fixed header
-.bcls-section h2 {
-    scroll-padding-top: 10rem;
-}
 
 .anchor{
     display: block;
@@ -161,7 +157,11 @@ h2 {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: calc(1.8rem + .6vw);
+    /* fix for anchors appearing behind fixed header */
+    padding-top: 6rem;
+    margin-top: -6rem;
 }
+
 
 h3 {
     margin-top: 15px;
@@ -462,6 +462,12 @@ summary {
 section.bcls-section {
     padding-top: 2rem;
 }
+
+/* fix for anchors appearing behind fixed header */
+section.bcls-section {
+    scroll-padding-top: 6rem !important;
+}
+
 
 /* images */
 
