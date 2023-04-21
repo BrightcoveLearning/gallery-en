@@ -153,13 +153,13 @@ h1 {
     font-size: calc(2.7rem + .6vw);
 }
 
-h2 {
+section.bcls-section h2 {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: calc(1.8rem + .6vw);
     /* fix for anchors appearing behind fixed header */
-    padding-top: 6rem;
-    margin-top: -11rem;
+    padding-top: 4rem;
+    margin-top: -4rem;
 }
 
 
@@ -438,9 +438,10 @@ div#main_content.container {
         }
 
 .bcls-section {
-    margin-top: 6em;
+    margin-top: 2em;
     padding-top: .5em;
     border-top: 1px #CCC solid;
+    margin-bottom: 3rem;
 }
 
 .bcls-section h5 {
