@@ -170,11 +170,13 @@ h3 {
 }
 
 a {
-    color: #4ea8d1;
+    color: #08088c;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #5eccff;
+    color: #08088c;
+    text-decoration: underline;
 }
 
 /* Landing Page styles */
