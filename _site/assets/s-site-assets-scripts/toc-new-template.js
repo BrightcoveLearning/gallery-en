@@ -281,7 +281,13 @@ let BCLS_toc = (function (window, document) {
   // }
 
   // initial create
-  create_inpage_nav();
+  console.log('h2s length', h2s.length);
+  if (h2s.length > 0) {
+    create_inpage_nav();
+  } else {
+    right_side_nav.setAttribute('style', 'display:none;');
+    centered_in_page_toc.setAttribute('style', 'display:none;');
+  }
 
   // this creates a public method, allow it to be run again (imported content for example)
   return {
