@@ -1,7 +1,15 @@
 bold=`tput bold`
 normal=`tput sgr0`
-echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
-read COMMITMESSAGE 
+# uf NB exists this is a nightly build
+echo $0
+if [[ $0 == nightly-build.sh ]]
+then
+  COMMITMESSAGE="Nightly Build"
+  echo $COMMITMESSAGE
+else
+  echo "Enter your ${bold}COMMIT MESSAGE${normal}:"
+  read COMMITMESSAGE
+fi 
 cd ..
 git pull
 bundle update
