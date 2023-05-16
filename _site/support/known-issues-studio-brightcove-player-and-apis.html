@@ -1626,6 +1626,8 @@ if(!isLive && duration !== 0){myPlayer.pause();myModal.open();</code></pre>
     <h2 id="player">Brightcove Player</h2>
     <p>Check the <a href="https://player.support.brightcove.com/release-notes/brightcove-player-release-notes.html">Brightcove Player Release Notes</a> to see if a past known issue has been corrected by a recent release.</p>
     <dl>
+      <dt>DRM protected videos cannot be played in the Facebook app's web viewer</dt>
+      <dl>If a Facebook user posts a message with a link to a page that contains a Brightcove player and the video(s) are DRM protected, other users clicking on the link within the Facebook app will see the page within the Facebook web viewer, which does not support DRM, and the video(s) therefore will not be played.</dl>
       <dt>The playback speed button was added to Safari 15</dt>
       <dd>Brightcove does not override user preferences, and beyond that Apple states <strong>This property can not be set for HTML5 audio/video elements on iOS</strong>.</dd>
       <dt>Using element ids that start with a number causes problems with CSS and JavaScript (<code translate="No">document.querySelector</code>)</dt>
