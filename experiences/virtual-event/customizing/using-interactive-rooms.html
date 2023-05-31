@@ -1,0 +1,139 @@
+---
+title: Using Interactive Rooms
+parent: Customizing Virtual Event Experiences
+grandparent: Virtual Event
+description: In this topic you will learn how to use an interactive room for online meetings.
+---
+<article class="bcls-article">
+  <h1>Using Interactive Rooms</h1>
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <p>Interactive rooms provide the ability to hold  online meetings that support audio, video and screen sharing. Interactive rooms are created by adding a session with a <strong>Session Type</strong> of <strong>Interactive Room</strong> to a virtual event agenda.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/agenda-session-type.png" /></figure>
+    </p>
+    <aside class="bcls-aside bcls-aside--information">Note: Interactive Rooms currently support up to 25 participants (speakers and attendees). If more than 25 participants attempt to enter a room, they will receive a message that the room is full.</aside>
+    <p>When the session start date and time are reached, a <strong>LIVE NOW</strong> button will appear on the agenda. Attendees can click the button to enter the interactive room.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/breakout-live.png" /></figure>
+    <p>To use interactive rooms, the Virtual Event Experience must be secured using SSO. The experience will inspect the user ID used to login. If the user ID matches an email address for one of the session speakers, that user will be presented with the speaker interface. All other users will be presented with the attendee interface.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="settings">Setting up audio and camera</h2>
+    <p>When entering an interactive room, the settings page will appear allowing you to configure your audio and camera settings.</p>
+    <ul>
+      <li><strong>Camera</strong> - Select the camera to use; after selecting a camera, the camera preview image will update</li>
+      <li><strong>Video quality</strong> - Select the video quality for the interactive room</li>
+      <li><strong>Mic</strong> - Select the mic to use</li>
+      <li><strong>Speaker</strong> - Select the speaker to use for audio output</li>
+      <li><strong>Attendee settings</strong> - Allow attendees to enable their cameras and microphones</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/settings-initial.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information">Note: The settings can also be configured from inside the interactive room interface once the conference has started.</aside>
+    <p>After the settings are configured, click <strong>Ready</strong> to enter the interactive room.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="ui">Using the interactive room interface</h2>
+    <p>The interface provides a set of controls for controlling audio and video for the meeting.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/presenter-ui.png" /></figure>
+    <h4>Enabling attendee cameras and mics</h4>
+    <p>Presenters have the ability to enable and disable mics and cameras for attendees. When the presenter disables cameras and mics, all attendees will be muted and cameras will not be displayed. When the meeting begins, mics and cameras are enabled by default.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/global-mic-camera-control.png" /></figure>
+    <h4>Viewing the meeting attendee list</h4>
+    <p>Click the people icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-people.png" /> ) to toggle the display of meeting attendees. The attendee list will display on the right side of the page. If the attendee camera is enabled, their image will be displayed.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-list.png" /></figure>
+    <h4>Using chat</h4>
+    <p>If chat has been enabled for the session, click the chat icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-chat.png" /> ) to open the chat panel.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/chat-panel.png" /></figure>
+    <h4>Viewing related content</h4>
+    <p>The presenter may have provided links to related content. Click the materials icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-materials.png" /> ) to view the download links that have been provided. The materials icon will only appear if related content has been added to the session.</p>
+    <h4>Changing camera and mic settings</h4>
+    <p>Click the settings icon (<img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-settings.png" /> ) to open the settings dialog. The settings page can be used to  configure your audio and camera settings.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/settings.png" /></figure>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: Video will be turned off when the settings dialog is opened. Video will restart when the dialog is closed.</aside>
+    <h4>Ending and leaving the session </h4>
+    <p>The <strong>End session</strong> button can be used by any speaker to end the session. The <strong>Leave session</strong> button can be used by any attendee to leave the session.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/end-leave-session.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="controls">Speaker and attendee controls</h2>
+    <p>A set of icons will appear at bottom of the screen allowing attendees to control their mic, camera, screen share and raise their hand. Note that the raise hand icon is only available to attendees.</p>
+    <figure class="bcls-figure"><img class="bcls-image" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-icons.png" /></figure>
+    <h4>Enabling your mic</h4>
+    <p>If the speaker has enabled mic access, you can turn on your mic by clicking the mic icon. Your mic can only be activated if you have raised your hand and you are in the queue.</p>
+    <table width="240">
+      <tbody>
+        <tr>
+          <td width="70" align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-mic-on.png" /></td>
+          <td width="170">Mic enabled</td>
+        </tr>
+        <tr>
+          <td align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-mic-disabled.png" /></td>
+          <td>Mic disabled</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <h4>Enabling your camera</h4>
+    <p>If the speaker has enabled camera access, you can turn on your camera by clicking the camera icon. Your camera can only be activated if you have raised your hand and you are in the queue.</p>
+    <table width="271">
+      <tbody>
+        <tr>
+          <td width="66" align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-camera-on.png" /></td>
+          <td width="193">Camera enabled</td>
+        </tr>
+        <tr>
+          <td align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-camera-disabled.png" /></td>
+          <td>Camera disabled</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Sharing your screen</h4>
+    <p>Speakers can share their screen by clicking the computer icon and then selecting the screen to share.</p>
+    <table width="303">
+      <tbody>
+        <tr>
+          <td width="66" align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-screen-share-on.png" /></td>
+          <td width="225">Screen share enabled</td>
+        </tr>
+        <tr>
+          <td align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-screen-share-off.png" /></td>
+          <td>Screen not shared</td>
+        </tr>
+      </tbody>
+    </table>
+    <aside class="bcls-aside bcls-aside--information">Note: Screen sharing is not supported on mobile devices.</aside>
+    <h4>Asking a question</h4>
+    <p>In meetings where all attendees are muted, the hand icon can be used to notify the speaker that an attendee has a question or would like to speak. Click the hand icon to &quot;raise your hand&quot;.</p>
+    <table width="303">
+      <tbody>
+        <tr>
+          <td width="66" align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-hand-green.png" /></td>
+          <td width="225">Hand raised</td>
+        </tr>
+        <tr>
+          <td align="center"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/icon-hand.png" /></td>
+          <td>Hand not raised</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Attendees who have raised their hand will be displayed at the top of the queue in the attendee listing.</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-queue.png" /></figure>
+    </p>
+    <p>Speakers can enable audio and camera sharing and remove attendees from the queue by hovering over the attendee and clicking the appropriate icon(s).</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/web-conference/attendee-queue-icons.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="issues">Known issues/behaviors</h2>
+    <h4>Video and audio settings</h4>
+    <p>Video and audio settings are not persisted between sessions. You must select new settings everytime a new session is started.</p>
+    <h4>Unable to select an audio output device in some browsers</h4>
+    <p>Firefox and Safari have known issues disallowing them from listing audio output devices on these browsers. While clients can continue the meeting using the default device, they will not be able to select devices in meetings. Chrome and Firefox on iOS also have the same issue.
+      
+      Android Chrome has a known issue switching between Bluetooth audio output devices. While clients can continue the meeting using the default device, there is a bug related to switching to a Bluetooth audio output.</p>
+    <h4>Presenters sharing videos</h4>
+    <p>Attendees will have no audio from  videos that are screen shared by a presenter. This is the expected behavior.</p>
+    <h4>If you turn on your camera and put the browser in background, others in the meeting will see black tile in Safari/Chrome/Firefox in iOS and frozen tile in Chrome in Android</h4>
+    <p>This is the default behavior that is specific to each browser. In Android, the video stream is muted when in background and thus, the video will show the last frame. Note that for Android, if an attendee joins later after the video stream is in background, it will show as a blank tile since the last frame is blank.</p>
+  </section>
+</article>
