@@ -33,7 +33,7 @@ function responsiveSidebar() {
   if (w >= 1200 && url.includes('.html')) {
     sidebar.classList.remove('sidebar-hidden');
     sidebar.classList.add('sidebar-visible');
-
+  
   } else {
     sidebar.classList.remove('sidebar-visible');
     sidebar.classList.add('sidebar-hidden');
@@ -42,12 +42,10 @@ function responsiveSidebar() {
 
 sidebarToggler.addEventListener('click', () => {
   if (sidebar.classList.contains('sidebar-visible')) {
-    console.log('visible');
     sidebar.classList.remove('sidebar-visible');
     sidebar.classList.add('sidebar-hidden');
 
   } else {
-    console.log('hidden');
     sidebar.classList.remove('sidebar-hidden');
     sidebar.classList.add('sidebar-visible');
   }
