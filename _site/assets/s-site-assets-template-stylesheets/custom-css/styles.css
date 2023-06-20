@@ -411,6 +411,17 @@ a>code {
     background-color: #fff1d9ad;
 }
 
+.bcls-code {
+  background-color: rgb(245, 245, 245);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
 .docs-content {
     padding-bottom: 200px;
 }
