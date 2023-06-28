@@ -30,7 +30,11 @@ function responsiveSidebar() {
   sidebar.classList.add('sidebar-hidden');
   let w = window.innerWidth;
   let url = window.location.href;
-  if (w >= 1200 && url.includes('.html')) {
+  if (w >= 1200 && url.includes('frame.html')) {
+    sidebar.classList.remove('sidebar-visible');
+    sidebar.classList.add('sidebar-hidden');
+
+  } else if (w >= 1200 && url.includes('.html')) {
     sidebar.classList.remove('sidebar-hidden');
     sidebar.classList.add('sidebar-visible');
   
