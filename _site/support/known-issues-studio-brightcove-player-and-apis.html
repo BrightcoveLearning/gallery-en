@@ -1586,6 +1586,8 @@ if(!isLive && duration !== 0){myPlayer.pause();myModal.open();</code></pre>
       <dd>The Analytics module requires Internet Explorer 11 or later.</dd>
       <dt>High number of "other" results for Device Manufacturer</dt>
       <dd>In some cases, you may see a high number of "other" results for the Device Manufacturer This occurs when the Data Collector does not recognize the <code translate="No">user_agent</code> delivered to it with analytics data. The most common cause that we have identified for this is a custom user_agent string created by Instagram, but there are probably others.</dd>
+      <dt>iframe tag only reports "Direct" on Traffic reports.</dt>
+      <dd>Traffic source is determined from the HTTP Referrer header. When using the iframe tag, HTTP referrer value is "players.brightcove.net/...", which is classified as 'Direct' on the Analytics module Traffic source data. Please use the in-page video tag to get the correct traffic source type.</dd>
     </dl>
   </section>
   <section class="bcls-section">
