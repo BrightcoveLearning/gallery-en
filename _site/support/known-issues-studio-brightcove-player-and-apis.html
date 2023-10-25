@@ -1728,8 +1728,8 @@ if(!isLive && duration !== 0){myPlayer.pause();myModal.open();</code></pre>
         <p><strong>Workaround</strong></p>
         <p>Use this script: <a href="https://github.com/brightcove/gallery-in-page-snippets/blob/master/snippets/hapyakFix.js">https://github.com/brightcove/gallery-in-page-snippets/blob/master/snippets/hapyakFix.js</a>. However, Flash playback (IE11/Win7) cannot avoid this issue, so the HTML5 fallback needs to be implemented in case of IE11/Win7.</p>
       </dd>
-      <dt>Akamai HD and HDS</dt>
-      <dd>Brightcove Player does not support video delivery via the Akamai HD or HDS delivery methods.</dd>
+      <!-- <dt>Akamai HD and HDS</dt>
+      <dd>Brightcove Player does not support video delivery via the Akamai HD or HDS delivery methods.</dd> -->
       <dt>Error: <strong>d.off is not a function</strong></dt>
       <dd>
         <p>This error, caused by a known bug, can occur when switching between different formats, for instance MP4 and HLS, in a player. Until the bug is fixed, you can simply retry the code that is causing the issue. The following code is an example that corrected the error in an app:</p>
