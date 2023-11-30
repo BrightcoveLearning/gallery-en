@@ -166,9 +166,9 @@
           <option value="en|es" translate="No">Español</option>
         </select>
         <script translate="no">
-          /* <![CDATA[ */
+          
           function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-          /* ]]> */
+        
         </script>
       </div>
     </div>

@@ -132,7 +132,121 @@ JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3UgEgpRC3Fayua4DRHyZOLm
     </div>
   </section>
   <section class="bcls-section">
+    <h2 id="Troubleshooting">Troubleshooting</h2>
+    <p>Troubleshooting SSL certificate installations requires quite a bit of attention to detail. As you see above, there are
+      several names and words that mean the same but are in different places. There are a few 'Gotchas' that may help though.</p>
+      <h3>SSL Certificate Issues/Install Issues:</h3>
+      <ul>
+     <li><strong> Is the Domain's CNAME Correct?</strong></li>
+    <p>(TL;DR: It should be pointed to a CloudFront URL and not the bcvp0rtal address.) Did you update the CNAME for their domain name to point to the new URL? When you add an SSL to Gallery, it migrates the site to a CloudFront URL with HTTPS accessibility over a custom domain name. The CNAME needs to be updated at the Domain's DNS level in order to resolve.</p>
+    </ul>
+    <h3>Gallery Site CNAME Lookup Amazon CloudFront CNAME and HTTPS requirements</h3>
+    <ul>
+      <li><strong>Is this a Self-Signed Certificate?</li></strong>
+      <p>e.g. Is there an Issuer and is that Issuer Valid? </p>
+      <li><strong>Is the certificate valid yet/or expired?</li></strong>
+      <p>It's common for publishers to renew certificates and sometimes may have a new copy that isn't valid yet or an old copy that's expired.</p>
+      <li><strong>Is the Custom Gallery Domain Present?</li></strong>
+      <p>Be sure to check the Common name on the server certificate as well as the SANs. It doesn't have to be in both, but it does have to be in at least one of them. </p>
+      <li><strong>Are the certificates in the right order?</li></strong>
+      <p>It's good to make sure the Chain certificates are in the box and the public key is in the right box. Sometimes can send the certificate and the chain certificates (NOT the private key), you can use SSL Shopper to get them in the right order. (Open them with a text editor to see the certificate itself). </p>
+      <li><strong>Is the Certificate at least SHA256?</li></strong>
+      <p>This is important, Gallery is not compatible with SHA128 anymore, so the Certificate needs to be at least SHA256. But you may also encounter a SHA512, which can be used as well. </p>
+      <li><strong>Does the Certificate include the header and footer?</strong></li>
+      <p>This is imperative, it should begin and end with 5 hyphens.E.g. -----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----If you see -----BEGIN PRIVATE KEY----- the certificate should be compromised.  </p>
+      <li><strong>SSL installed, but the site isn't working?</li></strong>
+      <p>Do they have any external objects or scripts on the site? If so, are you using HTTP? Are you on an HTTPS-accessible CDN? EVERYTHING on an SSL site needs to be HTTPS or it will break, browsers are becoming more strict about this too. Even consider the player and its plugins. </p>
+    </ul>
+  </section>
+<h3>DNS and Website Issue:</h3>
+<ul>
+  <li><strong>Is the website still saying HTTPS is broken, even though the certificate is installed?</strong></li>
+  <p>Did you update the CNAME for their domain name to point to the new URL? When you add an SSL to Gallery, it migrates the site to a CloudFront URL with HTTPS accessibility over a custom domain name. The CNAME needs to be updated at the Domain's DNS level in order to resolve. Typically this can take up to 6 hours or so to completely show up, but usually will be online within 30 minutes (after clearing cache, cookies, and restarting your browser). You can confirm what's showing publicly for the domain itself by using "dig" in the command line. Alternatively, if you're not so command-line oriented you can use Dig Web Interface to see what the domain is showing. </p>
+</ul>
+<p></p>
+<figure class="bcls-figure"><img alt="" src="/assets/images/settings/image2.webp" /></figure>
+<p>Above is a functioning Gallery website, using a custom domain name and SSL certificate. You can see it changed from the traditional site-slug to the CloudFront address, if you're not seeing this in your browser, it's either Browser or DNS cache on your end, but this shows what the DNS currently shows directly for the site. </p>
+<ul>
+  <li><strong>Copy/Paste issues come into play here as well</strong></li>
+  <p>Be sure to double check the CNAME within the Gallery's settings in order to make sure everything is the same. (You can use CTRL+F to confirm everything is the same).</p>
+  <li><strong>Propagation is important to remember</strong></li>
+  <p>DNS changes can be instant sometimes, but most of the time they take time to change over. Some DNS providers quote upwards of 72 hours for this process to occur, but in reality, it's more like 30 to 120 minutes. ISPs commonly refresh DNS cache and provided you're maintaining good browser health it will show up relatively quickly. </p>
+  <li><strong>HTTPS showing broken on the site, but the site still works?</strong></li>
+  <p>This is more than likely due to something added onto the page or the player that's specifically using HTTP. All plugins for the player should be protocol agnostic (e.g. //players.brightcove.com), but sometimes there are cases of specify a hard protocol either HTTP or HTTPS,  HTTPS wouldn't be an issue in this case, but HTTP would cause a hard stop. It may not break the site entirely, but it does break the certificate and the chain behind it, which leaves an ugly view to a user. </p>
+</ul>
+  </section>
+<h3>SSL Troubleshooting Continued</h3>
+<p>To learn more about the basic requirements for SSL, see <a target="_blank" href=" https://gallery.support.brightcove.com/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a>  </p>
+  <p>The following content dives a little deeper into how to troubleshooting. The error displayed when a certificate upload fails is: <em><strong>The SSL certificate information you provided failed validation. Please check your certificate and try again. </em></strong> This could possibly mean multiple issues and here are the steps, in order of what might cause them:</p>
+  <ul>
+  <li>The keys were copied incorrectly</li>
+  <li>Probably was not copied the full key ie. the ‘-----BEGIN CERTIFICATE-----’ and ‘-----END CERTIFICATE-----’ were not included</li>
+  <li>The public key should start and end with ‘-----BEGIN CERTIFICATE-----’ and  ‘-----END CERTIFICATE-----’ respectively</li>
+  <li>The private key should start and end with ‘-----BEGIN RSA PRIVATE KEY-----’ and ‘-----END RSA PRIVATE KEY-----’</li>
+  <li>If it does not start with BEGIN RSA PRIVATE KEY, then the key might be exported in another format than RSA. Gallery only accepts RSA Private Key as outlined in Cloudfront: <a target="_blank" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-and-https-requirements.html#https-requirements-private-key">Requirements for using SSL/TLS certificates with CloudFront</a>.</li>
+</ul>
+<figure class="bcls-figure"><img alt="" src="/assets/images/settings/image3.webp" /></figure>
+<figure class="bcls-figure"><img alt="" src="/assets/images/settings/image4.webp" /></figure>
+<ol class="bcls-tasklist">
+  <li>The certificate chain can have multiple concatenated keys.</li>
+  <li>The key is not in PEM format</li>
+<p>Check with the issuer of the certificates.</p>
+  <li>The key was self-signed</li>
+<p>Check with the issuer of the certificate.</p>
+<li>The private key is password protected</li>
+<p>We do not support password protected private keys.</p>
+
+<p>Non-password protected keys will look like:</p>
+<pre>
+  2. -----BEGIN RSA PRIVATE KEY-----
+3. MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCz
+AJBgNV
+4. BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm
+5ldCBX
+5. aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OT
+Q0WjBF A
+6. .... MANY LINES LIKE THAT .... .... MANY LINES LIKE THAT
+....
+7. JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3
+UgEgpR
+8. C3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL
+2JlPUL
+9. B7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYc
+m0A6Jq
+10. vA==
+-----ENDBEGIN RSA PRIVATE KEY-----
+</pre>
+<p>Whereas password protected keys will look like this:</p>
+<pre>
+  -----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,91B305001070B5FD
+MIIDXTCCAkWgAwIBAgIJAJC1HiIAZAiIMA0GCSqGSIb3DQEBBQUAMEUxCz
+AJBgNV
+BAYTAkFVMRMwEQYDVQQIDApTb21lLVN0YXRlMSEwHwYDVQQKDBhJbnRlcm
+5ldCBX
+aWRnaXRzIFB0eSBMdGQwHhcNMTExMjMxMDg1OTQ0WhcNMTIxMjMwMDg1OT
+Q0WjBF
+A .... MANY LINES LIKE THAT .... .... MANY LINES LIKE THAT
+....
+JjyzfN746vaInA1KxYEeI1Rx5KXY8zIdj6a7hhphpj2E04LDdw7r495dv3
+UgEgpR
+C3Fayua4DRHyZOLmlvQ6tIChY0ClXXuefbmVSDeUHwc8YufRAERp2GfQnL
+2JlPUL
+B7xxt8BVc69rLeHV15A0qyx77CLSj3tCx2IUXVqRs5mlSbq094NBxsauYc
+m0A6Jq
+vA==
+-----ENDBEGIN RSA PRIVATE KEY-----
+</pre>
+<li>The certificate chain is not in the right order. Sometimes you receive an email with separate certificates (Root CA, Intermediate, UserTrust) for the chain cert and try to manually combine them together. If this happens: You can use this tool to check if the order of the certificates in the chain is correct: <a target="_blank" href=" https://tools.keycdn.com/ssl">Certificate Checker</a>
+</li>
+</ol>
+</section>
+
+
+  <section class="bcls-section">
     <h2 id="faq">FAQs</h2>
+  </section>
     <details>
       <summary>Can a Gallery site with a custom domain and SSL be only accessible via HTTPS?</summary>
     Yes, in fact this is the only way we allow the site to be accessed. If you try to access a site on the HTTP link, you will automatically be redirected to the HTTPS site. This is done by forcing HTTPS redirects in CloudFront.
