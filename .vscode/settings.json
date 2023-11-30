@@ -50,5 +50,8 @@
     "terminal.ansiRed": "#FB4934",
     "terminal.ansiWhite": "#D5C4A1",
     "terminal.ansiYellow": "#FABD2F"
-  }
+  },
+  "cSpell.words": [
+    "Timeframe"
+  ]
 }
