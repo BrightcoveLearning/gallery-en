@@ -1,15 +1,15 @@
 ---
-title: 'Adding Pigeonhole Reactions to a Live Event In-Page Experience'
+title: 'Adding Pigeonhole Reactions to a Gallery Experience'
 parent: Live Event
 grandparent: Experiences
-description: 'In this topic you will learn how to add Pigeonhole Reactions to a Live Event In-Page Experience.'
+description: 'In this topic, you will learn how to add Pigeonhole Reactions to a Gallery Template.'
 ---
-<h1>Adding Pigeonhole Reactions to a Live Event In-Page Experience</h1>
+<h1>Adding Pigeonhole Reactions to a Gallery Experience</h1>
 <summary>{{ page.description }}</summary>
 <article class="bcls-article">
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, Reactions, polls, surveys, etc.) to  a Live Event In-Page Experience. Typically, a new Pigeonhole is created for the  event and then sessions are  created for the live events. Once the session is created, Pigeonhole embed code is pasted into the Media asset you want to put on. The embed code will cause the Pigeonhole Reactions display on the live event player.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-example.png" /></figure>
+    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, Reactions, polls, surveys, etc.) to  a Gallery Experience. Typically, a new Pigeonhole is created for the  event and then sessions are  created for the live events. Once the session is created, Pigeonhole embed code is pasted into the Media asset you want to put on. The embed code will cause the Pigeonhole Reactions display on the event player.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions-introduction.webp" /></figure>
   </section>
   <section class="bcls-section">
     <h2 id="pigeonhole">Creating a  Pigeonhole event and session</h2>
@@ -17,22 +17,25 @@ description: 'In this topic you will learn how to add Pigeonhole Reactions to a 
     <ol class="bcls-tasklist">
       <li>Login to your Pigeonhole account.</li>
       <li> Click <strong>+ Add Pigeonhole</strong> and click the account to use.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-add-pigeonhole.webp" /></figure>
       </li>
+      <li>On <strong>Event type</strong> select <strong>Virtual</strong></li>
       <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
       <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
-      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-event.png" /></figure>
+      <li>Select a <strong>Timezone</strong> and <strong>Expected total participants</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-set-up.webp" /></figure>
       </li>
       <li>Click <strong>Continue</strong>.</li>
       <li>Now that the event is created, the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> &gt; <strong>Create new</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new-session.png" /></figure>
       </li>
-      <li>Select a <strong>Session Type</strong> of <strong>Chat</strong>.</li>
+      <li>Select a <strong>Session Type</strong> of <strong>Chat</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-chat.webp" /></figure>
+    </li>
       <li>Enter a <strong>Session name</strong>.</li>
       <li>Configure the <strong>Chat Settings</strong> as appropriate.</li>
       <li>Click <strong>Add Chat</strong>. Confirm the session was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-session-created.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-verify-sesion.webp" /></figure>
       </li>
     </ol>
   </section>
@@ -42,30 +45,71 @@ description: 'In this topic you will learn how to add Pigeonhole Reactions to a 
 
     <p>To generate the code for the <strong>Pigeonhole Reactions</strong>, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
-      <li>In Pigeonhole, click <strong>More settings</strong> in the left navigation.</li>
-      <li>On the <strong>Reactions</strong> tab, click the dropdown arrow <strong>For external video integration</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-get-session-id.png" /></figure>
-      </li>
+      <li>
+        <ol type="a">
+            <li>In Pigeonhole, click <strong>More settings</strong> in the left navigation.</li>
+            <li><strong>Reactions</strong>.</li>
+            <li>click the dropdown arrow <strong>For external video integration</strong>.</li>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions.webp" /></figure>
+        </ol>
+    </li>
       <li><strong>Create reactions widget</strong>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-get-passcode.png" /></figure>
       </li>
-      <li>Select the <strong>Chat</strong> sesion we just created.</li>
+      <li>Select the <strong>Chat</strong> sesion you created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-create-widget.webp" /></figure>
+    </li>
       <li><strong>Create widget</strong>.</li>
-      <li><strong>Copy embed code</strong>.</li>
-      <li>Copy the embed code.</li>
+      <li><strong>Copy embed code</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions-code.webp" /></figure>
+    </li>
+      <li>Copy the Pigeonhole code.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-copy-code.webp" /></figure>
+      </li>
       <li><strong>close</strong>.</li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="add-experience">Adding <strong>Pigeonhole Reactions</strong> to a Media asset</h2>
+    <h2 id="adding-pigeonhole-reactions-to-a-media-asset">Adding <strong>Pigeonhole Reactions</strong> to a Media asset</h2>
     
-    <p>Adding a Pigeonhole to a media asset is done by using a Custom field. To add a Pigeonhole reactions, follow these steps.</p>
+    <p>Adding Pigeonhole Reactions to a <strong>Video Cloud</strong> Media asset is done by using the <code translate="no">pigeonhole_reactions</code> <a href="https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html">custom field</a>. To add Pigeonhole reactions to a Media asset, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li>Open the <strong>Media</strong> module.</li>
       <li>Choose the video in which you want to embed Pigeonhole Reactions.</li>
       <li>On <strong>Custom fields</strong> click <strong>Edit</strong>.</li>
-      <li>Paste the <strong>Pigeonhole code</strong> without the scrip tags in the <strong>Pigeonhole Reactions</strong> field.</li>
-      <li><strong>Save</strong></li>
+      <li>Paste the <strong>Pigeonhole code</strong> without the scrip tags in the <strong>Pigeonhole Reactions</strong> field.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions-code-VC.webp" /></figure>
+    </li>
+      <li><span class="button-blue">Save</span></li>
   </section>
-  <p>Now, you can add the video asset to any templates supporting pigeonhole reactions <code translate="no">pigeonhole_reations</code> <a href="https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html">custom field</a> (Immersion template, Virtual event, Live portal, or Live Event In-Page) in Gallery.</p>
+  <section class="bcls-section">
+    <h2 id="create-pigeonhole-custom-field">Create Pigeonhole custom field</h2>
+    <aside class="bcls-aside bcls-aside--tip">You must be an account administrator to access the <strong>ADMIN</strong> menu.</aside>
+    <ol class="bcls-tasklist-restart">
+        <li><ol type="a">
+            <li>On <strong>Video Cloud</strong> go to <strong>Admin</strong></li>
+            <li><strong>Video Fields</strong></li>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-custom-field.webp" /></figure>
+        </ol>
+        </li>
+        <li><span class="button-blue">Add Custom Field</span>.</li>
+        <li>Create the <code translate="no">pigeonhole_reactions</code> custom field.
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions-custom-field.webp" /></figure>
+        </li>
+        <li><span class="button-blue">Save Field</span></li>
+    </ol>
+    </section>
+  <section class="bcls-section">
+    <h2 id="limitations">Limitations</h2>
+    <ul>
+        <li>This feature is only available for these <strong>Gallery</strong> templates.
+            <ul>
+                <li><strong>Immersion Portal</strong>.</li>
+                <li><strong>Virtual Event Portal</strong>.</li>
+                <li><strong>Live Event Portal</strong>.</li>
+                <li><strong>Live Event In-Page</strong>.</li>
+            </ul>
+        </li>
+    </ul>
+    </section>
+
 </article>
