@@ -68,8 +68,8 @@ GEM
     rexml (3.2.6)
     rouge (4.2.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.69.5)
-      google-protobuf (~> 3.23)
+    sass-embedded (1.69.7)
+      google-protobuf (~> 3.25)
       rake (>= 13.0.0)
     sassc (2.3.0)
       ffi (~> 1.9)
@@ -101,4 +101,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.5.4
+   2.4.16

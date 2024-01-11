@@ -1529,7 +1529,11 @@
       <li>Open the <strong>Media</strong> module.</li>
       <li>Choose the video in which you want to embed Pigeonhole Reactions.</li>
       <li>On <strong>Custom fields</strong> click <strong>Edit</strong>.</li>
-      <li>Paste the <strong>Pigeonhole code</strong> without the scrip tags in the <strong>Pigeonhole Reactions</strong> field.
+      <li>Paste the <strong>Pigeonhole code</strong> in the <strong>Pigeonhole Reactions</strong> field.
+        <aside class="bcls-aside bcls-aside--tip">Make sure to strip out the <strong>script tags</strong> <code translate="no">&#60;script type="text/javascript"&#62;</code> at the beginning of the Pigeonhole embed code and <code translate="no">&#60;/script&#62;</code> at the end, so that the code would end up like the following snippet:</aside>
+        <p>
+            <code translate="no">(function(p,i,g,e,o,n,s){p[o]=p[o]||function(){(p[o].q=p[o].q||[]).push(arguments)},         n=i.createElement(g),s=i.getElementsByTagName(g)[0];n.async=1;n.src=e;         s.parentNode.insertBefore(n,s);})         (window,document,'script','https://static.pigeonhole.at/widget/pigeon-widget.js','phl');     phl("create", {         width: "100%",         height: "100%",         className: "pigeonhole-reactions-iframe",         reactions: true     });</code>
+        </p>
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-reactions-code-VC.webp" /></figure>
     </li>
       <li><span class="button-blue">Save</span></li>
