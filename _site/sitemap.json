@@ -15,6 +15,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-chat-support.html",
+      "oldURL": "/adding-pigeonhole-live-event-chat-support"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html",
       "oldURL": "/adding-pigeonhole-live-event-page-experience"
   },
@@ -355,11 +360,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
@@ -375,12 +375,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
       "oldURL": "/index"
   },
 
@@ -506,6 +506,11 @@
 
   {
       "newURL": "https://gallery.support.brightcove.com/get-started/training/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/",
       "oldURL": "/index"
   },
 
@@ -645,12 +650,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
       "oldURL": "/register-training"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/support/register-training.html",
+      "newURL": "https://gallery.support.brightcove.com/get-started/training/register-training.html",
       "oldURL": "/register-training"
   },
 
