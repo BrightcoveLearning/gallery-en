@@ -120,6 +120,8 @@
               url: /experiences/portal/other/configuring-search-engine-optimization-settings-portal-experience.html
             - name: Configuring Third-Party Tracking
               url: /experiences/portal/other/configuring-third-party-tracking-portal-experience.html
+            - name: Pigeonhole Reactions
+              url: /experiences/portal/other/pigeonhole-reactions.html
         - name: Publishing
           url: /experiences/portal/publishing/index.html
           icon: fa-regular fa-browser
