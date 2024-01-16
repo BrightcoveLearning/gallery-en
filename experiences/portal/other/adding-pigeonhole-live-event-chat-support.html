@@ -1,0 +1,117 @@
+---
+title: 'Adding Pigeonhole Chat Support to a Gallery Experience'
+parent: Portal
+grandparent: Experiences
+description: 'In this topic you will learn how to add Pigeonhole Chat Support to a Gallery template.'
+---
+<h1>{{ page.title }}</h1>
+<summary>{{ page.description }}</summary>
+<article class="bcls-article">
+  <section class="bcls-section">
+    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, chat, polls, surveys, etc.) to a Gallery Experience. Typically, a new Pigeonhole is created for the event and then sessions are created for the live events. Once the session is created, Pigeonhole embed code is pasted into the Media asset you want to put on. The embed code will cause the Pigeonhole Chat display to the player's side.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_Chat_demo.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="pigeonhole">Creating a  Pigeonhole event and session</h2>
+    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Pigeonhole Chat enabled.</p>
+    <ol class="bcls-tasklist">
+      <li>Login to your Pigeonhole account.</li>
+      <li> Click <strong>+ Add Pigeonhole</strong> and click the account to use.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-add-pigeonhole.webp" /></figure>
+      </li>
+      <li>On <strong>Event type</strong> select <strong>Virtual</strong>.</li>
+      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
+      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
+      <li>Select a <strong>Timezone</strong> and <strong>Expected total participants</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-set-up.webp" /></figure>
+      </li>
+      <li>Click <strong>Continue</strong>.</li>
+      <li>Now that the event is created, the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> &gt; <strong>Create new</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new-session.png" /></figure>
+      </li>
+      <li>Select a <strong>Session Type</strong> of <strong>Chat</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-chat.webp" /></figure>
+    </li>
+      <li>Enter a <strong>Session name</strong>.</li>
+      <li>Configure the <strong>Chat Settings</strong> as appropriate.</li>
+      <li>Click <strong>Add Chat</strong>. Confirm the session was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-verify-sesion.webp" /></figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="generate-code">How to setup authorization for SSO users in Pigeonhole.</h2>
+
+    <p>If the experience uses SSO sign-in, and you want to authorize SSO users in <strong>Pigeonhole Chat</strong>, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <ol type="a">
+            <li>In Pigeonhole, click <strong>More settings</strong> in the left navigation.</li>
+            <li>Select <strong>Attendees</strong> tab.</li>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_Attendees.png" /></figure>
+        </ol>
+    </li>
+      <li>In Profile Information, check <strong>Allow creating attendee profile through embed</strong>, and click Save.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_checkbox.png"/></figure>
+    </li>
+      <li>Scroll down to <strong>Registrant</strong> click the down-arrow and select <strong>Settings</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_registrant.png" /></figure>
+    </li>
+      <li>Then check <strong>Allow adding new Registrant Profiles through embed</strong> option and click Save.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_allow_sso.png" /></figure>
+    </li>
+      <li><strong>Close.</strong>
+    </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="create-pigeonhole-custom-field">Create Pigeonhole custom field</h2>
+    <aside class="bcls-aside bcls-aside--tip">You must be an account administrator to access the <strong>ADMIN</strong> menu.</aside>
+    <ol class="bcls-tasklist-restart">
+        <li><ol type="a">
+            <li>On <strong>Video Cloud</strong> go to <strong>Admin</strong> section.</li>
+            <li>Select <strong>Video Fields</strong> tab.</li>
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH-custom-field.webp" /></figure>
+        </ol>
+        </li>
+        <li>On the Custom Fields section click <span class="button-blue">Add Custom Field</span>.</li>
+        <li>Create the <code translate="no">chat_embed</code> custom field by writing <strong>Pigeonhole Chat</strong> in the Display Name field and <strong>chat_embed</strong> in the Internal Name field. The chat_embed data is used in the supported Gallery template in order to add the Pigeonhole Chat to the player's side.
+            <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_chat_embed.png" /></figure>
+        </li>
+        <li>Click <span class="button-blue">Save Field</span>.</li>
+    </ol>
+    </section>
+  <section class="bcls-section">
+    <h2 id="adding-pigeonhole-reactions-to-a-media-asset">Adding <strong>Pigeonhole Chat</strong> to a Media asset</h2>
+    
+    <p>Adding Pigeonhole Chat to a <strong>Video Cloud</strong> Media asset is done by using the <code translate="no">embed_code</code> <a href="https://beacon.support.brightcove.com/syncing-with-video-cloud/vc-custom-fields.html">custom field</a>. To add Pigeonhole chat to a Media asset, follow these steps.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Pigeonhole, click <strong>Run your event</strong> and copy the link.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_invite.png" /></figure>
+      </li>
+      <li>Open the <strong>Media</strong> module.</li>
+      <li>Choose the video in which you want to embed Pigeonhole Chat.</li>
+      <li>On <strong>Custom fields</strong> section click <strong>Edit</strong>.</li>
+      <li>Paste the <strong>Pigeonhole link</strong> in the <strong>Pigeonhole Chat</strong> field.
+        <aside class="bcls-aside bcls-aside--tip">Note: Make sure to enter the Pigeonhole link in this <strong>iframe tags </strong><code translate="no">&#60;iframe src=“PHLink”&#62;&#60;iframe/&#62;</code> replacing the “PHLink” for the Pigeonhole link event.
+        </aside>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/PH_embed_code_example.png" /></figure>
+    </li>
+      <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--tip">Note: After adding the code to the <code translate="no">chat_embed</code> custom field, you have to wait a little while to see the changes applied.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="limitations">Limitations</h2>
+    <ul>
+        <li>This feature is only available for these <strong>Gallery</strong> templates.
+            <ul>
+                <li><strong>Immersion Portal</strong>.</li>
+                <li><strong>Virtual Event Portal</strong>.</li>
+                <li><strong>Live Event Portal</strong>.</li>
+                <li><strong>Live Event In-Page</strong>.</li>
+            </ul>
+        </li>
+    </ul>
+    </section>
+</article>

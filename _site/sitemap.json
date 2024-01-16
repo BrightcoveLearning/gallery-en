@@ -30,11 +30,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-reactions.html",
-      "oldURL": "/adding-pigeonhole-live-event-reactions"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-video-cloud-videos-portal-experience.html",
       "oldURL": "/adding-video-cloud-videos-portal-experience"
   },
@@ -360,6 +355,11 @@
   },
 
   {
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://gallery.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
@@ -375,12 +375,12 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/templates/",
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/publishing/",
       "oldURL": "/index"
   },
 
@@ -510,11 +510,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/inpage/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/settings/",
       "oldURL": "/index"
   },
@@ -627,6 +622,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/develop/page-experiences-custom-css-reference.html",
       "oldURL": "/page-experiences-custom-css-reference"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/portal/other/pigeonhole-reactions.html",
+      "oldURL": "/pigeonhole-reactions"
   },
 
   {
