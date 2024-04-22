@@ -102,8 +102,8 @@
               url: /experiences/portal/customizing/changing-player-layout-portal-experience.html
             - name: Configuring the Details
               url: /experiences/portal/customizing/configuring-details-portal-experience.html
-            - name: Using Multi-Lingual Metadata
-              url: /experiences/portal/customizing/using-multi-lingual-metadata.html
+            # - name: Using Multi-Lingual Metadata
+            #   url: /experiences/portal/customizing/using-multi-lingual-metadata.html
         - name: Other Features
           url: /experiences/portal/other/index.html
           icon: fa-regular fa-browser
@@ -313,8 +313,8 @@
               url: /experiences/virtual-event/customizing/integrating-pigeonhole-virtual-event-experience.html
             - name: Managing Event Sponsors
               url: /experiences/virtual-event/customizing/managing-event-sponsors.html
-            - name: Using Multi-Lingual Metadata
-              url: /experiences/portal/customizing/using-multi-lingual-metadata.html
+            # - name: Using Multi-Lingual Metadata
+            #   url: /experiences/portal/customizing/using-multi-lingual-metadata.html
         - name: Other Features
           url: /experiences/virtual-event/other/index.html
           icon: fa-regular fa-calendar-circle-user
