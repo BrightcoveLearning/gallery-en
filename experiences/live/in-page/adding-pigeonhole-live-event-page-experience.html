@@ -8,10 +8,11 @@ description: 'In this topic you will learn how to add Q&amp;A capabilities to a 
 <summary>{{ page.description }}</summary>
 <article class="bcls-article">
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to  a Live Event In-Page Experience. Typically, a new Pigeonhole is created for the  event and then sessions are  created for the live events. Once the session is created, Pigeonhole embed code is pasted into the Live Event In-Page template. The embed code will cause the Pigeonhole Q&amp;A pod to display next to the live event player.</p>
+    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to  a Live Event In-Page Experience. Typically, a new Pigeonhole is created for the  event and then sessions are  created for the live events.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: To add a Pigeonhole widget is through the chat_embed custom video field. For more information, see <a href="https://gallery.support.brightcove.com/experiences/portal/other/adding-pigeonhole-live-event-chat-support.html#adding-pigeonhole-reactions-to-a-media-asset">Adding Pigeonhole Chat to a Media asset</a>.</aside>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-example.png" /></figure>
   </section>
-  <section class="bcls-section">
+  <!-- <section class="bcls-section">
     <h2 id="pigeonhole">Creating a  Pigeonhole event and session</h2>
     <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
     <ol class="bcls-tasklist">
@@ -38,8 +39,8 @@ description: 'In this topic you will learn how to add Q&amp;A capabilities to a 
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-session-created.png" /></figure>
       </li>
     </ol>
-  </section>
-  <section class="bcls-section">
+  </section> -->
+  <!-- <section class="bcls-section">
     <h2 id="generate-code">Generating the Pigeonhole embed code</h2>
     <p>In order for the Pigeonhole to display in the experience, the following code will be added using a custom component on the experience. The format of the code will be:</p>
     <code translate="No">
@@ -87,15 +88,15 @@ description: 'In this topic you will learn how to add Q&amp;A capabilities to a 
     </ol>
     <p>When you preview the experience, the Pigeonhole should display.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-example.png" /></figure>
-  </section>
+  </section> -->
   <section class="bcls-section">
     <h2 id="tracking">How attendees are tracked</h2>
     <p>Attendees are tracked using browser sessions, which means an attendee is identified and accounted for (tracked) each time they generate a new session (either by using multiple browsers or devices, or if they clean cookies and reenter the experience).</p>
     <p>Sessions start when the Pigeonhole widget is loaded, whether the viewer has signed in as anonymous or using a name. Session info is stored in cookies. Viewers can enter the experience multiple times using the same browser session and a single viewer will be registered. If the viewer enters the experience using a different browser or device, a new user session will be created  (causing a duplicate attendee/session). Duplicate sessions  may also happen if two or more experiences with a widget are embedded in the same page or if the session cookie expires or gets deleted.</p>
     <p>To avoid duplicate sessions, ensure that only one Pigeonhole widget is loaded per page and avoid having viewers use other devices or browsers.</p>
   </section>
-  <section class="bcls-section">
+  <!-- <section class="bcls-section">
     <h2 id="limitations">Limitations</h2>
     <p>Pigeonhole widget/custom HTML is "called" or included in an unassigned event state.</p>
-  </section>
+  </section> -->
 </article>
