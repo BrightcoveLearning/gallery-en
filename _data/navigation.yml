@@ -122,8 +122,6 @@
               url: /experiences/portal/other/configuring-third-party-tracking-portal-experience.html
             - name: Pigeonhole Reactions
               url: /experiences/portal/other/pigeonhole-reactions.html
-            - name: Adding Pigeonhole Live Event Chat
-              url: /experiences/portal/other/adding-pigeonhole-live-event-chat-support.html
         - name: Publishing
           url: /experiences/portal/publishing/index.html
           icon: fa-regular fa-browser
@@ -236,8 +234,8 @@
               url: /experiences/portal/publishing/controlling-access-portal-experience.html
             - name: Adding Pigeonhole Reactions
               url: /experiences/live/portal/adding-pigeonhole-live-event-reactions.html
-            - name: Adding Pigeonhole Live Event Chat
-              url: /experiences/portal/other/adding-pigeonhole-live-event-chat-support.html
+            # - name: Adding Pigeonhole Live Event Chat
+            #   url: /experiences/portal/other/adding-pigeonhole-live-event-chat-support.html
         - name: In-Page
           url: /experiences/live/in-page/index.html
           icon: fa-regular fa-satellite-dish
