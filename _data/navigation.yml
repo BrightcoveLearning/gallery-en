@@ -4,7 +4,7 @@
 - section: 
   name: Getting Started
   url: /get-started/index.html
-  icon: fa-regular fa-map-pin
+  icon: fa-solid fa-map-pin
   description: These topics describe the key concepts to help you understand and be successful using Gallery to create video experiences.
   docs:
     - name: Creating a Portal Experience
@@ -22,7 +22,7 @@
 - section: 
   name: Experiences
   url: /experiences/index.html
-  icon: fa-regular fa-browsers
+  icon: fa-solid fa-window-restore
   description: Learn how to create and publish Gallery Experiences
   docs:
     - name: Portal
@@ -341,7 +341,7 @@
 - section: 
   name: General Information
   url: /general/index.html
-  icon: fa-regular fa-circle-info
+  icon: fa-solid fa-circle-info
   description: General information about Brightcove Gallery.
   docs:
     - name: Gallery System Requirements
@@ -353,7 +353,7 @@
 - section: 
   name: Gallery Settings
   url: /settings/index.html
-  icon: fa-regular fa-gear
+  icon: fa-solid fa-gear
   description: Learn how to configure Gallery Settings.
   docs:
     - name: Configuring Gallery Settings
@@ -375,7 +375,7 @@
 - section: 
   name: Developers
   url: /develop/index.html
-  icon: fa-regular fa-rectangle-code
+  icon: fa-solid fa-code
   description: Learn how to customize experiences using CSS and the Gallery APIs.
   docs:
     - name: In-Page Experience Code Snippets
@@ -401,7 +401,7 @@
 - section: 
   name: Release Notes
   url: /release-notes/index.html
-  icon: fa-regular fa-memo-pad
+  icon: fa-solid fa-book
   description: Learn about new product features and updates.
   docs:
     - name: Gallery Release Notes
@@ -411,7 +411,7 @@
 - section: 
   name: Support
   url: /support/index.html
-  icon: fa-regular fa-comments-question-check
+  icon: fa-regular fa-comments
   description: Have a question or need help?
   docs:
     - name: 'Viewing the Brightcove System Status Page'
