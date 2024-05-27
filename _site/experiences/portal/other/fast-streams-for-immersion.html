@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic, you will learn how to configure FAST streams (SSA streaming) with the "Immersion" template.">
+        <meta name="description" content="In this topic, you will learn how to configure FAST streams (SSAI streaming) with the "Immersion" template.">
         
         <!-- Google Font -->
         <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
@@ -1471,7 +1471,7 @@
       
 <article class="bcls-article">
   <h1>FAST Streams integration for Immersion Template</h1>
-  <summary>In this topic, you will learn how to configure FAST streams (SSA streaming) with the "Immersion" template.</summary>
+  <summary>In this topic, you will learn how to configure FAST streams (SSAI streaming) with the "Immersion" template.</summary>
   <section>
     <h2 id="overview">Overview</h2>
     <p>By utilizing FAST streaming in the "Immersion" Gallery template, you can effectively monetize your video content, reach a broader audience, and gather insightful analytics to enhance your streaming strategy. This guide provides step-by-step instructions on creating and managing channels, scheduling content, managing events, and publishing your streaming page to leverage the full potential of FAST streaming.</p>
@@ -1483,11 +1483,14 @@
                 <li><p>Navigate to the <strong>Cloud Playout</strong> Module.</p></li>
                 <li><p>Go to the Channels tab.</p></li>
                 <li><p>Go to Scheduled Channels.</p></li>
+                <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/create-channel1.webp" /></figure>
             </ol>
         </li>
         <li><p>Click <span class="button-blue">+ Create Channel</span> at the top-right.</p></li>
-        <li><p>In the <strong>New Channel</strong> modal fill the fields with your information. In the <strong>Destinations</strong> field specify "Brightcove"</p></li>
-        <li>Click <span class="button-blue">Create Channel</span>. This will redirect you to a new page for the newly created channel.</li>
+        <li><p>In the <strong>New Channel</strong> modal fill the fields with your information. In the <strong>Destinations</strong> field specify "<strong>Brightcove</strong>"</p>
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/create-channel2.webp" /></figure>
+        </li>
+        <li>Click <span class="button-blue">Create Channel</span> . This will redirect you to a new page for the newly created channel.</li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -1496,7 +1499,9 @@
     <h3>Key Features</h3>
     <p><Strong>Timeline View</Strong></p>
     <ul>
-      <li><p>Allows you to see the exact timing and order of videos, playlists, and live events.</p></li>
+      <li><p>Allows you to see the exact timing and order of videos, playlists, and live events.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/timeline.webp" /></figure>
+      </li>
     </ul>
     <p><Strong>Content Types</Strong></p>
     <ul>
@@ -1508,20 +1513,92 @@
     <ul>
       <li><p>Provides options to add and configure content.</p></li>
       <li><p><strong>Playlists</strong>: Collections of videos that can be grouped and scheduled together.</p></li>
-      <li><p><strong>Live Events</strong>: Real-time streaming events that can be scheduled to start and end at specific times.</p></li>
+      <li><p><strong>Live Events</strong>: Real-time streaming events that can be scheduled to start and end at specific times.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/controlpannel.webp" /></figure>
+      </li>
+    </ul>
+    <p><Strong>Calendar nav & Schedule view</Strong></p>
+    <ul>
+      <li><p>Navigate the Calendar.</p></li>
+      <li><p>Select between hours or minutes view.</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/calendar-nav.webp" /></figure>
+      </li>
     </ul>
     <ol class="bcls-tasklist">
         <li><p>Click <span class="button-blue-text">Schedule</span> at the top-right.</p></li>
         <li><p><strong>Adding Content</strong>: Click the Video, Playlist, or Live Event in the control panel to add new content to your schedule.</p>
-          <p>Elements you add are inserted into the <strong>Selected</strong> timeline, which then updates the <strong>Selected</strong> timeline to the end of the newly added element.</p>
-        </li>
-        <li>Click on items to edit their details or remove them from the schedule.</li>
-        <li><p>Once it is ready click  <span class="button-blue">Publish</span>.</p></li>
+          <p><aside class="bcls-aside bcls-aside--information">Note: Elements you add by clicking <i class="fa-regular fa-square-plus"></i> are inserted into the <strong>Selected</strong> timeline, which then updates itself to the end of the newly added element.</p>
+          </li></aside>
+        <li>Click on items to edit their details <i class="fa-regular fa-clock"></i> or remove them from the schedule <i class="fa-solid fa-trash-can"></i>.</li>
+        <li><p>Once it is ready click  <span class="button-blue">Publish</span></p></li>
     </ol>
   </section>
   <section class="bcls-section">
     <h2 id="activate-channel">Activate Channel</h2>
+    <ol class="bcls-tasklist">
+      <li><p>Click <span class="button-blue">Activate</span> so it starts broadcasting. This might take a couple of minutes.</p>
+      </li>
+    </ol>
+    <h3>Verify that the service is running.</h3>
+    <ol class="bcls-tasklist">
+      <li><p>Navigate to the <strong>Live Module</strong>.</p></li>
+      <li><p>Verify the status of the Channel (Live, Standby, Completed).</p>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/verify-service.webp" /></figure>
+      </li>
+    </ol>
   </section>
+  <section class="bcls-section">
+    <h2 id="add-fast-immerse">Add Live FAST stream to Immersion Template</h2>
+  <p>The following steps assume prior completion of an Immersion Experience in the Gallery module.</p>
+  <p>There are two ways to add a video.</p>
+  <ol class="bcls-tasklist-restart">
+    <p><strong>Add video by Playlist</strong></p>
+    <li><p>Navigate to the <strong>Media</strong> module <i class="fa-solid fa-video"></i></p></li>
+    <li><p><i class="fa-regular fa-square-plus"></i> <strong>Create Playlist</strong></p></li>
+    <li><p>Create a Manual Playlist to add to the new live stream.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/new-playlist.webp" /></figure>
+    </li>
+    <li><p><span class="button-blue">Create playlist</span></p></li>
+    <li>
+      <ol type="a">
+          <li><p>Click <strong>All videos</strong>.</p></li>
+          <li><p>Check the box of the new stream video.</p></li>
+          <li><p>Once selected, Click on the More button at the top of the page.</p></li>
+          <li><p>Click <strong>Add to Playlist</strong>.</p></li>
+          <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/check-channel.webp" /></figure>
+      </ol>
+    </li>
+    <li><p>Navigate to the <strong>Gallery</strong> module.</p></li>
+    <li><p>Click on your experience.</p></li>
+    <li><p>Click <strong>Videos</strong>.</p></li>
+    <li><p>Click <span class="button-blue-text">Add New collection</span></p></li>
+    <li><p>Click on your collection</p></li>
+    <li><p>Select your playlist.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/edit-collection.webp" /></figure>
+    </li>
+    <li><p><span class="button-blue">Save</span></p></li>
+  </ol>
+  <ol class="bcls-tasklist-restart">
+    <p><strong>Add video by Id</strong></p>
+    <li><p>Navigate to the <strong>Live</strong> module to get the <strong>Channel id</strong>.</p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/live-id.webp" /></figure>
+    </li>
+    <li><p>Navigate to the <strong>Gallery</strong> module.</p></li>
+    <li><p>Click on your experience.</p></li>
+    <li><p>Click <strong>Videos</strong>.</p></li>
+    <li><p>Click <span class="button-blue-text">Add New collection</span></p></li>
+    <li><p>Click on your collection</p></li>
+    <li>
+      <ol type="a">
+        <li><p>Click on <strong>Custom</strong>.</p></li>
+        <li><p>Use <strong>Custom Field</strong></p></li>
+        <li><p>Filter by <strong>id</strong>.</p></li>
+        <li><p>Use the <strong>Channel id</strong>.</p></li>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/custom-field-id.webp" /></figure>
+      </ol>
+    </li>
+    <li><p><span class="button-blue">Save</span></p></li>
+  </ol>
 </article>
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->
   
