@@ -20,11 +20,6 @@
   },
 
   {
-      "newURL": "https://gallery.support.brightcove.com/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html",
-      "oldURL": "/adding-pigeonhole-live-event-page-experience"
-  },
-
-  {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-video-cloud-videos-portal-experience.html",
       "oldURL": "/adding-video-cloud-videos-portal-experience"
   },
@@ -47,6 +42,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/experiences/portal/videos/adding-youtube-videos-portal-experience.html",
       "oldURL": "/adding-youtube-videos-portal-experience"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/immersion-template/agenda-widget.html",
+      "oldURL": "/agenda-widget"
   },
 
   {
@@ -622,6 +622,11 @@
   {
       "newURL": "https://gallery.support.brightcove.com/develop/page-experiences-custom-css-reference.html",
       "oldURL": "/page-experiences-custom-css-reference"
+  },
+
+  {
+      "newURL": "https://gallery.support.brightcove.com/experiences/immersion-template/people-widget.html",
+      "oldURL": "/people-widget"
   },
 
   {
