@@ -373,7 +373,25 @@
         
           <url>
             
+              <loc>https://gallery.support.brightcove.com/experiences/immersion-template/immersion-builder.html</loc>
+            
+            <lastmod>2024-07-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
               <loc>https://gallery.support.brightcove.com/experiences/immersion-template/agenda-widget.html</loc>
+            
+            <lastmod>2024-07-16</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        
+          <url>
+            
+              <loc>https://gallery.support.brightcove.com/experiences/immersion-template/people-widget.html</loc>
             
             <lastmod>2024-07-16</lastmod>
             <changefreq>daily</changefreq>

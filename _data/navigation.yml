@@ -345,8 +345,12 @@
       icon: fa-solid fa-map-pin
       description: Learn how to create, edit and publish Landing Page Experiences.
       docs:
+      - name: Immersion Builder
+        url: /experiences/immersion-template/immersion-builder.html
       - name: Agenda Widget
         url: /experiences/immersion-template/agenda-widget.html
+      - name: People Widget
+        url: /experiences/immersion-template/people-widget.html
 - section: 
   name: General Information
   url: /general/index.html
