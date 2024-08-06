@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head>
-        <title>Adding Pigeonhole Q&A to a Live Event In-Page Experience</title>
+        <title>Agenda Widget</title>
         
         <!-- Meta -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="In this topic you will learn how to add Q&amp;A capabilities to a Live Event In-Page Experience.">
+        <meta name="description" content="In this topic, you will learn how to use the Agenda widget using the Immersion Gallery Template.  The Agenda widget allows you to see how an event is distributed. This helps you manage your events' calendars better.">
         
         <!-- Google Font -->
         <link href="/assets/s-site-assets-stylesheets/fonts/poppins.css" rel="stylesheet">
@@ -533,6 +533,12 @@
                       </li>
                       
                       
+                      
+                      <li class="nav-item subsection-doc">
+                        <a class="nav-link" href="/experiences/portal/other/fast-streams-for-immersion.html">FAST Streams for Immersion</a>
+                      </li>
+                      
+                      
                     </ul>
                   </li>
                   
@@ -910,8 +916,8 @@
                       
                       
                       
-                      <li class="nav-item">
-                        <a class="nav-link" href="/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html" aria-current="page">Adding Pigeonhole</a>
+                      <li class="nav-item subsection-doc">
+                        <a class="nav-link" href="/experiences/live/in-page/adding-pigeonhole-live-event-page-experience.html">Adding Pigeonhole</a>
                       </li>
                       
                       
@@ -1207,6 +1213,38 @@
               </li>
               
               
+              
+
+              <li class="nav-item subsection-title">
+                
+                <a class="nav-link" href="/experiences/immersion-template/index.html">
+                  <span class="theme-icon-holder me-2"><i class="fa-solid fa-minus"></i></span>&nbsp;Immersion Template</a>
+                
+
+                <ul role="list" class="section-items list-unstyled nav flex-column pb-3" style="display:none;">
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/experiences/immersion-template/immersion-builder.html">Immersion Builder</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item section-doc"><a class="nav-link" href="/experiences/immersion-template/agenda-widget.html" aria-current="page">Agenda Widget</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="/experiences/immersion-template/people-widget.html">People Widget</a></li>
+                  
+                  
+                  
+                </ul>
+              </li>
+              
+              
             </ul>
             </li>
             
@@ -1440,15 +1478,11 @@
             
             
             
-            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/live/">Live</a></li>
+            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/immersion-template/">Immersion template</a></li>
             
             
             
-            <li class="breadcrumb-item"><a class="theme-link" href="/experiences/live/in-page/">In page</a></li>
-            
-            
-            
-            <li class="breadcrumb-item active" aria-current="page">Adding Pigeonhole Q&A to a Live Event In-Page Experience</li>
+            <li class="breadcrumb-item active" aria-current="page">Agenda Widget</li>
             
             
           </ol>
@@ -1469,101 +1503,103 @@
       <br>
       
       
-<h1>Adding Pigeonhole Q&A to a Live Event In-Page Experience</h1>
-<summary>In this topic you will learn how to add Q&amp;A capabilities to a Live Event In-Page Experience.</summary>
 <article class="bcls-article">
+  <h1>Agenda Widget on the Immersion Gallery template</h1>
+  <summary>In this topic, you will learn how to use the Agenda widget using the Immersion Gallery Template.  The Agenda widget allows you to see how an event is distributed. This helps you manage your events' calendars better.</summary>
   <section class="bcls-section">
-    <p>Pigeonhole can be used to easily add event based interactivity (live Q&amp;A, polls, surveys, etc.) to  a Live Event In-Page Experience. Typically, a new Pigeonhole is created for the  event and then sessions are  created for the live events.</p>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: To add a Pigeonhole widget is through the chat_embed custom video field. For more information, see <a href="https://gallery.support.brightcove.com/experiences/portal/other/adding-pigeonhole-live-event-chat-support.html#adding-pigeonhole-reactions-to-a-media-asset">Adding Pigeonhole Chat to a Media asset</a>.</aside>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-example.png" /></figure>
+    <h2 id="timespan">Create a Widget</h2>
+  <p></p>
+  <p>First, you must create a custom page on an Immersion Experience to use an Agenda Widget implementation. Follow these steps:</p>
+  <ol class="bcls-tasklist">
+    <li>In the left navigation, click <strong>Gallery</strong>.
+        <p></p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/gallery.webp" alt="gallery">
+            <figcaption class="bcls-caption--image">gallery module</figcaption></li>
+    <li>Choose <strong>Immersion</strong>.
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/immersion.webp" alt="immersion">
+            <figcaption class="bcls-caption--image">immersion</figcaption>
+          </figure>
+    </li>
+    <li>In Experience Overview, customize your experience. Add a description and select the experience language. Then, click <span class="button-blue">Create Experience</span>. To learn more about Experiences, see   <a href="https://gallery.support.brightcove.com/experiences/portal/getting-started/overview-creating-editing-and-publishing-portal-experiences.html">Overview: Creating, Editing and Publishing Portal Experiences</a>.
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/experience-overview.webp" alt="experience overview">
+            <figcaption class="bcls-caption--image">experience overview</figcaption>
+          </figure>
+    <li>Create a custom page. Click  <span class="button-blue-text"> + Add a Page </span> and configure the page name and path.
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/add-page.webp" alt="add a page">
+      <figcaption class="bcls-caption--image">add a page</figcaption>
+    </figure>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/create-custom.webp" alt="custom-page">
+      <figcaption class="bcls-caption--image">custom-page</figcaption>
+    </figure>
+    <p></p>
+    <p>Click  <span class="button-blue"> Save</span> .</p>
+  </li>
+    <li>Once in the Custom Page, use the <strong>Add a Section</strong> button to add an Agenda Widget.
+      <li>Click <span class="button-blue-text">+ Add a Page</span>, then the <strong> Add a section</strong> button, and finally, <strong>Agenda</strong>.
+        <p></p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/choose-agenda.webp" alt="agenda">
+            <figcaption class="bcls-caption--image">agenda</figcaption>
+          </figure>
+    </li>
+    <li>In the Agenda, click <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/select-agenda-button.webp" alt=""></figure>. </li>
+      <li>You can select previously created Agendas or create a new one to edit. You must create your first Agenda the first time you use it. Once you have finished selecting, click <span class="button-blue">Save</span>.
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/select-agenda-towork.webp" alt="select agenda">
+        <figcaption class="bcls-caption--image">select agenda</figcaption>
+      </figure>
+    </li>
+    <li>Once in the Create Agenda section, the Agenda Module shows up. Here, you can create your Agendas and configure them. To learn more about the Agenda Module, please see <a href="https://gallery.support.brightcove.com/experiences/virtual-event/agenda-speakers/index.html">Agenda and Speakers</a>.
+      <p></p>
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/agenda-working.webp" alt="agenda">
+        <figcaption class="bcls-caption--image">agenda</figcaption>
+      </figure>
+      <aside class="bcls-aside bcls-aside--information language-editable">Note: The Agenda will only be visible here if activated/published on the Agenda Module.</aside>
+    </li>
+</ol>
   </section>
-  <!-- <section class="bcls-section">
-    <h2 id="pigeonhole">Creating a  Pigeonhole event and session</h2>
-    <p>You should create a new Pigeonhole for your live event and then add sessions for each video that will have Q&amp;A enabled.</p>
-    <ol class="bcls-tasklist">
-      <li>Login to your Pigeonhole account.</li>
-      <li> Click <strong>+ Add Pigeonhole</strong> and click the account to use.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new.png" /></figure>
-      </li>
-      <li>Enter an <strong>Event name</strong> and <strong>Passcode</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates for the event. These dates control how long the Pigeonhole will be active.</li>
-      <li>Select a <strong>Timezone</strong> and <strong>Custom Branding</strong> option (if applicable).
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-event.png" /></figure>
-      </li>
-      <li>Click <strong>Continue</strong>.</li>
-      <li>Now that the event is created, the <strong>Agenda</strong> item will be selected in the left navigation. Click <strong>Add session</strong> &gt; <strong>Create new</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-add-new-session.png" /></figure>
-      </li>
-      <li>Select a <strong>Session Type</strong> of <strong>Q&amp;A</strong>.</li>
-      <li>Enter a <strong>Session name</strong>.</li>
-      <li>Enter <strong>Start</strong> and <strong>End</strong> dates and times.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-agenda.png" /></figure>
-      </li>
-      <li>Configure the <strong>Q&amp;A Settings</strong> as appropriate.</li>
-      <li>Click <strong>Add Q&amp;A</strong>. Confirm the session was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-new-session-created.png" /></figure>
-      </li>
-    </ol>
-  </section> -->
-  <!-- <section class="bcls-section">
-    <h2 id="generate-code">Generating the Pigeonhole embed code</h2>
-    <p>In order for the Pigeonhole to display in the experience, the following code will be added using a custom component on the experience. The format of the code will be:</p>
-    <code translate="No">
-    <pre>&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em>/i/<em>session ID</em>&quot; style=&quot;border:1px #333333 solid;border-radius:3px&quot; name=&quot;Pigeonhole Live&quot; scrolling=&quot;yes&quot; frameborder=&quot;1&quot; marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot; height=&quot;600&quot; width=&quot;100%&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
-    </code>
-    <p>To get the values for the <strong>event passcode</strong> and <strong>session ID</strong>, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>In Pigeonhole, click <strong>Agenda</strong> in the left navigation.</li>
-      <li>On the <strong>Sessions</strong> tab, click the dropdown arrow next to the event. The <strong>Session ID</strong> will be displayed.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-get-session-id.png" /></figure>
-      </li>
-      <li>To get the event passcode, locate the event name in the header. The event passcode is displayed below the event name.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/virtual-event/phole-get-passcode.png" /></figure>
-      </li>
-    </ol>
-    <p>The above code with your event passcode and session ID will be used in your experience.</p>
-    <h3>Defaulting Pigeonhole to display the agenda</h3>
-    <p>The embed code can be edited to display the Pigeonhole agenda. Modify the <code>src</code> parameter to remove the <code>session id</code>:</p>
-    <pre><code translate="No">&lt;iframe src=&quot;https://pigeonhole.at/<em>event passcode</em><em></em>&quot; style=&quot;border:1px #333333 solid;border-radius:3px&quot; name=&quot;Pigeonhole Live&quot; scrolling=&quot;no&quot; frameborder=&quot;1&quot; marginheight=&quot;0px&quot; marginwidth=&quot;0px&quot; height=&quot;600&quot; width=&quot;100%&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
-    <p>This will cause the agenda to be displayed in the experience.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/phole-agenda-display.png" /></figure>
-  </section>
+  
+<section class="bcls-section">
+<h2>Edit a Widget</h2>
+<p>Once you created an Agenda, follow these steps to Edit a Widget:</p>
+<ol class="bcls-tasklist-restart">
+<li>Click on the Widget you want to edit. The controls for the said Widget will pop up.
+    <p></p>
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/widget-agenda.webp" alt="untitled agenda">
+      <figcaption class="bcls-caption--image">untitled agenda</figcaption>
+    </figure>
+  </li>
+  <li>Click <span class="button-blue-text">Edit</span>.</li>
+</section>
+
   <section class="bcls-section">
-    <h2 id="add-experience">Adding a Pigeonhole to an experience</h2>
-    <p>Brightcove recommends adding the Pigeonhole  to the right side of your Live Event In-Page experience. Currently, the Pigeonhole plugin specifically targets the right side.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: If you need to add the Pigeonhole  to the left side of the experience, contact your Account Manager.</aside>
-    <p>Adding a Pigeonhole to a Live Event In-Page experience is done by using a Custom component. To add a Pigeonhole, follow these steps.</p>
-    <ol class="bcls-tasklist-restart">
-      <li>Open the <strong>Gallery</strong> module.</li>
-      <li><strong></strong>Click on the Live Event In-Page Experience to edit.</li>
-      <li>Click the plus icon (<img alt="" src="/assets/images/experiences/inpage/customizing/node16790-plus-icon.png" />) on the right side of the experience.</li>
-      <li>Click <strong>Custom</strong> on the component picker.</li>
-      <li>Enter a <strong>Name</strong> for the HTML component.</li>
-      <li>Paste in the Pigeonhole HTML from the previous section into the <strong>Custom HTML Code</strong> field.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-code.png" /></figure>
-      </li>
-      <li>Select when the HTML should be displayed.</li>
-      <li>Click <span class="button-blue">Save</span>. The HTML will be rendered on the experience.</li>
-      <li>In the left navigation click <strong>Settings</strong> &gt; <strong>Advanced</strong>.</li>
-      <li>Paste the following code into the JavaScript URL field.
-        <pre><code translate="No">https://static.pigeonhole.at/brightcove-plugin/phl-brightcove-gallery-inpage.js</code></pre>
-      </li>
-      <li>Click <span class="button-blue">Save</span>.</li>
-      <li><strong>Publish</strong> the changes to the experience.</li>
+    <h2>Deleting a Widget</h2>
+  <ol class="bcls-tasklist-restart">
+    <li>Select the Widget you want to delete. </li>
+    <li>Click <span class="button-red-text">Delete</span>.
+      <p></p>
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/experiences/immersion-template/agenda-widget/delete-widget.webp" alt="delete widget">
+        <figcaption class="bcls-caption--image">delete widget</figcaption>
+      </figure>
+    </li>
+  </ol>
+  <aside class="bcls-aside bcls-aside--information language-editable">Notes: 
+    <ol>
+      <li>You can create as many Widgets as you want on your custom page </li>
+      <li>All Widgets can source the same Agenda from the Agenda module</li>
+      <li>Deleting a Widget does not delete its Agenda. All created Agendas can still be accessed from the Select Agenda Modal.</li>
+
     </ol>
-    <p>When you preview the experience, the Pigeonhole should display.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/live/in-page/phole-ipx-example.png" /></figure>
-  </section> -->
-  <section class="bcls-section">
-    <h2 id="tracking">How attendees are tracked</h2>
-    <p>Attendees are tracked using browser sessions, which means an attendee is identified and accounted for (tracked) each time they generate a new session (either by using multiple browsers or devices, or if they clean cookies and reenter the experience).</p>
-    <p>Sessions start when the Pigeonhole widget is loaded, whether the viewer has signed in as anonymous or using a name. Session info is stored in cookies. Viewers can enter the experience multiple times using the same browser session and a single viewer will be registered. If the viewer enters the experience using a different browser or device, a new user session will be created  (causing a duplicate attendee/session). Duplicate sessions  may also happen if two or more experiences with a widget are embedded in the same page or if the session cookie expires or gets deleted.</p>
-    <p>To avoid duplicate sessions, ensure that only one Pigeonhole widget is loaded per page and avoid having viewers use other devices or browsers.</p>
+  </aside>
   </section>
-  <!-- <section class="bcls-section">
-    <h2 id="limitations">Limitations</h2>
-    <p>Pigeonhole widget/custom HTML is "called" or included in an unassigned event state.</p>
-  </section> -->
 </article>
 
 <!-- <div class="col-sm-2 right-side-bar" style="display: inline-block;max-width: 20%;"> -->

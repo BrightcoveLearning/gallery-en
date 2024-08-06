@@ -340,6 +340,17 @@
         url: /experiences/portal/other/using-lead-form-portal-experience.html
       - name: Using the Site Editor to Customize an Experience
         url: /experiences/portal/customizing/using-site-editor-customize-portal-experience.html
+    - name: Immersion Template
+      url: /experiences/immersion-template/index.html
+      icon: fa-solid fa-map-pin
+      description: Learn how to create, edit and publish Landing Page Experiences.
+      docs:
+      - name: Immersion Builder
+        url: /experiences/immersion-template/immersion-builder.html
+      - name: Agenda Widget
+        url: /experiences/immersion-template/agenda-widget.html
+      - name: People Widget
+        url: /experiences/immersion-template/people-widget.html
 - section: 
   name: General Information
   url: /general/index.html
