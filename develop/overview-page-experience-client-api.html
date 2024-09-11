@@ -53,4 +53,43 @@ experienceApi.on('videoPaused', function() {
 });
 </code></pre>
   </section>
+  <section class="bcls-section">
+    <h2 id="audience_insights">Track Viewers (Audience Insights)</h2>
+    <p>In-page templates are used to track a viewer by using the <code>SetUser</code> method via accessing the player instance through the client JS API. See the following example:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Let’s say when you publish an experience, you get the following snippet:
+        <pre class="line-numbers"><code class="language-javascript" translate="No">
+          &#60;div data-experience="634076a61f3a86002543dcbb"&#62;&#60;/div&#62;
+          &#60;script src="https://players.brightcove.net/6314470054001/experience_634076a61f3a86002543dcbb/live.js"&#62;&#60;/script&#62;
+        </code></pre>
+      </li>
+      <li>Add the <strong>onload</strong> attribute to the <code> &#60;script&#62;</code> and specify the name of a global function to call when the script is loaded. Add an additional script tag that defines the <code>initializePlayer</code> global function:
+        <pre class="line-numbers"><code class="language-javascript" translate="No">
+        &#60;script&#62;
+          function initializePlayer () &#123;
+            const embedApi = bcov?.gal?.getEmbed('634076a61f3a86002543dcbb')?.clientApi;
+
+           embedApi.on('playerLoaded', (player) => &#123;
+           player?.bcAnalytics?.client?.setUser('Jeremy'); // pass any value that identifies the user
+          &#125;);
+         &#125
+         &#60;/script&#62;
+
+         &#60;div data-experience="634076a61f3a86002543dcbb"&#62;&#60;/div&#62;
+         &#60;script
+           src="https://players.brightcove.net/6314470054001/experience_634076a61f3a86002543dcbb/live.js"
+           onload="initializePlayer()"
+          &#62;&#60;/script>
+        </code></pre></li>
+        <li><code>initializePlayer()</code> function gets access to the Player object (make sure that you use the same experience id value as in the <code>data-experience</code> attribute).</li>
+        <li><code>setUser('')</code> method accepts any string that identifies the user.</li>
+        <li>To make sure that the value is passed correctly, open the Network tab in Chrome Dev Tools, and search by the tracked value:
+          <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/develop/track-viewers.webp" alt="track viewer">
+            <figcaption class="bcls-caption--image">track viewer</figcaption>
+          </figure>
+
+        </li>
+    </ol>
+  </section>
 </article>
