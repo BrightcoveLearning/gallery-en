@@ -1546,12 +1546,12 @@
         <figcaption class="bcls-caption--image">add people</figcaption>
       </figure>
     </li>
-    <li>Navigate to <strong>People section</strong>. 
+    <!-- <li>Navigate to <strong>People section</strong>. 
       <figure class="bcls-figure">
         <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/people-selection.webp" alt="people section">
         <figcaption class="bcls-caption--image">people section</figcaption>
       </figure>
-    </li>
+    </li> -->
   </ol>
   <h3>If you <strong>haven't </strong>added any people yet:</h3>
   <p></p>
@@ -1562,23 +1562,84 @@
     <figcaption class="bcls-caption--image">select-people</figcaption>
   </figure>
 </li>
-  <li>Notice how the start-creating people section appears. Click <span class="button-blue">Create people</span>.
+  <li>Notice how a modal titled <strong>New People Section</strong> appears.
     <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/create-people.webp" alt="create people">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/new-modal.png" alt="create people" width="875px">
       <figcaption class="bcls-caption--image">create people</figcaption>
     </figure>
   </li>
-  <li>It automatically sends you to the <strong>Agenda</strong> module.</li>
+  <li>Click the <span class="button-blue">Add people</span> button within this modal to be redirected to the Agenda Module, where you can create people.</li>
+  <li>After creating people, return to the Custom Page experience to proceed with selection and ordering.</li>
 </ol>
 <h3>If you already have added people:</h3>
 <ol class="bcls-tasklist-restart">
-  <li>Notice how the modal window with a searchable list of people appears. Select as many people as you prefer, then click <span class="button-blue">Save</span>.
+  <li>Back on the Custom Page, click <strong>Select People</strong> again in the People Section to reopen the <strong>New People Section</strong> modal.</li>
     <p></p>
+  <li>The modal has two tabs:</li>
+    <ul>
+      <li><strong>Select People</strong>: This tab displays those previously added to the Agenda Module.</li>
+      <li><strong>Display Order</strong>: This tab is initially disabled. In this tab, the selected people will be displayed, and we will be able to reorder them.</li>
+    </ul>
     <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/selecting-people.webp" alt="selecting people">
-      <figcaption class="bcls-caption--image">selecting people</figcaption>
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/modal-people-tab.png" alt="selecting people" width="875px">
+      <figcaption class="bcls-caption--image">select people modal</figcaption>
     </figure></li>
 </ol>
+<h3>Using the Select People Tab</h3>
+<ul>
+  <li>The tab includes a <strong>Search Input</strong> to filter people by name. If we type in the search input field, an alert shows up with the following message:
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/search-input.png" alt="search input" width="875px">
+      <figcaption class="bcls-caption--image">search input</figcaption>
+    </figure>
+  </li>
+  <li>An <span class="button-blue">Add people</span> button allows users to add more people by redirecting them back to the Agenda Module if necessary.</li>
+  <li>The list of people includes columns for <strong>Name, Role/Job Position</strong>, and <strong>Company</strong>.</li>
+  <li>At the top of the list, a master checkbox allows users to select or deselect all people simultaneously, while individual checkboxes enable specific person selections.</li>
+  <li>The <span class="button-blue">Next</span> button is initially disabled. When at least one person is selected, the button becomes enabled, allowing users to proceed to the next tab.</li>
+</ul>
+<h3>Accessing the Display Order Tab</h3>
+<ul>
+  <li>After clicking the <span class="button-blue">Next</span> button, users are directed to the <strong>Display Order</strong> tab, which only displays the people selected in the previous step.</li>
+  <li>This tab replaces checkboxes with a <strong>drag handle icon</strong> next to each person. Hovering over this icon changes the cursor to a "grabbing" hand, indicating that items can be dragged.
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/drag.png" alt="display order" width="875px">
+      <figcaption class="bcls-caption--image">display order</figcaption>
+    </figure>
+  </li>
+</ul>
+<h3>Reordering People with Drag-and-Drop</h3>
+<ul>
+  <li>Users can rearrange people by dragging them within the list. The <strong>Order</strong> column shows numbers starting from 1, reflecting each person's position.</li>
+  <li>When a person is moved to a new position (e.g., moving #3 to #1), the order numbers automatically update to reflect the new sequence.</li>
+</ul>
+<h3>Saving the Custom Order</h3>
+<ul>
+  <li>Once the desired order is set, clicking <span class="button-blue">Save</span> finalizes it and stores it directly within the <strong>People Custom Section</strong>.
+    <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/experiences/immersion-template/people-widget/people-custom.png" alt="people custom order" width="875px">
+      <figcaption class="bcls-caption--image">people custom order</figcaption>
+    </figure>
+  </li>
+  <div style="max-width: 960px;">
+    <style>
+    video-js.video-js.vjs-fluid:not(.vjs-audio-only-mode) {
+      padding-top: 56.25%;
+    }
+    </style><video-js
+      data-account="1752604059001"
+      data-player="default"
+      data-embed="default"
+      controls=""
+      data-video-id="1815089015249890171"
+      data-playlist-id=""
+      data-application-id=""
+      class="vjs-fluid"></video-js>
+  </div>
+  <script
+    src="https://players.brightcove.net/1752604059001/default_default/index.min.js">
+  </script>
+</ul>
   </section>
   <section class="bcls-section">
 <h1>How To:</h1>
