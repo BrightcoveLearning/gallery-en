@@ -69,7 +69,7 @@ GEM
     rexml (3.3.9)
     rouge (4.5.1)
     safe_yaml (1.0.5)
-    sass-embedded (1.82.0)
+    sass-embedded (1.83.0)
       google-protobuf (~> 4.28)
       rake (>= 13)
     sassc (2.3.0)
