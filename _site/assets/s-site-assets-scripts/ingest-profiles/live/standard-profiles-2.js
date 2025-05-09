@@ -1,5 +1,5 @@
 var codeBlocks;
-var BCLS = (function(window, document, profiles_array_cached) {
+var BCLS = (function(window, document, profiles_array_cached_2) {
   var mainSection = document.querySelector('.bcls-article'),
   data = {},
     navLabel = [];
@@ -483,7 +483,7 @@ var BCLS = (function(window, document, profiles_array_cached) {
             tmpArr = JSON.parse(httpRequest.responseText);
             // console.log('tmpArr', tmpArr);
             if (tmpArr.hasOwnProperty('error_code')) {
-              data.profiles_array = profiles_array_cached;
+              data.profiles_array = profiles_array_cached_2;
               console.log('data', data.profiles_array);
             } else {
               iMax = tmpArr.length;
@@ -502,7 +502,7 @@ var BCLS = (function(window, document, profiles_array_cached) {
           } else {
             bclslog("There was a problem with the request. Request returned: ", httpRequest.status);
             // just use cached data and build the tables
-            data.profiles_array = profiles_array_cached;
+            data.profiles_array = profiles_array_cached_2;
             buildSummaryTable();
             buildDetailTables();
 
@@ -518,9 +518,9 @@ var BCLS = (function(window, document, profiles_array_cached) {
     httpRequest.send(JSON.stringify(options));
   }
   // getProfileData();
-  data.profiles_array = profiles_array_cached;
+  data.profiles_array = profiles_array_cached_2;
   buildSummaryTable();
   buildDetailTables();
 
   // BCLSmain.createInPageNav();
-})(window, document, profiles_array_cached);
+})(window, document, profiles_array_cached_2);
